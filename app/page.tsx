@@ -97,27 +97,23 @@ export default function Home() {
           anyOS
         </h2>
 
-        {/* Headline — fixed layout, only the word animates */}
-        <div className="text-center">
-          <h1 className="whitespace-nowrap" style={{ fontSize: 'min(5.2vw, 3.2rem)' }}>
-            <span className="font-semibold tracking-tight text-black">An operating system for</span>
-          </h1>
-          <div className="flex justify-center" style={{ height: 'min(7vw, 4rem)', marginTop: '0.25rem' }}>
-            <span
-              className="font-bold"
-              style={{
-                fontSize: 'min(6vw, 3.6rem)',
-                color: word.color,
-                opacity: fade ? 1 : 0,
-                transform: fade ? 'translateY(0)' : 'translateY(8px)',
-                transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
-                textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
-              }}
-            >
-              {word.text}
-            </span>
-          </div>
-        </div>
+        {/* Headline — one line, word in fixed-width slot so nothing shifts */}
+        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(4.8vw, 3rem)' }}>
+          <span className="font-semibold tracking-tight text-black">An operating system for </span>
+          <span
+            className="font-bold inline-block text-left"
+            style={{
+              width: '5.5em',
+              color: word.color,
+              opacity: fade ? 1 : 0,
+              transform: fade ? 'translateY(0)' : 'translateY(8px)',
+              transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
+              textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+            }}
+          >
+            {word.text}
+          </span>
+        </h1>
 
         {/* Chat area — Discord-style, contained box */}
         {messages.length > 0 && (
