@@ -1,21 +1,10 @@
 @import "tailwindcss";
 
-:root {
-  --bg: #FAFBFC;
-  --text: #111827;
-  --muted: #6B7280;
-  --glass: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(0, 0, 0, 0.06);
-  --accent: #6366F1;
-  --accent-light: #818CF8;
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: #FFFFFF;
+  color: #111827;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
