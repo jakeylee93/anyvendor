@@ -4,7 +4,7 @@
 
 body {
   background: #FFFFFF;
-  color: #111827;
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  color: #0A0A0A;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

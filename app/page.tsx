@@ -20,28 +20,23 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-6">
-      {/* Logo */}
-      <div className="flex items-center gap-3 mb-12">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-200/50">
-          <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M8 12h8M12 8v8" />
-          </svg>
-        </div>
-        <span className="text-2xl font-semibold tracking-tight text-gray-900">anyOS</span>
+    <main className="min-h-[100dvh] bg-white flex flex-col items-center justify-center px-6">
+      {/* Logo mark */}
+      <div className="mb-10 md:mb-14">
+        <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40">
+          anyOS
+        </h2>
       </div>
 
       {/* Rotating tagline */}
-      <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900 text-center leading-snug mb-16">
+      <h1 className="text-[clamp(1.75rem,5vw,3.5rem)] font-semibold tracking-tight text-black text-center leading-[1.2]">
         An operating system for{' '}
         <span
-          className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 inline-block transition-all duration-400"
+          className="inline-block text-black/30"
           style={{
             opacity: fade ? 1 : 0,
-            transform: fade ? 'translateY(0)' : 'translateY(8px)',
+            transform: fade ? 'translateY(0)' : 'translateY(6px)',
             transition: 'opacity 0.4s ease, transform 0.4s ease',
-            minWidth: '180px',
           }}
         >
           {WORDS[wordIndex]}
@@ -49,18 +44,33 @@ export default function Home() {
       </h1>
 
       {/* Search box */}
-      <div className="w-full max-w-lg">
+      <div className="mt-10 md:mt-14 w-full max-w-md">
         <div className="relative">
+          <svg
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-black/20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
           <input
             type="text"
             placeholder="What shall we do today?"
-            className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-200 text-gray-900 placeholder:text-gray-400 text-base focus:outline-none focus:ring-2 focus:ring-indigo-100 focus:border-indigo-300 transition shadow-sm"
+            className="w-full pl-11 pr-5 py-3.5 rounded-xl bg-white border border-black/[0.08] text-black placeholder:text-black/25 text-[15px] font-medium focus:outline-none focus:border-black/20 transition"
+            style={{ boxShadow: '0 1px 2px rgba(0,0,0,0.04)' }}
           />
         </div>
       </div>
 
-      {/* Subtle footer */}
-      <p className="mt-16 text-xs text-gray-300">© {new Date().getFullYear()} anyOS</p>
+      {/* Footer */}
+      <p className="absolute bottom-6 text-[11px] font-medium tracking-wide text-black/15">
+        © {new Date().getFullYear()} anyOS
+      </p>
     </main>
   )
 }
