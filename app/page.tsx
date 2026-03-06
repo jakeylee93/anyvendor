@@ -269,7 +269,7 @@ export default function Home() {
                     href="https://instagram.com/bohemiaromanroad"
                     target="_blank"
                     rel="noopener"
-                    className="group relative w-[200px] h-[200px] md:w-[280px] md:h-[280px] flex-shrink-0 overflow-hidden rounded-lg"
+                    className="group relative w-[200px] h-[200px] md:w-[280px] md:h-[280px] flex-shrink-0 overflow-hidden rounded-2xl"
                   >
                     <img 
                       src={img}
