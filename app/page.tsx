@@ -1,111 +1,132 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen bg-gradient-to-b from-[#F8FAFF] via-white to-[#F0F4FF] relative overflow-hidden">
+      {/* Subtle background orbs */}
+      <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] rounded-full bg-indigo-100/40 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[200px] right-[-200px] w-[500px] h-[500px] rounded-full bg-purple-100/30 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-[-100px] left-[30%] w-[400px] h-[400px] rounded-full bg-blue-100/30 blur-[100px] pointer-events-none" />
+
       {/* Nav */}
-      <nav className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-        <div className="flex items-center gap-2">
-          <span className="text-2xl">🎪</span>
-          <span className="text-xl font-bold tracking-tight">AnyVendor</span>
+      <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-6">
+        <div className="flex items-center gap-2.5">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-200/50">
+            <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-white" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8M12 8v8" />
+            </svg>
+          </div>
+          <span className="text-xl font-semibold tracking-tight text-gray-900">anyOS</span>
         </div>
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
-          <a href="#about" className="hover:text-white transition">About</a>
-          <a href="#services" className="hover:text-white transition">Services</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
-        </div>
+        <a href="#waitlist" className="text-sm font-medium text-indigo-600 hover:text-indigo-700 transition">
+          Join Waitlist →
+        </a>
       </nav>
 
       {/* Hero */}
-      <section className="flex-1 flex flex-col items-center justify-center text-center px-6 py-24 md:py-32">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm mb-8">
-          <span>🎪</span> Events Industry, Connected
+      <section className="relative z-10 flex flex-col items-center text-center px-6 pt-16 md:pt-28 pb-20">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-gray-200/60 text-sm text-gray-500 shadow-xs backdrop-blur-md mb-8">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          Coming Soon
         </div>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl leading-[1.1]">
-          The platform that brings the{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-            events industry
-          </span>{' '}
-          together
+
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight max-w-4xl leading-[1.05] text-gray-900">
+          The last setup
+          <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-600">
+            you&apos;ll ever need
+          </span>
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl">
-          Connect with suppliers, find opportunities, and grow your events business — 
-          without the commission-heavy agencies.
+
+        <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-xl leading-relaxed">
+          An operating system for life, work, and AI.
+          <br className="hidden md:block" />
+          One workspace. Infinite possibility.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#contact"
-            className="px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-medium rounded-lg transition"
-          >
+
+        <div id="waitlist" className="mt-12 flex flex-col sm:flex-row gap-3 w-full max-w-md">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            className="flex-1 px-5 py-3.5 rounded-xl bg-white border border-gray-200 text-gray-900 placeholder:text-gray-400 shadow-xs focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400 transition text-sm"
+          />
+          <button className="px-7 py-3.5 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-200/50 hover:shadow-xl hover:shadow-indigo-300/50 transition-all text-sm whitespace-nowrap">
             Get Early Access
-          </a>
-          <a
-            href="#about"
-            className="px-8 py-3 bg-white/5 hover:bg-white/10 text-white font-medium rounded-lg border border-white/10 transition"
-          >
-            Learn More
-          </a>
+          </button>
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="px-6 py-20 border-t border-white/10">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-          {[
-            { icon: '🤝', title: 'Fair & Direct', desc: 'Connect directly with suppliers and clients. No middleman fees eating into your margins.' },
-            { icon: '⚡', title: 'Fast & Simple', desc: 'Find what you need in seconds. Post opportunities, get matched, done.' },
-            { icon: '🌍', title: 'Industry-Wide', desc: 'Bars, catering, AV, staffing, décor — every corner of the events world in one place.' },
-          ].map((f) => (
-            <div key={f.title} className="p-6 rounded-xl bg-white/[0.03] border border-white/10">
-              <span className="text-3xl">{f.icon}</span>
-              <h3 className="mt-4 text-lg font-semibold">{f.title}</h3>
-              <p className="mt-2 text-sm text-gray-400 leading-relaxed">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Services */}
-      <section id="services" className="px-6 py-20 border-t border-white/10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Built for the events industry</h2>
-          <p className="mt-4 text-gray-400">
-            Whether you&apos;re a supplier looking for gigs or a client planning an event, 
-            AnyVendor makes the connection simple.
-          </p>
-          <div className="mt-12 grid sm:grid-cols-2 gap-6 text-left">
+      {/* Glass App Grid */}
+      <section className="relative z-10 px-6 md:px-12 pb-24">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: 'Supplier Directory', desc: 'Browse verified suppliers across every category.' },
-              { title: 'Opportunity Board', desc: 'Post events and get matched with the right people.' },
-              { title: 'Digital Services', desc: 'Websites, branding, and digital tools for your business.' },
-              { title: 'No Commission', desc: 'Connect directly. Keep 100% of what you earn.' },
-            ].map((s) => (
-              <div key={s.title} className="p-5 rounded-xl bg-white/[0.03] border border-white/10">
-                <h4 className="font-semibold">{s.title}</h4>
-                <p className="mt-1 text-sm text-gray-400">{s.desc}</p>
+              { icon: '📸', name: 'Capture', desc: 'Voice, photos, thoughts — sorted by AI' },
+              { icon: '📅', name: 'Calendar', desc: 'Time intelligence, not just dates' },
+              { icon: '📋', name: 'Projects', desc: 'Teams, milestones, decisions' },
+              { icon: '🤖', name: 'Agents', desc: 'Your digital workforce' },
+              { icon: '🔨', name: 'Builder', desc: 'Websites & tools, instantly' },
+              { icon: '📁', name: 'Docs', desc: 'Files, drives, everything' },
+              { icon: '💰', name: 'Finance', desc: 'Invoices, costs, clarity' },
+              { icon: '💊', name: 'Wellness', desc: 'Check-ins, mood, balance' },
+            ].map((app) => (
+              <div
+                key={app.name}
+                className="group p-5 rounded-2xl bg-white/60 backdrop-blur-md border border-white/80 shadow-xs hover:shadow-md hover:bg-white/80 transition-all duration-300 cursor-default"
+                style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02)' }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-100 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {app.icon}
+                </div>
+                <h3 className="font-semibold text-gray-900 text-sm">{app.name}</h3>
+                <p className="mt-1 text-xs text-gray-400 leading-relaxed">{app.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="px-6 py-20 border-t border-white/10">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold">Get in touch</h2>
-          <p className="mt-3 text-gray-400">Interested in joining AnyVendor? Drop us a line.</p>
-          <div className="mt-8 flex flex-col gap-4">
-            <a
-              href="mailto:jake@anyvendor.co.uk"
-              className="px-8 py-3 bg-purple-600 hover:bg-purple-500 text-white font-medium rounded-lg transition inline-block"
+      {/* Tagline strip */}
+      <section className="relative z-10 px-6 py-20 text-center">
+        <p className="text-2xl md:text-3xl font-semibold text-gray-900 max-w-2xl mx-auto leading-snug">
+          We set it up. You take control.
+          <br />
+          <span className="text-gray-400">AI won&apos;t control you. You control it.</span>
+        </p>
+      </section>
+
+      {/* Features */}
+      <section className="relative z-10 px-6 md:px-12 pb-24">
+        <div className="max-w-3xl mx-auto grid md:grid-cols-3 gap-6">
+          {[
+            { icon: '🖥️', title: 'Installed for you', desc: 'We come to you, set up your machine, and bring your personal AI online. No technical knowledge needed.' },
+            { icon: '🔒', title: 'Your data, your device', desc: 'Everything runs on your own hardware. No cloud dependency. No one else sees your data. Ever.' },
+            { icon: '✨', title: 'Modular by design', desc: 'Start with what you need. Add apps as you grow. Personal, business, or both — it adapts to you.' },
+          ].map((f) => (
+            <div
+              key={f.title}
+              className="p-6 rounded-2xl bg-white/60 backdrop-blur-md border border-white/80"
+              style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
             >
-              jake@anyvendor.co.uk
-            </a>
-          </div>
+              <span className="text-3xl">{f.icon}</span>
+              <h3 className="mt-4 font-semibold text-gray-900">{f.title}</h3>
+              <p className="mt-2 text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 border-t border-white/10 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} AnyVendor. All rights reserved.
+      <footer className="relative z-10 px-6 py-10 text-center">
+        <div className="flex items-center justify-center gap-2.5 mb-4">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4 text-white" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8M12 8v8" />
+            </svg>
+          </div>
+          <span className="text-sm font-semibold text-gray-900">anyOS</span>
+        </div>
+        <p className="text-xs text-gray-400">© {new Date().getFullYear()} anyOS. All rights reserved.</p>
       </footer>
     </main>
   )
