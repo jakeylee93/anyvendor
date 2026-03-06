@@ -115,13 +115,13 @@ export default function Home() {
 
       <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '1.25rem' }}>
 
-        {/* Logo — traced SVG */}
-        <img
-          src="/anyos-logo.svg"
-          alt="anyOS"
-          className="h-10 md:h-12"
-          style={{ filter: 'invert(0)' }}
-        />
+        {/* Logo */}
+        <h2
+          className="text-4xl md:text-5xl text-black text-center"
+          style={{ fontFamily: "'Poiret One', sans-serif", letterSpacing: '0.12em' }}
+        >
+          anyOS
+        </h2>
 
         {/* Headline — one line, word in fixed-width slot so nothing shifts */}
         <h1
