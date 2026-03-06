@@ -18,6 +18,26 @@ interface Message {
   content: string
 }
 
+/* Margarita avatar — small crab SVG */
+function MargaritaAvatar() {
+  return (
+    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shrink-0 shadow-sm">
+      <span className="text-sm">🦀</span>
+    </div>
+  )
+}
+
+/* User avatar — generic person */
+function UserAvatar() {
+  return (
+    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center shrink-0 shadow-sm">
+      <svg className="w-4 h-4 text-gray-500" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+      </svg>
+    </div>
+  )
+}
+
 export default function Home() {
   const [wordIndex, setWordIndex] = useState(0)
   const [fade, setFade] = useState(true)
@@ -77,7 +97,7 @@ export default function Home() {
           anyOS
         </h2>
 
-        {/* Headline — always one line, scales down on mobile */}
+        {/* Headline — always one line */}
         <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5.5vw, 3.2rem)' }}>
           <span className="font-semibold tracking-tight text-black">An operating system for </span>
           <span
@@ -94,44 +114,55 @@ export default function Home() {
           </span>
         </h1>
 
-        {/* Chat messages — compact, scrollable */}
+        {/* Chat area — Discord-style, contained box */}
         {messages.length > 0 && (
           <div
-            ref={chatRef}
-            className="w-full overflow-y-auto space-y-5"
-            style={{ maxHeight: '200px', maxWidth: '480px' }}
+            className="w-full rounded-2xl border border-black/[0.06] bg-gray-50/50 overflow-hidden"
+            style={{ maxWidth: '500px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
           >
-            {messages.map((msg, i) => (
-              <div
-                key={i}
-                className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-              >
-                <div
-                  className={`max-w-[75%] px-4 py-3 text-[14px] leading-relaxed ${
-                    msg.role === 'user'
-                      ? 'bg-black text-white rounded-2xl rounded-br-md'
-                      : 'bg-gray-100 text-black rounded-2xl rounded-bl-md'
-                  }`}
-                >
-                  {msg.content}
-                </div>
+            <div
+              ref={chatRef}
+              className="overflow-y-auto p-5"
+              style={{ maxHeight: '280px' }}
+            >
+              <div className="space-y-5">
+                {messages.map((msg, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    {msg.role === 'assistant' ? <MargaritaAvatar /> : <UserAvatar />}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline gap-2 mb-1">
+                        <span className="text-[13px] font-semibold text-black">
+                          {msg.role === 'assistant' ? 'Margarita' : 'You'}
+                        </span>
+                        <span className="text-[11px] text-black/25">just now</span>
+                      </div>
+                      <p className="text-[15px] leading-relaxed text-black/80">
+                        {msg.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+                {loading && (
+                  <div className="flex items-start gap-3">
+                    <MargaritaAvatar />
+                    <div className="flex-1">
+                      <div className="flex items-baseline gap-2 mb-1">
+                        <span className="text-[13px] font-semibold text-black">Margarita</span>
+                      </div>
+                      <span className="inline-flex gap-1.5 items-center h-5">
+                        <span className="w-1.5 h-1.5 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                        <span className="w-1.5 h-1.5 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                        <span className="w-1.5 h-1.5 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
-            ))}
-            {loading && (
-              <div className="flex justify-start">
-                <div className="bg-gray-100 text-black px-5 py-3.5 rounded-2xl rounded-bl-md">
-                  <span className="inline-flex gap-1.5 items-center h-5">
-                    <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                    <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                    <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                  </span>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
         )}
 
-        {/* Input box — floating with shadow */}
+        {/* Input box — floating */}
         <div className="w-full" style={{ maxWidth: '480px' }}>
           <div
             className="flex items-center bg-white border border-black/[0.08] rounded-2xl"
