@@ -92,13 +92,16 @@ export default function Home() {
 
       <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '1.25rem' }}>
 
-        {/* Logo */}
-        <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40 text-center">
+        {/* Logo — Art Deco Poiret One */}
+        <h2
+          className="text-3xl md:text-4xl text-black text-center"
+          style={{ fontFamily: "'Poiret One', sans-serif", letterSpacing: '0.15em' }}
+        >
           anyOS
         </h2>
 
         {/* Headline — one line, word in fixed-width slot so nothing shifts */}
-        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(4.2vw, 3rem)' }}>
+        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5vw, 3rem)' }}>
           <span className="font-semibold tracking-tight text-black">An operating system for </span>
           <span
             className="font-bold inline-block text-left"
@@ -164,10 +167,10 @@ export default function Home() {
         )}
 
         {/* Input box — floating */}
-        <div className="w-full" style={{ maxWidth: '480px' }}>
+        <div className="w-full px-4" style={{ maxWidth: '500px' }}>
           <div
             className="flex items-center bg-white border border-black/[0.08] rounded-2xl"
-            style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04)' }}
+            style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04)' }}
           >
             <div className="pl-5 flex items-center shrink-0">
               <svg className="w-[18px] h-[18px] text-black/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
