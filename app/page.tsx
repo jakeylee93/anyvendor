@@ -90,29 +90,34 @@ export default function Home() {
   return (
     <main className="min-h-[100dvh] bg-white flex flex-col items-center justify-center px-8 md:px-12">
 
-      <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '3rem' }}>
+      <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '1.25rem' }}>
 
         {/* Logo */}
         <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40 text-center">
           anyOS
         </h2>
 
-        {/* Headline — always one line */}
-        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5.5vw, 3.2rem)' }}>
-          <span className="font-semibold tracking-tight text-black">An operating system for </span>
-          <span
-            className="font-bold inline-block"
-            style={{
-              color: word.color,
-              opacity: fade ? 1 : 0,
-              transform: fade ? 'translateY(0)' : 'translateY(8px)',
-              transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
-              textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
-            }}
-          >
-            {word.text}
-          </span>
-        </h1>
+        {/* Headline — fixed layout, only the word animates */}
+        <div className="text-center">
+          <h1 className="whitespace-nowrap" style={{ fontSize: 'min(5.2vw, 3.2rem)' }}>
+            <span className="font-semibold tracking-tight text-black">An operating system for</span>
+          </h1>
+          <div className="flex justify-center" style={{ height: 'min(7vw, 4rem)', marginTop: '0.25rem' }}>
+            <span
+              className="font-bold"
+              style={{
+                fontSize: 'min(6vw, 3.6rem)',
+                color: word.color,
+                opacity: fade ? 1 : 0,
+                transform: fade ? 'translateY(0)' : 'translateY(8px)',
+                transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
+                textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+              }}
+            >
+              {word.text}
+            </span>
+          </div>
+        </div>
 
         {/* Chat area — Discord-style, contained box */}
         {messages.length > 0 && (
