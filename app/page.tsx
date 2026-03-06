@@ -70,34 +70,29 @@ export default function Home() {
   return (
     <main className="min-h-[100dvh] bg-white flex flex-col items-center justify-center px-8 md:px-12">
 
-      {/* === Centered content block with even spacing === */}
-      <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '2.5rem' }}>
+      <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '3rem' }}>
 
         {/* Logo */}
         <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40 text-center">
           anyOS
         </h2>
 
-        {/* Headline + rotating word */}
-        <div className="text-center">
-          <h1 className="text-[clamp(1.8rem,5vw,3.2rem)] font-semibold tracking-tight text-black leading-[1.25]">
-            An operating system for
-          </h1>
-          <div className="mt-2" style={{ height: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-            <span
-              className="text-[clamp(2.2rem,6vw,4rem)] font-bold inline-block"
-              style={{
-                color: word.color,
-                opacity: fade ? 1 : 0,
-                transform: fade ? 'translateY(0)' : 'translateY(10px)',
-                transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
-                textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
-              }}
-            >
-              {word.text}
-            </span>
-          </div>
-        </div>
+        {/* Headline — always one line, scales down on mobile */}
+        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5.5vw, 3.2rem)' }}>
+          <span className="font-semibold tracking-tight text-black">An operating system for </span>
+          <span
+            className="font-bold inline-block"
+            style={{
+              color: word.color,
+              opacity: fade ? 1 : 0,
+              transform: fade ? 'translateY(0)' : 'translateY(8px)',
+              transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
+              textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+            }}
+          >
+            {word.text}
+          </span>
+        </h1>
 
         {/* Chat messages */}
         {messages.length > 0 && (
@@ -135,11 +130,11 @@ export default function Home() {
           </div>
         )}
 
-        {/* Input box */}
-        <div className="w-full">
+        {/* Input box — floating with shadow */}
+        <div className="w-full" style={{ maxWidth: '480px' }}>
           <div
-            className="flex items-center bg-gray-50/80 border border-black/[0.06] rounded-2xl"
-            style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+            className="flex items-center bg-white border border-black/[0.08] rounded-2xl"
+            style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04)' }}
           >
             <div className="pl-5 flex items-center shrink-0">
               <svg className="w-[18px] h-[18px] text-black/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
