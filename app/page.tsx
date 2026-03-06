@@ -167,7 +167,7 @@ export default function Home() {
         )}
 
         {/* Input box — floating */}
-        <div className="w-full px-4" style={{ maxWidth: '500px' }}>
+        <div className="w-full" style={{ maxWidth: '440px', padding: '0 0.5rem' }}>
           <div
             className="flex items-center bg-white border border-black/[0.08] rounded-2xl"
             style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04)' }}
@@ -184,15 +184,15 @@ export default function Home() {
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="What shall we do today?"
-              className="flex-1 px-4 py-5 bg-transparent text-black placeholder:text-black/25 text-[15px] font-medium focus:outline-none min-w-0"
+              className="flex-1 px-4 py-6 bg-transparent text-black placeholder:text-black/25 text-[15px] font-medium focus:outline-none min-w-0"
             />
             <button
               onClick={() => handleSend()}
               disabled={loading || !query.trim()}
-              className="mr-3 w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center hover:bg-black/80 transition disabled:opacity-15 shrink-0"
+              className="mr-3.5 w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center hover:bg-black/80 transition disabled:opacity-15 shrink-0"
             >
-              <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
               </svg>
             </button>
           </div>
@@ -200,12 +200,12 @@ export default function Home() {
 
         {/* Suggestion chips */}
         {messages.length === 0 && (
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2">
             {['What can anyOS do?', 'How does setup work?', 'Can you run my business?'].map((q) => (
               <button
                 key={q}
                 onClick={() => handleSend(q)}
-                className="px-5 py-2.5 text-xs font-medium text-black/35 bg-black/[0.03] border border-black/[0.04] rounded-xl hover:bg-black/[0.06] hover:text-black/50 transition"
+                className="px-4 py-2 text-[11px] font-medium text-black/30 bg-black/[0.02] border border-black/[0.04] rounded-lg hover:bg-black/[0.05] hover:text-black/45 transition"
               >
                 {q}
               </button>
