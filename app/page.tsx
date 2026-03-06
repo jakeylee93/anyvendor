@@ -43,18 +43,18 @@ export default function Home() {
     }
   }, [messages])
 
-  const handleSend = async () => {
-    if (!query.trim() || loading) return
-    const userMsg = query.trim()
+  const handleSend = async (text?: string) => {
+    const msg = (text || query).trim()
+    if (!msg || loading) return
     setQuery('')
-    setMessages((prev) => [...prev, { role: 'user', content: userMsg }])
+    setMessages((prev) => [...prev, { role: 'user', content: msg }])
     setLoading(true)
 
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: [...messages, { role: 'user', content: userMsg }] }),
+        body: JSON.stringify({ messages: [...messages, { role: 'user', content: msg }] }),
       })
       const data = await res.json()
       setMessages((prev) => [...prev, { role: 'assistant', content: data.reply || 'Something went wrong.' }])
@@ -71,27 +71,31 @@ export default function Home() {
     <main className="min-h-[100dvh] bg-white flex flex-col items-center justify-center px-6 py-12">
       {/* Logo */}
       <div className="mb-10 md:mb-14">
-        <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40">
+        <h2 className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase text-black/40 text-center">
           anyOS
         </h2>
       </div>
 
-      {/* Rotating tagline */}
-      <h1 className="text-[clamp(1.75rem,5vw,3.5rem)] font-semibold tracking-tight text-black text-center leading-[1.2] mb-12 md:mb-16">
-        An operating system for{' '}
-        <span
-          className="inline-block relative font-bold"
-          style={{
-            color: word.color,
-            opacity: fade ? 1 : 0,
-            transform: fade ? 'translateY(0)' : 'translateY(6px)',
-            transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.4s ease',
-            textShadow: fade ? `0 0 30px ${word.color}40, 0 0 60px ${word.color}20` : 'none',
-          }}
-        >
-          {word.text}
-        </span>
-      </h1>
+      {/* Rotating tagline — stacked so the word doesn't jolt the line */}
+      <div className="text-center mb-12 md:mb-16">
+        <h1 className="text-[clamp(1.6rem,4.5vw,3.2rem)] font-semibold tracking-tight text-black leading-[1.3]">
+          An operating system for
+        </h1>
+        <div className="h-[clamp(2.2rem,6vw,4.2rem)] flex items-center justify-center overflow-hidden">
+          <span
+            className="text-[clamp(2rem,5.5vw,3.8rem)] font-bold inline-block"
+            style={{
+              color: word.color,
+              opacity: fade ? 1 : 0,
+              transform: fade ? 'translateY(0)' : 'translateY(12px)',
+              transition: 'opacity 0.5s ease, transform 0.5s ease, color 0.3s ease',
+              textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+            }}
+          >
+            {word.text}
+          </span>
+        </div>
+      </div>
 
       {/* Chat area */}
       {messages.length > 0 && (
@@ -105,10 +109,10 @@ export default function Home() {
               className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`max-w-[80%] px-5 py-3 rounded-2xl text-[15px] leading-relaxed ${
+                className={`max-w-[80%] px-5 py-3.5 text-[15px] leading-relaxed ${
                   msg.role === 'user'
-                    ? 'bg-black text-white rounded-br-md'
-                    : 'bg-gray-100 text-black rounded-bl-md'
+                    ? 'bg-black text-white rounded-2xl rounded-br-md'
+                    : 'bg-gray-100 text-black rounded-2xl rounded-bl-md'
                 }`}
               >
                 {msg.content}
@@ -117,8 +121,8 @@ export default function Home() {
           ))}
           {loading && (
             <div className="flex justify-start">
-              <div className="bg-gray-100 text-black px-5 py-3 rounded-2xl rounded-bl-md text-[15px]">
-                <span className="inline-flex gap-1">
+              <div className="bg-gray-100 text-black px-5 py-3.5 rounded-2xl rounded-bl-md text-[15px]">
+                <span className="inline-flex gap-1.5 items-center h-5">
                   <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                   <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
                   <span className="w-2 h-2 bg-black/20 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
@@ -132,34 +136,50 @@ export default function Home() {
       {/* Input box */}
       <div className="w-full max-w-xl">
         <div
-          className="relative flex items-center bg-gray-50 border border-black/[0.08] rounded-2xl overflow-hidden"
-          style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.02)' }}
+          className="relative flex items-center bg-gray-50/80 border border-black/[0.06] rounded-2xl overflow-hidden"
+          style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.01)' }}
         >
+          <div className="pl-5 flex items-center pointer-events-none">
+            <svg
+              className="w-[18px] h-[18px] text-black/20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </div>
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
             placeholder="What shall we do today?"
-            className="flex-1 px-6 py-5 bg-transparent text-black placeholder:text-black/25 text-base font-medium focus:outline-none"
+            className="flex-1 px-4 py-5 bg-transparent text-black placeholder:text-black/25 text-[15px] font-medium focus:outline-none"
           />
           <button
-            onClick={handleSend}
+            onClick={() => handleSend()}
             disabled={loading || !query.trim()}
-            className="mr-3 w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center hover:bg-black/80 transition disabled:opacity-20 disabled:hover:bg-black shrink-0"
+            className="mr-3 w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center hover:bg-black/80 transition disabled:opacity-15 disabled:hover:bg-black shrink-0"
           >
-            <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </button>
         </div>
+
+        {/* Suggestion chips */}
         {messages.length === 0 && (
-          <div className="flex flex-wrap justify-center gap-2 mt-4">
+          <div className="flex flex-wrap justify-center gap-3 mt-6 mb-4">
             {['What can anyOS do?', 'How does setup work?', 'Can you run my business?'].map((q) => (
               <button
                 key={q}
-                onClick={() => { setQuery(q); }}
-                className="px-4 py-2 text-xs font-medium text-black/30 bg-black/[0.03] rounded-lg hover:bg-black/[0.06] hover:text-black/50 transition"
+                onClick={() => handleSend(q)}
+                className="px-5 py-2.5 text-xs font-medium text-black/35 bg-black/[0.03] border border-black/[0.04] rounded-xl hover:bg-black/[0.06] hover:text-black/50 transition"
               >
                 {q}
               </button>
@@ -169,7 +189,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <p className="mt-auto pt-12 text-[11px] font-medium tracking-wide text-black/15">
+      <p className="mt-auto pt-10 text-[11px] font-medium tracking-wide text-black/15">
         © {new Date().getFullYear()} anyOS
       </p>
     </main>
