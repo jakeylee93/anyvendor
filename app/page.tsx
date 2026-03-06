@@ -45,6 +45,8 @@ export default function Home() {
   const [messages, setMessages] = useState<Message[]>([])
   const [loading, setLoading] = useState(false)
   const chatRef = useRef<HTMLDivElement>(null)
+  const wordRef = useRef<HTMLSpanElement>(null)
+  const [wordWidth, setWordWidth] = useState<number | null>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,6 +58,15 @@ export default function Home() {
     }, 2800)
     return () => clearInterval(interval)
   }, [])
+
+  useEffect(() => {
+    if (wordRef.current) {
+      const inner = wordRef.current.querySelector('span')
+      if (inner) {
+        setWordWidth(inner.getBoundingClientRect().width)
+      }
+    }
+  }, [wordIndex, fade])
 
   useEffect(() => {
     if (chatRef.current) {
@@ -101,19 +112,36 @@ export default function Home() {
         </h2>
 
         {/* Headline — one line, word in fixed-width slot so nothing shifts */}
-        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5vw, 3rem)' }}>
-          <span className="font-semibold tracking-tight text-black">An operating system for </span>
+        <h1
+          className="text-center whitespace-nowrap overflow-hidden"
+          style={{
+            fontSize: 'min(5vw, 3rem)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'baseline',
+          }}
+        >
+          <span className="font-semibold tracking-tight text-black shrink-0">An operating system for&nbsp;</span>
           <span
-            className="font-bold inline-block"
+            ref={wordRef}
+            className="font-bold inline-block overflow-hidden"
             style={{
-              color: word.color,
-              opacity: fade ? 1 : 0,
-              transform: fade ? 'translateY(0)' : 'translateY(6px)',
-              transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
-              textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+              width: wordWidth ? `${wordWidth}px` : 'auto',
+              transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           >
-            {word.text}
+            <span
+              className="inline-block whitespace-nowrap"
+              style={{
+                color: word.color,
+                opacity: fade ? 1 : 0,
+                transform: fade ? 'translateY(0)' : 'translateY(6px)',
+                transition: 'opacity 0.35s ease, transform 0.35s ease, color 0.3s ease',
+                textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
+              }}
+            >
+              {word.text}
+            </span>
           </span>
         </h1>
 
