@@ -116,11 +116,12 @@ export default function Home() {
       <div className="flex flex-col items-center w-full max-w-xl" style={{ gap: '1.25rem' }}>
 
         {/* Logo */}
-        <img
-          src="/anyos-logo.svg"
-          alt="anyOS"
-          className="w-36 md:w-44"
-        />
+        <h2
+          className="text-4xl md:text-5xl text-black text-center"
+          style={{ fontFamily: "'Poiret One', sans-serif", letterSpacing: '0.12em' }}
+        >
+          anyOS
+        </h2>
 
         {/* Headline — one line, word in fixed-width slot so nothing shifts */}
         <h1
@@ -160,7 +161,7 @@ export default function Home() {
         {messages.length > 0 && (
           <div
             className="w-full rounded-2xl border border-black/[0.06] bg-gray-50/50 overflow-hidden mx-auto"
-            style={{ maxWidth: '480px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+            style={{ maxWidth: '460px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)', margin: '0 1.5rem' }}
           >
             <div
               ref={chatRef}
