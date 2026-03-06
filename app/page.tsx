@@ -98,7 +98,7 @@ export default function Home() {
         </h2>
 
         {/* Headline — one line, word in fixed-width slot so nothing shifts */}
-        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(4.8vw, 3rem)' }}>
+        <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(4.2vw, 3rem)' }}>
           <span className="font-semibold tracking-tight text-black">An operating system for </span>
           <span
             className="font-bold inline-block text-left"
