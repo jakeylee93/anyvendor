@@ -18,11 +18,23 @@ interface Message {
   content: string
 }
 
-/* Margarita avatar — small crab SVG */
+/* Margarita avatar — pulsating glowing orb */
 function MargaritaAvatar() {
   return (
-    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shrink-0 shadow-sm">
-      <span className="text-sm">🦀</span>
+    <div className="w-8 h-8 rounded-full shrink-0 relative">
+      <div
+        className="absolute inset-0 rounded-full animate-pulse"
+        style={{
+          background: 'radial-gradient(circle at 35% 35%, #c084fc, #818cf8, #6366f1, #4f46e5)',
+          boxShadow: '0 0 12px rgba(139, 92, 246, 0.5), 0 0 24px rgba(99, 102, 241, 0.3)',
+        }}
+      />
+      <div
+        className="absolute inset-[2px] rounded-full"
+        style={{
+          background: 'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%)',
+        }}
+      />
     </div>
   )
 }
@@ -148,12 +160,12 @@ export default function Home() {
         {/* Chat area — Discord-style, contained box */}
         {messages.length > 0 && (
           <div
-            className="w-full rounded-2xl border border-black/[0.06] bg-gray-50/50 overflow-hidden"
-            style={{ maxWidth: '500px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+            className="w-full rounded-2xl border border-black/[0.06] bg-gray-50/50 overflow-hidden mx-auto"
+            style={{ maxWidth: '480px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
           >
             <div
               ref={chatRef}
-              className="overflow-y-auto p-5"
+              className="overflow-y-auto px-6 py-5"
               style={{ maxHeight: '280px' }}
             >
               <div className="space-y-5">
