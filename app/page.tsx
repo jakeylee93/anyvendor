@@ -104,12 +104,11 @@ export default function Home() {
         <h1 className="text-center whitespace-nowrap" style={{ fontSize: 'min(5vw, 3rem)' }}>
           <span className="font-semibold tracking-tight text-black">An operating system for </span>
           <span
-            className="font-bold inline-block text-left"
+            className="font-bold inline-block"
             style={{
-              width: '5.5em',
               color: word.color,
               opacity: fade ? 1 : 0,
-              transform: fade ? 'translateY(0)' : 'translateY(8px)',
+              transform: fade ? 'translateY(0)' : 'translateY(6px)',
               transition: 'opacity 0.4s ease, transform 0.4s ease, color 0.3s ease',
               textShadow: fade ? `0 0 40px ${word.color}35, 0 0 80px ${word.color}15` : 'none',
             }}
@@ -172,7 +171,7 @@ export default function Home() {
             className="flex items-center bg-white border border-black/[0.08] rounded-2xl"
             style={{ boxShadow: '0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04)' }}
           >
-            <div className="pl-5 flex items-center shrink-0">
+            <div className="pl-6 flex items-center shrink-0">
               <svg className="w-[18px] h-[18px] text-black/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
