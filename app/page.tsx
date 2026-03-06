@@ -3,15 +3,18 @@
 import { useState } from 'react'
 
 const PRODUCTS = [
-  { id: 1, name: 'Vintage Ceramic Vase', price: 12, category: 'Homeware' },
-  { id: 2, name: 'Brass Candle Holder', price: 8, category: 'Decor' },
-  { id: 3, name: 'Embroidered Linen Napkins', price: 15, category: 'Textiles' },
-  { id: 4, name: 'Art Deco Photo Frame', price: 10, category: 'Decor' },
-  { id: 5, name: 'Hand-thrown Pottery Bowl', price: 14, category: 'Homeware' },
-  { id: 6, name: 'Vintage Glass Decanter', price: 11, category: 'Glassware' },
-  { id: 7, name: 'Woven Storage Basket', price: 9, category: 'Storage' },
-  { id: 8, name: 'Terracotta Plant Pot', price: 7, category: 'Garden' },
+  { id: 1, name: 'Vintage Ceramic Vase', price: 12, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400&h=500&fit=crop' },
+  { id: 2, name: 'Brass Candle Holder', price: 8, image: 'https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=400&h=500&fit=crop' },
+  { id: 3, name: 'Embroidered Linen Napkins', price: 15, image: 'https://images.unsplash.com/photo-1605218427306-022ba6c5546c?w=400&h=500&fit=crop' },
+  { id: 4, name: 'Art Deco Photo Frame', price: 10, image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=400&h=500&fit=crop' },
+  { id: 5, name: 'Hand-thrown Pottery Bowl', price: 14, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=500&fit=crop' },
+  { id: 6, name: 'Vintage Glass Decanter', price: 11, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop' },
+  { id: 7, name: 'Woven Storage Basket', price: 9, image: 'https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=400&h=500&fit=crop' },
+  { id: 8, name: 'Terracotta Plant Pot', price: 7, image: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=500&fit=crop' },
 ]
+
+// Double the products for seamless scroll
+const SCROLL_PRODUCTS = [...PRODUCTS, ...PRODUCTS]
 
 export default function Home() {
   const [email, setEmail] = useState('')
@@ -53,7 +56,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* Decorative elements */}
             <div className="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] uppercase tracking-widest text-black/30">
               <span>Bow, London</span>
               <span>Curated Finds</span>
@@ -62,10 +64,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Collection */}
-      <section id="collection" className="px-6 py-16 md:py-20 border-t border-black/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-end justify-between mb-12 md:mb-16">
+      {/* Scrolling Products */}
+      <section className="py-12 border-t border-black/5 overflow-hidden">
+        <div className="px-6 mb-8">
+          <div className="max-w-6xl mx-auto flex items-end justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-black/40 mb-3">Latest Arrivals</p>
               <h3 
@@ -77,35 +79,38 @@ export default function Home() {
             </div>
             <span className="text-sm text-black/40 pb-1">£5 — £15</span>
           </div>
+        </div>
 
-          {/* Product Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 md:gap-x-6 md:gap-y-12">
-            {PRODUCTS.map((product) => (
-              <div key={product.id} className="group cursor-pointer">
-                {/* Product Image Placeholder */}
+        {/* Scrolling Row */}
+        <div className="relative">
+          <div 
+            className="flex gap-6 animate-scroll hover:pause"
+            style={{
+              width: 'max-content',
+              animation: 'scroll 40s linear infinite',
+            }}
+          >
+            {SCROLL_PRODUCTS.map((product, idx) => (
+              <div 
+                key={`${product.id}-${idx}`} 
+                className="group cursor-pointer w-[280px] md:w-[320px] flex-shrink-0"
+              >
+                {/* Product Image */}
                 <div 
-                  className="aspect-[4/5] bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mb-4 overflow-hidden relative"
-                  style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+                  className="aspect-[4/5] rounded-xl mb-4 overflow-hidden relative bg-gray-100"
+                  style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}
                 >
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-white/50 flex items-center justify-center">
-                        <svg className="w-8 h-8 text-black/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                          <rect x="3" y="3" width="18" height="18" rx="2" />
-                          <circle cx="8.5" cy="8.5" r="1.5" />
-                          <path d="M21 15l-5-5L5 21" />
-                        </svg>
-                      </div>
-                      <p className="text-[10px] uppercase tracking-widest text-black/30">Photo coming</p>
-                    </div>
-                  </div>
-                  {/* Hover overlay */}
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
                 </div>
                 
                 {/* Product Info */}
-                <p className="text-[10px] uppercase tracking-[0.2em] text-black/40 mb-1.5">{product.category}</p>
-                <h4 className="text-sm md:text-base text-black mb-1.5 group-hover:text-black/70 transition leading-snug">
+                <h4 className="text-sm md:text-base text-black mb-1 group-hover:text-black/70 transition leading-snug">
                   {product.name}
                 </h4>
                 <p className="text-sm font-medium text-black/80">£{product.price}</p>
@@ -113,10 +118,82 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+      </section>
+
+      {/* Instagram Feed */}
+      <section className="py-16 md:py-20 border-t border-black/5 bg-gradient-to-b from-white to-gray-50/30">
+        <div className="px-6 max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-xs uppercase tracking-[0.3em] text-black/40 mb-3">Follow Along</p>
+            <h3 
+              className="text-2xl md:text-3xl text-black mb-4"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              @bohemiaromanroad
+            </h3>
+            <a 
+              href="https://instagram.com/bohemiaromanroad" 
+              target="_blank" 
+              rel="noopener"
+              className="inline-flex items-center gap-2 text-sm text-black/60 hover:text-black transition"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              View on Instagram
+            </a>
+          </div>
+
+          {/* Instagram Grid */}
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-3">
+            {[1,2,3,4,5,6].map((i) => (
+              <a 
+                key={i}
+                href="https://instagram.com/bohemiaromanroad"
+                target="_blank"
+                rel="noopener"
+                className="aspect-square relative group overflow-hidden rounded-lg bg-gray-100"
+              >
+                <img 
+                  src={`https://images.unsplash.com/photo-${[
+                    '1558618666-fcd25c85cd64',
+                    '1513519245088-0e12902e5a38',
+                    '1578749556568-bc2c40e68b61',
+                    '1602028915047-37269d1a73f7',
+                    '1610701596007-11502861dcfa',
+                    '1578662996442-48f60103fc96'
+                  ][i-1]}?w=300&h=300&fit=crop`}
+                  alt={`Instagram post ${i}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* About */}
-      <section className="px-6 py-16 md:py-24 border-t border-black/5 bg-gradient-to-b from-white to-gray-50/50">
+      <section className="px-6 py-16 md:py-24 border-t border-black/5">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xs uppercase tracking-[0.3em] text-black/40 mb-4">Our Story</p>
           <h3 
@@ -137,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* Visit */}
-      <section className="px-6 py-16 border-t border-black/5">
+      <section className="px-6 py-16 border-t border-black/5 bg-gradient-to-b from-white to-gray-50/30">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -151,19 +228,7 @@ export default function Home() {
               <div className="space-y-3 text-sm text-black/60">
                 <p>Monday — Saturday: 10am — 6pm</p>
                 <p>Sunday: 11am — 4pm</p>
-                <p className="pt-2">Follow us for new arrivals</p>
               </div>
-              <a 
-                href="https://instagram.com/bohemiaromanroad" 
-                target="_blank" 
-                rel="noopener"
-                className="inline-flex items-center gap-2 mt-6 text-sm text-black/60 hover:text-black transition"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                @bohemiaromanroad
-              </a>
             </div>
             <div className="aspect-[4/3] bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl flex items-center justify-center">
               <p className="text-[10px] uppercase tracking-widest text-black/30">Map coming soon</p>
