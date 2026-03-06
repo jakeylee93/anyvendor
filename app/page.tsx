@@ -165,12 +165,12 @@ export default function Home() {
           >
             <div
               ref={chatRef}
-              className="overflow-y-auto px-6 py-5"
+              className="overflow-y-auto px-5 py-5"
               style={{ maxHeight: '280px' }}
             >
               <div className="space-y-5">
                 {messages.map((msg, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex items-start gap-3.5">
                     {msg.role === 'assistant' ? <MargaritaAvatar /> : <UserAvatar />}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2 mb-1">
@@ -186,7 +186,7 @@ export default function Home() {
                   </div>
                 ))}
                 {loading && (
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3.5">
                     <MargaritaAvatar />
                     <div className="flex-1">
                       <div className="flex items-baseline gap-2 mb-1">
