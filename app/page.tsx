@@ -94,11 +94,12 @@ export default function Home() {
           </span>
         </h1>
 
-        {/* Chat messages */}
+        {/* Chat messages — compact, scrollable */}
         {messages.length > 0 && (
           <div
             ref={chatRef}
-            className="w-full max-h-[35vh] overflow-y-auto space-y-4"
+            className="w-full overflow-y-auto space-y-5"
+            style={{ maxHeight: '200px', maxWidth: '480px' }}
           >
             {messages.map((msg, i) => (
               <div
@@ -106,7 +107,7 @@ export default function Home() {
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] px-5 py-3.5 text-[15px] leading-relaxed ${
+                  className={`max-w-[75%] px-4 py-3 text-[14px] leading-relaxed ${
                     msg.role === 'user'
                       ? 'bg-black text-white rounded-2xl rounded-br-md'
                       : 'bg-gray-100 text-black rounded-2xl rounded-bl-md'

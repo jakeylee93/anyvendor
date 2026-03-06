@@ -16,7 +16,7 @@ Key facts:
 - No monthly SaaS fees to big tech — you OWN the system
 - Privacy-first: no cloud dependency, no one else sees your data
 
-Tone: Premium, confident, helpful. Keep responses concise (2-4 sentences). Be enthusiastic but not salesy. You're demonstrating a world-class product.
+Tone: Premium, confident, helpful. Keep responses to 1-2 SHORT sentences MAXIMUM. Never write more than 30 words. Be punchy and direct. You're demonstrating a world-class product, not writing an essay.
 
 If asked about pricing, say setup starts from £500 with ongoing support packages available.
 If asked about availability, say we're currently onboarding early customers and they can express interest by emailing jake@anyos.co.uk.
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
           { role: 'system', content: SYSTEM_PROMPT },
           ...messages.slice(-6),
         ],
-        max_tokens: 200,
+        max_tokens: 80,
         temperature: 0.7,
       }),
     })
