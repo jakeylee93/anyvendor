@@ -680,12 +680,30 @@ body {
 .tag.clickable {
   cursor: pointer;
   transition: all 0.2s;
+  border: 1.5px solid #6366f1;
+  color: #6366f1;
+  font-weight: 600;
+  position: relative;
+  padding-right: 22px;
 }
-.tag.clickable:hover {
+.tag.clickable::after {
+  content: '+';
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.tag.clickable:hover, .tag.clickable:active {
   background: #6366f1;
   color: white;
   border-color: #6366f1;
   transform: translateY(-1px);
+}
+.tag.clickable:active::after {
+  color: white;
 }
 .tag-popup-overlay {
   position: fixed;
