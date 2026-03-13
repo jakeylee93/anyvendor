@@ -130,7 +130,7 @@ html {
   width: 100%;
   min-height: 100%;
   padding: 2.5vh 5vw 0 5vw;
-  padding-bottom: 80px; /* space for fixed bottom bar */
+  padding-bottom: 150px; /* space for fixed bottom bar */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -303,7 +303,7 @@ html {
 .key-stat {
   padding: 12px 14px;
   border-radius: 8px;
-  margin-top: auto;
+  margin-top: 8px;
 }
 .key-stat p {
   font-size: clamp(10px, 1.1vw, 14px);
