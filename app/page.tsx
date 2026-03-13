@@ -87,17 +87,17 @@ function FloatingLogos() {
   const [items] = useState(() => {
     // Shuffle all logos
     const shuffled = [...ALL_LOGOS].sort(() => Math.random() - 0.5)
-    // Pick 15 logos, spread evenly across 15 columns with random offset
-    const count = 15
-    const colWidth = 90 / count // ~6% each
+    // 30 logo slots — ensures ~15 always visible with no gaps
+    const count = 30
+    const colWidth = 92 / count
     return Array.from({ length: count }, (_, i) => {
-      const baseLeft = 3 + i * colWidth // evenly spaced columns
-      const jitter = (Math.random() - 0.5) * colWidth * 0.6 // slight random offset within column
+      const baseLeft = 2 + i * colWidth
+      const jitter = (Math.random() - 0.5) * colWidth * 0.5
       return {
         src: `/logos/icon-${shuffled[i % shuffled.length]}.svg`,
-        left: `${Math.max(2, Math.min(94, baseLeft + jitter))}%`,
-        delay: `${-(Math.random() * 22)}s`, // random start point in the cycle
-        duration: `${20 + Math.random() * 8}s`, // 20-28s — slight speed variation
+        left: `${Math.max(1, Math.min(95, baseLeft + jitter))}%`,
+        delay: `${-(Math.random() * 14)}s`, // spread across 14s of a ~14s cycle
+        duration: `${12 + Math.random() * 4}s`, // faster: 12-16s
       }
     })
   })
