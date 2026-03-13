@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of the Web — anyOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 14mm 16mm 12mm 16mm;
+            margin: 0 auto;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .page:last-child { page-break-after: auto; }
+
+        /* Brand Header — single row, no overlap */
+        .brand-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5mm;
+            padding-bottom: 3mm;
+            border-bottom: 1.5px solid #e5e5e5;
+            flex-shrink: 0;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.03em;
+        }
+        .logo span { color: #6366f1; }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 4mm;
+        }
+        .era-badge {
+            font-size: 7pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #999;
+        }
+        .position-label {
+            padding: 2mm 4mm;
+            border-radius: 50px;
+            font-size: 6.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: white;
+        }
+        .position-label.past { background: #9ca3af; }
+        .position-label.grew { background: #3b82f6; }
+        .position-label.recent { background: #8b5cf6; }
+        .position-label.now { background: #059669; }
+        .position-label.future { background: #f59e0b; }
+        .position-label.urgent { background: #dc2626; }
+
+        /* Giant Number */
+        .era-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 80pt;
+            font-weight: 700;
+            line-height: 0.8;
+            margin-bottom: -8mm;
+            position: relative;
+            z-index: 0;
+            flex-shrink: 0;
+        }
+
+        /* Content */
+        .era-content {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .era-subtitle {
+            font-size: 9pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: 1.5mm;
+        }
+        .era-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1mm;
+            line-height: 1.05;
+        }
+        .era-period {
+            font-size: 9pt;
+            color: #888;
+            font-weight: 500;
+            margin-bottom: 4mm;
+        }
+        .description {
+            font-size: 9pt;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 4mm;
+        }
+
+        /* Feature Grid */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3mm;
+            margin-bottom: 4mm;
+        }
+        .feature-box {
+            padding: 3.5mm 4mm;
+            border-radius: 5px;
+            border: 1px solid #e8e8e8;
+        }
+        .feature-top {
+            display: flex;
+            align-items: center;
+            gap: 2.5mm;
+            margin-bottom: 1.5mm;
+        }
+        .icon-wrapper {
+            width: 22px;
+            height: 22px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .icon-wrapper svg {
+            width: 13px;
+            height: 13px;
+        }
+        .feature-box h3 {
+            font-size: 8pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .feature-box p {
+            font-size: 7.5pt;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        /* Tags */
+        .examples-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5mm;
+            margin-bottom: 4mm;
+        }
+        .tag {
+            padding: 1.2mm 3mm;
+            border-radius: 3px;
+            font-size: 7pt;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        /* Key Stat */
+        .key-stat {
+            padding: 3.5mm 4mm;
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+        .key-stat p {
+            font-size: 8pt;
+            font-weight: 600;
+            line-height: 1.45;
+        }
+        .key-stat .stat-sub {
+            font-size: 7.5pt;
+            font-weight: 400;
+            margin-top: 1mm;
+            opacity: 0.8;
+        }
+
+        /* Timeline Footer */
+        .timeline {
+            margin-top: auto;
+            padding-top: 3mm;
+            border-top: 1.5px solid #e5e5e5;
+            flex-shrink: 0;
+        }
+        .timeline-track {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5mm;
+        }
+        .timeline-segment {
+            flex: 1;
+            height: 3px;
+            background: #e5e5e5;
+        }
+        .timeline-segment.filled { background: #6366f1; }
+        .timeline-node {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e5e5e5;
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px #e5e5e5;
+            z-index: 1;
+            flex-shrink: 0;
+        }
+        .timeline-node.active {
+            background: #6366f1;
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1px;
+        }
+        .timeline-labels span {
+            font-size: 6.5pt;
+            color: #bbb;
+            font-weight: 500;
+        }
+        .timeline-labels span.active {
+            color: #6366f1;
+            font-weight: 700;
+        }
+
+        /* ERA COLORS */
+        .web1 .era-number { color: #fef3c7; }
+        .web1 .era-subtitle { color: #b45309; }
+        .web1 .feature-box { background: #fffbeb; border-color: #fde68a; }
+        .web1 .icon-wrapper { background: #fef3c7; }
+        .web1 .icon-wrapper svg { stroke: #b45309; fill: none; }
+        .web1 .tag { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+        .web1 .key-stat { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+
+        .web2 .era-number { color: #dbeafe; }
+        .web2 .era-subtitle { color: #1d4ed8; }
+        .web2 .feature-box { background: #eff6ff; border-color: #bfdbfe; }
+        .web2 .icon-wrapper { background: #dbeafe; }
+        .web2 .icon-wrapper svg { stroke: #1d4ed8; fill: none; }
+        .web2 .tag { background: #eff6ff; color: #1e40af; border-color: #bfdbfe; }
+        .web2 .key-stat { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+
+        .web3 .era-number { color: #ede9fe; }
+        .web3 .era-subtitle { color: #6d28d9; }
+        .web3 .feature-box { background: #f5f3ff; border-color: #ddd6fe; }
+        .web3 .icon-wrapper { background: #ede9fe; }
+        .web3 .icon-wrapper svg { stroke: #6d28d9; fill: none; }
+        .web3 .tag { background: #f5f3ff; color: #5b21b6; border-color: #ddd6fe; }
+        .web3 .key-stat { background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6; }
+
+        .web4 .era-number { color: #d1fae5; }
+        .web4 .era-subtitle { color: #047857; }
+        .web4 .feature-box { background: #ecfdf5; border-color: #a7f3d0; }
+        .web4 .icon-wrapper { background: #d1fae5; }
+        .web4 .icon-wrapper svg { stroke: #047857; fill: none; }
+        .web4 .tag { background: #ecfdf5; color: #065f46; border-color: #a7f3d0; }
+        .web4 .key-stat { background: #065f46; border: none; color: white; }
+        .web4 .key-stat .stat-sub { color: #a7f3d0; }
+
+        .web5 .era-number { color: #fef3c7; }
+        .web5 .era-subtitle { color: #b45309; }
+        .web5 .feature-box { background: #fefce8; border-color: #fde68a; }
+        .web5 .icon-wrapper { background: #fef9c3; }
+        .web5 .icon-wrapper svg { stroke: #a16207; fill: none; }
+        .web5 .tag { background: #fefce8; color: #854d0e; border-color: #fde68a; }
+        .web5 .key-stat { background: #92400e; border: none; color: white; }
+        .web5 .key-stat .stat-sub { color: #fde68a; }
+
+        .page6 .key-stat { background: #dc2626; border: none; color: white; }
+        .page6 .key-stat .stat-sub { color: #fca5a5; }
+        .page6 .feature-box { background: #fef2f2; border-color: #fecaca; }
+        .page6 .icon-wrapper { background: #fee2e2; }
+        .page6 .icon-wrapper svg { stroke: #dc2626; fill: none; }
+
+        /* Page 7 — Journey — Indigo */
+        .page7 .era-number { color: #e0e7ff; }
+        .page7 .era-subtitle { color: #4338ca; }
+        .page7 .feature-box { background: #eef2ff; border-color: #c7d2fe; }
+        .page7 .icon-wrapper { background: #e0e7ff; }
+        .page7 .icon-wrapper svg { stroke: #4338ca; fill: none; }
+        .page7 .key-stat { background: #312e81; border: none; color: white; }
+        .page7 .key-stat .stat-sub { color: #c7d2fe; }
+        .page7 .tag { background: #eef2ff; color: #3730a3; border-color: #c7d2fe; }
+
+        /* Page 8 — anyOS — Teal */
+        .page8 .era-number { color: #ccfbf1; }
+        .page8 .era-subtitle { color: #0f766e; }
+        .page8 .feature-box { background: #f0fdfa; border-color: #99f6e4; }
+        .page8 .icon-wrapper { background: #ccfbf1; }
+        .page8 .icon-wrapper svg { stroke: #0f766e; fill: none; }
+        .page8 .key-stat { background: #134e4a; border: none; color: white; }
+        .page8 .key-stat .stat-sub { color: #99f6e4; }
+        .page8 .tag { background: #f0fdfa; color: #115e59; border-color: #99f6e4; }
+
+        /* Page 9 — Demo — Cyan */
+        .page9 .era-subtitle { color: #0891b2; }
+        .page9 .feature-box { background: #ecfeff; border-color: #a5f3fc; }
+        .page9 .icon-wrapper { background: #cffafe; }
+        .page9 .icon-wrapper svg { stroke: #0891b2; fill: none; }
+        .page9 .key-stat { background: #164e63; border: none; color: white; }
+        .page9 .key-stat .stat-sub { color: #a5f3fc; }
+
+        /* Page 10 — Results — Rose */
+        .page10 .era-subtitle { color: #be123c; }
+        .page10 .feature-box { background: #fff1f2; border-color: #fecdd3; }
+        .page10 .icon-wrapper { background: #ffe4e6; }
+        .page10 .icon-wrapper svg { stroke: #be123c; fill: none; }
+        .page10 .key-stat { background: #9f1239; border: none; color: white; }
+        .page10 .key-stat .stat-sub { color: #fecdd3; }
+
+        /* Timeline step dots for pages 7-10 */
+        .progress-bar {
+            margin-top: auto;
+            padding-top: 3mm;
+            border-top: 1.5px solid #e5e5e5;
+            flex-shrink: 0;
+        }
+        .progress-dots {
+            display: flex;
+            align-items: center;
+            gap: 2mm;
+            justify-content: center;
+            margin-bottom: 1.5mm;
+        }
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #e5e5e5;
+        }
+        .progress-dot.done { background: #6366f1; }
+        .progress-dot.current { background: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); width: 10px; height: 10px; }
+        .progress-labels {
+            text-align: center;
+            font-size: 6.5pt;
+            color: #aaa;
+        }
+        .progress-labels span { font-weight: 600; color: #6366f1; }
+
+        /* Journey timeline */
+        .journey-timeline {
+            margin: 3mm 0;
+        }
+        .journey-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 3.5mm;
+            padding: 2.5mm 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .journey-row:last-child { border-bottom: none; }
+        .journey-year {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #4338ca;
+            min-width: 14mm;
+            flex-shrink: 0;
+        }
+        .journey-text {
+            font-size: 8pt;
+            color: #444;
+            line-height: 1.45;
+        }
+        .journey-text strong {
+            color: #1a1a1a;
+        }
+
+        /* Demo cards */
+        .demo-card {
+            padding: 4mm;
+            border-radius: 6px;
+            border: 1px solid #e8e8e8;
+            margin-bottom: 3mm;
+        }
+        .demo-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32pt;
+            font-weight: 700;
+            color: #e5e5e5;
+            float: left;
+            line-height: 1;
+            margin-right: 3mm;
+        }
+        .demo-content h3 {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1mm;
+        }
+        .demo-prompt {
+            font-size: 8pt;
+            color: #0891b2;
+            font-style: italic;
+            margin-bottom: 1.5mm;
+            padding: 2mm 3mm;
+            background: #ecfeff;
+            border-radius: 4px;
+            border-left: 3px solid #0891b2;
+        }
+        .demo-result {
+            font-size: 7.5pt;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        /* Comparison rows */
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 3mm;
+        }
+        .compare-header {
+            font-size: 7.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 2.5mm 3.5mm;
+        }
+        .compare-header.old { background: #fef2f2; color: #be123c; }
+        .compare-header.new { background: #ecfdf5; color: #047857; }
+        .compare-cell {
+            padding: 2.5mm 3.5mm;
+            font-size: 8pt;
+            border-top: 1px solid #f0f0f0;
+        }
+        .compare-cell.old { color: #666; }
+        .compare-cell.new { color: #1a1a1a; font-weight: 600; }
+
+        /* Bullet list for page 6 */
+        .stat-list {
+            margin: 3mm 0;
+        }
+        .stat-list .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.5mm 4mm;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-row .company {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .stat-row .detail {
+            font-size: 7.5pt;
+            color: #666;
+        }
+        .stat-row .number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== PAGE 1: WEB 1.0 ===== -->
+<div class="page web1">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Evolution of the Web</div>
+            <div class="position-label past">WHERE IT ALL STARTED</div>
+        </div>
+    </div>
+
+    <div class="era-number">1.0</div>
+
+    <div class="era-content">
+        <div class="era-subtitle">The Read-Only Web</div>
+        <h1 class="era-title">Web 1.0</h1>
+        <div class="era-period">1990 — 2004</div>
+
+        <p class="description">
+            The internet's first chapter. Static HTML pages, dial-up connections, and one-way communication. Websites were digital brochures — you could read them but couldn't interact, post, or share. Building a website required technical knowledge of HTML. There were no templates, no editors, no social features. The web was a library, not a conversation.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+                    <h3>Static Pages</h3>
+                </div>
+                <p>No interactivity. Pages coded by hand in HTML. Updating content meant rewriting code and re-uploading via FTP. No databases, no dynamic content.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <h3>Read-Only</h3>
+                </div>
+                <p>Users were consumers, not creators. No comments, no profiles, no uploads. The publisher controlled everything. One-directional communication.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                    <h3>Dial-Up Connections</h3>
+                </div>
+                <p>56kbps speeds. Pages took minutes to load. Images were rare and tiny. Video was impossible. Broadband didn't become mainstream until the early 2000s.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                    <h3>Web Directories</h3>
+                </div>
+                <p>Before Google (1998), websites were found via curated directories like Yahoo! and DMOZ. You browsed categories, not search results. Discovery was manual.</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">GeoCities</span>
+            <span class="tag">Yahoo!</span>
+            <span class="tag">AltaVista</span>
+            <span class="tag">Netscape</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Dial-Up</span>
+            <span class="tag">FTP</span>
+        </div>
+
+        <div class="key-stat">
+            <p>By 2000, there were ~17 million websites worldwide. Today there are over 1.9 billion.</p>
+            <p class="stat-sub">The entire internet had fewer websites than a single social platform has users today.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+        </div>
+        <div class="timeline-labels">
+            <span class="active">1.0</span>
+            <span>2.0</span>
+            <span>3.0</span>
+            <span>4.0</span>
+            <span>5.0</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 2: WEB 2.0 ===== -->
+<div class="page web2">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Evolution of the Web</div>
+            <div class="position-label grew">WHERE WE GREW UP</div>
+        </div>
+    </div>
+
+    <div class="era-number">2.0</div>
+
+    <div class="era-content">
+        <div class="era-subtitle">The Social Web</div>
+        <h1 class="era-title">Web 2.0</h1>
+        <div class="era-period">2004 — 2018</div>
+
+        <p class="description">
+            The internet became a two-way conversation. Users could read AND write — post, share, comment, create. MySpace (2003) was one of the first platforms where users customised their own page. WordPress democratised website creation. The iPhone (2007) put the internet in everyone's pocket. This era created the "creator economy" and changed how businesses market, sell, and communicate.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h3>User-Generated Content</h3>
+                </div>
+                <p>Anyone could publish. Blogs, videos, photos, reviews. By 2010, 500 million Facebook users were creating content daily. Businesses had to listen, not just broadcast.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                    <h3>Social Networks</h3>
+                </div>
+                <p>MySpace (2003), Facebook (2004), Twitter (2006), Instagram (2010). Human relationships moved online. Marketing shifted from billboards to feeds.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                    <h3>Mobile Revolution</h3>
+                </div>
+                <p>iPhone launched 2007. By 2015, mobile overtook desktop traffic. Apps became the primary internet interface. "There's an app for that" became reality.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+                    <h3>Cloud & SaaS</h3>
+                </div>
+                <p>Software moved online. Google Docs replaced Office for many. Dropbox replaced USB sticks. Monthly subscriptions replaced software boxes.</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">MySpace</span>
+            <span class="tag">Facebook</span>
+            <span class="tag">YouTube</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">Twitter</span>
+            <span class="tag">Instagram</span>
+            <span class="tag">iPhone</span>
+            <span class="tag">Google Docs</span>
+        </div>
+
+        <div class="key-stat">
+            <p>Most businesses today still operate in Web 2.0. Manual emails, WordPress sites, social media managed by humans, one task at a time.</p>
+            <p class="stat-sub">The tools changed, but the workflow didn't. People are still the bottleneck.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+        </div>
+        <div class="timeline-labels">
+            <span>1.0</span>
+            <span class="active">2.0</span>
+            <span>3.0</span>
+            <span>4.0</span>
+            <span>5.0</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 3: WEB 3.0 ===== -->
+<div class="page web3">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Evolution of the Web</div>
+            <div class="position-label recent">THE RECENT PAST</div>
+        </div>
+    </div>
+
+    <div class="era-number">3.0</div>
+
+    <div class="era-content">
+        <div class="era-subtitle">The Decentralised Web</div>
+        <h1 class="era-title">Web 3.0</h1>
+        <div class="era-period">2018 — 2023</div>
+
+        <p class="description">
+            The ownership era. Blockchain promised to decentralise the internet — removing middlemen from finance, art, and digital ownership. Bitcoin went mainstream, NFTs exploded, and DeFi let people lend, borrow, and trade without banks. During 2020's lockdown, many entrepreneurs turned to crypto and automated trading to survive. This era taught a crucial lesson: <strong>software can work while you sleep.</strong>
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+                    <h3>Blockchain Technology</h3>
+                </div>
+                <p>Decentralised ledgers recording transactions across thousands of computers. No single point of failure. Transparent, permanent, tamper-proof records without banks or governments.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                    <h3>Cryptocurrency</h3>
+                </div>
+                <p>Bitcoin launched 2009, went mainstream 2017-2021. Ethereum introduced smart contracts — programmable money that executes agreements automatically when conditions are met.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                    <h3>NFTs & Digital Ownership</h3>
+                </div>
+                <p>Non-Fungible Tokens proved you could own digital assets. While the hype crashed, verifiable digital ownership remains important for the future of media and IP.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                    <h3>Automated Trading & DeFi</h3>
+                </div>
+                <p>Decentralised finance removed banks. Trading bots proved software could generate value 24/7 without humans. This planted the seed: if software can trade, what else can it do?</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">Bitcoin</span>
+            <span class="tag">Ethereum</span>
+            <span class="tag">OpenSea</span>
+            <span class="tag">MetaMask</span>
+            <span class="tag">Uniswap</span>
+            <span class="tag">Smart Contracts</span>
+            <span class="tag">Trading Bots</span>
+        </div>
+
+        <div class="key-stat">
+            <p>Web 3.0 proved software could execute complex tasks autonomously. The next question was inevitable: what if AI could do the same for every business task?</p>
+            <p class="stat-sub">That question led directly to Web 4.0.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+        </div>
+        <div class="timeline-labels">
+            <span>1.0</span>
+            <span>2.0</span>
+            <span class="active">3.0</span>
+            <span>4.0</span>
+            <span>5.0</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 4: WEB 4.0 ===== -->
+<div class="page web4">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Evolution of the Web</div>
+            <div class="position-label now">WHERE WE ARE NOW</div>
+        </div>
+    </div>
+
+    <div class="era-number">4.0</div>
+
+    <div class="era-content">
+        <div class="era-subtitle">The Agentic Web</div>
+        <h1 class="era-title">Web 4.0</h1>
+        <div class="era-period">2023 — Present</div>
+
+        <p class="description">
+            The AI era. ChatGPT launched November 2022 and reached 100 million users in two months — the fastest adoption of any technology in history. Software no longer just displays information — it <strong>acts</strong>. AI agents write emails, build websites, manage projects, and make decisions. Natural language is the new interface. You say what you want, the system executes it.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 14H5a2 2 0 0 0-2 2v2h18v-2a2 2 0 0 0-2-2z"/><line x1="12" y1="10" x2="12" y2="14"/><line x1="9" y1="22" x2="15" y2="22"/><line x1="12" y1="18" x2="12" y2="22"/></svg></div>
+                    <h3>AI Agents</h3>
+                </div>
+                <p>Software that takes initiative. Reads emails, drafts responses, schedules meetings, updates databases, builds code. Not tools you use — assistants that think, learn, execute.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                    <h3>Natural Language Interface</h3>
+                </div>
+                <p>No coding required. No complex software to learn. Type in plain English: "Build me a website" → built. "Email the client" → sent. Conversation is the interface.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                    <h3>Autonomous Automation</h3>
+                </div>
+                <p>Repetitive tasks handled automatically. Invoice processing, email triage, report generation, file conversions, scheduling — all running while your team focuses on creative work.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                    <h3>Total Integration</h3>
+                </div>
+                <p>AI connects all your tools into one system. Email, calendar, project management, accounting, websites, social — unified under one intelligent layer. No more switching between 12 apps.</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">ChatGPT</span>
+            <span class="tag">Claude</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">anyOS</span>
+            <span class="tag">Copilot</span>
+            <span class="tag">Midjourney</span>
+            <span class="tag">AI Agents</span>
+        </div>
+
+        <div class="key-stat">
+            <p>The businesses that adopt Web 4.0 in 2025 will own 2030. The ones that wait will spend the next decade catching up — or won't survive at all.</p>
+            <p class="stat-sub">anyOS brings Web 4.0 to your business — not to replace your team, but to make them unstoppable.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment"></div>
+            <div class="timeline-node"></div>
+        </div>
+        <div class="timeline-labels">
+            <span>1.0</span>
+            <span>2.0</span>
+            <span>3.0</span>
+            <span class="active">4.0</span>
+            <span>5.0</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 5: WEB 5.0 ===== -->
+<div class="page web5">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Evolution of the Web</div>
+            <div class="position-label future">WHAT COMES NEXT?</div>
+        </div>
+    </div>
+
+    <div class="era-number">5.0</div>
+
+    <div class="era-content">
+        <div class="era-subtitle">The Autonomous Web</div>
+        <h1 class="era-title">What Will Web 5.0 Be?</h1>
+        <div class="era-period">The Next Frontier</div>
+
+        <p class="description">
+            Nobody knows exactly when Web 5.0 will arrive or what it will look like. But the trajectory is clear. Each era gave humans more power: reading, then creating, then owning, then automating. Web 5.0 will likely be the era where <strong>AI and humans become equals</strong> — not tools we direct, but partners we collaborate with. Here's what's coming:
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg></div>
+                    <h3>Fully Autonomous Businesses</h3>
+                </div>
+                <p>Entire companies run by 2-3 humans and hundreds of AI agents. AI doesn't assist — it operates. Humans set strategy, AI executes everything else end-to-end.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div>
+                    <h3>AI-to-AI Communication</h3>
+                </div>
+                <p>Your system talks to your client's system directly. Quotes, approvals, scheduling — machines negotiating with machines. No emails, no phone tag, no waiting.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                    <h3>Predictive Operations</h3>
+                </div>
+                <p>AI doesn't wait for problems — it prevents them. Knows you need stock before you run out. Knows a client is unhappy before they complain. Prevention over reaction.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                    <h3>Digital Twins</h3>
+                </div>
+                <p>AI versions of your best employees that work 24/7, trained on their expertise. Your top salesperson's knowledge, available to every new hire instantly.</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">Autonomous Agents</span>
+            <span class="tag">Machine-to-Machine</span>
+            <span class="tag">Predictive AI</span>
+            <span class="tag">Voice-First</span>
+            <span class="tag">Zero-Code</span>
+            <span class="tag">Digital Twins</span>
+            <span class="tag">Hyper-Personalisation</span>
+        </div>
+
+        <div class="key-stat">
+            <p>If Web 4.0 is AI assisting humans, Web 5.0 is AI and humans as true partners. The question is — will your business have mastered Web 4.0 before Web 5.0 arrives?</p>
+            <p class="stat-sub">The gap between early adopters and laggards will become unbridgeable. The time to start is now.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+        </div>
+        <div class="timeline-labels">
+            <span>1.0</span>
+            <span>2.0</span>
+            <span>3.0</span>
+            <span>4.0</span>
+            <span class="active">5.0 — ?</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 6: THE BUSINESS CASE ===== -->
+<div class="page page6">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The Business Case</div>
+            <div class="position-label urgent">ACT NOW</div>
+        </div>
+    </div>
+
+    <div class="era-content" style="flex:1; display:flex; flex-direction:column;">
+        <div style="color: #dc2626; font-size: 9pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 1.5mm;">Why This Can't Wait</div>
+        <h1 class="era-title">The World Is Moving.<br/>Are You?</h1>
+        <div class="era-period" style="margin-bottom: 4mm;">Companies already reshaping around AI — 2024/2025</div>
+
+        <div class="stat-list" style="background: #f9fafb; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 4mm;">
+            <div class="stat-row">
+                <div><span class="company">Spotify</span> <span class="detail">— Music streaming giant</span></div>
+                <div class="number">1,500 jobs cut</div>
+            </div>
+            <div class="stat-row">
+                <div><span class="company">Ocado</span> <span class="detail">— UK grocery tech (AI improved engineering productivity)</span></div>
+                <div class="number">1,500 jobs cut</div>
+            </div>
+            <div class="stat-row">
+                <div><span class="company">Duolingo</span> <span class="detail">— 10% contractors replaced, AI graded in reviews</span></div>
+                <div class="number">AI-first policy</div>
+            </div>
+            <div class="stat-row">
+                <div><span class="company">Meta</span> <span class="detail">— Restructured entire teams around AI capabilities</span></div>
+                <div class="number">Thousands cut</div>
+            </div>
+            <div class="stat-row">
+                <div><span class="company">Google</span> <span class="detail">— Shifted capital from headcount to AI infrastructure</span></div>
+                <div class="number">Thousands cut</div>
+            </div>
+            <div class="stat-row">
+                <div><span class="company">Amazon</span> <span class="detail">— Automated warehouse ops, reduced logistics staff</span></div>
+                <div class="number">Thousands cut</div>
+            </div>
+            <div class="stat-row" style="border-bottom: none; background: #fef2f2;">
+                <div><span class="company" style="color: #dc2626;">Total tech layoffs 2025</span></div>
+                <div class="number" style="font-size: 12pt;">100,000+</div>
+            </div>
+        </div>
+
+        <div class="features" style="margin-bottom: 4mm;">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <h3>The Window Is Closing</h3>
+                </div>
+                <p>Early adopters are already 2 years ahead. Every month without AI is a month your competitors gain ground. The learning curve is real — start now or start behind.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                    <h3>The Cost of Waiting</h3>
+                </div>
+                <p>If your average employee costs £35/hr and AI saves them 10 hours/week, that's £350/week per person. For a 10-person team: £14,000/month in recovered time — or £168,000/year.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h3>Enhance, Don't Replace</h3>
+                </div>
+                <p>Big tech is cutting. We're empowering. anyOS makes your existing team faster, smarter, and more productive. Same people, better tools, bigger output.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>First-Mover Advantage</h3>
+                </div>
+                <p>Be the first in your industry to adopt. While competitors are still debating, you're already delivering faster, cheaper, and smarter. Reputation compounds.</p>
+            </div>
+        </div>
+
+        <div class="key-stat">
+            <p>The question isn't whether AI will change your industry. It already is. The only question is whether you'll lead that change — or be left behind by it.</p>
+            <p class="stat-sub">anyOS is your bridge into Web 4.0. One system. One partner. Zero excuses.</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-track">
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+            <div class="timeline-segment filled"></div>
+            <div class="timeline-node active"></div>
+        </div>
+        <div class="timeline-labels">
+            <span>1.0</span>
+            <span>2.0</span>
+            <span>3.0</span>
+            <span>4.0</span>
+            <span class="active" style="color: #dc2626;">YOU ARE HERE</span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 7: HOW I GOT HERE ===== -->
+<div class="page page7">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The anyOS Story</div>
+            <div class="position-label" style="background:#4338ca;">MY JOURNEY</div>
+        </div>
+    </div>
+
+    <div class="era-content" style="flex:1; display:flex; flex-direction:column;">
+        <div class="era-subtitle">20 Years of Building, Learning & Evolving</div>
+        <h1 class="era-title">How I Got Here</h1>
+        <div class="era-period" style="margin-bottom: 4mm;">From MySpace to AI — a self-taught path through every era of the web</div>
+
+        <p class="description">
+            I'm not a developer by trade. I've never had a computer science degree. But I've spent 20 years understanding how the web works — building, breaking, learning. Every era taught me something. And when AI arrived, everything clicked.
+        </p>
+
+        <div class="journey-timeline">
+            <div class="journey-row">
+                <div class="journey-year">2005</div>
+                <div class="journey-text"><strong>MySpace & Freewebs.</strong> Taught myself HTML to customise profiles. Built free sites for friends. First taste of web building — before WordPress, before templates, before drag-and-drop.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2010</div>
+                <div class="journey-text"><strong>WordPress era.</strong> Building real websites for small businesses. Free. Learning by doing. Understood CMS, hosting, domains, SEO — the full stack through experience.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2014</div>
+                <div class="journey-text"><strong>Founded The Bar People.</strong> Built the business from scratch — website, booking system, marketing. Learned that tech isn't separate from business. It IS the business.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2017</div>
+                <div class="journey-text"><strong>Cryptocurrency.</strong> Invested in Bitcoin and Ethereum. Learned blockchain, software integration, and that code can generate value autonomously — 24 hours a day.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2020</div>
+                <div class="journey-text"><strong>Lockdown.</strong> Events industry collapsed overnight. Built automated trading systems to survive. Proved that software + strategy can replace lost income when everything else fails.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2022</div>
+                <div class="journey-text"><strong>ChatGPT Day 1.</strong> Subscribed within a week of launch (Nov 2022). Never cancelled. Immediately saw the potential — this wasn't a chatbot. This was a new operating system for work.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2023–24</div>
+                <div class="journey-text"><strong>50+ AI models tested.</strong> GPT-4, Claude, Gemini, Moonshot, Llama, Mistral, Midjourney, DALL-E, Stable Diffusion. Chat models, code models, image models. Learned what each does best.</div>
+            </div>
+            <div class="journey-row">
+                <div class="journey-year">2025</div>
+                <div class="journey-text"><strong>anyOS.</strong> The synthesis. Multiple AI models orchestrated through one system. Not a tool — an operating system that runs businesses. 6 months of building, testing, refining.</div>
+            </div>
+        </div>
+
+        <div class="key-stat">
+            <p>I can't fluently type code. But I understand every layer — how they connect, how they talk to each other. With AI, I can now build what I've always understood. That's the power.</p>
+            <p class="stat-sub">20 years of understanding. 6 months of building. One system.</p>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-dots">
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot current"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+        </div>
+        <div class="progress-labels">Page <span>7</span> of 10</div>
+    </div>
+</div>
+
+<!-- ===== PAGE 8: WHAT I BUILT ===== -->
+<div class="page page8">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">The anyOS Story</div>
+            <div class="position-label" style="background:#0f766e;">THE SYSTEM</div>
+        </div>
+    </div>
+
+    <div class="era-content" style="flex:1; display:flex; flex-direction:column;">
+        <div class="era-subtitle" style="color:#0f766e;">One System That Runs My Businesses</div>
+        <h1 class="era-title">What I Built — anyOS</h1>
+        <div class="era-period" style="margin-bottom: 4mm;">Hardware + Software + AI + Training = Everything</div>
+
+        <p class="description">
+            anyOS is an AI operating system. Not an app. Not a chatbot. A complete system — hardware delivered, software pre-configured, training included. You type what you need in plain English, and the system executes it. It manages email, builds websites, handles client comms, generates reports, and learns your business over time.
+        </p>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                    <h3>Hardware Delivered</h3>
+                </div>
+                <p>Mac Studio, MacBook Pro, or Mac Mini — pre-configured and ready to run. Arrives at your office, plugs in, and works. No IT department needed.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 14H5a2 2 0 0 0-2 2v2h18v-2a2 2 0 0 0-2-2z"/><line x1="12" y1="10" x2="12" y2="14"/></svg></div>
+                    <h3>Multiple AI Models</h3>
+                </div>
+                <p>Best tool for each job. Strategy, creative, coding, admin — different AI specialists working together under one roof. Like a team that never sleeps.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                    <h3>Memory System</h3>
+                </div>
+                <p>Learns your business. Remembers context, preferences, history, past projects, client details. Gets smarter and more useful every single day.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                    <h3>Full Integration</h3>
+                </div>
+                <p>Email, calendar, databases, websites, project tools, social media — all connected through one system. No more switching between 12 apps.</p>
+            </div>
+        </div>
+
+        <div class="examples-bar">
+            <span class="tag">Email Management</span>
+            <span class="tag">Website Builds</span>
+            <span class="tag">Client Comms</span>
+            <span class="tag">Reports</span>
+            <span class="tag">Scheduling</span>
+            <span class="tag">File Processing</span>
+            <span class="tag">Research</span>
+            <span class="tag">Quoting</span>
+        </div>
+
+        <div class="features" style="margin-bottom: 4mm;">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                    <h3>Cost Control</h3>
+                </div>
+                <p>Every action logged. Compute tracked per user. Monthly caps set. Full transparency on what's being used and what it costs.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>Training Included</h3>
+                </div>
+                <p>I set it up. I train your team. I support you ongoing. You don't need to be technical — just know how to type what you need.</p>
+            </div>
+        </div>
+
+        <div class="key-stat">
+            <p>Real results from my businesses: websites built in under an hour for ~£25. Client emails processed in seconds. Reports generated automatically. Logos designed, quotes calculated, schedules managed.</p>
+            <p class="stat-sub">This isn't theoretical. It's running. Right now. On my desk.</p>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-dots">
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot current"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+        </div>
+        <div class="progress-labels">Page <span>8</span> of 10</div>
+    </div>
+</div>
+
+<!-- ===== PAGE 9: LIVE DEMO ===== -->
+<div class="page page9">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">Live Demonstration</div>
+            <div class="position-label" style="background:#0891b2;">WATCH THIS</div>
+        </div>
+    </div>
+
+    <div class="era-content" style="flex:1; display:flex; flex-direction:column;">
+        <div class="era-subtitle" style="color:#0891b2;">Three Tasks. Real Time. No Tricks.</div>
+        <h1 class="era-title">Let Me Show You</h1>
+        <div class="era-period" style="margin-bottom: 5mm;">Live demonstration — everything you're about to see happens in real time</div>
+
+        <div class="demo-card" style="background: #ecfeff; border-color: #a5f3fc;">
+            <div class="demo-number" style="color: #a5f3fc;">01</div>
+            <div class="demo-content">
+                <h3>Build a Quote Calculator</h3>
+                <div class="demo-prompt">"Build a venue graphics quote calculator with material costs, labour rates, and a client-facing form"</div>
+                <div class="demo-result">
+                    <strong>What happens:</strong> AI writes the code, builds the interface, calculates pricing logic, deploys to a live URL. Functional. Tested. Ready to use.<br/>
+                    <strong>Time:</strong> ~3 minutes &nbsp; | &nbsp; <strong>Cost:</strong> ~£0.50 compute
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="demo-card" style="background: #ecfeff; border-color: #a5f3fc;">
+            <div class="demo-number" style="color: #a5f3fc;">02</div>
+            <div class="demo-content">
+                <h3>Process a Client Email</h3>
+                <div class="demo-prompt">"Email arrived: 'Hi, can you change our phone number on the website to 020 7123 4567?'"</div>
+                <div class="demo-result">
+                    <strong>What happens:</strong> AI reads the email, understands the request, locates the phone number on the website, queues the change, and drafts a confirmation email to the client.<br/>
+                    <strong>Time:</strong> ~10 seconds &nbsp; | &nbsp; <strong>Cost:</strong> fractions of a penny
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="demo-card" style="background: #ecfeff; border-color: #a5f3fc;">
+            <div class="demo-number" style="color: #a5f3fc;">03</div>
+            <div class="demo-content">
+                <h3>Rebuild a Website</h3>
+                <div class="demo-prompt">"Take this client's old website and rebuild it — modern design, mobile-first, fast loading, professional"</div>
+                <div class="demo-result">
+                    <strong>What happens:</strong> AI analyses the existing site, extracts content, designs a new layout, writes all the code, and deploys a fully working website to a live URL.<br/>
+                    <strong>Time:</strong> under 1 hour &nbsp; | &nbsp; <strong>Cost:</strong> ~£25 compute
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="key-stat">
+            <p>Everything you're about to see is real. No pre-built templates. No pre-recorded demos. Just a prompt, a system, and results.</p>
+            <p class="stat-sub">The same system. The same process. Available to every member of your team.</p>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-dots">
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot current"></div>
+            <div class="progress-dot"></div>
+        </div>
+        <div class="progress-labels">Page <span>9</span> of 10</div>
+    </div>
+</div>
+
+<!-- ===== PAGE 10: WHAT JUST HAPPENED ===== -->
+<div class="page page10">
+    <div class="brand-header">
+        <div class="logo">any<span>OS</span></div>
+        <div class="header-right">
+            <div class="era-badge">Demo Results</div>
+            <div class="position-label" style="background:#be123c;">THE NUMBERS</div>
+        </div>
+    </div>
+
+    <div class="era-content" style="flex:1; display:flex; flex-direction:column;">
+        <div class="era-subtitle" style="color:#be123c;">Traditional vs anyOS — Side by Side</div>
+        <h1 class="era-title">What Just Happened</h1>
+        <div class="era-period" style="margin-bottom: 5mm;">The real cost of doing things the old way vs the new way</div>
+
+        <div class="compare-grid">
+            <div class="compare-header old">Traditional Approach</div>
+            <div class="compare-header new">anyOS Approach</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Website rebuild</strong><br/>Brief a developer → 2-4 weeks → £2,000–£5,000</div>
+            <div class="compare-cell new"><strong>Website rebuild</strong><br/>Describe in plain English → 1 hour → ~£25</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Client email change</strong><br/>Find developer → brief → wait → deploy → 1-2 days</div>
+            <div class="compare-cell new"><strong>Client email change</strong><br/>AI reads, understands, changes, confirms → under 1 minute</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Quote calculator</strong><br/>Spec → developer build → test → review → 1-2 weeks</div>
+            <div class="compare-cell new"><strong>Quote calculator</strong><br/>Described in plain English → built live → 3 minutes</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Asset resizing</strong><br/>Designer opens each file → manual resize → 4 hours</div>
+            <div class="compare-cell new"><strong>Asset resizing</strong><br/>"Resize for all platforms" → 4 minutes</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Monthly report</strong><br/>Gather data → compile → format → review → full day</div>
+            <div class="compare-cell new"><strong>Monthly report</strong><br/>Auto-generated from data → ready to review → minutes</div>
+            
+            <div class="compare-cell old" style="border-right: 1px solid #e5e5e5;"><strong>Client research</strong><br/>Google, LinkedIn, read articles → 3 hours</div>
+            <div class="compare-cell new"><strong>Client research</strong><br/>"Research this company" → comprehensive brief → 2 minutes</div>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <h3>Time Saved</h3>
+                </div>
+                <p>Hours become minutes. Days become hours. Weeks become days. Your team reclaims the time they spend on repetitive, low-value work.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-top">
+                    <div class="icon-wrapper"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                    <h3>Money Saved</h3>
+                </div>
+                <p>£25 vs £2,500. Pennies vs pounds. The cost difference isn't marginal — it's transformational. The ROI is measured in weeks, not years.</p>
+            </div>
+        </div>
+
+        <div class="key-stat">
+            <p>That website cost £25 in compute. Not £2,500. Not 2 weeks. Not a developer's salary. One hour. Twenty-five pounds. Same quality. Deployed live.</p>
+            <p class="stat-sub">This is what Web 4.0 looks like in practice. Not theory. Practice.</p>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-dots">
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot done"></div>
+            <div class="progress-dot current"></div>
+        </div>
+        <div class="progress-labels">Page <span>10</span> of 10</div>
+    </div>
+</div>
+
+</body>
+</html>
