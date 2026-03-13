@@ -478,6 +478,23 @@ body {
   max-width: 500px;
   line-height: 1.5;
 }
+.rotating-word-wrapper {
+  display: inline-block;
+  min-width: 120px;
+  text-align: left;
+}
+.rotating-word {
+  display: inline-block;
+  color: #6366f1;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.rotating-word.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* ===== ERA COLORS ===== */
 

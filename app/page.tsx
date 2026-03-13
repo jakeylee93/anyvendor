@@ -72,6 +72,41 @@ function Progress({ page }: { page: number }) {
   )
 }
 
+const ROTATING_WORDS = [
+  'Life',
+  'Business',
+  'Family',
+  'Everything',
+  'Creativity',
+  'Events',
+  'Growth',
+  'Your Team',
+  'Anything',
+  'The Future',
+]
+
+function RotatingWord() {
+  const [index, setIndex] = useState(0)
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setIndex((i) => (i + 1) % ROTATING_WORDS.length)
+        setFade(true)
+      }, 400)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <span className={`rotating-word ${fade ? 'visible' : ''}`}>
+      {ROTATING_WORDS[index]}
+    </span>
+  )
+}
+
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
@@ -181,7 +216,7 @@ export default function Home() {
             </div>
             <div className="title-divider" />
             <div className="title-subtitle">
-              The Evolution of the Web
+              an operating system for <span className="rotating-word-wrapper"><RotatingWord /></span>
             </div>
           </div>
         </div>
