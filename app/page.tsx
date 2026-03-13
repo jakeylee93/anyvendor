@@ -166,7 +166,6 @@ export default function Home() {
               <p className="stat-sub">The entire internet had fewer websites than a single social platform has users today.</p>
             </div>
           </div>
-          <Timeline active={1} />
         </div>
       </SwiperSlide>
 
@@ -224,7 +223,6 @@ export default function Home() {
               <p className="stat-sub">The tools changed, but the workflow didn&apos;t.</p>
             </div>
           </div>
-          <Timeline active={2} />
         </div>
       </SwiperSlide>
 
@@ -282,7 +280,6 @@ export default function Home() {
               <p className="stat-sub">That question led directly to Web 4.0.</p>
             </div>
           </div>
-          <Timeline active={3} />
         </div>
       </SwiperSlide>
 
@@ -340,7 +337,6 @@ export default function Home() {
               <p className="stat-sub">anyOS brings Web 4.0 to your business — not to replace your team, but to make them unstoppable.</p>
             </div>
           </div>
-          <Timeline active={4} />
         </div>
       </SwiperSlide>
 
@@ -398,7 +394,6 @@ export default function Home() {
               <p className="stat-sub">The gap between early adopters and laggards will become unbridgeable. The time to start is now.</p>
             </div>
           </div>
-          <Timeline active={5} />
         </div>
       </SwiperSlide>
 
@@ -468,7 +463,6 @@ export default function Home() {
               <p className="stat-sub">anyOS is your bridge into Web 4.0. One system. One partner. Zero excuses.</p>
             </div>
           </div>
-          <Timeline active={6} />
         </div>
       </SwiperSlide>
 
@@ -509,7 +503,6 @@ export default function Home() {
               <p className="stat-sub">20 years of understanding. 6 months of building. One system.</p>
             </div>
           </div>
-          <Progress page={7} />
         </div>
       </SwiperSlide>
 
@@ -582,7 +575,6 @@ export default function Home() {
               <p className="stat-sub">This isn&apos;t theoretical. It&apos;s running. Right now. On my desk.</p>
             </div>
           </div>
-          <Progress page={8} />
         </div>
       </SwiperSlide>
 
@@ -619,7 +611,6 @@ export default function Home() {
               <p className="stat-sub">The same system. The same process. Available to every member of your team.</p>
             </div>
           </div>
-          <Progress page={9} />
         </div>
       </SwiperSlide>
 
@@ -675,11 +666,17 @@ export default function Home() {
               <p className="stat-sub">This is what Web 4.0 looks like in practice. Not theory. Practice.</p>
             </div>
           </div>
-          <Progress page={10} />
         </div>
       </SwiperSlide>
 
     </Swiper>
+      <div className="bottom-bar">
+        {activeSlide < 6 ? (
+          <Timeline active={activeSlide < 5 ? activeSlide + 1 : 6} />
+        ) : (
+          <Progress page={activeSlide + 1} />
+        )}
+      </div>
     </div>
   )
 }
