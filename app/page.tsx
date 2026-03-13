@@ -363,6 +363,162 @@ const TAG_INFO: Record<string, { title: string; desc: string }> = {
   'Quoting': { title: 'Automated Quoting', desc: 'AI generates quotes based on your pricing rules, client history, and project requirements. Professional, accurate, instant.' },
 }
 
+const DEMO_PROMPTS = [
+  // Hospitality & Events
+  {industry:'🍸 Bar Hire',prompt:'Build a quote calculator for mobile bar packages with staffing, equipment, and drinks pricing',time:'3 min'},
+  {industry:'🍸 Bar Hire',prompt:'Email all confirmed clients for next month with their delivery schedule and parking instructions',time:'30 sec'},
+  {industry:'🍸 Bar Hire',prompt:'Create a cocktail menu PDF with photos, descriptions, and allergen info for the Samsung event',time:'2 min'},
+  {industry:'🎪 Events',prompt:'Find 5 marquee hire companies within 20 miles of Liverpool with availability for March 15',time:'2 min'},
+  {industry:'🎪 Events',prompt:'Build a run sheet for the corporate gala — timings, suppliers, contact numbers, setup checklist',time:'4 min'},
+  {industry:'🎪 Events',prompt:'Compare quotes from three AV suppliers and summarise which offers the best value',time:'1 min'},
+  {industry:'🏨 Hotel',prompt:'Draft a group booking request for 15 rooms near Manchester Central for 3 nights in June',time:'30 sec'},
+  {industry:'🏨 Hotel',prompt:'Create a welcome pack PDF for conference delegates with hotel info, transport links, and agenda',time:'3 min'},
+  {industry:'🍽️ Restaurant',prompt:'Build an online booking system with table management, time slots, and confirmation emails',time:'8 min'},
+  {industry:'🍽️ Restaurant',prompt:'Analyse our Google reviews from the last 6 months — what are customers complaining about most?',time:'2 min'},
+  {industry:'🍽️ Restaurant',prompt:'Create a seasonal menu with costings, margins, and supplier order quantities for 200 covers',time:'5 min'},
+  // Trades & Construction
+  {industry:'🔨 Builder',prompt:'Generate an itemised quote for a loft conversion based on these measurements and materials',time:'2 min'},
+  {industry:'🔨 Builder',prompt:'Chase all outstanding invoices over 30 days — send a polite reminder email to each client',time:'45 sec'},
+  {industry:'🔨 Builder',prompt:'Create a project timeline for the Hackney renovation with dependencies and milestones',time:'3 min'},
+  {industry:'⚡ Electrician',prompt:'Build a certificate template that auto-fills from job details — EICR, EPC, and Part P',time:'5 min'},
+  {industry:'⚡ Electrician',prompt:'Schedule next week\'s jobs, optimise the route between 8 addresses, and send ETAs to clients',time:'1 min'},
+  {industry:'🔧 Plumber',prompt:'Create a parts inventory tracker that alerts me when stock drops below minimum levels',time:'4 min'},
+  {industry:'🔧 Plumber',prompt:'Draft a warranty document for the boiler installation at 42 Maple Road',time:'30 sec'},
+  {industry:'🏗️ Contractor',prompt:'Build a health and safety checklist for the Canary Wharf site based on CDM 2015 regs',time:'3 min'},
+  {industry:'🏗️ Contractor',prompt:'Compare material costs from Jewson, Travis Perkins, and Selco for this timber order',time:'2 min'},
+  // Creative & Design
+  {industry:'🎨 Agency',prompt:'Rebuild this client\'s website — modern, mobile-first, fast loading, professional',time:'45 min'},
+  {industry:'🎨 Agency',prompt:'Resize all 47 campaign assets to Instagram, Facebook, LinkedIn, and Twitter dimensions',time:'4 min'},
+  {industry:'🎨 Agency',prompt:'Research the client\'s competitors and produce a brand positioning report with visual examples',time:'5 min'},
+  {industry:'📸 Photographer',prompt:'Build an online portfolio with galleries, booking form, and package pricing',time:'30 min'},
+  {industry:'📸 Photographer',prompt:'Batch-edit these 200 wedding photos — consistent exposure, colour grading, and crop',time:'8 min'},
+  {industry:'📸 Photographer',prompt:'Send delivery links to 12 clients with their photo galleries and download instructions',time:'1 min'},
+  {industry:'🎬 Video',prompt:'Transcribe this 45-minute interview and create a highlight reel script with timestamps',time:'3 min'},
+  {industry:'🎬 Video',prompt:'Generate social media captions and hashtags for 30 days of video content',time:'2 min'},
+  {industry:'🖨️ Print',prompt:'Create product mockups from flat artwork files — mugs, t-shirts, tote bags, phone cases',time:'5 min'},
+  {industry:'🖨️ Print',prompt:'Build a custom online shop with product uploads, pricing tiers, and Stripe checkout',time:'40 min'},
+  // Professional Services
+  {industry:'⚖️ Law Firm',prompt:'Summarise this 80-page contract and highlight the 5 clauses that need client attention',time:'2 min'},
+  {industry:'⚖️ Law Firm',prompt:'Draft a tenancy agreement for a 2-bed flat in Bow using our standard template with these specific terms',time:'1 min'},
+  {industry:'⚖️ Law Firm',prompt:'Research case law for employer liability in workplace injury claims from the last 3 years',time:'4 min'},
+  {industry:'📊 Accountant',prompt:'Reconcile this bank statement against our Xero records and flag any discrepancies',time:'3 min'},
+  {industry:'📊 Accountant',prompt:'Generate a monthly P&L report from the QuickBooks data and email it to the directors',time:'2 min'},
+  {industry:'📊 Accountant',prompt:'Calculate corporation tax liability for FY25 based on these figures and flag any reliefs we might be missing',time:'3 min'},
+  {industry:'🏢 Recruiter',prompt:'Screen these 150 CVs for the senior developer role and rank the top 10 with reasoning',time:'4 min'},
+  {industry:'🏢 Recruiter',prompt:'Draft personalised outreach messages for 25 candidates on LinkedIn based on their profiles',time:'2 min'},
+  {industry:'💼 Consultant',prompt:'Build a pitch deck for the Q3 strategy review with market data, competitor analysis, and recommendations',time:'15 min'},
+  {industry:'💼 Consultant',prompt:'Prepare meeting notes from this transcript and send action items to each participant',time:'1 min'},
+  // Retail & E-commerce
+  {industry:'🛍️ Retail',prompt:'Build an online store with 50 products, variant options, and integrated Stripe payments',time:'45 min'},
+  {industry:'🛍️ Retail',prompt:'Write product descriptions for 100 items using our brand voice with SEO-optimised titles',time:'8 min'},
+  {industry:'🛍️ Retail',prompt:'Analyse last quarter\'s sales data and recommend which products to discount for the spring sale',time:'3 min'},
+  {industry:'🛍️ Retail',prompt:'Set up automated reorder alerts when any product drops below 10 units in stock',time:'5 min'},
+  {industry:'👕 Fashion',prompt:'Create a lookbook PDF from these product photos with prices, sizes, and order codes',time:'5 min'},
+  {industry:'👕 Fashion',prompt:'Research trending colours and styles for AW26 from Vogue, WGSN, and Pantone reports',time:'4 min'},
+  {industry:'🧴 Beauty',prompt:'Build a subscription box configurator where customers choose 5 items from our catalogue',time:'20 min'},
+  {industry:'🧴 Beauty',prompt:'Create ingredient lists and compliance labels for our new skincare range',time:'6 min'},
+  // Health & Fitness
+  {industry:'💪 Gym',prompt:'Build a member booking system for classes with capacity limits and automated waitlists',time:'15 min'},
+  {industry:'💪 Gym',prompt:'Generate a 12-week training programme for a client based on their goals and fitness test results',time:'2 min'},
+  {industry:'💪 Gym',prompt:'Send renewal reminders to all members whose subscriptions expire in the next 14 days',time:'30 sec'},
+  {industry:'🧘 Wellness',prompt:'Create an online booking page for therapy sessions with practitioner availability and payments',time:'12 min'},
+  {industry:'🧘 Wellness',prompt:'Draft aftercare instructions for each of our 8 treatment types as downloadable PDFs',time:'4 min'},
+  {industry:'🦷 Dental',prompt:'Send appointment reminders to all patients booked for next week with prep instructions',time:'30 sec'},
+  {industry:'🦷 Dental',prompt:'Build a patient intake form that saves to our database and flags allergies automatically',time:'8 min'},
+  // Property & Real Estate
+  {industry:'🏠 Estate Agent',prompt:'Create property listings from these photos and floor plans with descriptions and EPC ratings',time:'3 min'},
+  {industry:'🏠 Estate Agent',prompt:'Build a property search website with filters for price, location, bedrooms, and property type',time:'40 min'},
+  {industry:'🏠 Estate Agent',prompt:'Email all registered buyers whose criteria match this new listing that just came on the market',time:'30 sec'},
+  {industry:'🏠 Landlord',prompt:'Generate a rent statement for all 12 properties for the tax year with income and expense breakdowns',time:'3 min'},
+  {industry:'🏠 Landlord',prompt:'Draft a Section 21 notice for the tenant at Flat 3 and check it meets current legal requirements',time:'1 min'},
+  {industry:'🏠 Landlord',prompt:'Schedule gas safety inspections for all properties and send appointment confirmations to tenants',time:'2 min'},
+  // Automotive
+  {industry:'🚗 Garage',prompt:'Build an MOT reminder system that texts customers 4 weeks before their MOT expires',time:'5 min'},
+  {industry:'🚗 Garage',prompt:'Create a diagnostic report template that auto-fills from vehicle reg lookup',time:'4 min'},
+  {industry:'🚗 Garage',prompt:'Quote for brake pad replacement on a 2019 BMW 320d — parts cost, labour, and VAT',time:'30 sec'},
+  {industry:'🚕 Taxi',prompt:'Build a booking system with fare estimates, driver assignment, and live tracking',time:'30 min'},
+  {industry:'🚕 Taxi',prompt:'Generate weekly driver earnings reports with mileage, fares, and commission breakdowns',time:'2 min'},
+  // Education & Training
+  {industry:'📚 Tutor',prompt:'Create a 10-week GCSE Maths revision plan tailored to this student\'s mock exam results',time:'3 min'},
+  {industry:'📚 Tutor',prompt:'Build an online homework portal where students submit work and I leave feedback',time:'15 min'},
+  {industry:'🎓 Training',prompt:'Convert this 3-hour workshop into an online course with modules, quizzes, and certificates',time:'20 min'},
+  {industry:'🎓 Training',prompt:'Generate CPD certificates for all 45 attendees of today\'s fire safety training',time:'1 min'},
+  // Food & Drink
+  {industry:'☕ Café',prompt:'Build an online ordering system with our menu, dietary filters, and collection time slots',time:'20 min'},
+  {industry:'☕ Café',prompt:'Calculate food costs for our new brunch menu and flag any items below 65% margin',time:'3 min'},
+  {industry:'🍕 Takeaway',prompt:'Set up automated order confirmations via SMS with estimated delivery times',time:'5 min'},
+  {industry:'🍕 Takeaway',prompt:'Analyse our Deliveroo and Uber Eats data — which items sell best, worst margins, peak hours',time:'3 min'},
+  {industry:'🍺 Brewery',prompt:'Design tap badges and pump clip artwork for our 4 core beers with brand-consistent styling',time:'6 min'},
+  {industry:'🍺 Brewery',prompt:'Build a stockist map showing all pubs and shops that carry our beers',time:'10 min'},
+  // Marketing & Sales
+  {industry:'📢 Marketing',prompt:'Write a 30-day social media calendar with captions, hashtags, and posting times for Instagram and LinkedIn',time:'5 min'},
+  {industry:'📢 Marketing',prompt:'Analyse our website traffic and create a report showing where visitors drop off and why',time:'3 min'},
+  {industry:'📢 Marketing',prompt:'A/B test two email subject lines across our subscriber list and report which performed better',time:'4 min'},
+  {industry:'📧 Email',prompt:'Design and code an HTML email template that matches our brand guidelines',time:'8 min'},
+  {industry:'📧 Email',prompt:'Segment our mailing list by purchase history and send targeted offers to each group',time:'3 min'},
+  {industry:'📈 SEO',prompt:'Audit this website for technical SEO issues and create a prioritised fix list',time:'5 min'},
+  {industry:'📈 SEO',prompt:'Research keywords for "mobile bar hire London" and suggest content to rank for each',time:'3 min'},
+  // Finance & Insurance
+  {industry:'🏦 Finance',prompt:'Build a loan comparison calculator that shows monthly payments, total interest, and APR for different terms',time:'5 min'},
+  {industry:'🏦 Finance',prompt:'Generate a cash flow forecast for the next 12 months based on current income and committed costs',time:'3 min'},
+  {industry:'🛡️ Insurance',prompt:'Compare business insurance quotes from 5 providers and summarise coverage differences',time:'4 min'},
+  {industry:'🛡️ Insurance',prompt:'Create a claims tracking dashboard that shows status, documents, and next actions for each claim',time:'10 min'},
+  // Cleaning & Facilities
+  {industry:'🧹 Cleaning',prompt:'Build a job scheduling system with recurring bookings, staff assignments, and client notifications',time:'15 min'},
+  {industry:'🧹 Cleaning',prompt:'Generate a monthly invoice batch for all 30 regular commercial clients',time:'2 min'},
+  {industry:'🧹 Cleaning',prompt:'Create a quality checklist app that cleaners complete on-site with photo evidence',time:'10 min'},
+  // IT & Tech
+  {industry:'💻 IT Support',prompt:'Build a ticketing system where clients submit issues and get automated priority assignments',time:'15 min'},
+  {industry:'💻 IT Support',prompt:'Generate a network audit report for this client showing devices, security status, and recommendations',time:'5 min'},
+  {industry:'💻 IT Support',prompt:'Draft an SLA document for our managed services package with response time guarantees',time:'3 min'},
+  {industry:'🌐 Web Dev',prompt:'Migrate this WordPress site to Next.js — extract all content, rebuild the design, deploy to Vercel',time:'1 hr'},
+  {industry:'🌐 Web Dev',prompt:'Set up a CI/CD pipeline with automated testing, staging previews, and production deployment',time:'10 min'},
+  // Logistics & Transport
+  {industry:'🚛 Logistics',prompt:'Optimise delivery routes for 25 drops across London minimising mileage and time',time:'2 min'},
+  {industry:'🚛 Logistics',prompt:'Build a shipment tracking dashboard showing status, location, and estimated delivery for all active orders',time:'15 min'},
+  {industry:'🚐 Removals',prompt:'Generate a quote based on property size, distance, and packing requirements',time:'1 min'},
+  {industry:'🚐 Removals',prompt:'Create a moving day checklist for the client with timeline, parking permits needed, and utility contacts',time:'2 min'},
+  // Agriculture & Outdoors
+  {industry:'🌱 Garden',prompt:'Build a client portal where customers can see scheduled visits, photos of work done, and invoices',time:'20 min'},
+  {industry:'🌱 Garden',prompt:'Create a seasonal maintenance plan for 40 commercial properties with task schedules',time:'5 min'},
+  {industry:'🐕 Pet Care',prompt:'Build an online booking system for dog walking with route preferences and real-time GPS updates',time:'15 min'},
+  {industry:'🐕 Pet Care',prompt:'Send all clients a Christmas card email with a photo of their pet from our collection',time:'2 min'},
+  // Music & Entertainment
+  {industry:'🎵 DJ',prompt:'Build a booking enquiry form with date checking, package options, and instant quote',time:'8 min'},
+  {industry:'🎵 DJ',prompt:'Create Spotify-style playlists for each of our wedding packages and share links with clients',time:'3 min'},
+  {industry:'🎭 Theatre',prompt:'Build a ticket booking system with seat selection, dynamic pricing, and e-ticket generation',time:'30 min'},
+  {industry:'🎭 Theatre',prompt:'Design a season brochure with show dates, cast info, and synopses from this spreadsheet',time:'8 min'},
+  // Charity & Non-profit
+  {industry:'❤️ Charity',prompt:'Build a donation page with Gift Aid declaration, recurring options, and thank you emails',time:'10 min'},
+  {industry:'❤️ Charity',prompt:'Generate our annual impact report from programme data with charts, stories, and financials',time:'15 min'},
+  {industry:'❤️ Charity',prompt:'Create volunteer shift schedules for 60 people across 3 locations for the summer festival',time:'3 min'},
+  // Manufacturing
+  {industry:'🏭 Factory',prompt:'Build a production tracking dashboard showing output, defect rates, and downtime per line',time:'15 min'},
+  {industry:'🏭 Factory',prompt:'Create quality control checklists for each product line with pass/fail criteria and photo capture',time:'5 min'},
+  {industry:'🏭 Factory',prompt:'Calculate raw material requirements for next month\'s orders and generate purchase orders',time:'4 min'},
+  // General / Any Business
+  {industry:'📋 Any',prompt:'Write a business plan for investor presentation with financials, market analysis, and growth strategy',time:'20 min'},
+  {industry:'📋 Any',prompt:'Create an employee handbook covering policies, procedures, and company values',time:'15 min'},
+  {industry:'📋 Any',prompt:'Build a CRM dashboard that tracks leads, deals, and client interactions in one place',time:'25 min'},
+  {industry:'📋 Any',prompt:'Set up automated birthday emails to all clients with a personalised discount code',time:'3 min'},
+  {industry:'📋 Any',prompt:'Record, transcribe, and summarise today\'s team meeting, then email action points to each person',time:'2 min'},
+  {industry:'📋 Any',prompt:'Design business cards, letterheads, and email signatures that match our brand guidelines',time:'5 min'},
+  {industry:'📋 Any',prompt:'Create an onboarding checklist for new employees with tasks, deadlines, and document uploads',time:'4 min'},
+  {industry:'📋 Any',prompt:'Build a customer feedback survey, distribute it by email, and analyse results with charts',time:'8 min'},
+  {industry:'📋 Any',prompt:'Generate a competitor analysis comparing pricing, features, and market positioning',time:'5 min'},
+  {industry:'📋 Any',prompt:'Set up a password manager vault for the team with shared credentials organised by category',time:'3 min'},
+  {industry:'📋 Any',prompt:'Write 12 blog posts for our website optimised for our target keywords',time:'15 min'},
+  {industry:'📋 Any',prompt:'Create a knowledge base with searchable FAQs, how-to guides, and troubleshooting steps',time:'20 min'},
+  {industry:'📋 Any',prompt:'Automate our weekly status report — pull data from Trello, Slack, and Google Sheets into one document',time:'5 min'},
+  {industry:'📋 Any',prompt:'Build a staff rota system with shift swapping, availability, and automatic conflict detection',time:'15 min'},
+  {industry:'📋 Any',prompt:'Calculate our carbon footprint from utility bills and travel data, produce an ESG summary',time:'5 min'},
+  {industry:'📋 Any',prompt:'Draft terms and conditions for our website based on UK consumer law requirements',time:'3 min'},
+  {industry:'📋 Any',prompt:'Set up Google Analytics, create a custom dashboard, and schedule weekly email reports',time:'5 min'},
+  {industry:'📋 Any',prompt:'Translate our product descriptions into French, German, Spanish, and Italian',time:'3 min'},
+  {industry:'📋 Any',prompt:'Create a branded PowerPoint template with layouts for title, content, comparison, and data slides',time:'5 min'},
+  {industry:'📋 Any',prompt:'Process 500 expense receipts — extract amounts, categorise, and produce a summary spreadsheet',time:'8 min'},
+]
+
 const ROTATING_WORDS = [
   'Life',
   'Business',
@@ -1089,7 +1245,7 @@ export default function Home() {
 
       {/* ===== SLIDE 10: LIVE DEMO ===== */}
       <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
-        <div className="slide-page page9">
+        <div className="slide-page page9" style={{display:'flex',flexDirection:'column',height:'100%'}}>
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
             <div className="header-right">
@@ -1097,25 +1253,32 @@ export default function Home() {
               <div className="position-label" style={{background:'#0891b2'}}>WATCH THIS</div>
             </div>
           </div>
-          <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
-            <div className="era-subtitle" style={{color:'#0891b2'}}>Three Tasks. Real Time. No Tricks.</div>
-            <h1 className="era-title">Live Demo</h1>
-            <div className="era-period" style={{marginBottom:'2vh'}}>Live demonstration — everything you&apos;re about to see happens in real time</div>
-            {[
-              {num:'01',title:'Build a Quote Calculator',prompt:'"Build a venue graphics quote calculator with material costs, labour rates, and a client-facing form"',result:'AI writes the code, builds the interface, calculates pricing logic, deploys to a live URL.',time:'~3 minutes',cost:'~£0.50 compute'},
-              {num:'02',title:'Process a Client Email',prompt:'"Email arrived: \'Hi, can you change our phone number on the website to 020 7123 4567?\'"',result:'AI reads the email, understands the request, locates the phone number, queues the change, drafts a confirmation.',time:'~10 seconds',cost:'fractions of a penny'},
-              {num:'03',title:'Rebuild a Website',prompt:'"Take this client\'s old website and rebuild it — modern design, mobile-first, fast loading, professional"',result:'AI analyses the existing site, extracts content, designs a new layout, writes all the code, deploys live.',time:'under 1 hour',cost:'~£25 compute'},
-            ].map(d => (
-              <div key={d.num} className="demo-card" style={{background:'#ecfeff',borderColor:'#a5f3fc'}}>
-                <div className="demo-number" style={{color:'#a5f3fc'}}>{d.num}</div>
-                <div className="demo-content">
-                  <h3>{d.title}</h3>
-                  <div className="demo-prompt">{d.prompt}</div>
-                  <div className="demo-result"><strong>What happens:</strong> {d.result}<br/><strong>Time:</strong> {d.time} &nbsp;|&nbsp; <strong>Cost:</strong> {d.cost}</div>
-                </div>
+          <div className="era-subtitle" style={{color:'#0891b2'}}>What Can You Ask anyOS?</div>
+          <h1 className="era-title">Live Demo</h1>
+          <div className="era-period" style={{marginBottom:'1vh'}}>Real prompts. Real businesses. Everything below works today.</div>
+
+          <div className="prompt-scroller">
+            {DEMO_PROMPTS.map((p, i) => (
+              <div key={i} className="prompt-row">
+                <span className="prompt-industry">{p.industry}</span>
+                <span className="prompt-text">&ldquo;{p.prompt}&rdquo;</span>
+                <span className="prompt-time">{p.time}</span>
               </div>
             ))}
-            <div className="key-stat">
+          </div>
+
+          <div className="demo-summary-fixed">
+            <div className="features" style={{marginBottom:'0.8vh'}}>
+              <div className="feature-box" style={{borderColor:'#a5f3fc',background:'#ecfeff'}}>
+                <div className="feature-top"><span className="feature-icon">⏱</span><h3>Time Saved</h3></div>
+                <p>Hours become minutes. Days become hours. Your team focuses on high-value work while AI handles the rest.</p>
+              </div>
+              <div className="feature-box" style={{borderColor:'#a5f3fc',background:'#ecfeff'}}>
+                <div className="feature-top"><span className="feature-icon">💷</span><h3>Money Saved</h3></div>
+                <p>£25 vs £2,500. Pennies vs pounds. The cost difference isn&apos;t marginal — it&apos;s transformational.</p>
+              </div>
+            </div>
+            <div className="key-stat" style={{background:'#0891b2'}}>
               <p>Everything you&apos;re about to see is real. No pre-built templates. No pre-recorded demos. Just a prompt, a system, and results.</p>
               <p className="stat-sub">The same system. The same process. Available to every member of your team.</p>
             </div>
