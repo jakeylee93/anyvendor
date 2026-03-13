@@ -130,7 +130,7 @@ html {
   width: 100%;
   min-height: 100%;
   padding: 2.5vh 5vw 0 5vw;
-  padding-bottom: 60px; /* space for fixed bottom bar */
+  padding-bottom: 80px; /* space for fixed bottom bar */
   display: flex;
   flex-direction: column;
   position: relative;
