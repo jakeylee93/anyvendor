@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { Keyboard, Mousewheel, Pagination } from 'swiper/modules'
+import { Keyboard, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import type { Swiper as SwiperType } from 'swiper'
 import 'swiper/css'
@@ -101,12 +101,11 @@ export default function Home() {
         onNext={() => swiperRef.current?.slideNext()}
       />
       <Swiper
-        modules={[Pagination, Mousewheel, Keyboard]}
+        modules={[Pagination, Keyboard]}
         direction="horizontal"
         slidesPerView={1}
         speed={600}
         keyboard={{ enabled: true }}
-        mousewheel={{ forceToAxis: true }}
         pagination={{ clickable: true }}
         className="presentation-swiper"
         onSwiper={(swiper) => { swiperRef.current = swiper }}

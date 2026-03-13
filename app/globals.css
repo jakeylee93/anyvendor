@@ -9,9 +9,12 @@ body {
   color: #1a1a1a;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+}
+html {
+  overflow: hidden;
 }
 
 /* ===== ROOT ===== */
@@ -105,10 +108,11 @@ body {
   min-height: 0 !important;
 }
 .presentation-swiper .swiper-slide {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
+  overscroll-behavior-y: contain;
+  height: 100% !important;
 }
 .swiper-pagination-bullet {
   background: #6366f1 !important;
