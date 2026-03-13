@@ -10,11 +10,114 @@ const SLIDE_TITLES = [
   'Web 4.0 — The Agentic Web',
   'Web 5.0 — The Autonomous Web',
   'The World Is Moving. Are You?',
-  'How I Got Here',
-  'What I Built — anyOS',
-  'Let Me Show You',
-  'What Just Happened',
+  'What is anyOS?',
+  'How anyOS Works',
+  'Integrations',
+  'Live Demo',
+  'The Results',
 ]
+
+const INTEGRATIONS: Record<string, { name: string; desc: string; how: string; category: string }> = {
+  openai: { name: 'OpenAI', desc: 'AI language models (GPT-4o, DALL-E)', how: 'Powers natural language tasks, content generation, code writing, and image creation.', category: 'AI' },
+  anthropic: { name: 'Anthropic', desc: 'AI assistant (Claude)', how: 'Handles complex reasoning, document analysis, strategy, and long-form writing.', category: 'AI' },
+  googlegemini: { name: 'Google Gemini', desc: 'Multimodal AI model', how: 'Processes text, images, and video. Cross-references data across formats.', category: 'AI' },
+  perplexity: { name: 'Perplexity', desc: 'AI-powered search engine', how: 'Real-time research with cited sources. Replaces hours of manual Googling.', category: 'AI' },
+  huggingface: { name: 'Hugging Face', desc: 'Open-source AI model hub', how: 'Access to thousands of specialised models for niche tasks.', category: 'AI' },
+  ollama: { name: 'Ollama', desc: 'Local AI model runner', how: 'Runs AI models privately on your hardware. No data leaves your office.', category: 'AI' },
+  replicate: { name: 'Replicate', desc: 'Cloud AI model hosting', how: 'Run specialised AI models on-demand — image generation, audio, video.', category: 'AI' },
+  discord: { name: 'Discord', desc: 'Team messaging platform', how: 'AI agents respond to messages, manage channels, send updates to your team.', category: 'Comms' },
+  telegram: { name: 'Telegram', desc: 'Secure messaging', how: 'Send/receive messages, alerts, and files through AI-powered bots.', category: 'Comms' },
+  whatsapp: { name: 'WhatsApp', desc: 'Business messaging', how: 'AI reads and responds to client messages. Automates customer communication.', category: 'Comms' },
+  slack: { name: 'Slack', desc: 'Workplace messaging', how: 'AI agents join channels, answer questions, post updates, manage workflows.', category: 'Comms' },
+  gmail: { name: 'Gmail', desc: 'Email', how: 'Reads, drafts, sends, and organises emails. Flags urgent items automatically.', category: 'Comms' },
+  signal: { name: 'Signal', desc: 'Encrypted messaging', how: 'Secure communication channel for sensitive business discussions.', category: 'Comms' },
+  zoom: { name: 'Zoom', desc: 'Video conferencing', how: 'Schedule meetings, send invites, generate summaries from transcripts.', category: 'Comms' },
+  intercom: { name: 'Intercom', desc: 'Customer support platform', how: 'AI handles first-line customer queries. Escalates complex issues to humans.', category: 'Comms' },
+  googlemeet: { name: 'Google Meet', desc: 'Video meetings', how: 'Schedule and manage video calls through calendar integration.', category: 'Comms' },
+  github: { name: 'GitHub', desc: 'Code hosting & collaboration', how: 'AI writes, commits, and deploys code. Manages repositories and pull requests.', category: 'Dev' },
+  vercel: { name: 'Vercel', desc: 'Web hosting platform', how: 'One-click deployment. Every code change goes live automatically.', category: 'Dev' },
+  docker: { name: 'Docker', desc: 'Container platform', how: 'Packages applications for consistent deployment across any environment.', category: 'Dev' },
+  supabase: { name: 'Supabase', desc: 'Database & auth platform', how: 'Stores data, handles user authentication, real-time subscriptions.', category: 'Dev' },
+  postgresql: { name: 'PostgreSQL', desc: 'Relational database', how: 'Enterprise-grade data storage. Handles complex queries and relationships.', category: 'Dev' },
+  redis: { name: 'Redis', desc: 'In-memory data store', how: 'Ultra-fast caching and real-time data processing.', category: 'Dev' },
+  mongodb: { name: 'MongoDB', desc: 'Document database', how: 'Flexible data storage for unstructured content and rapid prototyping.', category: 'Dev' },
+  cloudflare: { name: 'Cloudflare', desc: 'Web security & CDN', how: 'Protects websites, accelerates loading, manages DNS and SSL.', category: 'Dev' },
+  firebase: { name: 'Firebase', desc: 'Google app platform', how: 'Real-time databases, push notifications, analytics, and hosting.', category: 'Dev' },
+  netlify: { name: 'Netlify', desc: 'Web hosting', how: 'Alternative deployment platform with serverless functions.', category: 'Dev' },
+  digitalocean: { name: 'DigitalOcean', desc: 'Cloud infrastructure', how: 'Scalable servers and databases for production workloads.', category: 'Dev' },
+  render: { name: 'Render', desc: 'Cloud hosting', how: 'Simple deployment for web services, databases, and background jobs.', category: 'Dev' },
+  prisma: { name: 'Prisma', desc: 'Database toolkit', how: 'Type-safe database access. AI generates queries automatically.', category: 'Dev' },
+  kubernetes: { name: 'Kubernetes', desc: 'Container orchestration', how: 'Manages complex multi-service deployments at scale.', category: 'Dev' },
+  nginx: { name: 'NGINX', desc: 'Web server', how: 'High-performance routing, load balancing, and reverse proxy.', category: 'Dev' },
+  python: { name: 'Python', desc: 'Programming language', how: 'AI writes Python for data analysis, automation, scripting, and AI/ML tasks.', category: 'Code' },
+  javascript: { name: 'JavaScript', desc: 'Web programming language', how: 'AI builds interactive web applications and browser-based tools.', category: 'Code' },
+  typescript: { name: 'TypeScript', desc: 'Typed JavaScript', how: 'AI writes type-safe code for reliable, maintainable applications.', category: 'Code' },
+  react: { name: 'React', desc: 'UI framework', how: 'AI builds modern, responsive user interfaces and web apps.', category: 'Code' },
+  nextdotjs: { name: 'Next.js', desc: 'Full-stack React framework', how: 'AI builds complete websites — frontend, backend, API, and deployment.', category: 'Code' },
+  nodedotjs: { name: 'Node.js', desc: 'Server-side JavaScript', how: 'Powers backend services, APIs, and real-time applications.', category: 'Code' },
+  tailwindcss: { name: 'Tailwind CSS', desc: 'Utility CSS framework', how: 'AI designs beautiful, responsive layouts without custom CSS.', category: 'Code' },
+  html5: { name: 'HTML5', desc: 'Web markup', how: 'Foundation of every web page. AI generates semantic, accessible markup.', category: 'Code' },
+  sass: { name: 'Sass', desc: 'CSS preprocessor', how: 'Advanced styling with variables, nesting, and mixins.', category: 'Code' },
+  swift: { name: 'Swift', desc: 'Apple programming language', how: 'AI writes iOS and macOS applications.', category: 'Code' },
+  rust: { name: 'Rust', desc: 'Systems programming language', how: 'High-performance, memory-safe code for critical systems.', category: 'Code' },
+  stripe: { name: 'Stripe', desc: 'Payment processing', how: 'Accepts payments, manages subscriptions, generates invoices automatically.', category: 'Business' },
+  shopify: { name: 'Shopify', desc: 'E-commerce platform', how: 'Manages products, inventory, orders, and storefront — all via AI.', category: 'Business' },
+  paypal: { name: 'PayPal', desc: 'Payment gateway', how: 'Alternative payment processing for customers who prefer PayPal.', category: 'Business' },
+  square: { name: 'Square', desc: 'Point of sale & payments', how: 'In-person and online payment processing with inventory management.', category: 'Business' },
+  xero: { name: 'Xero', desc: 'Accounting software', how: 'AI categorises expenses, reconciles accounts, generates financial reports.', category: 'Business' },
+  quickbooks: { name: 'QuickBooks', desc: 'Accounting software', how: 'Automated bookkeeping, invoicing, and tax preparation.', category: 'Business' },
+  wise: { name: 'Wise', desc: 'International transfers', how: 'Low-cost international payments and multi-currency accounts.', category: 'Business' },
+  woocommerce: { name: 'WooCommerce', desc: 'WordPress e-commerce', how: 'Product management, order processing, and store customisation.', category: 'Business' },
+  googlecalendar: { name: 'Google Calendar', desc: 'Scheduling', how: 'AI manages your diary — books meetings, sends reminders, resolves conflicts.', category: 'Productivity' },
+  googledrive: { name: 'Google Drive', desc: 'Cloud storage', how: 'Organises files, shares documents, manages team access.', category: 'Productivity' },
+  googlesheets: { name: 'Google Sheets', desc: 'Spreadsheets', how: 'AI reads, writes, and analyses spreadsheet data. Generates reports.', category: 'Productivity' },
+  googledocs: { name: 'Google Docs', desc: 'Documents', how: 'AI creates, edits, and formats documents collaboratively.', category: 'Productivity' },
+  notion: { name: 'Notion', desc: 'Workspace & wiki', how: 'AI manages knowledge bases, project documentation, and team wikis.', category: 'Productivity' },
+  trello: { name: 'Trello', desc: 'Project boards', how: 'AI creates cards, moves tasks, updates boards based on project progress.', category: 'Productivity' },
+  asana: { name: 'Asana', desc: 'Project management', how: 'Task assignment, progress tracking, and deadline management.', category: 'Productivity' },
+  airtable: { name: 'Airtable', desc: 'Database/spreadsheet hybrid', how: 'Structured data management with custom views and automations.', category: 'Productivity' },
+  todoist: { name: 'Todoist', desc: 'Task management', how: 'AI creates, prioritises, and tracks tasks across projects.', category: 'Productivity' },
+  clickup: { name: 'ClickUp', desc: 'Project management', how: 'All-in-one workspace for tasks, docs, goals, and time tracking.', category: 'Productivity' },
+  coda: { name: 'Coda', desc: 'All-in-one doc', how: 'Combines documents, spreadsheets, and apps in one platform.', category: 'Productivity' },
+  brave: { name: 'Brave Search', desc: 'Private search engine', how: 'AI searches the web without tracking. Returns clean, ad-free results.', category: 'Search' },
+  googlechrome: { name: 'Google Chrome', desc: 'Web browser', how: 'AI controls browser sessions — navigates, fills forms, extracts data.', category: 'Search' },
+  duckduckgo: { name: 'DuckDuckGo', desc: 'Private search', how: 'Anonymous web search for sensitive research tasks.', category: 'Search' },
+  algolia: { name: 'Algolia', desc: 'Search API', how: 'Lightning-fast search for websites, apps, and internal tools.', category: 'Search' },
+  figma: { name: 'Figma', desc: 'Design tool', how: 'AI extracts designs and converts them into working code.', category: 'Creative' },
+  cloudinary: { name: 'Cloudinary', desc: 'Image/video management', how: 'Automatic image optimisation, resizing, and format conversion.', category: 'Creative' },
+  unsplash: { name: 'Unsplash', desc: 'Stock photography', how: 'AI selects relevant, high-quality images for any project.', category: 'Creative' },
+  ffmpeg: { name: 'FFmpeg', desc: 'Media processing', how: 'Converts, compresses, and edits audio/video files automatically.', category: 'Creative' },
+  hubspot: { name: 'HubSpot', desc: 'CRM & marketing', how: 'AI manages contacts, tracks deals, automates marketing campaigns.', category: 'Marketing' },
+  mailchimp: { name: 'Mailchimp', desc: 'Email marketing', how: 'AI creates campaigns, segments audiences, analyses performance.', category: 'Marketing' },
+  zapier: { name: 'Zapier', desc: 'Automation platform', how: 'Connects 5,000+ apps. AI triggers workflows across your entire stack.', category: 'Tools' },
+  wordpress: { name: 'WordPress', desc: 'Content management', how: 'AI manages content, updates pages, and maintains existing WordPress sites.', category: 'Tools' },
+  dropbox: { name: 'Dropbox', desc: 'File storage', how: 'Cloud file management, sharing, and synchronisation.', category: 'Tools' },
+  linear: { name: 'Linear', desc: 'Issue tracking', how: 'AI creates tickets, tracks bugs, manages product development cycles.', category: 'Tools' },
+  npm: { name: 'npm', desc: 'Package manager', how: 'AI installs and manages software dependencies automatically.', category: 'Tools' },
+  apple: { name: 'Apple', desc: 'macOS ecosystem', how: 'anyOS runs natively on Apple hardware — Mac Studio, MacBook, Mac Mini.', category: 'Tools' },
+  linux: { name: 'Linux', desc: 'Open-source OS', how: 'Full compatibility with Linux servers and cloud deployments.', category: 'Tools' },
+  git: { name: 'Git', desc: 'Version control', how: 'AI tracks all changes, creates branches, manages code history.', category: 'Tools' },
+  visualstudiocode: { name: 'VS Code', desc: 'Code editor', how: 'AI writes and edits code directly in the development environment.', category: 'Tools' },
+  elevenlabs: { name: 'ElevenLabs', desc: 'AI voice synthesis', how: 'Generates natural-sounding speech from text. Multiple voices and languages.', category: 'AI' },
+  pnpm: { name: 'pnpm', desc: 'Fast package manager', how: 'Efficient dependency management for faster builds.', category: 'Tools' },
+  markdown: { name: 'Markdown', desc: 'Text formatting', how: 'AI reads and writes formatted documents, READMEs, and documentation.', category: 'Tools' },
+  json: { name: 'JSON', desc: 'Data format', how: 'AI processes structured data, APIs, and configuration files.', category: 'Tools' },
+  yaml: { name: 'YAML', desc: 'Configuration format', how: 'AI manages deployment configs, CI/CD pipelines, and settings.', category: 'Tools' },
+  sqlite: { name: 'SQLite', desc: 'Lightweight database', how: 'Local data storage for apps, prototypes, and edge computing.', category: 'Dev' },
+  elastic: { name: 'Elasticsearch', desc: 'Search & analytics engine', how: 'Full-text search, log analysis, and real-time data exploration.', category: 'Dev' },
+  grafana: { name: 'Grafana', desc: 'Monitoring dashboards', how: 'Visualises system metrics, performance data, and business KPIs.', category: 'Dev' },
+  googleanalytics: { name: 'Google Analytics', desc: 'Web analytics', how: 'AI analyses traffic patterns, user behaviour, and conversion data.', category: 'Marketing' },
+  postman: { name: 'Postman', desc: 'API testing', how: 'AI tests and debugs API connections between services.', category: 'Dev' },
+  sentry: { name: 'Sentry', desc: 'Error tracking', how: 'Monitors applications for errors and performance issues in real-time.', category: 'Dev' },
+  auth0: { name: 'Auth0', desc: 'Authentication', how: 'Secure user login, SSO, and access management for applications.', category: 'Dev' },
+  letsencrypt: { name: "Let's Encrypt", desc: 'SSL certificates', how: 'Automatic HTTPS security for all websites and services.', category: 'Dev' },
+  cypress: { name: 'Cypress', desc: 'Testing framework', how: 'AI writes and runs automated tests to ensure code quality.', category: 'Dev' },
+  jest: { name: 'Jest', desc: 'JavaScript testing', how: 'Automated unit and integration tests for reliable software.', category: 'Dev' },
+  prettier: { name: 'Prettier', desc: 'Code formatter', how: 'Ensures consistent, clean code style across all projects.', category: 'Dev' },
+  eslint: { name: 'ESLint', desc: 'Code linter', how: 'Catches errors and enforces best practices automatically.', category: 'Dev' },
+  contentful: { name: 'Contentful', desc: 'Headless CMS', how: 'AI manages content across websites, apps, and digital channels.', category: 'Tools' },
+  imgur: { name: 'Imgur', desc: 'Image hosting', how: 'Quick image uploads and sharing for projects and documentation.', category: 'Creative' },
+}
 
 /* ===== TOP NAV BAR ===== */
 function TopNav({ current, total, title, onPrev, onNext }: { current: number; total: number; title: string; onPrev: () => void; onNext: () => void }) {
@@ -244,6 +347,7 @@ function RotatingWord() {
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
+  const [selectedIntegration, setSelectedIntegration] = useState<string|null>(null)
 
   const companies = [
     { name: 'Spotify', detail: '— Music streaming giant', number: '1,500 jobs cut', info: 'Spotify announced workforce reductions during its AI and efficiency push, while expanding internal tooling for personalization, ad optimization, and automated workflows.' },
@@ -259,7 +363,7 @@ export default function Home() {
     window.scrollTo(0, 0)
   }, [])
   const goNext = useCallback(() => {
-    setActiveSlide(s => Math.min(10, s + 1))
+    setActiveSlide(s => Math.min(11, s + 1))
     window.scrollTo(0, 0)
   }, [])
 
@@ -293,7 +397,7 @@ export default function Home() {
     <div className="presentation-root">
       <TopNav
         current={activeSlide + 1}
-        total={11}
+        total={12}
         title={SLIDE_TITLES[activeSlide] || ''}
         onPrev={goPrev}
         onNext={goNext}
@@ -301,10 +405,10 @@ export default function Home() {
       <div className="bottom-bar">
         {activeSlide === 0 ? (
           <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>
-        ) : activeSlide < 7 ? (
+        ) : activeSlide <= 6 ? (
           <Timeline active={activeSlide < 6 ? activeSlide : 6} />
         ) : (
-          <Progress page={activeSlide + 1} total={11} />
+          <Progress page={activeSlide + 1} total={12} />
         )}
       </div>
       <div className="slides-container" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
@@ -682,31 +786,94 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ===== SLIDE 7: HOW I GOT HERE ===== */}
+      {/* ===== SLIDE 7: WHAT IS anyOS ===== */}
       <div className={`slide-snap ${activeSlide === 7 ? "active" : ""}`}>
         <div className="slide-page page7">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
             <div className="header-right">
-              <div className="era-badge">The anyOS Story</div>
-              <div className="position-label" style={{background:'#4338ca'}}>MY JOURNEY</div>
+              <div className="era-badge">The Product</div>
+              <div className="position-label" style={{background:'#4338ca'}}>OVERVIEW</div>
             </div>
           </div>
           <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
-            <div className="era-subtitle">20 Years of Building, Learning &amp; Evolving</div>
-            <h1 className="era-title">How I Got Here</h1>
-            <div className="era-period" style={{marginBottom:'1.5vh'}}>From MySpace to AI — a self-taught path through every era of the web</div>
-            <p className="description">I&apos;m not a developer by trade. I&apos;ve never had a computer science degree. But I&apos;ve spent 20 years understanding how the web works — building, breaking, learning. Every era taught me something. And when AI arrived, everything clicked.</p>
+            <div className="era-subtitle">An AI Operating System for Business</div>
+            <h1 className="era-title">What is anyOS?</h1>
+            <div className="era-period" style={{marginBottom:'1.5vh'}}>Hardware + Software + AI + Support — delivered as one system</div>
+            <p className="description">anyOS is a complete AI operating system. Not an app. Not a chatbot. Pre-configured hardware arrives at your office, plugs in, and connects your entire business — email, calendar, websites, databases, project management, customer communications — through one natural language interface.</p>
+            <div className="features">
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                  <h3>Hardware Delivered</h3>
+                </div>
+                <p>Mac Studio, MacBook Pro, or Mac Mini — pre-configured and ready to run. Arrives at your office, plugs in, works.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                  <h3>Natural Language Interface</h3>
+                </div>
+                <p>No coding required. No complex software to learn. Type what you need in plain English and the system executes it.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 14H5a2 2 0 0 0-2 2v2h18v-2a2 2 0 0 0-2-2z"/><line x1="12" y1="10" x2="12" y2="14"/></svg></div>
+                  <h3>Multiple AI Models</h3>
+                </div>
+                <p>The right AI for each task. Strategy, creative, coding, admin — different specialists working together under one roof.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                  <h3>Memory System</h3>
+                </div>
+                <p>Learns the business. Remembers context, preferences, history, client details. Gets smarter every day it runs.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                  <h3>100+ Integrations</h3>
+                </div>
+                <p>Email, calendar, databases, websites, Slack, WhatsApp, accounting, CRM — all connected through one system.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                  <h3>Full Cost Transparency</h3>
+                </div>
+                <p>Every action logged. Compute tracked per user. Monthly caps available. No hidden fees.</p>
+              </div>
+            </div>
+            <div className="key-stat">
+              <p>anyOS replaces fragmented tools with one unified system. One interface. One subscription. Everything connected.</p>
+              <p className="stat-sub">Setup, training, and ongoing support included as standard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ===== SLIDE 8: HOW anyOS WORKS ===== */}
+      <div className={`slide-snap ${activeSlide === 8 ? "active" : ""}`}>
+        <div className="slide-page page8">
+          <div className="brand-header">
+            <div className="logo">any<span>OS</span></div>
+            <div className="header-right">
+              <div className="era-badge">The Product</div>
+              <div className="position-label" style={{background:'#0f766e'}}>ARCHITECTURE</div>
+            </div>
+          </div>
+          <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
+            <div className="era-subtitle" style={{color:'#0f766e'}}>From Request to Result in Seconds</div>
+            <h1 className="era-title">How anyOS Works</h1>
+            <div className="era-period" style={{marginBottom:'1.5vh'}}>Four layers working together to execute any business task</div>
             <div className="journey-timeline">
               {[
-                {year:'2005',text:<><strong>MySpace &amp; Freewebs.</strong> Taught myself HTML to customise profiles. Built free sites for friends. First taste of web building.</>},
-                {year:'2010',text:<><strong>WordPress era.</strong> Building real websites for small businesses. Free. Learning by doing. Understood CMS, hosting, domains, SEO.</>},
-                {year:'2014',text:<><strong>Founded The Bar People.</strong> Built the business from scratch — website, booking system, marketing. Tech isn&apos;t separate from business. It IS the business.</>},
-                {year:'2017',text:<><strong>Cryptocurrency.</strong> Invested in Bitcoin and Ethereum. Learned blockchain, software integration, and that code can generate value autonomously.</>},
-                {year:'2020',text:<><strong>Lockdown.</strong> Events industry collapsed overnight. Built automated trading systems to survive. Software + strategy can replace lost income.</>},
-                {year:'2022',text:<><strong>ChatGPT Day 1.</strong> Subscribed within a week of launch (Nov 2022). Never cancelled. This wasn&apos;t a chatbot — this was a new operating system for work.</>},
-                {year:'2023–24',text:<><strong>50+ AI models tested.</strong> GPT-4, Claude, Gemini, Moonshot, Llama, Mistral, Midjourney, DALL-E. Learned what each does best.</>},
-                {year:'2025',text:<><strong>anyOS.</strong> The synthesis. Multiple AI models orchestrated through one system. Not a tool — an operating system that runs businesses.</>},
+                {year:'01',text:<><strong>User sends a request.</strong> Plain English via chat, voice, email, or any connected channel. &quot;Rebuild the client&apos;s website&quot; or &quot;Send the invoice to Sarah.&quot;</>},
+                {year:'02',text:<><strong>anyOS selects the right AI model.</strong> Different models excel at different tasks. The system routes each request to the best available model automatically.</>},
+                {year:'03',text:<><strong>The system accesses connected tools.</strong> Email, calendar, databases, code repositories, file storage, payment platforms — whatever the task requires.</>},
+                {year:'04',text:<><strong>The task is executed.</strong> Code is written. Emails are sent. Reports are generated. Files are processed. Websites go live. All logged and auditable.</>},
+                {year:'05',text:<><strong>Memory is updated.</strong> The system records what it learned — client preferences, project context, past decisions. Every task makes the next one faster.</>},
               ].map(r => (
                 <div key={r.year} className="journey-row">
                   <div className="journey-year">{r.year}</div>
@@ -714,88 +881,74 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="key-stat">
-              <p>I can&apos;t fluently type code. But I understand every layer — how they connect, how they talk to each other. With AI, I can now build what I&apos;ve always understood.</p>
-              <p className="stat-sub">20 years of understanding. 6 months of building. One system.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ===== SLIDE 8: WHAT I BUILT ===== */}
-      <div className={`slide-snap ${activeSlide === 8 ? "active" : ""}`}>
-        <div className="slide-page page8">
-          <div className="brand-header">
-            <div className="logo">any<span>OS</span></div>
-            <div className="header-right">
-              <div className="era-badge">The anyOS Story</div>
-              <div className="position-label" style={{background:'#0f766e'}}>THE SYSTEM</div>
-            </div>
-          </div>
-          <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
-            <div className="era-subtitle" style={{color:'#0f766e'}}>One System That Runs My Businesses</div>
-            <h1 className="era-title">What I Built — anyOS</h1>
-            <div className="era-period" style={{marginBottom:'1.5vh'}}>Hardware + Software + AI + Training = Everything</div>
-            <p className="description">anyOS is an AI operating system. Not an app. Not a chatbot. A complete system — hardware delivered, software pre-configured, training included. You type what you need in plain English, and the system executes it.</p>
-            <div className="features">
-              <div className="feature-box">
-                <div className="feature-top">
-                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-                  <h3>Hardware Delivered</h3>
-                </div>
-                <p>Mac Studio, MacBook Pro, or Mac Mini — pre-configured and ready to run. Arrives at your office, plugs in, and works.</p>
-              </div>
-              <div className="feature-box">
-                <div className="feature-top">
-                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 14H5a2 2 0 0 0-2 2v2h18v-2a2 2 0 0 0-2-2z"/><line x1="12" y1="10" x2="12" y2="14"/></svg></div>
-                  <h3>Multiple AI Models</h3>
-                </div>
-                <p>Best tool for each job. Strategy, creative, coding, admin — different AI specialists working together under one roof.</p>
-              </div>
-              <div className="feature-box">
-                <div className="feature-top">
-                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-                  <h3>Memory System</h3>
-                </div>
-                <p>Learns your business. Remembers context, preferences, history, past projects, client details. Gets smarter every single day.</p>
-              </div>
-              <div className="feature-box">
-                <div className="feature-top">
-                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-                  <h3>Full Integration</h3>
-                </div>
-                <p>Email, calendar, databases, websites, project tools, social media — all connected through one system.</p>
-              </div>
-            </div>
-            <div className="examples-bar">
-              {['Email Management','Website Builds','Client Comms','Reports','Scheduling','File Processing','Research','Quoting'].map(t => <span key={t} className="tag">{t}</span>)}
-            </div>
-            <div className="features">
-              <div className="feature-box">
-                <div className="feature-top">
-                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-                  <h3>Cost Control</h3>
-                </div>
-                <p>Every action logged. Compute tracked per user. Monthly caps set. Full transparency on costs.</p>
-              </div>
+            <div className="features" style={{marginTop:'1.5vh'}}>
               <div className="feature-box">
                 <div className="feature-top">
                   <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                  <h3>Training Included</h3>
+                  <h3>Security First</h3>
                 </div>
-                <p>I set it up. I train your team. I support you ongoing. You don&apos;t need to be technical.</p>
+                <p>Data stays on your hardware. Local AI models available for sensitive work. Full control over what leaves your network.</p>
+              </div>
+              <div className="feature-box">
+                <div className="feature-top">
+                  <div className="icon-wrapper"><svg viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                  <h3>Multi-User</h3>
+                </div>
+                <p>Every team member gets access. Individual usage tracked. Permissions configurable per role.</p>
               </div>
             </div>
             <div className="key-stat">
-              <p>Real results: websites built in under an hour for ~£25. Client emails processed in seconds. Reports generated automatically.</p>
-              <p className="stat-sub">This isn&apos;t theoretical. It&apos;s running. Right now. On my desk.</p>
+              <p>A website that costs £2,500 from an agency is built for ~£25 in compute. A 3-hour research task takes 2 minutes.</p>
+              <p className="stat-sub">Same quality. Fraction of the cost. Fraction of the time.</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ===== SLIDE 9: LIVE DEMO ===== */}
+      {/* ===== SLIDE 9: INTEGRATIONS ===== */}
       <div className={`slide-snap ${activeSlide === 9 ? "active" : ""}`}>
+        <div className="slide-page page9">
+          <div className="brand-header">
+            <div className="logo">any<span>OS</span></div>
+            <div className="header-right">
+              <div className="era-badge">The Ecosystem</div>
+              <div className="position-label" style={{background:'#0891b2'}}>100+ INTEGRATIONS</div>
+            </div>
+          </div>
+          <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
+            <div className="era-subtitle" style={{color:'#0891b2'}}>Tap any logo to see how it connects</div>
+            <h1 className="era-title">Integrations</h1>
+            <div className="era-period" style={{marginBottom:'1vh'}}>Every tool your business uses — connected through one system</div>
+            {selectedIntegration && INTEGRATIONS[selectedIntegration] && (
+              <div className="integration-detail" onClick={() => setSelectedIntegration(null)}>
+                <div style={{display:'flex',alignItems:'center',gap:'12px',marginBottom:'8px'}}>
+                  <img src={`/logos/icon-${selectedIntegration}.svg`} alt="" style={{width:'36px',height:'36px'}} />
+                  <div>
+                    <h3 style={{fontSize:'16px',fontWeight:700,color:'#1a1a1a',margin:0}}>{INTEGRATIONS[selectedIntegration].name}</h3>
+                    <p style={{fontSize:'12px',color:'#666',margin:0}}>{INTEGRATIONS[selectedIntegration].desc}</p>
+                  </div>
+                </div>
+                <p style={{fontSize:'13px',color:'#333',lineHeight:1.5,margin:0}}><strong>anyOS integration:</strong> {INTEGRATIONS[selectedIntegration].how}</p>
+                <p style={{fontSize:'10px',color:'#999',marginTop:'6px'}}>Tap to close</p>
+              </div>
+            )}
+            <div className="integrations-grid">
+              {Object.keys(INTEGRATIONS).map(key => (
+                <button key={key} className="integration-logo-btn" onClick={() => setSelectedIntegration(selectedIntegration === key ? null : key)}>
+                  <img src={`/logos/icon-${key}.svg`} alt={INTEGRATIONS[key].name} />
+                </button>
+              ))}
+            </div>
+            <div className="key-stat">
+              <p>100+ integrations. One system. Every tool your team already uses — now connected and automated.</p>
+              <p className="stat-sub">New integrations added continuously. Custom connections available on request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ===== SLIDE 10: LIVE DEMO ===== */}
+      <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
         <div className="slide-page page9">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -806,7 +959,7 @@ export default function Home() {
           </div>
           <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
             <div className="era-subtitle" style={{color:'#0891b2'}}>Three Tasks. Real Time. No Tricks.</div>
-            <h1 className="era-title">Let Me Show You</h1>
+            <h1 className="era-title">Live Demo</h1>
             <div className="era-period" style={{marginBottom:'2vh'}}>Live demonstration — everything you&apos;re about to see happens in real time</div>
             {[
               {num:'01',title:'Build a Quote Calculator',prompt:'"Build a venue graphics quote calculator with material costs, labour rates, and a client-facing form"',result:'AI writes the code, builds the interface, calculates pricing logic, deploys to a live URL.',time:'~3 minutes',cost:'~£0.50 compute'},
@@ -830,8 +983,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ===== SLIDE 10: WHAT JUST HAPPENED ===== */}
-      <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
+      {/* ===== SLIDE 11: THE RESULTS ===== */}
+      <div className={`slide-snap ${activeSlide === 11 ? "active" : ""}`}>
         <div className="slide-page page10">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -842,7 +995,7 @@ export default function Home() {
           </div>
           <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
             <div className="era-subtitle" style={{color:'#be123c'}}>Traditional vs anyOS — Side by Side</div>
-            <h1 className="era-title">What Just Happened</h1>
+            <h1 className="era-title">The Results</h1>
             <div className="era-period" style={{marginBottom:'2vh'}}>The real cost of doing things the old way vs the new way</div>
             <div className="compare-grid">
               <div className="compare-header old">Traditional Approach</div>
