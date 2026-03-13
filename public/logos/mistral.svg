@@ -1,1 +1,14 @@
-File not found: /v1/AUTH_mw/wikipedia-en-local-public.3e/3/3e/Mistral_AI_logo.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+<rect x="0" y="0" width="20" height="20" fill="#FF8C00"/>
+<rect x="60" y="0" width="20" height="20" fill="#FF8C00"/>
+<rect x="0" y="20" width="20" height="20" fill="#FFCC00"/>
+<rect x="20" y="20" width="20" height="20" fill="#FFCC00"/>
+<rect x="60" y="20" width="20" height="20" fill="#FFCC00"/>
+<rect x="0" y="40" width="20" height="20" fill="#FF8C00"/>
+<rect x="20" y="40" width="20" height="20" fill="#FF8C00"/>
+<rect x="40" y="40" width="20" height="20" fill="#FF8C00"/>
+<rect x="60" y="40" width="20" height="20" fill="#FF8C00"/>
+<rect x="0" y="60" width="20" height="20" fill="#FFCC00"/>
+<rect x="40" y="60" width="20" height="20" fill="#FFCC00"/>
+<rect x="60" y="60" width="20" height="20" fill="#FFCC00"/>
+</svg>
