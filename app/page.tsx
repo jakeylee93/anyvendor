@@ -8,6 +8,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 const SLIDE_TITLES = [
+  'anyOS',
   'Web 1.0 — The Read-Only Web',
   'Web 2.0 — The Social Web',
   'Web 3.0 — The Decentralised Web',
@@ -94,7 +95,7 @@ export default function Home() {
     <div className="presentation-root">
       <TopNav
         current={activeSlide + 1}
-        total={10}
+        total={11}
         title={SLIDE_TITLES[activeSlide] || ''}
         onPrev={() => swiperRef.current?.slidePrev()}
         onNext={() => swiperRef.current?.slideNext()}
@@ -111,6 +112,21 @@ export default function Home() {
         onSwiper={(swiper) => { swiperRef.current = swiper }}
         onSlideChange={(swiper) => { setActiveSlide(swiper.activeIndex) }}
       >
+
+      {/* ===== SLIDE 0: TITLE ===== */}
+      <SwiperSlide>
+        <div className="slide-page title-slide">
+          <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:'24px',textAlign:'center'}}>
+            <div style={{fontFamily:"'Space Grotesk', sans-serif",fontSize:'clamp(64px, 12vw, 120px)',fontWeight:700,color:'#1a1a1a',letterSpacing:'-0.04em',lineHeight:1}}>
+              any<span style={{color:'#6366f1'}}>OS</span>
+            </div>
+            <div style={{width:'60px',height:'3px',background:'#6366f1',borderRadius:'2px'}} />
+            <div style={{fontSize:'clamp(14px, 2vw, 20px)',color:'#888',fontWeight:500,maxWidth:'500px',lineHeight:1.5}}>
+              The Evolution of the Web
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
 
       {/* ===== SLIDE 1: WEB 1.0 ===== */}
       <SwiperSlide>
@@ -671,8 +687,10 @@ export default function Home() {
 
     </Swiper>
       <div className="bottom-bar">
-        {activeSlide < 6 ? (
-          <Timeline active={activeSlide < 5 ? activeSlide + 1 : 6} />
+        {activeSlide === 0 ? (
+          <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>
+        ) : activeSlide < 7 ? (
+          <Timeline active={activeSlide < 6 ? activeSlide : 6} />
         ) : (
           <Progress page={activeSlide + 1} />
         )}

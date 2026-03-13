@@ -105,9 +105,10 @@ body {
   min-height: 0 !important;
 }
 .presentation-swiper .swiper-slide {
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 .swiper-pagination-bullet {
   background: #6366f1 !important;
@@ -401,6 +402,11 @@ body {
   color: #aaa;
 }
 .progress-labels span { font-weight: 600; color: #6366f1; }
+
+/* ===== TITLE SLIDE ===== */
+.title-slide {
+  background: #fff;
+}
 
 /* ===== ERA COLORS ===== */
 
