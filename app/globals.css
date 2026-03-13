@@ -14,14 +14,100 @@ body {
   width: 100vw;
 }
 
+/* ===== ROOT ===== */
+.presentation-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* ===== TOP NAV ===== */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  flex-shrink: 0;
+  z-index: 50;
+  position: relative;
+}
+.nav-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d4d4d4;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.nav-arrow:hover:not(:disabled) {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+.nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.nav-count {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6366f1;
+  white-space: nowrap;
+}
+.nav-of {
+  font-weight: 400;
+  color: #999;
+  font-size: 12px;
+}
+.nav-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-hint {
+  font-size: 10px;
+  color: #ccc;
+  font-weight: 500;
+  position: absolute;
+  right: 16px;
+}
+@media (max-width: 600px) {
+  .nav-hint { display: none; }
+  .nav-title { font-size: 11px; max-width: 140px; }
+  .top-nav { gap: 8px; padding: 6px 10px; }
+}
+
 /* ===== SWIPER ===== */
 .presentation-swiper {
   width: 100vw !important;
-  height: 100vh !important;
+  flex: 1 !important;
+  min-height: 0 !important;
 }
 .presentation-swiper .swiper-slide {
   overflow-y: auto;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .swiper-pagination-bullet {
   background: #6366f1 !important;
@@ -37,12 +123,11 @@ body {
 /* ===== SLIDE PAGE ===== */
 .slide-page {
   width: 100%;
-  height: 100vh;
-  padding: 3vh 5vw 2.5vh 5vw;
+  min-height: 100%;
+  padding: 2.5vh 5vw 2.5vh 5vw;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
 }
 
 /* ===== BRAND HEADER ===== */

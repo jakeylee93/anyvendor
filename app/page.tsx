@@ -1,10 +1,43 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Keyboard, Mousewheel, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import type { Swiper as SwiperType } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
+
+const SLIDE_TITLES = [
+  'Web 1.0 — The Read-Only Web',
+  'Web 2.0 — The Social Web',
+  'Web 3.0 — The Decentralised Web',
+  'Web 4.0 — The Agentic Web',
+  'Web 5.0 — The Autonomous Web',
+  'The World Is Moving. Are You?',
+  'How I Got Here',
+  'What I Built — anyOS',
+  'Let Me Show You',
+  'What Just Happened',
+]
+
+/* ===== TOP NAV BAR ===== */
+function TopNav({ current, total, title, onPrev, onNext }: { current: number; total: number; title: string; onPrev: () => void; onNext: () => void }) {
+  return (
+    <div className="top-nav">
+      <button className="nav-arrow" onClick={onPrev} disabled={current === 1} aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div className="nav-info">
+        <span className="nav-count">{current} <span className="nav-of">of</span> {total}</span>
+        <span className="nav-title">{title}</span>
+      </div>
+      <button className="nav-arrow" onClick={onNext} disabled={current === total} aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <span className="nav-hint">← →</span>
+    </div>
+  )
+}
 
 /* ===== TIMELINE (slides 1-6) ===== */
 function Timeline({ active }: { active: number }) {
@@ -44,7 +77,9 @@ function Progress({ page }: { page: number }) {
 }
 
 export default function Home() {
+  const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
+  const swiperRef = useRef<SwiperType | null>(null)
 
   const companies = [
     { name: 'Spotify', detail: '— Music streaming giant', number: '1,500 jobs cut', info: 'Spotify announced workforce reductions during its AI and efficiency push, while expanding internal tooling for personalization, ad optimization, and automated workflows.' },
@@ -56,16 +91,26 @@ export default function Home() {
   ]
 
   return (
-    <Swiper
-      modules={[Pagination, Mousewheel, Keyboard]}
-      direction="horizontal"
-      slidesPerView={1}
-      speed={600}
-      keyboard={{ enabled: true }}
-      mousewheel={{ forceToAxis: true }}
-      pagination={{ clickable: true }}
-      className="presentation-swiper"
-    >
+    <div className="presentation-root">
+      <TopNav
+        current={activeSlide + 1}
+        total={10}
+        title={SLIDE_TITLES[activeSlide] || ''}
+        onPrev={() => swiperRef.current?.slidePrev()}
+        onNext={() => swiperRef.current?.slideNext()}
+      />
+      <Swiper
+        modules={[Pagination, Mousewheel, Keyboard]}
+        direction="horizontal"
+        slidesPerView={1}
+        speed={600}
+        keyboard={{ enabled: true }}
+        mousewheel={{ forceToAxis: true }}
+        pagination={{ clickable: true }}
+        className="presentation-swiper"
+        onSwiper={(swiper) => { swiperRef.current = swiper }}
+        onSlideChange={(swiper) => { setActiveSlide(swiper.activeIndex) }}
+      >
 
       {/* ===== SLIDE 1: WEB 1.0 ===== */}
       <SwiperSlide>
@@ -635,5 +680,6 @@ export default function Home() {
       </SwiperSlide>
 
     </Swiper>
+    </div>
   )
 }
