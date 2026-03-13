@@ -144,12 +144,45 @@ export default function Home() {
       {/* ===== SLIDE 0: TITLE ===== */}
       <div className={`slide-snap ${activeSlide === 0 ? "active" : ""}`}>
         <div className="slide-page title-slide">
-          <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:'24px',textAlign:'center'}}>
-            <div style={{fontFamily:"'Space Grotesk', sans-serif",fontSize:'clamp(64px, 12vw, 120px)',fontWeight:700,color:'#1a1a1a',letterSpacing:'-0.04em',lineHeight:1}}>
-              any<span style={{color:'#6366f1'}}>OS</span>
+          <div className="title-logos-bg">
+            {[
+              { src: '/logos/openai.svg', x: 8, y: 12, size: 48, delay: 0 },
+              { src: '/logos/anthropic.svg', x: 78, y: 8, size: 44, delay: 1.5 },
+              { src: '/logos/gemini.svg', x: 18, y: 72, size: 42, delay: 0.8 },
+              { src: '/logos/chatgpt.svg', x: 85, y: 68, size: 46, delay: 2.1 },
+              { src: '/logos/discord.svg', x: 5, y: 42, size: 38, delay: 3.2 },
+              { src: '/logos/telegram.svg', x: 88, y: 38, size: 40, delay: 1.2 },
+              { src: '/logos/whatsapp.svg', x: 70, y: 82, size: 42, delay: 2.8 },
+              { src: '/logos/gmail.svg', x: 25, y: 88, size: 38, delay: 0.4 },
+              { src: '/logos/meta.svg', x: 62, y: 15, size: 44, delay: 3.8 },
+              { src: '/logos/supabase.svg', x: 35, y: 6, size: 40, delay: 2.4 },
+              { src: '/logos/brave.svg', x: 92, y: 52, size: 36, delay: 1.8 },
+              { src: '/logos/gcal.svg', x: 48, y: 85, size: 36, delay: 3.5 },
+              { src: '/logos/perplexity.svg', x: 15, y: 28, size: 36, delay: 0.6 },
+              { src: '/logos/vercel.png', x: 55, y: 22, size: 34, delay: 4.1 },
+              { src: '/logos/mistral.png', x: 42, y: 68, size: 38, delay: 2.6 },
+            ].map((logo, i) => (
+              <img
+                key={i}
+                src={logo.src}
+                alt=""
+                className="floating-logo"
+                style={{
+                  left: `${logo.x}%`,
+                  top: `${logo.y}%`,
+                  width: `${logo.size}px`,
+                  height: `${logo.size}px`,
+                  animationDelay: `${logo.delay}s`,
+                }}
+              />
+            ))}
+          </div>
+          <div className="title-content">
+            <div className="title-logo">
+              any<span>OS</span>
             </div>
-            <div style={{width:'60px',height:'3px',background:'#6366f1',borderRadius:'2px'}} />
-            <div style={{fontSize:'clamp(14px, 2vw, 20px)',color:'#888',fontWeight:500,maxWidth:'500px',lineHeight:1.5}}>
+            <div className="title-divider" />
+            <div className="title-subtitle">
               The Evolution of the Web
             </div>
           </div>

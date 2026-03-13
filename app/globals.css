@@ -387,6 +387,63 @@ body {
 /* ===== TITLE SLIDE ===== */
 .title-slide {
   background: #fff;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-logos-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.floating-logo {
+  position: absolute;
+  opacity: 0.5;
+  object-fit: contain;
+  animation: floatLogo 8s ease-in-out infinite;
+}
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-12px) rotate(2deg); }
+  50% { transform: translateY(-6px) rotate(-1deg); }
+  75% { transform: translateY(-15px) rotate(1.5deg); }
+}
+.title-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+.title-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(64px, 12vw, 120px);
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-shadow: 0 0 40px rgba(255,255,255,0.9), 0 0 80px rgba(255,255,255,0.7);
+}
+.title-logo span {
+  color: #6366f1;
+}
+.title-divider {
+  width: 60px;
+  height: 3px;
+  background: #6366f1;
+  border-radius: 2px;
+}
+.title-subtitle {
+  font-size: clamp(14px, 2vw, 20px);
+  color: #888;
+  font-weight: 500;
+  max-width: 500px;
+  line-height: 1.5;
 }
 
 /* ===== ERA COLORS ===== */
