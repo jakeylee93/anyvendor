@@ -461,15 +461,18 @@ body {
   font-size: clamp(14px, 2vw, 20px);
   color: #888;
   font-weight: 500;
-  max-width: 500px;
   line-height: 1.5;
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.3em;
+  flex-wrap: wrap;
 }
 .rotating-word-wrapper {
-  display: inline-block;
-  min-width: 130px;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
 }
 .rotating-word {
   display: inline-block;
