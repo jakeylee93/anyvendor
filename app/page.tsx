@@ -59,15 +59,15 @@ function Timeline({ active }: { active: number }) {
 }
 
 /* ===== PROGRESS BAR (slides 7-10) ===== */
-function Progress({ page }: { page: number }) {
+function Progress({ page, total }: { page: number; total: number }) {
   return (
     <div className="progress-bar">
       <div className="progress-dots">
-        {Array.from({length:10}).map((_,i) => (
+        {Array.from({length:total}).map((_,i) => (
           <div key={i} className={`progress-dot ${i < page-1 ? 'done' : ''} ${i === page-1 ? 'current' : ''}`} />
         ))}
       </div>
-      <div className="progress-labels">Page <span>{page}</span> of 10</div>
+      <div className="progress-labels">Page <span>{page}</span> of {total}</div>
     </div>
   )
 }
@@ -219,7 +219,7 @@ export default function Home() {
         ) : activeSlide < 7 ? (
           <Timeline active={activeSlide < 6 ? activeSlide : 6} />
         ) : (
-          <Progress page={activeSlide + 1} />
+          <Progress page={activeSlide + 1} total={11} />
         )}
       </div>
       <div className="slides-container" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>

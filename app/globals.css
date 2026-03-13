@@ -723,13 +723,44 @@ body {
   .features {
     grid-template-columns: 1fr;
   }
-  .compare-grid {
-    grid-template-columns: 1fr;
-  }
   .header-right {
     gap: 6px;
   }
   .era-badge {
     display: none;
+  }
+  /* Compare grid: stack as old→new cards */
+  .compare-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: none;
+    border-radius: 0;
+  }
+  .compare-header {
+    display: none;
+  }
+  .compare-cell {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .compare-cell.old {
+    background: #fef2f2;
+    color: #888;
+    border-right: none;
+    border-left: 3px solid #fca5a5;
+    font-size: 11px;
+  }
+  .compare-cell.new {
+    background: #ecfdf5;
+    border-left: 3px solid #34d399;
+    margin-bottom: 6px;
+  }
+  .compare-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 }
