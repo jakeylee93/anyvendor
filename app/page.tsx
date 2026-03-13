@@ -93,42 +93,117 @@ const ALL_LOGOS = [
 ]
 
 function FloatingLogos() {
-  // Randomize on mount — shuffle logos and assign random positions
-  const [items] = useState(() => {
-    // Shuffle all logos
-    const shuffled = [...ALL_LOGOS].sort(() => Math.random() - 0.5)
-    // 40 logo slots from 100 logos — dense, always ~20 visible
-    const count = 40
-    const colWidth = 94 / count
-    return Array.from({ length: count }, (_, i) => {
-      const baseLeft = 1 + i * colWidth
-      const jitter = (Math.random() - 0.5) * colWidth * 0.6
-      return {
-        src: `/logos/icon-${shuffled[i % shuffled.length]}.svg`,
-        left: `${Math.max(1, Math.min(96, baseLeft + jitter))}%`,
-        delay: `${-(Math.random() * 16)}s`,
-        duration: `${14 + Math.random() * 6}s`, // 14-20s
-      }
-    })
-  })
+  const containerRef = useRef<HTMLDivElement>(null)
+  const logosRef = useRef<{
+    x: number; y: number; vx: number; vy: number;
+    logoIdx: number; el: HTMLImageElement | null
+  }[]>([])
+  const poolRef = useRef<number[]>([])
+  const frameRef = useRef<number>(0)
 
-  return (
-    <>
-      {items.map((l, i) => (
-        <img
-          key={i}
-          src={l.src}
-          alt=""
-          className="float-up-logo"
-          style={{
-            left: l.left,
-            animationDuration: l.duration,
-            animationDelay: l.delay,
-          }}
-        />
-      ))}
-    </>
-  )
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+    const W = container.offsetWidth
+    const H = container.offsetHeight
+    const SIZE = 44
+    const MIN_DIST = SIZE * 1.8 // minimum distance between logos
+    const COUNT = 20
+    const SPEED = 0.3 // pixels per frame upward
+
+    // Shuffle pool
+    const pool = ALL_LOGOS.map((_, i) => i).sort(() => Math.random() - 0.5)
+    poolRef.current = [...pool]
+    let poolIdx = 0
+    const nextLogo = () => { poolIdx = (poolIdx + 1) % ALL_LOGOS.length; return poolRef.current[poolIdx] }
+
+    // Create initial logos spread across the screen
+    const items: typeof logosRef.current = []
+    for (let i = 0; i < COUNT; i++) {
+      items.push({
+        x: SIZE + Math.random() * (W - SIZE * 2),
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.15,
+        vy: -(SPEED + Math.random() * 0.2),
+        logoIdx: nextLogo(),
+        el: null,
+      })
+    }
+    logosRef.current = items
+
+    // Create DOM elements
+    items.forEach((item, i) => {
+      const img = document.createElement('img')
+      img.src = `/logos/icon-${ALL_LOGOS[item.logoIdx]}.svg`
+      img.style.cssText = `position:absolute;width:${SIZE}px;height:${SIZE}px;opacity:0.45;object-fit:contain;pointer-events:none;will-change:transform;`
+      img.alt = ''
+      container.appendChild(img)
+      item.el = img
+    })
+
+    // Animation loop
+    const animate = () => {
+      const items = logosRef.current
+      // Move + gentle collision
+      for (let i = 0; i < items.length; i++) {
+        const a = items[i]
+        // Apply velocity
+        a.x += a.vx
+        a.y += a.vy
+
+        // Bounce off walls gently
+        if (a.x < SIZE / 2) { a.x = SIZE / 2; a.vx = Math.abs(a.vx) * 0.5 + 0.05 }
+        if (a.x > W - SIZE / 2) { a.x = W - SIZE / 2; a.vx = -Math.abs(a.vx) * 0.5 - 0.05 }
+
+        // Collision with other logos
+        for (let j = i + 1; j < items.length; j++) {
+          const b = items[j]
+          const dx = b.x - a.x
+          const dy = b.y - a.y
+          const dist = Math.sqrt(dx * dx + dy * dy)
+          if (dist < MIN_DIST && dist > 0) {
+            const force = (MIN_DIST - dist) * 0.003
+            const nx = dx / dist
+            const ny = dy / dist
+            a.vx -= nx * force
+            a.vy -= ny * force
+            b.vx += nx * force
+            b.vy += ny * force
+          }
+        }
+
+        // Dampen horizontal velocity
+        a.vx *= 0.995
+        // Keep upward drift
+        a.vy = a.vy * 0.99 - 0.005
+
+        // Respawn at bottom when off top
+        if (a.y < -SIZE) {
+          a.y = H + SIZE
+          a.x = SIZE + Math.random() * (W - SIZE * 2)
+          a.vx = (Math.random() - 0.5) * 0.15
+          a.vy = -(SPEED + Math.random() * 0.2)
+          a.logoIdx = nextLogo()
+          if (a.el) a.el.src = `/logos/icon-${ALL_LOGOS[a.logoIdx]}.svg`
+        }
+
+        // Update DOM
+        if (a.el) {
+          a.el.style.transform = `translate(${a.x - SIZE/2}px, ${a.y - SIZE/2}px)`
+        }
+      }
+      frameRef.current = requestAnimationFrame(animate)
+    }
+    frameRef.current = requestAnimationFrame(animate)
+
+    return () => {
+      cancelAnimationFrame(frameRef.current)
+      // Clean up DOM
+      items.forEach(item => { if (item.el) item.el.remove() })
+    }
+  }, [])
+
+  return <div ref={containerRef} style={{position:'absolute',inset:0,overflow:'hidden',pointerEvents:'none'}} />
 }
 
 const ROTATING_WORDS = [
