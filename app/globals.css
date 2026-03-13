@@ -463,11 +463,13 @@ body {
   font-weight: 500;
   max-width: 500px;
   line-height: 1.5;
+  text-align: center;
+  width: 100%;
 }
 .rotating-word-wrapper {
   display: inline-block;
-  min-width: 120px;
-  text-align: left;
+  min-width: 130px;
+  text-align: center;
 }
 .rotating-word {
   display: inline-block;

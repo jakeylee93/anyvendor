@@ -73,13 +73,23 @@ function Progress({ page, total }: { page: number; total: number }) {
 }
 
 const ALL_LOGOS = [
-  'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
-  'discord','telegram','whatsapp','slack','gmail','signal','zoom',
+  'openai','anthropic','googlegemini','perplexity','huggingface','ollama','replicate',
+  'discord','telegram','whatsapp','slack','gmail','signal','zoom','intercom','googlemeet',
   'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
+  'firebase','netlify','digitalocean','render','prisma','kubernetes','nginx',
   'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
-  'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
-  'brave','googlechrome','elevenlabs','figma',
-  'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox','visualstudiocode',
+  'sass','swift','rust',
+  'stripe','shopify','paypal','square','xero','quickbooks','wise','woocommerce',
+  'googlecalendar','googledrive','googlesheets','googledocs','notion','trello',
+  'asana','airtable','todoist','clickup','coda',
+  'brave','googlechrome','duckduckgo','algolia',
+  'figma','cloudinary','unsplash','ffmpeg',
+  'hubspot','mailchimp',
+  'zapier','wordpress','dropbox','linear','npm','apple','linux','git',
+  'visualstudiocode','elevenlabs','pnpm','markdown','json','yaml',
+  'sqlite','elastic','grafana','googleanalytics',
+  'postman','sentry','auth0','letsencrypt','cypress','jest','prettier','eslint',
+  'contentful','imgur',
 ]
 
 function FloatingLogos() {
@@ -87,17 +97,17 @@ function FloatingLogos() {
   const [items] = useState(() => {
     // Shuffle all logos
     const shuffled = [...ALL_LOGOS].sort(() => Math.random() - 0.5)
-    // 30 logo slots — ensures ~15 always visible with no gaps
-    const count = 30
-    const colWidth = 92 / count
+    // 40 logo slots from 100 logos — dense, always ~20 visible
+    const count = 40
+    const colWidth = 94 / count
     return Array.from({ length: count }, (_, i) => {
-      const baseLeft = 2 + i * colWidth
-      const jitter = (Math.random() - 0.5) * colWidth * 0.5
+      const baseLeft = 1 + i * colWidth
+      const jitter = (Math.random() - 0.5) * colWidth * 0.6
       return {
         src: `/logos/icon-${shuffled[i % shuffled.length]}.svg`,
-        left: `${Math.max(1, Math.min(95, baseLeft + jitter))}%`,
-        delay: `${-(Math.random() * 14)}s`, // spread across 14s of a ~14s cycle
-        duration: `${12 + Math.random() * 4}s`, // faster: 12-16s
+        left: `${Math.max(1, Math.min(96, baseLeft + jitter))}%`,
+        delay: `${-(Math.random() * 16)}s`,
+        duration: `${14 + Math.random() * 6}s`, // 14-20s
       }
     })
   })
