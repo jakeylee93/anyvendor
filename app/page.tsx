@@ -85,16 +85,14 @@ export default function Home() {
     { name: 'Amazon', detail: '— Automated warehouse ops, reduced logistics staff', number: 'Thousands cut', info: 'Amazon expanded robotics and AI planning in fulfillment and logistics, reducing reliance on manual task routing and repetitive warehouse functions.' },
   ]
 
-  const scrollRef = useRef<HTMLDivElement>(null)
-
-  const goTo = useCallback((index: number) => {
-    const el = scrollRef.current
-    if (!el) return
-    el.scrollTo({ left: index * el.offsetWidth, behavior: 'smooth' })
+  const goPrev = useCallback(() => {
+    setActiveSlide(s => Math.max(0, s - 1))
+    window.scrollTo(0, 0)
   }, [])
-
-  const goPrev = useCallback(() => { if (activeSlide > 0) goTo(activeSlide - 1) }, [activeSlide, goTo])
-  const goNext = useCallback(() => { if (activeSlide < 10) goTo(activeSlide + 1) }, [activeSlide, goTo])
+  const goNext = useCallback(() => {
+    setActiveSlide(s => Math.min(10, s + 1))
+    window.scrollTo(0, 0)
+  }, [])
 
   // Keyboard navigation
   useEffect(() => {
@@ -106,13 +104,21 @@ export default function Home() {
     return () => window.removeEventListener('keydown', handler)
   }, [goPrev, goNext])
 
-  // Detect current slide on scroll
-  const onScroll = useCallback(() => {
-    const el = scrollRef.current
-    if (!el) return
-    const index = Math.round(el.scrollLeft / el.offsetWidth)
-    if (index !== activeSlide) setActiveSlide(index)
-  }, [activeSlide])
+  // Touch swipe (horizontal only)
+  const touchStart = useRef<{x:number;y:number}|null>(null)
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }
+  }, [])
+  const onTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (!touchStart.current) return
+    const dx = e.changedTouches[0].clientX - touchStart.current.x
+    const dy = e.changedTouches[0].clientY - touchStart.current.y
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+      if (dx < 0) goNext()
+      else goPrev()
+    }
+    touchStart.current = null
+  }, [goNext, goPrev])
 
   return (
     <div className="presentation-root">
@@ -132,11 +138,11 @@ export default function Home() {
           <Progress page={activeSlide + 1} />
         )}
       </div>
-      <div className="slides-container" ref={scrollRef} onScroll={onScroll}>
+      <div className="slides-container" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
 
 
       {/* ===== SLIDE 0: TITLE ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 0 ? "active" : ""}`}>
         <div className="slide-page title-slide">
           <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:'24px',textAlign:'center'}}>
             <div style={{fontFamily:"'Space Grotesk', sans-serif",fontSize:'clamp(64px, 12vw, 120px)',fontWeight:700,color:'#1a1a1a',letterSpacing:'-0.04em',lineHeight:1}}>
@@ -151,7 +157,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 1: WEB 1.0 ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 1 ? "active" : ""}`}>
         <div className="slide-page web1">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -208,7 +214,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 2: WEB 2.0 ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 2 ? "active" : ""}`}>
         <div className="slide-page web2">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -265,7 +271,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 3: WEB 3.0 ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 3 ? "active" : ""}`}>
         <div className="slide-page web3">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -322,7 +328,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 4: WEB 4.0 ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 4 ? "active" : ""}`}>
         <div className="slide-page web4">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -379,7 +385,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 5: WEB 5.0 ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 5 ? "active" : ""}`}>
         <div className="slide-page web5">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -436,7 +442,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 6: BUSINESS CASE ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 6 ? "active" : ""}`}>
         <div className="slide-page page6">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -505,7 +511,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 7: HOW I GOT HERE ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 7 ? "active" : ""}`}>
         <div className="slide-page page7">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -545,7 +551,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 8: WHAT I BUILT ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 8 ? "active" : ""}`}>
         <div className="slide-page page8">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -617,7 +623,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 9: LIVE DEMO ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 9 ? "active" : ""}`}>
         <div className="slide-page page9">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -653,7 +659,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 10: WHAT JUST HAPPENED ===== */}
-      <div className="slide-snap">
+      <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
         <div className="slide-page page10">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>

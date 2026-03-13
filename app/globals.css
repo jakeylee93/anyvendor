@@ -9,21 +9,11 @@ body {
   color: #1a1a1a;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-html {
-  overflow: hidden;
 }
 
 /* ===== ROOT ===== */
 .presentation-root {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
 }
 
 /* ===== TOP NAV ===== */
@@ -35,9 +25,11 @@ html {
   padding: 8px 16px;
   background: #fafafa;
   border-bottom: 1px solid #e5e5e5;
-  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
-  position: relative;
 }
 .nav-arrow {
   width: 32px;
@@ -101,36 +93,21 @@ html {
   .top-nav { gap: 8px; padding: 6px 10px; }
 }
 
-/* ===== SLIDES CONTAINER (native scroll-snap) ===== */
+/* ===== SLIDES ===== */
 .slides-container {
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.slides-container::-webkit-scrollbar {
-  display: none;
+  padding-top: 100px; /* space for fixed nav + timeline */
 }
 .slide-snap {
-  flex: 0 0 100%;
-  width: 100%;
-  scroll-snap-align: start;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+.slide-snap.active {
+  display: block;
 }
 
 /* ===== SLIDE PAGE ===== */
 .slide-page {
   width: 100%;
-  min-height: 100%;
-  padding: 2.5vh 5vw 0 5vw;
-  padding-bottom: 3vh;
+  padding: 2.5vh 5vw 5vh 5vw;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -317,9 +294,12 @@ html {
   opacity: 0.8;
 }
 
-/* ===== TOP TIMELINE BAR (below nav) ===== */
+/* ===== TIMELINE BAR (fixed below nav) ===== */
 .bottom-bar {
-  flex-shrink: 0;
+  position: fixed;
+  top: 46px;
+  left: 0;
+  right: 0;
   background: white;
   border-bottom: 1px solid #e5e5e5;
   padding: 6px 5vw 8px;
