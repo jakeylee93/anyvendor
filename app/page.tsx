@@ -106,6 +106,7 @@ export default function Home() {
         slidesPerView={1}
         speed={600}
         keyboard={{ enabled: true }}
+        cssMode={true}
         pagination={{ clickable: true }}
         className="presentation-swiper"
         onSwiper={(swiper) => { swiperRef.current = swiper }}
