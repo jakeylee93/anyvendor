@@ -676,6 +676,70 @@ body {
 .compare-cell.old { color: #666; border-right: 1px solid #e5e5e5; }
 .compare-cell.new { color: #1a1a1a; font-weight: 600; }
 
+/* ===== CLICKABLE TAGS ===== */
+.tag.clickable {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tag.clickable:hover {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+  transform: translateY(-1px);
+}
+.tag-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.15s ease;
+}
+.tag-popup {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: popIn 0.2s ease;
+}
+.tag-popup-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.tag-popup-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+.tag-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.tag-popup-close:hover {
+  color: #333;
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 /* ===== INTEGRATIONS GRID (page 9) ===== */
 .integrations-grid {
   display: grid;

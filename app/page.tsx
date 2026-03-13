@@ -309,6 +309,60 @@ function FloatingLogos() {
   return <div ref={containerRef} style={{position:'absolute',inset:0,overflow:'hidden',pointerEvents:'none'}} />
 }
 
+/* ===== CLICKABLE TAG DATA ===== */
+const TAG_INFO: Record<string, { title: string; desc: string }> = {
+  // Web 1.0
+  'GeoCities': { title: 'GeoCities (1994–2009)', desc: 'Free web hosting service where users built personal homepages organised by themed "neighbourhoods." At its peak, the third most-visited site on the internet.' },
+  'Yahoo!': { title: 'Yahoo! (1994–present)', desc: 'One of the first major web portals and directories. Before search engines, Yahoo\'s human-curated directory was how most people found websites.' },
+  'AltaVista': { title: 'AltaVista (1995–2013)', desc: 'One of the first comprehensive web search engines. Pioneered full-text search before Google made it obsolete.' },
+  'Netscape': { title: 'Netscape Navigator (1994–2008)', desc: 'The first widely-used web browser. The "browser wars" with Internet Explorer defined the late 1990s internet.' },
+  'HTML': { title: 'HTML (1993–present)', desc: 'HyperText Markup Language — the foundational language of every web page. In Web 1.0, hand-coded HTML was the only way to build a website.' },
+  'Dial-Up': { title: 'Dial-Up Internet', desc: '56kbps connections over phone lines. The iconic screeching modem sound. A single image could take minutes to load.' },
+  'FTP': { title: 'File Transfer Protocol', desc: 'The only way to upload a website in Web 1.0. Developers would code locally, then FTP files to a server manually.' },
+  // Web 2.0
+  'MySpace': { title: 'MySpace (2003–2012)', desc: 'The first social network to reach mainstream adoption. Users customised profiles with HTML/CSS — many developers started their careers here.' },
+  'Facebook': { title: 'Facebook (2004–present)', desc: 'Launched from a Harvard dorm room, grew to 3 billion users. Transformed how businesses market and how humans communicate.' },
+  'YouTube': { title: 'YouTube (2005–present)', desc: 'Made video publishing free and universal. Before YouTube, hosting video online cost thousands. Created the influencer economy.' },
+  'WordPress': { title: 'WordPress (2003–present)', desc: 'Democratised website creation. Powers 43% of all websites today. Made it possible for non-developers to publish online.' },
+  'Twitter': { title: 'Twitter/X (2006–present)', desc: 'Real-time microblogging that changed journalism, politics, and customer service. 280-character posts that shaped global conversations.' },
+  'Instagram': { title: 'Instagram (2010–present)', desc: 'Photo-first social network that created visual marketing. Acquired by Facebook for $1 billion in 2012.' },
+  'iPhone': { title: 'iPhone (2007)', desc: 'Apple\'s smartphone put the internet in everyone\'s pocket. By 2015, mobile traffic overtook desktop. Changed everything.' },
+  'Google Docs': { title: 'Google Docs (2006–present)', desc: 'Moved document editing to the cloud. Real-time collaboration replaced emailing files back and forth.' },
+  // Web 3.0
+  'Bitcoin': { title: 'Bitcoin (2009–present)', desc: 'The first cryptocurrency. Decentralised digital money with no central bank. Reached $69,000 per coin in 2021.' },
+  'Ethereum': { title: 'Ethereum (2015–present)', desc: 'Blockchain platform that introduced smart contracts — programmable money that executes automatically when conditions are met.' },
+  'OpenSea': { title: 'OpenSea (2017–present)', desc: 'The largest NFT marketplace. Facilitated billions in digital art and collectible sales during the 2021-2022 NFT boom.' },
+  'MetaMask': { title: 'MetaMask', desc: 'Crypto wallet browser extension. The gateway for millions of users to interact with blockchain applications.' },
+  'Uniswap': { title: 'Uniswap', desc: 'Decentralised exchange protocol. Proved you could trade assets without a bank, broker, or middleman.' },
+  'Smart Contracts': { title: 'Smart Contracts', desc: 'Self-executing code on the blockchain. When conditions are met, the contract runs automatically. No lawyers, no delays.' },
+  'Trading Bots': { title: 'Automated Trading Bots', desc: 'Software that trades 24/7 based on algorithms. Proved that code could generate value while humans sleep.' },
+  // Web 4.0
+  'ChatGPT': { title: 'ChatGPT (OpenAI)', desc: 'Launched November 2022. Reached 100 million users in 2 months — fastest adoption of any technology in history. Conversational AI that writes, codes, analyses, and creates.' },
+  'Claude': { title: 'Claude (Anthropic)', desc: 'AI assistant known for careful reasoning, long document analysis, and nuanced writing. Handles complex multi-step tasks with high accuracy.' },
+  'Gemini': { title: 'Gemini (Google)', desc: 'Google\'s multimodal AI. Processes text, images, video, and code simultaneously. Integrated across Google\'s entire product suite.' },
+  'anyOS': { title: 'anyOS', desc: 'AI operating system that connects multiple AI models, tools, and integrations into one natural language interface. Hardware delivered, pre-configured, with training and support.' },
+  'Copilot': { title: 'Microsoft Copilot', desc: 'AI assistant integrated into Windows, Office 365, and GitHub. Helps write code, documents, emails, and presentations.' },
+  'Midjourney': { title: 'Midjourney', desc: 'AI image generation tool. Creates photorealistic images, illustrations, and concept art from text descriptions in seconds.' },
+  'AI Agents': { title: 'AI Agents', desc: 'Software that takes initiative — not just answering questions but proactively completing tasks. Reads emails, writes code, manages projects, makes decisions.' },
+  // Web 5.0
+  'Autonomous Agents': { title: 'Autonomous Agents', desc: 'AI systems that operate independently for extended periods. Set a goal, and the agent figures out the steps, executes them, and reports back.' },
+  'Machine-to-Machine': { title: 'Machine-to-Machine Communication', desc: 'AI systems talking directly to other AI systems. Your business\'s AI negotiates with your supplier\'s AI — no humans in the loop for routine transactions.' },
+  'Predictive AI': { title: 'Predictive AI', desc: 'AI that anticipates needs before they arise. Knows you\'ll run out of stock, that a client is unhappy, or that a project will miss its deadline — and acts preemptively.' },
+  'Voice-First': { title: 'Voice-First Interfaces', desc: 'Speaking replaces typing as the primary way to interact with AI. Walk into your office and say "What\'s my day look like?" — the system responds instantly.' },
+  'Zero-Code': { title: 'Zero-Code Development', desc: 'Building software entirely through natural language. Describe what you want, AI builds it. No programming knowledge required at any level.' },
+  'Digital Twins': { title: 'Digital Twins', desc: 'AI replicas of your best employees, trained on their expertise. Your top salesperson\'s knowledge, available to every team member 24/7.' },
+  'Hyper-Personalisation': { title: 'Hyper-Personalisation', desc: 'Every customer interaction tailored to their preferences, history, and behaviour. AI remembers everything and adapts in real-time.' },
+  // Page 8 tags
+  'Email Management': { title: 'Email Management', desc: 'AI reads, categorises, drafts responses, and sends emails. Flags urgent items. Handles routine correspondence automatically.' },
+  'Website Builds': { title: 'Website Builds', desc: 'Describe what you want in plain English — AI designs, codes, and deploys a complete website. Typically under 1 hour, ~£25 in compute.' },
+  'Client Comms': { title: 'Client Communications', desc: 'AI manages client correspondence across email, WhatsApp, Slack, and more. Consistent tone, instant responses, nothing falls through the cracks.' },
+  'Reports': { title: 'Automated Reports', desc: 'AI pulls data from multiple sources, compiles analysis, formats professionally, and delivers — weekly, monthly, or on-demand.' },
+  'Scheduling': { title: 'Intelligent Scheduling', desc: 'AI manages calendars, resolves conflicts, books meetings, sends reminders. Considers time zones, preferences, and priorities.' },
+  'File Processing': { title: 'File Processing', desc: 'AI converts formats, resizes images, extracts data from PDFs, organises files, and processes documents at scale.' },
+  'Research': { title: 'AI Research', desc: 'Comprehensive research briefs in minutes. AI searches the web, analyses sources, cross-references data, and delivers structured findings.' },
+  'Quoting': { title: 'Automated Quoting', desc: 'AI generates quotes based on your pricing rules, client history, and project requirements. Professional, accurate, instant.' },
+}
+
 const ROTATING_WORDS = [
   'Life',
   'Business',
@@ -344,10 +398,26 @@ function RotatingWord() {
   )
 }
 
+/* ===== CLICKABLE TAG + POPUP ===== */
+function TagPopup({ tag, onClose }: { tag: string; onClose: () => void }) {
+  const info = TAG_INFO[tag]
+  if (!info) return null
+  return (
+    <div className="tag-popup-overlay" onClick={onClose}>
+      <div className="tag-popup" onClick={e => e.stopPropagation()}>
+        <div className="tag-popup-title">{info.title}</div>
+        <p className="tag-popup-desc">{info.desc}</p>
+        <button className="tag-popup-close" onClick={onClose}>✕</button>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
   const [selectedIntegration, setSelectedIntegration] = useState<string|null>(null)
+  const [selectedTag, setSelectedTag] = useState<string|null>(null)
 
   const companies = [
     { name: 'Spotify', detail: '— Music streaming giant', number: '1,500 jobs cut', info: 'Spotify announced workforce reductions during its AI and efficiency push, while expanding internal tooling for personalization, ad optimization, and automated workflows.' },
@@ -479,7 +549,7 @@ export default function Home() {
               </div>
             </div>
             <div className="examples-bar">
-              {['GeoCities','Yahoo!','AltaVista','Netscape','HTML','Dial-Up','FTP'].map(t => <span key={t} className="tag">{t}</span>)}
+              {['GeoCities','Yahoo!','AltaVista','Netscape','HTML','Dial-Up','FTP'].map(t => <span key={t} className={`tag ${TAG_INFO[t] ? "clickable" : ""}`} onClick={() => TAG_INFO[t] && setSelectedTag(t)}>{t}</span>)}
             </div>
             <div className="key-stat">
               <p>By 2000, there were ~17 million websites worldwide. Today there are over 1.9 billion.</p>
@@ -536,7 +606,7 @@ export default function Home() {
               </div>
             </div>
             <div className="examples-bar">
-              {['MySpace','Facebook','YouTube','WordPress','Twitter','Instagram','iPhone','Google Docs'].map(t => <span key={t} className="tag">{t}</span>)}
+              {['MySpace','Facebook','YouTube','WordPress','Twitter','Instagram','iPhone','Google Docs'].map(t => <span key={t} className={`tag ${TAG_INFO[t] ? "clickable" : ""}`} onClick={() => TAG_INFO[t] && setSelectedTag(t)}>{t}</span>)}
             </div>
             <div className="key-stat">
               <p>Most businesses today still operate in Web 2.0. Manual emails, WordPress sites, social media managed by humans, one task at a time.</p>
@@ -593,7 +663,7 @@ export default function Home() {
               </div>
             </div>
             <div className="examples-bar">
-              {['Bitcoin','Ethereum','OpenSea','MetaMask','Uniswap','Smart Contracts','Trading Bots'].map(t => <span key={t} className="tag">{t}</span>)}
+              {['Bitcoin','Ethereum','OpenSea','MetaMask','Uniswap','Smart Contracts','Trading Bots'].map(t => <span key={t} className={`tag ${TAG_INFO[t] ? "clickable" : ""}`} onClick={() => TAG_INFO[t] && setSelectedTag(t)}>{t}</span>)}
             </div>
             <div className="key-stat">
               <p>Web 3.0 proved software could execute complex tasks autonomously. The next question was inevitable: what if AI could do the same for every business task?</p>
@@ -650,7 +720,7 @@ export default function Home() {
               </div>
             </div>
             <div className="examples-bar">
-              {['ChatGPT','Claude','Gemini','anyOS','Copilot','Midjourney','AI Agents'].map(t => <span key={t} className="tag">{t}</span>)}
+              {['ChatGPT','Claude','Gemini','anyOS','Copilot','Midjourney','AI Agents'].map(t => <span key={t} className={`tag ${TAG_INFO[t] ? "clickable" : ""}`} onClick={() => TAG_INFO[t] && setSelectedTag(t)}>{t}</span>)}
             </div>
             <div className="key-stat">
               <p>The businesses that adopt Web 4.0 in 2025 will own 2030. The ones that wait will spend the next decade catching up — or won&apos;t survive at all.</p>
@@ -707,7 +777,7 @@ export default function Home() {
               </div>
             </div>
             <div className="examples-bar">
-              {['Autonomous Agents','Machine-to-Machine','Predictive AI','Voice-First','Zero-Code','Digital Twins','Hyper-Personalisation'].map(t => <span key={t} className="tag">{t}</span>)}
+              {['Autonomous Agents','Machine-to-Machine','Predictive AI','Voice-First','Zero-Code','Digital Twins','Hyper-Personalisation'].map(t => <span key={t} className={`tag ${TAG_INFO[t] ? "clickable" : ""}`} onClick={() => TAG_INFO[t] && setSelectedTag(t)}>{t}</span>)}
             </div>
             <div className="key-stat">
               <p>If Web 4.0 is AI assisting humans, Web 5.0 is AI and humans as true partners. The question is — will your business have mastered Web 4.0 before Web 5.0 arrives?</p>
@@ -1039,6 +1109,7 @@ export default function Home() {
       </div>
 
     </div>
+      {selectedTag && <TagPopup tag={selectedTag} onClose={() => setSelectedTag(null)} />}
     </div>
   )
 }
