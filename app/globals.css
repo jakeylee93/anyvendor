@@ -822,8 +822,10 @@ body {
   padding: 0 14px;
 }
 .company-detail.open {
-  max-height: 100px;
+  max-height: 200px;
   padding: 6px 14px 10px;
+  background: #f8fafc;
+  border-left: 3px solid #6366f1;
 }
 
 /* ===== RESPONSIVE ===== */

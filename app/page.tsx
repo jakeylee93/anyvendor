@@ -329,15 +329,15 @@ const TAG_INFO: Record<string, { title: string; desc: string }> = {
   'iPhone': { title: 'iPhone (2007)', desc: 'Apple\'s smartphone put the internet in everyone\'s pocket. By 2015, mobile traffic overtook desktop. Changed everything.' },
   'Google Docs': { title: 'Google Docs (2006–present)', desc: 'Moved document editing to the cloud. Real-time collaboration replaced emailing files back and forth.' },
   // Web 3.0
-  'Bitcoin': { title: 'Bitcoin (2009–present)', desc: 'The first cryptocurrency. Decentralised digital money with no central bank. Reached $69,000 per coin in 2021.' },
-  'Ethereum': { title: 'Ethereum (2015–present)', desc: 'Blockchain platform that introduced smart contracts — programmable money that executes automatically when conditions are met.' },
+  'Bitcoin': { title: 'Bitcoin (2009–present)', desc: 'The first cryptocurrency. Decentralised digital money with no central bank. Hit an all-time high of $124,600 in December 2025. Currently trading around $72,000 (March 2026).' },
+  'Ethereum': { title: 'Ethereum (2015–present)', desc: 'Blockchain platform that introduced smart contracts — programmable money that executes automatically when conditions are met. Powers DeFi, NFTs, and thousands of decentralised applications.' },
   'OpenSea': { title: 'OpenSea (2017–present)', desc: 'The largest NFT marketplace. Facilitated billions in digital art and collectible sales during the 2021-2022 NFT boom.' },
   'MetaMask': { title: 'MetaMask', desc: 'Crypto wallet browser extension. The gateway for millions of users to interact with blockchain applications.' },
   'Uniswap': { title: 'Uniswap', desc: 'Decentralised exchange protocol. Proved you could trade assets without a bank, broker, or middleman.' },
   'Smart Contracts': { title: 'Smart Contracts', desc: 'Self-executing code on the blockchain. When conditions are met, the contract runs automatically. No lawyers, no delays.' },
   'Trading Bots': { title: 'Automated Trading Bots', desc: 'Software that trades 24/7 based on algorithms. Proved that code could generate value while humans sleep.' },
   // Web 4.0
-  'ChatGPT': { title: 'ChatGPT (OpenAI)', desc: 'Launched November 2022. Reached 100 million users in 2 months — fastest adoption of any technology in history. Conversational AI that writes, codes, analyses, and creates.' },
+  'ChatGPT': { title: 'ChatGPT (OpenAI)', desc: 'Launched November 2022. Now has over 900 million weekly active users (Jan 2026). The fastest-growing consumer product in history. Conversational AI that writes, codes, analyses, and creates.' },
   'Claude': { title: 'Claude (Anthropic)', desc: 'AI assistant known for careful reasoning, long document analysis, and nuanced writing. Handles complex multi-step tasks with high accuracy.' },
   'Gemini': { title: 'Gemini (Google)', desc: 'Google\'s multimodal AI. Processes text, images, video, and code simultaneously. Integrated across Google\'s entire product suite.' },
   'anyOS': { title: 'anyOS', desc: 'AI operating system that connects multiple AI models, tools, and integrations into one natural language interface. Hardware delivered, pre-configured, with training and support.' },
@@ -420,12 +420,13 @@ export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string|null>(null)
 
   const companies = [
-    { name: 'Spotify', detail: '— Music streaming giant', number: '1,500 jobs cut', info: 'Spotify announced workforce reductions during its AI and efficiency push, while expanding internal tooling for personalization, ad optimization, and automated workflows.' },
-    { name: 'Ocado', detail: '— UK grocery tech (AI improved engineering productivity)', number: '1,500 jobs cut', info: 'Ocado has increasingly automated logistics and engineering processes, using AI and robotics to improve throughput and reduce manual overhead in core operations.' },
-    { name: 'Duolingo', detail: '— 10% contractors replaced, AI graded in reviews', number: 'AI-first policy', info: 'Duolingo publicly framed itself as AI-first, expanded AI-generated lesson workflows, and changed hiring and contractor strategy around AI-assisted production.' },
-    { name: 'Meta', detail: '— Restructured entire teams around AI capabilities', number: 'Thousands cut', info: 'Meta consolidated teams, shifted investment into AI infrastructure and models, and prioritized AI-powered product features across consumer and enterprise lines.' },
-    { name: 'Google', detail: '— Shifted capital from headcount to AI infrastructure', number: 'Thousands cut', info: 'Google redirected spend into AI compute, TPU/GPU infrastructure, and model development while streamlining org structures in adjacent functions.' },
-    { name: 'Amazon', detail: '— Automated warehouse ops, reduced logistics staff', number: 'Thousands cut', info: 'Amazon expanded robotics and AI planning in fulfillment and logistics, reducing reliance on manual task routing and repetitive warehouse functions.' },
+    { name: 'Spotify', detail: '— Music streaming giant, 3 rounds of layoffs', number: '1,700+ jobs cut', info: '1,500 employees (17% of workforce) in Dec 2023, plus 200+ more in 2024. Now using AI for personalisation, ad optimisation, and automated code generation. Senior engineers act as "architects and editors" while AI handles routine development.' },
+    { name: 'Ocado', detail: '— UK grocery tech, £150m cost-cutting drive', number: '1,000 jobs cut', info: 'Announced Feb 2026: cutting 1,000 roles (5% of global workforce), mostly R&D in the UK. Using AI and robotics to automate warehouse logistics. Saving £150m in technology and support costs.' },
+    { name: 'Duolingo', detail: '— Declared "AI-first", replaced contractors', number: 'AI-first policy', info: 'Declared AI-first in April 2025. Cut 10% of contractors whose work AI now handles. CEO memo: "gradually stop using contractors to do work that AI can handle." AI now creates lessons across 100+ languages.' },
+    { name: 'Meta', detail: '— 1,500 cut from Reality Labs (Jan 2026)', number: '11,000+ total', info: 'Laid off 11,000 in 2022, 10,000 in 2023, then 1,500 from Reality Labs in Jan 2026. Restructured entire teams around AI capabilities. Shifted investment into AI infrastructure and models.' },
+    { name: 'Amazon', detail: '— 16,000 jobs cut in early 2026 alone', number: '16,000 jobs cut', info: 'The largest single-company layoffs of 2026 so far. Expanding robotics and AI in fulfilment, logistics, and customer service. Despite continued revenue growth, AI is replacing manual roles at scale.' },
+    { name: 'Klarna', detail: '— AI chatbot replaced 700 customer service agents', number: '700 roles replaced', info: 'Deployed AI assistant handling 2.3 million conversations — equivalent to 700 agents. Saved $40m. CEO plans to shrink from 3,000 to under 2,000 employees by 2030. Then quietly re-hired humans when quality dropped.' },
+    { name: 'IBM', detail: '— Paused hiring for AI-replaceable roles', number: '7,800 roles frozen', info: 'IBM announced a hiring freeze for any role that could be performed by AI, affecting roughly 7,800 back-office positions. Redirecting investment into AI infrastructure and Watson successors.' },
   ]
 
   const goPrev = useCallback(() => {
@@ -688,7 +689,7 @@ export default function Home() {
             <div className="era-subtitle">The Agentic Web</div>
             <h1 className="era-title">Web 4.0</h1>
             <div className="era-period">2023 — Present</div>
-            <p className="description">The AI era. ChatGPT launched November 2022 and reached 100 million users in two months — the fastest adoption of any technology in history. Software no longer just displays information — it <strong>acts</strong>. AI agents write emails, build websites, manage projects, and make decisions. Natural language is the new interface.</p>
+            <p className="description">The AI era. ChatGPT launched November 2022 and now has over 900 million weekly active users. Software no longer just displays information — it <strong>acts</strong>. AI agents write emails, build websites, manage projects, and make decisions. Natural language is the new interface. In 2025–2026, over 250,000 tech workers were laid off as companies restructured around AI.</p>
             <div className="features">
               <div className="feature-box">
                 <div className="feature-top">
@@ -813,8 +814,8 @@ export default function Home() {
                 </div>
               ))}
               <div className="stat-row" style={{borderBottom:'none',background:'#fef2f2'}}>
-                <div><span className="company" style={{color:'#dc2626'}}>Total tech layoffs 2025</span></div>
-                <div className="number" style={{fontSize:'clamp(14px,1.6vw,20px)'}}>100,000+</div>
+                <div><span className="company" style={{color:'#dc2626'}}>Total tech layoffs 2025–2026</span></div>
+                <div className="number" style={{fontSize:'clamp(14px,1.6vw,20px)'}}>250,000+</div>
               </div>
             </div>
 
