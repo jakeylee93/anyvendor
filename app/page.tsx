@@ -72,6 +72,45 @@ function Progress({ page }: { page: number }) {
   )
 }
 
+const ALL_LOGOS = [
+  'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
+  'discord','telegram','whatsapp','slack','gmail','signal','zoom',
+  'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
+  'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
+  'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
+  'brave','googlechrome','elevenlabs','figma',
+  'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox','visualstudiocode',
+]
+
+function FloatingLogos() {
+  // Generate 15 logo slots with random positions and staggered delays
+  // Each logo floats from bottom to top, then reappears at bottom with a new logo
+  const logos = Array.from({ length: 15 }, (_, i) => ({
+    left: `${5 + ((i * 17) % 90)}%`,
+    delay: `${-(i * 2.6)}s`, // stagger so they don't all start at the same time
+    duration: `${18 + (i % 5) * 3}s`, // vary speed slightly
+    logoIndex: i % ALL_LOGOS.length,
+  }))
+
+  return (
+    <>
+      {logos.map((l, i) => (
+        <img
+          key={i}
+          src={`/logos/icon-${ALL_LOGOS[(l.logoIndex + i * 3) % ALL_LOGOS.length]}.svg`}
+          alt=""
+          className="float-up-logo"
+          style={{
+            left: l.left,
+            animationDuration: l.duration,
+            animationDelay: l.delay,
+          }}
+        />
+      ))}
+    </>
+  )
+}
+
 const ROTATING_WORDS = [
   'Life',
   'Business',
@@ -180,35 +219,7 @@ export default function Home() {
       <div className={`slide-snap ${activeSlide === 0 ? "active" : ""}`}>
         <div className="slide-page title-slide">
           <div className="title-logos-bg">
-            {[
-              'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
-              'discord','telegram','whatsapp','slack','gmail','signal','zoom',
-              'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
-              'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
-              'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
-              'brave','googlechrome',
-              'elevenlabs','figma',
-              'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox',
-              'visualstudiocode',
-            ].map((name) => `/logos/icon-${name}.svg`)}
-            {/* Render two identical grids for seamless loop */}
-            {[0, 1].map((copy) => (
-              <div key={copy} className="logo-scroll-col">
-                {[
-                  'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
-                  'discord','telegram','whatsapp','slack','gmail','signal','zoom',
-                  'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
-                  'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
-                  'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
-                  'brave','googlechrome',
-                  'elevenlabs','figma',
-                  'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox',
-                  'visualstudiocode',
-                ].map((name, i) => (
-                  <img key={`${copy}-${i}`} src={`/logos/icon-${name}.svg`} alt="" className="scroll-logo" />
-                ))}
-              </div>
-            ))}
+            <FloatingLogos />
           </div>
           <div className="title-content">
             <div className="title-logo">
