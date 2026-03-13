@@ -123,6 +123,15 @@ export default function Home() {
         onPrev={goPrev}
         onNext={goNext}
       />
+      <div className="bottom-bar">
+        {activeSlide === 0 ? (
+          <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>
+        ) : activeSlide < 7 ? (
+          <Timeline active={activeSlide < 6 ? activeSlide : 6} />
+        ) : (
+          <Progress page={activeSlide + 1} />
+        )}
+      </div>
       <div className="slides-container" ref={scrollRef} onScroll={onScroll}>
 
 
@@ -699,15 +708,6 @@ export default function Home() {
       </div>
 
     </div>
-      <div className="bottom-bar">
-        {activeSlide === 0 ? (
-          <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>
-        ) : activeSlide < 7 ? (
-          <Timeline active={activeSlide < 6 ? activeSlide : 6} />
-        ) : (
-          <Progress page={activeSlide + 1} />
-        )}
-      </div>
     </div>
   )
 }

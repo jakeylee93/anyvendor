@@ -130,7 +130,7 @@ html {
   width: 100%;
   min-height: 100%;
   padding: 2.5vh 5vw 0 5vw;
-  padding-bottom: 150px; /* space for fixed bottom bar */
+  padding-bottom: 3vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -317,16 +317,13 @@ html {
   opacity: 0.8;
 }
 
-/* ===== FIXED BOTTOM BAR ===== */
+/* ===== TOP TIMELINE BAR (below nav) ===== */
 .bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 40;
+  flex-shrink: 0;
   background: white;
-  border-top: 1.5px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 6px 5vw 8px;
+  z-index: 40;
 }
 
 /* ===== TIMELINE FOOTER (slides 1-6) ===== */
