@@ -146,48 +146,33 @@ export default function Home() {
         <div className="slide-page title-slide">
           <div className="title-logos-bg">
             {[
-              { src: '/logos/si-openai.svg', x: 5, y: 8, delay: 0 },
-              { src: '/logos/si-anthropic.svg', x: 82, y: 5, delay: 1.5 },
-              { src: '/logos/si-googlegemini.svg', x: 15, y: 78, delay: 0.8 },
-              { src: '/logos/si-claude.svg', x: 90, y: 72, delay: 2.1 },
-              { src: '/logos/si-discord.svg', x: 2, y: 42, delay: 3.2 },
-              { src: '/logos/si-telegram.svg', x: 92, y: 34, delay: 1.2 },
-              { src: '/logos/si-whatsapp.svg', x: 74, y: 86, delay: 2.8 },
-              { src: '/logos/si-gmail.svg', x: 20, y: 92, delay: 0.4 },
-              { src: '/logos/si-meta.svg', x: 66, y: 10, delay: 3.8 },
-              { src: '/logos/si-supabase.svg', x: 38, y: 3, delay: 2.4 },
-              { src: '/logos/si-brave.svg', x: 93, y: 54, delay: 1.8 },
-              { src: '/logos/si-react.svg', x: 50, y: 90, delay: 3.5 },
-              { src: '/logos/si-perplexity.svg', x: 10, y: 24, delay: 0.6 },
-              { src: '/logos/si-mistral.svg', x: 42, y: 72, delay: 2.6 },
-              { src: '/logos/si-github.svg', x: 48, y: 6, delay: 4.1 },
-              { src: '/logos/si-stripe.svg', x: 80, y: 46, delay: 0.3 },
-              { src: '/logos/si-python.svg', x: 26, y: 60, delay: 1.9 },
-              { src: '/logos/si-typescript.svg', x: 60, y: 82, delay: 3.0 },
-              { src: '/logos/si-tailwindcss.svg', x: 6, y: 62, delay: 4.4 },
-              { src: '/logos/si-nextdotjs.svg', x: 70, y: 26, delay: 2.2 },
-              { src: '/logos/si-nodedotjs.svg', x: 34, y: 30, delay: 0.9 },
-              { src: '/logos/si-postgresql.svg', x: 56, y: 58, delay: 3.6 },
-              { src: '/logos/si-javascript.svg', x: 18, y: 48, delay: 1.4 },
-              { src: '/logos/si-slack.svg', x: 84, y: 88, delay: 4.8 },
-              { src: '/logos/si-docker.svg', x: 46, y: 42, delay: 2.0 },
-              { src: '/logos/si-vercel.svg', x: 30, y: 86, delay: 3.3 },
-              { src: '/logos/si-html5.svg', x: 62, y: 48, delay: 0.7 },
-              { src: '/logos/si-elevenlabs.svg', x: 78, y: 62, delay: 4.2 },
-              { src: '/logos/si-moonshot.svg', x: 52, y: 22, delay: 1.7 },
-              { src: '/logos/si-npm.svg', x: 88, y: 18, delay: 2.9 },
-            ].map((logo, i) => (
-              <img
-                key={i}
-                src={logo.src}
-                alt=""
-                className="floating-logo"
-                style={{
-                  left: `${logo.x}%`,
-                  top: `${logo.y}%`,
-                  animationDelay: `${logo.delay}s`,
-                }}
-              />
+              'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
+              'discord','telegram','whatsapp','slack','gmail','signal','zoom',
+              'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
+              'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
+              'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
+              'brave','googlechrome',
+              'elevenlabs','figma',
+              'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox',
+              'visualstudiocode',
+            ].map((name) => `/logos/icon-${name}.svg`)}
+            {/* Render two identical grids for seamless loop */}
+            {[0, 1].map((copy) => (
+              <div key={copy} className="logo-scroll-col">
+                {[
+                  'openai','anthropic','googlegemini','perplexity','huggingface','ollama',
+                  'discord','telegram','whatsapp','slack','gmail','signal','zoom',
+                  'github','vercel','docker','supabase','postgresql','redis','mongodb','cloudflare',
+                  'python','javascript','typescript','react','nextdotjs','nodedotjs','tailwindcss','html5',
+                  'stripe','googlecalendar','googledrive','googlesheets','notion','trello','zapier','airtable',
+                  'brave','googlechrome',
+                  'elevenlabs','figma',
+                  'npm','apple','linux','git','sass','wordpress','shopify','xero','dropbox',
+                  'visualstudiocode',
+                ].map((name, i) => (
+                  <img key={`${copy}-${i}`} src={`/logos/icon-${name}.svg`} alt="" className="scroll-logo" />
+                ))}
+              </div>
             ))}
           </div>
           <div className="title-content">
