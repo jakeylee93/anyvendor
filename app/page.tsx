@@ -83,21 +83,31 @@ const ALL_LOGOS = [
 ]
 
 function FloatingLogos() {
-  // Generate 15 logo slots with random positions and staggered delays
-  // Each logo floats from bottom to top, then reappears at bottom with a new logo
-  const logos = Array.from({ length: 15 }, (_, i) => ({
-    left: `${5 + ((i * 17) % 90)}%`,
-    delay: `${-(i * 2.6)}s`, // stagger so they don't all start at the same time
-    duration: `${18 + (i % 5) * 3}s`, // vary speed slightly
-    logoIndex: i % ALL_LOGOS.length,
-  }))
+  // Randomize on mount — shuffle logos and assign random positions
+  const [items] = useState(() => {
+    // Shuffle all logos
+    const shuffled = [...ALL_LOGOS].sort(() => Math.random() - 0.5)
+    // Pick 15 logos, spread evenly across 15 columns with random offset
+    const count = 15
+    const colWidth = 90 / count // ~6% each
+    return Array.from({ length: count }, (_, i) => {
+      const baseLeft = 3 + i * colWidth // evenly spaced columns
+      const jitter = (Math.random() - 0.5) * colWidth * 0.6 // slight random offset within column
+      return {
+        src: `/logos/icon-${shuffled[i % shuffled.length]}.svg`,
+        left: `${Math.max(2, Math.min(94, baseLeft + jitter))}%`,
+        delay: `${-(Math.random() * 22)}s`, // random start point in the cycle
+        duration: `${20 + Math.random() * 8}s`, // 20-28s — slight speed variation
+      }
+    })
+  })
 
   return (
     <>
-      {logos.map((l, i) => (
+      {items.map((l, i) => (
         <img
           key={i}
-          src={`/logos/icon-${ALL_LOGOS[(l.logoIndex + i * 3) % ALL_LOGOS.length]}.svg`}
+          src={l.src}
           alt=""
           className="float-up-logo"
           style={{
