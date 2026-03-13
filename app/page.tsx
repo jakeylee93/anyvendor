@@ -1,11 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
-import { Keyboard, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import type { Swiper as SwiperType } from 'swiper'
-import 'swiper/css'
-import 'swiper/css/pagination'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 const SLIDE_TITLES = [
   'anyOS',
@@ -80,7 +75,6 @@ function Progress({ page }: { page: number }) {
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
-  const swiperRef = useRef<SwiperType | null>(null)
 
   const companies = [
     { name: 'Spotify', detail: '— Music streaming giant', number: '1,500 jobs cut', info: 'Spotify announced workforce reductions during its AI and efficiency push, while expanding internal tooling for personalization, ad optimization, and automated workflows.' },
@@ -91,30 +85,49 @@ export default function Home() {
     { name: 'Amazon', detail: '— Automated warehouse ops, reduced logistics staff', number: 'Thousands cut', info: 'Amazon expanded robotics and AI planning in fulfillment and logistics, reducing reliance on manual task routing and repetitive warehouse functions.' },
   ]
 
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  const goTo = useCallback((index: number) => {
+    const el = scrollRef.current
+    if (!el) return
+    el.scrollTo({ left: index * el.offsetWidth, behavior: 'smooth' })
+  }, [])
+
+  const goPrev = useCallback(() => { if (activeSlide > 0) goTo(activeSlide - 1) }, [activeSlide, goTo])
+  const goNext = useCallback(() => { if (activeSlide < 10) goTo(activeSlide + 1) }, [activeSlide, goTo])
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') goPrev()
+      if (e.key === 'ArrowRight') goNext()
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [goPrev, goNext])
+
+  // Detect current slide on scroll
+  const onScroll = useCallback(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const index = Math.round(el.scrollLeft / el.offsetWidth)
+    if (index !== activeSlide) setActiveSlide(index)
+  }, [activeSlide])
+
   return (
     <div className="presentation-root">
       <TopNav
         current={activeSlide + 1}
         total={11}
         title={SLIDE_TITLES[activeSlide] || ''}
-        onPrev={() => swiperRef.current?.slidePrev()}
-        onNext={() => swiperRef.current?.slideNext()}
+        onPrev={goPrev}
+        onNext={goNext}
       />
-      <Swiper
-        modules={[Pagination, Keyboard]}
-        direction="horizontal"
-        slidesPerView={1}
-        speed={600}
-        keyboard={{ enabled: true }}
-        cssMode={true}
-        pagination={{ clickable: true }}
-        className="presentation-swiper"
-        onSwiper={(swiper) => { swiperRef.current = swiper }}
-        onSlideChange={(swiper) => { setActiveSlide(swiper.activeIndex) }}
-      >
+      <div className="slides-container" ref={scrollRef} onScroll={onScroll}>
+
 
       {/* ===== SLIDE 0: TITLE ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page title-slide">
           <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:'24px',textAlign:'center'}}>
             <div style={{fontFamily:"'Space Grotesk', sans-serif",fontSize:'clamp(64px, 12vw, 120px)',fontWeight:700,color:'#1a1a1a',letterSpacing:'-0.04em',lineHeight:1}}>
@@ -126,10 +139,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 1: WEB 1.0 ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page web1">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -183,10 +196,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 2: WEB 2.0 ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page web2">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -240,10 +253,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 3: WEB 3.0 ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page web3">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -297,10 +310,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 4: WEB 4.0 ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page web4">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -354,10 +367,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 5: WEB 5.0 ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page web5">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -411,10 +424,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 6: BUSINESS CASE ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page page6">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -480,10 +493,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 7: HOW I GOT HERE ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page page7">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -520,10 +533,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 8: WHAT I BUILT ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page page8">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -592,10 +605,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 9: LIVE DEMO ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page page9">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -628,10 +641,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
       {/* ===== SLIDE 10: WHAT JUST HAPPENED ===== */}
-      <SwiperSlide>
+      <div className="slide-snap">
         <div className="slide-page page10">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -683,9 +696,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </SwiperSlide>
+      </div>
 
-    </Swiper>
+    </div>
       <div className="bottom-bar">
         {activeSlide === 0 ? (
           <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>

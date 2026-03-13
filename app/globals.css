@@ -101,28 +101,28 @@ html {
   .top-nav { gap: 8px; padding: 6px 10px; }
 }
 
-/* ===== SWIPER ===== */
-.presentation-swiper {
-  width: 100vw !important;
-  flex: 1 !important;
-  min-height: 0 !important;
-}
-.presentation-swiper .swiper-slide {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+/* ===== SLIDES CONTAINER (native scroll-snap) ===== */
+.slides-container {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior-y: contain;
-  height: 100% !important;
+  scrollbar-width: none;
 }
-.swiper-pagination-bullet {
-  background: #6366f1 !important;
-  opacity: 0.3 !important;
-  width: 10px !important;
-  height: 10px !important;
+.slides-container::-webkit-scrollbar {
+  display: none;
 }
-.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  transform: scale(1.2);
+.slide-snap {
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ===== SLIDE PAGE ===== */
