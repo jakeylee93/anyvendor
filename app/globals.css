@@ -95,7 +95,8 @@ body {
 
 /* ===== SLIDES ===== */
 .slides-container {
-  padding-top: 100px; /* space for fixed nav + timeline */
+  padding-top: 50px; /* space for fixed nav */
+  padding-bottom: 55px; /* space for fixed bottom bar */
 }
 .slide-snap {
   display: none;
@@ -189,7 +190,7 @@ body {
 }
 .era-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(24px, 3.5vw, 42px);
+  font-size: clamp(20px, 3.2vw, 38px);
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.3vh;
@@ -294,14 +295,14 @@ body {
   opacity: 0.8;
 }
 
-/* ===== TIMELINE BAR (fixed below nav) ===== */
+/* ===== TIMELINE BAR (fixed bottom) ===== */
 .bottom-bar {
   position: fixed;
-  top: 46px;
+  bottom: 0;
   left: 0;
   right: 0;
   background: white;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   padding: 6px 5vw 8px;
   z-index: 40;
 }
