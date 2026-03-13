@@ -413,11 +413,78 @@ function TagPopup({ tag, onClose }: { tag: string; onClose: () => void }) {
   )
 }
 
+const PIN_CODE = '2203'
+
+function PinLock({ onUnlock }: { onUnlock: () => void }) {
+  const [digits, setDigits] = useState<string[]>([])
+  const [shake, setShake] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const handleDigit = useCallback((d: string) => {
+    setDigits(prev => {
+      if (prev.length >= 4) return prev
+      const next = [...prev, d]
+      if (next.length === 4) {
+        if (next.join('') === PIN_CODE) {
+          setTimeout(() => setSuccess(true), 150)
+          setTimeout(() => {
+            sessionStorage.setItem('anyos-unlocked', '1')
+            onUnlock()
+          }, 800)
+        } else {
+          setTimeout(() => {
+            setShake(true)
+            setTimeout(() => { setShake(false); setDigits([]) }, 500)
+          }, 200)
+        }
+      }
+      return next
+    })
+  }, [onUnlock])
+
+  const handleDelete = useCallback(() => {
+    setDigits(prev => prev.slice(0, -1))
+  }, [])
+
+  const keys = ['1','2','3','4','5','6','7','8','9','','0','⌫']
+
+  return (
+    <div className={`pin-overlay ${success ? 'pin-unlocked' : ''}`}>
+      <div className="pin-container">
+        <div className="pin-logo">any<span>OS</span></div>
+        <p className="pin-subtitle">Enter access code</p>
+        <div className={`pin-dots ${shake ? 'pin-shake' : ''}`}>
+          {[0,1,2,3].map(i => (
+            <div key={i} className={`pin-dot ${i < digits.length ? 'filled' : ''} ${shake ? 'error' : ''}`} />
+          ))}
+        </div>
+        <div className="pin-keypad">
+          {keys.map((k, i) => (
+            k === '' ? <div key={i} className="pin-key empty" /> :
+            k === '⌫' ? (
+              <button key={i} className="pin-key delete" onClick={handleDelete}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 4H8l-7 8 7 8h13a2 2 0 002-2V6a2 2 0 00-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/></svg>
+              </button>
+            ) : (
+              <button key={i} className="pin-key" onClick={() => handleDigit(k)}>{k}</button>
+            )
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
+  const [unlocked, setUnlocked] = useState(false)
   const [activeSlide, setActiveSlide] = useState(0)
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
   const [selectedIntegration, setSelectedIntegration] = useState<string|null>(null)
   const [selectedTag, setSelectedTag] = useState<string|null>(null)
+
+  useEffect(() => {
+    if (sessionStorage.getItem('anyos-unlocked') === '1') setUnlocked(true)
+  }, [])
 
   const companies = [
     { name: 'Spotify', detail: '— Music streaming giant, 3 rounds of layoffs', number: '1,700+ jobs cut', info: '1,500 employees (17% of workforce) in Dec 2023, plus 200+ more in 2024. Now using AI for personalisation, ad optimisation, and automated code generation. Senior engineers act as "architects and editors" while AI handles routine development.' },
@@ -463,6 +530,8 @@ export default function Home() {
     }
     touchStart.current = null
   }, [goNext, goPrev])
+
+  if (!unlocked) return <PinLock onUnlock={() => setUnlocked(true)} />
 
   return (
     <div className="presentation-root">
