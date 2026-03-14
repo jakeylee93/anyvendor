@@ -363,70 +363,212 @@ const TAG_INFO: Record<string, { title: string; desc: string }> = {
   'Quoting': { title: 'Automated Quoting', desc: 'AI generates quotes based on your pricing rules, client history, and project requirements. Professional, accurate, instant.' },
 }
 
-const DEMO_PROMPTS: {model:string; logo:string; desc:string; prompt:string; time:string}[] = [
-  // AI Models (18 prompts)
-  {model:'Claude Opus 4',logo:'/logos/icon-anthropic.svg',desc:'Most capable reasoning model',prompt:'Rebuild this client\'s website — analyse the existing site, extract content, design modern layout, write all the code, deploy live',time:'45 min'},
-  {model:'Claude Opus 4',logo:'/logos/icon-anthropic.svg',desc:'Most capable reasoning model',prompt:'Summarise this 80-page contract and highlight the 5 clauses that need the client\'s immediate attention',time:'2 min'},
-  {model:'Claude Opus 4',logo:'/logos/icon-anthropic.svg',desc:'Most capable reasoning model',prompt:'Write a full business plan with financials, market analysis, competitor positioning, and 3-year growth strategy',time:'20 min'},
-  {model:'GPT-4o',logo:'/logos/icon-openai.svg',desc:'Fastest general-purpose model',prompt:'Read this morning\'s emails, draft responses to the 3 urgent ones, flag anything that needs my personal attention',time:'30 sec'},
-  {model:'GPT-4o',logo:'/logos/icon-openai.svg',desc:'Fastest general-purpose model',prompt:'Screen 150 CVs for the senior developer role and rank the top 10 with reasoning for each',time:'4 min'},
-  {model:'GPT-4o',logo:'/logos/icon-openai.svg',desc:'Fastest general-purpose model',prompt:'Translate our product catalogue into French, German, Spanish, Italian, and Japanese',time:'5 min'},
-  {model:'Gemini 2.5 Pro',logo:'/logos/icon-googlegemini.svg',desc:'Research + data analysis',prompt:'Analyse our Google reviews from the last 6 months — patterns, complaints, praise, and action points',time:'2 min'},
-  {model:'Gemini 2.5 Pro',logo:'/logos/icon-googlegemini.svg',desc:'Research + data analysis',prompt:'Research the client\'s 5 closest competitors — pricing, brand positioning, web traffic, social following',time:'5 min'},
-  {model:'Gemini 2.5 Pro',logo:'/logos/icon-googlegemini.svg',desc:'Research + data analysis',prompt:'Audit this website for SEO issues — broken links, missing meta tags, slow pages — prioritised fix list',time:'5 min'},
-  {model:'Kimi k2.5',logo:'/logos/icon-moonrepo.svg',desc:'Best value long-context model',prompt:'Read this 200-page employee manual and create a condensed 10-page quick reference guide',time:'5 min'},
-  {model:'Kimi k2.5',logo:'/logos/icon-moonrepo.svg',desc:'Best value long-context model',prompt:'Process 500 expense receipts — extract amounts, categorise by type, produce a summary spreadsheet',time:'8 min'},
-  {model:'Kimi k2.5',logo:'/logos/icon-moonrepo.svg',desc:'Best value long-context model',prompt:'Analyse 3 insurance quotes side-by-side — coverage, exclusions, excess amounts, and value rating',time:'3 min'},
-  {model:'Codex',logo:'/logos/icon-openai.svg',desc:'Autonomous coding agent',prompt:'Build an online booking system with table management, time slots, capacity limits, and confirmation emails',time:'15 min'},
-  {model:'Codex',logo:'/logos/icon-openai.svg',desc:'Autonomous coding agent',prompt:'Build a staff rota system with shift swapping, availability management, and automatic conflict detection',time:'15 min'},
-  {model:'Codex',logo:'/logos/icon-openai.svg',desc:'Autonomous coding agent',prompt:'Migrate this WordPress site to Next.js — extract all content, rebuild the design, deploy to Vercel',time:'1 hr'},
-  {model:'Claude Sonnet 4',logo:'/logos/icon-anthropic.svg',desc:'Fast + intelligent balance',prompt:'Draft personalised outreach messages for 25 LinkedIn candidates based on their profiles',time:'2 min'},
-  {model:'Claude Sonnet 4',logo:'/logos/icon-anthropic.svg',desc:'Fast + intelligent balance',prompt:'Write 12 SEO-optimised blog posts for our website targeting our primary keywords',time:'15 min'},
-  {model:'Claude Sonnet 4',logo:'/logos/icon-anthropic.svg',desc:'Fast + intelligent balance',prompt:'Build a comprehensive employee handbook covering policies, procedures, benefits, and values',time:'15 min'},
-  // API Integrations (36 prompts)
-  {model:'Stripe',logo:'/logos/icon-stripe.svg',desc:'Payments + invoicing',prompt:'Generate invoices for all 30 regular clients and email them with payment links',time:'2 min'},
-  {model:'Stripe',logo:'/logos/icon-stripe.svg',desc:'Payments + invoicing',prompt:'Build a donation page with Gift Aid, recurring options, and automated thank-you emails',time:'10 min'},
-  {model:'Stripe',logo:'/logos/icon-stripe.svg',desc:'Payments + invoicing',prompt:'Set up a subscription box system where customers choose products and get billed monthly',time:'15 min'},
-  {model:'Gmail',logo:'/logos/icon-gmail.svg',desc:'Email automation',prompt:'Send appointment reminders to all patients booked for next week with their prep instructions',time:'30 sec'},
-  {model:'Gmail',logo:'/logos/icon-gmail.svg',desc:'Email automation',prompt:'A/B test two email subject lines across our subscriber list and report which performed better',time:'4 min'},
-  {model:'Gmail',logo:'/logos/icon-gmail.svg',desc:'Email automation',prompt:'Email all registered buyers whose criteria match this new property listing',time:'30 sec'},
-  {model:'Google Calendar',logo:'/logos/icon-googlecalendar.svg',desc:'Scheduling + planning',prompt:'Schedule next week\'s 8 jobs, optimise the route between addresses, send ETAs to each client',time:'1 min'},
-  {model:'Google Calendar',logo:'/logos/icon-googlecalendar.svg',desc:'Scheduling + planning',prompt:'Create volunteer shift schedules for 60 people across 3 locations for the summer festival',time:'3 min'},
-  {model:'Google Calendar',logo:'/logos/icon-googlecalendar.svg',desc:'Scheduling + planning',prompt:'Schedule gas safety inspections for all 12 properties, send appointment confirmations to tenants',time:'2 min'},
-  {model:'Google Sheets',logo:'/logos/icon-googlesheets.svg',desc:'Data + spreadsheets',prompt:'Generate a monthly P&L report from accounting data and email it to the directors',time:'2 min'},
-  {model:'Google Sheets',logo:'/logos/icon-googlesheets.svg',desc:'Data + spreadsheets',prompt:'Calculate food costs for the new menu — flag any items below 65% gross margin',time:'3 min'},
-  {model:'Google Sheets',logo:'/logos/icon-googlesheets.svg',desc:'Data + spreadsheets',prompt:'Generate a cash flow forecast for the next 12 months based on current income and committed costs',time:'3 min'},
-  {model:'Xero',logo:'/logos/icon-xero.svg',desc:'Accounting + tax',prompt:'Reconcile the bank statement against Xero and flag every discrepancy with suggested corrections',time:'3 min'},
-  {model:'Xero',logo:'/logos/icon-xero.svg',desc:'Accounting + tax',prompt:'Calculate corporation tax liability for FY25 and flag reliefs or allowances we might be missing',time:'3 min'},
-  {model:'Xero',logo:'/logos/icon-xero.svg',desc:'Accounting + tax',prompt:'Generate quarterly VAT return calculations and prepare the submission summary',time:'4 min'},
-  {model:'WhatsApp',logo:'/logos/icon-whatsapp.svg',desc:'Client messaging',prompt:'Send order confirmations with estimated delivery times and a tracking link',time:'30 sec'},
-  {model:'WhatsApp',logo:'/logos/icon-whatsapp.svg',desc:'Client messaging',prompt:'Message all weekend staff their shift times, locations, and dress code for the festival',time:'30 sec'},
-  {model:'WhatsApp',logo:'/logos/icon-whatsapp.svg',desc:'Client messaging',prompt:'Send all clients their quote PDFs with a \'click to approve\' link for instant sign-off',time:'1 min'},
-  {model:'Slack',logo:'/logos/icon-slack.svg',desc:'Team communication',prompt:'Post the daily standup summary to #general with task updates pulled from Trello and GitHub',time:'1 min'},
-  {model:'Slack',logo:'/logos/icon-slack.svg',desc:'Team communication',prompt:'Automate weekly status reports — pull data from Trello, Slack, and Sheets into one document',time:'5 min'},
-  {model:'Slack',logo:'/logos/icon-slack.svg',desc:'Team communication',prompt:'Alert the #urgent channel whenever a high-priority support ticket is created',time:'instant'},
-  {model:'Shopify',logo:'/logos/icon-shopify.svg',desc:'E-commerce platform',prompt:'Build an online store with 50 products, variant options, size guides, and integrated payments',time:'45 min'},
-  {model:'Shopify',logo:'/logos/icon-shopify.svg',desc:'E-commerce platform',prompt:'Set up automated reorder alerts when any product drops below 10 units in stock',time:'5 min'},
-  {model:'Shopify',logo:'/logos/icon-shopify.svg',desc:'E-commerce platform',prompt:'Write product descriptions for 100 items using our brand voice with SEO-optimised titles',time:'8 min'},
-  {model:'Notion',logo:'/logos/icon-notion.svg',desc:'Knowledge management',prompt:'Create a searchable knowledge base with FAQs, how-to guides, and troubleshooting steps',time:'20 min'},
-  {model:'Notion',logo:'/logos/icon-notion.svg',desc:'Knowledge management',prompt:'Build an onboarding checklist for new employees — tasks, deadlines, and document uploads',time:'4 min'},
-  {model:'Notion',logo:'/logos/icon-notion.svg',desc:'Knowledge management',prompt:'Set up a project wiki with meeting notes, decisions, timelines, and team responsibilities',time:'8 min'},
-  {model:'Figma',logo:'/logos/icon-figma.svg',desc:'Design + prototyping',prompt:'Create product mockups from flat artwork — mugs, t-shirts, tote bags, phone cases',time:'5 min'},
-  {model:'Figma',logo:'/logos/icon-figma.svg',desc:'Design + prototyping',prompt:'Design business cards, letterheads, and email signatures matching brand guidelines',time:'5 min'},
-  {model:'Figma',logo:'/logos/icon-figma.svg',desc:'Design + prototyping',prompt:'Design tap badges and pump clip artwork for our 4 core beers in brand-consistent style',time:'6 min'},
-  {model:'GitHub',logo:'/logos/icon-github.svg',desc:'Code management',prompt:'Review this pull request — check for security issues, performance problems, suggest improvements',time:'3 min'},
-  {model:'GitHub',logo:'/logos/icon-github.svg',desc:'Code management',prompt:'Set up branch protection, code review requirements, and automated deployment workflows',time:'5 min'},
-  {model:'GitHub',logo:'/logos/icon-github.svg',desc:'Code management',prompt:'Scan all repositories for exposed API keys, outdated dependencies, and security vulnerabilities',time:'4 min'},
-  {model:'Mailchimp',logo:'/logos/icon-mailchimp.svg',desc:'Email marketing',prompt:'Segment our mailing list by purchase history and send targeted seasonal offers to each group',time:'3 min'},
-  {model:'Mailchimp',logo:'/logos/icon-mailchimp.svg',desc:'Email marketing',prompt:'Write a 30-day email drip campaign for new subscribers — welcome, educate, convert',time:'10 min'},
-  {model:'Mailchimp',logo:'/logos/icon-mailchimp.svg',desc:'Email marketing',prompt:'Design and code a branded HTML email template for our monthly newsletter',time:'8 min'},
-  // anyOS Router (6 prompts)
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Build a quote calculator for mobile bar packages with staffing, equipment, and drinks pricing',time:'3 min'},
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Create a cocktail menu PDF with photos, descriptions, allergen info, and pricing',time:'2 min'},
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Build a MOT reminder system that texts customers 4 weeks before their MOT expires',time:'5 min'},
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Optimise delivery routes for 25 drops across London — minimise mileage, time, and fuel',time:'2 min'},
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Build a quality checklist app that cleaners complete on-site with photo evidence and GPS stamps',time:'10 min'},
-  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',prompt:'Generate a network audit report — devices, security vulnerabilities, and recommended fixes',time:'5 min'},
+const DEMO_SERVICES = [
+  // AI Models
+  {model:'Claude Opus 4',logo:'/logos/icon-anthropic.svg',desc:'Most capable reasoning model',cost:'££££',prompts:[
+    'Rebuild this client\'s website — analyse existing site, extract content, design modern layout, write all code, deploy live',
+    'Summarise this 80-page contract and highlight the 5 clauses that need immediate client attention',
+    'Write a full business plan with financials, market analysis, competitor positioning, and 3-year growth strategy',
+    'Build a CRM dashboard from scratch — lead tracking, deal pipeline, client interactions, automated follow-ups',
+    'Architect a multi-tenant SaaS platform with user roles, billing, API access, and audit logging',
+  ]},
+  {model:'Claude Sonnet 4',logo:'/logos/icon-anthropic.svg',desc:'Fast + intelligent balance',cost:'££',prompts:[
+    'Draft personalised outreach messages for 25 LinkedIn candidates based on their profiles',
+    'Write 12 SEO-optimised blog posts targeting our primary keywords in our brand voice',
+    'Build a comprehensive employee handbook covering policies, procedures, benefits, and values',
+    'Create a 30-page training manual for new staff with screenshots and step-by-step guides',
+    'Draft terms and conditions for our e-commerce site based on UK consumer law',
+  ]},
+  {model:'GPT-4o',logo:'/logos/icon-openai.svg',desc:'Fastest general-purpose model',cost:'££',prompts:[
+    'Read this morning\'s emails, draft responses to the 3 urgent ones, flag anything needing personal attention',
+    'Screen 150 CVs for the senior developer role and rank the top 10 with reasoning',
+    'Translate our product catalogue into French, German, Spanish, Italian, and Japanese',
+    'Transcribe this 45-minute client call and extract all action items with owners and deadlines',
+    'Generate personalised thank-you emails for all 200 event attendees based on their registration data',
+  ]},
+  {model:'GPT-4o Mini',logo:'/logos/icon-openai.svg',desc:'Quick lightweight tasks',cost:'£',prompts:[
+    'Categorise these 500 support tickets by type, urgency, and department',
+    'Clean up this CSV — fix formatting, remove duplicates, standardise phone numbers and postcodes',
+    'Generate meta descriptions for all 80 pages on our website',
+    'Convert these meeting notes into a formatted action list with deadlines',
+    'Auto-tag all 2,000 products in our catalogue with relevant search keywords',
+  ]},
+  {model:'Codex',logo:'/logos/icon-openai.svg',desc:'Autonomous coding agent',cost:'£££',prompts:[
+    'Build an online booking system with table management, time slots, capacity limits, and confirmation emails',
+    'Build a staff rota system with shift swapping, availability management, and conflict detection',
+    'Migrate this WordPress site to Next.js — extract content, rebuild design, deploy to Vercel',
+    'Create a ticket booking system with seat selection, dynamic pricing, and e-ticket generation',
+    'Build a real-time shipment tracking dashboard with status updates and delivery ETAs',
+  ]},
+  {model:'Gemini 2.5 Pro',logo:'/logos/icon-googlegemini.svg',desc:'Research + data analysis',cost:'££',prompts:[
+    'Analyse our Google reviews from the last 6 months — patterns, complaints, praise, and action points',
+    'Research the client\'s 5 closest competitors — pricing, positioning, web traffic, social following',
+    'Audit this website for technical SEO — broken links, missing tags, slow pages, prioritised fixes',
+    'Analyse last quarter\'s sales data and recommend products to promote or discount for spring',
+    'Research trending AW26 colours and styles from Vogue, WGSN, and Pantone — produce a visual report',
+  ]},
+  {model:'Gemini 2.5 Flash',logo:'/logos/icon-googlegemini.svg',desc:'Fast multimodal processing',cost:'£',prompts:[
+    'Extract text and data from these 50 scanned invoices into a structured spreadsheet',
+    'Describe all images in our product catalogue for accessibility alt-text compliance',
+    'Read this handwritten meeting whiteboard photo and convert to typed notes with action items',
+    'Process these 100 business cards — extract names, emails, companies into a contact list',
+    'Identify and tag all brand assets in our Google Drive by file type, dimensions, and usage',
+  ]},
+  {model:'Kimi k2.5',logo:'/logos/icon-moonrepo.svg',desc:'Best value long-context model',cost:'£',prompts:[
+    'Read this 200-page employee manual and create a condensed 10-page quick reference guide',
+    'Process 500 expense receipts — extract amounts, categorise by type, produce a summary spreadsheet',
+    'Analyse 3 insurance quotes side-by-side — coverage, exclusions, excess amounts, and value rating',
+    'Review this entire year\'s email correspondence with the client and produce a relationship timeline',
+    'Compare these 5 vendor contracts and create a matrix of terms, SLAs, pricing, and exit clauses',
+  ]},
+  {model:'Mistral Large',logo:'/logos/icon-json.svg',desc:'European open-weight model',cost:'££',prompts:[
+    'Draft GDPR-compliant privacy policies for our UK and EU websites with data processing schedules',
+    'Create multi-language customer service templates in English, French, German, and Spanish',
+    'Build a risk assessment framework for our supply chain with scoring criteria and mitigations',
+    'Analyse EU regulatory requirements for our new product line and flag compliance gaps',
+    'Generate a data protection impact assessment for our new customer analytics platform',
+  ]},
+  {model:'DALL·E 3',logo:'/logos/icon-openai.svg',desc:'Image generation',cost:'££',prompts:[
+    'Create product mockup images — our logo on mugs, t-shirts, tote bags, and phone cases',
+    'Generate social media graphics for a 30-day campaign with consistent brand styling',
+    'Design 10 variations of a hero image for our website landing page A/B test',
+    'Create a series of seasonal promotional banners for our online shop',
+    'Generate step-by-step visual instructions for our product assembly guide',
+  ]},
+  // Core APIs
+  {model:'Stripe',logo:'/logos/icon-stripe.svg',desc:'Payments + invoicing',cost:'—',prompts:[
+    'Generate invoices for all 30 regular clients and email them with payment links',
+    'Build a donation page with Gift Aid, recurring options, and automated thank-you emails',
+    'Set up a subscription billing system where customers choose products and get billed monthly',
+    'Create a loan comparison calculator showing monthly payments, total interest, and APR',
+    'Process refunds for the 12 cancelled orders and send confirmation receipts automatically',
+  ]},
+  {model:'Gmail',logo:'/logos/icon-gmail.svg',desc:'Email automation',cost:'—',prompts:[
+    'Send appointment reminders to all patients booked for next week with prep instructions',
+    'Email all registered buyers whose criteria match this new property listing',
+    'A/B test two email subject lines across our subscriber list and report which wins',
+    'Set up automated birthday emails to all clients with a personalised discount code',
+    'Forward all emails from @important-client.com to the project manager with a summary',
+  ]},
+  {model:'Google Calendar',logo:'/logos/icon-googlecalendar.svg',desc:'Scheduling + planning',cost:'—',prompts:[
+    'Schedule next week\'s 8 jobs, optimise the route between addresses, send ETAs to each client',
+    'Create volunteer shift schedules for 60 people across 3 locations for the summer festival',
+    'Schedule gas safety inspections for all 12 properties and send confirmations to tenants',
+    'Block out preparation time before every client meeting and add travel time between locations',
+    'Set up recurring team standups with agenda templates and automatic notes distribution',
+  ]},
+  {model:'Google Sheets',logo:'/logos/icon-googlesheets.svg',desc:'Data + spreadsheets',cost:'—',prompts:[
+    'Generate a monthly P&L report from accounting data and email it to the directors',
+    'Calculate food costs for the new menu — flag any items below 65% gross margin',
+    'Generate a cash flow forecast for the next 12 months based on income and committed costs',
+    'Build a dynamic pricing model that adjusts based on demand, season, and competitor rates',
+    'Create a KPI dashboard tracking sales, customer acquisition cost, and churn rate weekly',
+  ]},
+  {model:'Google Docs',logo:'/logos/icon-googledocs.svg',desc:'Document generation',cost:'—',prompts:[
+    'Create a welcome pack PDF for conference delegates — hotel info, transport, maps, agenda',
+    'Generate CPD certificates for all 45 attendees of today\'s fire safety training',
+    'Build a proposal template that auto-fills from client data, scope, and pricing tables',
+    'Compile the quarterly board report from department submissions into a single formatted document',
+    'Create branded case studies from client testimonials with before/after metrics',
+  ]},
+  {model:'Xero',logo:'/logos/icon-xero.svg',desc:'Accounting + tax',cost:'—',prompts:[
+    'Reconcile the bank statement against Xero and flag every discrepancy with corrections',
+    'Calculate corporation tax liability for FY25 and flag reliefs we might be missing',
+    'Generate quarterly VAT return calculations and prepare the submission summary',
+    'Create aged debtor reports and automatically chase invoices overdue by 30, 60, and 90 days',
+    'Produce year-end accounts summary with profit, expenses, and tax position for the accountant',
+  ]},
+  {model:'QuickBooks',logo:'/logos/icon-quickbooks.svg',desc:'Accounting + invoicing',cost:'—',prompts:[
+    'Generate rent statements for all 12 properties with income and expense breakdowns',
+    'Categorise all uncategorised transactions from the last 3 months using our chart of accounts',
+    'Create a contractor payment schedule with tax deduction calculations and remittance advice',
+    'Build a project profitability report comparing quoted vs actual costs for each client',
+    'Set up automated expense rules to categorise recurring payments from known suppliers',
+  ]},
+  {model:'WhatsApp',logo:'/logos/icon-whatsapp.svg',desc:'Client messaging',cost:'—',prompts:[
+    'Send order confirmations with estimated delivery times and a tracking link',
+    'Message all weekend staff their shift times, locations, and dress code for the festival',
+    'Send all clients their quote PDFs with a click-to-approve link for instant sign-off',
+    'Broadcast a flash sale notification to all opted-in customers with a discount code',
+    'Send post-service feedback requests with a quick 1-5 star rating link',
+  ]},
+  {model:'Slack',logo:'/logos/icon-slack.svg',desc:'Team communication',cost:'—',prompts:[
+    'Post the daily standup summary to #general with task updates from Trello and GitHub',
+    'Automate weekly status reports — pull data from Trello, Slack, and Sheets into one doc',
+    'Alert #urgent whenever a high-priority support ticket is created',
+    'Create a #wins channel bot that celebrates when deals close or milestones are hit',
+    'Send project deadline reminders to relevant channels 48 hours before due dates',
+  ]},
+  {model:'Shopify',logo:'/logos/icon-shopify.svg',desc:'E-commerce platform',cost:'—',prompts:[
+    'Build an online store with 50 products, variants, size guides, and integrated payments',
+    'Set up automated reorder alerts when any product drops below 10 units in stock',
+    'Write product descriptions for 100 items in our brand voice with SEO titles',
+    'Create a wholesale portal with tiered pricing for trade customers',
+    'Build an abandoned cart recovery flow — email, then WhatsApp, then discount offer',
+  ]},
+  {model:'Notion',logo:'/logos/icon-notion.svg',desc:'Knowledge management',cost:'—',prompts:[
+    'Create a searchable knowledge base with FAQs, how-to guides, and troubleshooting steps',
+    'Build an onboarding checklist for new employees — tasks, deadlines, and sign-offs',
+    'Set up a project wiki with meeting notes, decisions, timelines, and responsibilities',
+    'Create a content calendar with drafts, approval workflows, and publish schedules',
+    'Build a client database with contact details, project history, and relationship notes',
+  ]},
+  {model:'Figma',logo:'/logos/icon-figma.svg',desc:'Design + prototyping',cost:'—',prompts:[
+    'Create product mockups from flat artwork — mugs, t-shirts, tote bags, phone cases',
+    'Design business cards, letterheads, and email signatures matching brand guidelines',
+    'Design tap badges and pump clip artwork for our 4 core beers in consistent style',
+    'Build a component library with buttons, cards, forms, and navigation for our design system',
+    'Create responsive wireframes for the new customer portal — desktop, tablet, and mobile',
+  ]},
+  {model:'GitHub',logo:'/logos/icon-github.svg',desc:'Code management',cost:'—',prompts:[
+    'Review this pull request — check for security issues, performance, suggest improvements',
+    'Set up branch protection, code review requirements, and automated deployment workflows',
+    'Scan all repositories for exposed API keys, outdated dependencies, and vulnerabilities',
+    'Generate release notes from merged PRs for the v2.0 launch announcement',
+    'Create issue templates for bug reports, feature requests, and support tickets',
+  ]},
+  {model:'Mailchimp',logo:'/logos/icon-mailchimp.svg',desc:'Email marketing',cost:'—',prompts:[
+    'Segment our mailing list by purchase history and send targeted seasonal offers',
+    'Write a 30-day email drip campaign for new subscribers — welcome, educate, convert',
+    'Design and code a branded HTML email template for our monthly newsletter',
+    'Clean our email list — remove bounces, unengaged subscribers, and duplicate entries',
+    'Create a re-engagement campaign for subscribers who haven\'t opened in 90 days',
+  ]},
+  {model:'Zoom',logo:'/logos/icon-zoom.svg',desc:'Video meetings',cost:'—',prompts:[
+    'Transcribe today\'s client meeting, extract action items, and email a summary to attendees',
+    'Set up a webinar registration page with calendar invites and reminder sequences',
+    'Record the training session, generate chapters, and upload to our learning portal',
+    'Schedule recurring 1:1s with all direct reports with rotating agenda templates',
+    'Create meeting highlights from this week\'s 5 client calls — key decisions and next steps',
+  ]},
+  {model:'Trello',logo:'/logos/icon-trello.svg',desc:'Project management',cost:'—',prompts:[
+    'Create a project board for the website rebuild with stages, tasks, and deadlines',
+    'Move all overdue cards to a "Needs Attention" list and notify the assigned team members',
+    'Generate a weekly progress report from all boards — completed, in progress, blocked',
+    'Set up automation rules: when card moves to Done, notify client and log billable hours',
+    'Build a content pipeline board with writing, editing, design, and publish stages',
+  ]},
+  {model:'Twilio',logo:'/logos/icon-auth0.svg',desc:'SMS + voice automation',cost:'—',prompts:[
+    'Build an SMS booking confirmation system with appointment details and cancellation links',
+    'Set up a phone IVR system: press 1 for sales, 2 for support, 3 for accounts',
+    'Send bulk SMS reminders to all clients with appointments in the next 48 hours',
+    'Create a missed call follow-up — auto-text saying "Sorry we missed you, here\'s a booking link"',
+    'Build a two-factor authentication system for our client portal login',
+  ]},
+  {model:'Google Drive',logo:'/logos/icon-googledrive.svg',desc:'File management',cost:'—',prompts:[
+    'Organise our shared drive — sort by project, archive old files, set permissions per team',
+    'Resize all 47 campaign assets to Instagram, Facebook, LinkedIn, and Twitter dimensions',
+    'Back up all client folders to a dated archive with a manifest of what\'s included',
+    'Find and remove all duplicate files across the team drive — recover 2GB of storage',
+    'Create a file naming convention and automatically rename all existing files to match',
+  ]},
+  {model:'anyOS',logo:'/logos/icon-anyos.svg',desc:'Auto-selects the best model',cost:'Smart',prompts:[
+    'Build a quote calculator for mobile bar packages with staffing, equipment, and pricing',
+    'Create a cocktail menu PDF with photos, descriptions, allergen info, and pricing',
+    'Optimise delivery routes for 25 drops across London — minimise mileage and fuel costs',
+    'Build a quality checklist app with photo evidence, GPS stamps, and client sign-off',
+    'Generate a full network audit — devices, security status, vulnerabilities, and fixes',
+  ]},
 ]
 
 const ROTATING_WORDS = [
@@ -547,6 +689,7 @@ export default function Home() {
   const [expandedCompany, setExpandedCompany] = useState<string|null>(null)
   const [selectedIntegration, setSelectedIntegration] = useState<string|null>(null)
   const [selectedTag, setSelectedTag] = useState<string|null>(null)
+  const [expandedService, setExpandedService] = useState<string|null>(null)
 
   useEffect(() => {
     if (sessionStorage.getItem('anyos-unlocked') === '1') setUnlocked(true)
@@ -1168,17 +1311,26 @@ export default function Home() {
           <div className="era-period" style={{marginBottom:'1vh'}}>Real prompts. Real businesses. Everything below works today.</div>
 
           <div className="prompt-scroller">
-            {DEMO_PROMPTS.map((p, i) => (
-              <div key={i} className="prompt-row">
-                <div className="prompt-model">
-                  <img src={p.logo} alt="" className="prompt-logo" />
-                  <div className="prompt-model-info">
-                    <span className="prompt-model-name">{p.model}</span>
-                    <span className="prompt-model-desc">{p.desc}</span>
+            {DEMO_SERVICES.map((s) => (
+              <div key={s.model} className="service-accordion">
+                <div className="service-header" onClick={() => setExpandedService(expandedService === s.model ? null : s.model)}>
+                  <img src={s.logo} alt="" className="service-logo" />
+                  <div className="service-info">
+                    <span className="service-name">{s.model}</span>
+                    <span className="service-desc">{s.desc}</span>
                   </div>
+                  <span className="service-cost">{s.cost}</span>
+                  <span className="service-count">{s.prompts.length}</span>
+                  <span className={`service-chevron ${expandedService === s.model ? 'open' : ''}`}>▾</span>
                 </div>
-                <span className="prompt-text">&ldquo;{p.prompt}&rdquo;</span>
-                <span className="prompt-time">{p.time}</span>
+                <div className={`service-prompts ${expandedService === s.model ? 'open' : ''}`}>
+                  {s.prompts.map((p, i) => (
+                    <div key={i} className="service-prompt-row">
+                      <span className="service-prompt-num">{String(i+1).padStart(2,'0')}</span>
+                      <span className="service-prompt-text">&ldquo;{p}&rdquo;</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

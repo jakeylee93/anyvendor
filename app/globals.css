@@ -885,7 +885,7 @@ body {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ===== SCROLLABLE PROMPTS (slide 10) ===== */
+/* ===== SCROLLABLE SERVICE ACCORDION (slide 10) ===== */
 .prompt-scroller {
   flex: 1;
   overflow-y: auto;
@@ -896,79 +896,118 @@ body {
   min-height: 0;
   -webkit-overflow-scrolling: touch;
 }
-.prompt-scroller::-webkit-scrollbar {
-  width: 4px;
+.prompt-scroller::-webkit-scrollbar { width: 4px; }
+.prompt-scroller::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+.service-accordion {
+  border-bottom: 1px solid #f0f0f0;
 }
-.prompt-scroller::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 4px;
-}
-.prompt-row {
+.service-accordion:last-child { border-bottom: none; }
+
+.service-header {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7px 12px;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: clamp(10px, 1.1vw, 13px);
+  padding: 8px 14px;
+  cursor: pointer;
   transition: background 0.15s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.prompt-row:last-child { border-bottom: none; }
-.prompt-row:hover { background: #f0fdf4; }
-.prompt-model {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-width: 150px;
-  max-width: 150px;
-}
-.prompt-logo {
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
+.service-header:hover { background: #f8fafc; }
+.service-header:active { background: #f1f5f9; }
+
+.service-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
   flex-shrink: 0;
   object-fit: contain;
 }
-.prompt-model-info {
+.service-info {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0;
   line-height: 1.2;
+  min-width: 0;
 }
-.prompt-model-name {
-  font-size: clamp(9px, 0.95vw, 11px);
+.service-name {
+  font-size: clamp(11px, 1.1vw, 14px);
   font-weight: 700;
   color: #1a1a1a;
   white-space: nowrap;
 }
-.prompt-model-desc {
-  font-size: clamp(7px, 0.75vw, 9px);
+.service-desc {
+  font-size: clamp(8px, 0.85vw, 11px);
   color: #94a3b8;
   white-space: nowrap;
 }
-.prompt-text {
-  flex: 1;
-  color: #1a1a1a;
-  font-style: italic;
-  line-height: 1.4;
-}
-.prompt-time {
-  flex-shrink: 0;
-  font-weight: 700;
+.service-cost {
+  font-size: clamp(10px, 1vw, 13px);
+  font-weight: 600;
   color: #059669;
-  font-size: clamp(9px, 1vw, 12px);
-  white-space: nowrap;
+  min-width: 42px;
+  text-align: center;
 }
+.service-count {
+  font-size: clamp(9px, 0.85vw, 11px);
+  color: #94a3b8;
+  background: #f1f5f9;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.service-chevron {
+  font-size: 14px;
+  color: #94a3b8;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+.service-chevron.open {
+  transform: rotate(180deg);
+  color: #6366f1;
+}
+
+.service-prompts {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  background: #f8fafc;
+}
+.service-prompts.open {
+  max-height: 500px;
+}
+.service-prompt-row {
+  display: flex;
+  gap: 10px;
+  padding: 5px 14px 5px 50px;
+  font-size: clamp(10px, 1vw, 12px);
+  color: #374151;
+  line-height: 1.5;
+  border-top: 1px solid #f0f0f0;
+}
+.service-prompt-num {
+  font-weight: 700;
+  color: #6366f1;
+  flex-shrink: 0;
+  font-size: clamp(9px, 0.9vw, 11px);
+  padding-top: 1px;
+}
+.service-prompt-text {
+  font-style: italic;
+}
+
 .demo-summary-fixed {
   flex-shrink: 0;
 }
+
 @media (max-width: 768px) {
-  .prompt-model { min-width: 110px; max-width: 110px; }
-  .prompt-logo { width: 18px; height: 18px; }
-  .prompt-row { padding: 6px 8px; gap: 6px; }
-  .prompt-time { font-size: 9px; }
-  .prompt-model-name { font-size: 9px; }
-  .prompt-model-desc { display: none; }
+  .service-header { padding: 7px 10px; gap: 8px; }
+  .service-logo { width: 22px; height: 22px; }
+  .service-desc { display: none; }
+  .service-prompt-row { padding-left: 40px; font-size: 10px; }
+  .service-cost { min-width: 30px; font-size: 10px; }
 }
 
 /* ===== INTEGRATIONS GRID (page 9) ===== */
