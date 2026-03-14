@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 const SLIDE_TITLES = [
   'anyOS',
+  'What We\'ll Cover',
   'Web 1.0 — The Read-Only Web',
   'Web 2.0 — The Social Web',
   'Web 3.0 — The Decentralised Web',
@@ -15,6 +16,16 @@ const SLIDE_TITLES = [
   'Integrations',
   'Live Demo',
   'The Results',
+]
+
+const TOC_ITEMS = [
+  { num: '01', title: 'The Evolution of the Web', desc: 'How we got from static pages to intelligent systems — 30 years in 6 slides', slide: 2, color: '#6366f1' },
+  { num: '02', title: 'The Business Case', desc: 'Real companies, real layoffs, real numbers — why this can\'t wait', slide: 7, color: '#dc2626' },
+  { num: '03', title: 'What is anyOS?', desc: 'The product — hardware delivered, AI models, natural language interface', slide: 8, color: '#4338ca' },
+  { num: '04', title: 'How It Works', desc: 'From a plain English request to a completed task in seconds', slide: 9, color: '#059669' },
+  { num: '05', title: 'Integrations', desc: '100+ tools your team already uses — now connected and automated', slide: 10, color: '#0891b2' },
+  { num: '06', title: 'Live Demo', desc: '29 AI models and APIs with real prompts — see what it can do', slide: 11, color: '#7c3aed' },
+  { num: '07', title: 'The Results', desc: 'Side-by-side: traditional approach vs anyOS — time and money saved', slide: 12, color: '#b91c1c' },
 ]
 
 const INTEGRATIONS: Record<string, { name: string; desc: string; how: string; category: string }> = {
@@ -710,7 +721,7 @@ export default function Home() {
     window.scrollTo(0, 0)
   }, [])
   const goNext = useCallback(() => {
-    setActiveSlide(s => Math.min(11, s + 1))
+    setActiveSlide(s => Math.min(12, s + 1))
     window.scrollTo(0, 0)
   }, [])
 
@@ -746,7 +757,7 @@ export default function Home() {
     <div className="presentation-root">
       <TopNav
         current={activeSlide + 1}
-        total={12}
+        total={13}
         title={SLIDE_TITLES[activeSlide] || ''}
         onPrev={goPrev}
         onNext={goNext}
@@ -754,10 +765,10 @@ export default function Home() {
       <div className="bottom-bar">
         {activeSlide === 0 ? (
           <div style={{textAlign:'center',fontSize:'11px',color:'#999',fontWeight:500}}>Swipe or press → to begin</div>
-        ) : activeSlide <= 6 ? (
+        ) : activeSlide <= 7 ? (
           <Timeline active={activeSlide < 6 ? activeSlide : 6} />
         ) : (
-          <Progress page={activeSlide + 1} total={12} />
+          <Progress page={activeSlide + 1} total={13} />
         )}
       </div>
       <div className="slides-container" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
@@ -781,8 +792,42 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ===== SLIDE 1: WEB 1.0 ===== */}
+      {/* ===== SLIDE 1: WHAT WE'LL COVER ===== */}
       <div className={`slide-snap ${activeSlide === 1 ? "active" : ""}`}>
+        <div className="slide-page toc-page">
+          <div className="brand-header">
+            <div className="logo">any<span>OS</span></div>
+            <div className="header-right">
+              <div className="era-badge">Overview</div>
+              <div className="position-label" style={{background:'#6366f1'}}>AGENDA</div>
+            </div>
+          </div>
+          <div className="era-content" style={{flex:1,display:'flex',flexDirection:'column'}}>
+            <div className="era-subtitle" style={{color:'#6366f1'}}>YOUR ROADMAP FOR THE NEXT 2 HOURS</div>
+            <h1 className="era-title">What We&apos;ll Cover</h1>
+            <div className="era-period" style={{marginBottom:'2vh'}}>Tap any section to jump straight there</div>
+            <div className="toc-list">
+              {TOC_ITEMS.map(item => (
+                <div key={item.num} className="toc-item" onClick={() => { setActiveSlide(item.slide); window.scrollTo(0,0) }}>
+                  <div className="toc-num" style={{color: item.color}}>{item.num}</div>
+                  <div className="toc-content">
+                    <div className="toc-title">{item.title}</div>
+                    <div className="toc-desc">{item.desc}</div>
+                  </div>
+                  <div className="toc-arrow" style={{color: item.color}}>→</div>
+                </div>
+              ))}
+            </div>
+            <div className="key-stat" style={{background:'#6366f1',marginTop:'auto'}}>
+              <p>This presentation is interactive. Tap buttons, expand sections, and explore at your own pace.</p>
+              <p className="stat-sub">Everything you see today is built and powered by anyOS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ===== SLIDE 2: WEB 1.0 ===== */}
+      <div className={`slide-snap ${activeSlide === 2 ? "active" : ""}`}>
         <div className="slide-page web1">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -839,7 +884,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 2: WEB 2.0 ===== */}
-      <div className={`slide-snap ${activeSlide === 2 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 3 ? "active" : ""}`}>
         <div className="slide-page web2">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -896,7 +941,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 3: WEB 3.0 ===== */}
-      <div className={`slide-snap ${activeSlide === 3 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 4 ? "active" : ""}`}>
         <div className="slide-page web3">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -953,7 +998,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 4: WEB 4.0 ===== */}
-      <div className={`slide-snap ${activeSlide === 4 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 5 ? "active" : ""}`}>
         <div className="slide-page web4">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1010,7 +1055,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 5: WEB 5.0 ===== */}
-      <div className={`slide-snap ${activeSlide === 5 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 6 ? "active" : ""}`}>
         <div className="slide-page web5">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1067,7 +1112,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 6: BUSINESS CASE ===== */}
-      <div className={`slide-snap ${activeSlide === 6 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 7 ? "active" : ""}`}>
         <div className="slide-page page6">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1136,7 +1181,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 7: WHAT IS anyOS ===== */}
-      <div className={`slide-snap ${activeSlide === 7 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 8 ? "active" : ""}`}>
         <div className="slide-page page7">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1203,7 +1248,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 8: HOW anyOS WORKS ===== */}
-      <div className={`slide-snap ${activeSlide === 8 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 9 ? "active" : ""}`}>
         <div className="slide-page page8">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1255,7 +1300,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 9: INTEGRATIONS ===== */}
-      <div className={`slide-snap ${activeSlide === 9 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
         <div className="slide-page page9">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1297,7 +1342,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 10: LIVE DEMO ===== */}
-      <div className={`slide-snap ${activeSlide === 10 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 11 ? "active" : ""}`}>
         <div className="slide-page page9" style={{display:'flex',flexDirection:'column',height:'100%'}}>
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
@@ -1355,7 +1400,7 @@ export default function Home() {
       </div>
 
       {/* ===== SLIDE 11: THE RESULTS ===== */}
-      <div className={`slide-snap ${activeSlide === 11 ? "active" : ""}`}>
+      <div className={`slide-snap ${activeSlide === 12 ? "active" : ""}`}>
         <div className="slide-page page10">
           <div className="brand-header">
             <div className="logo">any<span>OS</span></div>
