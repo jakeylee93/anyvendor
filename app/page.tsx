@@ -1484,13 +1484,13 @@ export default function Home() {
                 <a key={i} href={site.url} target="_blank" rel="noopener noreferrer"
                   style={{
                     display:'flex', alignItems:'center', gap:'14px',
-                    background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)',
+                    background:'rgba(0,0,0,0.03)', border:'1px solid rgba(0,0,0,0.08)',
                     borderRadius:'14px', padding:'16px 18px',
-                    textDecoration:'none', color:'white',
+                    textDecoration:'none', color:'#2D3436',
                     transition:'all 0.2s',
                   }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.borderColor = site.color; (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)' }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.06)'; (e.currentTarget as HTMLElement).style.borderColor = site.color; (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.03)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,0,0,0.08)'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
                 >
                   <div style={{
                     width:'42px', height:'42px', borderRadius:'10px', flexShrink:0,
@@ -1501,7 +1501,7 @@ export default function Home() {
                   </div>
                   <div style={{flex:1, minWidth:0}}>
                     <div style={{fontWeight:700, fontSize:'14px', marginBottom:'2px', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.name}</div>
-                    <div style={{fontSize:'12px', opacity:0.5, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.desc}</div>
+                    <div style={{fontSize:'12px', color:'#888', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.desc}</div>
                   </div>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{opacity:0.3, flexShrink:0}}>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
