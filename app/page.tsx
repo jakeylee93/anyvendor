@@ -1470,16 +1470,16 @@ export default function Home() {
             <div className="era-period" style={{marginBottom:'2vh'}}>Real websites. Real businesses. Built by AI in hours, not weeks.</div>
             <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:'16px', width:'100%', maxWidth:'900px', margin:'0 auto'}}>
               {[
-                { name: 'The Bar People', desc: 'Mobile bar & hospitality hire', url: 'https://thebarpeople-website.vercel.app', color: '#c8956b' },
-                { name: 'Butler & Stag', desc: 'Independent estate agents', url: 'https://butlerandstag-website.vercel.app', color: '#d4628b' },
-                { name: 'Queen Victoria', desc: 'Traditional McMullen pub since 1898', url: 'https://queenvictoria-website.vercel.app', color: '#c5a55a' },
-                { name: 'T&L Executive Cars', desc: 'Luxury chauffeur service', url: 'https://tl-executive.vercel.app', color: '#c8956c' },
-                { name: 'NotAPrint', desc: 'Custom print & merchandise', url: 'https://notaprint-website.vercel.app', color: '#06b6d4' },
-                { name: 'JHD Builders', desc: 'Construction & property maintenance', url: 'https://jhd-website.vercel.app', color: '#6db44c' },
-                { name: 'Conectados', desc: 'Community events for expats in Madrid', url: 'https://connect-cardos.vercel.app', color: '#F5B731' },
-                { name: 'Left Hand Lucy', desc: 'Freelance services — teaching, events, support', url: 'https://lefthandlucy-website.vercel.app', color: '#7B9E87' },
-                { name: 'Vishal Mayo', desc: 'Personal portfolio website', url: 'https://vishalmayo-website.vercel.app', color: '#6366f1' },
-                { name: 'Richway', desc: 'Property development', url: 'https://richway-website.vercel.app', color: '#c8956c' },
+                { name: 'The Bar People', desc: 'Mobile bar & hospitality hire', url: 'https://thebarpeople-website.vercel.app', color: '#c8956b', logo: '/case-studies/bar-people.png' },
+                { name: 'Butler & Stag', desc: 'Independent estate agents', url: 'https://butlerandstag-website.vercel.app', color: '#d4628b', logo: '/case-studies/butler-stag.png' },
+                { name: 'Queen Victoria', desc: 'Traditional McMullen pub since 1898', url: 'https://queenvictoria-website.vercel.app', color: '#c5a55a', logo: '/case-studies/queen-vic.png' },
+                { name: 'T&L Executive Cars', desc: 'Luxury chauffeur service', url: 'https://tl-executive.vercel.app', color: '#c8956c', logo: '/case-studies/tl-exec.jpg' },
+                { name: 'NotAPrint', desc: 'Custom print & merchandise', url: 'https://notaprint-website.vercel.app', color: '#06b6d4', logo: '/case-studies/notaprint.png' },
+                { name: 'JHD Builders', desc: 'Construction & property maintenance', url: 'https://jhd-website.vercel.app', color: '#6db44c', logo: '/case-studies/jhd.png' },
+                { name: 'Conectados', desc: 'Community events for expats in Madrid', url: 'https://connect-cardos.vercel.app', color: '#F5B731', logo: '' },
+                { name: 'Left Hand Lucy', desc: 'Freelance services — teaching, events, support', url: 'https://lefthandlucy-website.vercel.app', color: '#7B9E87', logo: '' },
+                { name: 'Vishal Mayo', desc: 'Personal portfolio website', url: 'https://vishalmayo-website.vercel.app', color: '#6366f1', logo: '/case-studies/vishal.jpg' },
+                { name: 'Richway', desc: 'Property development', url: 'https://richway-website.vercel.app', color: '#c8956c', logo: '/case-studies/richway.png' },
               ].map((site, i) => (
                 <a key={i} href={site.url} target="_blank" rel="noopener noreferrer"
                   style={{
@@ -1493,11 +1493,16 @@ export default function Home() {
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.03)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,0,0,0.08)'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
                 >
                   <div style={{
-                    width:'42px', height:'42px', borderRadius:'10px', flexShrink:0,
-                    background: site.color + '20', display:'flex', alignItems:'center', justifyContent:'center',
-                    fontSize:'18px', fontWeight:800, color: site.color,
+                    width:'48px', height:'48px', borderRadius:'12px', flexShrink:0,
+                    background: site.logo ? '#fff' : site.color + '15',
+                    display:'flex', alignItems:'center', justifyContent:'center',
+                    overflow:'hidden', border:'1px solid rgba(0,0,0,0.06)',
                   }}>
-                    {site.name.charAt(0)}
+                    {site.logo ? (
+                      <img src={site.logo} alt={site.name} style={{width:'100%', height:'100%', objectFit:'contain', padding:'4px'}} />
+                    ) : (
+                      <span style={{fontSize:'20px', fontWeight:800, color: site.color}}>{site.name.charAt(0)}</span>
+                    )}
                   </div>
                   <div style={{flex:1, minWidth:0}}>
                     <div style={{fontWeight:700, fontSize:'14px', marginBottom:'2px', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.name}</div>
