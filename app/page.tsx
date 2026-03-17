@@ -27,7 +27,7 @@ const TOC_ITEMS = [
   { num: '05', title: 'Integrations', desc: '100+ tools your team already uses — now connected and automated', slide: 10, color: '#0891b2' },
   { num: '06', title: 'Live Demo', desc: '29 AI models and APIs with real prompts — see what it can do', slide: 11, color: '#7c3aed' },
   { num: '07', title: 'The Results', desc: 'Side-by-side: traditional approach vs anyOS — time and money saved', slide: 12, color: '#b91c1c' },
-  { num: '08', title: 'Built with anyOS', desc: '10 live websites built by AI — real businesses, real results', slide: 13, color: '#059669' },
+  { num: '08', title: 'Built with anyOS', desc: '11 live websites built by AI — real businesses, real results', slide: 13, color: '#059669' },
 ]
 
 const INTEGRATIONS: Record<string, { name: string; desc: string; how: string; category: string }> = {
@@ -1480,6 +1480,7 @@ export default function Home() {
                 { name: 'Left Hand Lucy', desc: 'Freelance services — teaching, events, support', url: 'https://lefthandlucy-website.vercel.app', color: '#7B9E87', logo: '' },
                 { name: 'Vishal Mayo', desc: 'Personal portfolio website', url: 'https://vishalmayo-website.vercel.app', color: '#6366f1', logo: '/case-studies/vishal.jpg' },
                 { name: 'Richway', desc: 'Property development', url: 'https://richway-website.vercel.app', color: '#c8956c', logo: '/case-studies/richway.png' },
+                { name: 'N2 Acoustics', desc: 'Premium acoustic panels & solutions', url: 'https://n2-acoustics.vercel.app', color: '#c8956c', logo: '' },
               ].map((site, i) => (
                 <a key={i} href={site.url} target="_blank" rel="noopener noreferrer"
                   style={{
@@ -1515,7 +1516,7 @@ export default function Home() {
               ))}
             </div>
             <div className="key-stat" style={{marginTop:'3vh'}}>
-              <p>10 websites. 10 different businesses. All built by one person with anyOS — in a fraction of the time and cost of traditional development.</p>
+              <p>11 websites. 11 different businesses. All built by one person with anyOS — in a fraction of the time and cost of traditional development.</p>
               <p className="stat-sub">Each link is live. Click any of them.</p>
             </div>
           </div>
