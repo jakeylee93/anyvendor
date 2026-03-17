@@ -32,7 +32,7 @@ export default function Portfolio() {
         </section>
 
         <section style={{ padding: '0 2rem 6rem' }}>
-          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1rem' }}>
             {SITES.map((site, i) => (
               <a key={i} href={site.url} target="_blank" rel="noopener noreferrer" style={{
                 display: 'flex', alignItems: 'center', gap: '1rem',

@@ -104,13 +104,13 @@ export default function Home() {
                 Every industry. Every workflow.
               </h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {INDUSTRIES.map(ind => (
                 <Link key={ind.name} href={ind.href} style={{
-                  padding: '2rem', borderRadius: '12px',
+                  padding: '1.5rem', borderRadius: '12px',
                   background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)',
                   textDecoration: 'none', transition: 'all 0.2s',
-                  display: 'flex', flexDirection: 'column', gap: '0.75rem',
+                  display: 'flex', flexDirection: 'column', gap: '0.5rem',
                 }}>
                   <div style={{ fontSize: '2.5rem' }}>{ind.icon}</div>
                   <div style={{ color: 'white', fontSize: '1.1rem', fontWeight: 800 }}>{ind.name}</div>
@@ -130,7 +130,7 @@ export default function Home() {
                 Delivered. Configured. Done.
               </h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
               {[
                 { step: '01', title: 'We deliver the hardware', desc: 'Brand new Mac, pre-configured with anyOS and your AI agents. Plug in and go.' },
                 { step: '02', title: 'Agents learn your business', desc: 'We connect your email, calendar, accounting, CRM — everything your agents need.' },
@@ -161,7 +161,7 @@ export default function Home() {
                 No subscriptions. No per-seat fees. You own the hardware and the system.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0.75rem' }}>
+            <div className="pricing-preview-grid" style={{ display: 'grid', gap: '0.75rem' }}>
               {TIERS.map(t => (
                 <div key={t.name} style={{
                   padding: '1.5rem', borderRadius: '12px',

@@ -26,8 +26,8 @@ export default function Pricing() {
           </p>
         </section>
 
-        <section style={{ padding: '0 2rem 6rem' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0.75rem' }}>
+        <section style={{ padding: '0 1rem 6rem' }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="pricing-grid">
             {TIERS.map(t => (
               <div key={t.name} style={{
                 padding: '2rem 1.5rem', borderRadius: '12px',

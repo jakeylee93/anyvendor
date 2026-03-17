@@ -177,7 +177,7 @@ export default function UseCases() {
 
         {/* Industry cards */}
         <section style={{ padding: '0 2rem 4rem' }}>
-          <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+          <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
             {USE_CASES.map(uc => (
               <a key={uc.id} href={`#${uc.id}`} style={{
                 padding: '1.5rem', borderRadius: '12px',
@@ -216,7 +216,7 @@ export default function UseCases() {
               />
 
               {/* Features */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', marginTop: '2.5rem', maxWidth: '900px', margin: '2.5rem auto 0' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '0.75rem', marginTop: '2.5rem', maxWidth: '900px', margin: '2.5rem auto 0' }}>
                 {uc.features.map((f, i) => (
                   <div key={i} style={{
                     padding: '0.75rem 1rem', borderRadius: '8px',
