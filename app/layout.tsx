@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'The Evolution of the Web — anyOS',
-  description: 'Interactive anyOS presentation website',
+  title: 'anyOS — AI that actually does things',
+  description: 'Hardware delivered, AI agents configured, your business automated. One system, every industry.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
