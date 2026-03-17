@@ -16,6 +16,7 @@ const SLIDE_TITLES = [
   'Integrations',
   'Live Demo',
   'The Results',
+  'Built with anyOS',
 ]
 
 const TOC_ITEMS = [
@@ -26,6 +27,7 @@ const TOC_ITEMS = [
   { num: '05', title: 'Integrations', desc: '100+ tools your team already uses — now connected and automated', slide: 10, color: '#0891b2' },
   { num: '06', title: 'Live Demo', desc: '29 AI models and APIs with real prompts — see what it can do', slide: 11, color: '#7c3aed' },
   { num: '07', title: 'The Results', desc: 'Side-by-side: traditional approach vs anyOS — time and money saved', slide: 12, color: '#b91c1c' },
+  { num: '08', title: 'Built with anyOS', desc: '10 live websites built by AI — real businesses, real results', slide: 13, color: '#059669' },
 ]
 
 const INTEGRATIONS: Record<string, { name: string; desc: string; how: string; category: string }> = {
@@ -1454,7 +1456,68 @@ export default function Home() {
         </div>
       </div>
 
-    </div>
+      {/* SLIDE 13 — Built with anyOS */}
+      <div className={`slide-snap ${activeSlide === 13 ? "active" : ""}`}>
+        <div className="slide-page page10">
+          <div className="brand-header">
+            <div className="logo">any<span>OS</span></div>
+            <div className="header-right">
+              <span className="slide-counter">{activeSlide + 1} / {SLIDE_TITLES.length}</span>
+            </div>
+          </div>
+          <div className="era-content">
+            <h1 className="era-title">Built with anyOS</h1>
+            <div className="era-period" style={{marginBottom:'2vh'}}>Real websites. Real businesses. Built by AI in hours, not weeks.</div>
+            <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(280px, 1fr))', gap:'16px', width:'100%', maxWidth:'900px', margin:'0 auto'}}>
+              {[
+                { name: 'The Bar People', desc: 'Mobile bar & hospitality hire', url: 'https://thebarpeople-website.vercel.app', color: '#c8956b' },
+                { name: 'Butler & Stag', desc: 'Independent estate agents', url: 'https://butlerandstag-website.vercel.app', color: '#d4628b' },
+                { name: 'Queen Victoria', desc: 'Traditional McMullen pub since 1898', url: 'https://queenvictoria-website.vercel.app', color: '#c5a55a' },
+                { name: 'T&L Executive Cars', desc: 'Luxury chauffeur service', url: 'https://tl-executive.vercel.app', color: '#c8956c' },
+                { name: 'NotAPrint', desc: 'Custom print & merchandise', url: 'https://notaprint-website.vercel.app', color: '#06b6d4' },
+                { name: 'JHD Builders', desc: 'Construction & property maintenance', url: 'https://jhd-website.vercel.app', color: '#6db44c' },
+                { name: 'Conectados', desc: 'Community events for expats in Madrid', url: 'https://connect-cardos.vercel.app', color: '#F5B731' },
+                { name: 'Left Hand Lucy', desc: 'Freelance services — teaching, events, support', url: 'https://lefthandlucy-website.vercel.app', color: '#7B9E87' },
+                { name: 'Vishal Mayo', desc: 'Personal portfolio website', url: 'https://vishalmayo-website.vercel.app', color: '#6366f1' },
+                { name: 'Richway', desc: 'Property development', url: 'https://richway-website.vercel.app', color: '#c8956c' },
+              ].map((site, i) => (
+                <a key={i} href={site.url} target="_blank" rel="noopener noreferrer"
+                  style={{
+                    display:'flex', alignItems:'center', gap:'14px',
+                    background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)',
+                    borderRadius:'14px', padding:'16px 18px',
+                    textDecoration:'none', color:'white',
+                    transition:'all 0.2s',
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.borderColor = site.color; (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
+                >
+                  <div style={{
+                    width:'42px', height:'42px', borderRadius:'10px', flexShrink:0,
+                    background: site.color + '20', display:'flex', alignItems:'center', justifyContent:'center',
+                    fontSize:'18px', fontWeight:800, color: site.color,
+                  }}>
+                    {site.name.charAt(0)}
+                  </div>
+                  <div style={{flex:1, minWidth:0}}>
+                    <div style={{fontWeight:700, fontSize:'14px', marginBottom:'2px', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.name}</div>
+                    <div style={{fontSize:'12px', opacity:0.5, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis'}}>{site.desc}</div>
+                  </div>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{opacity:0.3, flexShrink:0}}>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              ))}
+            </div>
+            <div className="key-stat" style={{marginTop:'3vh'}}>
+              <p>10 websites. 10 different businesses. All built by one person with anyOS — in a fraction of the time and cost of traditional development.</p>
+              <p className="stat-sub">Each link is live. Click any of them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
       {selectedTag && <TagPopup tag={selectedTag} onClose={() => setSelectedTag(null)} />}
     </div>
   )
