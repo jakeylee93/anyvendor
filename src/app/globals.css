@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
 
 :root {
-  --gold: #d4a843;
-  --gold-light: #e8c36a;
-  --teal: #2ec4b6;
-  --cream: #fefcf9;
+  /* AnyVendor brand palette — vibrant events energy */
+  --av-coral: #FF6B6B;
+  --av-pink: #E84393;
+  --av-purple: #6C5CE7;
+  --av-blue: #0984E3;
+  --av-teal: #00CEC9;
+  --av-green: #00B894;
+  --av-yellow: #FDCB6E;
+  --av-orange: #E17055;
+  --av-navy: #2D3436;
+  --av-navy-light: #636E72;
 }
 
 body {
@@ -15,6 +22,26 @@ body {
 
 .font-display {
   font-family: 'Instrument Serif', Georgia, serif;
+}
+
+/* Brand gradient */
+.av-gradient-text {
+  background: linear-gradient(135deg, #FF6B6B, #E84393, #6C5CE7, #0984E3, #00CEC9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.av-gradient-bg {
+  background: linear-gradient(135deg, #FF6B6B, #E84393, #6C5CE7, #0984E3);
+}
+
+.av-gradient-bg-soft {
+  background: linear-gradient(135deg, #FF6B6B15, #E8439315, #6C5CE715, #0984E315);
+}
+
+.av-gradient-border {
+  border-image: linear-gradient(135deg, #FF6B6B, #E84393, #6C5CE7, #0984E3) 1;
 }
 
 /* Only smooth scroll for anchor links, not focus events */

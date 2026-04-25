@@ -49,7 +49,7 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
           <Heart size={14} fill={isFav ? "currentColor" : "none"} />
         </button>
         {vendor.tier === "premium" && (
-          <span className="absolute top-3 left-3 bg-[#e2b33e] text-[#1a1a2e] text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
+          <span className="absolute top-3 left-3 av-gradient-bg text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
             <Star size={10} fill="currentColor" /> Premium
           </span>
         )}
@@ -64,7 +64,7 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
           </div>
           {vendor.review_count > 0 && (
             <div className="flex items-center gap-0.5 flex-shrink-0">
-              <Star size={10} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <Star size={10} className="text-[#FF6B6B] fill-[#FF6B6B]" />
               <span className="text-gray-900 text-[10px] sm:text-xs font-bold">{vendor.rating.toFixed(1)}</span>
             </div>
           )}
@@ -76,7 +76,7 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
         <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-gray-100">
           <div className="flex items-baseline gap-0.5">
             <span className="text-gray-400 text-[9px] sm:text-[10px]">From</span>
-            <span className="text-[#1a1a2e] font-black text-sm sm:text-lg">£{vendor.price_from}</span>
+            <span className="text-[#2D3436] font-black text-sm sm:text-lg">£{vendor.price_from}</span>
             <span className="text-gray-400 text-[9px] sm:text-[10px]">{vendor.price_unit}</span>
           </div>
         </div>

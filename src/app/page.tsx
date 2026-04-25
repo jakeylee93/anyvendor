@@ -58,7 +58,7 @@ function FeaturedCard({ vendor }: { vendor: Vendor }) {
         </button>
         {/* Premium badge */}
         {vendor.tier === "premium" && (
-          <div className="absolute top-3 left-3 bg-[#d4a843] text-gray-900 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+          <div className="absolute top-3 left-3 av-gradient-bg text-white text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
             <Star size={10} fill="currentColor" /> Premium
           </div>
         )}
@@ -110,16 +110,16 @@ export default function HomePage() {
           />
         </div>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-white/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D3436]/50 via-[#2D3436]/30 to-[#2D3436]/80" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
               Find the perfect{" "}
-              <span className="text-[#d4a843] font-display italic">event suppliers</span>{" "}
+              <span className="av-gradient-text font-display italic">event suppliers</span>{" "}
               for any occasion
             </h1>
-            <p className="text-gray-600 text-lg mt-4 max-w-xl mx-auto">
+            <p className="text-gray-300 text-lg mt-4 max-w-xl mx-auto">
               Browse hundreds of verified vendors — from bars to DJs, caterers to photographers. No commission, no hassle.
             </p>
 
@@ -140,11 +140,11 @@ export default function HomePage() {
 
             {/* Quick stats */}
             <div className="mt-10 flex items-center justify-center gap-8 text-gray-400 text-sm">
-              <span><strong className="text-gray-900">200+</strong> Vendors</span>
-              <span className="w-1 h-1 bg-gray-300 rounded-full" />
-              <span><strong className="text-gray-900">50+</strong> Categories</span>
-              <span className="w-1 h-1 bg-gray-300 rounded-full" />
-              <span><strong className="text-gray-900">1,000+</strong> Events Booked</span>
+              <span><strong className="text-white">200+</strong> Vendors</span>
+              <span className="w-1 h-1 bg-white/30 rounded-full" />
+              <span><strong className="text-white">50+</strong> Categories</span>
+              <span className="w-1 h-1 bg-white/30 rounded-full" />
+              <span><strong className="text-white">1,000+</strong> Events Booked</span>
             </div>
           </div>
         </div>
@@ -174,8 +174,8 @@ export default function HomePage() {
                   href={cat.href}
                   className="group bg-white border border-gray-100 hover:border-[#d4a843]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
                 >
-                  <div className="w-12 h-12 bg-gray-900/5 group-hover:bg-[#d4a843]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
-                    <Icon size={22} className="text-gray-900 group-hover:text-[#d4a843] transition-colors" strokeWidth={1.8} />
+                  <div className="w-12 h-12 av-gradient-bg-soft group-hover:av-gradient-bg group-hover:text-white rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
+                    <Icon size={22} className="text-[#2D3436] group-hover:text-white transition-colors" strokeWidth={1.8} />
                   </div>
                   <p className="text-gray-900 font-bold text-sm">{cat.label}</p>
                   <p className="text-gray-400 text-xs mt-1">{count} vendor{count !== 1 ? "s" : ""}</p>
@@ -238,11 +238,11 @@ export default function HomePage() {
           <div className="relative space-y-8 sm:space-y-12">
             {/* Step 1 — left aligned */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 bg-[#d4a843] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#d4a843]/20 sm:mx-auto">
+              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E84393]/20 sm:mx-auto">
                 <Search size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#d4a843] text-[10px] font-bold">STEP 1</span>
+                <span className="text-[#FF6B6B] text-[10px] font-bold">STEP 1</span>
                 <h3 className="text-gray-900 font-black text-base">Search & Discover</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Browse vendors by category, location & price. Save your favourites.</p>
               </div>
@@ -254,7 +254,7 @@ export default function HomePage() {
                 <MessageSquare size={20} className="text-white" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#2ec4b6] text-[10px] font-bold">STEP 2</span>
+                <span className="text-[#6C5CE7] text-[10px] font-bold">STEP 2</span>
                 <h3 className="text-gray-900 font-black text-base">Connect Directly</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Contact vendors with no middlemen. Get quotes, compare & decide.</p>
               </div>
@@ -262,11 +262,11 @@ export default function HomePage() {
 
             {/* Step 3 — center */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 bg-[#d4a843] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#d4a843]/20 sm:mx-auto">
+              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E84393]/20 sm:mx-auto">
                 <PartyPopper size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#d4a843] text-[10px] font-bold">STEP 3</span>
+                <span className="text-[#00CEC9] text-[10px] font-bold">STEP 3</span>
                 <h3 className="text-gray-900 font-black text-base">Book & Celebrate!</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Confirm your booking. Zero commission. Enjoy your event!</p>
               </div>
@@ -282,12 +282,12 @@ export default function HomePage() {
       </section>
 
       {/* CTA for businesses — compact & punchy */}
-      <section className="bg-gray-50 py-10">
+      <section className="bg-[#2D3436] py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl font-black text-gray-900">Are You an Event Supplier? ✨</h2>
+          <h2 className="text-2xl font-black text-white">Are You an Event Supplier? ✨</h2>
           <p className="text-gray-400 text-sm mt-2">List your business for free. No commission, ever.</p>
           <div className="flex items-center justify-center gap-3 mt-5">
-            <Link href="/list-your-business" className="bg-[#d4a843] hover:bg-[#e8c36a] text-gray-900 font-bold text-sm px-6 py-3 rounded-full transition-colors">
+            <Link href="/list-your-business" className="av-gradient-bg hover:opacity-90 text-white font-bold text-sm px-6 py-3 rounded-full transition-colors">
               List My Business
             </Link>
             <Link href="/services" className="text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors flex items-center gap-1">
