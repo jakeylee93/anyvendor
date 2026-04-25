@@ -90,17 +90,17 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
-          {categoryList
-            .filter((cat) => activeCategories.some((ac) => ac.key === cat.key))
-            .map((cat) => {
+        <div className="overflow-hidden">
+          <div className="flex animate-ticker-slow">
+            {[...categoryList.filter((cat) => activeCategories.some((ac) => ac.key === cat.key)),
+              ...categoryList.filter((cat) => activeCategories.some((ac) => ac.key === cat.key))].map((cat, i) => {
               const Icon = cat.icon;
               const count = activeCategories.find((ac) => ac.key === cat.key)?.count || 0;
               return (
                 <Link
-                  key={cat.key}
+                  key={`${cat.key}-${i}`}
                   href={cat.href}
-                  className="group bg-white border border-gray-100 hover:border-[#e2b33e]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md"
+                  className="group bg-white border border-gray-100 hover:border-[#e2b33e]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
                 >
                   <div className="w-12 h-12 bg-[#1a1a2e]/5 group-hover:bg-[#e2b33e]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
                     <Icon size={22} className="text-[#1a1a2e] group-hover:text-[#e2b33e] transition-colors" strokeWidth={1.8} />
@@ -110,6 +110,7 @@ export default function HomePage() {
                 </Link>
               );
             })}
+          </div>
         </div>
       </section>
 

@@ -48,3 +48,15 @@ html {
 .animate-ticker:hover {
   animation-play-state: paused;
 }
+
+/* Slower ticker for category carousel */
+@keyframes ticker-scroll-slow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker-slow {
+  animation: ticker-scroll-slow 40s linear infinite;
+}
+.animate-ticker-slow:hover {
+  animation-play-state: paused;
+}
