@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
 import LocationSearch from "@/components/LocationSearch";
 import {
   Building2,
@@ -13,6 +14,7 @@ import {
   Globe,
   FileText,
   Upload,
+  Lock,
   Tag,
   ChevronLeft,
   CheckCircle2,
@@ -41,9 +43,13 @@ const eventTypeOptions = [
 
 export default function ListYourBusinessPage() {
   const router = useRouter();
+  const { signup, user } = useAuth();
   const [step, setStep] = useState(1);
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  // Account fields
+  const [password, setPassword] = useState("");
 
   // Form state
   const [form, setForm] = useState({
@@ -86,7 +92,18 @@ export default function ListYourBusinessPage() {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
 
-    // For now, save to localStorage as demo (will be Supabase later)
+    // Create account for the vendor if not already logged in
+    if (!user && form.email && password) {
+      await signup({
+        email: form.email,
+        password,
+        name: form.contactName || form.businessName,
+        role: "vendor",
+        vendorSlug: slug,
+      });
+    }
+
+    // Save vendor to localStorage (will be Supabase later)
     const vendors = JSON.parse(localStorage.getItem("anyvendor_vendors") || "[]");
     vendors.push({
       slug,
@@ -343,6 +360,24 @@ export default function ListYourBusinessPage() {
                 </div>
               </div>
             </div>
+
+            {/* Password for account creation */}
+            {!user && (
+              <div>
+                <label className="block text-gray-600 text-xs font-semibold mb-1.5">Create a Password *</label>
+                <div className="relative">
+                  <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="w-full border border-gray-200 rounded-xl pl-11 pr-4 py-3 text-sm focus:border-[#e2b33e] focus:outline-none"
+                    placeholder="Min 6 characters — this creates your account"
+                  />
+                </div>
+                <p className="text-gray-400 text-[10px] mt-1">This will create your vendor account so you can manage your profile.</p>
+              </div>
+            )}
 
             <div className="grid grid-cols-2 gap-4">
               <div>

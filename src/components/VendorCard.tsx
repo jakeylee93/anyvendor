@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { MapPin, Star, Heart } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
 
 export interface Vendor {
   slug: string;
@@ -16,50 +19,46 @@ export interface Vendor {
 }
 
 export default function VendorCard({ vendor }: { vendor: Vendor }) {
+  const { user, toggleFavourite, isFavourite } = useAuth();
+  const isFav = isFavourite(vendor.slug);
+
   return (
     <Link
       href={`/vendor/${vendor.slug}`}
       className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300"
     >
-      {/* Image */}
       <div className="relative h-48 overflow-hidden bg-gray-100">
-        <img
-          src={vendor.image_url}
-          alt={vendor.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        {/* Favourite button */}
+        <img src={vendor.image_url} alt={vendor.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         <button
           onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
+            if (user) {
+              toggleFavourite(vendor.slug);
+            } else {
+              window.location.href = "/login";
+            }
           }}
-          className="absolute top-3 right-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors shadow-sm"
+          className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center shadow-sm transition-colors ${
+            isFav
+              ? "bg-red-500 text-white"
+              : "bg-white/90 backdrop-blur-sm text-gray-400 hover:text-red-500"
+          }`}
         >
-          <Heart size={14} />
+          <Heart size={14} fill={isFav ? "currentColor" : "none"} />
         </button>
-        {/* Verified badge */}
         {vendor.verified && (
-          <span className="absolute top-3 left-3 bg-[#2ec4b6] text-white text-[10px] font-bold px-2 py-1 rounded-full">
-            ✓ Verified
-          </span>
+          <span className="absolute top-3 left-3 bg-[#2ec4b6] text-white text-[10px] font-bold px-2 py-1 rounded-full">Verified</span>
         )}
-        {/* Category tag */}
-        <span className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-gray-700 text-[10px] font-semibold px-2.5 py-1 rounded-full">
-          {vendor.category}
-        </span>
+        <span className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-gray-700 text-[10px] font-semibold px-2.5 py-1 rounded-full">{vendor.category}</span>
       </div>
 
-      {/* Info */}
       <div className="p-4">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
-            <h3 className="text-gray-900 font-bold text-sm truncate group-hover:text-[#1a1a2e] transition-colors">
-              {vendor.name}
-            </h3>
+            <h3 className="text-gray-900 font-bold text-sm truncate group-hover:text-[#1a1a2e] transition-colors">{vendor.name}</h3>
             <p className="text-gray-500 text-xs mt-0.5">Est. {vendor.established}</p>
           </div>
-          {/* Rating */}
           {vendor.review_count > 0 && (
             <div className="flex items-center gap-1 flex-shrink-0">
               <Star size={12} className="text-[#e2b33e] fill-[#e2b33e]" />
@@ -68,14 +67,10 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
             </div>
           )}
         </div>
-
-        {/* Location */}
         <div className="flex items-center gap-1 mt-2">
           <MapPin size={12} className="text-gray-400" />
           <span className="text-gray-500 text-xs">{vendor.location}</span>
         </div>
-
-        {/* Price */}
         <div className="mt-3 pt-3 border-t border-gray-100">
           <div className="flex items-baseline gap-1">
             <span className="text-gray-400 text-[10px]">From</span>

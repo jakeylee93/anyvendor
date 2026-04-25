@@ -3,8 +3,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VendorCard from "@/components/VendorCard";
-import type { Vendor } from "@/components/VendorCard";
 import { categoryList } from "@/components/CategoryIcon";
+import { allVendors, getActiveCategories } from "@/data/vendors";
 import Link from "next/link";
 import {
   Search,
@@ -17,22 +17,8 @@ import {
   PartyPopper,
 } from "lucide-react";
 
-// Demo vendors
-const featuredVendors: Vendor[] = [
-  { slug: "the-bar-people", name: "The Bar People", category: "Mobile Bar", location: "Essex, UK", established: 2014, price_from: 500, price_unit: "per head", image_url: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop", rating: 4.9, review_count: 47, verified: true },
-  { slug: "grape-and-fig", name: "Grape & Fig", category: "Caterer", location: "London", established: 2014, price_from: 100, price_unit: "per head", image_url: "https://images.unsplash.com/photo-1555244162-803834f70033?w=600&h=400&fit=crop", rating: 4.8, review_count: 32, verified: true },
-  { slug: "tony-poole-discos", name: "Tony Poole Discos", category: "DJ Services", location: "London", established: 2019, price_from: 400, price_unit: "per event", image_url: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&h=400&fit=crop", rating: 4.7, review_count: 18, verified: true },
-  { slug: "toot-sweet-candy-cart", name: "Toot Sweet Candy Cart", category: "Candy Carts", location: "Essex, UK", established: 2020, price_from: 300, price_unit: "per event", image_url: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&h=400&fit=crop", rating: 5.0, review_count: 12, verified: true },
-  { slug: "magpie-catering", name: "Magpie Catering", category: "Caterer", location: "London", established: 1995, price_from: 100, price_unit: "per head", image_url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop", rating: 4.6, review_count: 28, verified: true },
-  { slug: "cj-sax", name: "CJ Sax", category: "Musician", location: "London", established: 2015, price_from: 500, price_unit: "per event", image_url: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=600&h=400&fit=crop", rating: 4.9, review_count: 22, verified: true },
-  { slug: "tm-event-hire", name: "TM Event Hire", category: "Equipment Hire", location: "London", established: 2018, price_from: 250, price_unit: "per event", image_url: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=600&h=400&fit=crop", rating: 4.5, review_count: 15, verified: false },
-  { slug: "ozzy-stix", name: "Ozzy & Stix", category: "Band", location: "UK Wide", established: 2010, price_from: 500, price_unit: "per event", image_url: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop", rating: 4.8, review_count: 35, verified: true },
-];
-
-const categoryCounts: Record<string, number> = {
-  bars: 24, catering: 31, music: 18, photography: 12,
-  venues: 8, entertainment: 15, decor: 9, transport: 6, cakes: 7, hire: 11,
-};
+const featuredVendors = allVendors.slice(0, 8);
+const activeCategories = getActiveCategories();
 
 export default function HomePage() {
   return (
@@ -105,22 +91,25 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
-          {categoryList.map((cat) => {
-            const Icon = cat.icon;
-            return (
-              <Link
-                key={cat.key}
-                href={cat.href}
-                className="group bg-white border border-gray-100 hover:border-[#e2b33e]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md"
-              >
-                <div className="w-12 h-12 bg-[#1a1a2e]/5 group-hover:bg-[#e2b33e]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
-                  <Icon size={22} className="text-[#1a1a2e] group-hover:text-[#e2b33e] transition-colors" strokeWidth={1.8} />
-                </div>
-                <p className="text-gray-900 font-bold text-sm">{cat.label}</p>
-                <p className="text-gray-400 text-xs mt-1">{categoryCounts[cat.key] || 0} vendors</p>
-              </Link>
-            );
-          })}
+          {categoryList
+            .filter((cat) => activeCategories.some((ac) => ac.key === cat.key))
+            .map((cat) => {
+              const Icon = cat.icon;
+              const count = activeCategories.find((ac) => ac.key === cat.key)?.count || 0;
+              return (
+                <Link
+                  key={cat.key}
+                  href={cat.href}
+                  className="group bg-white border border-gray-100 hover:border-[#e2b33e]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md"
+                >
+                  <div className="w-12 h-12 bg-[#1a1a2e]/5 group-hover:bg-[#e2b33e]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
+                    <Icon size={22} className="text-[#1a1a2e] group-hover:text-[#e2b33e] transition-colors" strokeWidth={1.8} />
+                  </div>
+                  <p className="text-gray-900 font-bold text-sm">{cat.label}</p>
+                  <p className="text-gray-400 text-xs mt-1">{count} vendor{count !== 1 ? "s" : ""}</p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 
