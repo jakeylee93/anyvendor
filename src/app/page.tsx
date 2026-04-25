@@ -116,7 +116,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
               Find the perfect{" "}
-              <span className="av-gradient-text font-display italic">event suppliers</span>{" "}
+              <span className="av-gradient-text font-black">event suppliers</span>{" "}
               for any occasion
             </h1>
             <p className="text-gray-300 text-lg mt-4 max-w-xl mx-auto">
@@ -130,7 +130,7 @@ export default function HomePage() {
                 <input
                   type="text"
                   placeholder="What are you looking for? e.g. Mobile Bar, DJ, Caterer..."
-                  className="w-full bg-white rounded-full pl-12 pr-4 py-4 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#d4a843] shadow-lg"
+                  className="w-full bg-white rounded-full pl-12 pr-4 py-4 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#FEC8D8] shadow-lg"
                 />
               </div>
               <button className="bg-[#d4a843] hover:bg-[#e8c36a] text-gray-900 font-bold text-sm px-8 py-4 rounded-full transition-colors shadow-lg whitespace-nowrap">
@@ -172,7 +172,7 @@ export default function HomePage() {
                 <Link
                   key={`${cat.key}-${i}`}
                   href={cat.href}
-                  className="group bg-white border border-gray-100 hover:border-[#d4a843]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
+                  className="group bg-white border border-gray-100 hover:border-[#D4A5E5]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
                 >
                   <div className="w-12 h-12 av-gradient-bg-soft group-hover:av-gradient-bg group-hover:text-white rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
                     <Icon size={22} className="text-[#2D3436] group-hover:text-white transition-colors" strokeWidth={1.8} />
@@ -222,7 +222,7 @@ export default function HomePage() {
           <svg className="absolute left-1/2 top-0 -translate-x-1/2 w-[200px] h-full pointer-events-none hidden sm:block" viewBox="0 0 200 500" fill="none" preserveAspectRatio="none">
             <path
               d="M100 0 C100 40, 30 60, 30 100 S160 140, 160 180 S40 220, 40 260 S170 300, 170 340 S60 380, 100 420"
-              stroke="#d4a843"
+              stroke="#D4A5E5"
               strokeWidth="2"
               strokeDasharray="8 8"
               strokeLinecap="round"
@@ -232,17 +232,17 @@ export default function HomePage() {
           </svg>
 
           {/* Mobile dotted line */}
-          <div className="absolute left-6 top-0 bottom-0 w-px border-l-2 border-dashed border-[#d4a843]/30 sm:hidden" />
+          <div className="absolute left-6 top-0 bottom-0 w-px border-l-2 border-dashed border-[#D4A5E5]/30 sm:hidden" />
 
           {/* Steps */}
           <div className="relative space-y-8 sm:space-y-12">
             {/* Step 1 — left aligned */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E84393]/20 sm:mx-auto">
+              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#FEC8D8]/30 sm:mx-auto">
                 <Search size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#FF6B6B] text-[10px] font-bold">STEP 1</span>
+                <span className="text-[#FFB5A7] text-[10px] font-bold">STEP 1</span>
                 <h3 className="text-gray-900 font-black text-base">Search & Discover</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Browse vendors by category, location & price. Save your favourites.</p>
               </div>
@@ -250,11 +250,11 @@ export default function HomePage() {
 
             {/* Step 2 — right aligned on desktop */}
             <div className="flex items-start gap-4 sm:gap-0 sm:flex-row-reverse">
-              <div className="relative z-10 w-12 h-12 bg-[#2ec4b6] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2ec4b6]/20 sm:mx-auto">
+              <div className="relative z-10 w-12 h-12 bg-[#A8E6CF] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2ec4b6]/20 sm:mx-auto">
                 <MessageSquare size={20} className="text-white" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#6C5CE7] text-[10px] font-bold">STEP 2</span>
+                <span className="text-[#D4A5E5] text-[10px] font-bold">STEP 2</span>
                 <h3 className="text-gray-900 font-black text-base">Connect Directly</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Contact vendors with no middlemen. Get quotes, compare & decide.</p>
               </div>
@@ -262,11 +262,11 @@ export default function HomePage() {
 
             {/* Step 3 — center */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E84393]/20 sm:mx-auto">
+              <div className="relative z-10 w-12 h-12 av-gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#FEC8D8]/30 sm:mx-auto">
                 <PartyPopper size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#00CEC9] text-[10px] font-bold">STEP 3</span>
+                <span className="text-[#A0D2F0] text-[10px] font-bold">STEP 3</span>
                 <h3 className="text-gray-900 font-black text-base">Book & Celebrate!</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Confirm your booking. Zero commission. Enjoy your event!</p>
               </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-black text-white">Are You an Event Supplier? ✨</h2>
           <p className="text-gray-400 text-sm mt-2">List your business for free. No commission, ever.</p>
           <div className="flex items-center justify-center gap-3 mt-5">
-            <Link href="/list-your-business" className="av-gradient-bg hover:opacity-90 text-white font-bold text-sm px-6 py-3 rounded-full transition-colors">
+            <Link href="/list-your-business" className="av-gradient-bg hover:opacity-90 text-[#2D3436] font-bold text-sm px-6 py-3 rounded-full transition-colors">
               List My Business
             </Link>
             <Link href="/services" className="text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors flex items-center gap-1">
@@ -295,7 +295,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="flex items-center justify-center gap-4 mt-5 text-gray-500 text-[10px]">
-            <span className="flex items-center gap-1"><Shield size={11} className="text-[#2ec4b6]" /> Verified</span>
+            <span className="flex items-center gap-1"><Shield size={11} className="text-[#A8E6CF]" /> Verified</span>
             <span className="flex items-center gap-1"><Star size={11} className="text-[#d4a843]" /> Reviews</span>
             <span className="flex items-center gap-1"><Zap size={11} className="text-[#d4a843]" /> Zero fees</span>
           </div>

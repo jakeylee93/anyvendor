@@ -49,7 +49,7 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
           <Heart size={14} fill={isFav ? "currentColor" : "none"} />
         </button>
         {vendor.tier === "premium" && (
-          <span className="absolute top-3 left-3 av-gradient-bg text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
+          <span className="absolute top-3 left-3 av-gradient-bg text-[#2D3436] text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
             <Star size={10} fill="currentColor" /> Premium
           </span>
         )}
@@ -64,7 +64,7 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
           </div>
           {vendor.review_count > 0 && (
             <div className="flex items-center gap-0.5 flex-shrink-0">
-              <Star size={10} className="text-[#FF6B6B] fill-[#FF6B6B]" />
+              <Star size={10} className="text-[#FFB5A7] fill-[#FFB5A7]" />
               <span className="text-gray-900 text-[10px] sm:text-xs font-bold">{vendor.rating.toFixed(1)}</span>
             </div>
           )}

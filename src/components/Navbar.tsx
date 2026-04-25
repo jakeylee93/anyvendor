@@ -62,7 +62,7 @@ export default function Navbar() {
                           <p className="text-gray-900 text-xs font-bold truncate">{user.name}</p>
                           <p className="text-gray-400 text-[10px] truncate">{user.email}</p>
                           {user.role === "admin" && (
-                            <span className="text-[#6C5CE7] text-[10px] font-bold flex items-center gap-1 mt-0.5"><Shield size={8} /> Admin</span>
+                            <span className="text-[#D4A5E5] text-[10px] font-bold flex items-center gap-1 mt-0.5"><Shield size={8} /> Admin</span>
                           )}
                         </div>
                         <Link href="/favourites" onClick={() => setUserMenuOpen(false)} className="block px-4 py-2 text-gray-600 text-xs hover:bg-gray-50 transition-colors">My Favourites</Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
                           <Link href={`/vendor/${user.vendorSlug}`} onClick={() => setUserMenuOpen(false)} className="block px-4 py-2 text-gray-600 text-xs hover:bg-gray-50 transition-colors">My Profile</Link>
                         )}
                         {user.role === "admin" && (
-                          <Link href="/admin" onClick={() => setUserMenuOpen(false)} className="block px-4 py-2 text-[#6C5CE7] text-xs font-semibold hover:bg-gray-50 transition-colors">Admin Panel</Link>
+                          <Link href="/admin" onClick={() => setUserMenuOpen(false)} className="block px-4 py-2 text-[#D4A5E5] text-xs font-semibold hover:bg-gray-50 transition-colors">Admin Panel</Link>
                         )}
                         <button
                           onClick={() => { logout(); setUserMenuOpen(false); }}
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <Link href="/login" className="text-gray-400 hover:text-white text-sm transition-colors"><User size={16} /></Link>
               )}
 
-              <Link href="/list-your-business" className="av-gradient-bg hover:opacity-90 text-white font-bold text-xs px-4 py-2 rounded-full transition-all">
+              <Link href="/list-your-business" className="av-gradient-bg hover:opacity-90 text-[#2D3436] font-bold text-xs px-4 py-2 rounded-full transition-all">
                 LIST MY BUSINESS
               </Link>
               <Link href="/plan-my-event" className="bg-white/10 hover:bg-white/20 text-white font-bold text-xs px-4 py-2 rounded-full border border-white/20 transition-colors">
@@ -103,7 +103,7 @@ export default function Navbar() {
 
       {/* Sliding category ticker — sticky, with subtle gradient underline */}
       <div className="bg-white border-b border-gray-100 overflow-hidden sticky top-0 z-40">
-        <div className="h-0.5 av-gradient-bg opacity-30" />
+        <div className="h-0.5 av-gradient-bg opacity-50" />
         <div className="relative">
           <div className="flex animate-ticker">
             {[...categoryList, ...categoryList].map((cat, i) => {
