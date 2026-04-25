@@ -98,8 +98,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Sliding category ticker */}
-      <div className="bg-white border-b border-gray-200 overflow-hidden">
+      {/* Sliding category ticker — sticky */}
+      <div className="bg-white border-b border-gray-200 overflow-hidden sticky top-0 z-40">
         <div className="relative">
           <div className="flex animate-ticker">
             {[...categoryList, ...categoryList].map((cat, i) => {

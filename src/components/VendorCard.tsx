@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, Star, Heart } from "lucide-react";
+import { MapPin, Star, Heart, Crown } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
 export interface Vendor {
@@ -16,6 +16,7 @@ export interface Vendor {
   rating: number;
   review_count: number;
   verified: boolean;
+  tier?: "free" | "premium";
 }
 
 export default function VendorCard({ vendor }: { vendor: Vendor }) {
@@ -47,8 +48,10 @@ export default function VendorCard({ vendor }: { vendor: Vendor }) {
         >
           <Heart size={14} fill={isFav ? "currentColor" : "none"} />
         </button>
-        {vendor.verified && (
-          <span className="absolute top-3 left-3 bg-[#2ec4b6] text-white text-[10px] font-bold px-2 py-1 rounded-full">Verified</span>
+        {vendor.tier === "premium" && (
+          <span className="absolute top-3 left-3 bg-[#e2b33e] text-[#1a1a2e] text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
+            <Star size={10} fill="currentColor" /> Premium
+          </span>
         )}
         <span className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-gray-700 text-[10px] font-semibold px-2.5 py-1 rounded-full">{vendor.category}</span>
       </div>

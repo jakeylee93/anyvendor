@@ -158,9 +158,9 @@ export default function VendorProfilePage({ params }: { params: Promise<{ slug: 
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
                     <h1 className="text-2xl font-black text-gray-900">{vendor.name}</h1>
-                    {vendor.verified && (
-                      <span className="bg-[#2ec4b6]/10 text-[#2ec4b6] text-xs font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
-                        <CheckCircle2 size={12} /> Verified
+                    {(vendor.tier === "premium" || vendor.verified) && (
+                      <span className="bg-[#e2b33e]/10 text-[#e2b33e] text-xs font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                        <CheckCircle2 size={12} /> Premium
                       </span>
                     )}
                   </div>

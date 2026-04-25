@@ -13,6 +13,7 @@ export const allVendors: Vendor[] = [
     rating: 4.9,
     review_count: 47,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "grape-and-fig",
@@ -26,6 +27,7 @@ export const allVendors: Vendor[] = [
     rating: 4.8,
     review_count: 32,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "tony-poole-discos",
@@ -39,6 +41,7 @@ export const allVendors: Vendor[] = [
     rating: 4.7,
     review_count: 18,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "toot-sweet-candy-cart",
@@ -52,6 +55,7 @@ export const allVendors: Vendor[] = [
     rating: 5.0,
     review_count: 12,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "magpie-catering",
@@ -65,6 +69,7 @@ export const allVendors: Vendor[] = [
     rating: 4.6,
     review_count: 28,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "cj-sax",
@@ -78,6 +83,7 @@ export const allVendors: Vendor[] = [
     rating: 4.9,
     review_count: 22,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "tm-event-hire",
@@ -91,6 +97,7 @@ export const allVendors: Vendor[] = [
     rating: 4.5,
     review_count: 15,
     verified: false,
+    tier: "free" as const,
   },
   {
     slug: "ozzy-stix",
@@ -104,6 +111,7 @@ export const allVendors: Vendor[] = [
     rating: 4.8,
     review_count: 35,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "lucy-jane-cakes",
@@ -117,6 +125,7 @@ export const allVendors: Vendor[] = [
     rating: 4.9,
     review_count: 41,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "ray-elton-johnson",
@@ -130,6 +139,7 @@ export const allVendors: Vendor[] = [
     rating: 4.7,
     review_count: 19,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "paint-and-pour",
@@ -143,6 +153,7 @@ export const allVendors: Vendor[] = [
     rating: 4.6,
     review_count: 8,
     verified: false,
+    tier: "free" as const,
   },
   {
     slug: "tl-executive-cars",
@@ -156,6 +167,7 @@ export const allVendors: Vendor[] = [
     rating: 4.8,
     review_count: 14,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "harry-de-cruz",
@@ -169,6 +181,7 @@ export const allVendors: Vendor[] = [
     rating: 4.8,
     review_count: 26,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "jamie-roche",
@@ -182,6 +195,7 @@ export const allVendors: Vendor[] = [
     rating: 4.7,
     review_count: 21,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "natalie-max",
@@ -195,6 +209,7 @@ export const allVendors: Vendor[] = [
     rating: 4.9,
     review_count: 17,
     verified: true,
+    tier: "premium" as const,
   },
   {
     slug: "calleo",
@@ -208,6 +223,7 @@ export const allVendors: Vendor[] = [
     rating: 4.5,
     review_count: 9,
     verified: false,
+    tier: "free" as const,
   },
   {
     slug: "meatstop",
@@ -221,6 +237,7 @@ export const allVendors: Vendor[] = [
     rating: 4.6,
     review_count: 11,
     verified: true,
+    tier: "premium" as const,
   },
 ];
 
