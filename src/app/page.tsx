@@ -127,10 +127,17 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
-            {featuredVendors.map((vendor) => (
-              <VendorCard key={vendor.slug} vendor={vendor} />
-            ))}
+          {/* Auto-scrolling vendor showcase */}
+          <div className="overflow-hidden relative" style={{ maxHeight: "680px" }}>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 animate-vendor-scroll">
+              {/* Randomise + duplicate for seamless loop */}
+              {[...allVendors].sort(() => Math.random() - 0.5).concat([...allVendors].sort(() => Math.random() - 0.5)).map((vendor, i) => (
+                <VendorCard key={`${vendor.slug}-${i}`} vendor={vendor} />
+              ))}
+            </div>
+            {/* Fade overlay top & bottom */}
+            <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
           </div>
         </div>
       </section>

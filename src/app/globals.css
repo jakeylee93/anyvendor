@@ -70,6 +70,18 @@ html {
   animation-play-state: paused;
 }
 
+/* Vertical vendor scroll */
+@keyframes vendor-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+.animate-vendor-scroll {
+  animation: vendor-scroll 60s linear infinite;
+}
+.animate-vendor-scroll:hover {
+  animation-play-state: paused;
+}
+
 /* Scroll-triggered animations */
 .anim-fade-up-initial {
   opacity: 0;
