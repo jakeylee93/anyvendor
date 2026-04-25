@@ -58,7 +58,7 @@ function FeaturedCard({ vendor }: { vendor: Vendor }) {
         </button>
         {/* Premium badge */}
         {vendor.tier === "premium" && (
-          <div className="absolute top-3 left-3 bg-[#e2b33e] text-[#1a1a2e] text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+          <div className="absolute top-3 left-3 bg-[#d4a843] text-gray-900 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
             <Star size={10} fill="currentColor" /> Premium
           </div>
         )}
@@ -78,13 +78,13 @@ function FeaturedCard({ vendor }: { vendor: Vendor }) {
           </div>
           {vendor.review_count > 0 && (
             <div className="flex items-center gap-0.5">
-              <Star size={10} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <Star size={10} className="text-[#d4a843] fill-[#d4a843]" />
               <span className="text-gray-900 text-[11px] font-bold">{vendor.rating.toFixed(1)}</span>
             </div>
           )}
         </div>
         <div className="flex items-baseline gap-0.5 mt-2">
-          <span className="text-[#1a1a2e] font-black text-base">£{vendor.price_from}</span>
+          <span className="text-gray-900 font-black text-base">£{vendor.price_from}</span>
           <span className="text-gray-400 text-[9px]">{vendor.price_unit}</span>
         </div>
       </div>
@@ -98,28 +98,28 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero with video background */}
-      <section className="relative bg-[#1a1a2e] overflow-hidden min-h-[520px] flex items-center">
+      <section className="relative bg-white overflow-hidden min-h-[520px] flex items-center">
         {/* Vimeo video background */}
         <div className="absolute inset-0 overflow-hidden">
           <iframe
             src="https://player.vimeo.com/video/1039846245?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full opacity-30"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full opacity-60"
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
           />
         </div>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a2e]/70 via-[#1a1a2e]/50 to-[#1a1a2e]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-white/70" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight">
               Find the perfect{" "}
-              <span className="text-[#e2b33e]">event suppliers</span>{" "}
+              <span className="text-[#d4a843] font-display italic">event suppliers</span>{" "}
               for any occasion
             </h1>
-            <p className="text-gray-300 text-lg mt-4 max-w-xl mx-auto">
+            <p className="text-gray-600 text-lg mt-4 max-w-xl mx-auto">
               Browse hundreds of verified vendors — from bars to DJs, caterers to photographers. No commission, no hassle.
             </p>
 
@@ -130,21 +130,21 @@ export default function HomePage() {
                 <input
                   type="text"
                   placeholder="What are you looking for? e.g. Mobile Bar, DJ, Caterer..."
-                  className="w-full bg-white rounded-full pl-12 pr-4 py-4 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#e2b33e] shadow-lg"
+                  className="w-full bg-white rounded-full pl-12 pr-4 py-4 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#d4a843] shadow-lg"
                 />
               </div>
-              <button className="bg-[#e2b33e] hover:bg-[#f0c75e] text-[#1a1a2e] font-bold text-sm px-8 py-4 rounded-full transition-colors shadow-lg whitespace-nowrap">
+              <button className="bg-[#d4a843] hover:bg-[#e8c36a] text-gray-900 font-bold text-sm px-8 py-4 rounded-full transition-colors shadow-lg whitespace-nowrap">
                 Search
               </button>
             </div>
 
             {/* Quick stats */}
-            <div className="mt-10 flex items-center justify-center gap-8 text-white/60 text-sm">
-              <span><strong className="text-white">200+</strong> Vendors</span>
-              <span className="w-1 h-1 bg-white/30 rounded-full" />
-              <span><strong className="text-white">50+</strong> Categories</span>
-              <span className="w-1 h-1 bg-white/30 rounded-full" />
-              <span><strong className="text-white">1,000+</strong> Events Booked</span>
+            <div className="mt-10 flex items-center justify-center gap-8 text-gray-400 text-sm">
+              <span><strong className="text-gray-900">200+</strong> Vendors</span>
+              <span className="w-1 h-1 bg-gray-300 rounded-full" />
+              <span><strong className="text-gray-900">50+</strong> Categories</span>
+              <span className="w-1 h-1 bg-gray-300 rounded-full" />
+              <span><strong className="text-gray-900">1,000+</strong> Events Booked</span>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-black text-gray-900">Browse by Category</h2>
             <p className="text-gray-500 text-sm mt-1">Find suppliers across every event category</p>
           </div>
-          <Link href="/directory" className="hidden md:flex items-center gap-1.5 text-[#1a1a2e] text-sm font-semibold hover:text-[#e2b33e] transition-colors">
+          <Link href="/directory" className="hidden md:flex items-center gap-1.5 text-gray-900 text-sm font-semibold hover:text-[#d4a843] transition-colors">
             View All <ArrowRight size={14} />
           </Link>
         </div>
@@ -172,10 +172,10 @@ export default function HomePage() {
                 <Link
                   key={`${cat.key}-${i}`}
                   href={cat.href}
-                  className="group bg-white border border-gray-100 hover:border-[#e2b33e]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
+                  className="group bg-white border border-gray-100 hover:border-[#d4a843]/30 rounded-2xl p-5 text-center transition-all hover:shadow-md flex-shrink-0 w-[160px] mx-1.5"
                 >
-                  <div className="w-12 h-12 bg-[#1a1a2e]/5 group-hover:bg-[#e2b33e]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
-                    <Icon size={22} className="text-[#1a1a2e] group-hover:text-[#e2b33e] transition-colors" strokeWidth={1.8} />
+                  <div className="w-12 h-12 bg-gray-900/5 group-hover:bg-[#d4a843]/10 rounded-xl flex items-center justify-center mx-auto mb-3 transition-colors">
+                    <Icon size={22} className="text-gray-900 group-hover:text-[#d4a843] transition-colors" strokeWidth={1.8} />
                   </div>
                   <p className="text-gray-900 font-bold text-sm">{cat.label}</p>
                   <p className="text-gray-400 text-xs mt-1">{count} vendor{count !== 1 ? "s" : ""}</p>
@@ -194,7 +194,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-black text-gray-900">Featured Vendors</h2>
               <p className="text-gray-500 text-sm mt-1">Handpicked suppliers ready to make your event unforgettable</p>
             </div>
-            <Link href="/directory" className="hidden md:flex items-center gap-1.5 text-[#1a1a2e] text-sm font-semibold hover:text-[#e2b33e] transition-colors">
+            <Link href="/directory" className="hidden md:flex items-center gap-1.5 text-gray-900 text-sm font-semibold hover:text-[#d4a843] transition-colors">
               View All Vendors <ArrowRight size={14} />
             </Link>
           </div>
@@ -222,7 +222,7 @@ export default function HomePage() {
           <svg className="absolute left-1/2 top-0 -translate-x-1/2 w-[200px] h-full pointer-events-none hidden sm:block" viewBox="0 0 200 500" fill="none" preserveAspectRatio="none">
             <path
               d="M100 0 C100 40, 30 60, 30 100 S160 140, 160 180 S40 220, 40 260 S170 300, 170 340 S60 380, 100 420"
-              stroke="#e2b33e"
+              stroke="#d4a843"
               strokeWidth="2"
               strokeDasharray="8 8"
               strokeLinecap="round"
@@ -232,17 +232,17 @@ export default function HomePage() {
           </svg>
 
           {/* Mobile dotted line */}
-          <div className="absolute left-6 top-0 bottom-0 w-px border-l-2 border-dashed border-[#e2b33e]/30 sm:hidden" />
+          <div className="absolute left-6 top-0 bottom-0 w-px border-l-2 border-dashed border-[#d4a843]/30 sm:hidden" />
 
           {/* Steps */}
           <div className="relative space-y-8 sm:space-y-12">
             {/* Step 1 — left aligned */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 bg-[#e2b33e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#e2b33e]/20 sm:mx-auto">
-                <Search size={20} className="text-[#1a1a2e]" />
+              <div className="relative z-10 w-12 h-12 bg-[#d4a843] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#d4a843]/20 sm:mx-auto">
+                <Search size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#e2b33e] text-[10px] font-bold">STEP 1</span>
+                <span className="text-[#d4a843] text-[10px] font-bold">STEP 1</span>
                 <h3 className="text-gray-900 font-black text-base">Search & Discover</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Browse vendors by category, location & price. Save your favourites.</p>
               </div>
@@ -262,11 +262,11 @@ export default function HomePage() {
 
             {/* Step 3 — center */}
             <div className="flex items-start gap-4 sm:gap-0">
-              <div className="relative z-10 w-12 h-12 bg-[#e2b33e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#e2b33e]/20 sm:mx-auto">
-                <PartyPopper size={20} className="text-[#1a1a2e]" />
+              <div className="relative z-10 w-12 h-12 bg-[#d4a843] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#d4a843]/20 sm:mx-auto">
+                <PartyPopper size={20} className="text-gray-900" />
               </div>
               <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
-                <span className="text-[#e2b33e] text-[10px] font-bold">STEP 3</span>
+                <span className="text-[#d4a843] text-[10px] font-bold">STEP 3</span>
                 <h3 className="text-gray-900 font-black text-base">Book & Celebrate!</h3>
                 <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Confirm your booking. Zero commission. Enjoy your event!</p>
               </div>
@@ -275,29 +275,29 @@ export default function HomePage() {
         </div>
 
         <div className="text-center mt-10">
-          <Link href="/how-it-works" className="text-[#e2b33e] text-xs font-semibold hover:underline inline-flex items-center gap-1">
+          <Link href="/how-it-works" className="text-[#d4a843] text-xs font-semibold hover:underline inline-flex items-center gap-1">
             Learn more about how it works <ArrowRight size={12} />
           </Link>
         </div>
       </section>
 
       {/* CTA for businesses — compact & punchy */}
-      <section className="bg-[#1a1a2e] py-10">
+      <section className="bg-gray-50 py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl font-black text-white">Are You an Event Supplier? ✨</h2>
+          <h2 className="text-2xl font-black text-gray-900">Are You an Event Supplier? ✨</h2>
           <p className="text-gray-400 text-sm mt-2">List your business for free. No commission, ever.</p>
           <div className="flex items-center justify-center gap-3 mt-5">
-            <Link href="/list-your-business" className="bg-[#e2b33e] hover:bg-[#f0c75e] text-[#1a1a2e] font-bold text-sm px-6 py-3 rounded-full transition-colors">
+            <Link href="/list-your-business" className="bg-[#d4a843] hover:bg-[#e8c36a] text-gray-900 font-bold text-sm px-6 py-3 rounded-full transition-colors">
               List My Business
             </Link>
-            <Link href="/services" className="text-gray-300 hover:text-white text-sm font-medium transition-colors flex items-center gap-1">
+            <Link href="/services" className="text-gray-500 hover:text-gray-900 text-sm font-medium transition-colors flex items-center gap-1">
               Our Services <ArrowRight size={12} />
             </Link>
           </div>
           <div className="flex items-center justify-center gap-4 mt-5 text-gray-500 text-[10px]">
             <span className="flex items-center gap-1"><Shield size={11} className="text-[#2ec4b6]" /> Verified</span>
-            <span className="flex items-center gap-1"><Star size={11} className="text-[#e2b33e]" /> Reviews</span>
-            <span className="flex items-center gap-1"><Zap size={11} className="text-[#e2b33e]" /> Zero fees</span>
+            <span className="flex items-center gap-1"><Star size={11} className="text-[#d4a843]" /> Reviews</span>
+            <span className="flex items-center gap-1"><Zap size={11} className="text-[#d4a843]" /> Zero fees</span>
           </div>
         </div>
       </section>
@@ -307,7 +307,7 @@ export default function HomePage() {
         <div className="bg-white rounded-2xl border border-gray-100 p-5 sm:p-8 text-center">
           <div className="flex items-center justify-center gap-0.5 mb-3">
             {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} size={14} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <Star key={i} size={14} className="text-[#d4a843] fill-[#d4a843]" />
             ))}
           </div>
           <p className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
