@@ -212,24 +212,72 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it Works — compact & playful */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <h2 className="text-xl font-black text-gray-900 text-center mb-6">How it Works</h2>
-        <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-2">
-          {[
-            { icon: Search, num: "1", title: "Search", desc: "Browse vendors by category, location & price", color: "#e2b33e" },
-            { icon: MessageSquare, num: "2", title: "Connect", desc: "Contact directly — no middlemen or fees", color: "#2ec4b6" },
-            { icon: PartyPopper, num: "3", title: "Book!", desc: "Confirm & celebrate your perfect event", color: "#e2b33e" },
-          ].map((item) => (
-            <div key={item.num} className="flex-shrink-0 flex-1 min-w-[140px] bg-white rounded-2xl border border-gray-100 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-2" style={{ backgroundColor: `${item.color}15` }}>
-                <item.icon size={18} style={{ color: item.color }} />
+      {/* How it Works — playful journey path */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
+        <h2 className="text-xl font-black text-gray-900 text-center mb-2">How it Works</h2>
+        <p className="text-gray-400 text-xs text-center mb-10">Your journey to the perfect event</p>
+
+        <div className="relative">
+          {/* Dotted path SVG */}
+          <svg className="absolute left-1/2 top-0 -translate-x-1/2 w-[200px] h-full pointer-events-none hidden sm:block" viewBox="0 0 200 500" fill="none" preserveAspectRatio="none">
+            <path
+              d="M100 0 C100 40, 30 60, 30 100 S160 140, 160 180 S40 220, 40 260 S170 300, 170 340 S60 380, 100 420"
+              stroke="#e2b33e"
+              strokeWidth="2"
+              strokeDasharray="8 8"
+              strokeLinecap="round"
+              opacity="0.4"
+              vectorEffect="non-scaling-stroke"
+            />
+          </svg>
+
+          {/* Mobile dotted line */}
+          <div className="absolute left-6 top-0 bottom-0 w-px border-l-2 border-dashed border-[#e2b33e]/30 sm:hidden" />
+
+          {/* Steps */}
+          <div className="relative space-y-8 sm:space-y-12">
+            {/* Step 1 — left aligned */}
+            <div className="flex items-start gap-4 sm:gap-0">
+              <div className="relative z-10 w-12 h-12 bg-[#e2b33e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#e2b33e]/20 sm:mx-auto">
+                <Search size={20} className="text-[#1a1a2e]" />
               </div>
-              <span className="text-[10px] font-black text-gray-300">{item.num}</span>
-              <h3 className="text-gray-900 font-bold text-sm">{item.title}</h3>
-              <p className="text-gray-400 text-[10px] mt-1 leading-relaxed">{item.desc}</p>
+              <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
+                <span className="text-[#e2b33e] text-[10px] font-bold">STEP 1</span>
+                <h3 className="text-gray-900 font-black text-base">Search & Discover</h3>
+                <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Browse vendors by category, location & price. Save your favourites.</p>
+              </div>
             </div>
-          ))}
+
+            {/* Step 2 — right aligned on desktop */}
+            <div className="flex items-start gap-4 sm:gap-0 sm:flex-row-reverse">
+              <div className="relative z-10 w-12 h-12 bg-[#2ec4b6] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#2ec4b6]/20 sm:mx-auto">
+                <MessageSquare size={20} className="text-white" />
+              </div>
+              <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
+                <span className="text-[#2ec4b6] text-[10px] font-bold">STEP 2</span>
+                <h3 className="text-gray-900 font-black text-base">Connect Directly</h3>
+                <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Contact vendors with no middlemen. Get quotes, compare & decide.</p>
+              </div>
+            </div>
+
+            {/* Step 3 — center */}
+            <div className="flex items-start gap-4 sm:gap-0">
+              <div className="relative z-10 w-12 h-12 bg-[#e2b33e] rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#e2b33e]/20 sm:mx-auto">
+                <PartyPopper size={20} className="text-[#1a1a2e]" />
+              </div>
+              <div className="sm:text-center sm:mt-4 sm:absolute sm:left-0 sm:right-0 sm:top-16">
+                <span className="text-[#e2b33e] text-[10px] font-bold">STEP 3</span>
+                <h3 className="text-gray-900 font-black text-base">Book & Celebrate!</h3>
+                <p className="text-gray-500 text-xs mt-1 max-w-[240px] sm:mx-auto leading-relaxed">Confirm your booking. Zero commission. Enjoy your event!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-10">
+          <Link href="/how-it-works" className="text-[#e2b33e] text-xs font-semibold hover:underline inline-flex items-center gap-1">
+            Learn more about how it works <ArrowRight size={12} />
+          </Link>
         </div>
       </section>
 
