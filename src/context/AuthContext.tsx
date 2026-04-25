@@ -36,7 +36,7 @@ const AuthContext = createContext<AuthContextValue>({
 });
 
 // Admin accounts
-const ADMIN_EMAILS = ["jake@anyvendor.co.uk", "vishal@anyvendor.co.uk", "jake@thebarpeople.co.uk"];
+const ADMIN_EMAILS = ["jake@thebarpeople.co.uk", "hello@vishalmayo.com"];
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
