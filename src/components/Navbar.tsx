@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Menu, X, Search, User, Heart, LogOut, Shield } from "lucide-react";
 import { categoryList } from "./CategoryIcon";
 import { useAuth } from "@/context/AuthContext";
+import SearchModal from "./SearchModal";
 
 const navLinks = [
   { href: "/directory", label: "Directory" },
@@ -16,6 +17,7 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { user, logout } = useAuth();
 
   return (
@@ -38,7 +40,7 @@ export default function Navbar() {
             </nav>
 
             <div className="hidden md:flex items-center gap-3">
-              <Link href="/directory" className="text-gray-300 hover:text-white text-sm transition-colors"><Search size={16} /></Link>
+              <button onClick={() => setSearchOpen(true)} className="text-gray-300 hover:text-white text-sm transition-colors"><Search size={16} /></button>
 
               {user ? (
                 <>
@@ -142,6 +144,9 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
+      {/* Search Modal */}
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );
 }
