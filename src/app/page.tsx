@@ -15,10 +15,89 @@ import {
   Star,
   MessageSquare,
   PartyPopper,
+  MapPin,
 } from "lucide-react";
 
-const featuredVendors = allVendors.slice(0, 8);
+import type { Vendor } from "@/components/VendorCard";
+import { Heart as HeartIcon } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
+
 const activeCategories = getActiveCategories();
+
+/* Pokémon-card style featured vendor */
+function FeaturedCard({ vendor }: { vendor: Vendor }) {
+  const { user, toggleFavourite, isFavourite } = useAuth();
+  const isFav = isFavourite(vendor.slug);
+
+  return (
+    <Link
+      href={`/vendor/${vendor.slug}`}
+      className="group block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300"
+    >
+      {/* Image — big and prominent */}
+      <div className="relative h-52 sm:h-56 overflow-hidden">
+        <img
+          src={vendor.image_url}
+          alt={vendor.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+        {/* Fav button */}
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (user) toggleFavourite(vendor.slug);
+            else window.location.href = "/login";
+          }}
+          className={`absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center shadow-md transition-colors ${
+            isFav ? "bg-red-500 text-white" : "bg-white/90 backdrop-blur-sm text-gray-400 hover:text-red-500"
+          }`}
+        >
+          <HeartIcon size={16} fill={isFav ? "currentColor" : "none"} />
+        </button>
+        {/* Premium badge */}
+        {vendor.tier === "premium" && (
+          <div className="absolute top-3 left-3 bg-[#e2b33e] text-[#1a1a2e] text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+            <Star size={10} fill="currentColor" /> Premium
+          </div>
+        )}
+        {/* Name overlay on image */}
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <h3 className="text-white font-black text-lg leading-tight drop-shadow-lg">{vendor.name}</h3>
+          <div className="flex items-center gap-2 mt-1">
+            <span className="bg-white/20 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">{vendor.category}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Info section */}
+      <div className="p-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-1.5">
+            <MapPin size={12} className="text-gray-400" />
+            <span className="text-gray-500 text-xs">{vendor.location}</span>
+          </div>
+          {vendor.review_count > 0 && (
+            <div className="flex items-center gap-1">
+              <Star size={12} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <span className="text-gray-900 text-xs font-bold">{vendor.rating.toFixed(1)}</span>
+              <span className="text-gray-400 text-[10px]">({vendor.review_count})</span>
+            </div>
+          )}
+        </div>
+        <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
+          <div className="flex items-baseline gap-1">
+            <span className="text-gray-400 text-[10px]">From</span>
+            <span className="text-[#1a1a2e] font-black text-xl">£{vendor.price_from}</span>
+            <span className="text-gray-400 text-[10px]">{vendor.price_unit}</span>
+          </div>
+          <span className="text-xs text-gray-400">Est. {vendor.established}</span>
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 export default function HomePage() {
   return (
@@ -127,18 +206,15 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Horizontal auto-scrolling vendor showcase */}
-          <div className="overflow-hidden relative">
-            <div className="flex gap-3 sm:gap-4 animate-vendor-h-scroll">
+          {/* Horizontal swipeable vendor showcase — Pokémon card style */}
+          <div className="overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+            <div className="flex gap-4 animate-vendor-h-scroll w-max">
               {[...allVendors].sort(() => Math.random() - 0.5).concat([...allVendors].sort(() => Math.random() - 0.5)).map((vendor, i) => (
-                <div key={`${vendor.slug}-${i}`} className="flex-shrink-0 w-[calc(33.333%-8px)] sm:w-[calc(20%-13px)]">
-                  <VendorCard vendor={vendor} />
+                <div key={`${vendor.slug}-${i}`} className="flex-shrink-0 w-[75vw] sm:w-[280px] lg:w-[260px] snap-center">
+                  <FeaturedCard vendor={vendor} />
                 </div>
               ))}
             </div>
-            {/* Fade edges left & right */}
-            <div className="absolute top-0 bottom-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none z-10" />
-            <div className="absolute top-0 bottom-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
           </div>
         </div>
       </section>
