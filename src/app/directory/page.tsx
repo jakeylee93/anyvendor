@@ -108,11 +108,11 @@ function DirectoryContent() {
         </button>
       </div>
 
-      {/* Category pills */}
-      <div className="flex flex-wrap gap-2 mb-6">
+      {/* Category pills — horizontal scroll on mobile */}
+      <div className="flex gap-1.5 mb-5 overflow-x-auto pb-2 scrollbar-hide">
         <button
           onClick={() => setActiveCategory("")}
-          className={`text-xs px-4 py-2 rounded-full border transition-colors font-medium ${
+          className={`text-[11px] px-3 py-1.5 rounded-full border transition-colors font-medium whitespace-nowrap flex-shrink-0 ${
             !activeCategory ? "bg-[#1a1a2e] text-white border-[#1a1a2e]" : "bg-white text-gray-600 border-gray-200 hover:border-gray-300"
           }`}
         >
@@ -122,7 +122,7 @@ function DirectoryContent() {
           <button
             key={cat.key}
             onClick={() => setActiveCategory(cat.key === activeCategory ? "" : cat.key)}
-            className={`text-xs px-4 py-2 rounded-full border transition-colors font-medium ${
+            className={`text-[11px] px-3 py-1.5 rounded-full border transition-colors font-medium whitespace-nowrap flex-shrink-0 ${
               activeCategory === cat.key ? "bg-[#1a1a2e] text-white border-[#1a1a2e]" : "bg-white text-gray-600 border-gray-200 hover:border-gray-300"
             }`}
           >
@@ -223,7 +223,7 @@ function DirectoryContent() {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5">
           {filtered.map((vendor) => (
             <VendorCard key={vendor.slug} vendor={vendor} />
           ))}

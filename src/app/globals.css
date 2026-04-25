@@ -37,6 +37,15 @@ html {
   background: #9ca3af;
 }
 
+/* Hide scrollbar but keep scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Category ticker animation */
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
