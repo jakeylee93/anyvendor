@@ -70,15 +70,15 @@ html {
   animation-play-state: paused;
 }
 
-/* Vertical vendor scroll */
-@keyframes vendor-scroll {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+/* Horizontal vendor scroll */
+@keyframes vendor-h-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-.animate-vendor-scroll {
-  animation: vendor-scroll 60s linear infinite;
+.animate-vendor-h-scroll {
+  animation: vendor-h-scroll 45s linear infinite;
 }
-.animate-vendor-scroll:hover {
+.animate-vendor-h-scroll:hover {
   animation-play-state: paused;
 }
 

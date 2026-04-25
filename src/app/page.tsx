@@ -127,17 +127,18 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Auto-scrolling vendor showcase */}
-          <div className="overflow-hidden relative" style={{ maxHeight: "680px" }}>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 animate-vendor-scroll">
-              {/* Randomise + duplicate for seamless loop */}
+          {/* Horizontal auto-scrolling vendor showcase */}
+          <div className="overflow-hidden relative">
+            <div className="flex gap-3 sm:gap-4 animate-vendor-h-scroll">
               {[...allVendors].sort(() => Math.random() - 0.5).concat([...allVendors].sort(() => Math.random() - 0.5)).map((vendor, i) => (
-                <VendorCard key={`${vendor.slug}-${i}`} vendor={vendor} />
+                <div key={`${vendor.slug}-${i}`} className="flex-shrink-0 w-[calc(33.333%-8px)] sm:w-[calc(20%-13px)]">
+                  <VendorCard vendor={vendor} />
+                </div>
               ))}
             </div>
-            {/* Fade overlay top & bottom */}
-            <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
+            {/* Fade edges left & right */}
+            <div className="absolute top-0 bottom-0 left-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none z-10" />
+            <div className="absolute top-0 bottom-0 right-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
           </div>
         </div>
       </section>
