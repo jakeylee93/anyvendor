@@ -32,10 +32,10 @@ function FeaturedCard({ vendor }: { vendor: Vendor }) {
   return (
     <Link
       href={`/vendor/${vendor.slug}`}
-      className="group block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300"
+      className="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300"
     >
-      {/* Image — big and prominent */}
-      <div className="relative h-52 sm:h-56 overflow-hidden">
+      {/* Image */}
+      <div className="relative h-36 sm:h-44 overflow-hidden">
         <img
           src={vendor.image_url}
           alt={vendor.name}
@@ -63,36 +63,29 @@ function FeaturedCard({ vendor }: { vendor: Vendor }) {
           </div>
         )}
         {/* Name overlay on image */}
-        <div className="absolute bottom-0 left-0 right-0 p-4">
-          <h3 className="text-white font-black text-lg leading-tight drop-shadow-lg">{vendor.name}</h3>
-          <div className="flex items-center gap-2 mt-1">
-            <span className="bg-white/20 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">{vendor.category}</span>
-          </div>
+        <div className="absolute bottom-0 left-0 right-0 p-3">
+          <h3 className="text-white font-black text-sm leading-tight drop-shadow-lg">{vendor.name}</h3>
+          <span className="bg-white/20 backdrop-blur-sm text-white text-[9px] font-semibold px-1.5 py-0.5 rounded-full mt-1 inline-block">{vendor.category}</span>
         </div>
       </div>
 
-      {/* Info section */}
-      <div className="p-4">
+      {/* Info section — compact */}
+      <div className="p-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-1.5">
-            <MapPin size={12} className="text-gray-400" />
-            <span className="text-gray-500 text-xs">{vendor.location}</span>
+          <div className="flex items-center gap-1">
+            <MapPin size={10} className="text-gray-400" />
+            <span className="text-gray-500 text-[10px] truncate">{vendor.location}</span>
           </div>
           {vendor.review_count > 0 && (
-            <div className="flex items-center gap-1">
-              <Star size={12} className="text-[#e2b33e] fill-[#e2b33e]" />
-              <span className="text-gray-900 text-xs font-bold">{vendor.rating.toFixed(1)}</span>
-              <span className="text-gray-400 text-[10px]">({vendor.review_count})</span>
+            <div className="flex items-center gap-0.5">
+              <Star size={10} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <span className="text-gray-900 text-[11px] font-bold">{vendor.rating.toFixed(1)}</span>
             </div>
           )}
         </div>
-        <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-          <div className="flex items-baseline gap-1">
-            <span className="text-gray-400 text-[10px]">From</span>
-            <span className="text-[#1a1a2e] font-black text-xl">£{vendor.price_from}</span>
-            <span className="text-gray-400 text-[10px]">{vendor.price_unit}</span>
-          </div>
-          <span className="text-xs text-gray-400">Est. {vendor.established}</span>
+        <div className="flex items-baseline gap-0.5 mt-2">
+          <span className="text-[#1a1a2e] font-black text-base">£{vendor.price_from}</span>
+          <span className="text-gray-400 text-[9px]">{vendor.price_unit}</span>
         </div>
       </div>
     </Link>
@@ -210,7 +203,7 @@ export default function HomePage() {
           <div className="overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
             <div className="flex gap-4 animate-vendor-h-scroll w-max">
               {[...allVendors].sort(() => Math.random() - 0.5).concat([...allVendors].sort(() => Math.random() - 0.5)).map((vendor, i) => (
-                <div key={`${vendor.slug}-${i}`} className="flex-shrink-0 w-[75vw] sm:w-[280px] lg:w-[260px] snap-center">
+                <div key={`${vendor.slug}-${i}`} className="flex-shrink-0 w-[44vw] sm:w-[240px] lg:w-[230px] snap-center">
                   <FeaturedCard vendor={vendor} />
                 </div>
               ))}
@@ -219,72 +212,60 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it Works */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-black text-gray-900">How it Works</h2>
-          <p className="text-gray-500 text-sm mt-2">Three simple steps to your perfect event</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
+      {/* How it Works — compact & playful */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 className="text-xl font-black text-gray-900 text-center mb-6">How it Works</h2>
+        <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-2">
           {[
-            { icon: Search, step: "01", title: "Search & Discover", desc: "Browse our directory of verified event suppliers. Filter by category, location, price, and event type to find exactly what you need." },
-            { icon: MessageSquare, step: "02", title: "Connect & Compare", desc: "View profiles, read reviews, and compare quotes. Contact vendors directly — no middlemen, no commission fees." },
-            { icon: PartyPopper, step: "03", title: "Book & Celebrate", desc: "Confirm your booking directly with the vendor. Plan with confidence knowing you've found verified, trusted suppliers." },
+            { icon: Search, num: "1", title: "Search", desc: "Browse vendors by category, location & price", color: "#e2b33e" },
+            { icon: MessageSquare, num: "2", title: "Connect", desc: "Contact directly — no middlemen or fees", color: "#2ec4b6" },
+            { icon: PartyPopper, num: "3", title: "Book!", desc: "Confirm & celebrate your perfect event", color: "#e2b33e" },
           ].map((item) => (
-            <div key={item.step} className="text-center">
-              <div className="w-16 h-16 bg-[#1a1a2e] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <item.icon size={24} className="text-[#e2b33e]" />
+            <div key={item.num} className="flex-shrink-0 flex-1 min-w-[140px] bg-white rounded-2xl border border-gray-100 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-2" style={{ backgroundColor: `${item.color}15` }}>
+                <item.icon size={18} style={{ color: item.color }} />
               </div>
-              <span className="text-[#e2b33e] text-xs font-bold">STEP {item.step}</span>
-              <h3 className="text-gray-900 font-bold text-lg mt-2">{item.title}</h3>
-              <p className="text-gray-500 text-sm mt-2 leading-relaxed">{item.desc}</p>
+              <span className="text-[10px] font-black text-gray-300">{item.num}</span>
+              <h3 className="text-gray-900 font-bold text-sm">{item.title}</h3>
+              <p className="text-gray-400 text-[10px] mt-1 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA for businesses */}
-      <section className="bg-[#1a1a2e] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-black text-white">Are You an Event Supplier?</h2>
-            <p className="text-gray-400 text-sm mt-3 leading-relaxed">
-              Showcase your services and connect with people ready to book.
-              No commission on bookings — just a platform that puts your business in front of the right audience.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
-              <Link href="/list-your-business" className="bg-[#e2b33e] hover:bg-[#f0c75e] text-[#1a1a2e] font-bold text-sm px-8 py-3.5 rounded-full transition-colors">
-                List My Business — It&apos;s Free
-              </Link>
-              <Link href="/how-it-works" className="text-gray-300 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5">
-                Learn More <ArrowRight size={14} />
-              </Link>
-            </div>
-            <div className="flex items-center justify-center gap-6 mt-8 text-gray-500 text-xs">
-              <span className="flex items-center gap-1.5"><Shield size={14} className="text-[#2ec4b6]" /> Verified vendors</span>
-              <span className="flex items-center gap-1.5"><Star size={14} className="text-[#e2b33e]" /> Genuine reviews</span>
-              <span className="flex items-center gap-1.5"><Zap size={14} className="text-[#e2b33e]" /> Zero commission</span>
-            </div>
+      {/* CTA for businesses — compact & punchy */}
+      <section className="bg-[#1a1a2e] py-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-black text-white">Are You an Event Supplier? ✨</h2>
+          <p className="text-gray-400 text-sm mt-2">List your business for free. No commission, ever.</p>
+          <div className="flex items-center justify-center gap-3 mt-5">
+            <Link href="/list-your-business" className="bg-[#e2b33e] hover:bg-[#f0c75e] text-[#1a1a2e] font-bold text-sm px-6 py-3 rounded-full transition-colors">
+              List My Business
+            </Link>
+            <Link href="/services" className="text-gray-300 hover:text-white text-sm font-medium transition-colors flex items-center gap-1">
+              Our Services <ArrowRight size={12} />
+            </Link>
+          </div>
+          <div className="flex items-center justify-center gap-4 mt-5 text-gray-500 text-[10px]">
+            <span className="flex items-center gap-1"><Shield size={11} className="text-[#2ec4b6]" /> Verified</span>
+            <span className="flex items-center gap-1"><Star size={11} className="text-[#e2b33e]" /> Reviews</span>
+            <span className="flex items-center gap-1"><Zap size={11} className="text-[#e2b33e]" /> Zero fees</span>
           </div>
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-3xl border border-gray-100 p-8 md:p-12 text-center max-w-3xl mx-auto">
-          <div className="flex items-center justify-center gap-1 mb-4">
+      {/* Testimonial — compact */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+        <div className="bg-white rounded-2xl border border-gray-100 p-5 sm:p-8 text-center">
+          <div className="flex items-center justify-center gap-0.5 mb-3">
             {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} size={16} className="text-[#e2b33e] fill-[#e2b33e]" />
+              <Star key={i} size={14} className="text-[#e2b33e] fill-[#e2b33e]" />
             ))}
           </div>
-          <p className="text-gray-700 text-lg leading-relaxed italic">
-            &ldquo;AnyVendor made planning our wedding so much easier. We found our bar, DJ, and caterer all in one place. The direct contact with vendors meant no hidden fees — just honest pricing and amazing service.&rdquo;
+          <p className="text-gray-700 text-sm sm:text-base leading-relaxed italic">
+            &ldquo;We found our bar, DJ, and caterer all in one place. No hidden fees — just honest pricing and amazing service.&rdquo;
           </p>
-          <div className="mt-6">
-            <p className="text-gray-900 font-bold text-sm">Sarah & Tom</p>
-            <p className="text-gray-400 text-xs">Wedding in Essex, 2025</p>
-          </div>
+          <p className="text-gray-900 font-bold text-xs mt-3">Sarah & Tom <span className="text-gray-400 font-normal">— Wedding in Essex</span></p>
         </div>
       </section>
 
