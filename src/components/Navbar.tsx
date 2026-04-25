@@ -70,7 +70,7 @@ export default function Navbar() {
       {/* Sliding category ticker */}
       <div className="bg-white border-b border-gray-200 overflow-hidden">
         <div className="relative">
-          <div className="flex animate-scroll">
+          <div className="flex animate-ticker">
             {/* Double the items for seamless loop */}
             {[...categoryList, ...categoryList].map((cat, i) => {
               const Icon = cat.icon;
@@ -110,18 +110,7 @@ export default function Navbar() {
         </div>
       )}
 
-      <style jsx global>{`
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+
     </>
   );
 }

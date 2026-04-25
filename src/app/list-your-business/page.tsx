@@ -4,15 +4,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import LocationSearch from "@/components/LocationSearch";
 import {
   Building2,
   User,
   Mail,
   Phone,
-  MapPin,
   Globe,
   FileText,
-  Camera,
+  Upload,
   Tag,
   ChevronLeft,
   CheckCircle2,
@@ -20,6 +20,8 @@ import {
   Star,
   Zap,
   Loader2,
+  ImageIcon,
+  X,
 } from "lucide-react";
 
 const categoryOptions = [
@@ -227,16 +229,11 @@ export default function ListYourBusinessPage() {
 
             <div>
               <label className="block text-gray-600 text-xs font-semibold mb-1.5">Location *</label>
-              <div className="relative">
-                <MapPin size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                <input
-                  type="text"
-                  value={form.location}
-                  onChange={(e) => update("location", e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl pl-11 pr-4 py-3 text-sm focus:border-[#e2b33e] focus:outline-none"
-                  placeholder="e.g. Essex, UK"
-                />
-              </div>
+              <LocationSearch
+                value={form.location}
+                onChange={(val) => update("location", val)}
+                placeholder="Start typing... e.g. Essex, London, UK Wide"
+              />
             </div>
 
             <div>
@@ -251,18 +248,40 @@ export default function ListYourBusinessPage() {
             </div>
 
             <div>
-              <label className="block text-gray-600 text-xs font-semibold mb-1.5">Cover Image URL</label>
-              <div className="relative">
-                <Camera size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                <input
-                  type="url"
-                  value={form.imageUrl}
-                  onChange={(e) => update("imageUrl", e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl pl-11 pr-4 py-3 text-sm focus:border-[#e2b33e] focus:outline-none"
-                  placeholder="https://example.com/photo.jpg"
-                />
-              </div>
-              <p className="text-gray-400 text-[10px] mt-1">Leave blank for a default image. File uploads coming soon.</p>
+              <label className="block text-gray-600 text-xs font-semibold mb-1.5">Cover Image</label>
+              {form.imageUrl ? (
+                <div className="relative rounded-xl overflow-hidden h-40 bg-gray-100">
+                  <img src={form.imageUrl} alt="Cover preview" className="w-full h-full object-cover" />
+                  <button
+                    type="button"
+                    onClick={() => update("imageUrl", "")}
+                    className="absolute top-2 right-2 w-7 h-7 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              ) : (
+                <label className="flex flex-col items-center justify-center h-40 border-2 border-dashed border-gray-200 rounded-xl cursor-pointer hover:border-[#e2b33e]/50 hover:bg-[#e2b33e]/5 transition-colors">
+                  <Upload size={24} className="text-gray-400 mb-2" />
+                  <span className="text-gray-500 text-xs font-medium">Click to upload a cover photo</span>
+                  <span className="text-gray-400 text-[10px] mt-1">JPG, PNG up to 5MB</span>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (ev) => {
+                          update("imageUrl", ev.target?.result as string);
+                        };
+                        reader.readAsDataURL(file);
+                      }
+                    }}
+                  />
+                </label>
+              )}
             </div>
 
             <button
