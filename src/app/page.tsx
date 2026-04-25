@@ -27,16 +27,16 @@ export default function HomePage() {
 
       {/* Hero with video background */}
       <section className="relative bg-[#1a1a2e] overflow-hidden min-h-[520px] flex items-center">
-        {/* Video background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        >
-          <source src="https://videos.pexels.com/video-files/3249935/3249935-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-        </video>
+        {/* Vimeo video background */}
+        <div className="absolute inset-0 overflow-hidden">
+          <iframe
+            src="https://player.vimeo.com/video/1039846245?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full opacity-30"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+        </div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a2e]/70 via-[#1a1a2e]/50 to-[#1a1a2e]/90" />
 
