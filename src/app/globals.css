@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap');
+@import "tailwindcss";
 
 :root {
   /* AnyVendor brand palette — pastel events energy */
@@ -161,4 +161,41 @@ html {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* ── Anyvendor (Booked Events reconstruction) tokens ──
+   Palette recovered from archived bookedevents.co.uk inline CSS:
+   navy #212235, deep #080030, cyan #33ccff, amber #FBB102, grey #6D6D6D. */
+@theme {
+  --color-be-navy: #212235;
+  --color-be-deep: #080030;
+  --color-be-cyan: #33ccff;
+  --color-be-cyan-pale: #e6f8ff;
+  --color-be-amber: #fbb102;
+  --color-be-grey: #6d6d6d;
+  --color-be-mist: #f2f3f5;
+  --font-lexend: var(--font-lexend-deca), system-ui, sans-serif;
+  --font-caveat: var(--font-caveat-hand), cursive;
+}
+
+.be-site {
+  font-family: var(--font-lexend-deca), system-ui, sans-serif;
+  background: #fff;
+  color: #212235;
+}
+
+.be-gradient-text {
+  background: linear-gradient(90deg, #33ccff, #9966cc 55%, #ff69eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.be-gradient-line {
+  height: 4px;
+  background: linear-gradient(90deg, #33ccff, #9966cc, #ff69eb, #fbb102);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .be-site * { transition: none !important; animation: none !important; }
 }
