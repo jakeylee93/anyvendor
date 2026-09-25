@@ -48,3 +48,10 @@ The legacy routes `/admin`, `/login`, `/signup`, `/favourites`, `/services`, `/l
 5. Enquiry, account and payments integrations: not started; need Jake's decisions.
 
 Not touched: WordPress, DNS, production domain, customer messaging, payments.
+
+### Release receipt (25 Sep 2026, ~16:23 UTC)
+- Code commit `5dd9748` on branch `claude/bookedevents-reconstruction`. Deployed with `vercel deploy`: a preview, not production.
+- Preview: https://anyvendor-cftaxp2t4-anyos.vercel.app (Ready; Vercel Deployment Protection is on, so viewers must be signed in to Vercel).
+- Verified on the deployment through authenticated `vercel curl`: `/directory?industry=food-services` shows 5 of 17, and `/businesses/the-bar-people` loads with the title "The Bar People — Anyvendor".
+- Production `anyvendor.vercel.app` is unchanged (the old 152-day-old deployment `anyvendor-h76nsvda5`). `main` is not merged. Release claim `538cefcb-6566-4503-baeb-c22432dcbe90` was released after this receipt.
+- Next decision for Jake: approve the preview, then merge to main or promote to production.
