@@ -110,7 +110,7 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
       ) : stillHero ? (
         <section aria-label={`${p.displayName} photo`} className="relative isolate h-[calc(100svh-196px)] min-h-[540px] overflow-hidden bg-be-deep text-white lg:h-[calc(100svh-150px)] lg:min-h-[600px]">
           <img src={stillHero.src} alt={stillHero.alt} className="absolute inset-0 h-full w-full object-cover" fetchPriority="high" />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,0,48,0.35)_0%,rgba(8,0,48,0)_30%,rgba(8,0,48,0.15)_55%,rgba(8,0,48,0.88)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,0,48,0.3)_0%,rgba(8,0,48,0)_22%,rgba(8,0,48,0.45)_52%,rgba(8,0,48,0.92)_100%)]" />
           <div className="relative flex h-full items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-10 md:pb-16">
               <HeroText b={b} p={p} />

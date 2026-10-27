@@ -136,7 +136,7 @@ export default function Showreel({ desktop, mobile, label, children }: Props) {
           onPause={() => setPlaying(false)}
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${ready ? "opacity-100" : "opacity-0"}`}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,0,48,0.35)_0%,rgba(8,0,48,0)_30%,rgba(8,0,48,0.15)_55%,rgba(8,0,48,0.88)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,0,48,0.3)_0%,rgba(8,0,48,0)_22%,rgba(8,0,48,0.45)_52%,rgba(8,0,48,0.92)_100%)]" />
       </div>
 
       <div ref={contentRef} className="relative flex h-full items-end will-change-transform">
