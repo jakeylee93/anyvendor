@@ -9,48 +9,75 @@
   "gallery": [
     {
       "file": "public/media/harry-de-cruz/photo-01.webp",
-      "alt": "Harry De Cruz on a theatre stage in a hazy spotlight, flicking a playing card out towards the darkened audience",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg"
+      "alt": "Two guests at a gala dinner table react with open-mouthed amazement, with other diners seated behind them",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg",
+      "sha256": "e18468b48b4f0c9e563c61f9b3b639e8940aa9bc3e787638c32711754b7f9b8f"
     },
     {
       "file": "public/media/harry-de-cruz/photo-02.webp",
-      "alt": "Two guests at a gala dinner table react with open-mouthed amazement, with other diners seated behind them",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg"
+      "alt": "Harry De Cruz on a theatre stage in a hazy spotlight, flicking a playing card out towards the darkened audience",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg",
+      "sha256": "9b82e4f6d59096c8172d78b002c3d67a36524d19452e16d84762d943bf2d282a"
     },
     {
       "file": "public/media/harry-de-cruz/photo-03.webp",
-      "alt": "Harry De Cruz in an olive suit and glasses smiles as he holds up a playing card and a fanned deck, while a guest in the foreground applauds",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG"
+      "alt": "Harry, in a dark suit, performs close-up magic for a laughing bride and groom at their wedding table (the site's alt text: 'Magician Harry De Cruz performing to surprised Bride and Groom at a wedding')",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/1646149967211-6IA69WBE6ITE1685MWTJ/IMG_1525+2.JPG",
+      "sha256": "3ed393c67ea41ed103b6f4ff97b697c9229c620d774809a665206bf79d8090a3"
     },
     {
       "file": "public/media/harry-de-cruz/photo-04.webp",
-      "alt": "Harry De Cruz in a brown tweed suit stands holding a card beside a candlelit wedding table as the bride and a guest laugh",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG"
+      "alt": "Table magic at a wedding: Harry holds a card out to the bride as she and the guests laugh",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG",
+      "sha256": "dcedf8da001210baf33cb48095bffd3fdcf1c499ec6b0c63d5a078df4bc27bd3"
     },
     {
       "file": "public/media/harry-de-cruz/photo-05.webp",
-      "alt": "Harry De Cruz in a green shirt and glasses shows a playing card to three astonished guests at an indoor drinks reception",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG"
+      "alt": "A bride and a groom in a bow tie laugh over a playing card at their table against a stone wall, while a man in a blue suit and glasses looks on",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg",
+      "sha256": "14efb5ff3cd23504fe8391a6cf4bc5e14c316fe4662d5ac2f276c3d66471fb3b"
     },
     {
       "file": "public/media/harry-de-cruz/photo-06.webp",
-      "alt": "A bride and a groom in a bow tie laugh over a playing card at their table against a stone wall, while a man in a blue suit and glasses looks on",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg"
+      "alt": "Harry De Cruz in an olive suit and glasses smiles as he holds up a playing card and a fanned deck, while a guest in the foreground applauds",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG",
+      "sha256": "80b89de1d286a78c4cb3ae9d7fc20fa8c44204a972bccac6d39fae0be6ad1db5"
     },
     {
       "file": "public/media/harry-de-cruz/photo-07.webp",
-      "alt": "View from the back of a theatre audience: a performer in black holds up a phone in the aisle under teal stage light, followed by a camera operator",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG"
+      "alt": "Harry De Cruz in a brown tweed suit stands holding a card beside a candlelit wedding table as the bride and a guest laugh",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG",
+      "sha256": "564ce8c4865fcfa362b7ddf51aec3a197ef791b9288c08f6da2cbd29c120b359"
     },
     {
       "file": "public/media/harry-de-cruz/photo-08.webp",
-      "alt": "Harry De Cruz in a teal boiler suit gestures on a dark stage, with a camera operator in the foreground",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg"
+      "alt": "Harry De Cruz in a navy suit shakes hands with a guest at an outdoor wedding drinks reception on a lawn",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG",
+      "sha256": "cf7b6d5a22aac0878a551ff79582e95c598e780c7c8b49795f8cb7fbebc0c562"
     },
     {
       "file": "public/media/harry-de-cruz/photo-09.webp",
-      "alt": "Harry De Cruz in a navy suit shakes hands with a guest at an outdoor wedding drinks reception on a lawn",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG"
+      "alt": "Harry De Cruz in a teal boiler suit gestures on a dark stage, with a camera operator in the foreground",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg",
+      "sha256": "871cbf0d713114e9f8ca90776f52d11ed701831cafc7f578215913ae2f2db690"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-10.webp",
+      "alt": "View from the back of a theatre audience: a performer in black holds up a phone in the aisle under teal stage light, followed by a camera operator",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG",
+      "sha256": "fb1451577a158165636bf7ad446313a31dcc44dc953af61daeb6c2261bb1d2e5"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-11.webp",
+      "alt": "Harry De Cruz in a green shirt and glasses shows a playing card to three astonished guests at an indoor drinks reception",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG",
+      "sha256": "f2dd8ffb112db076eef1ab72ea4a4dfc4025029cd53555130030643935854f4f"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-12.webp",
+      "alt": "Professional headshot of Harry in a black T-shirt against a green backdrop (the same image Booked Events uses as his avatar); suitable for a profile avatar",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/73d1ddec-12aa-4f80-a922-5554930fbc94/663A6149.jpg",
+      "sha256": "e7f36938876318d5d966935bd1af21bacc4cda8bcf9fd10dde1f5f41f03612a1"
     }
   ],
   "notes": [
@@ -58,6 +85,17 @@
     "The logo is a monogram, not a full wordmark: the header 'Harry De Cruz' is live web-font text (ivypresto-display) with no logo image or SVG. Plate is 'none' because the mark carries its own solid green rounded-square background.",
     "Reel: 2 video clips from his own 70 s Squarespace HLS showreel (harrydecruz.com/showreel; 1920x1080, audio stripped) plus 4 of his own photos as stills. The showreel is fast-cut (most shots under 1.8 s) and many shots carry burned-in title cards, quotes or client-brand logo walls, so only two text-free shots of 2 s or more were usable.",
     "Gallery photos are his own published photos from harrydecruz.com (Squarespace CDN), fetched as JPEG and converted to WebP (max 1600 px, q80). Photo credits on his site include @domdommartin and Hannah McClune; use should be with consent.",
-    "Excluded from gallery and reel: IMG_1525 (wedding table shot with young children visible at the edge) and the 663A6149 headshot (a portrait, better suited as an avatar). IMG_4823 (wedding table magic) appears only in the reel, so the gallery does not carry two near-identical wedding-breakfast shots."
-  ]
+    "Excluded from gallery and reel: IMG_1525 (wedding table shot with young children visible at the edge) and the 663A6149 headshot (a portrait, better suited as an avatar). IMG_4823 (wedding table magic) appears only in the reel, so the gallery does not carry two near-identical wedding-breakfast shots.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/harry-de-cruz/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/harry_decruz_thumb.jpg",
+    "alt": "Harry De Cruz throwing playing cards into the air against a red patterned wall",
+    "sourceSize": [
+      1000,
+      800
+    ],
+    "sha256": "2b6bed5a0d22e943071a2308c8dc9cb4dc029d8023e214c44c97f932c332819e"
+  }
 }

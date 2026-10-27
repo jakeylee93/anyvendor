@@ -121,69 +121,90 @@
    "width": 512,
    "height": 180
   },
+  "card": {
+   "src": "/media/calleo/card.webp",
+   "alt": "A couple share a white telephone handset in front of an 'I just called to say' neon sign framed by trailing white flowers.",
+   "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/calleo/photo-01.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1334,
     "alt": "A guest in a white dress smiles as she speaks into a cream telephone handset at an evening reception, with other guests laughing and raising glasses around her.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/66eadddb3c2db3331cf0c0a8/0331576e-b4c7-49a5-ac0b-5333ae7da796/Harry+Michael+Photographer.jpeg"
    },
    {
     "src": "/media/calleo/photo-02.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "A couple share a white telephone handset in front of an 'I just called to say' neon sign framed by trailing white flowers.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg"
+    "width": 2000,
+    "height": 1334,
+    "alt": "A bride and groom in white heart-shaped sunglasses share a pale pink phone handset in front of a copper tinsel backdrop.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/44cd7330-41e2-4528-922b-39f07e13cbb4/268_Prestwold_Gina+Fernandes+Photography_.jpg"
    },
    {
     "src": "/media/calleo/photo-03.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "Calleo phones on display: a light blue rotary phone with Calleo branding, an ornate brass rotary phone and a pink phone.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg"
+    "width": 2000,
+    "height": 1333,
+    "alt": "A bride records a message on a white Calleo phone beside a large white neon sign in a dark, moody venue (Lewis Cannon Photography).",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fe2edbf1-564d-486b-a879-063ef20abbed/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg.jpg"
    },
    {
     "src": "/media/calleo/photo-04.webp",
-    "width": 1600,
-    "height": 1065,
+    "width": 2000,
+    "height": 1331,
     "alt": "Wedding guests gather around a table in a stone-walled room while a woman in a green dress speaks into a cream rotary phone.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/aae401cc-7881-4f1d-a7ea-8c58940e0d54/Char+Cook+Photography-min.jpeg"
    },
    {
     "src": "/media/calleo/photo-05.webp",
-    "width": 1067,
-    "height": 1600,
+    "width": 1333,
+    "height": 2000,
     "alt": "A bride and groom at a white telephone-box stand holding a handset, beside a 'Happily Ever After' neon sign and a stone wall.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/502bdb0a-c55b-4668-ad4b-355f7bcee7b0/Notley+Abbey+Styled+Shoot-212.jpg"
    },
    {
     "src": "/media/calleo/photo-06.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "A bride and groom in white heart-shaped sunglasses share a pale pink phone handset in front of a copper tinsel backdrop.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/44cd7330-41e2-4528-922b-39f07e13cbb4/268_Prestwold_Gina+Fernandes+Photography_.jpg"
-   },
-   {
-    "src": "/media/calleo/photo-07.webp",
-    "width": 1067,
-    "height": 1600,
+    "width": 1333,
+    "height": 2000,
     "alt": "A bride in an off-shoulder gown holds a red rotary phone and its handset beside a decorated Christmas tree.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/dcfbb4a4-e9ac-4c99-b302-e45ddaccc304/DSC07793.jpg"
    },
    {
+    "src": "/media/calleo/photo-07.webp",
+    "width": 2000,
+    "height": 1334,
+    "alt": "Calleo phones on display: a light blue rotary phone with Calleo branding, an ornate brass rotary phone and a pink phone.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg"
+   },
+   {
     "src": "/media/calleo/photo-08.webp",
-    "width": 1067,
-    "height": 1600,
-    "alt": "Black-and-white table styling: a Calleo rotary phone with coupe glasses, white roses, a miniature gin bottle and a table-number card.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/9c4041a7-54fe-4e41-9ca7-4c78577353af/BDP_CalleoPosable_StyledShoot-244.jpg"
+    "width": 1600,
+    "height": 1067,
+    "alt": "A styled-shoot model lying on a bed holding a black rotary Calleo handset (Beth Beresford Photography, The Grange Leverton; @calleouk credited as audio guestbook supplier).",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/61d05075-c6cb-4a77-b032-f20927254636/Beth+Beresford+Photography+-+The+Grange+Leverton+Preview-23.jpg"
    },
    {
     "src": "/media/calleo/photo-09.webp",
-    "width": 1067,
-    "height": 1600,
+    "width": 1333,
+    "height": 2000,
     "alt": "A guest seated on a stool laughs while talking on a pale blue rotary phone, next to a 'To the moon and back' neon sign.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/a6e7e6a5-1bc1-47bd-86a0-7eaec8110ce1/Patrick+Partridge+Photography-min.jpg"
+   },
+   {
+    "src": "/media/calleo/photo-10.webp",
+    "width": 1331,
+    "height": 2000,
+    "alt": "Guests at a stone-walled reception taking turns on the Calleo phone (Char Cook Photography).",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e2b0fd09-7846-41e5-a6c3-d7934640a1ce/Char+Cook+Photography+%282%29.jpeg"
+   },
+   {
+    "src": "/media/calleo/photo-11.webp",
+    "width": 1333,
+    "height": 2000,
+    "alt": "Black-and-white table styling: a Calleo rotary phone with coupe glasses, white roses, a miniature gin bottle and a table-number card.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/9c4041a7-54fe-4e41-9ca7-4c78577353af/BDP_CalleoPosable_StyledShoot-244.jpg"
    }
   ],
   "reel": {
@@ -253,7 +274,8 @@
      "bytes": 1506699
     }
    }
-  }
+  },
+  "extra": null
  },
  "cj-sax": {
   "slug": "cj-sax",
@@ -381,62 +403,55 @@
    "width": 512,
    "height": 196
   },
+  "card": {
+   "src": "/media/cj-sax/card.webp",
+   "alt": "A bride and guests cheering and dancing around a saxophonist playing on a wedding dance floor at night.",
+   "sourceUrl": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/cj-sax/photo-01.webp",
-    "width": 1600,
-    "height": 1200,
+    "width": 2000,
+    "height": 1500,
     "alt": "Saxophonist in a white T-shirt sitting at the end of a weathered wooden jetty over clear turquoise sea, with a saxophone beside him.",
     "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG"
    },
    {
     "src": "/media/cj-sax/photo-02.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "Saxophonist in sunglasses and a black T-shirt playing a gold saxophone on an outdoor festival stage beneath a large lighting rig, with Ibiza and Disturbing signage on the stage.",
-    "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/ushuaia2.jpg"
-   },
-   {
-    "src": "/media/cj-sax/photo-03.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "A bride and guests cheering and dancing around a saxophonist playing on a wedding dance floor at night.",
-    "sourceUrl": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg"
-   },
-   {
-    "src": "/media/cj-sax/photo-04.webp",
-    "width": 1000,
-    "height": 800,
-    "alt": "Performer in sunglasses and headphones working DJ decks on a boat, with a saxophone on a strap and a city skyline across the water.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg"
-   },
-   {
-    "src": "/media/cj-sax/photo-05.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1333,
     "alt": "Saxophonist in a striped shirt and shorts playing while standing in shallow water at a pool edge, against a pale sky and a distant hillside town.",
     "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG"
    },
    {
-    "src": "/media/cj-sax/photo-06.webp",
-    "width": 1200,
-    "height": 1600,
-    "alt": "DJ wearing headphones behind a pale upholstered booth outdoors, with trees and a sunlit orange mountain ridge behind.",
-    "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg"
+    "src": "/media/cj-sax/photo-03.webp",
+    "width": 2000,
+    "height": 1333,
+    "alt": "DJ setup with a star-lit DJ booth, speakers on stands, two mirror balls on tripods and lighting on an illuminated dance floor under a draped canopy.",
+    "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG"
    },
    {
-    "src": "/media/cj-sax/photo-07.webp",
-    "width": 1200,
-    "height": 1600,
+    "src": "/media/cj-sax/photo-04.webp",
+    "width": 1500,
+    "height": 2000,
     "alt": "Gold saxophone resting on a stone garden wall beside pink flowers, overlooking green gardens and a coastal mountain range.",
     "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg"
    },
    {
-    "src": "/media/cj-sax/photo-08.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "DJ setup with a star-lit DJ booth, speakers on stands, two mirror balls on tripods and lighting on an illuminated dance floor under a draped canopy.",
-    "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG"
+    "src": "/media/cj-sax/photo-05.webp",
+    "width": 1500,
+    "height": 2000,
+    "alt": "DJ wearing headphones behind a pale upholstered booth outdoors, with trees and a sunlit orange mountain ridge behind.",
+    "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg"
+   },
+   {
+    "src": "/media/cj-sax/photo-06.webp",
+    "width": 1000,
+    "height": 800,
+    "alt": "Performer in sunglasses and headphones working DJ decks on a boat, with a saxophone on a strap and a city skyline across the water.",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg"
    }
   ],
   "reel": {
@@ -510,7 +525,8 @@
      "bytes": 5186191
     }
    }
-  }
+  },
+  "extra": null
  },
  "grape-fig": {
   "slug": "grape-fig",
@@ -634,69 +650,83 @@
    "width": 512,
    "height": 139
   },
+  "card": {
+   "src": "/media/grape-fig/card.webp",
+   "alt": "Cheese and charcuterie board with fruit, pickles and flowers on brown paper with handwritten labels, beside crackers and wine glasses",
+   "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/grape-fig/photo-01.webp",
-    "width": 1067,
-    "height": 1600,
-    "alt": "Grazing table with lit taper candles, white flower arrangements, a baguette, a crudités platter and glasses of rosé on a white tablecloth",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757"
-   },
-   {
-    "src": "/media/grape-fig/photo-02.webp",
-    "width": 1280,
-    "height": 1600,
-    "alt": "Long dining table laid with wildflower arrangements, grazing boards of cheese, crackers and fruit, and white plates with folded napkins beside glass windows",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042"
-   },
-   {
-    "src": "/media/grape-fig/photo-03.webp",
-    "width": 1067,
-    "height": 1600,
-    "alt": "Brunch display of croissants, pastries, banana bread slices and yoghurt pots with white daisy arrangements, against a brick wall",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906"
-   },
-   {
-    "src": "/media/grape-fig/photo-04.webp",
-    "width": 1600,
-    "height": 1600,
-    "alt": "Cheese and charcuterie board with fruit, pickles and flowers on brown paper with handwritten labels, beside crackers and wine glasses",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720"
-   },
-   {
-    "src": "/media/grape-fig/photo-05.webp",
-    "width": 1288,
-    "height": 1600,
-    "alt": "Kitchen island set with platters of filled brioche buns and fruit beneath a tall pink blossom arrangement",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316"
-   },
-   {
-    "src": "/media/grape-fig/photo-06.webp",
-    "width": 1200,
-    "height": 1600,
+    "width": 1500,
+    "height": 2000,
     "alt": "Wreath-shaped cheese and charcuterie platter with figs, orange slices and a green velvet bow in a printed GRAPE & Fig box",
     "sourceUrl": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771"
    },
    {
+    "src": "/media/grape-fig/photo-02.webp",
+    "width": 1333,
+    "height": 2000,
+    "alt": "Brunch display of croissants, pastries, banana bread slices and yoghurt pots with white daisy arrangements, against a brick wall",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906"
+   },
+   {
+    "src": "/media/grape-fig/photo-03.webp",
+    "width": 1333,
+    "height": 2000,
+    "alt": "Grazing table with lit taper candles, white flower arrangements, a baguette, a crudités platter and glasses of rosé on a white tablecloth",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757"
+   },
+   {
+    "src": "/media/grape-fig/photo-04.webp",
+    "width": 1600,
+    "height": 2000,
+    "alt": "Long dining table laid with wildflower arrangements, grazing boards of cheese, crackers and fruit, and white plates with folded napkins beside glass windows",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042"
+   },
+   {
+    "src": "/media/grape-fig/photo-05.webp",
+    "width": 1600,
+    "height": 2000,
+    "alt": "A bespoke floral and fruit display for a Beauty Pie brand event, with pink flowers, citrus and the client's products.",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Beauty_Pie_Bespoke_Table.jpg?v=1763060918"
+   },
+   {
+    "src": "/media/grape-fig/photo-06.webp",
+    "width": 1290,
+    "height": 1603,
+    "alt": "Kitchen island set with platters of filled brioche buns and fruit beneath a tall pink blossom arrangement",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316"
+   },
+   {
     "src": "/media/grape-fig/photo-07.webp",
-    "width": 1280,
-    "height": 1600,
+    "width": 1600,
+    "height": 2000,
+    "alt": "A green-themed bespoke food display table with fresh produce, foliage, green juices and styled books.",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Bespoke_Food_Displays_GRAPE_Fig.jpg?v=1763060954"
+   },
+   {
+    "src": "/media/grape-fig/photo-08.webp",
+    "width": 1600,
+    "height": 2000,
     "alt": "Office brunch display of pastries, yoghurt pots, juices and plants alongside Skin + Me product boxes",
     "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221"
    },
    {
-    "src": "/media/grape-fig/photo-08.webp",
-    "width": 1171,
-    "height": 1600,
-    "alt": "Two women smiling behind the GRAPE & Fig Build Your Own British Cheese Box Bar counter, with a menu wall and a chilled display of cheeses and condiments",
-    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492"
-   },
-   {
     "src": "/media/grape-fig/photo-09.webp",
-    "width": 1067,
-    "height": 1600,
+    "width": 1333,
+    "height": 2000,
     "alt": "Two women laughing as they arrange a grazing platter of cheese, charcuterie, fruit and edible flowers at a kitchen counter",
     "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958"
+   },
+   {
+    "src": "/media/grape-fig/photo-10.webp",
+    "width": 1600,
+    "height": 2000,
+    "alt": "A bespoke produce and grazing display for an M&S Food press event (#ss24mands).",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/M_S_Food_Bespoke_Food_Display_63f21294-93e2-488c-96b4-e661a6b4e3be.jpg?v=1763062194"
    }
   ],
   "reel": {
@@ -772,7 +802,8 @@
      "bytes": 2806615
     }
    }
-  }
+  },
+  "extra": null
  },
  "harry-de-cruz": {
   "slug": "harry-de-cruz",
@@ -887,69 +918,97 @@
    "width": 512,
    "height": 512
   },
+  "card": {
+   "src": "/media/harry-de-cruz/card.webp",
+   "alt": "Harry De Cruz throwing playing cards into the air against a red patterned wall",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/harry_decruz_thumb.jpg",
+   "width": 1000,
+   "height": 750
+  },
   "gallery": [
    {
     "src": "/media/harry-de-cruz/photo-01.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "Harry De Cruz on a theatre stage in a hazy spotlight, flicking a playing card out towards the darkened audience",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg"
-   },
-   {
-    "src": "/media/harry-de-cruz/photo-02.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1334,
     "alt": "Two guests at a gala dinner table react with open-mouthed amazement, with other diners seated behind them",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg"
    },
    {
+    "src": "/media/harry-de-cruz/photo-02.webp",
+    "width": 2000,
+    "height": 1334,
+    "alt": "Harry De Cruz on a theatre stage in a hazy spotlight, flicking a playing card out towards the darkened audience",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg"
+   },
+   {
     "src": "/media/harry-de-cruz/photo-03.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1334,
+    "alt": "Harry, in a dark suit, performs close-up magic for a laughing bride and groom at their wedding table (the site's alt text: 'Magician Harry De Cruz performing to surprised Bride and Groom at a wedding')",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/1646149967211-6IA69WBE6ITE1685MWTJ/IMG_1525+2.JPG"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-04.webp",
+    "width": 2000,
+    "height": 1334,
+    "alt": "Table magic at a wedding: Harry holds a card out to the bride as she and the guests laugh",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-05.webp",
+    "width": 2000,
+    "height": 1333,
+    "alt": "A bride and a groom in a bow tie laugh over a playing card at their table against a stone wall, while a man in a blue suit and glasses looks on",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-06.webp",
+    "width": 2000,
+    "height": 1334,
     "alt": "Harry De Cruz in an olive suit and glasses smiles as he holds up a playing card and a fanned deck, while a guest in the foreground applauds",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG"
    },
    {
-    "src": "/media/harry-de-cruz/photo-04.webp",
-    "width": 1600,
-    "height": 1067,
+    "src": "/media/harry-de-cruz/photo-07.webp",
+    "width": 2000,
+    "height": 1334,
     "alt": "Harry De Cruz in a brown tweed suit stands holding a card beside a candlelit wedding table as the bride and a guest laugh",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG"
    },
    {
-    "src": "/media/harry-de-cruz/photo-05.webp",
+    "src": "/media/harry-de-cruz/photo-08.webp",
+    "width": 2000,
+    "height": 1334,
+    "alt": "Harry De Cruz in a navy suit shakes hands with a guest at an outdoor wedding drinks reception on a lawn",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-09.webp",
+    "width": 2000,
+    "height": 1125,
+    "alt": "Harry De Cruz in a teal boiler suit gestures on a dark stage, with a camera operator in the foreground",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-10.webp",
+    "width": 2000,
+    "height": 1335,
+    "alt": "View from the back of a theatre audience: a performer in black holds up a phone in the aisle under teal stage light, followed by a camera operator",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG"
+   },
+   {
+    "src": "/media/harry-de-cruz/photo-11.webp",
     "width": 1228,
     "height": 977,
     "alt": "Harry De Cruz in a green shirt and glasses shows a playing card to three astonished guests at an indoor drinks reception",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG"
    },
    {
-    "src": "/media/harry-de-cruz/photo-06.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "A bride and a groom in a bow tie laugh over a playing card at their table against a stone wall, while a man in a blue suit and glasses looks on",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg"
-   },
-   {
-    "src": "/media/harry-de-cruz/photo-07.webp",
-    "width": 1600,
-    "height": 1068,
-    "alt": "View from the back of a theatre audience: a performer in black holds up a phone in the aisle under teal stage light, followed by a camera operator",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG"
-   },
-   {
-    "src": "/media/harry-de-cruz/photo-08.webp",
-    "width": 1600,
-    "height": 900,
-    "alt": "Harry De Cruz in a teal boiler suit gestures on a dark stage, with a camera operator in the foreground",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg"
-   },
-   {
-    "src": "/media/harry-de-cruz/photo-09.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "Harry De Cruz in a navy suit shakes hands with a guest at an outdoor wedding drinks reception on a lawn",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG"
+    "src": "/media/harry-de-cruz/photo-12.webp",
+    "width": 2000,
+    "height": 1500,
+    "alt": "Professional headshot of Harry in a black T-shirt against a green backdrop (the same image Booked Events uses as his avatar); suitable for a profile avatar",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/73d1ddec-12aa-4f80-a922-5554930fbc94/663A6149.jpg"
    }
   ],
   "reel": {
@@ -1017,7 +1076,8 @@
      "bytes": 1617613
     }
    }
-  }
+  },
+  "extra": null
  },
  "jamie-roche": {
   "slug": "jamie-roche",
@@ -1114,27 +1174,34 @@
   "price": null,
   "cardPrice": null,
   "logo": null,
+  "card": {
+   "src": "/media/jamie-roche/card.webp",
+   "alt": "Jamie Roche seated on a stage, playing an acoustic guitar and singing into a microphone, in front of a dark teal wall with a 'Live' sign.",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+   "width": 1000,
+   "height": 750
+  },
   "gallery": [
    {
     "src": "/media/jamie-roche/photo-01.webp",
+    "width": 2000,
+    "height": 2000,
+    "alt": "Portrait of Jamie Roche in a dark jacket and pendant necklace, seated beside a stained-glass window in a wood-panelled room.",
+    "sourceUrl": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0"
+   },
+   {
+    "src": "/media/jamie-roche/photo-02.webp",
     "width": 1280,
     "height": 720,
     "alt": "Jamie Roche singing with his eyes closed at a microphone, a patterned guitar strap over his shoulder, inside a church.",
     "sourceUrl": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg"
    },
    {
-    "src": "/media/jamie-roche/photo-02.webp",
-    "width": 1000,
-    "height": 800,
-    "alt": "Jamie Roche seated on a stage, playing an acoustic guitar and singing into a microphone, in front of a dark teal wall with a 'Live' sign.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg"
-   },
-   {
     "src": "/media/jamie-roche/photo-03.webp",
     "width": 1280,
     "height": 720,
-    "alt": "Black-and-white photo of Jamie Roche playing an acoustic guitar and singing into a microphone in front of a timber plank wall.",
-    "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg"
+    "alt": "Jamie Roche in a patterned short-sleeved shirt singing and playing an acoustic guitar beside a studio microphone, in a warmly lit room.",
+    "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg"
    },
    {
     "src": "/media/jamie-roche/photo-04.webp",
@@ -1145,31 +1212,24 @@
    },
    {
     "src": "/media/jamie-roche/photo-05.webp",
-    "width": 1600,
-    "height": 1600,
-    "alt": "Portrait of Jamie Roche in a dark jacket and pendant necklace, seated beside a stained-glass window in a wood-panelled room.",
-    "sourceUrl": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0"
-   },
-   {
-    "src": "/media/jamie-roche/photo-06.webp",
-    "width": 1280,
-    "height": 720,
-    "alt": "Jamie Roche in a patterned short-sleeved shirt singing and playing an acoustic guitar beside a studio microphone, in a warmly lit room.",
-    "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg"
-   },
-   {
-    "src": "/media/jamie-roche/photo-07.webp",
     "width": 1280,
     "height": 720,
     "alt": "Jamie Roche in a flat cap and white shirt singing with his eyes closed while playing guitar, with soft lights behind him.",
     "sourceUrl": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg"
    },
    {
-    "src": "/media/jamie-roche/photo-08.webp",
+    "src": "/media/jamie-roche/photo-06.webp",
     "width": 1280,
     "height": 720,
     "alt": "Close-up of Jamie Roche in a denim jacket singing with his eyes closed while holding a guitar, against a blurred red and green background.",
     "sourceUrl": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg"
+   },
+   {
+    "src": "/media/jamie-roche/photo-07.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Black-and-white photo of Jamie Roche playing an acoustic guitar and singing into a microphone in front of a timber plank wall.",
+    "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg"
    }
   ],
   "reel": {
@@ -1233,7 +1293,8 @@
      "bytes": 1260913
     }
    }
-  }
+  },
+  "extra": null
  },
  "lucy-jane-cakes": {
   "slug": "lucy-jane-cakes",
@@ -1344,69 +1405,48 @@
    "width": 512,
    "height": 512
   },
+  "card": {
+   "src": "/media/lucy-jane-cakes/card.webp",
+   "alt": "A gloved hand holds a cupcake topped with a pink buttercream rosette over a box of matching cupcakes.",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg",
+   "width": 500,
+   "height": 375
+  },
   "gallery": [
    {
     "src": "/media/lucy-jane-cakes/photo-01.webp",
-    "width": 900,
-    "height": 1600,
-    "alt": "Two-tier pink buttercream cake with white chocolate drips and pink cupcakes around the base, as a gloved hand sets a cupcake and a pink '30' topper on top.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+    "width": 540,
+    "height": 960,
+    "alt": "Video cover: a tall smooth pale-pink buttercream cake on a turntable as a pastel rainbow topper is placed ('Rainbows and unicorns'). A name in pink lettering is on the cake, so crop it. The signed URL expires around 29 Oct 2026.",
+    "sourceUrl": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/ef9bb60b943e45b8aa977dcdc966162f_1695905533~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=o5fV7vv7IiMbFZfTVRbHSaJEOq8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b"
    },
    {
     "src": "/media/lucy-jane-cakes/photo-02.webp",
-    "width": 1080,
-    "height": 1344,
-    "alt": "A box of six cupcakes piped with pink buttercream and decorated as pig faces with pink snouts, ears and black eyes.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665"
+    "width": 540,
+    "height": 960,
+    "alt": "Video cover: a two-tier smooth pink buttercream cake on a turntable in the baker's kitchen ('ALL THE PINKS'). The signed URL expires around 29 Oct 2026.",
+    "sourceUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/df7a83f0d4d44f5bbe77bc8403548ccc_1726564395~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=QQvqir%2FeGNTB7rExwVAi%2BB%2FHp7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b"
    },
    {
     "src": "/media/lucy-jane-cakes/photo-03.webp",
     "width": 540,
     "height": 960,
-    "alt": "A three-tier smooth white buttercream cake on a turntable being finished with a piping bag.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590"
+    "alt": "Video cover: a red and blue buttercream Spider-Man cake in progress, with decorations added from an orange cup. The signed URL expires around 29 Oct 2026.",
+    "sourceUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/owugAI3CrP6gPAUebOI2f1exESrGEDLDIzZLyz~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=nnH2goA5oZFdW8R0Y4MrisoKfjA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b"
    },
    {
     "src": "/media/lucy-jane-cakes/photo-04.webp",
-    "width": 500,
-    "height": 445,
-    "alt": "A gloved hand holds a cupcake topped with a pink buttercream rosette over a box of matching cupcakes.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg"
+    "width": 540,
+    "height": 960,
+    "alt": "Video cover: the baker holding a finished cow-print cowgirl cake with disco-ball decorations and a pink topper showing a child's name and '14'. It shows a person and a personal name, so crop or avoid. The signed URL expires around 29 Oct 2026.",
+    "sourceUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oEjBsADbQFAzQsB5UBEklvEeFmbsfRilnKPPgi~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=Y7dh7aWb9KlbXW9VUhEdnhVcXeY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b"
    },
    {
     "src": "/media/lucy-jane-cakes/photo-05.webp",
-    "width": 1080,
-    "height": 692,
-    "alt": "Top of a pale pink buttercream cake decorated with a winged unicorn figure, a pastel rainbow arch with a gold fairy, a small pink '4' and pastel and pearl sugar balls.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001"
-   },
-   {
-    "src": "/media/lucy-jane-cakes/photo-06.webp",
-    "width": 900,
-    "height": 1600,
-    "alt": "A small black buttercream bento cake with a piped shell border and raised lettering, boxed with black-iced cupcakes.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390"
-   },
-   {
-    "src": "/media/lucy-jane-cakes/photo-07.webp",
-    "width": 1080,
-    "height": 1344,
-    "alt": "A gloved hand holds a cupcake decorated as a pig face in pink buttercream above a box of matching cupcakes.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665"
-   },
-   {
-    "src": "/media/lucy-jane-cakes/photo-08.webp",
-    "width": 900,
-    "height": 1600,
-    "alt": "A spoon adds white chocolate drips to the edge of a smooth two-tier pink buttercream cake on a turntable.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
-   },
-   {
-    "src": "/media/lucy-jane-cakes/photo-09.webp",
-    "width": 1080,
-    "height": 1344,
-    "alt": "Oven-gloved hands hold a freshly baked heart-shaped sponge in its tin.",
-    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7265710948135079201"
+    "width": 540,
+    "height": 960,
+    "alt": "Video cover: a three-tier smooth white buttercream cake on a turntable being finished with a piping bag (her own wedding cake video, Feb 2025). The signed URL expires around 29 Oct 2026.",
+    "sourceUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oYmArZiE4YXxISAO2BsYBNZ2pA7iIUdSiBLiv~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=BCFdqFpudqMH%2BBScVSLyKtQ9KEU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b"
    }
   ],
   "reel": {
@@ -1482,7 +1522,8 @@
      "bytes": 1492378
     }
    }
-  }
+  },
+  "extra": null
  },
  "magpie-catering": {
   "slug": "magpie-catering",
@@ -1603,20 +1644,27 @@
    "width": 512,
    "height": 309
   },
+  "card": {
+   "src": "/media/magpie-catering/card.webp",
+   "alt": "Chargrilled meat skewers topped with pomegranate seeds on a wooden board",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/magpiecatering-1.jpg",
+   "width": 990,
+   "height": 742
+  },
   "gallery": [
    {
     "src": "/media/magpie-catering/photo-01.webp",
+    "width": 2000,
+    "height": 1500,
+    "alt": "Marquee interior set for a black-tie seated dinner: black tablecloths, white chair covers with black organza sashes, ostrich-feather centrepieces. The filename matches Magpie's Alleyn Court summer ball case study. Landscape, high resolution.",
+    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/alleyn-court-025.jpg"
+   },
+   {
+    "src": "/media/magpie-catering/photo-02.webp",
     "width": 1600,
     "height": 1200,
     "alt": "Rows of prawn canapés on cubes of mango, each held by a knotted bamboo pick, set out on a wooden board.",
     "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg"
-   },
-   {
-    "src": "/media/magpie-catering/photo-02.webp",
-    "width": 1080,
-    "height": 1080,
-    "alt": "Rows of small dessert glasses topped with heart-shaped biscuits and edible flowers, alongside chocolate brownie bites, on clear glass serving trays.",
-    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg"
    },
    {
     "src": "/media/magpie-catering/photo-03.webp",
@@ -1627,10 +1675,10 @@
    },
    {
     "src": "/media/magpie-catering/photo-04.webp",
-    "width": 896,
-    "height": 896,
-    "alt": "A white chocolate tart swirled with raspberry, with a sesame-seed tuile, raspberry coulis, two raspberries and a sprig of mint on a white plate.",
-    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg"
+    "width": 1200,
+    "height": 1600,
+    "alt": "A wooden board with battered calamari rings, prawns with garlic and a dried chilli in sauce, a dish of sliced chorizo and mushrooms, filo parcels and a small pot of herb dip.",
+    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg"
    },
    {
     "src": "/media/magpie-catering/photo-05.webp",
@@ -1648,20 +1696,34 @@
    },
    {
     "src": "/media/magpie-catering/photo-07.webp",
-    "width": 1200,
-    "height": 1248,
-    "alt": "A wooden board with battered calamari rings, prawns with garlic and a dried chilli in sauce, a dish of sliced chorizo and mushrooms, filo parcels and a small pot of herb dip.",
-    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg"
+    "width": 1080,
+    "height": 1080,
+    "alt": "Rows of small dessert glasses topped with heart-shaped biscuits and edible flowers, alongside chocolate brownie bites, on clear glass serving trays.",
+    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg"
    },
    {
     "src": "/media/magpie-catering/photo-08.webp",
+    "width": 896,
+    "height": 896,
+    "alt": "A white chocolate tart swirled with raspberry, with a sesame-seed tuile, raspberry coulis, two raspberries and a sprig of mint on a white plate.",
+    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg"
+   },
+   {
+    "src": "/media/magpie-catering/photo-09.webp",
+    "width": 750,
+    "height": 743,
+    "alt": "Magpie waiting team in uniform (black aprons, ties, name badges) lined up outdoors on autumn grounds, with a dark vehicle behind",
+    "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000003.jpg"
+   },
+   {
+    "src": "/media/magpie-catering/photo-10.webp",
     "width": 750,
     "height": 743,
     "alt": "A square white plate with crackling-topped pork belly, sliced pork tenderloin, a pulled pork cake, mashed potato, spinach and a small dish of sauce.",
     "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg"
    },
    {
-    "src": "/media/magpie-catering/photo-09.webp",
+    "src": "/media/magpie-catering/photo-11.webp",
     "width": 750,
     "height": 743,
     "alt": "Rows of round canapés topped with tomato and white cheese on wooden boards, with a carved melon and red flower garnish in front.",
@@ -1729,7 +1791,8 @@
      "bytes": 1836818
     }
    }
-  }
+  },
+  "extra": null
  },
  "meatstop": {
   "slug": "meatstop",
@@ -1861,27 +1924,34 @@
    "width": 512,
    "height": 113
   },
+  "card": {
+   "src": "/media/meatstop/card.webp",
+   "alt": "Gloved hand lifting a bacon cheeseburger beside loaded burgers",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/09/meatstoppatty.png",
+   "width": 800,
+   "height": 600
+  },
   "gallery": [
    {
     "src": "/media/meatstop/photo-01.webp",
-    "width": 1600,
-    "height": 1066,
-    "alt": "A chef in a white MEAT STOP apron and black gloves lifts a rack of smoking ribs at an outdoor grill under a gazebo.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg"
-   },
-   {
-    "src": "/media/meatstop/photo-02.webp",
-    "width": 1600,
-    "height": 1600,
+    "width": 2000,
+    "height": 2000,
     "alt": "Close-up of a double cheeseburger with melted cheese, pickles, red onion and sauce in a glossy brioche bun.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/b1548200-76c6-4acb-a590-09d3b165bfe6/meat+stop+crop-1.jpeg"
    },
    {
-    "src": "/media/meatstop/photo-03.webp",
-    "width": 1600,
-    "height": 1066,
+    "src": "/media/meatstop/photo-02.webp",
+    "width": 2000,
+    "height": 1333,
     "alt": "A person in black gloves holds out a cheeseburger under a gazebo at an outdoor event, with other people blurred in the background.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg"
+   },
+   {
+    "src": "/media/meatstop/photo-03.webp",
+    "width": 2000,
+    "height": 1333,
+    "alt": "A chef in a white MEAT STOP apron and black gloves lifts a rack of smoking ribs at an outdoor grill under a gazebo.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg"
    },
    {
     "src": "/media/meatstop/photo-04.webp",
@@ -1893,37 +1963,58 @@
    {
     "src": "/media/meatstop/photo-05.webp",
     "width": 1600,
-    "height": 1600,
-    "alt": "Close-up of a cheeseburger with crispy bacon, melted cheese and ketchup in a brioche bun against a pale grey background.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg"
-   },
-   {
-    "src": "/media/meatstop/photo-06.webp",
-    "width": 1092,
-    "height": 1410,
-    "alt": "Three men laugh and eat burgers with pints of beer at an outdoor table in front of The Commercial Tavern pub.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png"
-   },
-   {
-    "src": "/media/meatstop/photo-07.webp",
-    "width": 1600,
     "height": 1066,
     "alt": "A bacon double cheeseburger with melted cheese on a pale grey studio backdrop.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg"
    },
    {
-    "src": "/media/meatstop/photo-08.webp",
+    "src": "/media/meatstop/photo-06.webp",
+    "width": 1484,
+    "height": 1484,
+    "alt": "Sauce poured from a steel jug over a stacked burger on a pale studio background (a screenshot of a product shot whose origin is unconfirmed)",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/224557b3-f783-40da-a8d8-4b8cc6df11c3/Screenshot+2025-03-31+at+21.10.59.png"
+   },
+   {
+    "src": "/media/meatstop/photo-07.webp",
     "width": 1168,
-    "height": 1505,
+    "height": 1546,
     "alt": "A person in a green cap takes a bite of a burger held in both hands.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/acaff588-a333-40e6-be4e-400c5be85aa6/Screenshot+2026-02-09+at+11.38.08.png"
    },
    {
-    "src": "/media/meatstop/photo-09.webp",
+    "src": "/media/meatstop/photo-08.webp",
     "width": 1034,
     "height": 1292,
     "alt": "A hand holds a fried chicken burger with slaw, pickles and sauce in a brioche bun outdoors.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e0973ac1-1b26-4cd9-beae-4669ebf15ceb/Screenshot+2024-07-08+at+20.04.36.png"
+   },
+   {
+    "src": "/media/meatstop/photo-09.webp",
+    "width": 1951,
+    "height": 1951,
+    "alt": "Close-up of a cheeseburger with crispy bacon, melted cheese and ketchup in a brioche bun against a pale grey background.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg"
+   },
+   {
+    "src": "/media/meatstop/photo-10.webp",
+    "width": 1160,
+    "height": 1410,
+    "alt": "Three men laugh and eat burgers with pints of beer at an outdoor table in front of The Commercial Tavern pub.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png"
+   },
+   {
+    "src": "/media/meatstop/photo-11.webp",
+    "width": 1000,
+    "height": 600,
+    "alt": "Close-up of a stacked double cheeseburger",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/09/burgerclose.png"
+   },
+   {
+    "src": "/media/meatstop/photo-12.webp",
+    "width": 1000,
+    "height": 600,
+    "alt": "Double bacon cheeseburger in a glazed bun",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/09/juicyy.png"
    }
   ],
   "reel": {
@@ -1991,7 +2082,8 @@
      "bytes": 1390130
     }
    }
-  }
+  },
+  "extra": null
  },
  "natalie-max": {
   "slug": "natalie-max",
@@ -2126,69 +2218,97 @@
    "width": 512,
    "height": 110
   },
+  "card": {
+   "src": "/media/natalie-max/card.webp",
+   "alt": "Guests watching a bride and groom at an outdoor seaside wedding ceremony",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/natandmaxphoto.jpg",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/natalie-max/photo-01.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A groom in a beige suit dips the bride for a kiss on a sunlit path beside a white-walled chapel with a pointed roof.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-02.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A laughing bride with five bridesmaids in dusty-blue sequin dresses, all holding pink and white rose bouquets, in front of a pale shuttered building.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-03.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A bride and groom, seen from behind, walk arm in arm along a sandy beach between golden rock formations at the water's edge.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/algarve-wedding-photography-and-video.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-04.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A groom in a black tuxedo nuzzles the bride's cheek from behind in a leafy garden as she holds a white and green bouquet.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-05.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A groom in a navy velvet tuxedo laughs as he walks with his groomsmen in black tie and buttonholes.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-06.webp",
-    "width": 1600,
-    "height": 750,
-    "alt": "A bride in a lace-sleeved gown and veil smiles with four bridesmaids in blush satin dresses and jewelled headbands, holding white bouquets beneath palm trees.",
-    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg"
-   },
-   {
-    "src": "/media/natalie-max/photo-07.webp",
-    "width": 1600,
-    "height": 750,
+    "width": 2000,
+    "height": 937,
     "alt": "A bride and a groom in a blue suit walk hand in hand down a gravel drive lined with trees and lawns.",
     "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Volty-Manor.jpg"
    },
    {
-    "src": "/media/natalie-max/photo-08.webp",
-    "width": 1600,
-    "height": 750,
+    "src": "/media/natalie-max/photo-02.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A bride and groom, seen from behind, walk arm in arm along a sandy beach between golden rock formations at the water's edge.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/algarve-wedding-photography-and-video.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-03.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A groom in a black tuxedo nuzzles the bride's cheek from behind in a leafy garden as she holds a white and green bouquet.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-04.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A laughing bride with five bridesmaids in dusty-blue sequin dresses, all holding pink and white rose bouquets, in front of a pale shuttered building.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-05.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A bride in a lace-sleeved gown and veil smiles with four bridesmaids in blush satin dresses and jewelled headbands, holding white bouquets beneath palm trees.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-06.webp",
+    "width": 2000,
+    "height": 937,
     "alt": "A bride and a groom in a blue suit walk on gravel in front of an orangery's arched glass doors and clipped topiary.",
     "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-.jpg"
    },
    {
+    "src": "/media/natalie-max/photo-07.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A groom in a beige suit dips the bride for a kiss on a sunlit path beside a white-walled chapel with a pointed roof.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-08.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "A groom in a navy velvet tuxedo laughs as he walks with his groomsmen in black tie and buttonholes.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg"
+   },
+   {
     "src": "/media/natalie-max/photo-09.webp",
-    "width": 1600,
-    "height": 750,
+    "width": 2000,
+    "height": 937,
     "alt": "Close-up of a seated couple's joined hands, the groom in a navy tweed suit with a white rose buttonhole, with pillar candles and a brick wall blurred behind.",
     "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-wedding-photography.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-10.webp",
+    "width": 2000,
+    "height": 937,
+    "alt": "Chateau Lacanaud, France: close-up of a pink-rose and white bouquet against dusty-blue sequin bridesmaid dresses. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-11.webp",
+    "width": 2000,
+    "height": 1560,
+    "alt": "Ibiza wedding (Iberostar & Nikki Beach): a two-photo layout of the couple kissing at the Nikki Beach bar and a portrait of them facing each other. Portfolio tile.",
+    "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2023/06/Ibiza-Wedding-Photography-by-Natalie-and-Max-Photo-and-Films-Portfolio.jpg"
+   },
+   {
+    "src": "/media/natalie-max/photo-12.webp",
+    "width": 990,
+    "height": 957,
+    "alt": "Natalie and Max smiling with their cameras in a sunny garden",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/Natalie-and-Max-Photo-and-Films-Essex-and-Hertfordshire-Wedding-Photographers-Fun-Friendly.jpeg"
    }
   ],
   "reel": {
@@ -2264,7 +2384,8 @@
      "bytes": 2548502
     }
    }
-  }
+  },
+  "extra": null
  },
  "ozzy-stix": {
   "slug": "ozzy-stix",
@@ -2383,69 +2504,62 @@
    "width": 512,
    "height": 158
   },
+  "card": {
+   "src": "/media/ozzy-stix/card.webp",
+   "alt": "The two members sitting on a low stone wall outdoors, one in a white shirt with arms folded and the other in a light blue shirt, with trees behind.",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg",
+   "width": 1000,
+   "height": 750
+  },
   "gallery": [
    {
     "src": "/media/ozzy-stix/photo-01.webp",
-    "width": 1600,
-    "height": 668,
-    "alt": "Two musicians playing an acoustic guitar and a dark electric guitar on a shaded terrace with wicker sofas, with the sea and a small island behind them.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original"
-   },
-   {
-    "src": "/media/ozzy-stix/photo-02.webp",
-    "width": 1541,
-    "height": 1600,
+    "width": 1926,
+    "height": 2000,
     "alt": "Black-and-white studio portrait of the duo: one in sunglasses holding a white electric guitar beside a Marshall amp, the other standing next to a pair of bongos.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original"
    },
    {
-    "src": "/media/ozzy-stix/photo-03.webp",
-    "width": 1284,
-    "height": 737,
-    "alt": "Black-and-white live shot of a guitarist singing with his mouth wide open while playing a white electric guitar, with a second performer behind him.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original"
+    "src": "/media/ozzy-stix/photo-02.webp",
+    "width": 2000,
+    "height": 835,
+    "alt": "Two musicians playing an acoustic guitar and a dark electric guitar on a shaded terrace with wicker sofas, with the sea and a small island behind them.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original"
    },
    {
-    "src": "/media/ozzy-stix/photo-04.webp",
+    "src": "/media/ozzy-stix/photo-03.webp",
     "width": 1200,
     "height": 911,
     "alt": "The duo standing with acoustic guitars in a flower-decked garden pavilion, with white chairs behind them.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original"
    },
    {
+    "src": "/media/ozzy-stix/photo-04.webp",
+    "width": 2000,
+    "height": 685,
+    "alt": "Sepia-toned photo of the duo: one in glasses playing an acoustic guitar while the other, in sunglasses, leans on the sofa behind him.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original"
+   },
+   {
     "src": "/media/ozzy-stix/photo-05.webp",
+    "width": 1284,
+    "height": 737,
+    "alt": "Black-and-white live shot of a guitarist singing with his mouth wide open while playing a white electric guitar, with a second performer behind him.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original"
+   },
+   {
+    "src": "/media/ozzy-stix/photo-06.webp",
     "width": 1200,
     "height": 625,
     "alt": "Five performers in a white studio: a saxophonist, an electric guitarist, a singer, a violinist and a percussionist at congas, with a camera on a tripod in front.",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original"
    },
    {
-    "src": "/media/ozzy-stix/photo-06.webp",
-    "width": 640,
-    "height": 640,
-    "alt": "Black-and-white photo of a guitarist smiling as he plays an acoustic guitar among seated guests at a venue strung with fairy lights.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg"
-   },
-   {
     "src": "/media/ozzy-stix/photo-07.webp",
-    "width": 1600,
-    "height": 548,
-    "alt": "Sepia-toned photo of the duo: one in glasses playing an acoustic guitar while the other, in sunglasses, leans on the sofa behind him.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original"
-   },
-   {
-    "src": "/media/ozzy-stix/photo-08.webp",
-    "width": 1000,
-    "height": 800,
-    "alt": "The two members sitting on a low stone wall outdoors, one in a white shirt with arms folded and the other in a light blue shirt, with trees behind.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg"
-   },
-   {
-    "src": "/media/ozzy-stix/photo-09.webp",
-    "width": 640,
-    "height": 640,
-    "alt": "The duo in white shirts and checked trousers sitting on a wooden garden bench in front of a hedge with pink roses.",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg"
+    "width": 2000,
+    "height": 2000,
+    "alt": "Informal selfie of the two members at a venue window (homepage). Playful, less polished.",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539084406620-UHWG73Y9QHCRHWTAFMHX/IMG_3845.jpg?format=original"
    }
   ],
   "reel": {
@@ -2519,7 +2633,8 @@
      "bytes": 3157289
     }
    }
-  }
+  },
+  "extra": null
  },
  "paint-and-pour": {
   "slug": "paint-and-pour",
@@ -2614,48 +2729,48 @@
    "width": 512,
    "height": 512
   },
+  "card": {
+   "src": "/media/paint-and-pour/card.webp",
+   "alt": "The host speaks into a blue microphone beside an easel holding a painted version of 'The Scream', with pink-lit wine shelves and guests behind her.",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+   "width": 1000,
+   "height": 750
+  },
   "gallery": [
    {
     "src": "/media/paint-and-pour/photo-01.webp",
-    "width": 1392,
-    "height": 1600,
+    "width": 1740,
+    "height": 2000,
     "alt": "A smiling host gestures towards a group's finished paintings of a woman with a parasol in a meadow, displayed on small table easels in a bar with an exposed brick wall.",
     "sourceUrl": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533"
    },
    {
     "src": "/media/paint-and-pour/photo-02.webp",
-    "width": 1600,
-    "height": 776,
+    "width": 2000,
+    "height": 971,
     "alt": "About twenty guests hold up their finished versions of 'The Scream' in a lounge with pink neon signs and lit wine shelves.",
     "sourceUrl": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329"
    },
    {
     "src": "/media/paint-and-pour/photo-03.webp",
-    "width": 1000,
-    "height": 800,
-    "alt": "The host speaks into a blue microphone beside an easel holding a painted version of 'The Scream', with pink-lit wine shelves and guests behind her.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg"
-   },
-   {
-    "src": "/media/paint-and-pour/photo-04.webp",
-    "width": 480,
-    "height": 640,
-    "alt": "Guests paint landscape canvases along a long table in a room with floral wallpaper, framed pictures and globe pendant lights.",
-    "sourceUrl": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839"
-   },
-   {
-    "src": "/media/paint-and-pour/photo-05.webp",
     "width": 765,
     "height": 1020,
     "alt": "A long table set up before a session, with blank canvases on table easels, paint palettes, brushes and printed reference pictures of sunflowers on a green tablecloth.",
     "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg"
    },
    {
-    "src": "/media/paint-and-pour/photo-06.webp",
+    "src": "/media/paint-and-pour/photo-04.webp",
     "width": 480,
     "height": 640,
     "alt": "A group of guests hold up their finished cat-portrait paintings in a restaurant with a patterned tile floor.",
     "sourceUrl": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832"
+   },
+   {
+    "src": "/media/paint-and-pour/photo-05.webp",
+    "width": 480,
+    "height": 640,
+    "alt": "Guests paint landscape canvases along a long table in a room with floral wallpaper, framed pictures and globe pendant lights.",
+    "sourceUrl": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839"
    }
   ],
   "reel": {
@@ -2719,7 +2834,8 @@
      "bytes": 2553245
     }
    }
-  }
+  },
+  "extra": null
  },
  "ray-johnson": {
   "slug": "ray-johnson",
@@ -2844,18 +2960,25 @@
    "width": 512,
    "height": 512
   },
+  "card": {
+   "src": "/media/ray-johnson/card.webp",
+   "alt": "Ray Elton Johnson in a gold jacket and tinted glasses holding a microphone",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/elton_ray_johnson_tribute_thumb.jpg",
+   "width": 1000,
+   "height": 750
+  },
   "gallery": [
    {
     "src": "/media/ray-johnson/photo-01.webp",
-    "width": 1527,
-    "height": 1600,
+    "width": 1909,
+    "height": 2000,
     "alt": "A performer dressed as Elton John, in a floral jacket and white-framed glasses, sings into a microphone at a red piano beneath a pink neon 'Eden' sign and trailing ivy.",
     "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg"
    },
    {
     "src": "/media/ray-johnson/photo-02.webp",
-    "width": 1600,
-    "height": 1077,
+    "width": 1920,
+    "height": 1292,
     "alt": "Outdoor duo performance: a performer in a gold jacket and red-tinted glasses sings at a red piano while a percussionist in sunglasses plays congas beside him.",
     "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg"
    },
@@ -2882,17 +3005,31 @@
    },
    {
     "src": "/media/ray-johnson/photo-06.webp",
+    "width": 1919,
+    "height": 1197,
+    "alt": "A group recording session in a red-walled studio, with Ray (light-blue jacket and glasses) among the singers in headphones. Captioned 'Appearing on the Ladbabys 2022 no 1 Xmas hit'.",
+    "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_2697-high.jpg"
+   },
+   {
+    "src": "/media/ray-johnson/photo-07.webp",
+    "width": 1920,
+    "height": 1440,
+    "alt": "Ray as Elton in a gold suit and red-tinted glasses, posing with another man in front of a Virgin Media O2 press backdrop. This is the testimonials page header image.",
+    "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1487-high.jpg"
+   },
+   {
+    "src": "/media/ray-johnson/photo-08.webp",
+    "width": 1302,
+    "height": 1936,
+    "alt": "Behind the scenes on 'God Save The Tuche': Ray as Elton in a group with actors dressed as Beefeaters (Yeoman Warders).",
+    "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3742-high.jpg"
+   },
+   {
+    "src": "/media/ray-johnson/photo-09.webp",
     "width": 843,
     "height": 1124,
     "alt": "A performer in a blue sequinned jacket and green glasses points out from behind a glossy piano, on a set with a lit marquee star, mirror balls and oversized lipstick props.",
     "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg"
-   },
-   {
-    "src": "/media/ray-johnson/photo-07.webp",
-    "width": 529,
-    "height": 718,
-    "alt": "Studio portrait of a performer dressed as Elton John in a black military-style jacket with gold braid and jewelled sunglasses, seated with arms folded against an orange smoke backdrop.",
-    "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_7843-high.jpg"
    }
   ],
   "reel": {
@@ -2956,7 +3093,8 @@
      "bytes": 1947287
     }
    }
-  }
+  },
+  "extra": null
  },
  "the-bar-people": {
   "slug": "the-bar-people",
@@ -3092,48 +3230,55 @@
    "width": 512,
    "height": 512
   },
+  "card": {
+   "src": "/media/the-bar-people/card.webp",
+   "alt": "Bar People bartender in an embroidered white shirt pouring champagne at a wedding bar",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2025/02/1-tbp.jpg",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/the-bar-people/photo-01.webp",
-    "width": 1600,
-    "height": 941,
+    "width": 2000,
+    "height": 1176,
     "alt": "Bartender in a white Bar People shirt and braces pouring a cocktail at a sequin-fronted mobile bar with copper cups and martini glasses, in a garden",
     "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/cocktail_bar_home2.jpeg"
    },
    {
     "src": "/media/the-bar-people/photo-02.webp",
-    "width": 1024,
-    "height": 769,
-    "alt": "Smiling bartender holding out a pineapple-garnished cocktail at an outdoor bar with copper mugs",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/gallery_Alex.jpg"
+    "width": 1500,
+    "height": 1000,
+    "alt": "Smiling bartender offering a yellow cocktail beside copper mugs outdoors",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2025/02/2-tbp.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-03.webp",
-    "width": 1000,
-    "height": 1000,
-    "alt": "Bartender pouring champagne into rows of flutes in front of a CEW UK Consumer Choice Awards 2024 backdrop",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg"
+    "width": 2000,
+    "height": 1334,
+    "alt": "White bar set with rows of champagne flutes, a cut-glass mixing glass and a copper mug in front of floor-to-ceiling windows at night",
+    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-04.webp",
-    "width": 1000,
+    "width": 1500,
     "height": 1000,
-    "alt": "Two staff in white shirts behind a bar wrapped in colourful Porsche artwork, in a showroom with a white car",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/customporsche.jpg"
+    "alt": "Two Bar People staff behind a bar with a colourful wrapped front",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2025/02/3-tbp.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-05.webp",
     "width": 1200,
-    "height": 1600,
-    "alt": "Two staff behind a checkerboard-fronted bar lined with champagne flutes in a large glass-roofed exhibition hall",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg"
+    "height": 1500,
+    "alt": "Overhead view of a yellow EE and Salesforce branded bar beneath a chandelier",
+    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-06.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "White bar set with rows of champagne flutes, a cut-glass mixing glass and a copper mug in front of floor-to-ceiling windows at night",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg"
+    "width": 1000,
+    "height": 1000,
+    "alt": "Bartender pouring champagne into rows of flutes in front of a CEW UK Consumer Choice Awards 2024 backdrop",
+    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-07.webp",
@@ -3144,17 +3289,38 @@
    },
    {
     "src": "/media/the-bar-people/photo-08.webp",
-    "width": 1200,
-    "height": 1500,
-    "alt": "Overhead view of a yellow EE and Salesforce branded bar beneath a chandelier",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg"
+    "width": 1500,
+    "height": 2000,
+    "alt": "Two staff behind a checkerboard-fronted bar lined with champagne flutes in a large glass-roofed exhibition hall",
+    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg"
    },
    {
     "src": "/media/the-bar-people/photo-09.webp",
     "width": 800,
     "height": 600,
-    "alt": "Bride and groom kissing in front of a rustic wooden bar in a barn venue",
-    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/weddingbarimg.jpg"
+    "alt": "Wedding guests raising their glasses and cheering around a white bar",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2023/10/weddingparty.jpg"
+   },
+   {
+    "src": "/media/the-bar-people/photo-10.webp",
+    "width": 800,
+    "height": 600,
+    "alt": "Three bartenders smiling behind the bar as a smoking cocktail is served",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2023/10/pez40th.jpg"
+   },
+   {
+    "src": "/media/the-bar-people/photo-11.webp",
+    "width": 800,
+    "height": 600,
+    "alt": "Bar set up in front of a greenery wall with a 'Sip Sip Hooray' neon sign",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2023/10/sipsip.jpg"
+   },
+   {
+    "src": "/media/the-bar-people/photo-12.webp",
+    "width": 800,
+    "height": 600,
+    "alt": "Tray of strawberry cocktails and espresso martinis ready to serve",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2023/10/birthdaycocktails.jpg"
    }
   ],
   "reel": {
@@ -3230,7 +3396,8 @@
      "bytes": 1707269
     }
    }
-  }
+  },
+  "extra": null
  },
  "tl-executive-cars": {
   "slug": "tl-executive-cars",
@@ -3347,16 +3514,16 @@
    "width": 512,
    "height": 484
   },
-  "gallery": [
-   {
-    "src": "/media/tl-executive-cars/photo-01.webp",
-    "width": 1200,
-    "height": 600,
-    "alt": "A dark grey Mercedes-Benz E-Class saloon parked in sunshine on a tarmac lane beside a white five-bar gate and hedges, with a front plate bearing the T&L Executive Cars badge and name.",
-    "sourceUrl": "https://web.archive.org/web/20160316212529im_/http://tlexecutivecars.co.uk/img/car1.jpg"
-   }
-  ],
-  "reel": null
+  "card": {
+   "src": "/media/tl-executive-cars/card.webp",
+   "alt": "A dark grey Mercedes-Benz E-Class saloon parked in sunshine on a tarmac lane beside a white five-bar gate and hedges, with a front plate bearing the T&L Executive Cars badge and name.",
+   "sourceUrl": "https://web.archive.org/web/20160316212529im_/http://tlexecutivecars.co.uk/img/car1.jpg",
+   "width": 800,
+   "height": 600
+  },
+  "gallery": [],
+  "reel": null,
+  "extra": null
  },
  "tm-event-hire": {
   "slug": "tm-event-hire",
@@ -3479,69 +3646,104 @@
    "width": 512,
    "height": 549
   },
+  "card": {
+   "src": "/media/tm-event-hire/card.webp",
+   "alt": "White pagoda marquee on a lawn in front of a red-brick castle",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/07/Screenshot-2024-09-30-at-14.22.28.png",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/tm-event-hire/photo-01.webp",
-    "width": 1500,
-    "height": 1000,
-    "alt": "White clear-span marquee with a pointed pagoda section at the end of a gravel path between clipped hedges, under a blue sky with clouds",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/clear-span-marquee-hire-in-essex.jpg"
+    "width": 2000,
+    "height": 1125,
+    "alt": "Couple in a suit and a white gown dancing on a black and white dance floor inside a lined marquee with a chandelier, surrounded by guests",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/first-dance-wedding-marquee-hire.jpg"
    },
    {
     "src": "/media/tm-event-hire/photo-02.webp",
-    "width": 1500,
-    "height": 844,
-    "alt": "Inside a white-lined marquee with chandeliers and fairy lights, set with round tables in white linen and Chiavari chairs",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Luxury-wedding-marquees-in-essex.jpg"
+    "width": 2000,
+    "height": 1333,
+    "alt": "Guests celebrating a 21st birthday inside a clear-roof marquee dressed with pink swags and fairy lights",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Essex-girl-21st-birthday-party-marquee-hire.jpg"
    },
    {
     "src": "/media/tm-event-hire/photo-03.webp",
     "width": 1500,
     "height": 1000,
-    "alt": "Long white clear-span marquee joined to pointed pagoda tents, standing in a hillside field with trees and countryside behind",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/09/clear-span-marquee-with-pagodas-for-entrance-in-field-in-essex.jpg"
+    "alt": "Evening reception in a white-lined marquee with chandeliers, with guests seated at long candlelit tables and standing behind",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/marquee_wedding_reception_in_full_swing_time_to_party.jpg"
    },
    {
     "src": "/media/tm-event-hire/photo-04.webp",
-    "width": 1600,
-    "height": 900,
-    "alt": "Marquee with a black starlit ceiling and white wall drapes, a purple-lit circular bar with tall bar stools and a hanging lit branch decoration",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/nightclub-themed-party-blackout-ceiling-marquee.jpg"
-   },
-   {
-    "src": "/media/tm-event-hire/photo-05.webp",
     "width": 1500,
     "height": 1000,
     "alt": "Clear-roof marquee dressed with pink fabric swags and a hanging floral arrangement, with a pink floor and a DJ booth with a 'TG 21' sign between two speakers",
     "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/pink-birthday-party-marquee-decor.jpg"
    },
    {
+    "src": "/media/tm-event-hire/photo-05.webp",
+    "width": 2000,
+    "height": 1125,
+    "alt": "Marquee with a black starlit ceiling and white wall drapes, a purple-lit circular bar with tall bar stools and a hanging lit branch decoration",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/nightclub-themed-party-blackout-ceiling-marquee.jpg"
+   },
+   {
     "src": "/media/tm-event-hire/photo-06.webp",
-    "width": 1600,
-    "height": 900,
-    "alt": "Couple in a suit and a white gown dancing on a black and white dance floor inside a lined marquee with a chandelier, surrounded by guests",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/first-dance-wedding-marquee-hire.jpg"
+    "width": 1610,
+    "height": 1084,
+    "alt": "Long clear-span marquee beside a garden pool and lawn",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/07/Screenshot-2024-09-30-at-14.23.26.png"
    },
    {
     "src": "/media/tm-event-hire/photo-07.webp",
-    "width": 1500,
-    "height": 1000,
-    "alt": "Row of white pagoda tents set up across a car park beside a building, under a blue sky",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/11/event-equipment-hire-equipment-for-public-events.jpg"
+    "width": 1614,
+    "height": 1202,
+    "alt": "Two white pagoda marquees on a lawn under a blue sky",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/07/Screenshot-2024-09-30-at-14.23.34.png"
    },
    {
     "src": "/media/tm-event-hire/photo-08.webp",
-    "width": 1000,
-    "height": 667,
-    "alt": "Man in a cap and grey T-shirt holding a strap beside the white wall of a marquee in an ivy-lined garden",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Thomas-Mclean-director-TM-Event-Hire.jpg"
+    "width": 1500,
+    "height": 1000,
+    "alt": "Outdoor wedding ceremony on a lawn with wooden folding chairs and a marquee behind (the same scene appears in the Booked Events gallery)",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/marquee-Wedding-ceremony-in-english-country-garden.jpg"
    },
    {
     "src": "/media/tm-event-hire/photo-09.webp",
     "width": 1500,
     "height": 1000,
-    "alt": "Evening reception in a white-lined marquee with chandeliers, with guests seated at long candlelit tables and standing behind",
-    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/marquee_wedding_reception_in_full_swing_time_to_party.jpg"
+    "alt": "Long white clear-span marquee joined to pointed pagoda tents, standing in a hillside field with trees and countryside behind",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/09/clear-span-marquee-with-pagodas-for-entrance-in-field-in-essex.jpg"
+   },
+   {
+    "src": "/media/tm-event-hire/photo-10.webp",
+    "width": 1500,
+    "height": 844,
+    "alt": "Inside a white-lined marquee with chandeliers and fairy lights, set with round tables in white linen and Chiavari chairs",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Luxury-wedding-marquees-in-essex.jpg"
+   },
+   {
+    "src": "/media/tm-event-hire/photo-11.webp",
+    "width": 1439,
+    "height": 960,
+    "alt": "Inside a lined marquee laid with round tables for a wedding breakfast",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/07/461308741_517440467661949_1227622997195319072_n-copy.jpg"
+   },
+   {
+    "src": "/media/tm-event-hire/photo-12.webp",
+    "width": 1500,
+    "height": 1000,
+    "alt": "White clear-span marquee with a pointed pagoda section at the end of a gravel path between clipped hedges, under a blue sky with clouds",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/clear-span-marquee-hire-in-essex.jpg"
+   },
+   {
+    "src": "/media/tm-event-hire/photo-13.webp",
+    "width": 928,
+    "height": 523,
+    "alt": "White pagoda marquee with tables and chairs on a garden lawn",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/07/tmeventhire-e1729605053143.jpg"
    }
   ],
   "reel": {
@@ -3617,7 +3819,8 @@
      "bytes": 1794581
     }
    }
-  }
+  },
+  "extra": null
  },
  "tony-poole-discos": {
   "slug": "tony-poole-discos",
@@ -3742,69 +3945,97 @@
    "width": 512,
    "height": 246
   },
+  "card": {
+   "src": "/media/tony-poole-discos/card.webp",
+   "alt": "A bride and groom dance among a crowd of guests as confetti falls through pink and magenta uplighting in a high-ceilinged room.",
+   "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg",
+   "width": 1200,
+   "height": 900
+  },
   "gallery": [
    {
     "src": "/media/tony-poole-discos/photo-01.webp",
-    "width": 1600,
-    "height": 1067,
-    "alt": "A bride and groom share their first dance on a white LED dance floor in a draped, fairy-lit marquee as a burst of white confetti falls over them and the watching guests.",
-    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg"
+    "width": 2000,
+    "height": 1126,
+    "alt": "Wedding guests with their arms raised dance on a starlit LED dance floor under purple lighting, with the bride among the crowd.",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg"
    },
    {
     "src": "/media/tony-poole-discos/photo-02.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1333,
     "alt": "A white starlit DJ booth and backdrop with speakers, lit pillars and light-up LOVE letters beside a white LED dance floor, in a draped room with a fairy-light ceiling and lilac uplighting.",
     "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg"
    },
    {
     "src": "/media/tony-poole-discos/photo-03.webp",
-    "width": 1600,
-    "height": 901,
-    "alt": "Wedding guests with their arms raised dance on a starlit LED dance floor under purple lighting, with the bride among the crowd.",
-    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg"
+    "width": 2000,
+    "height": 1333,
+    "alt": "A bride and groom share their first dance on a white LED dance floor in a draped, fairy-lit marquee as a burst of white confetti falls over them and the watching guests.",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg"
    },
    {
     "src": "/media/tony-poole-discos/photo-04.webp",
-    "width": 1600,
-    "height": 900,
-    "alt": "A white starlit DJ booth flanked by white pillars topped with mirror-ball and moving-head lights, speakers on stands and a large white LED dance floor, in a room washed with red uplighting.",
-    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg"
-   },
-   {
-    "src": "/media/tony-poole-discos/photo-05.webp",
-    "width": 1600,
-    "height": 721,
+    "width": 2000,
+    "height": 901,
     "alt": "A bride and groom dance in the centre of a timber-beamed barn under strings of fairy lights, with pink heart projections on the walls and guests standing in a circle around them.",
     "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg"
    },
    {
-    "src": "/media/tony-poole-discos/photo-06.webp",
-    "width": 1600,
-    "height": 900,
-    "alt": "A bride and groom dance among a crowd of guests as confetti falls through pink and magenta uplighting in a high-ceilinged room.",
-    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg"
+    "src": "/media/tony-poole-discos/photo-05.webp",
+    "width": 2000,
+    "height": 1125,
+    "alt": "A white starlit DJ booth flanked by white pillars topped with mirror-ball and moving-head lights, speakers on stands and a large white LED dance floor, in a room washed with red uplighting.",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg"
    },
    {
-    "src": "/media/tony-poole-discos/photo-07.webp",
-    "width": 1600,
-    "height": 900,
+    "src": "/media/tony-poole-discos/photo-06.webp",
+    "width": 2000,
+    "height": 1125,
     "alt": "A white starlit DJ booth and backdrop with moving-head lights on white pillars, speakers on stands, giant light-up '21' numbers and a white LED dance floor, beside a white sweet cart.",
     "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg"
    },
    {
+    "src": "/media/tony-poole-discos/photo-07.webp",
+    "width": 2000,
+    "height": 1125,
+    "alt": "Sheene Mill, Royston, Herts: white Premier Set Up booth with a white LED backdrop, light-up LOVE letters and pink and blue uplighting",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Sheene-Mill-Royston-Herts-Premier-Set-Up-White-Booth-White-LED-Backdrop-LOVE-Letters-Pink-And-Blue-Uplighting.jpg"
+   },
+   {
     "src": "/media/tony-poole-discos/photo-08.webp",
-    "width": 1600,
-    "height": 1067,
+    "width": 2000,
+    "height": 1126,
+    "alt": "Premier Set Up at The Shard: white starlit booth and white LED dance floor with lilac/pink uplighting. Heavily compressed file (197,357 bytes).",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/The-Shard-Premier-Set-Up-White-Starlight-Booth-White-LED-Dance-FloorLilac-Uplighting.jpg"
+   },
+   {
+    "src": "/media/tony-poole-discos/photo-09.webp",
+    "width": 2000,
+    "height": 1333,
     "alt": "A banqueting room laid with round tables, white cloths and clear chairs under blue uplighting, with white ceiling drapes and snowflake light projections.",
     "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/IMG_1993.jpg"
    },
    {
-    "src": "/media/tony-poole-discos/photo-09.webp",
-    "width": 1600,
-    "height": 900,
+    "src": "/media/tony-poole-discos/photo-10.webp",
+    "width": 2000,
+    "height": 1125,
     "alt": "A photo booth with a red curtain behind chrome posts and red rope barriers, a 'Photobooth this way' sign, and a stand and table of fancy-dress props and hats.",
     "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/The-Grove-Watford-Herts-Photo-Booth.jpg"
+   },
+   {
+    "src": "/media/tony-poole-discos/photo-11.webp",
+    "width": 2000,
+    "height": 901,
+    "alt": "360 Video Booth platform with an LED surround and rope barriers at Sheene Mill, Royston",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2026/01/Sheene-Mill-Royston-Herts-360-Video-Booth.jpg"
+   },
+   {
+    "src": "/media/tony-poole-discos/photo-12.webp",
+    "width": 1000,
+    "height": 800,
+    "alt": "Guests dancing under coloured disco lights at a party",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tony_poole_discos.jpg"
    }
   ],
   "reel": {
@@ -3868,7 +4099,8 @@
      "bytes": 1807005
     }
    }
-  }
+  },
+  "extra": null
  },
  "toot-sweet-candy-cart": {
   "slug": "toot-sweet-candy-cart",
@@ -3961,55 +4193,76 @@
    "width": 512,
    "height": 509
   },
+  "card": {
+   "src": "/media/toot-sweet-candy-cart/card.webp",
+   "alt": "A white candy cart with 'Toot Sweet Candy Cart' painted on its front panel, dressed with a cascading peach, pink and gold balloon garland, white flowers, a dried pampas arrangement, a drip cake, doughnuts and lidded sweet jars, outside a white-columned building.",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+   "width": 1003,
+   "height": 752
+  },
   "gallery": [
    {
     "src": "/media/toot-sweet-candy-cart/photo-01.webp",
-    "width": 1003,
-    "height": 915,
-    "alt": "A white candy cart with 'Toot Sweet Candy Cart' painted on its front panel, dressed with a cascading peach, pink and gold balloon garland, white flowers, a dried pampas arrangement, a drip cake, doughnuts and lidded sweet jars, outside a white-columned building.",
-    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg"
-   },
-   {
-    "src": "/media/toot-sweet-candy-cart/photo-02.webp",
     "width": 1440,
     "height": 1440,
     "alt": "The white candy cart styled for brunch in a sunny garden, with flowers along its canopy and posts, a white, peach and silver balloon garland, a cake and champagne on the counter and 'On Weekends We Brunch' on the front panel.",
     "sourceUrl": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig"
    },
    {
-    "src": "/media/toot-sweet-candy-cart/photo-03.webp",
-    "width": 1600,
-    "height": 1200,
+    "src": "/media/toot-sweet-candy-cart/photo-02.webp",
+    "width": 2000,
+    "height": 1500,
     "alt": "Close-up of the brunch-styled cart: a strawberry Victoria sponge, a bottle of champagne and flutes, scones, sandwiches, watermelon slices and a vase of flowers above the painted 'On Weekends We Brunch' lettering.",
     "sourceUrl": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig"
    },
    {
+    "src": "/media/toot-sweet-candy-cart/photo-03.webp",
+    "width": 400,
+    "height": 400,
+    "alt": "The white candy cart with bunting, lidded sweet jars and a white / yellow / gold balloon garland in front of a brick house (X avatar, uploaded April 2020). Low resolution.",
+    "sourceUrl": "https://pbs.twimg.com/profile_images/1252530310010548231/yXMHSvyE.jpg"
+   },
+   {
     "src": "/media/toot-sweet-candy-cart/photo-04.webp",
-    "width": 1200,
-    "height": 1600,
-    "alt": "An open white sweet box with sixteen compartments of pick 'n' mix sweets and Ferrero Rocher chocolates, on cupcake-print paper.",
-    "sourceUrl": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig"
+    "width": 1500,
+    "height": 500,
+    "alt": "Lidded glass sweet jars with ribbons, scoops and striped paper bags on a white cart counter with fairy lights and white balloons (X banner, uploaded 6 Mar 2020, the day the account was created). Professionally lit; it is unclear whether this is the business's own cart.",
+    "sourceUrl": "https://pbs.twimg.com/profile_banners/1235863275633397761/1583489293/1500x500"
    },
    {
     "src": "/media/toot-sweet-candy-cart/photo-05.webp",
-    "width": 1600,
-    "height": 1200,
+    "width": 2000,
+    "height": 1602,
+    "alt": "Two windowed sweet boxes tied with pale-blue ribbon, each with navy and white gift tags with sweet-shaped cut-outs.",
+    "sourceUrl": "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig"
+   },
+   {
+    "src": "/media/toot-sweet-candy-cart/photo-06.webp",
+    "width": 2000,
+    "height": 1500,
     "alt": "A windowed sweet box of pick 'n' mix and Ferrero Rocher chocolates tied with pale-blue ribbon, with a navy 'I Love You' tag and a white tag with a sweet-shaped cut-out.",
     "sourceUrl": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig"
    },
    {
-    "src": "/media/toot-sweet-candy-cart/photo-06.webp",
-    "width": 1200,
-    "height": 1600,
+    "src": "/media/toot-sweet-candy-cart/photo-07.webp",
+    "width": 1500,
+    "height": 2000,
+    "alt": "An open white sweet box with sixteen compartments of pick 'n' mix sweets and Ferrero Rocher chocolates, on cupcake-print paper.",
+    "sourceUrl": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig"
+   },
+   {
+    "src": "/media/toot-sweet-candy-cart/photo-08.webp",
+    "width": 1500,
+    "height": 2000,
     "alt": "A windowed sweet box tied with yellow ribbon, with a yellow 'Happy Daddy's Day' tag and a round grey Toot Sweet Candy Cart logo sticker, on cupcake-print paper.",
     "sourceUrl": "https://pbs.twimg.com/media/EZwnjmzWsAEY0kK?format=jpg&name=orig"
    },
    {
-    "src": "/media/toot-sweet-candy-cart/photo-07.webp",
-    "width": 1600,
-    "height": 1282,
-    "alt": "Two windowed sweet boxes tied with pale-blue ribbon, each with navy and white gift tags with sweet-shaped cut-outs.",
-    "sourceUrl": "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig"
+    "src": "/media/toot-sweet-candy-cart/photo-09.webp",
+    "width": 1500,
+    "height": 2000,
+    "alt": "Wider shot of the same wrapped 'Happy Daddy's Day' sweet box with yellow ribbon and the logo sticker, on cupcake-print paper (5 Jun 2020). Near-duplicate of the previous image.",
+    "sourceUrl": "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig"
    }
   ],
   "reel": {
@@ -4073,6 +4326,7 @@
      "bytes": 2035589
     }
    }
-  }
+  },
+  "extra": null
  }
 }

@@ -9,38 +9,57 @@
   "gallery": [
     {
       "file": "public/media/toot-sweet-candy-cart/photo-01.webp",
-      "alt": "A white candy cart with 'Toot Sweet Candy Cart' painted on its front panel, dressed with a cascading peach, pink and gold balloon garland, white flowers, a dried pampas arrangement, a drip cake, doughnuts and lidded sweet jars, outside a white-columned building.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg"
+      "alt": "The white candy cart styled for brunch in a sunny garden, with flowers along its canopy and posts, a white, peach and silver balloon garland, a cake and champagne on the counter and 'On Weekends We Brunch' on the front panel.",
+      "sourceUrl": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig",
+      "sha256": "41d4510b751c5f52fb15ef0578d5ab2ec8c6217aaf5fe64feb0a8734027b48aa"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-02.webp",
-      "alt": "The white candy cart styled for brunch in a sunny garden, with flowers along its canopy and posts, a white, peach and silver balloon garland, a cake and champagne on the counter and 'On Weekends We Brunch' on the front panel.",
-      "sourceUrl": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig"
+      "alt": "Close-up of the brunch-styled cart: a strawberry Victoria sponge, a bottle of champagne and flutes, scones, sandwiches, watermelon slices and a vase of flowers above the painted 'On Weekends We Brunch' lettering.",
+      "sourceUrl": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig",
+      "sha256": "44d7a181b5209fa9b6af4395b93579fc3f5ff286f9a65722fb795bffd40bfef8"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-03.webp",
-      "alt": "Close-up of the brunch-styled cart: a strawberry Victoria sponge, a bottle of champagne and flutes, scones, sandwiches, watermelon slices and a vase of flowers above the painted 'On Weekends We Brunch' lettering.",
-      "sourceUrl": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig"
+      "alt": "The white candy cart with bunting, lidded sweet jars and a white / yellow / gold balloon garland in front of a brick house (X avatar, uploaded April 2020). Low resolution.",
+      "sourceUrl": "https://pbs.twimg.com/profile_images/1252530310010548231/yXMHSvyE.jpg",
+      "sha256": "4bef0952b59891425abfe8c91a288961032fafef74c317f2099b3e3ee1391cac"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-04.webp",
-      "alt": "An open white sweet box with sixteen compartments of pick 'n' mix sweets and Ferrero Rocher chocolates, on cupcake-print paper.",
-      "sourceUrl": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig"
+      "alt": "Lidded glass sweet jars with ribbons, scoops and striped paper bags on a white cart counter with fairy lights and white balloons (X banner, uploaded 6 Mar 2020, the day the account was created). Professionally lit; it is unclear whether this is the business's own cart.",
+      "sourceUrl": "https://pbs.twimg.com/profile_banners/1235863275633397761/1583489293/1500x500",
+      "sha256": "8ba2782917fe01af7e2283cb5744e4198dd8d5b50beede221b7a8f847300bfa5"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-05.webp",
-      "alt": "A windowed sweet box of pick 'n' mix and Ferrero Rocher chocolates tied with pale-blue ribbon, with a navy 'I Love You' tag and a white tag with a sweet-shaped cut-out.",
-      "sourceUrl": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig"
+      "alt": "Two windowed sweet boxes tied with pale-blue ribbon, each with navy and white gift tags with sweet-shaped cut-outs.",
+      "sourceUrl": "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig",
+      "sha256": "36d0269c2a6b03eee3d32b95beea7d34a0f5f390cee6a3a2a8a08964f559f62d"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-06.webp",
-      "alt": "A windowed sweet box tied with yellow ribbon, with a yellow 'Happy Daddy's Day' tag and a round grey Toot Sweet Candy Cart logo sticker, on cupcake-print paper.",
-      "sourceUrl": "https://pbs.twimg.com/media/EZwnjmzWsAEY0kK?format=jpg&name=orig"
+      "alt": "A windowed sweet box of pick 'n' mix and Ferrero Rocher chocolates tied with pale-blue ribbon, with a navy 'I Love You' tag and a white tag with a sweet-shaped cut-out.",
+      "sourceUrl": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig",
+      "sha256": "dacc19863592cd95e3395beb2f6bd4401feda94c3f9cecf4c66553c70dcb5e21"
     },
     {
       "file": "public/media/toot-sweet-candy-cart/photo-07.webp",
-      "alt": "Two windowed sweet boxes tied with pale-blue ribbon, each with navy and white gift tags with sweet-shaped cut-outs.",
-      "sourceUrl": "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig"
+      "alt": "An open white sweet box with sixteen compartments of pick 'n' mix sweets and Ferrero Rocher chocolates, on cupcake-print paper.",
+      "sourceUrl": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig",
+      "sha256": "7b73fc0183898e491bf77d1c681ed515839ecbfe3efe0b975e9313cf3552bb76"
+    },
+    {
+      "file": "public/media/toot-sweet-candy-cart/photo-08.webp",
+      "alt": "A windowed sweet box tied with yellow ribbon, with a yellow 'Happy Daddy's Day' tag and a round grey Toot Sweet Candy Cart logo sticker, on cupcake-print paper.",
+      "sourceUrl": "https://pbs.twimg.com/media/EZwnjmzWsAEY0kK?format=jpg&name=orig",
+      "sha256": "82a3cb0e1c4827d9ae2e36ad0e8751b89d13240d6a5bb68a15228310984ea668"
+    },
+    {
+      "file": "public/media/toot-sweet-candy-cart/photo-09.webp",
+      "alt": "Wider shot of the same wrapped 'Happy Daddy's Day' sweet box with yellow ribbon and the logo sticker, on cupcake-print paper (5 Jun 2020). Near-duplicate of the previous image.",
+      "sourceUrl": "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig",
+      "sha256": "95428a8139f8e2dbc565aef83d7582fbeac43e6dde9f56d59324bada1693ab3e"
     }
   ],
   "notes": [
@@ -50,6 +69,17 @@
     "Photos EZlfPHUWsAUX0Mo and EZlfPFMXsAML0gd were excluded from reel and gallery because their gift tags show private customers' names. The X banner (stock-risk unclear), the 400px X avatar (too low-resolution) and EZwnjm_X0AIRd7r in the gallery (near-duplicate of photo-06; used only as the final reel still) were also left out.",
     "Hero still (tootsweet_cart.jpg) is only 1003x915, so the 1280x720 desktop and 720x1280 mobile reel frames from it are upscaled about 1.3-1.4x and slightly soft.",
     "Photos date from 2020 (X) and the Booked Events listing (2024); current trading status is unverified.",
-    "Logo re-traced by the coordinator as a 5-tone layered vector (#a6a6a6 disc, #adadad inner oval, white highlights, #6b6b6b shading, black line art) from a 1x render of the 1000px original; meanAbsDiff 5.59, visually faithful at display sizes (checked at 96px). The shaded illustration is posterised at large zoom."
-  ]
+    "Logo re-traced by the coordinator as a 5-tone layered vector (#a6a6a6 disc, #adadad inner oval, white highlights, #6b6b6b shading, black line art) from a 1x render of the 1000px original; meanAbsDiff 5.59, visually faithful at display sizes (checked at 96px). The shaded illustration is posterised at large zoom.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/toot-sweet-candy-cart/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+    "alt": "A white candy cart with 'Toot Sweet Candy Cart' painted on its front panel, dressed with a cascading peach, pink and gold balloon garland, white flowers, a dried pampas arrangement, a drip cake, doughnuts and lidded sweet jars, outside a white-columned building.",
+    "sourceSize": [
+      1003,
+      915
+    ],
+    "sha256": "2e1e992b021bcc7c058b3330c9f6d34daa823d523f40784845b0269bb9d1076e"
+  }
 }

@@ -199,3 +199,76 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .be-site * { transition: none !important; animation: none !important; }
 }
+
+/* ── Collectible vendor cards (HoloCard) ──
+   Category-tinted foil frame, shimmer that follows the pointer, soft glare
+   and a gentle 3D tilt (mouse only; static for touch and reduced motion). */
+.holo-card {
+  --mx: 50%;
+  --my: 35%;
+  --rx: 0deg;
+  --ry: 0deg;
+  position: relative;
+  height: 100%;
+  padding: 9px;
+  border-radius: 24px;
+  isolation: isolate;
+  background:
+    linear-gradient(140deg,
+      color-mix(in oklab, var(--tint-a) 55%, white) 0%,
+      #fff3fc 28%,
+      #e8fbff 48%,
+      #fff9e8 66%,
+      color-mix(in oklab, var(--tint-b) 55%, white) 100%);
+  box-shadow: 0 1px 2px rgba(8, 0, 48, 0.06), 0 14px 30px -14px rgba(8, 0, 48, 0.32);
+  transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s ease;
+}
+.holo-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: repeating-linear-gradient(115deg,
+    rgba(255, 105, 235, 0) 0%,
+    rgba(255, 105, 235, 0.28) 7%,
+    rgba(110, 220, 255, 0.32) 14%,
+    rgba(255, 225, 120, 0.28) 21%,
+    rgba(160, 255, 200, 0.26) 28%,
+    rgba(255, 105, 235, 0) 35%);
+  background-size: 260% 260%;
+  background-position: var(--mx) var(--my);
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+  transition: background-position 0.45s ease;
+}
+.holo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 45%);
+  mix-blend-mode: soft-light;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.holo-card[data-active] {
+  transition: transform 0.08s linear, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(8, 0, 48, 0.08), 0 26px 50px -18px rgba(8, 0, 48, 0.45);
+}
+.holo-card[data-active]::after {
+  opacity: 1;
+}
+.holo-card[data-active]::before {
+  transition: none;
+  opacity: 0.8;
+}
+@media (prefers-reduced-motion: reduce) {
+  .holo-card,
+  .holo-card[data-active] {
+    transform: none !important;
+  }
+}

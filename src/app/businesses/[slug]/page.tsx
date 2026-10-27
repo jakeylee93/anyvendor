@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, Mail, Phone, MapPin, CalendarDays, Info } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Mail, Phone, MapPin, CalendarDays, Info, Check, Plus } from "lucide-react";
 import SiteShell from "@/components/site/SiteShell";
 import BusinessCard, { Monogram, locationLabel } from "@/components/site/BusinessCard";
 import Showreel from "@/components/site/Showreel";
@@ -96,7 +96,7 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
   const industry = industryOf(b);
   const related = BUSINESSES.filter((x) => x.slug !== b.slug && industry && industryOf(x) === industry).slice(0, 4);
   // Without a reel, the first real photo becomes a still hero instead of the photo band.
-  const stillHero = !p.reel ? p.gallery[0] : undefined;
+  const stillHero = !p.reel ? (p.gallery[0] ?? p.card ?? undefined) : undefined;
   const band = stillHero ? undefined : p.gallery[0];
   const rest = p.gallery.slice(1);
   const socials = Object.entries(p.socials).filter(([, v]) => v);
@@ -143,6 +143,16 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
               <p key={t}>{t}</p>
             ))}
           </div>
+          {p.extra && p.extra.highlights.length > 0 && (
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              {p.extra.highlights.map((h) => (
+                <li key={h} className="flex items-start gap-2.5 rounded-xl bg-be-mist px-4 py-3 text-[15px] font-medium text-be-navy">
+                  <Check size={18} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />
+                  {h}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         <dl className="grid content-start gap-6 text-sm">
           {p.established && <Fact icon={<CalendarDays size={16} aria-hidden />} label="Established" value={p.established.label} source={p.established.sourceUrl} />}
@@ -171,10 +181,27 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
                   <p className="font-caveat text-2xl text-be-cyan">{String(n + 1).padStart(2, "0")}</p>
                   <h3 className="mt-1 text-xl font-semibold text-be-navy">{s.name}</h3>
                   <p className="mt-2 leading-relaxed text-gray-700">{s.description}</p>
+                  {s.more && <p className="mt-2 text-sm leading-relaxed text-gray-600">{s.more}</p>}
                 </li>
               ))}
             </ul>
           </div>
+        </section>
+      )}
+
+      {/* How it works */}
+      {p.extra && p.extra.howItWorks.length > 0 && (
+        <section className="mx-auto max-w-7xl px-4 py-16 md:py-20">
+          <h2 className="text-3xl font-bold text-be-navy md:text-4xl">How it works</h2>
+          <ol className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {p.extra.howItWorks.map((st, n) => (
+              <li key={st.title} className="rounded-2xl border border-gray-200 p-5">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-be-navy text-sm font-bold text-white">{n + 1}</span>
+                <h3 className="mt-3 font-semibold text-be-navy">{st.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-gray-700">{st.text}</p>
+              </li>
+            ))}
+          </ol>
         </section>
       )}
 
@@ -196,6 +223,41 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {/* Good to know + FAQs */}
+      {p.extra && (p.extra.goodToKnow.length > 0 || p.extra.faqs.length > 0) && (
+        <section className="mx-auto grid max-w-7xl gap-12 px-4 pb-16 md:pb-20 lg:grid-cols-[1fr_1.3fr]">
+          {p.extra.goodToKnow.length > 0 && (
+            <div>
+              <h2 className="text-3xl font-bold text-be-navy md:text-4xl">Good to know</h2>
+              <ul className="mt-6 space-y-3">
+                {p.extra.goodToKnow.map((g) => (
+                  <li key={g.text} className="flex items-start gap-3 text-[15px] leading-relaxed text-gray-700">
+                    <Info size={18} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />
+                    <span>{g.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {p.extra.faqs.length > 0 && (
+            <div>
+              <h2 className="text-3xl font-bold text-be-navy md:text-4xl">FAQs</h2>
+              <div className="mt-6 divide-y divide-gray-200 border-y border-gray-200">
+                {p.extra.faqs.map((f) => (
+                  <details key={f.q} className="group py-4">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-be-navy">
+                      {f.q}
+                      <Plus size={18} className="shrink-0 transition-transform group-open:rotate-45" aria-hidden />
+                    </summary>
+                    <p className="mt-2 text-[15px] leading-relaxed text-gray-700">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       )}
 

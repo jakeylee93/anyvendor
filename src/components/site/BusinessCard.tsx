@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
-import { type Business, categoriesOf } from "@/lib/directory";
+import { type Business, categoriesOf, industryOf } from "@/lib/directory";
+import HoloCard from "./HoloCard";
 import { getProfile } from "@/lib/profiles";
 
 const TINTS = [
@@ -37,27 +38,18 @@ export function locationLabel(b: Business) {
   return b.address ?? "No Address";
 }
 
-function CardMedia({ business }: { business: Business }) {
-  const p = getProfile(business.slug);
-  const cover = p?.reel?.outputs.desktop.posterWebp ?? p?.gallery[0]?.src;
-  if (!p || !cover) return <Monogram business={business} className="aspect-4/3 w-full" />;
-  return (
-    <div className="relative aspect-4/3 w-full overflow-hidden bg-be-mist">
-      <img src={cover} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-      {p.logo && (
-        <span
-          className={`absolute bottom-3 left-3 flex h-14 min-w-14 max-w-[75%] items-center justify-center overflow-hidden rounded-xl px-2 py-1.5 shadow-md ${p.logo.plate === "dark" ? "bg-be-deep" : "bg-white"}`}
-        >
-          <img
-            src={p.logo.src}
-            alt={`${p.displayName} logo`}
-            className={`h-full w-auto max-w-full object-contain ${p.logo.width / p.logo.height > 2 ? "max-h-7" : ""}`}
-          />
-        </span>
-      )}
-    </div>
-  );
-}
+/** Foil tints and readable text colour per industry (collectible-card "types"). */
+const TYPE_STYLE: Record<string, { tint: [string, string]; text: string }> = {
+  "drink-services": { tint: ["#33ccff", "#a78bfa"], text: "#0278b5" },
+  "food-services": { tint: ["#fbb102", "#fb7185"], text: "#b45309" },
+  entertainment: { tint: ["#ff69eb", "#8b5cf6"], text: "#a21caf" },
+  "decor-ambiance": { tint: ["#2dd4bf", "#60a5fa"], text: "#0f766e" },
+  "photography-video": { tint: ["#a78bfa", "#f0abfc"], text: "#6d28d9" },
+  "transport-logistics": { tint: ["#94a3b8", "#38bdf8"], text: "#334155" },
+  "unique-services": { tint: ["#fb7185", "#fbbf24"], text: "#be123c" },
+  "event-planning-management": { tint: ["#818cf8", "#22d3ee"], text: "#4338ca" },
+};
+const DEFAULT_TYPE = { tint: ["#33ccff", "#ff69eb"] as [string, string], text: "#0278b5" };
 
 /** Year and place as the business itself states them; falls back to the 2025 listing only when no profile exists. */
 function cardFacts(b: Business) {
@@ -68,40 +60,82 @@ function cardFacts(b: Business) {
   return { year, place };
 }
 
+function LogoSeal({ p }: { p: NonNullable<ReturnType<typeof getProfile>> }) {
+  if (!p.logo) return null;
+  const wide = p.logo.width / p.logo.height > 1.8;
+  const bg = p.logo.plate === "dark" ? "bg-be-deep" : "bg-white";
+  return (
+    <span
+      className={`absolute left-3 top-3 z-[2] flex items-center justify-center shadow-lg ring-[3px] ring-white/90 ${bg} ${
+        wide ? "h-12 max-w-[62%] rounded-full px-3" : "h-[68px] w-[68px] rounded-full p-2"
+      }`}
+    >
+      <img src={p.logo.src} alt={`${p.displayName} logo`} className={`max-h-full object-contain ${wide ? "h-6 w-auto" : "h-full w-full"}`} />
+    </span>
+  );
+}
+
 export default function BusinessCard({ business }: { business: Business }) {
-  const price = getProfile(business.slug)?.cardPrice ?? business.price;
+  const p = getProfile(business.slug);
+  const price = p?.cardPrice ?? business.price;
   const facts = cardFacts(business);
   const cats = categoriesOf(business);
-  const inferred = !business.verified && !business.listedCategories.length && cats.length > 0;
+  const industry = industryOf(business);
+  const type = (industry && TYPE_STYLE[industry]) || DEFAULT_TYPE;
+  const cover = p?.card?.src ?? p?.reel?.outputs.desktop.posterWebp ?? p?.gallery[0]?.src;
+  const name = p?.displayName ?? business.name;
+
   return (
     <Link
       href={`/businesses/${business.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md focus-visible:outline-2 focus-visible:outline-be-cyan"
+      aria-label={`${name}${cats[0] ? `, ${cats[0]}` : ""}${facts.place ? `, ${facts.place}` : ""}`}
+      className="group block h-full rounded-[24px] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-be-cyan"
     >
-      <CardMedia business={business} />
-      <div className="flex flex-1 flex-col px-4 pt-4">
-        <h3 className="truncate text-lg font-semibold text-be-navy group-hover:text-be-cyan">{getProfile(business.slug)?.displayName ?? business.name}</h3>
-        {facts.year ? <p className="text-xs font-light text-be-grey">Est. {facts.year}</p> : <p className="text-xs font-light text-be-grey">&nbsp;</p>}
-        {cats.length > 0 && (
-          <p className="mt-2 text-xs text-be-navy">
-            {cats.join("  ·  ")}
-            {inferred && <span className="ml-1 text-be-grey">(unconfirmed)</span>}
-          </p>
-        )}
-        {facts.place && (
-          <p className="mt-2 flex items-start gap-1 text-xs text-be-grey">
-            <MapPin size={13} className="mt-0.5 shrink-0" aria-hidden />
-            <span className="line-clamp-2">{facts.place}</span>
-          </p>
-        )}
-      </div>
-      <div className="mt-4 flex items-baseline justify-between gap-2 border-t border-gray-100 px-4 py-3">
-        <span className="text-xs text-be-grey">Price from:</span>
-        <span className="text-right">
-          <strong className="text-base font-semibold text-be-navy">{price.from}</strong>{" "}
-          <span className="text-xs text-be-grey">{price.unit}</span>
-        </span>
-      </div>
+      <HoloCard tint={type.tint}>
+        <div className="flex h-full flex-col gap-2">
+          <div className="relative aspect-4/3 overflow-hidden rounded-[16px] bg-be-mist">
+            {cover ? (
+              <img
+                src={cover}
+                alt={p?.card?.alt ?? ""}
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+              />
+            ) : (
+              <Monogram business={business} className="absolute inset-0" />
+            )}
+            {p && <LogoSeal p={p} />}
+            {cats[0] && (
+              <span className="absolute right-3 top-3 z-[2] rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold text-be-navy shadow-sm backdrop-blur">
+                {cats[0]}
+              </span>
+            )}
+          </div>
+
+          <div className="flex flex-1 flex-col rounded-[16px] bg-white/80 px-4 pb-3 pt-3.5 backdrop-blur-sm">
+            <h3 className="truncate text-lg font-bold leading-tight text-be-navy">{name}</h3>
+            <p className="mt-0.5 text-xs text-be-grey">{facts.year ? `Est. ${facts.year}` : "\u00a0"}</p>
+            {cats.length > 0 && (
+              <p className="mt-1 truncate text-[13px] font-semibold" style={{ color: type.text }}>
+                {cats.join(" · ")}
+              </p>
+            )}
+            <div className="my-2.5 h-px bg-be-navy/10" />
+            <p className="flex min-h-[2.25rem] items-start gap-1.5 text-xs text-be-grey">
+              <MapPin size={14} className="mt-px shrink-0" aria-hidden />
+              <span className="line-clamp-2">{facts.place ?? "Location on request"}</span>
+            </p>
+            <div className="mt-auto flex items-baseline justify-between gap-2 rounded-xl bg-be-mist/80 px-3 py-2">
+              <span className="text-[11px] font-medium uppercase tracking-wider text-be-grey">From</span>
+              <span className="truncate text-right">
+                <strong className="text-base font-bold text-be-navy">{price.from}</strong>{" "}
+                <span className="text-xs text-be-grey">{price.unit}</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </HoloCard>
     </Link>
   );
 }

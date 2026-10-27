@@ -9,48 +9,45 @@
   "gallery": [
     {
       "file": "public/media/ozzy-stix/photo-01.webp",
-      "alt": "Two musicians playing an acoustic guitar and a dark electric guitar on a shaded terrace with wicker sofas, with the sea and a small island behind them.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original"
+      "alt": "Black-and-white studio portrait of the duo: one in sunglasses holding a white electric guitar beside a Marshall amp, the other standing next to a pair of bongos.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original",
+      "sha256": "a22db928176f3e6cf856879fd5ccb5b63087b26b4b1f5a802077ae934e8edad5"
     },
     {
       "file": "public/media/ozzy-stix/photo-02.webp",
-      "alt": "Black-and-white studio portrait of the duo: one in sunglasses holding a white electric guitar beside a Marshall amp, the other standing next to a pair of bongos.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original"
+      "alt": "Two musicians playing an acoustic guitar and a dark electric guitar on a shaded terrace with wicker sofas, with the sea and a small island behind them.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+      "sha256": "091ad11f872739cbd5eeedca5ee27ca6c91b8c249c56bec254339f1accffbd82"
     },
     {
       "file": "public/media/ozzy-stix/photo-03.webp",
-      "alt": "Black-and-white live shot of a guitarist singing with his mouth wide open while playing a white electric guitar, with a second performer behind him.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original"
+      "alt": "The duo standing with acoustic guitars in a flower-decked garden pavilion, with white chairs behind them.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original",
+      "sha256": "1340c5e88da30f8840ccccd30f0547d4dfcc08514db7ef4db84f32d6a2eaf325"
     },
     {
       "file": "public/media/ozzy-stix/photo-04.webp",
-      "alt": "The duo standing with acoustic guitars in a flower-decked garden pavilion, with white chairs behind them.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original"
+      "alt": "Sepia-toned photo of the duo: one in glasses playing an acoustic guitar while the other, in sunglasses, leans on the sofa behind him.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original",
+      "sha256": "49fe20d3d2bd495fbbfbe2756462d02e8e29ad36906c96c662e73c4509b38654"
     },
     {
       "file": "public/media/ozzy-stix/photo-05.webp",
-      "alt": "Five performers in a white studio: a saxophonist, an electric guitarist, a singer, a violinist and a percussionist at congas, with a camera on a tripod in front.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original"
+      "alt": "Black-and-white live shot of a guitarist singing with his mouth wide open while playing a white electric guitar, with a second performer behind him.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original",
+      "sha256": "73633c43e28dd053cdfbdf54404f5b20351da62dff14a9c1648c87907cb198d1"
     },
     {
       "file": "public/media/ozzy-stix/photo-06.webp",
-      "alt": "Black-and-white photo of a guitarist smiling as he plays an acoustic guitar among seated guests at a venue strung with fairy lights.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg"
+      "alt": "Five performers in a white studio: a saxophonist, an electric guitarist, a singer, a violinist and a percussionist at congas, with a camera on a tripod in front.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original",
+      "sha256": "f198ae2db7a0dca064d9e31997efa4aa47989e774aeaa3a122d322a9e1d2f34e"
     },
     {
       "file": "public/media/ozzy-stix/photo-07.webp",
-      "alt": "Sepia-toned photo of the duo: one in glasses playing an acoustic guitar while the other, in sunglasses, leans on the sofa behind him.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original"
-    },
-    {
-      "file": "public/media/ozzy-stix/photo-08.webp",
-      "alt": "The two members sitting on a low stone wall outdoors, one in a white shirt with arms folded and the other in a light blue shirt, with trees behind.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg"
-    },
-    {
-      "file": "public/media/ozzy-stix/photo-09.webp",
-      "alt": "The duo in white shirts and checked trousers sitting on a wooden garden bench in front of a hedge with pink roses.",
-      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg"
+      "alt": "Informal selfie of the two members at a venue window (homepage). Playful, less polished.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539084406620-UHWG73Y9QHCRHWTAFMHX/IMG_3845.jpg?format=original",
+      "sha256": "855c5b1fe42e02d67c6be05fec965fcb154148d533c344246b37203146949fcb"
     }
   ],
   "notes": [
@@ -59,6 +56,17 @@
     "Reel: five clips from four of the business's own public TikTok posts (@ozzyandstix), plus one still of its own terrace photo (IMG_2574). Every TikTok post has a burned-in caption across the lower-middle of the frame for the whole video. Each source was therefore cropped to the rows above the caption before cutting, so no caption text appears in the reel. Audio is stripped.",
     "Reel segment 2 (garden wedding, post 7693250822364433666) only exists at 576x1024 on TikTok, so it is softer than the 1080p clips.",
     "Gallery photos come from ozzyandstix.com (Squarespace originals, fetched as the original JPEG with an image Accept header) and one from the Booked Events listing (photo-08). photo-06 and photo-09 come from the site's Instagram feed block and are only 640x640.",
-    "Excluded from the gallery: IMG_3845 (an informal tongue-out selfie), a 640px Instagram live shot with a small child visible in the background, and the Booked Events 'openart' AI placeholder images."
-  ]
+    "Excluded from the gallery: IMG_3845 (an informal tongue-out selfie), a 640px Instagram live shot with a small child visible in the background, and the Booked Events 'openart' AI placeholder images.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/ozzy-stix/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg",
+    "alt": "The two members sitting on a low stone wall outdoors, one in a white shirt with arms folded and the other in a light blue shirt, with trees behind.",
+    "sourceSize": [
+      1000,
+      800
+    ],
+    "sha256": "41bf9e1559912482f061011191651a875d6f092bf6e34717895a77e07aa23352"
+  }
 }

@@ -9,54 +9,86 @@
   "gallery": [
     {
       "file": "public/media/magpie-catering/photo-01.webp",
-      "alt": "Rows of prawn canapés on cubes of mango, each held by a knotted bamboo pick, set out on a wooden board.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg"
+      "alt": "Marquee interior set for a black-tie seated dinner: black tablecloths, white chair covers with black organza sashes, ostrich-feather centrepieces. The filename matches Magpie's Alleyn Court summer ball case study. Landscape, high resolution.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/alleyn-court-025.jpg",
+      "sha256": "29c93aff0b799647906950294950c8f5f115d21a7e6694002fc7005537c3e2c8"
     },
     {
       "file": "public/media/magpie-catering/photo-02.webp",
-      "alt": "Rows of small dessert glasses topped with heart-shaped biscuits and edible flowers, alongside chocolate brownie bites, on clear glass serving trays.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg"
+      "alt": "Rows of prawn canapés on cubes of mango, each held by a knotted bamboo pick, set out on a wooden board.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+      "sha256": "5fd7c0a761467d4f9a4cbb2b60a324147246acb5f055a19f0db45a9a374d49ef"
     },
     {
       "file": "public/media/magpie-catering/photo-03.webp",
       "alt": "A wooden sharing board with sliced cured meats, a dish of houmous, a chicken and green pepper skewer and a bowl of green olives.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg"
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+      "sha256": "0aa975f64b039416fb848a329279c0b6247d4188eab09ff3c925f0595d712aea"
     },
     {
       "file": "public/media/magpie-catering/photo-04.webp",
-      "alt": "A white chocolate tart swirled with raspberry, with a sesame-seed tuile, raspberry coulis, two raspberries and a sprig of mint on a white plate.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg"
+      "alt": "A wooden board with battered calamari rings, prawns with garlic and a dried chilli in sauce, a dish of sliced chorizo and mushrooms, filo parcels and a small pot of herb dip.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg",
+      "sha256": "8496a8dd91e5c7431f1b16ef7667b3639bce66c978bc24c960890c72a8b27db5"
     },
     {
       "file": "public/media/magpie-catering/photo-05.webp",
       "alt": "Slices of grilled halloumi topped with pomegranate seeds, chopped mint, diced red chilli and a dark balsamic drizzle on a white plate.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg"
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+      "sha256": "2bb9bb218768fbdf67c5f56d7c723f7769691d30fe2023aab382d653452f6d5d"
     },
     {
       "file": "public/media/magpie-catering/photo-06.webp",
       "alt": "Pieces of baklava and filo pastries, some topped with walnuts, with a strawberry and a spun-sugar decoration on a black slate.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg"
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+      "sha256": "deb237a88c48d30b384e70e2bf76a92f11d3faebeef41f9035362485d11de3c4"
     },
     {
       "file": "public/media/magpie-catering/photo-07.webp",
-      "alt": "A wooden board with battered calamari rings, prawns with garlic and a dried chilli in sauce, a dish of sliced chorizo and mushrooms, filo parcels and a small pot of herb dip.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg"
+      "alt": "Rows of small dessert glasses topped with heart-shaped biscuits and edible flowers, alongside chocolate brownie bites, on clear glass serving trays.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "sha256": "fb19c66b6d29b6c1048fdfa7b18ab46531fc741430e29c7f13b6aef17578cd93"
     },
     {
       "file": "public/media/magpie-catering/photo-08.webp",
-      "alt": "A square white plate with crackling-topped pork belly, sliced pork tenderloin, a pulled pork cake, mashed potato, spinach and a small dish of sauce.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg"
+      "alt": "A white chocolate tart swirled with raspberry, with a sesame-seed tuile, raspberry coulis, two raspberries and a sprig of mint on a white plate.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+      "sha256": "006cfd1fc9107f45ffab089feee24af1dc8097253cfa45fd7657587bf3875fa0"
     },
     {
       "file": "public/media/magpie-catering/photo-09.webp",
+      "alt": "Magpie waiting team in uniform (black aprons, ties, name badges) lined up outdoors on autumn grounds, with a dark vehicle behind",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000003.jpg",
+      "sha256": "102d0b7a9f5f03e66b31455b08f9cc678b9f5fb8575b124df93d5469415228db"
+    },
+    {
+      "file": "public/media/magpie-catering/photo-10.webp",
+      "alt": "A square white plate with crackling-topped pork belly, sliced pork tenderloin, a pulled pork cake, mashed potato, spinach and a small dish of sauce.",
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg",
+      "sha256": "51246815e1b4c14a170736a2066e412677f5629439fcfd9757ba33e2e70a6b03"
+    },
+    {
+      "file": "public/media/magpie-catering/photo-11.webp",
       "alt": "Rows of round canapés topped with tomato and white cheese on wooden boards, with a carved melon and red flower garnish in front.",
-      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000032.jpg"
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000032.jpg",
+      "sha256": "a7f0d4e51e714cb7de95821c95f3685a38067c6f6d769f10f1a0f4e5e666580b"
     }
   ],
   "notes": [
     "Logo: vector reconstruction (not the business's own vector file) traced from the transparent 680x410 header lockup PNG on magpiecatering.com. Each flat brand colour (purple #5f2573 'magpie', black 'catering', grey #a6a8ab arc and bird) was traced separately with potrace at 4x without ink dilation, because the standard logo_trace.py run thickened the thin 'catering' letters and left light seams inside the purple letters; render-back mean absolute difference 0.29 (0 = identical). The faint tapered tip of the grey arc ends slightly more bluntly than the original.",
     "Reel: no own video exists (see research gaps), so the hero reel is a photo reel of six of Magpie's own published food photos with a gentle push-in; sources and order are in reel.json.",
     "Gallery: all nine photos are Magpie's own uploads on magpiecatering.com (gallery, private fine dining and special events pages). photo-07 (hot mezze board) is cropped top and bottom to remove kitchen cloths and stacked packaging; the food is unchanged. Most originals are 750-1600 px, so the gallery cannot be sharper than that.",
-    "Excluded: alleyn-court-025.jpg (marquee dinner; shown on Magpie's Links page as partner Castle Marquees' image, authorship unclear); the waiting-team group photo (identifiable young staff and a readable vehicle number plate); the 1276x500 mezze paddle-board strip (too letterboxed); logos, venue/partner photos and stock images listed in the research gaps."
-  ]
+    "Excluded: alleyn-court-025.jpg (marquee dinner; shown on Magpie's Links page as partner Castle Marquees' image, authorship unclear); the waiting-team group photo (identifiable young staff and a readable vehicle number plate); the 1276x500 mezze paddle-board strip (too letterboxed); logos, venue/partner photos and stock images listed in the research gaps.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/magpie-catering/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/magpiecatering-1.jpg",
+    "alt": "Chargrilled meat skewers topped with pomegranate seeds on a wooden board",
+    "sourceSize": [
+      990,
+      850
+    ],
+    "sha256": "76242b15548304f1bca84b15c64d9058397159c049abbafa36f55c2182bd06f9"
+  }
 }

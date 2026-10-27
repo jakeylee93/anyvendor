@@ -10,32 +10,32 @@
     {
       "file": "public/media/paint-and-pour/photo-01.webp",
       "alt": "A smiling host gestures towards a group's finished paintings of a woman with a parasol in a meadow, displayed on small table easels in a bar with an exposed brick wall.",
-      "sourceUrl": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533"
+      "sourceUrl": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533",
+      "sha256": "4c7cc74e49d1df6c614227b84e40eeb30e044cf5bb996c904f91a27b8d8ce30f"
     },
     {
       "file": "public/media/paint-and-pour/photo-02.webp",
       "alt": "About twenty guests hold up their finished versions of 'The Scream' in a lounge with pink neon signs and lit wine shelves.",
-      "sourceUrl": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329"
+      "sourceUrl": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329",
+      "sha256": "463c1314dd7bd243bcfcc8b6e5ad6f9b232fdd4fad4bbeb68df9fe69bdf7d8e9"
     },
     {
       "file": "public/media/paint-and-pour/photo-03.webp",
-      "alt": "The host speaks into a blue microphone beside an easel holding a painted version of 'The Scream', with pink-lit wine shelves and guests behind her.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg"
+      "alt": "A long table set up before a session, with blank canvases on table easels, paint palettes, brushes and printed reference pictures of sunflowers on a green tablecloth.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg",
+      "sha256": "6edd7eb4ea27c351a0efa3c08d2829bfb073f17140903b5d992f3c6c57ef79dc"
     },
     {
       "file": "public/media/paint-and-pour/photo-04.webp",
-      "alt": "Guests paint landscape canvases along a long table in a room with floral wallpaper, framed pictures and globe pendant lights.",
-      "sourceUrl": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839"
+      "alt": "A group of guests hold up their finished cat-portrait paintings in a restaurant with a patterned tile floor.",
+      "sourceUrl": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832",
+      "sha256": "8d06848c91cf7a901dab357ae6643b6a1702a0d26af54c289545e33197866c84"
     },
     {
       "file": "public/media/paint-and-pour/photo-05.webp",
-      "alt": "A long table set up before a session, with blank canvases on table easels, paint palettes, brushes and printed reference pictures of sunflowers on a green tablecloth.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg"
-    },
-    {
-      "file": "public/media/paint-and-pour/photo-06.webp",
-      "alt": "A group of guests hold up their finished cat-portrait paintings in a restaurant with a patterned tile floor.",
-      "sourceUrl": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832"
+      "alt": "Guests paint landscape canvases along a long table in a room with floral wallpaper, framed pictures and globe pendant lights.",
+      "sourceUrl": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839",
+      "sha256": "e53a0bace6910d0d9737c6b36e43987d20b06f222408311dc3b1cff087d57e66"
     }
   ],
   "notes": [
@@ -44,6 +44,17 @@
     "Logo is a traced vector reconstruction of the Booked Events-hosted 1000x1000 PNG (the business's listing logo), not the business's own vector file. The raster was posterised into its three colours (black, white, light blue #99c8ff) at 3600 px with a 1 px ink erosion to offset logo_trace.py's dilation; the white disc and light-blue ring were then written as exact SVG circles. Mean absolute RGB difference vs the original: 3.6 on white, 3.4 on navy.",
     "The business's newer Eventbrite profile logo (June 2026) is a different rendition of the same design (terracotta/maroon on a crumpled-paper photo texture, 506 px JPEG); ask the business for its current vector master.",
     "Gallery photos 03-06 are published at their native sizes (1000, 765, 480 and 480 px wide); they were not upscaled. The Booked Events gallery's OpenArt AI-generated images were excluded.",
-    "Plate is 'none' because the mark carries its own white disc inside a black and light-blue ring."
-  ]
+    "Plate is 'none' because the mark carries its own white disc inside a black and light-blue ring.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/paint-and-pour/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+    "alt": "The host speaks into a blue microphone beside an easel holding a painted version of 'The Scream', with pink-lit wine shelves and guests behind her.",
+    "sourceSize": [
+      1000,
+      800
+    ],
+    "sha256": "0cc3afde1c4403e2e648713012da43154bbb6564400d5c1066ee88a5b373edb6"
+  }
 }

@@ -10,42 +10,38 @@
     {
       "file": "public/media/cj-sax/photo-01.webp",
       "alt": "Saxophonist in a white T-shirt sitting at the end of a weathered wooden jetty over clear turquoise sea, with a saxophone beside him.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG"
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG",
+      "sha256": "46a8919053c63702654f8f62f6b60af7e8a61a19c43ea7168b2b6c9ce4dcbc11"
     },
     {
       "file": "public/media/cj-sax/photo-02.webp",
-      "alt": "Saxophonist in sunglasses and a black T-shirt playing a gold saxophone on an outdoor festival stage beneath a large lighting rig, with Ibiza and Disturbing signage on the stage.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/ushuaia2.jpg"
+      "alt": "Saxophonist in a striped shirt and shorts playing while standing in shallow water at a pool edge, against a pale sky and a distant hillside town.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG",
+      "sha256": "1fe99e27b0ac0a41b4dec590e9299ce505fc3cbc7412924c023b576c02bf684c"
     },
     {
       "file": "public/media/cj-sax/photo-03.webp",
-      "alt": "A bride and guests cheering and dancing around a saxophonist playing on a wedding dance floor at night.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg"
+      "alt": "DJ setup with a star-lit DJ booth, speakers on stands, two mirror balls on tripods and lighting on an illuminated dance floor under a draped canopy.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG",
+      "sha256": "180419c7231d94929eb0f15c76aed58f0d1dfc36a1d12a8dd6e7146c99260935"
     },
     {
       "file": "public/media/cj-sax/photo-04.webp",
-      "alt": "Performer in sunglasses and headphones working DJ decks on a boat, with a saxophone on a strap and a city skyline across the water.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg"
+      "alt": "Gold saxophone resting on a stone garden wall beside pink flowers, overlooking green gardens and a coastal mountain range.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg",
+      "sha256": "86b1d6cd48b8d58eac77804053ca4ff22d0918ff5f7fc55620aec31448e07e79"
     },
     {
       "file": "public/media/cj-sax/photo-05.webp",
-      "alt": "Saxophonist in a striped shirt and shorts playing while standing in shallow water at a pool edge, against a pale sky and a distant hillside town.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG"
+      "alt": "DJ wearing headphones behind a pale upholstered booth outdoors, with trees and a sunlit orange mountain ridge behind.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg",
+      "sha256": "84106c903c96bc76656ba980a984041cf24ece684b4d6028b25ff0e870f5d365"
     },
     {
       "file": "public/media/cj-sax/photo-06.webp",
-      "alt": "DJ wearing headphones behind a pale upholstered booth outdoors, with trees and a sunlit orange mountain ridge behind.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg"
-    },
-    {
-      "file": "public/media/cj-sax/photo-07.webp",
-      "alt": "Gold saxophone resting on a stone garden wall beside pink flowers, overlooking green gardens and a coastal mountain range.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg"
-    },
-    {
-      "file": "public/media/cj-sax/photo-08.webp",
-      "alt": "DJ setup with a star-lit DJ booth, speakers on stands, two mirror balls on tripods and lighting on an illuminated dance floor under a draped canopy.",
-      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG"
+      "alt": "Performer in sunglasses and headphones working DJ decks on a boat, with a saxophone on a strap and a city skyline across the water.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg",
+      "sha256": "8b5e1593526e40fea34cb5287a1f9709b618ba990f411976dc8a4f8c01d1c04e"
     }
   ],
   "notes": [
@@ -58,6 +54,17 @@
     "Reel and gallery show identifiable adult event guests (wedding dance floors, Ibiza and festival crowds); no children were visible in the chosen clips.",
     "Gallery photo-02 (Ushuaïa Ibiza stage) carries a small Ushuaïa venue watermark in the bottom-right corner; it is probably a venue photographer's image that CJ publishes on his homepage.",
     "Photos featuring celebrities (rio-wedding.jpg, IMG_9611_polarr.jpg with the Nusr-Et chef, tinie-tempah.jpg, 413-1.jpg with Rio Ferdinand) were left out of the gallery pending image-rights permission, as flagged in the research record.",
-    "photo-04 is the image supplied by the business for its Booked Events listing (1000x800, not upscaled)."
-  ]
+    "photo-04 is the image supplied by the business for its Booked Events listing (1000x800, not upscaled).",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/cj-sax/card.webp",
+    "sourceUrl": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg",
+    "alt": "A bride and guests cheering and dancing around a saxophonist playing on a wedding dance floor at night.",
+    "sourceSize": [
+      3000,
+      2000
+    ],
+    "sha256": "3a8f8c1a6ac352f5772f59ea5b1266b19858954149f9f4b7fd9620c07cbe9d78"
+  }
 }

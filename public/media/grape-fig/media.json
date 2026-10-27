@@ -9,48 +9,63 @@
   "gallery": [
     {
       "file": "public/media/grape-fig/photo-01.webp",
-      "alt": "Grazing table with lit taper candles, white flower arrangements, a baguette, a crudités platter and glasses of rosé on a white tablecloth",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757"
+      "alt": "Wreath-shaped cheese and charcuterie platter with figs, orange slices and a green velvet bow in a printed GRAPE & Fig box",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771",
+      "sha256": "8906b4564eced58b96b49750d014a123a7ec9844497ba98a481a0107e1feeb12"
     },
     {
       "file": "public/media/grape-fig/photo-02.webp",
-      "alt": "Long dining table laid with wildflower arrangements, grazing boards of cheese, crackers and fruit, and white plates with folded napkins beside glass windows",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042"
+      "alt": "Brunch display of croissants, pastries, banana bread slices and yoghurt pots with white daisy arrangements, against a brick wall",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906",
+      "sha256": "29a9be55c40297c43661036f807575f1610373079ad002f410f162ae19526c1c"
     },
     {
       "file": "public/media/grape-fig/photo-03.webp",
-      "alt": "Brunch display of croissants, pastries, banana bread slices and yoghurt pots with white daisy arrangements, against a brick wall",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906"
+      "alt": "Grazing table with lit taper candles, white flower arrangements, a baguette, a crudités platter and glasses of rosé on a white tablecloth",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757",
+      "sha256": "9b0700361c903f5fd518e328bf8968961ac2827ac093fb8c4edd0dfcd126c8c7"
     },
     {
       "file": "public/media/grape-fig/photo-04.webp",
-      "alt": "Cheese and charcuterie board with fruit, pickles and flowers on brown paper with handwritten labels, beside crackers and wine glasses",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720"
+      "alt": "Long dining table laid with wildflower arrangements, grazing boards of cheese, crackers and fruit, and white plates with folded napkins beside glass windows",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042",
+      "sha256": "956c3ee6f239fb22541066d14d70148133c360ccc60a7ad65e81b14a345ca5bd"
     },
     {
       "file": "public/media/grape-fig/photo-05.webp",
-      "alt": "Kitchen island set with platters of filled brioche buns and fruit beneath a tall pink blossom arrangement",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316"
+      "alt": "A bespoke floral and fruit display for a Beauty Pie brand event, with pink flowers, citrus and the client's products.",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Beauty_Pie_Bespoke_Table.jpg?v=1763060918",
+      "sha256": "785f93671b9c4543fedea9f3121204ae11fc2a1f54661fd916d2e5312012f428"
     },
     {
       "file": "public/media/grape-fig/photo-06.webp",
-      "alt": "Wreath-shaped cheese and charcuterie platter with figs, orange slices and a green velvet bow in a printed GRAPE & Fig box",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771"
+      "alt": "Kitchen island set with platters of filled brioche buns and fruit beneath a tall pink blossom arrangement",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316",
+      "sha256": "1bb30ee6f326ab38b85b08b20b9e1487748eeb504f418257521ad2b21bbf3807"
     },
     {
       "file": "public/media/grape-fig/photo-07.webp",
-      "alt": "Office brunch display of pastries, yoghurt pots, juices and plants alongside Skin + Me product boxes",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221"
+      "alt": "A green-themed bespoke food display table with fresh produce, foliage, green juices and styled books.",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Bespoke_Food_Displays_GRAPE_Fig.jpg?v=1763060954",
+      "sha256": "5e1c345cf617cd4c6c5d1301578ed139bbe8a6d2c98107914851391f1ccd3571"
     },
     {
       "file": "public/media/grape-fig/photo-08.webp",
-      "alt": "Two women smiling behind the GRAPE & Fig Build Your Own British Cheese Box Bar counter, with a menu wall and a chilled display of cheeses and condiments",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492"
+      "alt": "Office brunch display of pastries, yoghurt pots, juices and plants alongside Skin + Me product boxes",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221",
+      "sha256": "c10bc3bb93a1fed2c8172bac49704f4718d09e904bf3a8ec3381080a5d2f3f8c"
     },
     {
       "file": "public/media/grape-fig/photo-09.webp",
       "alt": "Two women laughing as they arrange a grazing platter of cheese, charcuterie, fruit and edible flowers at a kitchen counter",
-      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958"
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958",
+      "sha256": "28db6bfba95cf1f18cf57eeaf652cdbfc3fa2d026da747f70513ba8adf8a74f9"
+    },
+    {
+      "file": "public/media/grape-fig/photo-10.webp",
+      "alt": "A bespoke produce and grazing display for an M&S Food press event (#ss24mands).",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/M_S_Food_Bespoke_Food_Display_63f21294-93e2-488c-96b4-e661a6b4e3be.jpg?v=1763062194",
+      "sha256": "223958246de2b21114edbae40b891ea2063099bc78d6bcc5ee8ffdb07b8e4110"
     }
   ],
   "notes": [
@@ -59,6 +74,17 @@
     "The product loops are portrait 810x1080, so their desktop 16:9 crops are upscaled about 1.6x and slightly softer than the landscape masterclass shots.",
     "The Number graze clip shows the business's own GRAPE & Fig logo printed on its packaging (not an overlay).",
     "Gallery photo-07 shows a display made for client Skin + Me with the client's product boxes visible. Other client-branded photos were left out: Beauty Pie (client branding prominent), M&S Food (burned-in #ss24mands hashtag), and the green 'Live to Eat' book-launch table (guest name card legible).",
-    "The two women in photo-08 and photo-09 are identified on the business's own site as founders Toria and Catherine; alt text describes only what is visible."
-  ]
+    "The two women in photo-08 and photo-09 are identified on the business's own site as founders Toria and Catherine; alt text describes only what is visible.",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/grape-fig/card.webp",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720",
+    "alt": "Cheese and charcuterie board with fruit, pickles and flowers on brown paper with handwritten labels, beside crackers and wine glasses",
+    "sourceSize": [
+      3456,
+      3456
+    ],
+    "sha256": "4dbe65ecf1d7fdc65cfc6170db7f5fa1dcebba26e70450253bac64a776fff442"
+  }
 }

@@ -4,43 +4,45 @@
   "gallery": [
     {
       "file": "public/media/jamie-roche/photo-01.webp",
-      "alt": "Jamie Roche singing with his eyes closed at a microphone, a patterned guitar strap over his shoulder, inside a church.",
-      "sourceUrl": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg"
+      "alt": "Portrait of Jamie Roche in a dark jacket and pendant necklace, seated beside a stained-glass window in a wood-panelled room.",
+      "sourceUrl": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0",
+      "sha256": "16d1e7f19a750ef5d263d23fd038c0ac69825d2f6c2f6c79b7e80b4f23b8ad19"
     },
     {
       "file": "public/media/jamie-roche/photo-02.webp",
-      "alt": "Jamie Roche seated on a stage, playing an acoustic guitar and singing into a microphone, in front of a dark teal wall with a 'Live' sign.",
-      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg"
+      "alt": "Jamie Roche singing with his eyes closed at a microphone, a patterned guitar strap over his shoulder, inside a church.",
+      "sourceUrl": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+      "sha256": "611c17c8f2a6988b1770ea3ac9cdaa541e098a9224faa0d06a2c91c6f377a002"
     },
     {
       "file": "public/media/jamie-roche/photo-03.webp",
-      "alt": "Black-and-white photo of Jamie Roche playing an acoustic guitar and singing into a microphone in front of a timber plank wall.",
-      "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg"
+      "alt": "Jamie Roche in a patterned short-sleeved shirt singing and playing an acoustic guitar beside a studio microphone, in a warmly lit room.",
+      "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+      "sha256": "7d63031dfcc781414d7a86c12faa66cecc4e191962c7d86942bd374f3e0b4799"
     },
     {
       "file": "public/media/jamie-roche/photo-04.webp",
       "alt": "Jamie Roche singing with his eyes closed while playing guitar, with guitars hanging on the wall behind him.",
-      "sourceUrl": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg"
+      "sourceUrl": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+      "sha256": "76c1a6558c4517e315bc2f54d342b83e291dd0e3f8380930d460d0f51a69ce6d"
     },
     {
       "file": "public/media/jamie-roche/photo-05.webp",
-      "alt": "Portrait of Jamie Roche in a dark jacket and pendant necklace, seated beside a stained-glass window in a wood-panelled room.",
-      "sourceUrl": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0"
+      "alt": "Jamie Roche in a flat cap and white shirt singing with his eyes closed while playing guitar, with soft lights behind him.",
+      "sourceUrl": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+      "sha256": "c93aa3a996a60e5c3fd7c7f01291c6b4a8db41e559e101cc986e754c15b7512c"
     },
     {
       "file": "public/media/jamie-roche/photo-06.webp",
-      "alt": "Jamie Roche in a patterned short-sleeved shirt singing and playing an acoustic guitar beside a studio microphone, in a warmly lit room.",
-      "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg"
+      "alt": "Close-up of Jamie Roche in a denim jacket singing with his eyes closed while holding a guitar, against a blurred red and green background.",
+      "sourceUrl": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg",
+      "sha256": "0d6b6938e09337daf84f8792ff7f1afe8d83d555afcf7edef8eada0c8e252f42"
     },
     {
       "file": "public/media/jamie-roche/photo-07.webp",
-      "alt": "Jamie Roche in a flat cap and white shirt singing with his eyes closed while playing guitar, with soft lights behind him.",
-      "sourceUrl": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg"
-    },
-    {
-      "file": "public/media/jamie-roche/photo-08.webp",
-      "alt": "Close-up of Jamie Roche in a denim jacket singing with his eyes closed while holding a guitar, against a blurred red and green background.",
-      "sourceUrl": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg"
+      "alt": "Black-and-white photo of Jamie Roche playing an acoustic guitar and singing into a microphone in front of a timber plank wall.",
+      "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+      "sha256": "8be0fa02b89ad1c956e672c81d08f0b5ea6818d9bfb1b8f8745e564324a0d357"
     }
   ],
   "notes": [
@@ -48,6 +50,17 @@
     "Reel: a photo reel of six stills, because all of his footage is on YouTube (7 own-channel performance videos), which is not an allowed download source in this session. He has no website, so there is no self-hosted or HLS video, and no TikTok is confirmed. The YouTube videos are playableInEmbed=true, so the profile could embed one (drMAH8eFYi4, 'The Green Fields Of France', is the strongest) in place of or beside the reel.",
     "Reel and gallery sources: photos 01, 03, 04, 06, 07 and 08 (and five of the six reel stills) are the public maxresdefault thumbnail images (1280x720) of his own-channel YouTube videos, fetched as plain image files from i.ytimg.com. No video was downloaded and no cookies were used. Photo 05 is his own YouTube channel avatar (yt3.ggpht.com, 3532 px, resized to 1600). Photo 02 is the photo he supplied for his Booked Events listing (1000x800). The camera work is credited to Max Bandicoot and Christopher Painter, so re-hosting rights are unconfirmed (see the research gaps).",
     "The reel stills were upscaled 2x with Lanczos plus a light unsharp mask before the push-in. The 9:16 phone reel crops a 405 px-wide band from each 1280x720 thumbnail, so it is visibly softer than the desktop reel. For segment 4 (the listing photo) a 96 px mirrored strip of the dark wall was added above the image so the push-in does not clip his hair.",
-    "Gallery: the photos are published at their native sizes (1280x720 and 1000x800 were not upscaled). The circular headshot from the logo slot was not used because of its transparent corners and speckled rim. Alt texts describe only what is visible; venue names come from the video titles (St Mary Magdalene Church, Enfield; Painter Studios; Sixty Sixty Sounds, Soho; St John's Church, Hoxton; Victoria Park, Hackney)."
-  ]
+    "Gallery: the photos are published at their native sizes (1280x720 and 1000x800 were not upscaled). The circular headshot from the logo slot was not used because of its transparent corners and speckled rim. Alt texts describe only what is visible; venue names come from the video titles (St Mary Magdalene Church, Enfield; Painter Studios; Sixty Sixty Sounds, Soho; St John's Church, Hoxton; Victoria Park, Hackney).",
+    "Oct 27 photo upgrade: card and gallery re-selected from original-resolution uploads on the business's own site and its own uploads on the old Booked Events site; AI renders, other businesses' images, private names and celebrity/watermarked shots excluded."
+  ],
+  "card": {
+    "file": "public/media/jamie-roche/card.webp",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+    "alt": "Jamie Roche seated on a stage, playing an acoustic guitar and singing into a microphone, in front of a dark teal wall with a 'Live' sign.",
+    "sourceSize": [
+      1000,
+      800
+    ],
+    "sha256": "f4f978b74ee62e5476d23e04f9e85d368b20b684d57b9b0f80066ddcff26b665"
+  }
 }

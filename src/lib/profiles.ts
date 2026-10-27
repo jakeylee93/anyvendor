@@ -56,13 +56,22 @@ export interface Profile {
   tagline: string | null;
   intro: string;
   about: string[];
-  services: { name: string; description: string }[];
+  services: { name: string; description: string; more?: string }[];
+  /** Deeper verified detail from the business's own pages (content/profiles-extra). */
+  extra: {
+    highlights: string[];
+    howItWorks: { title: string; text: string }[];
+    goodToKnow: { text: string; sourceUrl: string }[];
+    faqs: { q: string; a: string; sourceUrl: string }[];
+  } | null;
   eventTypes: string[];
   areasServed: string[];
   website: string | null;
   socials: Partial<Record<"instagram" | "facebook" | "tiktok" | "youtube" | "vimeo", string>>;
   contact: { email: string | null; phone: string | null } | null;
   logo: Logo | null;
+  /** 4:3 directory-card photo chosen from the business's own original-resolution uploads. */
+  card: GalleryImage | null;
   gallery: GalleryImage[];
   reel: Reel | null;
   /** What the business itself says (overrides the 2025 directory listing on the profile). */

@@ -64,9 +64,22 @@ def main():
             "price": c.get("price"),
             "cardPrice": c.get("cardPrice"),
             "logo": None,
+            "card": None,
             "gallery": [],
             "reel": None,
         }
+        xp = os.path.join(ROOT, "content", "profiles-extra", f"{slug}.json")
+        if os.path.exists(xp):
+            x = json.load(open(xp))
+            more = {d["name"]: d["more"] for d in x.get("serviceDetails", []) if d.get("more")}
+            for svc in p["services"]:
+                if svc["name"] in more:
+                    svc["more"] = more[svc["name"]]
+            p["extra"] = {k: x.get(k, []) for k in ("highlights", "howItWorks", "goodToKnow", "faqs")}
+            known = {s["url"] for s in p["sources"]}
+            p["sources"] = p["sources"] + [s for s in x.get("sources", []) if s.get("url") not in known]
+        else:
+            p["extra"] = None
         if c.get("taxonomy"):
             taxonomy[slug] = c["taxonomy"]
         media_path = os.path.join(ROOT, "public", "media", slug, "media.json")
@@ -75,6 +88,10 @@ def main():
             c["logo"] = media["logo"]
         if "gallery" not in c and media.get("gallery"):
             c["gallery"] = media["gallery"]
+        cd = media.get("card")
+        if cd and os.path.exists(os.path.join(ROOT, cd["file"])):
+            w, h = dims(os.path.join(ROOT, cd["file"]))
+            p["card"] = {"src": public_url(cd["file"]), "alt": cd["alt"], "sourceUrl": cd["sourceUrl"], "width": w, "height": h}
         lg = c.get("logo")
         if lg:
             path = os.path.join(ROOT, lg["file"])
