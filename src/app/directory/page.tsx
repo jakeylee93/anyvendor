@@ -5,6 +5,8 @@ import { SupplierCta } from "@/components/site/SiteFooter";
 import BusinessCard from "@/components/site/BusinessCard";
 import DirectorySearch from "@/components/site/DirectorySearch";
 import { BUSINESSES, filterBusinesses, industryName, type Filters } from "@/lib/directory";
+import { understand, smartMatch } from "@/lib/smartSearch";
+import { Sparkles } from "lucide-react";
 
 export const metadata: Metadata = { title: "Directory — Anyvendor" };
 
@@ -22,14 +24,31 @@ export default async function DirectoryPage({ searchParams }: { searchParams: SP
     location: one(sp.location),
     event: one(sp.event),
     q: one(sp.q),
+    ask: one(sp.ask),
   };
-  const results = filterBusinesses(filters);
+  // Plain-English request first (ranked), then any explicit filters narrow it.
+  const ask = filters.ask?.trim();
+  const u = ask ? understand(ask) : null;
+  const base = u ? smartMatch({ ...u, place: filters.location ? null : u.place, event: filters.event ? null : u.event }) : BUSINESSES;
+  const narrowed = filterBusinesses({ ...filters, ask: undefined });
+  const results = base.filter((b) => narrowed.includes(b));
+  const chips = u
+    ? ([
+        ...u.services.map((s) => s.label),
+        u.place,
+        u.event,
+        u.guests ? `${u.guests} guests` : null,
+        u.date,
+        u.time,
+      ].filter(Boolean) as string[])
+    : [];
   const active = [
     filters.industry && industryName(filters.industry),
     filters.category,
     filters.location,
     filters.event,
     filters.q && `“${filters.q}”`,
+    ask && `“${ask}”`,
   ].filter(Boolean) as string[];
 
   return (
@@ -45,6 +64,28 @@ export default async function DirectoryPage({ searchParams }: { searchParams: SP
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-10" aria-live="polite">
+        {u && (
+          <div className="mb-6 rounded-2xl bg-be-cyan-pale px-4 py-3 text-sm text-be-navy">
+            <p className="flex flex-wrap items-center gap-2">
+              <Sparkles size={16} className="text-be-cyan" aria-hidden />
+              <span className="font-semibold">We understood:</span>
+              {chips.length ? (
+                chips.map((c) => (
+                  <span key={c} className="rounded-full bg-white px-3 py-1 text-xs font-medium ring-1 ring-be-cyan/40">
+                    {c}
+                  </span>
+                ))
+              ) : (
+                <span>nothing specific yet. Try a service, place or event, e.g. “DJ for a wedding in Essex”.</span>
+              )}
+            </p>
+            {(u.date || u.time || u.guests) && (
+              <p className="mt-1.5 text-xs text-be-grey">
+                Date, time and guest numbers are passed on when you enquire; availability is confirmed by each business.
+              </p>
+            )}
+          </div>
+        )}
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="text-sm text-be-navy">
             <strong>{results.length}</strong> of {BUSINESSES.length} businesses

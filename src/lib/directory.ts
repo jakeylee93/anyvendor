@@ -375,6 +375,8 @@ export interface Filters {
   location?: string;
   event?: string;
   q?: string;
+  /** Plain-English request handled by lib/smartSearch. */
+  ask?: string;
 }
 
 export function filterBusinesses(f: Filters) {

@@ -5,9 +5,9 @@ import { SECTIONS } from "@/lib/sections";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  // how-it-works and plan-my-event have their own folders (legacy routes).
+  // how-it-works, plan-my-event (legacy) and list-my-business (pricing) have their own folders.
   return Object.keys(SECTIONS)
-    .filter((s) => s !== "how-it-works" && s !== "plan-my-event")
+    .filter((s) => s !== "how-it-works" && s !== "plan-my-event" && s !== "list-my-business")
     .map((section) => ({ section }));
 }
 

@@ -4,7 +4,29 @@ import SiteShell from "@/components/site/SiteShell";
 import { SupplierCta, Newsletter } from "@/components/site/SiteFooter";
 import BusinessCard from "@/components/site/BusinessCard";
 import DirectorySearch from "@/components/site/DirectorySearch";
-import { BUSINESSES, MARKET_PRODUCTS } from "@/lib/directory";
+import { BUSINESSES, MARKET_PRODUCTS, categoriesOf } from "@/lib/directory";
+import { getProfile } from "@/lib/profiles";
+import HomeHero, { type HeroVendor } from "@/components/site/HomeHero";
+
+// Vendors with a showreel, in a varied order for the hero slider.
+const HERO_ORDER = ["the-bar-people", "tony-poole-discos", "grape-fig", "cj-sax", "natalie-max", "meatstop", "harry-de-cruz", "tm-event-hire", "calleo", "lucy-jane-cakes", "ozzy-stix", "ray-johnson", "magpie-catering", "paint-and-pour", "toot-sweet-candy-cart", "jamie-roche"];
+const heroVendors: HeroVendor[] = HERO_ORDER.flatMap((slug) => {
+  const b = BUSINESSES.find((x) => x.slug === slug);
+  const p = getProfile(slug);
+  if (!b || !p?.reel) return [];
+  const o = p.reel.outputs;
+  return [
+    {
+      slug,
+      name: p.displayName,
+      category: categoriesOf(b)[0] ?? "",
+      place: p.basedIn?.text.split(/[,(]/)[0].trim() ?? b.region,
+      logo: p.logo ? { src: p.logo.src, plate: p.logo.plate, wide: p.logo.width / p.logo.height > 1.8 } : null,
+      desktop: { video: o.desktop.video, poster: o.desktop.posterWebp },
+      mobile: { video: o.mobile.video, poster: o.mobile.posterWebp },
+    },
+  ];
+});
 
 const PILLARS = [
   {
@@ -33,43 +55,24 @@ const PILLARS = [
 export default function Home() {
   return (
     <SiteShell>
-      {/* Hero — rebuilt; the live site's hero/logo region failed to render */}
-      <section className="relative overflow-hidden bg-be-navy text-white">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-60"
-          style={{
-            background:
-              "radial-gradient(60% 80% at 15% 20%, #33ccff55, transparent 60%), radial-gradient(50% 70% at 85% 30%, #ff69eb44, transparent 60%), radial-gradient(60% 60% at 60% 100%, #9966cc55, transparent 60%)",
-          }}
-        />
-        <div className="relative mx-auto max-w-7xl px-4 pb-14 pt-14 md:pb-20 md:pt-20">
-          <p className="font-caveat text-2xl text-be-cyan md:text-3xl">Find Top Event Professionals</p>
-          <h1 className="mt-2 text-4xl font-bold tracking-tight md:text-6xl">Event Directory</h1>
-          <p className="mt-4 max-w-2xl text-lg text-white/80">
-            Unforgettable Events Begin with Unstoppable Vendors – Start Searching!
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/directory" className="inline-flex items-center gap-2 rounded-full bg-be-cyan px-6 py-3 font-semibold text-be-navy hover:brightness-95">
-              View all businesses <ArrowRight size={18} aria-hidden />
-            </Link>
-            <Link href="/plan-my-event" className="inline-flex items-center rounded-full bg-be-amber px-6 py-3 font-semibold text-be-navy hover:brightness-95">
-              Plan My Event
-            </Link>
-          </div>
+      <HomeHero vendors={heroVendors} />
 
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
-            {PILLARS.map(({ icon: Icon, ...p }) => (
-              <Link key={p.kicker} href={p.href} className="group rounded-2xl bg-white/8 p-6 ring-1 ring-white/15 backdrop-blur hover:bg-white/12">
-                <Icon className="text-be-cyan" size={26} aria-hidden />
-                <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-be-amber">{p.kicker}</p>
-                <h2 className="mt-1 text-xl font-semibold">{p.title}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-white/75">{p.body}</p>
-              </Link>
-            ))}
-          </div>
+      {/* What Anyvendor does (the original three pillars) */}
+      <section className="border-b border-gray-100 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 md:grid-cols-3">
+          {PILLARS.map(({ icon: Icon, ...p }) => (
+            <Link key={p.kicker} href={p.href} className="group flex gap-4 rounded-2xl p-4 hover:bg-be-mist">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-be-cyan-pale text-be-navy">
+                <Icon size={22} aria-hidden />
+              </span>
+              <span>
+                <span className="block text-xs font-bold uppercase tracking-[0.18em] text-be-cyan">{p.kicker}</span>
+                <span className="mt-0.5 block text-lg font-semibold text-be-navy">{p.title}</span>
+                <span className="mt-1 block text-sm leading-relaxed text-be-grey">{p.body}</span>
+              </span>
+            </Link>
+          ))}
         </div>
-        <div className="be-gradient-line relative" />
       </section>
 
       {/* Directory */}
