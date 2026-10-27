@@ -13,27 +13,33 @@
   "services": [
    {
     "name": "Audio guest book phone hire",
-    "description": "Retro phones in six styles (Dahlia, Lily, Poppy, Bluebell, Fern and Pearl), with choice depending on package. They need no Wi-Fi or landline, just a 13 amp socket; guests can leave unlimited voicemails."
+    "description": "Retro phones in six styles (Dahlia, Lily, Poppy, Bluebell, Fern and Pearl), with choice depending on package. They need no Wi-Fi or landline, just a 13 amp socket; guests can leave unlimited voicemails.",
+    "more": "Calleo's terms ask hirers to check the phone as soon as it arrives and report any defect straight away, as 24 hours after delivery it is taken to be in good order. Calleo provides support if a problem arises while it is in use."
    },
    {
     "name": "CORE, ESSENTIAL and ELEVATED packages",
-    "description": "CORE (£219), ESSENTIAL (£338) and ELEVATED (£437) include courier delivery at least two days ahead and a pre-paid return label. They differ in phones, signage, turnaround, revisions and keepsake; CORE excludes a personalised greeting."
+    "description": "CORE (£219), ESSENTIAL (£338) and ELEVATED (£437) include courier delivery at least two days ahead and a pre-paid return label. They differ in phones, signage, turnaround, revisions and keepsake; CORE excludes a personalised greeting.",
+    "more": "CORE uses the Dahlia, Lily or Poppy phone with a digital PDF instruction sign and one chance to remove voicemails. ESSENTIAL adds the Bluebell phone, a non-personalised sign and an engraved USB, while ELEVATED opens up every phone except the King, Duchess and Duke, adds a personalised sign and allows up to five new voicemails to be added."
    },
    {
     "name": "ELEGANT package",
-    "description": "At £1,399 it includes any phone, the Lilibet Telephone Box stand, a hand-crafted sign, set-up and collection by Calleo staff, a five-day turnaround, unlimited revisions and a vinyl record or video memory book."
+    "description": "At £1,399 it includes any phone, the Lilibet Telephone Box stand, a hand-crafted sign, set-up and collection by Calleo staff, a five-day turnaround, unlimited revisions and a vinyl record or video memory book.",
+    "more": "Any phone in the range is included, the vintage King, Duchess and Duke among them. Calleo describes it as the ideal way to add a touch of luxury to an event."
    },
    {
     "name": "Vintage phone upgrade",
-    "description": "The King (antique brass rotary), Duchess (vintage white) and Duke (vintage black) phones. Calleo says any of them can be added to its packages for an extra £100."
+    "description": "The King (antique brass rotary), Duchess (vintage white) and Duke (vintage black) phones. Calleo says any of them can be added to its packages for an extra £100.",
+    "more": "The £100 upgrade applies to the CORE, ESSENTIAL and ELEVATED packages; ELEGANT already includes any phone."
    },
    {
     "name": "Keepsake presentations",
-    "description": "Beyond the edited MP3, ESSENTIAL adds an engraved USB; ELEVATED and ELEGANT offer a video memory book, pairing photos or video with the voicemails, or a custom-artwork vinyl record of up to 30 minutes."
+    "description": "Beyond the edited MP3, ESSENTIAL adds an engraved USB; ELEVATED and ELEGANT offer a video memory book, pairing photos or video with the voicemails, or a custom-artwork vinyl record of up to 30 minutes.",
+    "more": "Every package includes the compiled MP3 file. Engraved USBs can be designed with up to 10 options, from font styles to personal text, and for the video book Calleo works with the couple's photo or video team."
    },
    {
     "name": "Destination wedding hire",
-    "description": "A Dahlia or Lily phone with ESSENTIAL features, posted two days before UK departure and carried in checked luggage. Calleo gives an approximate cost of £338 for the first weekend plus £100 per extra weekend."
+    "description": "A Dahlia or Lily phone with ESSENTIAL features, posted two days before UK departure and carried in checked luggage. Calleo gives an approximate cost of £338 for the first weekend plus £100 per extra weekend.",
+    "more": "The phone travels in a travel bag supplied by Calleo, about 20cm x 15cm and 2kg. Calleo notes that most couples arrange for a family member or friend to travel with the phone to keep costs down."
    }
   ],
   "eventTypes": [
@@ -89,6 +95,14 @@
    {
     "label": "Love My Dress — CALLEO Audio Guest Book",
     "url": "https://www.lovemydress.net/blog/2023/04/calleo-audio-guest-book.html"
+   },
+   {
+    "label": "Calleo — Company Policies",
+    "url": "https://www.calleo-uk.com/company-policies"
+   },
+   {
+    "label": "Calleo — Terms & Conditions of Hire (updated 29 October 2024)",
+    "url": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
    }
   ],
   "gaps": [
@@ -275,7 +289,101 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Fixed published packages, from CORE at £219 to ELEGANT at £1399",
+    "Guests can leave unlimited voicemails, with no length limit",
+    "Needs only a 13 amp socket and a small table",
+    "Framed how-to-use guide supplied so guests know what to do",
+    "Turnaround from 21 days (CORE) down to 5 days (ELEGANT)",
+    "Free date change if requested 15 or more weeks ahead"
+   ],
+   "howItWorks": [
+    {
+     "title": "Check your date",
+     "text": "Send the form on Calleo's website to see if your date is free, then pick a phone and package and book by paying in full through a secure payment link."
+    },
+    {
+     "title": "Get ready",
+     "text": "A detailed welcome pack explains what happens next. You record the greeting guests will hear when they lift the handset, and depending on your package Calleo personalises the instruction sign."
+    },
+    {
+     "title": "Delivery and set-up",
+     "text": "A courier brings the phone to the address of your choice two days ahead of the event. Plug it in, give it a few minutes to warm up and place it away from loud noise."
+    },
+    {
+     "title": "Send it back",
+     "text": "After the event, the phone goes back through the post office on the agreed return date, using the pre-paid label."
+    },
+    {
+     "title": "Listen and finalise",
+     "text": "Calleo compiles and edits the recordings into a first-draft MP3 within your package's turnaround, counted from one working day after the phone arrives back. Once you have made any changes your package allows, the final keepsake is personalised and produced."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "The phone needs a small table or surface of about 30cm x 40cm in a quieter spot, plugged into a mains 13 amp socket. It can be used indoors, or outside if covered, but not in an area used as an entrance or emergency exit route.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "text": "Someone must be at the agreed address to accept delivery, though it does not have to be the customer. The phone must go back in its original shipping box, and the hirer is responsible for loss, theft or damage from delivery until it is returned.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "text": "Calleo's terms place responsibility for getting guests to leave messages on the customer; no refund is given if fewer messages are recorded than hoped, though Calleo recommends ways to encourage plenty.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "text": "Recordings are stored for up to two years and then deleted. On written request, Calleo will not use them for other purposes such as marketing, and will securely delete or return the audio files when the agreement ends.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "text": "Turnaround times can occasionally be extended, which the terms ask customers to accept.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "text": "Calleo says its phones can be fully booked months in advance.",
+     "sourceUrl": "https://www.calleo-uk.com/check-availability"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "What does the phone need at the venue?",
+     "a": "Just a standard 13 amp power socket. It works without Wi-Fi or a landline connection.",
+     "sourceUrl": "https://www.calleo-uk.com/check-availability"
+    },
+    {
+     "q": "How do guests leave a message?",
+     "a": "Once plugged in, the phone takes a few minutes to warm up. Guests then pick up the handset, hear your recorded greeting and leave a message after the beep. A framed how-to-use guide is provided for guests.",
+     "sourceUrl": "https://www.calleo-uk.com/check-availability"
+    },
+    {
+     "q": "Can the phone go near the band or DJ?",
+     "a": "Calleo recommends keeping it at least 5 metres from loud sound sources such as bands, singers, DJs and speakers. They review recordings and reduce background noise as much as possible, but the phone should not sit right next to a speaker.",
+     "sourceUrl": "https://www.calleo-uk.com/check-availability"
+    },
+    {
+     "q": "Do they cover Northern Ireland?",
+     "a": "No. Because of logistical constraints Calleo cannot ship to Northern Ireland; it covers weddings in England, Scotland and Wales, plus destination weddings.",
+     "sourceUrl": "https://www.calleo-uk.com/check-availability"
+    },
+    {
+     "q": "How soon do we receive the recordings?",
+     "a": "The digital audio guest book arrives in 21 days on the CORE and ESSENTIAL packages, 10 days on ELEVATED and 5 days on ELEGANT.",
+     "sourceUrl": "https://www.calleo-uk.com/packages"
+    },
+    {
+     "q": "Can we change our date or cancel?",
+     "a": "Under Calleo's hire terms, rescheduling is free if requested no later than 15 weeks before the hire period and costs 35% of the invoice within that window. Cancelling no later than 15 weeks ahead brings a 25% refund; after that there is no refund.",
+     "sourceUrl": "https://drive.google.com/file/d/11ojbU7qSp6JB18YGnP6IyxoekGYv6Eha/view?usp=drive_link"
+    },
+    {
+     "q": "Can we take a phone to a wedding abroad?",
+     "a": "Yes. Calleo sends a Dahlia or Lily phone by Royal Mail two days before UK departure. It must travel in checked luggage, not in cabin bags, and is returned via the post office on the agreed date with the label provided. For a detailed quote, Calleo asks couples to get in touch.",
+     "sourceUrl": "https://www.calleo-uk.com/destination-weddings"
+    }
+   ]
+  }
  },
  "cj-sax": {
   "slug": "cj-sax",
@@ -295,19 +403,23 @@
    },
    {
     "name": "CJ SAX DJ LIVE: sax and DJ",
-    "description": "CJ plays live saxophone and DJs. The package includes a sound system, DJ lighting, wireless sax and vocal microphones and event planning advice. Prices start from £3,000, subject to date and location."
+    "description": "CJ plays live saxophone and DJs. The package includes a sound system, DJ lighting, wireless sax and vocal microphones and event planning advice. Prices start from £3,000, subject to date and location.",
+    "more": "This package also lists public liability insurance, an event contract and invoice, and WhatsApp support. The kit included as standard is set out on the equipment page."
    },
    {
     "name": "Recommended artists",
-    "description": "Performers recommended from CJ's network, including DJs, sax players, bongo players, violinists and a magician. Clients negotiate directly with the performer. Prices start from £375, subject to date and location."
+    "description": "Performers recommended from CJ's network, including DJs, sax players, bongo players, violinists and a magician. Clients negotiate directly with the performer. Prices start from £375, subject to date and location.",
+    "more": "The contact page says recommendations are tailored to the client's budget."
    },
    {
     "name": "Sound, lighting and DJ booths",
-    "description": "Standard kit includes a Pioneer XDJ-AZ, QSC K12.2 tops and KS118 subs, LED effects, moving heads and Equinox DJ booths. Extras include uplighters, mirror balls, a combi booth, plinths and a QSC TouchMix mixer."
+    "description": "Standard kit includes a Pioneer XDJ-AZ, QSC K12.2 tops and KS118 subs, LED effects, moving heads and Equinox DJ booths. Extras include uplighters, mirror balls, a combi booth, plinths and a QSC TouchMix mixer.",
+    "more": "Standard kit comprises three QSC K12.2 12-inch tops and two KS118 18-inch subs, a Chauvet INTIMSPOT 375ZX, two 200W LED moving heads, four Equinox SpectraPix battens, two Stellar 66 multi-FX LEDs, and black and white Equinox DJ booths. Extras include a Pioneer XDJ-XZ, two further tops, eight Equinox Colour Raider uplighters, four mirror balls, foam glow sticks and two 1.5m plinths."
    },
    {
     "name": "Event planning and performer coordination",
-    "description": "CJ describes himself as an event planner as well as a performer. He recommends and coordinates other live acts for weddings, corporate events and parties, and his sax-and-DJ package includes event planning advice."
+    "description": "CJ describes himself as an event planner as well as a performer. He recommends and coordinates other live acts for weddings, corporate events and parties, and his sax-and-DJ package includes event planning advice.",
+    "more": "The contact page describes the business as a one-stop shop for music entertainment, combining CJ's own performances with recommended performers from his network."
    }
   ],
   "eventTypes": [
@@ -367,6 +479,10 @@
    {
     "label": "CJ SAX LIVE — YouTube channel",
     "url": "https://www.youtube.com/@CJSAXLIVE"
+   },
+   {
+    "label": "CJ SAX LIVE — Contact",
+    "url": "https://cjsax.com/contact/"
    }
   ],
   "gaps": [
@@ -526,7 +642,85 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Live sax alongside your DJ, prices from £1,000",
+    "Full sax-and-DJ show with sound and lighting, from £3,000",
+    "Own packages include public liability insurance and a contract",
+    "Discounted off-peak prices on enquiry, subject to availability",
+    "Open-format sets from 70s soul to garage",
+    "Network performers from £375, negotiated directly with the artist"
+   ],
+   "howItWorks": [
+    {
+     "title": "Send your event details",
+     "text": "Complete the enquiry form on the contact page with the date, location, set time and any additional event details."
+    },
+    {
+     "title": "Contract, invoice and support",
+     "text": "CJ's own packages come with an event contract and invoice, plus WhatsApp support."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "All published prices are starting figures, each 'subject to date & location'.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "text": "The pricing calendar treats January to April and October as off-peak (Dubai and London), May to September as peak (worldwide) and November to December as peak (London).",
+     "sourceUrl": "https://cjsax.com/"
+    },
+    {
+     "text": "The live sax package is designed to work with an existing DJ: CJ improvises over the DJ's set using a wireless sax microphone.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "text": "The enquiry form asks for the date and location of the event and the set time required, plus any additional event details.",
+     "sourceUrl": "https://cjsax.com/contact/"
+    },
+    {
+     "text": "When booking a recommended performer from CJ's network, the client negotiates terms directly with that performer.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Can CJ play alongside our own DJ?",
+     "a": "Yes. The CJ SAX LIVE package is a live saxophone performance in which CJ improvises alongside the client's DJ, using a wireless sax microphone.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "q": "Does CJ bring his own sound and lighting?",
+     "a": "With the sax-and-DJ package, yes: it includes a sound system, DJ lighting and accessories, and wireless sax and vocal microphones.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "q": "What music does CJ play?",
+     "a": "Sets are open format and tailored to the crowd, covering 70s and 80s soul, club classics, house, dance anthems, old-school RnB and garage.",
+     "sourceUrl": "https://cjsax.com/listen/"
+    },
+    {
+     "q": "Is CJ insured?",
+     "a": "Public liability insurance is listed as included in both of CJ's own packages, along with an event contract and invoice.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "q": "Are cheaper dates available?",
+     "a": "Discounted off-peak prices are available on enquiry, subject to availability. Off-peak periods are January to April and October, for Dubai and London.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "q": "Can CJ recommend other performers?",
+     "a": "Yes. CJ recommends musicians from his network, including DJs, sax players, bongo players, violinists and a magician. Prices start from £375, subject to date and location, and are negotiated directly with the performer.",
+     "sourceUrl": "https://cjsax.com/packages/"
+    },
+    {
+     "q": "Does CJ perform at destination events?",
+     "a": "Yes. The business describes itself as 'Based in London, creating vibes worldwide', and its pricing calendar lists May to September as a worldwide peak season.",
+     "sourceUrl": "https://cjsax.com/"
+    }
+   ]
+  }
  },
  "grape-fig": {
   "slug": "grape-fig",
@@ -542,7 +736,8 @@
   "services": [
    {
     "name": "Sharing & grazing platters",
-    "description": "Platters including British cheese and charcuterie, vegan cheese, ploughman's, crudités and hummus, seasonal fruit and sourdough focaccia, hand-delivered to most of the M25 and Essex. The British Cheese & Charcuterie Platter is listed at £142."
+    "description": "Platters including British cheese and charcuterie, vegan cheese, ploughman's, crudités and hummus, seasonal fruit and sourdough focaccia, hand-delivered to most of the M25 and Essex. The British Cheese & Charcuterie Platter is listed at £142.",
+    "more": "Pre-cut versions are available: the Pre-Cut British Cheese & Charcuterie Platter is listed with 150 bites and the Pre-Cut British Cheese Platter with 175. Platters arrive in branded boxes, and complimentary crackers come with every cheese-based platter."
    },
    {
     "name": "Number, letter & symbol grazes",
@@ -550,7 +745,8 @@
    },
    {
     "name": "Grazing table styling kits",
-    "description": "Add-on kits that turn a platter order into a grazing table. Each includes floral arrangements in vases, wooden stackers and a styling guide, all of which the customer keeps. Four sizes, advertised 'from just £108'."
+    "description": "Add-on kits that turn a platter order into a grazing table. Each includes floral arrangements in vases, wooden stackers and a styling guide, all of which the customer keeps. Four sizes, advertised 'from just £108'.",
+    "more": "They pitch the kits as a way to get the look of a styled grazing table without paying styling fees or hiring equipment: unpack the kit, follow the guide and arrange the platters. The four sizes cover anything from cosy gatherings to big celebrations."
    },
    {
     "name": "Bespoke food displays & tablescaping",
@@ -558,11 +754,13 @@
    },
    {
     "name": "PR mailers & brand activations",
-    "description": "Bespoke branded mailers, grazing tables and food content for brands. Past work they list includes a launch-event grazing table, a press cheese grazing runner and pop-up picnics at Fulham Palace."
+    "description": "Bespoke branded mailers, grazing tables and food content for brands. Past work they list includes a launch-event grazing table, a press cheese grazing runner and pop-up picnics at Fulham Palace.",
+    "more": "Past projects shown on their website include press and influencer brunch boxes for beauty launches, DIY grazing and cheese kits, festive hampers, cheese workshops and a Parisian-style pop-up market stall."
    },
    {
     "name": "Breakfast, brunch & lunch catering",
-    "description": "Pastry, brioche bun and bagel platters, deli pots, yoghurt and granola pots and drinks, ordered through dedicated 'For Office' and 'For Events' menus for breakfast, brunch and lunch."
+    "description": "Pastry, brioche bun and bagel platters, deli pots, yoghurt and granola pots and drinks, ordered through dedicated 'For Office' and 'For Events' menus for breakfast, brunch and lunch.",
+    "more": "The range includes croissant and pastry, Danish pastry and pastel de nata platters, a vegan banana bread and nut butter platter, and demi-brioche bun and mini bagel platters with a choice of fillings. The Croissant & Pastry Platter is listed at 24 portions, and build-your-own brunch and lunch boxes are also offered."
    }
   ],
   "eventTypes": [
@@ -803,7 +1001,113 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "A courtesy call the day before every delivery or collection",
+    "Allergen card and menu included with every platter",
+    "Complimentary crackers with all cheese-based platters",
+    "Vegan cheese platters and gluten-free crackers on the menu",
+    "Hand-delivery Tuesday to Saturday, with timed windows available",
+    "10% off every fifth order for registered customers"
+   ],
+   "howItWorks": [
+    {
+     "title": "Browse online",
+     "text": "Everything they offer is listed on their website, with full prices shown."
+    },
+    {
+     "title": "Build your basket",
+     "text": "Add products to the basket, along with any notes and allergy or dietary requirements. A £130 minimum spend applies for hand-delivery within the M25 and Essex."
+    },
+    {
+     "title": "Choose delivery or collection",
+     "text": "Standard delivery is added at checkout, or you can add a timed delivery slot. Collection from their Romford HQ can be selected instead."
+    },
+    {
+     "title": "Check out and confirm",
+     "text": "Add your date and address, agree to the terms and check out. An order confirmation email follows, and it is worth checking the products, date, slot and dietary details carefully."
+    },
+    {
+     "title": "Confirmation call",
+     "text": "The day before your delivery or collection, the team calls to confirm all the details, and they follow up afterwards to check everything was perfect."
+    },
+    {
+     "title": "Delivery",
+     "text": "Once your order is packed at HQ, an email confirms it is on its way, and their own courier hand-delivers it within your booked slot."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Local delivery runs Tuesday to Saturday. Standard delivery (8am–5pm) is £15; a morning window (8am–12pm) is standard delivery plus £25, an afternoon window (12pm–4pm) is standard delivery plus £5, and a chosen two-hour window between 6am and 4pm is standard delivery plus £55 or £60, depending on the window.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "text": "Deliveries are made strictly to the ground floor (front door, concierge or building reception) or to a loading bay, which must be pre-booked if the building requires it. If there is nowhere safe and legal to unload outside, someone needs to meet the courier.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "text": "The person who placed the order should be there to receive it and check everything on arrival. Missing, incorrect or damaged items must be reported at the point of delivery, with photos, before the order is accepted.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "text": "Delivery details can be changed within a two-hour grace period after booking; after that, the delivery window and address cannot be changed.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "text": "If no one is available and there is no safe place to leave the order, the courier waits up to 10 minutes; re-delivery, where possible, costs £25. Any parking charges the courier has to pay are passed on to the customer.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "text": "Ready-to-eat food is freshly prepared on the day of delivery or collection and is best enjoyed that day. Platters are delicate, must be kept perfectly flat, and anything that needs chilling should go straight into the fridge.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "text": "UK shipping needs a £50 minimum spend.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "text": "Overnight UK shipping, usually by DHL, is available for selected products and arrives Tuesday to Thursday between 8am and 8pm (later in busy periods). The chilled packaging keeps items food-safe for at least 24 hours.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How far in advance should we order?",
+     "a": "As early as possible. They need only 48 hours' notice for last-minute orders, but some days close once they reach capacity, so ordering ahead avoids disappointment.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "q": "Where do they deliver?",
+     "a": "Most of the M25 area and Essex. The full postcode list is on their Delivery Policy page, and you can also check your postcode at checkout. If you are just outside the area, they may be able to help depending on availability, or you can arrange your own courier to collect from their HQ.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "q": "Can we collect the order ourselves?",
+     "a": "Yes. Choose collection at checkout; collections from the Romford HQ run Tuesday to Saturday, 9am–10am, and must be made within the booked slot.",
+     "sourceUrl": "https://grapeandfig.com/pages/delivery"
+    },
+    {
+     "q": "Can we add items after ordering?",
+     "a": "They will always try to fit in last-minute additions, depending on availability, so get in touch as soon as possible. Pantry, drinks and serveware items can also be added to an existing order.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "q": "Should the platter stay in its box?",
+     "a": "Either works. Each platter is arranged on a wooden board that can be lifted out to serve, or it can be kept in its branded box. Several platters lined up together give a grazing-table effect.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "q": "How should cheese platters be served?",
+     "a": "Store them cold but do not serve them cold: take them out of the fridge one to two hours before serving for the best flavour.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    },
+    {
+     "q": "How are allergies and dietary needs handled?",
+     "a": "Add any allergy or dietary requirements at the basket stage. Every platter comes with an allergy notice card and a menu listing the relevant allergens.",
+     "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+    }
+   ]
+  }
  },
  "harry-de-cruz": {
   "slug": "harry-de-cruz",
@@ -819,27 +1123,33 @@
   "services": [
    {
     "name": "Close-up and roaming magic",
-    "description": "Conversational, intimate magic performed right in guests' hands, often with their own belongings, as Harry mingles between groups or gives a mini show at the table."
+    "description": "Conversational, intimate magic performed right in guests' hands, often with their own belongings, as Harry mingles between groups or gives a mini show at the table.",
+    "more": "He pitches it as the chance to see the kind of tricks people are sceptical of on television, up close and in their own hands. The aim is to give guests something to laugh about, talk about and share together."
    },
    {
     "name": "Stage and after-dinner magic",
-    "description": "Interactive stage performances of modern magic, mind reading and British humour, for anything from an intimate private room to a large theatre. He says his stage magic can play to hundreds or thousands of people."
+    "description": "Interactive stage performances of modern magic, mind reading and British humour, for anything from an intimate private room to a large theatre. He says his stage magic can play to hundreds or thousands of people.",
+    "more": "Some routines involve everyone in the room at once, creating a reaction on a scale he says you will not have seen before."
    },
    {
     "name": "Wedding magic",
-    "description": "Magic planned with each couple. Common slots are the drinks reception, table to table between courses at the wedding breakfast, the turnover before evening guests arrive, and the evening reception."
+    "description": "Magic planned with each couple. Common slots are the drinks reception, table to table between courses at the wedding breakfast, the turnover before evening guests arrive, and the evening reception.",
+    "more": "Between courses at the wedding breakfast, his table-to-table sets are designed as an ice-breaker and talking point for each table. At the evening reception he mixes and mingles between groups to round off the day."
    },
    {
     "name": "Event hosting and compèring",
-    "description": "Hosting and compèring an event to keep it moving and the energy up, with magic and mind reading placed in the transitions between parts of the programme."
+    "description": "Hosting and compèring an event to keep it moving and the energy up, with magic and mind reading placed in the transitions between parts of the programme.",
+    "more": "He describes his hosting as reliable, relaxed and captivating: he keeps the event moving, makes each transition feel effortless and brings the room together."
    },
    {
     "name": "Parlour show",
-    "description": "An intimate, interactive show of magic and mind reading for small to medium groups, designed for a living room or private dining room."
+    "description": "An intimate, interactive show of magic and mind reading for small to medium groups, designed for a living room or private dining room.",
+    "more": "It is designed for friends, family or colleagues gathered in one room, and the audience is involved throughout."
    },
    {
     "name": "Bespoke brand magic",
-    "description": "Custom magic built around a client's brand, campaign, message, slogan or product, drawing on his behind-the-scenes work as a magic consultant, writer and creator."
+    "description": "Custom magic built around a client's brand, campaign, message, slogan or product, drawing on his behind-the-scenes work as a magic consultant, writer and creator.",
+    "more": "Behind the scenes he has created, written and directed magic for internationally recognised performers, major West End productions and global brand campaigns. He brings that experience to original pieces designed for a specific event, audience or brand."
    }
   ],
   "eventTypes": [
@@ -1077,7 +1387,67 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Free coffee or Zoom meeting, with magic, before you book",
+    "Magic credits on Oliver!, Groundhog Day and Back to the Future",
+    "Consulted on Unbelievable's 2024 Royal Variety Performance appearance",
+    "Britain's Got Talent magic consultant for various acts, 2012–2021",
+    "Has created magic for global brand campaigns",
+    "Has performed in almost every kind of room, even funerals"
+   ],
+   "howItWorks": [
+    {
+     "title": "Check availability",
+     "text": "Get in touch through the enquiry form on his website to find out whether he is free on your date and to ask any questions."
+    },
+    {
+     "title": "Meet Harry",
+     "text": "If you would like to meet him first, he offers a free coffee or Zoom call and will show you some magic."
+    },
+    {
+     "title": "Plan the timing",
+     "text": "He works with you to find the best time and place for magic at your event. For weddings, he builds a plan with the couple around their day."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "He shapes each performance around the audience, the space and the style of the event.",
+     "sourceUrl": "https://www.harrydecruz.com/"
+    },
+    {
+     "text": "At weddings, the drinks-reception set is designed to keep guests entertained while the photographs are being taken.",
+     "sourceUrl": "https://www.harrydecruz.com/weddings"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Where will he perform?",
+     "a": "Anywhere you like. He is based between London and New York and is available worldwide.",
+     "sourceUrl": "https://www.harrydecruz.com/magic"
+    },
+    {
+     "q": "Why book a magician?",
+     "a": "He says the answer depends on the event. Magic can break the ice for a group of people who have not met before, or be a surprise addition to a dinner party, and either way it gives everyone a shared experience of wonder.",
+     "sourceUrl": "https://www.harrydecruz.com/magic"
+    },
+    {
+     "q": "How large an audience can he perform for?",
+     "a": "His parlour show is designed for small to medium groups in a living room or private dining room. His stage magic suits audiences of hundreds or thousands and can be scaled to fit any size of stage or theatre.",
+     "sourceUrl": "https://www.harrydecruz.com/magic"
+    },
+    {
+     "q": "What is 'the turnover' at a wedding?",
+     "a": "It is the gap between the wedding meal and the evening guests arriving. He suggests using it to keep the energy going into the evening and to welcome new arrivals with a surprise.",
+     "sourceUrl": "https://www.harrydecruz.com/weddings"
+    },
+    {
+     "q": "Will he tell us how the tricks work?",
+     "a": "He follows the saying that magicians keep secrets for you, not from you. If you ask very nicely, he might explain one or two tricks, as long as you do not tell anyone.",
+     "sourceUrl": "https://www.harrydecruz.com/magic"
+    }
+   ]
+  }
  },
  "jamie-roche": {
   "slug": "jamie-roche",
@@ -1099,7 +1469,8 @@
    },
    {
     "name": "Folk and acoustic covers",
-    "description": "His filmed repertoire includes Eric Bogle's 'The Green Fields of France', Ray LaMontagne's 'Such a Simple Thing', Chris Isaak's 'Wicked Game' and Fleetwood Mac's 'Dreams'. No fixed set list is published."
+    "description": "His filmed repertoire includes Eric Bogle's 'The Green Fields of France', Ray LaMontagne's 'Such a Simple Thing', Chris Isaak's 'Wicked Game' and Fleetwood Mac's 'Dreams'. No fixed set list is published.",
+    "more": "His channel also includes a cover of Gregory Alan Isakov's 'Amsterdam'."
    }
   ],
   "eventTypes": [],
@@ -1147,6 +1518,14 @@
    {
     "label": "Jamie Roche — Dreams, Victoria Park, Hackney (YouTube)",
     "url": "https://www.youtube.com/watch?v=oh9KSH-2DmU"
+   },
+   {
+    "label": "Jamie Roche — Amsterdam, Gregory Alan Isakov cover (YouTube)",
+    "url": "https://www.youtube.com/watch?v=jVrJUBJm75w"
+   },
+   {
+    "label": "Jamie Roche — Purple Rain, The O2 Arena (YouTube)",
+    "url": "https://www.youtube.com/watch?v=W4Rj_JX_1-8"
    }
   ],
   "gaps": [
@@ -1294,7 +1673,28 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Sings and plays guitar in his filmed live performances",
+    "Repertoire spans his own songs, folk songs and well-known covers",
+    "Filmed live in London churches, studios and Victoria Park",
+    "Latest single, 'Play The Fool', released in October 2026"
+   ],
+   "howItWorks": [],
+   "goodToKnow": [],
+   "faqs": [
+    {
+     "q": "Does he perform his own songs?",
+     "a": "Yes. His live video of his single 'The Tide' credits him on guitar and vocals, with the lyrics written by Jamie Roche and Luke Carey.",
+     "sourceUrl": "https://www.youtube.com/watch?v=Q8CHA6G6Abg"
+    },
+    {
+     "q": "Can we hear him before enquiring?",
+     "a": "Yes. His YouTube channel has live performance videos, including his cover of Chris Isaak's 'Wicked Game', recorded at Sixty Sixty Sounds on Denmark Street in Soho.",
+     "sourceUrl": "https://www.youtube.com/watch?v=aW_3BWmWTkI"
+    }
+   ]
+  }
  },
  "lucy-jane-cakes": {
   "slug": "lucy-jane-cakes",
@@ -1313,11 +1713,13 @@
    },
    {
     "name": "Heart cakes",
-    "description": "A TikTok video captioned 'ALL THE PINKS' and tagged #heartcake has a cover showing a two-tier smooth pink cake on a turntable. The caption credits the toppers to an outside supplier."
+    "description": "A TikTok video captioned 'ALL THE PINKS' and tagged #heartcake has a cover showing a two-tier smooth pink cake on a turntable. The caption credits the toppers to an outside supplier.",
+    "more": "The 'ALL THE PINKS' video was posted in September 2024 and credits the cake board to @OLBAA as well as the toppers to @LissieLou."
    },
    {
     "name": "Themed and character cakes",
-    "description": "Her videos show themed and character designs. Examples are a red and blue Spider-Man buttercream cake posted in May 2024 and a cowgirl cake with disco-ball decorations from March 2025."
+    "description": "Her videos show themed and character designs. Examples are a red and blue Spider-Man buttercream cake posted in May 2024 and a cowgirl cake with disco-ball decorations from March 2025.",
+    "more": "Other themed designs on her TikTok include a 'Rainbows and unicorns' cake posted in September 2023 and tagged #cakepiping and #cakedecorating."
    },
    {
     "name": "Photo cakes",
@@ -1523,7 +1925,41 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Buttercream specialist, selling cakes professionally since 2016",
+    "Orders taken by Instagram message",
+    "Featured in PEOPLE in 2025 for her own wedding cakes"
+   ],
+   "howItWorks": [],
+   "goodToKnow": [
+    {
+     "text": "Orders are placed by sending a message on Instagram to @lucy_jane_cakes, as the business's TikTok bio directs.",
+     "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+    },
+    {
+     "text": "Some designs use cake boards and toppers from outside suppliers, which are credited in the video captions.",
+     "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How do we order a cake?",
+     "a": "By sending a message on Instagram. The TikTok bio says 'Message on Instagram for orders' and links to the @lucy_jane_cakes Instagram account.",
+     "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+    },
+    {
+     "q": "Where is Lucy Jane Cakes based?",
+     "a": "The TikTok bio gives the location as London.",
+     "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+    },
+    {
+     "q": "Does she make photo cakes?",
+     "a": "Photo cakes are among the designs she shows. She has posted a how-to video on making one, naming the piping nozzles she used.",
+     "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511"
+    }
+   ]
+  }
  },
  "magpie-catering": {
   "slug": "magpie-catering",
@@ -1539,27 +1975,33 @@
   "services": [
    {
     "name": "Wedding catering",
-    "description": "Personalised menus from canapés and a three-course sit-down meal to evening buffets, with glassware, tableware and linen options, a menu tasting and full event management. Themes range from English country garden to modern contemporary."
+    "description": "Personalised menus from canapés and a three-course sit-down meal to evening buffets, with glassware, tableware and linen options, a menu tasting and full event management. Themes range from English country garden to modern contemporary.",
+    "more": "Wedding menus include a pre-ordered choice for guests, a children's menu at a reduced rate and full laying up of the room or marquee, down to name cards, candles and petals. Evening food runs from a lay-and-leave cheese and pâté counter to bagel, street-food, deli and BBQ menus."
    },
    {
     "name": "Corporate event catering",
-    "description": "Catering for meetings, working lunches, gala balls, product launches, AGMs and client entertaining, from delivered finger buffets to canapé receptions, bowl food and seated meals, with help on planning and logistics."
+    "description": "Catering for meetings, working lunches, gala balls, product launches, AGMs and client entertaining, from delivered finger buffets to canapé receptions, bowl food and seated meals, with help on planning and logistics.",
+    "more": "Corporate finger-buffet menus include a Healthy Finger Menu and a gluten- and dairy-free menu, with front-of-house staff available if required. Hog roasts are also among the corporate formats."
    },
    {
     "name": "Seated meals and gala dinners",
-    "description": "Bespoke three-course seated menus for summer balls, gala and corporate dinners, with a canapé selection, gluten- and dairy-free alternatives, a personal events manager, waiting staff and a full kitchen team."
+    "description": "Bespoke three-course seated menus for summer balls, gala and corporate dinners, with a canapé selection, gluten- and dairy-free alternatives, a personal events manager, waiting staff and a full kitchen team.",
+    "more": "Guests pre-order from two starters, three mains and two desserts (or one trio of desserts) across Menu Options A, B and C. Option C's fillet steak main is listed '@ £4.00 per person extra', and pricing is based on events of 60 guests, with a bespoke quotation for numbers above or below."
    },
    {
     "name": "Canapés and bowl food",
-    "description": "Hot and cold canapés and sweet finger desserts, cooked by a personal chef and served by uniformed staff, plus bowl food for standing receptions, from meat and fish to vegetarian dishes and desserts."
+    "description": "Hot and cold canapés and sweet finger desserts, cooked by a personal chef and served by uniformed staff, plus bowl food for standing receptions, from meat and fish to vegetarian dishes and desserts.",
+    "more": "Bowl food lets standing guests mingle as they would at a canapé reception while still having a satisfying meal, and Magpie is happy to talk through the concept to help choose a menu."
    },
    {
     "name": "BBQs and Turkish mezze",
-    "description": "BBQ menus, British-themed to Mediterranean, cooked in view of guests, with options including a burger station and Turkish shish station, plus a Turkish-inspired mezze menu of sharing boards, shish and baklava."
+    "description": "BBQ menus, British-themed to Mediterranean, cooked in view of guests, with options including a burger station and Turkish shish station, plus a Turkish-inspired mezze menu of sharing boards, shish and baklava.",
+    "more": "BBQ meat comes from a local supplier, and sharing starter boards, antipasti and a children's BBQ menu are among the options; a luxury cheese platter is available at an additional charge. The mezze menu includes a vegetable moussaka as its vegetarian main."
    },
    {
     "name": "Private dining and celebrations",
-    "description": "Private dinner parties at home for six or more, with a personal chef and one of their waiting staff, plus menus for birthdays, anniversaries, reunions and garden parties in a home, marquee or hired venue."
+    "description": "Private dinner parties at home for six or more, with a personal chef and one of their waiting staff, plus menus for birthdays, anniversaries, reunions and garden parties in a home, marquee or hired venue.",
+    "more": "For dinner parties, an executive chef first advises on exact requirements for the evening. For other celebrations, Magpie can advise which food style suits the occasion, from cocktail parties to hog roasts, and help with plans and logistics."
    }
   ],
   "eventTypes": [
@@ -1617,6 +2059,34 @@
    {
     "label": "Magpie Catering — BBQ Menus",
     "url": "https://www.magpiecatering.com/menus/bbqs/"
+   },
+   {
+    "label": "Magpie Catering — Wedding Menus",
+    "url": "https://www.magpiecatering.com/menus/weddings/"
+   },
+   {
+    "label": "Magpie Catering — Seated Menus",
+    "url": "https://www.magpiecatering.com/menus/seated-menus/"
+   },
+   {
+    "label": "Magpie Catering — Finger Buffets",
+    "url": "https://www.magpiecatering.com/menus/finger-buffets/"
+   },
+   {
+    "label": "Magpie Catering — Corporate Finger Buffets & Lunches",
+    "url": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+   },
+   {
+    "label": "Magpie Catering — Bowl Food",
+    "url": "https://www.magpiecatering.com/menus/bowl-food/"
+   },
+   {
+    "label": "Magpie Catering — Mezze",
+    "url": "https://www.magpiecatering.com/menus/mezze/"
+   },
+   {
+    "label": "Magpie Catering — Funerals",
+    "url": "https://www.magpiecatering.com/funerals/"
    }
   ],
   "gaps": [
@@ -1792,7 +2262,109 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Free wedding menu tasting for the couple at weddings over 60 guests",
+    "Delivered finger buffets from a minimum order of 15 guests",
+    "Free delivery within 7 miles of their Hastingwood kitchens",
+    "Seated menus designed to work from dinner parties to 2,000-guest balls",
+    "Halal, organic and dairy-free options provided on request",
+    "Meals for photographers, bands and DJs can be added"
+   ],
+   "howItWorks": [
+    {
+     "title": "Share your brief",
+     "text": "Tell Magpie your exact requirements and menu preferences, and they will put together a quotation based on your event's details."
+    },
+    {
+     "title": "Taste the menu",
+     "text": "For weddings, the chosen three-course menu is cooked in full for the couple at Magpie's catering studio in Hastingwood, so presentation, portion size and equipment can be agreed early."
+    },
+    {
+     "title": "Secure the booking",
+     "text": "A 25% non-refundable deposit secures a delivered finger buffet. After a wedding tasting, the deposit falls due two weeks after the tasting date."
+    },
+    {
+     "title": "Confirm final numbers",
+     "text": "For finger buffets, the balance and final guest numbers are due by BACS two weeks before the event."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Delivery is free within 7 miles of Magpie's kitchens; beyond that it is charged at 85p per mile.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+    },
+    {
+     "text": "Delivered buffets arrive garnished on disposable black platters, with matching black plates and napkins offered '@ 35p'. China, wood and slate platters with china plates carry a 50p per person supplement plus an 85p-per-mile round-trip collection charge, and the client is responsible for hired equipment when Magpie's staff are not on site.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+    },
+    {
+     "text": "When staff are booked, china, wood and slate platters and china plates are included. Waiting and drinks staff are charged at £12.50 p/h and wear white shirts, black bistro aprons, black ties and black trousers with name badges.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+    },
+    {
+     "text": "Food temperatures are logged when deliveries leave the unit and when they arrive, and Magpie recommends delivered food is not left out for more than 3.5 hours.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+    },
+    {
+     "text": "Wedding menu pricing is based on events of over 40 guests, with a bespoke quotation for smaller numbers.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "text": "Wedding menus exclude linen, cooking equipment (for 100 guests or under: two six-burner gas ovens with gas, an electric urn and a deep fat fryer), a cake stand and knife, wine coolers, table number stands, drinks fridges, ice and after-dinner bar service. Linen and bar service can be quoted on request.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "text": "New corporate clients settle their first invoice before the event; after that, payment is due by BACS seven days after the invoice date.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+    },
+    {
+     "text": "All prices in Magpie's brochure are subject to VAT at the current rate.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+    },
+    {
+     "text": "Menus may be amended at the last minute, subject to availability.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "What is the minimum order for a delivered buffet?",
+     "a": "Delivered finger buffets have a minimum order of 15 guests. They arrive freshly prepared, garnished and ready to serve.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+    },
+    {
+     "q": "How much notice does a corporate lunch need?",
+     "a": "Magpie asks for three working days' notice but says it will always try to accommodate a last-minute order. Changes or cancellations must be emailed and phoned through before 10am the morning before, or the order is charged in full. The minimum order is £42.50.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+    },
+    {
+     "q": "Can they cater for dietary requirements?",
+     "a": "Yes. Wedding menus include a dietary/allergen option, for example gluten-free, dairy-free, nut-free or for lactose intolerance, and Magpie asks to be told if halal, organic or dairy-free food is needed. Allergen information is available on request.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "q": "Can we taste the wedding menu first?",
+     "a": "Yes. Magpie offers a free full tasting of the chosen menu at its catering studio in Hastingwood. It is complimentary for the couple at weddings over 60 guests, with a charge for extra guests, and a per-person charge plus VAT applies if the booking is not confirmed afterwards.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "q": "Is drinks service included at a wedding?",
+     "a": "Wedding menus include glassware and beverage staff for the reception drinks and the meal, up to the speeches. After-dinner drinks service and bar equipment can be quoted separately.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "q": "Can they feed our other suppliers?",
+     "a": "Yes. Supplier meal options are available for photographers, videographers, bands, DJs and similar.",
+     "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+    },
+    {
+     "q": "Can they cater a funeral at short notice?",
+     "a": "Yes. Magpie says it is readily available at short notice for funerals, with menus designed for these occasions, and can also arrange drinks and drinks service, glassware, linen and setting up and clearing the hall.",
+     "sourceUrl": "https://www.magpiecatering.com/funerals/"
+    }
+   ]
+  }
  },
  "meatstop": {
   "slug": "meatstop",
@@ -1811,7 +2383,8 @@
    },
    {
     "name": "Prepped DIY Kit",
-    "description": "Listed on the catering page under the 3 Meats & 3 Salads Collection as a prepped DIY kit option, published as 'Prepped DIY Kit from £22.95pp (min. 10x)'."
+    "description": "Listed on the catering page under the 3 Meats & 3 Salads Collection as a prepped DIY kit option, published as 'Prepped DIY Kit from £22.95pp (min. 10x)'.",
+    "more": "The catering enquiry form lists 'BBQ Kit' as its own service option, alongside in-home, event and corporate catering."
    },
    {
     "name": "The Signature Collection",
@@ -1819,11 +2392,13 @@
    },
    {
     "name": "Burger and BBQ event catering",
-    "description": "Burger and BBQ catering across Essex, 'from weddings, to corporate, to a good old party'. Hosts fill in the enquiry form on the catering page and are invited to get in touch for an accurate quote."
+    "description": "Burger and BBQ catering across Essex, 'from weddings, to corporate, to a good old party'. Hosts fill in the enquiry form on the catering page and are invited to get in touch for an accurate quote.",
+    "more": "On its supplier profile, Meat Stop says its event food is built on dry-aged beef, house-made sauces and locally baked brioche buns. It describes a professional set-up for corporate events, works with couples on wedding receptions, and uses a compact, high-output set-up for festivals and pop-ups."
    },
    {
     "name": "Dry-aged beef burgers in London",
-    "description": "Burger menu at The Commercial Tavern, Shoreditch, and Hand of Glory, Dalston, including the Original Nutta, Blue Magic and Car Boot, with potato 'skins', a 12–3pm lunch deal and meat-free patty options."
+    "description": "Burger menu at The Commercial Tavern, Shoreditch, and Hand of Glory, Dalston, including the Original Nutta, Blue Magic and Car Boot, with potato 'skins', a 12–3pm lunch deal and meat-free patty options.",
+    "more": "The 2026 menu lists triple-cooked 'skins' (crushed baby potatoes) at 4 / 6 plain with Maldon salt, or 5.5 / 8.5 with garlic butter and parmesan or aioli and chimichurri, plus dips at 1.5. Burgers can be customised with an extra patty (+3), bacon (+1.5), cheese (+1) or extra spice (+1), and the 12–3pm lunch deal adds a side of skins for +2."
    }
   ],
   "eventTypes": [
@@ -2083,7 +2658,79 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Catered BBQ published at £32.95pp, for at least 40 guests",
+    "Prepped DIY BBQ kit from £22.95pp, minimum of 10",
+    "Signature burgers, fries and halloumi fries from £12.00pp",
+    "Essex-farmed dry-aged beef, ground fresh daily",
+    "Made-from-scratch spiced bean patty on its restaurant menu"
+   ],
+   "howItWorks": [
+    {
+     "title": "Send an enquiry",
+     "text": "Fill in the enquiry form on the catering page, choosing from in-home, event, corporate, BBQ kit or other services, and add a message about the event."
+    },
+    {
+     "title": "Get an accurate quote",
+     "text": "Meat Stop says it will be in touch shortly after an enquiry with an accurate quote for the event."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Published minimum numbers apply: at least 40 guests for the catered BBQ and at least 10 for the prepped DIY kit. No minimum is stated for the Signature Collection.",
+     "sourceUrl": "https://www.meatstop.co.uk/catering"
+    },
+    {
+     "text": "Catering prices are published per head, and the business asks hosts to get in touch for an accurate quote for their event. The enquiry form also asks about budget.",
+     "sourceUrl": "https://www.meatstop.co.uk/catering"
+    },
+    {
+     "text": "The restaurant menu includes a made-from-scratch spiced bean patty, and any burger can be swapped to a fermented vegetable patty from Symplicity for +1. The catering menus do not say whether these are offered at events, so it is worth asking when enquiring.",
+     "sourceUrl": "https://www.meatstop.co.uk/"
+    },
+    {
+     "text": "For festivals, food markets and pop-ups, Meat Stop describes its set-up as compact and high-output, built to serve consistently in the busiest environments.",
+     "sourceUrl": "https://www.addtoevent.co.uk/suppliers/meatstop"
+    },
+    {
+     "text": "For corporate catering, such as lunches, client events and team celebrations, the business says it provides a professional set-up and swift, seamless service.",
+     "sourceUrl": "https://www.addtoevent.co.uk/suppliers/meatstop"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Is there a minimum number of guests?",
+     "a": "For the catered 3 Meats & 3 Salads BBQ, the published minimum is 40 guests; the prepped DIY kit starts at 10. The Signature Collection lists a per-head price without a stated minimum.",
+     "sourceUrl": "https://www.meatstop.co.uk/catering"
+    },
+    {
+     "q": "Where does the beef come from?",
+     "a": "Meat Stop says its beef is dry-aged, farmed locally in Essex and ground fresh daily.",
+     "sourceUrl": "https://www.meatstop.co.uk/s/Meat-Stop-Menu-2026-web.pdf"
+    },
+    {
+     "q": "Are there vegetarian options?",
+     "a": "The restaurant menu offers a spiced bean patty made from scratch, which the business says is 'not a token veggie option', and a fermented vegetable patty swap for any burger. The catering page does not say whether these are available for events.",
+     "sourceUrl": "https://www.meatstop.co.uk/"
+    },
+    {
+     "q": "Which areas do you cater?",
+     "a": "Meat Stop says it is active across Essex, including Colchester, Chelmsford, Southend, Braintree, Clacton, Harlow, Leigh-on-Sea, Thurrock, Basildon, Billericay, Epping and Maldon, and many surrounding areas.",
+     "sourceUrl": "https://www.meatstop.co.uk/catering"
+    },
+    {
+     "q": "Can the catering be tailored for a wedding?",
+     "a": "On its supplier profile, Meat Stop says it works with couples to customise the experience for wedding receptions.",
+     "sourceUrl": "https://www.addtoevent.co.uk/suppliers/meatstop"
+    },
+    {
+     "q": "How do we get a price for our event?",
+     "a": "Fill in the enquiry form on the catering page with details of the event, and the business will be in touch with an accurate quote.",
+     "sourceUrl": "https://www.meatstop.co.uk/catering"
+    }
+   ]
+  }
  },
  "natalie-max": {
   "slug": "natalie-max",
@@ -2098,27 +2745,33 @@
   "services": [
    {
     "name": "Wedding photography",
-    "description": "Full-day photography from prep to party with one photographer, including a one-to-one consultation, a customised wedding-day timeline, edited images, printed and mounted photographs and an online gallery with free downloads."
+    "description": "Full-day photography from prep to party with one photographer, including a one-to-one consultation, a customised wedding-day timeline, edited images, printed and mounted photographs and an online gallery with free downloads.",
+    "more": "Their collections page lists the Photo Collection at £2300, with one photographer covering the day from prep to party, five complimentary printed and mounted photographs and travel within a 30-mile radius. The one-to-one consultation can be held at their office or online."
    },
    {
     "name": "Wedding videography",
-    "description": "Full-day filming with one videographer and professional audio recording, producing a highlight film of five to ten minutes that couples can access and share online."
+    "description": "Full-day filming with one videographer and professional audio recording, producing a highlight film of five to ten minutes that couples can access and share online.",
+    "more": "Their collections page lists the Films Collection at £2200, covering the day from prep to party with one videographer. It includes a one-to-one consultation online or at their office and travel within a 30-mile radius."
    },
    {
     "name": "Signature Collections (photo and film)",
-    "description": "One photographer and one videographer cover the whole day, discounted for booking both together. The Signature Collection Plus adds drone coverage and a 'movie style' feature film of up to 90 minutes."
+    "description": "One photographer and one videographer cover the whole day, discounted for booking both together. The Signature Collection Plus adds drone coverage and a 'movie style' feature film of up to 90 minutes.",
+    "more": "Their collections page describes the Signature Collections as their most popular collections. Both include a highlight video of five to ten minutes, ten complimentary printed photographs and travel within a 30-mile radius."
    },
    {
     "name": "Destination weddings",
-    "description": "They photograph and film weddings abroad as well as in the UK, listing the Algarve, the South of France, the Greek Islands, Italy, Sicily, Spain, Thailand and America among their destinations."
+    "description": "They photograph and film weddings abroad as well as in the UK, listing the Algarve, the South of France, the Greek Islands, Italy, Sicily, Spain, Thailand and America among their destinations.",
+    "more": "Their portfolio features destination weddings at venues including Domaine d'Essendiéras and Chateau Lacanaud in France, Castillo de Viñuelas in Spain, Torre San Marco on Lake Garda and VidaMar in the Algarve. They say they take only a limited number of weddings each year so that every couple gets their undivided attention."
    },
    {
     "name": "Wedding albums",
-    "description": "Four styles: The Frame, which fits inside a photo frame; The Flush, in materials such as leather or linen; The Mounted, with ivory mounts; and The Signature, a digital album that plays the wedding video."
+    "description": "Four styles: The Frame, which fits inside a photo frame; The Flush, in materials such as leather or linen; The Mounted, with ivory mounts; and The Signature, a digital album that plays the wedding video.",
+    "more": "The Frame, their most popular album, comes in landscape, portrait or square formats in four sizes and can hold anywhere from 40 to 400 photos. The Flush comes in six sizes with a rounded or square spine and an embossed, photo or plain cover, while The Mounted is recommended for 100 to 200 photographs. Their extras list a photo album at £550, and parent albums can be added when ordering."
    },
    {
     "name": "Engagement shoots and extras",
-    "description": "Add-ons include engagement or 'trash the dress' shoots on photo or film, an additional photographer, drone footage, a feature film of up to 90 minutes, and full-length ceremony, speeches and first-dance films."
+    "description": "Add-ons include engagement or 'trash the dress' shoots on photo or film, an additional photographer, drone footage, a feature film of up to 90 minutes, and full-length ceremony, speeches and first-dance films.",
+    "more": "Their collections page lists extras including an additional photographer, drone footage, an engagement shoot and a longer feature film; ask the business for current prices."
    }
   ],
   "eventTypes": [
@@ -2180,6 +2833,26 @@
    {
     "label": "Natalie & Max — Algarve site",
     "url": "https://www.natalieandmaxphotofilms.com/"
+   },
+   {
+    "label": "Natalie & Max — Contact",
+    "url": "https://www.natalieandmax.co.uk/contact/"
+   },
+   {
+    "label": "Natalie & Max — Albums",
+    "url": "https://www.natalieandmax.co.uk/albums/"
+   },
+   {
+    "label": "Natalie & Max — The Frame album",
+    "url": "https://www.natalieandmax.co.uk/the-frame-wedding-album/"
+   },
+   {
+    "label": "Natalie & Max — The Flush album",
+    "url": "https://www.natalieandmax.co.uk/the-flush-wedding-album/"
+   },
+   {
+    "label": "Natalie & Max — The Mounted album",
+    "url": "https://www.natalieandmax.co.uk/the-mounted-wedding-album/"
    }
   ],
   "gaps": [
@@ -2385,7 +3058,113 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Prep-to-party coverage, with no fixed hourly time limit",
+    "Photo and film together, discounted in Signature Collections",
+    "Signature Collections include ten complimentary printed photographs",
+    "Destination collections include flights up to £120 per person",
+    "Enquiries answered within 24 hours, by form or video call",
+    "Suitable replacement provided if either cannot attend through illness"
+   ],
+   "howItWorks": [
+    {
+     "title": "Check the date",
+     "text": "Couples get in touch through the contact form or by arranging a video call to check availability and hear about the collections. Natalie and Max aim to reply within 24 hours."
+    },
+    {
+     "title": "Get to know each other",
+     "text": "Once the date is confirmed as free, they arrange a phone call or a catch-up by email to make sure they are a good fit for the couple."
+    },
+    {
+     "title": "Secure the date",
+     "text": "A 30% deposit secures the booking. Couples then receive confirmation of the booking and a wedding guide to help with planning."
+    },
+    {
+     "title": "Share the plans",
+     "text": "Closer to the day, after meeting their venue or planner, couples complete an online booking form that feeds into a pre-wedding meeting. It is the moment to share any Pinterest ideas."
+    },
+    {
+     "title": "The wedding day",
+     "text": "They photograph and film until the coverage ends, and check they have captured everything the couple wants before joining them at the bar at the end of the night."
+    },
+    {
+     "title": "Gallery and films",
+     "text": "Couples usually receive a sneak peek or two first, then the full-resolution photos and the films arrive in a private online gallery."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "After the deposit, the remaining balance is invoiced in two equal instalments, and the final payment is due no later than 45 days before the wedding.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "If a couple moves their date after paying the deposit and Natalie and Max are free on the new date, a further fee equal to 30% of the package price applies. If they are already booked on the new date, the change is treated as a cancellation.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "For destination weddings, flights of up to £120 per person are included, based on travelling the day before and returning the day after; the couple pays any difference. Where a venue abroad is hard to reach by public transport, the couple covers car hire, while the duo cover their own accommodation in the UK and EU unless agreed otherwise in writing.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "They ask to be the only professional photographer and videographer at the wedding, unless another arrangement is agreed with them in writing beforehand.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "Couples confirm that they and their guests can be photographed and filmed, and should raise any concerns as early as possible.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "Natalie and Max keep the copyright and may use wedding images and films for promotion. Couples can print and share their photos and films for personal use, but commercial use needs written agreement in advance.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "text": "Consultations take place at their office or online, and the photo and Signature collections include a customised wedding-day timeline. UK collections include travel within a 30-mile radius.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+    },
+    {
+     "text": "Albums can be ordered with a 10% deposit. After ordering, couples pick their photos through a link and approve a page-by-page layout before the album goes to print.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/the-frame-wedding-album/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How does booking work?",
+     "a": "First they check the date is still free, then they get to know the couple by phone or email. Once both sides agree it is a good fit, they send the details for securing the date with a 30% deposit, followed by a booking confirmation and a wedding guide.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+    },
+    {
+     "q": "When is the balance due?",
+     "a": "The balance after the deposit is split into two equal instalments, and the final one must be paid no later than 45 days before the wedding. Deposits and instalments are non-refundable if the couple cancels.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "q": "What happens if we need to change our wedding date?",
+     "a": "They will try to accommodate the new date. If they are free, an extra fee equal to 30% of the package price secures it; if they already have a booking that day, the change counts as a cancellation.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "q": "What if the photographer or videographer is ill on the day?",
+     "a": "Their terms say that if either cannot attend through illness or other unforeseen circumstances, they will provide a suitable replacement.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "q": "Can another photographer or videographer work at our wedding too?",
+     "a": "Their terms ask to be the only professional photographer and videographer present, unless agreed with them in writing before the wedding, so any other media professionals should be discussed in advance.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    },
+    {
+     "q": "We're not confident in front of the camera. Does that matter?",
+     "a": "They say most couples feel the same and expect a few awkward minutes at first, and they guide couples through it. They recommend an engagement session as a chance to get comfortable before the wedding, and suggest booking the hair and make-up trial for the same day.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+    },
+    {
+     "q": "How will we receive our photos and films?",
+     "a": "Everything is uploaded to a password-protected private gallery that the couple and their guests can view, and the password is shared once the upload is complete. Couples can ask for any photos or footage to be removed from the online gallery.",
+     "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+    }
+   ]
+  }
  },
  "ozzy-stix": {
   "slug": "ozzy-stix",
@@ -2401,7 +3180,8 @@
   "services": [
    {
     "name": "Acoustic performance",
-    "description": "Live acoustic sets built around vocals and guitar, with both members also playing bongos and percussion. They can be booked on their own or alongside a party set."
+    "description": "Live acoustic sets built around vocals and guitar, with both members also playing bongos and percussion. They can be booked on their own or alongside a party set.",
+    "more": "A repertoire list is available on request. Their Videos page includes performances of 'PYT' and 'Let's Stay Together' and a summer 2018 recap."
    },
    {
     "name": "Party set",
@@ -2409,19 +3189,23 @@
    },
    {
     "name": "DJ Live Experience",
-    "description": "Both members DJ, and they describe their DJ Live Experience as a way to supercharge a party. They say they are comfortable with Jewish dancing, Bhangra and other genres that come up at weddings."
+    "description": "Both members DJ, and they describe their DJ Live Experience as a way to supercharge a party. They say they are comfortable with Jewish dancing, Bhangra and other genres that come up at weddings.",
+    "more": "The #MADE page presents it as a 'carefully curated' way to supercharge a party, alongside the option to add a sax, violin or trumpet."
    },
    {
     "name": "#MADE additional performers",
-    "description": "Through #MADE, clients can add a sax, violin or trumpet 'to design your perfect combination of performers'. Their FAQ says further musicians and singers are available from their own books."
+    "description": "Through #MADE, clients can add a sax, violin or trumpet 'to design your perfect combination of performers'. Their FAQ says further musicians and singers are available from their own books.",
+    "more": "The FAQ says they have some of the best musicians and singers on their books, and that whatever line-up a client has in mind, they can make it happen."
    },
    {
     "name": "Ceremony-to-party music",
-    "description": "Music and entertainment from the ceremony through to the full party. They will also learn specific songs within reason, asking for at least six weeks' notice for a first dance or ceremony song."
+    "description": "Music and entertainment from the ceremony through to the full party. They will also learn specific songs within reason, asking for at least six weeks' notice for a first dance or ceremony song.",
+    "more": "They invite clients to ask about anything they have in mind for the day, from the ceremony to the full party."
    },
    {
     "name": "Overseas performances",
-    "description": "They will travel abroad to perform at events. The client pays flights, accommodation, transfers and other trip costs on top of the performance fee."
+    "description": "They will travel abroad to perform at events. The client pays flights, accommodation, transfers and other trip costs on top of the performance fee.",
+    "more": "The duo says it has performed at events abroad before and loves travelling overseas for them."
    }
   ],
   "eventTypes": [
@@ -2477,6 +3261,10 @@
    {
     "label": "Mike Savory (wedding videographer, third-party) — Ozzy and Stix",
     "url": "https://mikesavory.co.uk/ozzy-and-stix/"
+   },
+   {
+    "label": "Ozzy&Stix — Videos",
+    "url": "https://www.ozzyandstix.com/videos"
    }
   ],
   "gaps": [
@@ -2634,7 +3422,98 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Live vocals, guitar and percussion, plus DJ sets from the same duo",
+    "Music from the ceremony right through to the party",
+    "Sax, violin or trumpet can be added to the line-up",
+    "First-dance songs learned with at least six weeks' notice",
+    "PAT test and public liability documents emailed on request",
+    "A few public gigs each year, with dates posted on Instagram"
+   ],
+   "howItWorks": [
+    {
+     "title": "Send your event details",
+     "text": "Share as much as possible about the event: the venue and location, performance times, room or marquee size, guest numbers, and whether the venue has a sound limiter or a built-in sound system."
+    },
+    {
+     "title": "Receive a tailored quote",
+     "text": "No two bookings are the same, so the duo prices each event from the details provided."
+    },
+    {
+     "title": "Secure the date",
+     "text": "Once the booking is confirmed, a non-refundable deposit is expected within 30 days; otherwise the date may go to another client."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "When quoting, the duo needs to know if the venue has a sound limiter and whether it has a built-in sound system.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "text": "Bookings are secured with a non-refundable deposit, due within 30 days of the booking being confirmed. The FAQ and Book Now pages state different deposit percentages, so confirm the figure when booking.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "text": "Their summers are full of events, so new songs for a first dance or ceremony need at least six weeks' notice.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "text": "Lighting is not provided at present, though they may be able to suggest a supplier near the venue.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "text": "For events abroad, the client covers flights, accommodation, transfers and other trip costs on top of the performance fee.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "text": "The contact page lists hours of Monday to Friday 9am–6pm and Saturday 10am–7pm, and closed on Sundays.",
+     "sourceUrl": "https://www.ozzyandstix.com/contact"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How much do Ozzy&Stix charge?",
+     "a": "There is no set price, as no two bookings are the same. For an accurate quote they ask for the venue, location, performance times, room or marquee size and guest numbers.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "How do we secure a booking?",
+     "a": "With a non-refundable deposit. Once the booking is confirmed, the deposit is expected within 30 days, or the date may be offered to another client.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Can they provide a DJ?",
+     "a": "Yes. Both members DJ, and they are comfortable with Jewish dancing, Bhangra and the many other genres that come up at weddings.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Will they learn our first-dance song?",
+     "a": "Within reason, yes, and they often do. Because summer is busy with events, they need at least six weeks' notice to learn a first-dance or ceremony song.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Can we choose the songs in their sets?",
+     "a": "A guide to what the crowd enjoys is enough for them to design the set. They are happy to leave out songs connected to bad memories, such as the loss of a loved one.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Do they have insurance and PAT certificates?",
+     "a": "Yes. PAT test and public liability documents can be requested and are sent by email, and a repertoire list is available in the same way.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Can we see them perform before booking?",
+     "a": "They play a few public performances each year, which they describe as a good chance to get a taste of what they do and meet them. Dates are posted on their Instagram.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    },
+    {
+     "q": "Will they work with our other entertainers?",
+     "a": "If they feel the combination will give a great performance, yes, and that includes working with external DJs.",
+     "sourceUrl": "https://www.ozzyandstix.com/new-page"
+    }
+   ]
+  }
  },
  "paint-and-pour": {
   "slug": "paint-and-pour",
@@ -2650,19 +3529,23 @@
   "services": [
    {
     "name": "Paint & Pour Night, Epping",
-    "description": "A three-hour guided sip-and-paint evening at Carpino Lounge, 183 High Street, Epping. It includes a complimentary drink on arrival, all supplies and step-by-step instruction from Bryony. Tickets for the listed dates are £35."
+    "description": "A three-hour guided sip-and-paint evening at Carpino Lounge, 183 High Street, Epping. It includes a complimentary drink on arrival, all supplies and step-by-step instruction from Bryony. Tickets for the listed dates are £35.",
+    "more": "Listed dates are Friday 13 November and Friday 4 December 2026, each running from 7pm to 10pm, with tickets at £35. The event page describes Carpino Lounge as cosy and stylish."
    },
    {
     "name": "Paint & Pour Night, Chingford",
-    "description": "The same guided evening at The Royal Forest, Ranger's Road, Chingford (E4 7QH). It includes a drink on arrival, all painting supplies and step-by-step teaching. Tickets for the listed dates are £35."
+    "description": "The same guided evening at The Royal Forest, Ranger's Road, Chingford (E4 7QH). It includes a drink on arrival, all painting supplies and step-by-step teaching. Tickets for the listed dates are £35.",
+    "more": "The listed date is Saturday 12 December 2026, from 7pm to 10pm, with tickets at £35. The format matches the Epping nights."
    },
    {
     "name": "Beginner-friendly tuition",
-    "description": "No experience is needed. Guests are taken through one painting a step at a time, with music on and room to go off-piste. As the organiser puts it, wobbly lines are part of the fun."
+    "description": "No experience is needed. Guests are taken through one painting a step at a time, with music on and room to go off-piste. As the organiser puts it, wobbly lines are part of the fun.",
+    "more": "The sessions are pitched at total beginners and seasoned painters alike, as a relaxed, no-pressure way to let creativity flow."
    },
    {
     "name": "Materials and a take-home canvas",
-    "description": "Canvas, paints, brushes and aprons are all provided, so guests only need to bring themselves. Evenings finish with a 'Mini Gallery & Photo Time', and everyone takes their painting home."
+    "description": "Canvas, paints, brushes and aprons are all provided, so guests only need to bring themselves. Evenings finish with a 'Mini Gallery & Photo Time', and everyone takes their painting home.",
+    "more": "Bryony says guests leave with a painting they are proud of, or at least one that makes a great story, plus a few new friends."
    }
   ],
   "eventTypes": [],
@@ -2835,7 +3718,64 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "£35 tickets include a welcome drink and all materials",
+    "Nights listed for 13 Nov, 4 Dec and 12 Dec 2026",
+    "The venue becomes a mini gallery for end-of-night photos",
+    "Followers hear first about new dates and special prices"
+   ],
+   "howItWorks": [
+    {
+     "title": "Book a seat",
+     "text": "Tickets for each public night are sold through the organiser's Eventbrite page. Seats are limited, and nights often sell out."
+    },
+    {
+     "title": "Arrive and settle in",
+     "text": "Doors open at 6:40pm and check-in runs from 7pm. It is a chance to grab your drink, find your spot and mingle before the painting starts."
+    },
+    {
+     "title": "Paint step by step",
+     "text": "From 7:30pm the artist guides everyone through each stage of the painting and is on hand to help throughout."
+    },
+    {
+     "title": "Gallery and photos",
+     "text": "At the end of the night the venue is turned into a mini gallery and photos are taken to celebrate everyone's work, before guests head home with their paintings."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Guests are asked to arrive 15–20 minutes early to check in and get settled.",
+     "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+    },
+    {
+     "text": "Aprons are provided, but it is best to wear something you do not mind getting paint on.",
+     "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Do I need any painting experience?",
+     "a": "No. The nights are designed for beginners, and the artist guides everyone from start to finish.",
+     "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+    },
+    {
+     "q": "What if I can no longer make it?",
+     "a": "Tickets are not refundable, but the organiser offers a transfer to an event on a different date.",
+     "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+    },
+    {
+     "q": "Can under-18s come?",
+     "a": "Yes, as long as they attend with a parent or legal guardian.",
+     "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-the-royal-forest-tickets-2003372586335"
+    },
+    {
+     "q": "How do I hear about new dates?",
+     "a": "Follow the organiser's Eventbrite page, which announces new dates and special prices first.",
+     "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+    }
+   ]
+  }
  },
  "ray-johnson": {
   "slug": "ray-johnson",
@@ -2851,7 +3791,8 @@
   "services": [
    {
     "name": "Live Elton John tribute performances",
-    "description": "Live Elton John tribute performances, and clients can choose their favourite Elton John songs for the setlist. He can provide basic equipment such as microphones and speakers, and anything more may need to be arranged separately."
+    "description": "Live Elton John tribute performances, and clients can choose their favourite Elton John songs for the setlist. He can provide basic equipment such as microphones and speakers, and anything more may need to be arranged separately.",
+    "more": "His biography describes a show that recreates Elton John's look and stage presence as well as the energy of his music, with audiences invited to sing along to the hits."
    },
    {
     "name": "Event hosting",
@@ -2867,7 +3808,8 @@
    },
    {
     "name": "George 'n' Elton show",
-    "description": "A newer show that combines George Michael and Elton John tributes. It opened at the Comrades Club in Clacton-on-Sea."
+    "description": "A newer show that combines George Michael and Elton John tributes. It opened at the Comrades Club in Clacton-on-Sea.",
+    "more": "His site describes the opening George 'n' Elton show at the Comrades Club and invites anyone interested to get in touch for details."
    },
    {
     "name": "Corporate mingling and lookalike appearances",
@@ -3094,7 +4036,72 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "30 years as an Elton John tribute, lookalike and singer",
+    "Setlist built around your favourite Elton John songs",
+    "Can host your event as well as perform",
+    "Basic microphones and speakers available",
+    "Covers East London, Essex, Kent, Hertfordshire and the M25",
+    "New 'George 'n' Elton' tribute show also available"
+   ],
+   "howItWorks": [],
+   "goodToKnow": [
+    {
+     "text": "Allow at least three months' notice: that is the lead time his FAQ recommends for securing a preferred date.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "text": "He can bring a basic set-up of microphones and speakers; larger technical requirements may need to be arranged separately.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "text": "His website says it is under construction and asks clients to book by text message or through Instagram (@eltonrayjohnson). The site also has an enquiry form.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "text": "His site describes the act as covering East London, Essex, Kent, Hertfordshire and the M25 area.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How far in advance should we book?",
+     "a": "His FAQ recommends booking at least three months ahead to secure your preferred date.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "q": "Can we request specific Elton John songs?",
+     "a": "Yes. The setlist can be customised to include your favourite Elton John songs.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "q": "Does he bring sound equipment?",
+     "a": "He can provide basic equipment such as microphones and speakers. Anything beyond that may need to be arranged separately.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "q": "Can he host our event as well as perform?",
+     "a": "Yes. Event hosting is one of the services on his site, which pitches it as a way to take the stress out of hosting by having the performer as your host.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "q": "Which areas does he cover?",
+     "a": "His site lists East London, Essex, Kent, Hertfordshire and the M25 area.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    },
+    {
+     "q": "What kinds of events does he perform at?",
+     "a": "His About page says he is available for a variety of events, from intimate pub gigs to grand weddings, and that performances can be customised.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+    },
+    {
+     "q": "How do we book him?",
+     "a": "His homepage says the site is under construction and asks clients to get in touch by text message or on Instagram at @eltonrayjohnson. There is also an enquiry form on the website.",
+     "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+    }
+   ]
+  }
  },
  "the-bar-people": {
   "slug": "the-bar-people",
@@ -3109,27 +4116,33 @@
   "services": [
    {
     "name": "All-Inclusive Bar Hire",
-    "description": "A single per-person price covers drinks, staff, the bar, glassware, ice and setup, with unlimited drinks during the event. Packages depend on availability, date, location and requirements."
+    "description": "A single per-person price covers drinks, staff, the bar, glassware, ice and setup, with unlimited drinks during the event. Packages depend on availability, date, location and requirements.",
+    "more": "Their website lists three all-inclusive packages, priced ex VAT: 50 guests for 4 hours at £1495, with two bar staff and a 5ft bar; 100 guests for 4 hours at £2995, with four staff and a 15ft bar; and 250 guests for 5 hours at £6995, with six staff, a 30ft bar and two fridges. Each covers beer, wine and spirits, garnishes and consumables, plus a fridge, ice and glassware."
    },
    {
     "name": "Dry Hire",
-    "description": "Clients supply the drinks; The Bar People provides the mobile bar, bar staff, glassware and ice. Dry hire is available for both indoor and outdoor events."
+    "description": "Clients supply the drinks; The Bar People provides the mobile bar, bar staff, glassware and ice. Dry hire is available for both indoor and outdoor events.",
+    "more": "Listed dry hire packages, priced ex VAT, are £695 for 50 guests over 4 hours (two bar staff and a 5ft bar) and £1395 for 100 guests over 4 hours (four staff and a 15ft bar), each with a fridge, ice and glassware. A 250-guest, 5-hour option is listed at £2395 with six staff, a 30ft bar and two fridges. The bar setup can be customised to suit the theme and size of the event."
    },
    {
     "name": "Cash Bar Hire",
-    "description": "Guests pay for their own drinks. They handle licensing, staff, equipment and a customisable menu, take cash and card, and can offer pre-purchased drink tickets. A setup fee applies, usually with a minimum sales requirement."
+    "description": "Guests pay for their own drinks. They handle licensing, staff, equipment and a customisable menu, take cash and card, and can offer pre-purchased drink tickets. A setup fee applies, usually with a minimum sales requirement.",
+    "more": "Listed cash bar packages run for unlimited hours and are priced ex VAT: £495 for 50 guests (two bar staff and a 5ft bar), £895 for 100 guests (four staff and a 15ft bar) and £1495 for 250 guests (six staff, a 30ft bar and two fridges). Each includes a fully customisable bar menu, garnishes and consumables, and a fridge, ice and glassware."
    },
    {
     "name": "Pop-Up and Branded Bars",
-    "description": "Modular bars customised for indoor or outdoor use in any size or colour, from 5ft to a 40ft island. Corporate options include branded bar setups, signature cocktails, interactive cocktail stations and professional mixologists."
+    "description": "Modular bars customised for indoor or outdoor use in any size or colour, from 5ft to a 40ft island. Corporate options include branded bar setups, signature cocktails, interactive cocktail stations and professional mixologists.",
+    "more": "Listed bar sizes are 5ft, 10ft, 15ft, 35ft and a 40ft island, with pop-up bars advertised 'From £295'. Corporate clients can also have branded merchandise and custom cocktail menus designed around their brand, with mixologists working with premium spirits."
    },
    {
     "name": "Event Management",
-    "description": "Full event planning from start to finish, covering venue selection and coordination, vendor management for catering and entertainment, timeline management and on-site coordination on the day. Costs are itemised in proposals."
+    "description": "Full event planning from start to finish, covering venue selection and coordination, vendor management for catering and entertainment, timeline management and on-site coordination on the day. Costs are itemised in proposals.",
+    "more": "Clients share their budget and key wishes, and the team takes care of the suppliers and special touches. They work closely with clients throughout the planning, coordinate directly with other vendors and are on site on the day to manage logistics from start to finish."
    },
    {
     "name": "Staff and Glass Hire",
-    "description": "Staff hire is listed among their core services. Glass hire covers polished, wrapped glasses delivered to the venue and collected afterwards, and the glasses can be returned dirty."
+    "description": "Staff hire is listed among their core services. Glass hire covers polished, wrapped glasses delivered to the venue and collected afterwards, and the glasses can be returned dirty.",
+    "more": "Glass hire is priced per glass on their website: 12oz £0.60, Margarita £0.80, Flute £0.60, Wine £0.60, Gin Bowl £0.80, Martini £0.75, Shot £0.50, 1/2 Pint £0.50, Pint £0.50 and Whisky £0.65."
    }
   ],
   "eventTypes": [
@@ -3194,6 +4207,10 @@
    {
     "label": "Companies House — The Bar People Limited",
     "url": "https://find-and-update.company-information.service.gov.uk/company/12161824"
+   },
+   {
+    "label": "The Bar People — Dry Hire",
+    "url": "https://thebarpeople.co.uk/services/dry-hire/"
    }
   ],
   "gaps": [
@@ -3397,7 +4414,101 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Published bar packages for 50, 100 and 250 guests",
+    "Typically one bartender for every 50–75 guests",
+    "Every listed package includes a fridge, ice and glassware",
+    "Cash bar packages run for unlimited hours",
+    "Festival bars for music festivals, fairs and galas"
+   ],
+   "howItWorks": [
+    {
+     "title": "Check your date",
+     "text": "Use the availability form on their website to ask whether your event date is free, or request a quote online."
+    },
+    {
+     "title": "Shape the package",
+     "text": "Packages vary with the date, location and requirements of each event, so the team invites you to talk it through with them. If you are unsure which package suits, they will compare the options for you."
+    },
+    {
+     "title": "Secure the booking",
+     "text": "A non-refundable deposit is taken when you book."
+    },
+    {
+     "title": "Setup on the day",
+     "text": "The team usually begins setting up two to three hours before the event starts, depending on how complex the setup is."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Published package prices are ex VAT. Packages are subject to availability and can vary with the date, location and requirements of the event, and delivery conditions or additional timings may affect the final service.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+    },
+    {
+     "text": "Delivery and setup charges are included within a certain radius; venues further afield may incur additional fees. For dry hire, setup and delivery are discussed with you, and the cost varies with date, time and location.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/dry-hire/"
+    },
+    {
+     "text": "Dry hire is typically booked for a minimum of one day. Your drinks need to be on site before the team arrives, and the bar area should be clear and accessible for setup.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/dry-hire/"
+    },
+    {
+     "text": "If cash bar takings fall short of the agreed minimum, the host may be required to cover the difference; the details can be tailored in the event contract.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+    },
+    {
+     "text": "Bartenders are trained to serve alcohol responsibly and to monitor consumption.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+    },
+    {
+     "text": "Once an event-management plan is finalised, changes are accommodated where possible, though some may incur additional costs.",
+     "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "What is the cancellation policy?",
+     "a": "The deposit paid at booking is non-refundable. Cancellations made within 30 days of the event may be subject to a cancellation fee, which is set out in the booking confirmation.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+    },
+    {
+     "q": "What if our event runs longer than planned?",
+     "a": "They say they are flexible and can extend service times. Additional charges may apply for the extra hours, and these can be discussed in advance.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+    },
+    {
+     "q": "Can we choose the drinks on an all-inclusive package?",
+     "a": "Yes. They work with you on the selection, which can include beers, wines, spirits and speciality cocktails tailored to the theme of the event.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+    },
+    {
+     "q": "Can the bar match our event's theme?",
+     "a": "Their main focus is the drinks and the service, but they can coordinate with event decorators so that the bar decor matches your theme as part of a customised package.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+    },
+    {
+     "q": "Can we give guests some free drinks before switching to a cash bar?",
+     "a": "Yes. A cash bar can be combined with a token or voucher system, with the host covering a set number of drinks before guests start paying for their own.",
+     "sourceUrl": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+    },
+    {
+     "q": "What happens if the weather turns?",
+     "a": "For events they manage, they keep contingency plans in place, including possible indoor alternatives or protective coverings, so the event can carry on.",
+     "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+    },
+    {
+     "q": "Will they manage an event at the venue we have chosen?",
+     "a": "Yes. They have preferred venues they work with often, but say their team can manage events at any location the client chooses.",
+     "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+    },
+    {
+     "q": "How are emergencies handled on the day?",
+     "a": "They say they have comprehensive emergency procedures and trained staff ready to respond, to keep everyone attending safe.",
+     "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+    }
+   ]
+  }
  },
  "tl-executive-cars": {
   "slug": "tl-executive-cars",
@@ -3412,27 +4523,33 @@
   "services": [
    {
     "name": "Wedding Transport",
-    "description": "From a single car to the venue to a small fleet, they arrange wedding transport, and they run a guest logistics service between hotels and the venue that they say is popular and cost-effective."
+    "description": "From a single car to the venue to a small fleet, they arrange wedding transport, and they run a guest logistics service between hotels and the venue that they say is popular and cost-effective.",
+    "more": "The business says hiring a wedding car does not need to be expensive, and offers a number of options it describes as very competitive and affordable."
    },
    {
     "name": "Special Events & Days Out",
-    "description": "Transfers for occasions such as a London theatre trip, a day at Cheltenham, Ascot or Newmarket races, West End shopping or fine dining, plus safe journeys home after rugby or football."
+    "description": "Transfers for occasions such as a London theatre trip, a day at Cheltenham, Ascot or Newmarket races, West End shopping or fine dining, plus safe journeys home after rugby or football.",
+    "more": "The homepage says special-event transfers can be easily arranged, and the business aims to make each one seamless and enjoyable."
    },
    {
     "name": "Corporate Services",
-    "description": "A bespoke, discreet service tailored to each business's needs, with liveried drivers; they say they are exempt from displaying licensing logos and that confidentiality and discretion are assured."
+    "description": "A bespoke, discreet service tailored to each business's needs, with liveried drivers; they say they are exempt from displaying licensing logos and that confidentiality and discretion are assured.",
+    "more": "The service is customised by working closely with each client and is offered at what the business calls an affordable price. Not displaying licensing logos helps present the professional image a business needs."
    },
    {
     "name": "Media & Speaker Transfers",
-    "description": "Keynote speaker transfers for several London speaking bureaux, plus logistical support for film and television shoots in London and the Home Counties; they say they are familiar with most red carpet events."
+    "description": "Keynote speaker transfers for several London speaking bureaux, plus logistical support for film and television shoots in London and the Home Counties; they say they are familiar with most red carpet events.",
+    "more": "The speakers transferred for London speaking bureaux range from industry leaders and senior politicians to motivational speakers and broadcasters."
    },
    {
     "name": "Airport Transfers",
-    "description": "Covers all London airports, including Heathrow, Gatwick, London City, Luton, Stansted and Southend, at short notice if needed, with flight monitoring, arrivals meet and greet and an optional chaperone to check-in."
+    "description": "Covers all London airports, including Heathrow, Gatwick, London City, Luton, Stansted and Southend, at short notice if needed, with flight monitoring, arrivals meet and greet and an optional chaperone to check-in.",
+    "more": "On departures, the car arrives at the home or business 10 minutes before the agreed time. Drivers are familiar with VIP areas including the Windsor Suite, Harrods Air, Tag Aviation, Signature and the Diamond Hangar."
    },
    {
     "name": "Seaport & Cruise Terminal Transfers",
-    "description": "Executive transfers to the Southampton cruise terminals and to Harwich, Tilbury, Ramsgate, Dover and Swansea, with luggage assistance and a driver waiting in arrivals for the return journey."
+    "description": "Executive transfers to the Southampton cruise terminals and to Harwich, Tilbury, Ramsgate, Dover and Swansea, with luggage assistance and a driver waiting in arrivals for the return journey.",
+    "more": "The homepage says seaport transfers can be offered at short notice."
    }
   ],
   "eventTypes": [
@@ -3523,7 +4640,89 @@
   },
   "gallery": [],
   "reel": null,
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Guest shuttles between hotels and the wedding venue",
+    "Vehicles for up to eight passengers and eight bags",
+    "Airport cars arrive 10 minutes before the agreed pick-up time",
+    "Drivers familiar with VIP terminals such as the Windsor Suite",
+    "Airport and seaport transfers available at short notice",
+    "Quote requests answered within 24 hours"
+   ],
+   "howItWorks": [
+    {
+     "title": "Share your journey details",
+     "text": "Use the online quote form to give the number of passengers, pick-up address, destination, and the date, time and any other details of the journey."
+    },
+    {
+     "title": "Receive a quote",
+     "text": "T&L Executive Cars says it replies within 24 hours and aims to provide a prompt, competitive rate."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "The quote form asks for the number of passengers, the pick-up address, the destination, and the date and time of travel.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/request-a-quote/"
+    },
+    {
+     "text": "Luggage space varies by vehicle: the Mercedes E Class and S Class each take three bags, the V Class seven, and the custom executive vehicle eight.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/"
+    },
+    {
+     "text": "A chaperone to the airport check-in desk is available, but it needs to be requested at the time of booking.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+    },
+    {
+     "text": "On departures, the business monitors traffic conditions to keep the journey running smoothly; on arrivals, it tracks the flight so the driver knows the precise landing time.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+    },
+    {
+     "text": "No prices are published; the business provides a rate once it has the details of the journey.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/"
+    },
+    {
+     "text": "The office is open Monday to Friday, 9.00am to 6.30pm.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/request-a-quote/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Can you transport wedding guests as well as the couple?",
+     "a": "Yes. Alongside wedding cars, the business runs a logistics service taking guests between their hotels and the venue, which it describes as very popular and cost-effective.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/special-events-weddings/"
+    },
+    {
+     "q": "How many passengers can each car take?",
+     "a": "The Mercedes E Class and S Class each seat four passengers, the Mercedes V Class seats seven, and the Toureno Custom Executive Spec seats eight.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/"
+    },
+    {
+     "q": "Which airports do you cover?",
+     "a": "All London airports, including Heathrow, Gatwick, London City, Luton, Stansted and Southend. Drivers also know the VIP areas, including the Windsor Suite, Harrods Air, Tag Aviation, Signature and the Diamond Hangar.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+    },
+    {
+     "q": "Do you track arriving flights?",
+     "a": "Yes. The business monitors the flight so the driver knows the precise arrival time, then welcomes passengers in the arrivals terminal with a full meet-and-greet service.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+    },
+    {
+     "q": "Will the car display private hire plates?",
+     "a": "No. The business says its vehicles are certificated as exempt from displaying a private hire plate, which allows a discreet service.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/"
+    },
+    {
+     "q": "Can you collect us from a cruise terminal?",
+     "a": "Yes. The driver helps with luggage on the way out and waits in arrivals for the return journey. Southampton's cruise terminals are covered, along with Harwich, Tilbury, Ramsgate, Dover and Swansea.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+    },
+    {
+     "q": "How can we pay?",
+     "a": "Accepted payment methods include Visa, MasterCard, American Express and Apple Pay.",
+     "sourceUrl": "https://tlexecutivecars.co.uk/"
+    }
+   ]
+  }
  },
  "tm-event-hire": {
   "slug": "tm-event-hire",
@@ -3538,27 +4737,33 @@
   "services": [
    {
     "name": "Clear-Span Marquee Hire",
-    "description": "Modular marquees with no centre poles or guy ropes, suited to gardens, paving, shingle or decking. White or transparent walls, with options including festoon lights, carpet, transparent roofs, black-out ceilings and heaters."
+    "description": "Modular marquees with no centre poles or guy ropes, suited to gardens, paving, shingle or decking. White or transparent walls, with options including festoon lights, carpet, transparent roofs, black-out ceilings and heaters.",
+    "more": "The marquees are modular, so the size can be matched to the guest list, and doors are available to keep heat in on colder nights. For winter weddings, the business describes fully insulated marquees with heating options."
    },
    {
     "name": "Chinese Hat (Pagoda) Marquee Hire",
-    "description": "Curved-roof pagoda marquees with fabric linings, used alone for garden parties, doubled or tripled up, or added to a larger marquee as a catering tent or grand entrance. Dance floors, coconut matting and festoon lighting are available."
+    "description": "Curved-roof pagoda marquees with fabric linings, used alone for garden parties, doubled or tripled up, or added to a larger marquee as a catering tent or grand entrance. Dance floors, coconut matting and festoon lighting are available.",
+    "more": "Pagodas have interchangeable PVC walls: solid white to keep a catering area out of view, or transparent sides for a summer garden party. They share the same specification as the clear-span marquees and can be used as entrance canopies, bar areas or seating spaces."
    },
    {
     "name": "Mobile Bar Hire",
-    "description": "LED straight, circular mirror, circular LED and wooden straight bars, with stools, glassware and refrigeration also available. Delivered the day before and collected the day after; equipment only, with no alcohol or staff."
+    "description": "LED straight, circular mirror, circular LED and wooden straight bars, with stools, glassware and refrigeration also available. Delivered the day before and collected the day after; equipment only, with no alcohol or staff.",
+    "more": "Curved and straight bar sections can be mixed and matched. Bars can be tucked into marquee corners to free up dining and dancing space, or set up as a full-circle centrepiece. A full price list is available on request."
    },
    {
     "name": "Furniture Hire",
-    "description": "Limewash Chiavari and wooden folding chairs, round banquet and trestle tables, poser tables with stools, and white cubes, sofas, armchairs and coffee tables, delivered and collected across Essex, London and Hertfordshire."
+    "description": "Limewash Chiavari and wooden folding chairs, round banquet and trestle tables, poser tables with stools, and white cubes, sofas, armchairs and coffee tables, delivered and collected across Essex, London and Hertfordshire.",
+    "more": "Round banquet tables come in 3ft, 4ft, 5ft, 5.6ft and 6ft sizes and trestle tables in 4ft and 6ft, and a child's high chair is also available. Furniture hire fees include delivery before and collection after the event."
    },
    {
     "name": "Kitchen Equipment & Tableware Hire",
-    "description": "Industrial-grade catering equipment, including a six-ring gas oven, hot cupboard, gas BBQ, double fryer, drinks and bar fridges, water urn and chafing dishes, plus crockery, glassware and cutlery with a wash-up service (a 25% charge is added to tableware orders)."
+    "description": "Industrial-grade catering equipment, including a six-ring gas oven, hot cupboard, gas BBQ, double fryer, drinks and bar fridges, water urn and chafing dishes, plus crockery, glassware and cutlery with a wash-up service (a 25% charge is added to tableware orders).",
+    "more": "Published price lists show crockery from 30p per item (platters £2), glassware from 30p and cutlery from 27p, with serving pieces such as wine buckets at £2.95 and a metal cake stand at £7.00. Kitchen equipment ranges from a simple drinks-fridge set-up to a fully functional kitchen for a professional catering team; the hot cupboard runs on a 13amp supply."
    },
    {
     "name": "Themed Event Packages",
-    "description": "Themed hire packages for white, boho/rustic and Indian weddings, and for toddlers' parties, 18ths and 21sts, milestone birthdays and nightclub-style parties, plus small and large funeral and wake packages."
+    "description": "Themed hire packages for white, boho/rustic and Indian weddings, and for toddlers' parties, 18ths and 21sts, milestone birthdays and nightclub-style parties, plus small and large funeral and wake packages.",
+    "more": "Package items are presented as a guide, and clients can add items or pick and choose between packages, although some items are not interchangeable. The large funeral and wake package suits guest lists of up to 200, and a garden marquee package for baby showers is also offered."
    }
   ],
   "eventTypes": [
@@ -3619,6 +4824,58 @@
    {
     "label": "Companies House — T MCL Catering Hire Limited",
     "url": "https://find-and-update.company-information.service.gov.uk/company/09643286"
+   },
+   {
+    "label": "TM Event Hire — Furniture Hire",
+    "url": "https://tmeventhire.co.uk/services/furniture/"
+   },
+   {
+    "label": "TM Event Hire — Kitchen Equipment Hire",
+    "url": "https://tmeventhire.co.uk/services/kitchen-equipment/"
+   },
+   {
+    "label": "TM Event Hire — Tableware",
+    "url": "https://tmeventhire.co.uk/services/tableware/"
+   },
+   {
+    "label": "TM Event Hire — Crockery price list",
+    "url": "https://tmeventhire.co.uk/services/tableware/crockery/"
+   },
+   {
+    "label": "TM Event Hire — Glassware price list",
+    "url": "https://tmeventhire.co.uk/services/tableware/glassware/"
+   },
+   {
+    "label": "TM Event Hire — Cutlery price list",
+    "url": "https://tmeventhire.co.uk/services/tableware/cutlery/"
+   },
+   {
+    "label": "TM Event Hire — General Tableware price list",
+    "url": "https://tmeventhire.co.uk/services/tableware/general-tableware/"
+   },
+   {
+    "label": "TM Event Hire — Get a Quote",
+    "url": "https://tmeventhire.co.uk/get-a-quote/"
+   },
+   {
+    "label": "TM Event Hire — Funerals",
+    "url": "https://tmeventhire.co.uk/event-themes/funerals/"
+   },
+   {
+    "label": "TM Event Hire — Marquee Wedding Hire",
+    "url": "https://tmeventhire.co.uk/services/marquees/wedding-marquee-hire/"
+   },
+   {
+    "label": "TM Event Hire — Garden Marquee Hire",
+    "url": "https://tmeventhire.co.uk/services/marquees/garden-marquee-hire-essex-hertfordshire/"
+   },
+   {
+    "label": "TM Event Hire — Guide to Hiring a Marquee",
+    "url": "https://tmeventhire.co.uk/services/marquees/guide-to-hiring-a-marquee-essex-hertfordshire/"
+   },
+   {
+    "label": "TM Event Hire — Do I Need Flooring for my Garden Marquee Party",
+    "url": "https://tmeventhire.co.uk/news/do-i-need-flooring-for-my-garden-marquee-party/"
    }
   ],
   "gaps": [
@@ -3820,7 +5077,126 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Online rough quote, then a detailed quote by email within 24 hours",
+    "Marquees can stand on concrete or decking, secured with water barrels",
+    "Thermostatically controlled indirect heaters for cooler-weather events",
+    "Crockery, glassware and cutlery hire published from 27p per item",
+    "Final guest numbers needed two weeks before the event",
+    "Large funeral and wake packages for up to 200 guests"
+   ],
+   "howItWorks": [
+    {
+     "title": "Request a quote",
+     "text": "The online quote form asks for guest numbers, event type, address, date and preferred linings, lighting, flooring, dance floor, furniture, bar and extras. TM Event Hire says it emails a detailed quote within 24 hours, with all prices subject to a site visit."
+    },
+    {
+     "title": "Site visit",
+     "text": "The team visits the site to assess the location and terrain, guest list size and event theme, so it can advise on what will work best."
+    },
+    {
+     "title": "Deposit",
+     "text": "Any changes to the quote are agreed at this stage. If everything is agreeable, a 25% non-refundable deposit is invoiced to secure the booking."
+    },
+    {
+     "title": "Installation",
+     "text": "The team delivers and puts up the equipment one to three days before the event."
+    },
+    {
+     "title": "Sign-off",
+     "text": "Once everything is set up, the team leaves after the client gives final sign-off."
+    },
+    {
+     "title": "Collection",
+     "text": "The team returns the next day to take down and collect the equipment."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "Final guest numbers are needed two weeks before the event. TM Event Hire recommends ordering as many chairs as guests invited, and says it always allows for numbers to rise or fall slightly.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
+    },
+    {
+     "text": "Marquee lights and heaters run on low power, so a nearby house or building is usually enough. Caterers and bands may need a generator, which the team can quote for through one of its recommended suppliers.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "text": "On concrete or decking, marquees are held down with water barrels, and wooden flooring is recommended because carpet and matting are not suitable on those surfaces.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "text": "As a rule of thumb, the business's marquee guide suggests allowing about 10–12 sq ft per guest for a seated event, and slightly less for a standing or cocktail-style event.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/guide-to-hiring-a-marquee-essex-hertfordshire/"
+    },
+    {
+     "text": "If a venue will not allow set-up before the day, furniture can be delivered on the day of the event and collected that evening, for an out-of-hours charge.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
+    },
+    {
+     "text": "Hired furniture can be dressed with drapes, but nothing should be pinned to it. Some furniture is weatherproof, and limewash chairs are fine for outdoor ceremonies in dry weather, but a cleaning charge applies if chairs are left outside and it rains.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
+    },
+    {
+     "text": "Glasses are hired by the box rather than individually, and the published tableware price lists state that a 25% washing-up charge is added to the total tableware order.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/tableware/glassware/"
+    },
+    {
+     "text": "Peak summer dates can sell quickly, while early- and late-season dates are often available at much shorter notice.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "text": "Package contents are a guide. Items can be added, and clients can mix items between packages, but some items may not be removable or interchangeable.",
+     "sourceUrl": "https://tmeventhire.co.uk/event-themes/funerals/"
+    },
+    {
+     "text": "Flooring is included as part of the marquee hire service, with wooden flooring, carpet and coconut matting options, and outdoor walkways can be added to protect lawns and keep guests on a dry path.",
+     "sourceUrl": "https://tmeventhire.co.uk/news/do-i-need-flooring-for-my-garden-marquee-party/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How much does a marquee cost?",
+     "a": "It depends on guest numbers, the extras chosen and the proposed location. TM Event Hire asks for full event details so it can prepare a detailed quote, and all prices are subject to a site visit.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "q": "How long does a marquee take to put up?",
+     "a": "That depends on the size of the marquee and any extras. The team advises on timings when the booking is made, and installs equipment one to three days before the event.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "q": "Can a marquee go on a patio, concrete or decking?",
+     "a": "Yes. The only difference is that the team supplies water barrels to secure the marquee, and wooden flooring is recommended because carpet and matting are not suitable on hard surfaces.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "q": "How is a marquee kept warm?",
+     "a": "Indirect heaters sit outside the tent and blow warm air in through ducts, under thermostatic control. The team advises how many are needed for the marquee size and time of year.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "q": "Will we need a generator?",
+     "a": "The marquee's lights and heaters run on low power, so a nearby house or building is a sufficient supply. Catering and bands may need a generator, and TM Event Hire can quote for one through a recommended supplier.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/chinese-hats/"
+    },
+    {
+     "q": "What is the difference between a Chinese hat and a marquee?",
+     "a": "Very little in construction: they share the same specification and design, which is why they can be joined to a marquee. The difference is the curved, peaked shape, which gives a more elegant look.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/chinese-hats/"
+    },
+    {
+     "q": "How far ahead should we book?",
+     "a": "There is no fixed lead time. Peak summer dates can go quickly, while early- and late-season dates are often available at much shorter notice.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+    },
+    {
+     "q": "Can we decorate the hired furniture?",
+     "a": "Within reason. Drapes to suit the theme are encouraged, but items must not be pinned, damaged or structurally altered.",
+     "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
+    }
+   ]
+  }
  },
  "tony-poole-discos": {
   "slug": "tony-poole-discos",
@@ -3836,27 +5212,33 @@
   "services": [
    {
     "name": "Wedding DJs & All Day Service",
-    "description": "A wedding DJ with an optional All Day Service. It covers set-up before guests arrive, background music for the drinks reception and meal, compering and wireless microphones for the speeches, and ceremony music through a mini PA."
+    "description": "A wedding DJ with an optional All Day Service. It covers set-up before guests arrive, background music for the drinks reception and meal, compering and wireless microphones for the speeches, and ceremony music through a mini PA.",
+    "more": "Because the DJ is already set up, the party can start as soon as the speeches end. Background music through the drinks reception and meal can also run alongside a singer or musician, and the business says many of its DJs have radio credentials."
    },
    {
     "name": "Corporate, Christmas & New Year's Eve DJs",
-    "description": "DJs for corporate parties, dinner dances and awards nights, Christmas parties booked by companies and organisations, and venue or agency party nights. They also play New Year's Eve events at hotels, clubs, pubs and private residences."
+    "description": "DJs for corporate parties, dinner dances and awards nights, Christmas parties booked by companies and organisations, and venue or agency party nights. They also play New Year's Eve events at hotels, clubs, pubs and private residences.",
+    "more": "The business says companies, clubs, associations, schools and individuals book and re-book it for its experience and knowledge of protocol."
    },
    {
     "name": "Birthday, Anniversary & School Prom DJs",
-    "description": "DJs for birthday and anniversary parties, with a wide music catalogue for guests of mixed ages and tastes. They also play school proms and school discos, with lighting that includes lasers."
+    "description": "DJs for birthday and anniversary parties, with a wide music catalogue for guests of mixed ages and tastes. They also play school proms and school discos, with lighting that includes lasers.",
+    "more": "For proms and school discos, the business says its DJs keep up with current music as well as the classics."
    },
    {
     "name": "Ambience Uplighting",
-    "description": "Colour uplighting to change the look of a venue. Their site shows before-and-after galleries in a range of colours at Broxbourne Golf Complex, Theydon Bois Golf Club and Ware Priory."
+    "description": "Colour uplighting to change the look of a venue. Their site shows before-and-after galleries in a range of colours at Broxbourne Golf Complex, Theydon Bois Golf Club and Ware Priory.",
+    "more": "The business says most of its clients ask for uplighting. Its galleries show it used for an ambient guest arrival and in red and green for Christmas."
    },
    {
     "name": "Dance Floors, Backdrops & Light-Up Letters",
-    "description": "White LED dance floors, starlit or white LED backdrops for the DJ area, top table or ceremony, giant light-up LOVE letters and LED numbers, and DJ booth set-ups from Standard to Premier."
+    "description": "White LED dance floors, starlit or white LED backdrops for the DJ area, top table or ceremony, giant light-up LOVE letters and LED numbers, and DJ booth set-ups from Standard to Premier.",
+    "more": "Set-ups include an all-white version of the Premier Set Up, with DJ booths in black or white, many with a starlit finish. In the Premier Lighting Set Up, the lighting units sit on podiums that can be lit in any colour instead of on traditional DJ stands."
    },
    {
     "name": "Photo Booth, 360 Video Booth & Confetti",
-    "description": "A deluxe photo booth or a 360 video booth for guests, which the business says comes with plenty of props. Confetti bombs can also be fired during the First Dance at weddings."
+    "description": "A deluxe photo booth or a 360 video booth for guests, which the business says comes with plenty of props. Confetti bombs can also be fired during the First Dance at weddings.",
+    "more": "The business describes its booths as having 'more props than we have seen at anybody else's'."
    }
   ],
   "eventTypes": [
@@ -3917,6 +5299,22 @@
    {
     "label": "Tony Poole Discos — Prestigious Venues & Clients",
     "url": "https://tonypoolediscos.com/prestigious-venues-clients/"
+   },
+   {
+    "label": "Tony Poole Discos — Uplighting Before & After",
+    "url": "https://tonypoolediscos.com/uplighting-before-after/"
+   },
+   {
+    "label": "Tony Poole Discos — The \"Premier Lighting Set Up\" In Action (blog)",
+    "url": "https://tonypoolediscos.com/uncategorized/the-new-premier-lighting-set-up-in-action/"
+   },
+   {
+    "label": "Tony Poole Discos — Wedding DJs & Discos (blog)",
+    "url": "https://tonypoolediscos.com/uncategorized/wedding-djs-discos/"
+   },
+   {
+    "label": "Tony Poole Discos — Contact Us, Privacy Policy and Terms",
+    "url": "https://tonypoolediscos.com/contact-us/"
    }
   ],
   "gaps": [
@@ -4100,7 +5498,79 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "All Day Service runs from drinks reception to evening party",
+    "Ceremony music through a mini PA at same-venue weddings",
+    "Premier Set Up puts lighting on podiums lit in any colour",
+    "Colour-controllable giant LOVE letters and LED numbers",
+    "DJs can play themed nights built around one genre or era",
+    "Venue event managers invited to discuss seasonal Christmas packages"
+   ],
+   "howItWorks": [
+    {
+     "title": "Send a booking request",
+     "text": "Use the booking form on the Tony Poole Discos website to request a date and share the details of your event."
+    },
+    {
+     "title": "Check the Reservation Form",
+     "text": "The business records the event details and any special instructions on a Reservation Form and emails it over. Reply by email to confirm it is right, or send it back with amendments."
+    },
+    {
+     "title": "Pay the deposit",
+     "text": "A deposit of 25% of the total event cost is generally payable within 14 days of confirming."
+    },
+    {
+     "title": "Plan the music",
+     "text": "Send over the tracks and genres you would like, plus anything to avoid. Some clients choose most of the music, some make a few requests and some leave it all to the DJ; the business has no preference."
+    },
+    {
+     "title": "Settle the balance",
+     "text": "The balance is paid on the night by cash or cheque, or beforehand by BACS transfer."
+    }
+   ],
+   "goodToKnow": [
+    {
+     "text": "If an event is cancelled within 14 days of the date, the business normally asks for a further payment of 25% of the total fee.",
+     "sourceUrl": "https://tonypoolediscos.com/booking/"
+    },
+    {
+     "text": "Without the All Day Service, the DJ sets up between the speeches and the evening party; the business says this typically takes about an hour.",
+     "sourceUrl": "https://tonypoolediscos.com/uncategorized/wedding-djs-discos/"
+    },
+    {
+     "text": "The business may photograph or film events and use the images on its website and in advertising; anyone who would like an image removed can ask through the contact form.",
+     "sourceUrl": "https://tonypoolediscos.com/contact-us/"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Why do they ask for a list of songs not to play?",
+     "a": "To avoid upsetting anyone. The business says first dances from previous marriages and tracks played at recent funerals increasingly need to be avoided.",
+     "sourceUrl": "https://tonypoolediscos.com/the-music-2/"
+    },
+    {
+     "q": "Can they play a themed night?",
+     "a": "Yes. All their DJs have the knowledge and back catalogue to play most types of themed night built around one genre or era, though at most events they mix genres to suit varied tastes.",
+     "sourceUrl": "https://tonypoolediscos.com/the-music-2/"
+    },
+    {
+     "q": "Can the DJ cover the ceremony and speeches as well as the party?",
+     "a": "Yes, through the All Day Service. The DJ can play the ceremony music through a mini PA if you marry at the reception venue, play background music through the drinks reception and meal, and amplify speeches with a wireless microphone.",
+     "sourceUrl": "https://tonypoolediscos.com/our-services/"
+    },
+    {
+     "q": "Do they work alongside a Toastmaster?",
+     "a": "Yes. The business says it is very happy to work with Toastmasters, and can provide a wireless microphone for one to use through its sound system.",
+     "sourceUrl": "https://tonypoolediscos.com/uncategorized/wedding-djs-discos/"
+    },
+    {
+     "q": "Do they take Christmas bookings from venues?",
+     "a": "Yes. In December they play both private company parties and venue or agency party nights, sometimes on block bookings, and venue event managers and social secretaries are invited to get in touch about seasonal packages.",
+     "sourceUrl": "https://tonypoolediscos.com/our-services/"
+    }
+   ]
+  }
  },
  "toot-sweet-candy-cart": {
   "slug": "toot-sweet-candy-cart",
@@ -4123,11 +5593,13 @@
    },
    {
     "name": "Themed and personalised cart styling",
-    "description": "In June 2020 they restyled the cart as a brunch and afternoon-tea display with cake, scones, champagne, flowers, a balloon garland and a personalised sign. Ask whether similar styling is available now."
+    "description": "In June 2020 they restyled the cart as a brunch and afternoon-tea display with cake, scones, champagne, flowers, a balloon garland and a personalised sign. Ask whether similar styling is available now.",
+    "more": "The brunch set-up post was tagged #afternoontea, #gardenparty and #balloongarland."
    },
    {
     "name": "Personalised sweet boxes",
-    "description": "In June 2020 they made gift boxes of 12 different sweets and Ferrero Rochers, with a colour theme and a personalised tag and message, posted out or delivered locally. It is not known whether they still offer them."
+    "description": "In June 2020 they made gift boxes of 12 different sweets and Ferrero Rochers, with a colour theme and a personalised tag and message, posted out or delivered locally. It is not known whether they still offer them.",
+    "more": "Posts from June 2020 show boxes being posted out and a Father's Day box delivered in Chelmsford, with orders taken by direct message."
    }
   ],
   "eventTypes": [],
@@ -4327,6 +5799,26 @@
     }
    }
   },
-  "extra": null
+  "extra": {
+   "highlights": [
+    "Handmade Victorian candy cart available to hire",
+    "A variety of sweet packages offered alongside the cart",
+    "Cart has been restyled as a brunch and afternoon-tea display"
+   ],
+   "howItWorks": [],
+   "goodToKnow": [],
+   "faqs": [
+    {
+     "q": "How can we get in touch?",
+     "a": "The business's X profile (@CartToot) links to its Facebook page, facebook.com/tootsweetcandycart.",
+     "sourceUrl": "https://x.com/CartToot"
+    },
+    {
+     "q": "Can the cart be personalised?",
+     "a": "Its June 2020 brunch set-up included a personalised sign, and the post was tagged #personalisedcandycart and #personalised.",
+     "sourceUrl": "https://x.com/CartToot/status/1275425599394328576"
+    }
+   ]
+  }
  }
 }

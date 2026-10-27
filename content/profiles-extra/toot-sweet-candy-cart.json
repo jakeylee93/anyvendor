@@ -1,0 +1,47 @@
+{
+ "slug": "toot-sweet-candy-cart",
+ "highlights": [
+  "Handmade Victorian candy cart available to hire",
+  "A variety of sweet packages offered alongside the cart",
+  "Cart has been restyled as a brunch and afternoon-tea display"
+ ],
+ "howItWorks": [],
+ "goodToKnow": [],
+ "faqs": [
+  {
+   "q": "How can we get in touch?",
+   "a": "The business's X profile (@CartToot) links to its Facebook page, facebook.com/tootsweetcandycart.",
+   "sourceUrl": "https://x.com/CartToot"
+  },
+  {
+   "q": "Can the cart be personalised?",
+   "a": "Its June 2020 brunch set-up included a personalised sign, and the post was tagged #personalisedcandycart and #personalised.",
+   "sourceUrl": "https://x.com/CartToot/status/1275425599394328576"
+  }
+ ],
+ "serviceDetails": [
+  {
+   "name": "Personalised sweet boxes",
+   "more": "Posts from June 2020 show boxes being posted out and a Father's Day box delivered in Chelmsford, with orders taken by direct message."
+  },
+  {
+   "name": "Themed and personalised cart styling",
+   "more": "The brunch set-up post was tagged #afternoontea, #gardenparty and #balloongarland."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Toot Sweet Candy Cart — X profile (@CartToot)",
+   "url": "https://x.com/CartToot"
+  },
+  {
+   "label": "Toot Sweet Candy Cart — Sweet boxes post (3 June 2020)",
+   "url": "https://x.com/CartToot/status/1268149522003382273"
+  },
+  {
+   "label": "Toot Sweet Candy Cart — Brunch-styled cart post (23 June 2020)",
+   "url": "https://x.com/CartToot/status/1275425599394328576"
+  }
+ ],
+ "notes": "Very little public information exists. Fetched on 27 Oct 2026: the X profile (bio, 'United Kingdom, Essex', joined March 2020, Facebook link and the June 2020 posts visible logged out) and the two cited posts via X's public embed endpoint. One plain request to the Facebook page returned HTTP 400, and Instagram is not viewable logged out, so neither was used. There is no website. Nothing is published about current cart-hire prices, what the hire includes, package contents, travel area for the cart, set-up space or power needs, notice periods, deposits, staffing, insurance or the event types served, so howItWorks is empty and goodToKnow is limited to the historical sweet-box prices. The latest visible posts date from June 2020, so current trading status is unconfirmed. Directory listing details (price from, guest numbers, licences field) were deliberately not used because they are not the business's own statements."
+}

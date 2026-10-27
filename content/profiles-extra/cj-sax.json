@@ -1,0 +1,121 @@
+{
+ "slug": "cj-sax",
+ "highlights": [
+  "Live sax alongside your DJ, prices from £1,000",
+  "Full sax-and-DJ show with sound and lighting, from £3,000",
+  "Own packages include public liability insurance and a contract",
+  "Discounted off-peak prices on enquiry, subject to availability",
+  "Open-format sets from 70s soul to garage",
+  "Network performers from £375, negotiated directly with the artist"
+ ],
+ "howItWorks": [
+  {
+   "title": "Send your event details",
+   "text": "Complete the enquiry form on the contact page with the date, location, set time and any additional event details."
+  },
+  {
+   "title": "Contract, invoice and support",
+   "text": "CJ's own packages come with an event contract and invoice, plus WhatsApp support."
+  }
+ ],
+ "goodToKnow": [
+  {
+   "text": "All published prices are starting figures, each 'subject to date & location'.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "text": "The pricing calendar treats January to April and October as off-peak (Dubai and London), May to September as peak (worldwide) and November to December as peak (London).",
+   "sourceUrl": "https://cjsax.com/"
+  },
+  {
+   "text": "The live sax package is designed to work with an existing DJ: CJ improvises over the DJ's set using a wireless sax microphone.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "text": "The enquiry form asks for the date and location of the event and the set time required, plus any additional event details.",
+   "sourceUrl": "https://cjsax.com/contact/"
+  },
+  {
+   "text": "When booking a recommended performer from CJ's network, the client negotiates terms directly with that performer.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can CJ play alongside our own DJ?",
+   "a": "Yes. The CJ SAX LIVE package is a live saxophone performance in which CJ improvises alongside the client's DJ, using a wireless sax microphone.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "q": "Does CJ bring his own sound and lighting?",
+   "a": "With the sax-and-DJ package, yes: it includes a sound system, DJ lighting and accessories, and wireless sax and vocal microphones.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "q": "What music does CJ play?",
+   "a": "Sets are open format and tailored to the crowd, covering 70s and 80s soul, club classics, house, dance anthems, old-school RnB and garage.",
+   "sourceUrl": "https://cjsax.com/listen/"
+  },
+  {
+   "q": "Is CJ insured?",
+   "a": "Public liability insurance is listed as included in both of CJ's own packages, along with an event contract and invoice.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "q": "Are cheaper dates available?",
+   "a": "Discounted off-peak prices are available on enquiry, subject to availability. Off-peak periods are January to April and October, for Dubai and London.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "q": "Can CJ recommend other performers?",
+   "a": "Yes. CJ recommends musicians from his network, including DJs, sax players, bongo players, violinists and a magician. Prices start from £375, subject to date and location, and are negotiated directly with the performer.",
+   "sourceUrl": "https://cjsax.com/packages/"
+  },
+  {
+   "q": "Does CJ perform at destination events?",
+   "a": "Yes. The business describes itself as 'Based in London, creating vibes worldwide', and its pricing calendar lists May to September as a worldwide peak season.",
+   "sourceUrl": "https://cjsax.com/"
+  }
+ ],
+ "serviceDetails": [
+  {
+   "name": "CJ SAX DJ LIVE: sax and DJ",
+   "more": "This package also lists public liability insurance, an event contract and invoice, and WhatsApp support. The kit included as standard is set out on the equipment page."
+  },
+  {
+   "name": "Recommended artists",
+   "more": "The contact page says recommendations are tailored to the client's budget."
+  },
+  {
+   "name": "Sound, lighting and DJ booths",
+   "more": "Standard kit comprises three QSC K12.2 12-inch tops and two KS118 18-inch subs, a Chauvet INTIMSPOT 375ZX, two 200W LED moving heads, four Equinox SpectraPix battens, two Stellar 66 multi-FX LEDs, and black and white Equinox DJ booths. Extras include a Pioneer XDJ-XZ, two further tops, eight Equinox Colour Raider uplighters, four mirror balls, foam glow sticks and two 1.5m plinths."
+  },
+  {
+   "name": "Event planning and performer coordination",
+   "more": "The contact page describes the business as a one-stop shop for music entertainment, combining CJ's own performances with recommended performers from his network."
+  }
+ ],
+ "sources": [
+  {
+   "label": "CJ SAX LIVE — Home",
+   "url": "https://cjsax.com/"
+  },
+  {
+   "label": "CJ SAX LIVE — Packages",
+   "url": "https://cjsax.com/packages/"
+  },
+  {
+   "label": "CJ SAX LIVE — Equipment",
+   "url": "https://cjsax.com/equipment-hire/"
+  },
+  {
+   "label": "CJ SAX LIVE — Mixes",
+   "url": "https://cjsax.com/listen/"
+  },
+  {
+   "label": "CJ SAX LIVE — Contact",
+   "url": "https://cjsax.com/contact/"
+  }
+ ],
+ "notes": "Fetched 27 Oct 2026. The site has no FAQ, terms, deposit or cancellation page. Set lengths, travel and accommodation costs for destination events, power and space requirements, and exact peak or off-peak rates are not published. The Weddings page renders no text server-side, and the press-pack post sits behind a newsletter prompt, so neither was used for new facts. Celebrity and named-client references on the site were deliberately left out. An earlier directory listing showed no licences or insurance, whereas every package on the site lists public liability insurance; planners may want to ask for the certificate."
+}
