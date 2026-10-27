@@ -1,0 +1,119 @@
+{
+  "slug": "magpie-catering",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/Magpie-Logo.png",
+      "file": ".media-work/magpie-catering/logo00-Magpie-Logo.png",
+      "bytes": 22067,
+      "sha256": "17f6ed5f2e8c9c56333a425cdda3dcc49a79c5b29581a69be65c44cd90843250"
+    },
+    {
+      "kind": "logo",
+      "url": "https://www.magpiecatering.com/wp-content/themes/magpie/images/magpie-catering-logo.jpg",
+      "file": ".media-work/magpie-catering/logo01-magpie-catering-logo.jpg",
+      "bytes": 39904,
+      "sha256": "3bd56ddc5f6c4fdb4a6f18f7cde83485556e36a2bb97c537659ab0f073000a1d"
+    },
+    {
+      "kind": "logo",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2023/04/favoicon.png",
+      "file": ".media-work/magpie-catering/logo02-favoicon.png",
+      "bytes": 23262,
+      "sha256": "35636bf7672fa8bb27f0a8d999632316ffe8b3c9a0a5e3e952afc6932eaf7ea1"
+    },
+    {
+      "kind": "logo",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2023/04/cropped-favoicon-270x270.png",
+      "file": ".media-work/magpie-catering/logo03-cropped-favoicon-270x270.png",
+      "bytes": 15093,
+      "sha256": "c28c82279ed4e11d53558be04c0270947e0a0907ea3ff1071d696c746cd95cd7"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+      "file": ".media-work/magpie-catering/img00-2017-03-16-PHOTO-00000030.jpg",
+      "bytes": 169889,
+      "sha256": "5fd7c0a761467d4f9a4cbb2b60a324147246acb5f055a19f0db45a9a374d49ef"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000037-1.jpg",
+      "file": ".media-work/magpie-catering/img01-2017-03-16-PHOTO-00000037-1.jpg",
+      "bytes": 152615,
+      "sha256": "96e982ef26ba21b5926c2cc8b903c944a0fa3ac519e4026dbc84af778570e008"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+      "file": ".media-work/magpie-catering/img02-2017-03-16-PHOTO-00000040.jpg",
+      "bytes": 222805,
+      "sha256": "0aa975f64b039416fb848a329279c0b6247d4188eab09ff3c925f0595d712aea"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg",
+      "file": ".media-work/magpie-catering/img03-mezze.jpg",
+      "bytes": 240499,
+      "sha256": "8496a8dd91e5c7431f1b16ef7667b3639bce66c978bc24c960890c72a8b27db5"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+      "file": ".media-work/magpie-catering/img04-2017-03-16-PHOTO-00000038.jpg",
+      "bytes": 198175,
+      "sha256": "2bb9bb218768fbdf67c5f56d7c723f7769691d30fe2023aab382d653452f6d5d"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+      "file": ".media-work/magpie-catering/img05-2017-03-16-PHOTO-00000039.jpg",
+      "bytes": 171023,
+      "sha256": "deb237a88c48d30b384e70e2bf76a92f11d3faebeef41f9035362485d11de3c4"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "file": ".media-work/magpie-catering/img06-15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "bytes": 160058,
+      "sha256": "fb19c66b6d29b6c1048fdfa7b18ab46531fc741430e29c7f13b6aef17578cd93"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+      "file": ".media-work/magpie-catering/img07-Special-Events.jpg",
+      "bytes": 98143,
+      "sha256": "006cfd1fc9107f45ffab089feee24af1dc8097253cfa45fd7657587bf3875fa0"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000003.jpg",
+      "file": ".media-work/magpie-catering/img08-2017-03-06-PHOTO-00000003.jpg",
+      "bytes": 284683,
+      "sha256": "102d0b7a9f5f03e66b31455b08f9cc678b9f5fb8575b124df93d5469415228db"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg",
+      "file": ".media-work/magpie-catering/img09-2017-03-06-PHOTO-00000022.jpg",
+      "bytes": 144202,
+      "sha256": "51246815e1b4c14a170736a2066e412677f5629439fcfd9757ba33e2e70a6b03"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000032.jpg",
+      "file": ".media-work/magpie-catering/img10-2017-03-16-PHOTO-00000032.jpg",
+      "bytes": 191008,
+      "sha256": "a7f0d4e51e714cb7de95821c95f3685a38067c6f6d769f10f1a0f4e5e666580b"
+    },
+    {
+      "kind": "image",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/alleyn-court-025.jpg",
+      "file": ".media-work/magpie-catering/img11-alleyn-court-025.jpg",
+      "bytes": 1725590,
+      "sha256": "29c93aff0b799647906950294950c8f5f115d21a7e6694002fc7005537c3e2c8"
+    }
+  ],
+  "skipped": [],
+  "totalBytes": 3859016
+}

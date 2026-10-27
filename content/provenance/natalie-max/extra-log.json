@@ -1,0 +1,8 @@
+{
+  "slug": "natalie-max",
+  "files": [],
+  "notes": [
+    "No extra downloads: the business has no TikTok, no HLS video was found on its own sites (the research crawl of 100 sitemap pages found only YouTube embeds and four direct MP4s, all fetched by fetch.py), and YouTube/Instagram/Facebook are not allowed sources in this session.",
+    "Derived (not downloaded): logo00-upscaled-x3.png, a 3x Lanczos upscale of the fetched logo PNG used as trace input."
+  ]
+}

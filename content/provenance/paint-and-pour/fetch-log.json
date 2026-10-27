@@ -1,0 +1,70 @@
+{
+  "slug": "paint-and-pour",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_pour_logo.png",
+      "file": ".media-work/paint-and-pour/logo00-paint_and_pour_logo.png",
+      "bytes": 333693,
+      "sha256": "33c9f8f879d5fb456586191f987c4991582419b6ec0afa142553f5d78889e033"
+    },
+    {
+      "kind": "logo",
+      "url": "https://cdn.evbuc.com/images/1186100156/102619908941/1/original.20260603-204930",
+      "file": ".media-work/paint-and-pour/logo01-original.20260603-204930",
+      "bytes": 18808,
+      "sha256": "f2a9fdb16bb77556c1e8697c21295403cc7bb1c5ddb1fcacb12ffbc7eb7445a5"
+    },
+    {
+      "kind": "logo",
+      "url": "https://cdn.evbuc.com/images/1196449260/102619908941/1/original.20261023-153343",
+      "file": ".media-work/paint-and-pour/logo02-original.20261023-153343",
+      "bytes": 192653,
+      "sha256": "a5a5e50accd84732a7e42e65bc6462e98a07be6f337f6b8504d18cf2c3f0f2e0"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533",
+      "file": ".media-work/paint-and-pour/img00-original.20250910-200533",
+      "bytes": 1434689,
+      "sha256": "4c7cc74e49d1df6c614227b84e40eeb30e044cf5bb996c904f91a27b8d8ce30f"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329",
+      "file": ".media-work/paint-and-pour/img01-original.20250910-201329",
+      "bytes": 677853,
+      "sha256": "463c1314dd7bd243bcfcc8b6e5ad6f9b232fdd4fad4bbeb68df9fe69bdf7d8e9"
+    },
+    {
+      "kind": "image",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+      "file": ".media-work/paint-and-pour/img02-paint_and_Pour_thumb.jpg",
+      "bytes": 250245,
+      "sha256": "0cc3afde1c4403e2e648713012da43154bbb6564400d5c1066ee88a5b373edb6"
+    },
+    {
+      "kind": "image",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg",
+      "file": ".media-work/paint-and-pour/img03-Paint-and-Pour.jpeg",
+      "bytes": 196856,
+      "sha256": "6edd7eb4ea27c351a0efa3c08d2829bfb073f17140903b5d992f3c6c57ef79dc"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832",
+      "file": ".media-work/paint-and-pour/img04-original.20261023-151832",
+      "bytes": 70558,
+      "sha256": "8d06848c91cf7a901dab357ae6643b6a1702a0d26af54c289545e33197866c84"
+    },
+    {
+      "kind": "image",
+      "url": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839",
+      "file": ".media-work/paint-and-pour/img05-original.20261023-151839",
+      "bytes": 76039,
+      "sha256": "e53a0bace6910d0d9737c6b36e43987d20b06f222408311dc3b1cff087d57e66"
+    }
+  ],
+  "skipped": [],
+  "totalBytes": 3251394
+}

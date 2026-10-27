@@ -1,0 +1,345 @@
+{
+  "slug": "grape-fig",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://grapeandfig.com/cdn/shop/files/thumbnail_Grape_and_Fig_Logo_BW.png?v=1665205626",
+      "file": ".media-work/grape-fig/logo00-thumbnail_Grape_and_Fig_Logo_BW.png",
+      "bytes": 35084,
+      "sha256": "5f574b4309e83c81ab276ad7e58defa53ac1efaf437e82016b3d41b6dc9129c7"
+    },
+    {
+      "kind": "logo",
+      "url": "https://grapeandfig.com/cdn/shop/files/GrapeFig_BrandColourBreakdown_FINAL-08_48d1e90f-d18c-47be-a9c0-857055b6421d.jpg?v=1764777336",
+      "file": ".media-work/grape-fig/logo01-GrapeFig_BrandColourBreakdown_FINAL-08_48d1e90f-d18c-47be-a9c0-857055b6421d.jpg",
+      "bytes": 55086,
+      "sha256": "c62725ae517d7bea65da7cba8a1da7521d9a57e93400c79e1e9393da765e6889"
+    },
+    {
+      "kind": "logo",
+      "url": "https://grapeandfig.com/cdn/shop/files/Grape___Fig_Favicon.png?v=1744866297",
+      "file": ".media-work/grape-fig/logo02-Grape___Fig_Favicon.png",
+      "bytes": 15460,
+      "sha256": "1ebcbb7b616d6cf99a713a9bbc38405c60f5619198df0253fdb92170cdbca87e"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042",
+      "file": ".media-work/grape-fig/img00-IMG_8697_7.jpg",
+      "bytes": 1846465,
+      "sha256": "956c3ee6f239fb22541066d14d70148133c360ccc60a7ad65e81b14a345ca5bd"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/Bespoke_Food_Displays_GRAPE_Fig.jpg?v=1763060954",
+      "file": ".media-work/grape-fig/img01-Bespoke_Food_Displays_GRAPE_Fig.jpg",
+      "bytes": 1313509,
+      "sha256": "5e1c345cf617cd4c6c5d1301578ed139bbe8a6d2c98107914851391f1ccd3571"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/Beauty_Pie_Bespoke_Table.jpg?v=1763060918",
+      "file": ".media-work/grape-fig/img02-Beauty_Pie_Bespoke_Table.jpg",
+      "bytes": 1301683,
+      "sha256": "785f93671b9c4543fedea9f3121204ae11fc2a1f54661fd916d2e5312012f428"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/M_S_Food_Bespoke_Food_Display_63f21294-93e2-488c-96b4-e661a6b4e3be.jpg?v=1763062194",
+      "file": ".media-work/grape-fig/img03-M_S_Food_Bespoke_Food_Display_63f21294-93e2-488c-96b4-e661a6b4e3be.jpg",
+      "bytes": 1663163,
+      "sha256": "223958246de2b21114edbae40b891ea2063099bc78d6bcc5ee8ffdb07b8e4110"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221",
+      "file": ".media-work/grape-fig/img04-Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg",
+      "bytes": 1693449,
+      "sha256": "c10bc3bb93a1fed2c8172bac49704f4718d09e904bf3a8ec3381080a5d2f3f8c"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906",
+      "file": ".media-work/grape-fig/img05-IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg",
+      "bytes": 2328744,
+      "sha256": "29a9be55c40297c43661036f807575f1610373079ad002f410f162ae19526c1c"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757",
+      "file": ".media-work/grape-fig/img06-image00087.jpg",
+      "bytes": 1500173,
+      "sha256": "9b0700361c903f5fd518e328bf8968961ac2827ac093fb8c4edd0dfcd126c8c7"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316",
+      "file": ".media-work/grape-fig/img07-IMG_1022.jpg",
+      "bytes": 248944,
+      "sha256": "1bb30ee6f326ab38b85b08b20b9e1487748eeb504f418257521ad2b21bbf3807"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492",
+      "file": ".media-work/grape-fig/img08-GRAPE_AND_FIG_AT_BRITYARD.jpg",
+      "bytes": 245181,
+      "sha256": "cf459a791a48278aef839cc950b3a3c4a5e17c859b9cec7f401a1f029e2dbb22"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720",
+      "file": ".media-work/grape-fig/img09-IMG_1470_9.jpg",
+      "bytes": 1251431,
+      "sha256": "4dbe65ecf1d7fdc65cfc6170db7f5fa1dcebba26e70450253bac64a776fff442"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771",
+      "file": ".media-work/grape-fig/img10-DSCF1375_5.jpg",
+      "bytes": 1416605,
+      "sha256": "8906b4564eced58b96b49750d014a123a7ec9844497ba98a481a0107e1feeb12"
+    },
+    {
+      "kind": "image",
+      "url": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958",
+      "file": ".media-work/grape-fig/img11-Grape_Fig-Amber-RoseSmith_40.jpg",
+      "bytes": 555823,
+      "sha256": "28db6bfba95cf1f18cf57eeaf652cdbfc3fa2d026da747f70513ba8adf8a74f9"
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+      "file": ".media-work/grape-fig/vid00-d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4",
+      "bytes": 25030323,
+      "sha256": "9e181520340ef3db015316c1983b8cbe97f225c36a9eed10848ac933588d3c74",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid00.jpg",
+        "frames": 59,
+        "every": 0.5,
+        "width": 1920,
+        "height": 1080,
+        "duration": 29.568,
+        "fps": 25.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 25030323
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d0e8876bba57491bb7fb2c52af7fbfe9/d0e8876bba57491bb7fb2c52af7fbfe9.HD-1080p-3.3Mbps-46791560.mp4?v=0",
+      "file": ".media-work/grape-fig/vid01-d0e8876bba57491bb7fb2c52af7fbfe9.HD-1080p-3.3Mbps-46791560.mp4",
+      "bytes": 11687097,
+      "sha256": "c74f3d6d1c109e6412cde806bc7abb02b16c8e06be1406771ac485a09ac94434",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid01.jpg",
+        "frames": 59,
+        "every": 0.5,
+        "width": 900,
+        "height": 1080,
+        "duration": 29.568,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 11687097
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/28cd542befc5487697d4091055e26445/28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4?v=0",
+      "file": ".media-work/grape-fig/vid02-28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4",
+      "bytes": 7598985,
+      "sha256": "843461e592544c042a79e80124c3b8172ac167702fa47a964414e80c4a42b2c5",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid02.jpg",
+        "frames": 17,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 8.5,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 7598985
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/4ab669f6ed1043709d8f5f727d731541/4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4?v=0",
+      "file": ".media-work/grape-fig/vid03-4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4",
+      "bytes": 2105693,
+      "sha256": "c4f00f33e615a690fd9e65c37e76928a2e47124b2ca01f53e0c3c008af2eff36",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid03.jpg",
+        "frames": 5,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 2.333333,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 2105693
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/3fef527e91e74fbda8c6c4a8153d16c4/3fef527e91e74fbda8c6c4a8153d16c4.HD-1080p-7.2Mbps-76786449.mp4?v=0",
+      "file": ".media-work/grape-fig/vid04-3fef527e91e74fbda8c6c4a8153d16c4.HD-1080p-7.2Mbps-76786449.mp4",
+      "bytes": 8898044,
+      "sha256": "fcbb7b69e2b7b3d59c001035fe757df19481393fd8f67313afcc56ce68cbee8e",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid04.jpg",
+        "frames": 20,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 9.866667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 8898044
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/5bc522ce2d7b429993ce5bcdc4876113/5bc522ce2d7b429993ce5bcdc4876113.HD-1080p-7.2Mbps-76786600.mp4?v=0",
+      "file": ".media-work/grape-fig/vid05-5bc522ce2d7b429993ce5bcdc4876113.HD-1080p-7.2Mbps-76786600.mp4",
+      "bytes": 8554541,
+      "sha256": "f70fdf846ffc7b53090cb865075e882782526121c823ec23558a2945fa684f48",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid05.jpg",
+        "frames": 19,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 9.466667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 8554541
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/be0c9ab28f274c8380163558159e6fe3/be0c9ab28f274c8380163558159e6fe3.HD-1080p-7.2Mbps-76785876.mp4?v=0",
+      "file": ".media-work/grape-fig/vid06-be0c9ab28f274c8380163558159e6fe3.HD-1080p-7.2Mbps-76785876.mp4",
+      "bytes": 9469292,
+      "sha256": "2890692d1b19b306ee2b463414065778c7112bcc1cc32082ab0909e039e60d7b",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid06.jpg",
+        "frames": 22,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 10.844206,
+        "fps": 29.97,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 9469292
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/74d62ed667f34d559b0025b11b1c96d4/74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4?v=0",
+      "file": ".media-work/grape-fig/vid07-74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4",
+      "bytes": 7047661,
+      "sha256": "df961f28dfb9e5ba7c3ac84f41eef5770c3f68ad2d278beb16548af26193f751",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid07.jpg",
+        "frames": 16,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 8.176693,
+        "fps": 29.96,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 7047661
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/2b7f4c999fd14063859a446b381e515d/2b7f4c999fd14063859a446b381e515d.HD-1080p-4.8Mbps-76786165.mp4?v=0",
+      "file": ".media-work/grape-fig/vid08-2b7f4c999fd14063859a446b381e515d.HD-1080p-4.8Mbps-76786165.mp4",
+      "bytes": 1744114,
+      "sha256": "eb408a756e3b2f1e352023072cff631a865df8d9e1dc2fc2b39b19467ecd09fc",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid08.jpg",
+        "frames": 6,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 2.880013,
+        "fps": 29.86,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 1744114
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/65205974cf894f36b838549cdcda2669/65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4?v=0",
+      "file": ".media-work/grape-fig/vid09-65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4",
+      "bytes": 3299759,
+      "sha256": "3d5a221049789973382f88d2be17930156832fedba75d4e0e472c2199a922966",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid09.jpg",
+        "frames": 7,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 3.6,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 3299759
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/2b0fc1868bca47e2adc86a467bc34276/2b0fc1868bca47e2adc86a467bc34276.HD-1080p-7.2Mbps-76649359.mp4?v=0",
+      "file": ".media-work/grape-fig/vid10-2b0fc1868bca47e2adc86a467bc34276.HD-1080p-7.2Mbps-76649359.mp4",
+      "bytes": 1686364,
+      "sha256": "6ea15caa71431f3600181e6674d47c45f1fea52623bd1eddae6785c4057e95f0",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid10.jpg",
+        "frames": 4,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 2.066667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 1686364
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/24f36653ec504484b9ff75be05ba84a4/24f36653ec504484b9ff75be05ba84a4.HD-1080p-7.2Mbps-76787073.mp4?v=0",
+      "file": ".media-work/grape-fig/vid11-24f36653ec504484b9ff75be05ba84a4.HD-1080p-7.2Mbps-76787073.mp4",
+      "bytes": 1822453,
+      "sha256": "e9ce8313dd16ad07fbbf17659955b111b3e339c38c2a02a6a8ce395f981a5982",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/grape-fig/sheet-vid11.jpg",
+        "frames": 4,
+        "every": 0.5,
+        "width": 810,
+        "height": 1080,
+        "duration": 2.2,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 1822453
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.tiktok.com/@grape_and_fig",
+      "why": "tiktok not a public direct file"
+    }
+  ],
+  "totalBytes": 104415126
+}

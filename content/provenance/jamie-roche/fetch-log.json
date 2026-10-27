@@ -1,0 +1,107 @@
+{
+  "slug": "jamie-roche",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_logo.png",
+      "file": ".media-work/jamie-roche/logo00-jamie_roche_logo.png",
+      "bytes": 1061141,
+      "sha256": "b05a9a63beb0c17ce6631e787ba97f5100da2f7bf83da94ce5c979607564f48b"
+    },
+    {
+      "kind": "image",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+      "file": ".media-work/jamie-roche/img00-jamie_roche_thumb.jpg",
+      "bytes": 146598,
+      "sha256": "f4f978b74ee62e5476d23e04f9e85d368b20b684d57b9b0f80066ddcff26b665"
+    },
+    {
+      "kind": "image",
+      "url": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0",
+      "file": ".media-work/jamie-roche/img01-Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0",
+      "bytes": 1078332,
+      "sha256": "16d1e7f19a750ef5d263d23fd038c0ac69825d2f6c2f6c79b7e80b4f23b8ad19"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img02-maxresdefault.jpg",
+      "bytes": 85380,
+      "sha256": "611c17c8f2a6988b1770ea3ac9cdaa541e098a9224faa0d06a2c91c6f377a002"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img03-maxresdefault.jpg",
+      "bytes": 112157,
+      "sha256": "7d63031dfcc781414d7a86c12faa66cecc4e191962c7d86942bd374f3e0b4799"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img04-maxresdefault.jpg",
+      "bytes": 76570,
+      "sha256": "c93aa3a996a60e5c3fd7c7f01291c6b4a8db41e559e101cc986e754c15b7512c"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img05-maxresdefault.jpg",
+      "bytes": 83122,
+      "sha256": "76c1a6558c4517e315bc2f54d342b83e291dd0e3f8380930d460d0f51a69ce6d"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img06-maxresdefault.jpg",
+      "bytes": 73223,
+      "sha256": "0d6b6938e09337daf84f8792ff7f1afe8d83d555afcf7edef8eada0c8e252f42"
+    },
+    {
+      "kind": "image",
+      "url": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+      "file": ".media-work/jamie-roche/img07-maxresdefault.jpg",
+      "bytes": 111524,
+      "sha256": "8be0fa02b89ad1c956e672c81d08f0b5ea6818d9bfb1b8f8745e564324a0d357"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.youtube.com/watch?v=drMAH8eFYi4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_CEzdGc6tMw",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aW_3BWmWTkI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oh9KSH-2DmU",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q8CHA6G6Abg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jVrJUBJm75w",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=W4Rj_JX_1-8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=asm-mMNgGqk",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iIyZlxXXxXY",
+      "why": "youtube not a public direct file"
+    }
+  ],
+  "totalBytes": 2828047
+}

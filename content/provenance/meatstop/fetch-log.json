@@ -1,0 +1,121 @@
+{
+  "slug": "meatstop",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/9bf65533-fde9-4cb6-b990-c46a3632f946/MEAT+STOP+LOGO+%28600+x+170+px%29.png",
+      "file": ".media-work/meatstop/logo00-MEAT+STOP+LOGO+(600+x+170+px).png",
+      "bytes": 13130,
+      "sha256": "91666c071495ab9145b14d4b4a2b73361d31005ea091f21d5a720830d2c26b03"
+    },
+    {
+      "kind": "logo",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/a2435a91-7953-4ec9-be04-f1dd2a01b130/MEAT+STOP+LOGO+%28600+x+170+px%29+%28600+x+170+px%29+%28Logo%29+%281%29.png",
+      "file": ".media-work/meatstop/logo01-MEAT+STOP+LOGO+(600+x+170+px)+(600+x+170+px)+(Logo)+(1).png",
+      "bytes": 9086,
+      "sha256": "352ad697b142ddd65636e49c936bdc3587d6912cbbb30ffdff59d1543daa74af"
+    },
+    {
+      "kind": "logo",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/cfa8b923b64d2f61c9ebd4805abbbde4~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=e511939e&x-expires=1793253600&x-signature=h96rjOe8VJniOqN%2FUkotjvie%2BGo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast2b",
+      "file": ".media-work/meatstop/logo02-cfa8b923b64d2f61c9ebd4805abbbde4~tplv-tiktokx-cropcenter:1080:1080.jpeg",
+      "bytes": 58269,
+      "sha256": "97a3b2dca217a0fd068afee31c8e17a76e3fcec47119c6b2e339c2b08dfa1301"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/b1548200-76c6-4acb-a590-09d3b165bfe6/meat+stop+crop-1.jpeg",
+      "file": ".media-work/meatstop/img00-meat+stop+crop-1.jpeg",
+      "bytes": 361070,
+      "sha256": "22dfec52137af73feaefad693bc165e29682f5b767faa8c6d5a6d948bd38aeec"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg",
+      "file": ".media-work/meatstop/img01-002E0BEA-9F34-4058-B97D-0247351211BB.jpeg",
+      "bytes": 244484,
+      "sha256": "9cf69acb717eb0509d9c8188a492704f8893fe97af3e197241bb947028503d09"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg",
+      "file": ".media-work/meatstop/img02-WhatsApp+Image+2024-07-09+at+10.17.34.jpeg",
+      "bytes": 173766,
+      "sha256": "c14b017467a52361b3c13caa90a0c183a75a443da5dc1405ad729c4091f762ac"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg",
+      "file": ".media-work/meatstop/img03-WhatsApp+Image+2024-07-09+at+10.17.33.jpeg",
+      "bytes": 134044,
+      "sha256": "2992e3f622e4e7c085ef2993bddaa5747293b6dda829f5b5ea2dfdf4d593a49a"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png",
+      "file": ".media-work/meatstop/img04-Screenshot+2025-05-21+at+19.29.47.png",
+      "bytes": 1502882,
+      "sha256": "e96051b8e8aeb2eb88c451b3613eb1cc51650ae77552f5f69eef3650b48610e1"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png",
+      "file": ".media-work/meatstop/img05-Screenshot+2026-02-09+at+11.37.51.png",
+      "bytes": 1497012,
+      "sha256": "12e35282eac13ce0135fc84a0e5b74cf0f6e05c1692a56bbf703afe80d4f9975"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/acaff588-a333-40e6-be4e-400c5be85aa6/Screenshot+2026-02-09+at+11.38.08.png",
+      "file": ".media-work/meatstop/img06-Screenshot+2026-02-09+at+11.38.08.png",
+      "bytes": 961500,
+      "sha256": "69b793fc810542b25d3cc71fbb9aa9fe50f09687c803298038099a1008deb896"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e0973ac1-1b26-4cd9-beae-4669ebf15ceb/Screenshot+2024-07-08+at+20.04.36.png",
+      "file": ".media-work/meatstop/img07-Screenshot+2024-07-08+at+20.04.36.png",
+      "bytes": 1029538,
+      "sha256": "363e09c6676d0c2c8256a8c91f16fc07ea1bc4937fa7597ca3c270ca8d437c1f"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg",
+      "file": ".media-work/meatstop/img08-WhatsApp+Image+2025-03-20+at+12.26.52.jpeg",
+      "bytes": 55142,
+      "sha256": "5bad4c9177d424be7dffa4b4dd993c4c9c23902cc8ca4ba1de65bb09777360aa"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/224557b3-f783-40da-a8d8-4b8cc6df11c3/Screenshot+2025-03-31+at+21.10.59.png",
+      "file": ".media-work/meatstop/img09-Screenshot+2025-03-31+at+21.10.59.png",
+      "bytes": 528874,
+      "sha256": "684f600ab09031550cacd51b6e0ac32bc5532ae7c287ac5b2315f9595fb6f06e"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/049ab256-f0d1-4445-9fbe-4dce8b255420/WhatsApp+Image+2025-03-20+at+12.26.51+%283%29.jpg",
+      "file": ".media-work/meatstop/img10-WhatsApp+Image+2025-03-20+at+12.26.51+(3).jpg",
+      "bytes": 39670,
+      "sha256": "735ae616f2ad16258aaf8a662b0d0a3802473d484d394c3721750b79760ec18b"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/2a71d3b3-5312-4497-af91-614aa7d4ad6f/WhatsApp+Image+2025-03-20+at+12.26.51.jpg",
+      "file": ".media-work/meatstop/img11-WhatsApp+Image+2025-03-20+at+12.26.51.jpg",
+      "bytes": 38242,
+      "sha256": "f0f1fb94f8de082185667831c7fbf8d9732a82d82c8fe1307f7fb7feb11686ad"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/playlist.m3u8",
+      "why": "hls not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@meatstop_",
+      "why": "tiktok not a public direct file"
+    }
+  ],
+  "totalBytes": 6646709
+}

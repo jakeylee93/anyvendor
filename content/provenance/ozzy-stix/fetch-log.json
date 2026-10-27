@@ -1,0 +1,193 @@
+{
+  "slug": "ozzy-stix",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+      "file": ".media-work/ozzy-stix/logo00-whitebig.png",
+      "bytes": 5424,
+      "sha256": "e450138740fd796c70e7658a5425323550c006e300e3a95071efe76995fbf561"
+    },
+    {
+      "kind": "logo",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087597808-W2WTTP3UYILMJEBE6YKZ/favicon.ico?format=original",
+      "file": ".media-work/ozzy-stix/logo01-favicon.ico",
+      "bytes": 5424,
+      "sha256": "48c364a6452d306379a65b2cc71fe2676ce31d43a4ff728356a1ef926cbcb3a7"
+    },
+    {
+      "kind": "logo",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087637519-LIHPNY893JVO1JX9ELV0/image.jpg?format=original",
+      "file": ".media-work/ozzy-stix/logo02-image.jpg",
+      "bytes": 9674,
+      "sha256": "8824dfdf2e22e9fb892caad48a480c119b405543ff9c630bc73f2f3dffd369f7"
+    },
+    {
+      "kind": "logo",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_logo.png",
+      "file": ".media-work/ozzy-stix/logo03-ozzy_stix_logo.png",
+      "bytes": 1034610,
+      "sha256": "7bcfaf39015e711df8c573bbbd33bd8a1c7966ada018f1976742617a9b7a1383"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original",
+      "file": ".media-work/ozzy-stix/img00-IMG_0596.JPG",
+      "bytes": 247532,
+      "sha256": "a22db928176f3e6cf856879fd5ccb5b63087b26b4b1f5a802077ae934e8edad5"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+      "file": ".media-work/ozzy-stix/img01-IMG_2574.JPG",
+      "bytes": 252468,
+      "sha256": "091ad11f872739cbd5eeedca5ee27ca6c91b8c249c56bec254339f1accffbd82"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original",
+      "file": ".media-work/ozzy-stix/img02-IMG_2018.JPG",
+      "bytes": 109854,
+      "sha256": "49fe20d3d2bd495fbbfbe2756462d02e8e29ad36906c96c662e73c4509b38654"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original",
+      "file": ".media-work/ozzy-stix/img03-IMG_4416.JPG",
+      "bytes": 134770,
+      "sha256": "1340c5e88da30f8840ccccd30f0547d4dfcc08514db7ef4db84f32d6a2eaf325"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original",
+      "file": ".media-work/ozzy-stix/img04-IMG_1003.jpg",
+      "bytes": 46874,
+      "sha256": "73633c43e28dd053cdfbdf54404f5b20351da62dff14a9c1648c87907cb198d1"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original",
+      "file": ".media-work/ozzy-stix/img05-21e45c6c-4b32-433d-be65-fb3107133d75.jpg",
+      "bytes": 89620,
+      "sha256": "f198ae2db7a0dca064d9e31997efa4aa47989e774aeaa3a122d322a9e1d2f34e"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539084406620-UHWG73Y9QHCRHWTAFMHX/IMG_3845.jpg?format=original",
+      "file": ".media-work/ozzy-stix/img06-IMG_3845.jpg",
+      "bytes": 346894,
+      "sha256": "855c5b1fe42e02d67c6be05fec965fcb154148d533c344246b37203146949fcb"
+    },
+    {
+      "kind": "image",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg",
+      "file": ".media-work/ozzy-stix/img07-ozzy_stix_thumb.jpg",
+      "bytes": 301027,
+      "sha256": "41bf9e1559912482f061011191651a875d6f092bf6e34717895a77e07aa23352"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg",
+      "file": ".media-work/ozzy-stix/img08-image-asset.jpeg",
+      "bytes": 102146,
+      "sha256": "c7dde8e5e7f20a2eac389d41c5665f963d09aabaa73f7da9cedd8093abf0d802"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937138401-YZ14529T5UBD1S8U70AV/image-asset.jpeg",
+      "file": ".media-work/ozzy-stix/img09-image-asset.jpeg",
+      "bytes": 47502,
+      "sha256": "885e2e51a488cbe74bb4ee023e8b1f6a967af62c4523d9f466c56f3793310fbc"
+    },
+    {
+      "kind": "image",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg",
+      "file": ".media-work/ozzy-stix/img10-image-asset.jpeg",
+      "bytes": 45822,
+      "sha256": "631b6094020fab9cb197c5e39ad9acaa081d4897b6807cc647e5a634a5a96284"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://vimeo.com/294118993",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://vimeo.com/294198440",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://vimeo.com/294240593",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://vimeo.com/294240985",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://vimeo.com/316600625",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://vimeo.com/316599127",
+      "why": "vimeo not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KnSKfOQlGQE",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=32pRwih934w",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OxvX1304j0U",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wLz3GKJwA4U",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cw82ymbCr2U",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kRvHEyr7oY0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cfhkZ9S5SiI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HWGHT4mPQOI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hHJWjOg9kKM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dlgovempC6I",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QGZMnFEFbz8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Mk0qblDrbDM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/p/B1ttjWkAOJ-/",
+      "why": "instagram not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@ozzyandstix",
+      "why": "tiktok not a public direct file"
+    }
+  ],
+  "totalBytes": 2779641
+}

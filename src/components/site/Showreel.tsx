@@ -113,7 +113,7 @@ export default function Showreel({ desktop, mobile, label, children }: Props) {
   };
 
   return (
-    <section ref={sectionRef} aria-label={label} className="relative isolate h-[86svh] min-h-[560px] overflow-hidden bg-be-deep text-white md:h-[88vh]">
+    <section ref={sectionRef} aria-label={label} className="relative isolate h-[calc(100svh-196px)] min-h-[540px] overflow-hidden bg-be-deep text-white lg:h-[calc(100svh-150px)] lg:min-h-[600px]">
       <div ref={mediaRef} className="absolute inset-0 will-change-transform">
         <picture>
           <source media={PORTRAIT} srcSet={mobile.posterWebp} type="image/webp" />
@@ -147,7 +147,7 @@ export default function Showreel({ desktop, mobile, label, children }: Props) {
         type="button"
         onClick={toggle}
         aria-label={playing ? "Pause showreel" : "Play showreel"}
-        className="absolute bottom-4 right-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/40 backdrop-blur hover:bg-white/25 focus-visible:outline-2 focus-visible:outline-white md:bottom-6 md:right-6"
+        className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/40 backdrop-blur hover:bg-white/25 focus-visible:outline-2 focus-visible:outline-white lg:bottom-6 lg:right-6 lg:top-auto"
       >
         {playing ? <Pause size={18} aria-hidden /> : <Play size={18} aria-hidden />}
       </button>

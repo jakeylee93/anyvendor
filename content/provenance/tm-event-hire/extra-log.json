@@ -1,0 +1,54 @@
+{
+  "slug": "tm-event-hire",
+  "method": "yt-dlp 2025.10.14 --no-cookies -f 'bv*[height<=1920]/b' (public TikTok posts of @tmeventhire, profile listed via --flat-playlist)",
+  "files": [
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7429083756129946913",
+      "file": ".media-work/tm-event-hire/tt-7429083756129946913.mp4",
+      "sha256": "43d7bbaf6282326e42056cb37dfb56344ecd3e00fbc0d87c556d778c74436490",
+      "bytes": 1117431
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7606365095924387094",
+      "file": ".media-work/tm-event-hire/tt-7606365095924387094.mp4",
+      "sha256": "46cd6c7f74252a39af35016b36cdbd7c3b1d5f8f3026ecef5815a65ef4b72ed2",
+      "bytes": 666222
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7608915836761394454",
+      "file": ".media-work/tm-event-hire/tt-7608915836761394454.mp4",
+      "sha256": "9c6f292f9a1ceaec13b8ee01c7951541b65edc77869e5dbb3fee815f99071453",
+      "bytes": 592268
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7613172312011066646",
+      "file": ".media-work/tm-event-hire/tt-7613172312011066646.mp4",
+      "sha256": "c5c976e0653928f2cf09d75c52993aa3faffcb3eaca3e9ca5433c66234df6580",
+      "bytes": 3103732
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7647821711454473495",
+      "file": ".media-work/tm-event-hire/tt-7647821711454473495.mp4",
+      "sha256": "d8befc637073df816fed0acb7793abc9231b96faf0aaac06a3513b81c3320ca2",
+      "bytes": 1739820
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7658230699773742358",
+      "file": ".media-work/tm-event-hire/tt-7658230699773742358.mp4",
+      "sha256": "e7f19f2dfa152806355b4b0c1eb28c28dd781c3a4cf26bc748cc4f982340025c",
+      "bytes": 1554477
+    },
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7672893450060172566",
+      "file": ".media-work/tm-event-hire/tt-7672893450060172566.mp4",
+      "sha256": "0e37911eec3ba25a8229e373f945c55dcf3f4b80860b44279221b8bb6bebce7c",
+      "bytes": 4448087
+    }
+  ],
+  "discarded": [
+    {
+      "url": "https://www.tiktok.com/@tmeventhire/video/7662118652711308566",
+      "why": "photo-slideshow post; yt-dlp returned audio only (mp3), deleted"
+    }
+  ]
+}

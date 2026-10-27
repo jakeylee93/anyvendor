@@ -1,0 +1,427 @@
+{
+  "slug": "tony-poole-discos",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png",
+      "file": ".media-work/tony-poole-discos/logo00-TonyPooleDiscos_logo-02.png",
+      "bytes": 16564,
+      "sha256": "19d4cfd1a1f3ad9ac724be27bb209e184bf13fdfb676cefc2490ef533febe4f7"
+    },
+    {
+      "kind": "logo",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-01.png",
+      "file": ".media-work/tony-poole-discos/logo01-TonyPooleDiscos_logo-01.png",
+      "bytes": 16374,
+      "sha256": "c4fb448bf8ee92efa8532b848d4b92c90fbcfab83c010a0415f3e9bc5408cbf4"
+    },
+    {
+      "kind": "logo",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2016/06/logo-1.png",
+      "file": ".media-work/tony-poole-discos/logo02-logo-1.png",
+      "bytes": 8204,
+      "sha256": "e649667b522a713f41a5bfe1411cac5233188de94d1c68e3d0ed0229948b1e22"
+    },
+    {
+      "kind": "logo",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02-300x145-1.png",
+      "file": ".media-work/tony-poole-discos/logo03-TonyPooleDiscos_logo-02-300x145-1.png",
+      "bytes": 5148,
+      "sha256": "660fd6c073da80d45890e4a710db89ce681d398a217ae3f31fc63a54293379d4"
+    },
+    {
+      "kind": "logo",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2015/06/Tony-Poole-Discos.jpg",
+      "file": ".media-work/tony-poole-discos/logo04-Tony-Poole-Discos.jpg",
+      "bytes": 559816,
+      "sha256": "60d9462562e0a72af74b6144286590bef82ae66cc531b982b7f3d94df3c84697"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg",
+      "file": ".media-work/tony-poole-discos/img00-Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-L",
+      "bytes": 426914,
+      "sha256": "a790c268b513e8dd17287d7e51b92ed56b0c6f470724adfbe112b52056337585"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg",
+      "file": ".media-work/tony-poole-discos/img01-Parklands-Essex-Wedding-First-Dance.jpg",
+      "bytes": 442235,
+      "sha256": "3ed27ff17e2ca0a59eec8fdd0d7b2ec60d97f802579fd0240c6b914e4e04193c"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg",
+      "file": ".media-work/tony-poole-discos/img02-Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg",
+      "bytes": 478590,
+      "sha256": "88dd2d706d6ccdec236aceba6de057049a25f3e9e5eb1e0f0d95fbb706c4541e"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg",
+      "file": ".media-work/tony-poole-discos/img03-Stock-Brook-Manor-Essex-Wedding-1.jpg",
+      "bytes": 352222,
+      "sha256": "96f6b0f343733cb4577145e2ee37b4fe0785d48c5c22beca8f21042c3369bc18"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg",
+      "file": ".media-work/tony-poole-discos/img04-Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg",
+      "bytes": 477828,
+      "sha256": "001be0d084db2c673701a279a8ade94163e54dc80728f14caa38456e2b6bb0b5"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/The-Shard-Premier-Set-Up-White-Starlight-Booth-White-LED-Dance-FloorLilac-Uplighting.jpg",
+      "file": ".media-work/tony-poole-discos/img05-The-Shard-Premier-Set-Up-White-Starlight-Booth-White-LED-Dance-FloorLilac-Uplighting.jpg",
+      "bytes": 197357,
+      "sha256": "43ade2159d31ac65010a40fb487bbf9e0a91c417a329976b738125a858793570"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg",
+      "file": ".media-work/tony-poole-discos/img06-Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting",
+      "bytes": 453160,
+      "sha256": "09971783639fdf1d9968a276b8839f8592126290ec97e8449088505a44ae6b64"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg",
+      "file": ".media-work/tony-poole-discos/img07-Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg",
+      "bytes": 455309,
+      "sha256": "ce4b5c4f6dfc137a1bd1b0e7101f3fa175958b61879b13bb2b36af325815c0ba"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Sheene-Mill-Royston-Herts-Premier-Set-Up-White-Booth-White-LED-Backdrop-LOVE-Letters-Pink-And-Blue-Uplighting.jpg",
+      "file": ".media-work/tony-poole-discos/img08-Sheene-Mill-Royston-Herts-Premier-Set-Up-White-Booth-White-LED-Backdrop-LOVE-Letters-Pink-And-Blue-Uplighting.jpg",
+      "bytes": 482981,
+      "sha256": "1c5de05a877573c7724fc7a13f7e387e165909913a83a9e7750c7ee7dd40c936"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/The-Grove-Watford-Herts-Photo-Booth.jpg",
+      "file": ".media-work/tony-poole-discos/img09-The-Grove-Watford-Herts-Photo-Booth.jpg",
+      "bytes": 516154,
+      "sha256": "a106db3e15cdd8992f1cc9487cd7c3dbe3f0b0242bc5985122be1ef72e8b623b"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2026/01/Sheene-Mill-Royston-Herts-360-Video-Booth.jpg",
+      "file": ".media-work/tony-poole-discos/img10-Sheene-Mill-Royston-Herts-360-Video-Booth.jpg",
+      "bytes": 1451408,
+      "sha256": "c566740a1649fe44e9bb884ac8aea7e86111776f3f57949f31c171ef07113f4b"
+    },
+    {
+      "kind": "image",
+      "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/IMG_1993.jpg",
+      "file": ".media-work/tony-poole-discos/img11-IMG_1993.jpg",
+      "bytes": 223666,
+      "sha256": "d628d5346b0d5d0a89d5b1cc7115c4735f3196a89315b819c576de320fd57ff7"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.youtube.com/watch?v=OeO8ee-0p88",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-eY3BvBCOuI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aasQIdM5DHg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mO6bmloztGg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Qf508hgiJqw",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lOgN0LaY6CM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aH1SWM-EMDA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Lo2a9jpSZdg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=354szepMFME",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WCHrgKl9EEY",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YbXCWToKepo",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eujRieSpl3E",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-AcEXcSGLbs",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BvyDbAVGGWE",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zXVEh3Y6RT0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NBtp2jfVuM0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pTP6myEi8aU",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YBcVgXzoYwM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wA64QyofIEY",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BQSC8WooExE",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1U6Jmwxh8-8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C53MvTyUU6o",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wn-Xe_Tjd8A",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4Z_hJ0YulgQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ErB1OoPy4w8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=v6_xDE8JEng",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BMbieeow-uU",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fxg-e48ny6c",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NAZsNH4_gIA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZGYpWHe5DG4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MKN_NkzvIw8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1GKDSSriKlA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FLvNL4kWP4M",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VmdOjI4dKT8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aIQzJCbiJKo",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kxxWoZQgWSQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VtYh5WEIf4M",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nS6LkItjYj4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=30ga7orExO0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VGQELsZ0KSc",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ipMlvDRvNIg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ihGEIKjQjL0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SCpJrdXTry4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZhnPjj-o5KU",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=99gnWbGgtFE",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9MEaAqPSWgA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=smQt7VnZJuo",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FD3WzZXcT_8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cadCs-xHUbA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oDMtWo2zFJ0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q2KoEPhlbaU",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Nzs7NVBU9po",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TuEPOybprpA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_TQHj2HUdSE",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xGlLHdKutD4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F7ltrCoOji0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bNsalIjXK6I",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=__U2JS_wtuQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x8nyCZ6RaKk",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6Ao82YiYfKM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EeSsZxpP1S8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AvjzZ7WdKZQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=n9wn2o99ve8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=STC3G6uuAG4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yXsUiwpETis",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=L6a3YVUiB_U",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=48JJPsyJjyk",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u63BvPWNrG0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8BEZybdB_rA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=to07JW3gOQo",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZwuLFT02g0s",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=j-OFpzLLh6I",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wjUmKroIyNw",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H7mfg1DGkVg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PL2ZvDPgUn8EO2po_2-LJfa4CCua0iluqk",
+      "why": "youtube not a public direct file"
+    }
+  ],
+  "totalBytes": 6563930
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "harry-de-cruz",
+  "files": [
+    {
+      "url": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8",
+      "sourcePage": "https://www.harrydecruz.com/showreel",
+      "file": ".media-work/harry-de-cruz/showreel-hls.mp4",
+      "sha256": "78ad082339c6e36f443e50d2e8d58dac389bf5fd5c48323a0a30d4b22220d45e",
+      "bytes": 24328387,
+      "method": "ffmpeg HLS (highest variant 1920x1080), -an -c:v copy"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg",
+      "file": ".media-work/harry-de-cruz/jpg/img00.jpg",
+      "sha256": "164fe7719bcbc4c7c23211dd21291b355c85dd16d92af49b2aeac1798aee7b7b",
+      "bytes": 235339,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img01.jpg",
+      "sha256": "b1aae4e210d92899728acf75a1ec44f2bdb25ad970ac1f7edd97369360079d1f",
+      "bytes": 806281,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg",
+      "file": ".media-work/harry-de-cruz/jpg/img02.jpg",
+      "sha256": "6be88f8f36cb173376fe569b1c7946186cef838702db7ce033524551d46db87f",
+      "bytes": 485055,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/1646149967211-6IA69WBE6ITE1685MWTJ/IMG_1525+2.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img03.jpg",
+      "sha256": "26bfcabe8969960ae9e7dd108f7e53b0068735d3f218d16521b2a711162011d7",
+      "bytes": 613248,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img04.jpg",
+      "sha256": "fd42d4dc4fc61b72e568f2f735a3082aa3d62e7591be8465556140664614f222",
+      "bytes": 195331,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img05.jpg",
+      "sha256": "18c3de2ffb84c5ceade4fdcc2efbbbb0ec47c9ec0fc10707f584245502aecb50",
+      "bytes": 435432,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img06.jpg",
+      "sha256": "4301a9d4e91dbc8a8847f79d8ed16909da37088249e87bf606e2383e4690361f",
+      "bytes": 444618,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img07.jpg",
+      "sha256": "1a540112f6ea3dac3184760967fd197bd9455bf61cbc3659b777289c0310419d",
+      "bytes": 450115,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg",
+      "file": ".media-work/harry-de-cruz/jpg/img08.jpg",
+      "sha256": "063b4976a1797c895ac0c44b79121de173943624be11d29f046add7eeae0dd48",
+      "bytes": 452013,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg",
+      "file": ".media-work/harry-de-cruz/jpg/img09.jpg",
+      "sha256": "e70b6eb32340623ee2acba92602a702a450fc01febf240aff6a62dbce919cf24",
+      "bytes": 183357,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG",
+      "file": ".media-work/harry-de-cruz/jpg/img10.jpg",
+      "sha256": "7358a5dfab6e93bcb5cecf10cb2d67ad4147909935406f6d09dbaf4ba5aedb76",
+      "bytes": 247328,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/73d1ddec-12aa-4f80-a922-5554930fbc94/663A6149.jpg",
+      "file": ".media-work/harry-de-cruz/jpg/img11.jpg",
+      "sha256": "20a915024c9285046763436fd86164004d087547708a2bdd8467a02e76dbd8c5",
+      "bytes": 335730,
+      "method": "curl, Accept: image/jpeg"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/ed357811-5d3d-4d7a-85c5-4a6963a99169/favicon.ico",
+      "file": ".media-work/harry-de-cruz/jpg/logo-favicon.png",
+      "sha256": "f9f45af02683162ad4f5c72ef2e6f452739cadaa512f519c334bcc02e4cd0790",
+      "bytes": 2199,
+      "method": "curl, Accept: image/png"
+    }
+  ]
+}

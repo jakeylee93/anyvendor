@@ -1,0 +1,108 @@
+{
+  "slug": "lucy-jane-cakes",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/10/lucy_jane_cakes.png",
+      "file": ".media-work/lucy-jane-cakes/logo00-lucy_jane_cakes.png",
+      "bytes": 208252,
+      "sha256": "85becb258ad3597ac28708124f23575bc119108a023655c94109b9176e4e5354"
+    },
+    {
+      "kind": "logo",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/060e7c8f384862d3b5ef399c508a7599~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=7a3921ab&x-expires=1793253600&x-signature=87RtotVtpCzTx6uNVJY12GQSNbY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/logo01-060e7c8f384862d3b5ef399c508a7599~tplv-tiktokx-cropcenter:1080:1080.jpeg",
+      "bytes": 22384,
+      "sha256": "73005b757d40e2fab1e491b1e167e3aa0036bd72348ac079243200388e13da36"
+    },
+    {
+      "kind": "image",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg",
+      "file": ".media-work/lucy-jane-cakes/img00-cakes.jpg",
+      "bytes": 205552,
+      "sha256": "6053a29e10b8e3ba2a4c09c005c9f626cb7a3e2b880be899d752fd569e34ab7d"
+    },
+    {
+      "kind": "image",
+      "url": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/ef9bb60b943e45b8aa977dcdc966162f_1695905533~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=o5fV7vv7IiMbFZfTVRbHSaJEOq8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/img01-ef9bb60b943e45b8aa977dcdc966162f_1695905533~tplv-tiktokx-origin.image",
+      "bytes": 51225,
+      "sha256": "29868017f422e132099f4f85087189801822aee522778da9ff31052e54101a55"
+    },
+    {
+      "kind": "image",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/df7a83f0d4d44f5bbe77bc8403548ccc_1726564395~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=QQvqir%2FeGNTB7rExwVAi%2BB%2FHp7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/img02-df7a83f0d4d44f5bbe77bc8403548ccc_1726564395~tplv-tiktokx-origin.image",
+      "bytes": 36764,
+      "sha256": "a8d76e4f79b435f7c4e0db5905a9b7e01daf202499e97ec843cd0067ea469f08"
+    },
+    {
+      "kind": "image",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/owugAI3CrP6gPAUebOI2f1exESrGEDLDIzZLyz~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=nnH2goA5oZFdW8R0Y4MrisoKfjA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/img03-owugAI3CrP6gPAUebOI2f1exESrGEDLDIzZLyz~tplv-tiktokx-origin.image",
+      "bytes": 44603,
+      "sha256": "ab3b6606cb20f774ad7716d21b095812236b0c79f7010cc4a0e4920c1ceb78f3"
+    },
+    {
+      "kind": "image",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oEjBsADbQFAzQsB5UBEklvEeFmbsfRilnKPPgi~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=Y7dh7aWb9KlbXW9VUhEdnhVcXeY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/img04-oEjBsADbQFAzQsB5UBEklvEeFmbsfRilnKPPgi~tplv-tiktokx-origin.image",
+      "bytes": 64083,
+      "sha256": "cc390993504605ac236f8afc29bf166cbf0911b968be29689ff463e498b6e4f9"
+    },
+    {
+      "kind": "image",
+      "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oYmArZiE4YXxISAO2BsYBNZ2pA7iIUdSiBLiv~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=BCFdqFpudqMH%2BBScVSLyKtQ9KEU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+      "file": ".media-work/lucy-jane-cakes/img05-oYmArZiE4YXxISAO2BsYBNZ2pA7iIUdSiBLiv~tplv-tiktokx-origin.image",
+      "bytes": 42852,
+      "sha256": "06bdb68978dea4eca3c471c8ebb296e7908c069be7ddc2b637585bf04dbe7a4e"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7372276808340884769",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7486597708946492694",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7483037397538589974",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7265710948135079201",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665",
+      "why": "tiktok not a public direct file"
+    },
+    {
+      "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7349667625263287585",
+      "why": "tiktok not a public direct file"
+    }
+  ],
+  "totalBytes": 675715
+}

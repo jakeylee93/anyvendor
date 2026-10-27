@@ -46,17 +46,31 @@ function CardMedia({ business }: { business: Business }) {
       <img src={cover} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
       {p.logo && (
         <span
-          className={`absolute bottom-3 left-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl p-1.5 shadow-md ${p.logo.plate === "dark" ? "bg-be-deep" : "bg-white"}`}
+          className={`absolute bottom-3 left-3 flex h-14 min-w-14 max-w-[75%] items-center justify-center overflow-hidden rounded-xl px-2 py-1.5 shadow-md ${p.logo.plate === "dark" ? "bg-be-deep" : "bg-white"}`}
         >
-          <img src={p.logo.src} alt={`${p.displayName} logo`} className="max-h-full max-w-full object-contain" />
+          <img
+            src={p.logo.src}
+            alt={`${p.displayName} logo`}
+            className={`h-full w-auto max-w-full object-contain ${p.logo.width / p.logo.height > 2 ? "max-h-7" : ""}`}
+          />
         </span>
       )}
     </div>
   );
 }
 
+/** Year and place as the business itself states them; falls back to the 2025 listing only when no profile exists. */
+function cardFacts(b: Business) {
+  const p = getProfile(b.slug);
+  if (!p) return { year: String(b.established), place: locationLabel(b) };
+  const year = p.established?.label.match(/\b(19|20)\d{2}\b/)?.[0] ?? null;
+  const place = p.basedIn?.text ?? b.region ?? null;
+  return { year, place };
+}
+
 export default function BusinessCard({ business }: { business: Business }) {
   const price = getProfile(business.slug)?.cardPrice ?? business.price;
+  const facts = cardFacts(business);
   const cats = categoriesOf(business);
   const inferred = !business.verified && !business.listedCategories.length && cats.length > 0;
   return (
@@ -67,17 +81,19 @@ export default function BusinessCard({ business }: { business: Business }) {
       <CardMedia business={business} />
       <div className="flex flex-1 flex-col px-4 pt-4">
         <h3 className="truncate text-lg font-semibold text-be-navy group-hover:text-be-cyan">{getProfile(business.slug)?.displayName ?? business.name}</h3>
-        <p className="text-xs font-light text-be-grey">{business.established}</p>
+        {facts.year ? <p className="text-xs font-light text-be-grey">Est. {facts.year}</p> : <p className="text-xs font-light text-be-grey">&nbsp;</p>}
         {cats.length > 0 && (
           <p className="mt-2 text-xs text-be-navy">
             {cats.join("  ·  ")}
             {inferred && <span className="ml-1 text-be-grey">(unconfirmed)</span>}
           </p>
         )}
-        <p className="mt-2 flex items-start gap-1 text-xs text-be-grey">
-          <MapPin size={13} className="mt-0.5 shrink-0" aria-hidden />
-          <span className="line-clamp-2">{locationLabel(business)}</span>
-        </p>
+        {facts.place && (
+          <p className="mt-2 flex items-start gap-1 text-xs text-be-grey">
+            <MapPin size={13} className="mt-0.5 shrink-0" aria-hidden />
+            <span className="line-clamp-2">{facts.place}</span>
+          </p>
+        )}
       </div>
       <div className="mt-4 flex items-baseline justify-between gap-2 border-t border-gray-100 px-4 py-3">
         <span className="text-xs text-be-grey">Price from:</span>

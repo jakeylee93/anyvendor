@@ -1,0 +1,8 @@
+{
+  "slug": "tl-executive-cars",
+  "files": [],
+  "notes": [
+    "No media beyond fetch.py's downloads (fetch-log.json). No video source exists, so no HLS/TikTok/yt-dlp download was made.",
+    "One metadata-only Wayback CDX query (tlexecutivecars.co.uk/img/*) confirmed only car1.jpg is an archived own photo; the others are stock (airporttransfers, corporatebusiness, specialevents), a texture (fifth-marbel_2.png) or 404s."
+  ]
+}

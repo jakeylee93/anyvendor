@@ -1,0 +1,49 @@
+{
+  "slug": "paint-and-pour",
+  "note": "No extra (HLS/TikTok) downloads were possible or made; all source files came from fetch.py (see fetch-log.json). Derived working files are listed for provenance.",
+  "files": [],
+  "derived": [
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p00-host-monet.jpg",
+      "sha256": "7edbe2871723a036758ecab6face3683001b263b39d116f6796fb339a03f8c70",
+      "bytes": 1262336,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p01-group-scream.jpg",
+      "sha256": "4a94fc624df0426475d5455110cc83050a24b310e26be8953b187a807ee7709c",
+      "bytes": 760061,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p02-host-mic.jpg",
+      "sha256": "ae11ff8653c4e9360f1e6c886b669a2eccfbb3a8654b2021ff2af51f3e5c1dfd",
+      "bytes": 417581,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p03-setup.jpg",
+      "sha256": "48bff03addb4a8591c75122f22682a5ab939d869ea3d96f409c6f08fe1e158a3",
+      "bytes": 523986,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p04-group-cats.jpg",
+      "sha256": "ad45189e53761a82baf4f9b1d340b505e3b52098231ff05503cd0101c27eda1c",
+      "bytes": 479344,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": ".media-work/paint-and-pour/reel-src/p05-painting.jpg",
+      "sha256": "e99bfec6fe1cbc090c4b483a99fa78f2a39014694b5a7fedf0d71a932da8f76b",
+      "bytes": 524883,
+      "derivedFrom": "fetch-log.json source photo (resized for the reel)"
+    },
+    {
+      "file": "public/media/paint-and-pour/logo.svg",
+      "sha256": "76ec6f8dfc977bb92345059cad27a4fb15dabdd5bebe34fe649cfa87d901e448",
+      "bytes": 65061,
+      "derivedFrom": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_pour_logo.png"
+    }
+  ]
+}

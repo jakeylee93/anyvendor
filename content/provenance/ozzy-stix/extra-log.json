@@ -1,0 +1,185 @@
+{
+ "slug": "ozzy-stix",
+ "files": [
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+   "file": ".media-work/ozzy-stix/orig-logo00-whitebig.png",
+   "sha256": "e34a0f26e5ad1f0513a48ea18f0f8f1866e879b9574f9b623b63d6fb85441919",
+   "bytes": 6136,
+   "contentType": "image/png",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087597808-W2WTTP3UYILMJEBE6YKZ/favicon.ico?format=original",
+   "file": ".media-work/ozzy-stix/orig-logo01-favicon.ico",
+   "sha256": "176205baf0c4098f5af5ae58921b5a5e0ec5b71aed35ed9debcfe80444a1cec9",
+   "bytes": 6491,
+   "contentType": "image/png",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087637519-LIHPNY893JVO1JX9ELV0/image.jpg?format=original",
+   "file": ".media-work/ozzy-stix/orig-logo02-image.jpg",
+   "sha256": "0d97e207a19933a3909297efb0a0f753821ad0bc48f74ed65af0930b37f1ece9",
+   "bytes": 28134,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original",
+   "file": ".media-work/ozzy-stix/orig-img00-IMG_0596.JPG",
+   "sha256": "dce4cbe0b651faa1bbf6990dca6b4d76959c064392d3fd5439124b4783b4b856",
+   "bytes": 852594,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+   "file": ".media-work/ozzy-stix/orig-img01-IMG_2574.JPG",
+   "sha256": "ae663c3117b30a1ee1eb9eb63fd89cfaddc257a73a427b8cc9381b6a0969af3b",
+   "bytes": 1087790,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original",
+   "file": ".media-work/ozzy-stix/orig-img02-IMG_2018.JPG",
+   "sha256": "8bab4433daaa459130d46efd509b431090a2e30c71eff6e69bea3802dd00964b",
+   "bytes": 598433,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original",
+   "file": ".media-work/ozzy-stix/orig-img03-IMG_4416.JPG",
+   "sha256": "60c0d7536001cae4049570264929ae4437f782a1a640c889156993831f26485d",
+   "bytes": 584654,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original",
+   "file": ".media-work/ozzy-stix/orig-img04-IMG_1003.jpg",
+   "sha256": "0839847592d8b056ebf2cd57d8b3c55016a8a88c127e033d002f651e48d657bb",
+   "bytes": 83991,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original",
+   "file": ".media-work/ozzy-stix/orig-img05-21e45c6c-4b32-433d-be65-fb3107133d75.jpg",
+   "sha256": "930795a7b87af6c1ca71227fe9488eb14ad90d4018ecb4366f3a548230269063",
+   "bytes": 213496,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539084406620-UHWG73Y9QHCRHWTAFMHX/IMG_3845.jpg?format=original",
+   "file": ".media-work/ozzy-stix/orig-img06-IMG_3845.jpg",
+   "sha256": "43033a3787af73714bfbcc36a1e544d9ca987eaa760acb09c8bf91774679308e",
+   "bytes": 1070712,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg",
+   "file": ".media-work/ozzy-stix/orig-img08-image-asset.jpeg",
+   "sha256": "b5ab773a14019cc64bcf30f1752d60aae5a60c9990fdcb4b68cef032b7a15a0b",
+   "bytes": 97010,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937138401-YZ14529T5UBD1S8U70AV/image-asset.jpeg",
+   "file": ".media-work/ozzy-stix/orig-img09-image-asset.jpeg",
+   "sha256": "ff40f36ac7b1fbd04b41a5217484909e44caa8fba26b643a5a32aeb0bbb85618",
+   "bytes": 54296,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg",
+   "file": ".media-work/ozzy-stix/orig-img10-image-asset.jpeg",
+   "sha256": "8e0cf5e69eca86bac12c577e2034170bd8d9531f1bda996ca1badb45b3d67ce2",
+   "bytes": 57869,
+   "contentType": "image/jpeg",
+   "note": "re-fetched with Accept: image/jpeg,image/png so Squarespace serves the original file rather than a WebP transcode"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7694311421823307030",
+   "file": ".media-work/ozzy-stix/tt29-7694311421823307030.mp4",
+   "sha256": "fee260b87b2d7dda5ce75094b748ace50dae2f4956d1e3734e3ac0440f7cac06",
+   "bytes": 6329069,
+   "tool": "yt-dlp --no-cookies -f 'bv*[height<=1920]/b' (video stream only used; audio stripped in reel)",
+   "note": "used (reel segment 3)"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+   "file": ".media-work/ozzy-stix/tt44-7692051344248573206.mp4",
+   "sha256": "d950b94956650093f1879fc5be5cf872859a7a426800640f9f552a2333170c95",
+   "bytes": 8284109,
+   "tool": "yt-dlp --no-cookies -f 'bv*[height<=1920]/b' (video stream only used; audio stripped in reel)",
+   "note": "used (reel segments 1 and 5)"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7686215079620054294",
+   "file": ".media-work/ozzy-stix/tt84-7686215079620054294.mp4",
+   "sha256": "ffbdfc763b915a10c293a964053b06b81a79072eeb5a7d29728eabf52d4bc109",
+   "bytes": 7003501,
+   "tool": "yt-dlp --no-cookies -f 'bv*[height<=1920]/b' (video stream only used; audio stripped in reel)",
+   "note": "used (reel segment 4)"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7688104422886493462",
+   "file": ".media-work/ozzy-stix/tt75-7688104422886493462.mp4",
+   "sha256": "a158f76b59a57d773083a645d9a58ed09d7abdb7c729321115080bf2d4970fda",
+   "bytes": 3841988,
+   "tool": "yt-dlp --no-cookies -f 'bv*[height<=1920]/b' (video stream only used; audio stripped in reel)",
+   "note": "reviewed, not used (dark, motion-blurred)"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7693250822364433666",
+   "file": ".media-work/ozzy-stix/tt38-7693250822364433666.mp4",
+   "sha256": "5c4f51c6a3117bbdaefd2030c53767ba24ea88d22dee47b78660bb38b2fffb65",
+   "bytes": 9349067,
+   "tool": "yt-dlp --no-cookies -f 'bv*[height<=1920]/b' (video stream only used; audio stripped in reel)",
+   "note": "used (reel segment 2); only 576x1024 offered by TikTok"
+  },
+  {
+   "url": "https://www.tiktok.com/@ozzyandstix/video/7689517583376190742",
+   "file": ".media-work/ozzy-stix/tt64-7689517583376190742.mp4",
+   "sha256": null,
+   "bytes": null,
+   "note": "downloaded (576x1024), found to be a re-upload of the same footage as 7693250822364433666 with a different caption; deleted before hashing"
+  },
+  {
+   "derivedFrom": "tt29-7694311421823307030.mp4",
+   "file": ".media-work/ozzy-stix/crop-tt29-7694311421823307030.mp4",
+   "sha256": "6cf17da87ca0c020e2190519924467be322ef275c7ad506b218cb224bfe9ffea",
+   "bytes": 8597734,
+   "note": "intermediate: full-width crop of the top rows only, to exclude the post's burned-in TikTok caption; original timecodes preserved (encoded from t=0)"
+  },
+  {
+   "derivedFrom": "tt38-7693250822364433666.mp4",
+   "file": ".media-work/ozzy-stix/crop-tt38-7693250822364433666.mp4",
+   "sha256": "03b808acc804de52a4a65e50f8498e65091dac080fbc222fd7217478ef5c2c9e",
+   "bytes": 20058584,
+   "note": "intermediate: full-width crop of the top rows only, to exclude the post's burned-in TikTok caption; original timecodes preserved (encoded from t=0)"
+  },
+  {
+   "derivedFrom": "tt44-7692051344248573206.mp4",
+   "file": ".media-work/ozzy-stix/crop-tt44-7692051344248573206.mp4",
+   "sha256": "e8b435aa831c69bd5e0b14e8e4a1675dc501f024c5cfe1cad832d188ee2603bd",
+   "bytes": 39791490,
+   "note": "intermediate: full-width crop of the top rows only, to exclude the post's burned-in TikTok caption; original timecodes preserved (encoded from t=0)"
+  },
+  {
+   "derivedFrom": "tt84-7686215079620054294.mp4",
+   "file": ".media-work/ozzy-stix/crop-tt84-7686215079620054294.mp4",
+   "sha256": "e7ebcc4a6455c78b564945c85d66d9bfe7f0cd489b07fa37749a5ccb6b4f44bd",
+   "bytes": 41184464,
+   "note": "intermediate: full-width crop of the top rows only, to exclude the post's burned-in TikTok caption; original timecodes preserved (encoded from t=0)"
+  }
+ ],
+ "tiktokListing": "yt-dlp --flat-playlist of https://www.tiktok.com/@ozzyandstix (first 90 posts) and their cover images were used only to choose posts; covers kept outside the repo and deleted."
+}

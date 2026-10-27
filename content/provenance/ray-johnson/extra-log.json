@@ -1,0 +1,6 @@
+{
+  "slug": "ray-johnson",
+  "downloads": [],
+  "note": "No extra downloads. The site has no HLS stream or TikTok account, and its only own video is on YouTube, which is not allowed. One derived file, still00-pushin.mp4 (a 2.6 s push-in render of img_1699-high.jpg for reel segment 1), was created locally and deleted after the build.",
+  "derived": [{"file": "still00-pushin.mp4", "from": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg", "deleted": true}]
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "calleo",
+ "files": [
+  {
+   "url": "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8",
+   "file": ".media-work/calleo/hls-home.mp4",
+   "sha256": "8257a536f4bf0002c19ba24ae081aeabf25d1b327ba79c8aa24ae47b927a1988",
+   "bytes": 4558661
+  },
+  {
+   "url": "https://www.tiktok.com/@calleouk/video/7545174947736587522",
+   "file": ".media-work/calleo/tt-7545174947736587522.mp4",
+   "sha256": "99b52585c7c7e59469104c4f4d14f42045b0ee7cf4023213e63a7f1bf2ae9db8",
+   "bytes": 1900778
+  },
+  {
+   "url": "https://www.tiktok.com/@calleouk/video/7554828522418638102",
+   "file": ".media-work/calleo/tt-7554828522418638102.mp4",
+   "sha256": "4b01f9bde704b46b4395148c2f3907b52b92eaab5ac15da1c667375755650c27",
+   "bytes": 524952
+  },
+  {
+   "url": "https://www.tiktok.com/@calleouk/video/7560017338418875651",
+   "file": ".media-work/calleo/tt-7560017338418875651.mp4",
+   "sha256": "f47e93891cee57ff069fbb71dfbda55a6219cbfea3c7e56cbe27bbd5fcb0c165",
+   "bytes": 3456074
+  },
+  {
+   "url": "https://www.tiktok.com/@calleouk/video/7561878016595332375",
+   "file": ".media-work/calleo/tt-7561878016595332375.mp4",
+   "sha256": "011896fd8f6aedf6e3ac6389f0d08bef262402d91ec6a9f1af86303e52ce7311",
+   "bytes": 1339651
+  },
+  {
+   "url": "https://www.tiktok.com/@calleouk/video/7571159657109097750",
+   "file": ".media-work/calleo/tt-7571159657109097750.mp4",
+   "sha256": "1785aa250411f830baf9ac4a396b4b79e11724dada47034bea4bdf134bc28e85",
+   "bytes": 884113
+  },
+  {
+   "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e035b406-71d8-491b-819a-6b5a2700ed75/Logo+adaptation1.png",
+   "file": ".media-work/calleo/logo00-wordmark.png",
+   "sha256": "aa22b9cec65274df76563b76593c0977f1cad52cdf0ed9fce7f1c7139d60a8f2",
+   "bytes": 150624,
+   "note": "same URL as fetch.py logo00, re-requested with Accept: image/png to get the lossless PNG instead of the WebP the CDN served by default"
+  }
+ ],
+ "notes": [
+  "TikTok posts 7525515909352541462, 7556692563680333078, 7568573493432929558 are photo-slideshow posts; yt-dlp returned audio-only files, which were deleted unused."
+ ]
+}

@@ -79,8 +79,8 @@ export default async function DirectoryPage({ searchParams }: { searchParams: SP
           </div>
         )}
         <p className="mt-8 text-xs text-be-grey">
-          Listings are reconstructed from the March 2025 Booked Events directory. Prices are historical “price from” figures and may be out of date.
-          Event types and categories come from each business’s own channels; anything marked “unconfirmed” was inferred from the business name.
+          Profiles are built from each business’s own public website and social channels (checked October 2026), starting from the Booked Events
+          directory. Where a business publishes no current price, its card shows the 2025 Booked Events listing price, which may be out of date.
         </p>
       </section>
       <SupplierCta />

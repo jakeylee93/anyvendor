@@ -1,0 +1,276 @@
+{
+  "slug": "the-bar-people",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/Bar-People-Logo.png",
+      "file": ".media-work/the-bar-people/logo00-Bar-People-Logo.png",
+      "bytes": 381394,
+      "sha256": "717e2509141c4c981b69068950bd3c2d82d84390afd376a2718a63c4b8a3dc48"
+    },
+    {
+      "kind": "logo",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2023/09/logo_header_tbp.png",
+      "file": ".media-work/the-bar-people/logo01-logo_header_tbp.png",
+      "bytes": 45440,
+      "sha256": "f77fc86809826bc687ddf6a0e1abf3ca468a6f020c5dad97387d1683ccbe6053"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/cocktail_bar_home2.jpeg",
+      "file": ".media-work/the-bar-people/img00-cocktail_bar_home2.jpeg",
+      "bytes": 342371,
+      "sha256": "fa5859a40715ca004eb5f25def4948bbfa0721c9141be81d7fa3c81d7f9960fc"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg",
+      "file": ".media-work/the-bar-people/img01-IMG_8143.jpg",
+      "bytes": 3039717,
+      "sha256": "311dd7abe02e929a918bb395bc027081cdd4055f4c074e95fb68061c8cbccbfd"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/SIP_SIP.jpg",
+      "file": ".media-work/the-bar-people/img02-SIP_SIP.jpg",
+      "bytes": 520460,
+      "sha256": "69af093d3116f2541ddca9b24fc6d3e3de5e4bc729237cc34db2174ffe6db126"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/slide_home_bar.jpg",
+      "file": ".media-work/the-bar-people/img03-slide_home_bar.jpg",
+      "bytes": 653969,
+      "sha256": "fd6c1f7b21b39a3b5819534fbe1eb740c39abce62ddda87ec83b5b51d3b3a986"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg",
+      "file": ".media-work/the-bar-people/img04-IMG_9306.jpg",
+      "bytes": 711396,
+      "sha256": "cd080711cc2f116289e9fe4c40164aeed9b7b6e473686aaa638d620d9cf94734"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg",
+      "file": ".media-work/the-bar-people/img05-test.jpg",
+      "bytes": 857026,
+      "sha256": "01124084ed670848aaa679fd65cab95fc99e76be57609826d56a3ccc5dcd3233"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg",
+      "file": ".media-work/the-bar-people/img06-glody.jpg",
+      "bytes": 254883,
+      "sha256": "89537150c6f4516ba397e9e9c34bcfd994d2d4250974c3a26b248b247d1a9891"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/customporsche.jpg",
+      "file": ".media-work/the-bar-people/img07-customporsche.jpg",
+      "bytes": 190089,
+      "sha256": "3ba2b4690016b00747ff3980f492ce1ee8e3d7f952d414939ee4da36a1345363"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/lovemirror.jpg",
+      "file": ".media-work/the-bar-people/img08-lovemirror.jpg",
+      "bytes": 285777,
+      "sha256": "6d00336e28c29bb1110fd15f8057cac59b2afe79de2736d781a640a1025850c8"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/batistebar.jpg",
+      "file": ".media-work/the-bar-people/img09-batistebar.jpg",
+      "bytes": 169950,
+      "sha256": "86c3aee3a300741da236100a04a278d95e29cf0c14a684ada25390c12db59a2b"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/weddingbarimg.jpg",
+      "file": ".media-work/the-bar-people/img10-weddingbarimg.jpg",
+      "bytes": 238889,
+      "sha256": "222b508347b31c959ab338f6a350338cc94b8afb8bc7c33d4edbc72fedf329c5"
+    },
+    {
+      "kind": "image",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/gallery_Alex.jpg",
+      "file": ".media-work/the-bar-people/img11-gallery_Alex.jpg",
+      "bytes": 117143,
+      "sha256": "6b7ca61120aef4f9e1da0df47dd6a55098a3c4b16f021c04b89a9f71e1c19845"
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/C6846F6D-BE19-4CAE-87F5-28C600074CEE.mp4",
+      "file": ".media-work/the-bar-people/vid00-C6846F6D-BE19-4CAE-87F5-28C600074CEE.mp4",
+      "bytes": 14095623,
+      "sha256": "4cba342279222e333d3317b055975351198a93b705d428afac60bfc08087b3a0",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid00.jpg",
+        "frames": 55,
+        "every": 0.5,
+        "width": 1920,
+        "height": 1080,
+        "duration": 27.666667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 14095623
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "file": ".media-work/the-bar-people/vid01-928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "bytes": 9446667,
+      "sha256": "3ecd3e3db9fb3de7270fd519f46bd57d1a04bc8002dc1e4916f4c3320854704b",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid01.jpg",
+        "frames": 40,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 19.966667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 9446667
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "file": ".media-work/the-bar-people/vid02-0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "bytes": 8045836,
+      "sha256": "c8c6096c5a837a4c59a19ef178904f594398950fb4c10686bd34eedab8baf630",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid02.jpg",
+        "frames": 27,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 13.466667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 8045836
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+      "file": ".media-work/the-bar-people/vid03-539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+      "bytes": 9033015,
+      "sha256": "e83f7f01866dac63ae3a55bc8bfcb38934a0d4bb293457e992dd816ee4248660",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid03.jpg",
+        "frames": 41,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 20.436,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 9033015
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+      "file": ".media-work/the-bar-people/vid04-DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+      "bytes": 4457680,
+      "sha256": "f3cb4f1611c5d71c81db9c0701d3e3234822501b218470b1a7e45e279415419a",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid04.jpg",
+        "frames": 23,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 11.566667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 4457680
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/D0CF2346-CADB-442D-BF3A-E40B621F031F.mp4",
+      "file": ".media-work/the-bar-people/vid05-D0CF2346-CADB-442D-BF3A-E40B621F031F.mp4",
+      "bytes": 5759762,
+      "sha256": "be72ca4d29c655fd00ef0fc01a4aeb7129deed77c598c68eb78f6e253dd9f8df",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid05.jpg",
+        "frames": 23,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 11.566667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 5759762
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/263904B1-F7A9-4A7D-9592-CBC0BC424317.mov",
+      "file": ".media-work/the-bar-people/vid06-263904B1-F7A9-4A7D-9592-CBC0BC424317.mov",
+      "bytes": 14515191,
+      "sha256": "914561ebbe1623877f79f648207001f807147c38e05b6e058ae2bda102d68220",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid06.jpg",
+        "frames": 22,
+        "every": 0.5,
+        "width": 1920,
+        "height": 818,
+        "duration": 10.833333,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 14515191
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/18944927-DE5A-4240-921D-72A0868782B3-1.mp4",
+      "file": ".media-work/the-bar-people/vid07-18944927-DE5A-4240-921D-72A0868782B3-1.mp4",
+      "bytes": 12312603,
+      "sha256": "cab78d8b0e7d86fd589cbee20dd78a37e7ccbceb332c64a59b89f8d3d50b5951",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid07.jpg",
+        "frames": 55,
+        "every": 0.5,
+        "width": 1920,
+        "height": 1080,
+        "duration": 27.666667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": false,
+        "bytes": 12312603
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/F521A64B-7A18-4895-8CD3-F837DA293F14.mp4",
+      "file": ".media-work/the-bar-people/vid08-F521A64B-7A18-4895-8CD3-F837DA293F14.mp4",
+      "bytes": 7269343,
+      "sha256": "7927430af7526498e5a50d838dcbc4cf9d7fb3789b290d0bed979a1f393d27eb",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/the-bar-people/sheet-vid08.jpg",
+        "frames": 40,
+        "every": 0.5,
+        "width": 1920,
+        "height": 1080,
+        "duration": 20.166667,
+        "fps": 30.0,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 7269343
+      }
+    }
+  ],
+  "skipped": [],
+  "totalBytes": 92744224
+}

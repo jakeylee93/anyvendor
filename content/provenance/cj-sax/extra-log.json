@@ -1,0 +1,19 @@
+{
+  "slug": "cj-sax",
+  "files": [
+    {
+      "url": "https://videos.files.wordpress.com/cjhfiO7V/cj-o-beach.mov",
+      "file": ".media-work/cj-sax/orig-cj-o-beach.mov",
+      "sha256": "77e693e84bd30a5a3d5113ecf2f9d83e72be35cce9b79374ae2a07d5c608c33e",
+      "bytes": 47901961,
+      "why": "original upload of an HD-transcoded video already in the verified record (same VideoPress ID); used for sharper desktop crops of a vertical source"
+    },
+    {
+      "url": "https://videos.files.wordpress.com/l03zYkWO/cj-botleys.mov",
+      "file": ".media-work/cj-sax/orig-cj-botleys.mov",
+      "sha256": "22d9bdff60c5aa7945f5a72e1ce6eb1492ca4cb7c238c1d468c0262cd339fa2f",
+      "bytes": 68055665,
+      "why": "original upload of an HD-transcoded video already in the verified record (same VideoPress ID); used for sharper desktop crops of a vertical source"
+    }
+  ]
+}

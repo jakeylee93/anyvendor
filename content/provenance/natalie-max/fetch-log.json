@@ -1,0 +1,338 @@
+{
+  "slug": "natalie-max",
+  "files": [
+    {
+      "kind": "logo",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/Natalie-and-Max-Photo-and-Films-logo.png",
+      "file": ".media-work/natalie-max/logo00-Natalie-and-Max-Photo-and-Films-logo.png",
+      "bytes": 31279,
+      "sha256": "b88df5829f1a9f6175f31fe95d686524cc217465b52578ec4ebf6a2a3d0ae532"
+    },
+    {
+      "kind": "logo",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/cropped-Natalie-and-Max-Favicon-Logo-.png",
+      "file": ".media-work/natalie-max/logo01-cropped-Natalie-and-Max-Favicon-Logo-.png",
+      "bytes": 5997,
+      "sha256": "b887ab5c41a71c241abe9795f9d3215c226ed94024121e1187e6d5a7b087c26d"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg",
+      "file": ".media-work/natalie-max/img00-Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg",
+      "bytes": 543075,
+      "sha256": "759e989e112a748888c39d5c7e7b784a5b2c98da7feb329f79fe423d208b18bc"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg",
+      "file": ".media-work/natalie-max/img01-Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg",
+      "bytes": 382247,
+      "sha256": "a4cf16febc32e9ee9b0b143d20cf3ddc21740fa0b36099d0a9a57d532227d66b"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/algarve-wedding-photography-and-video.jpg",
+      "file": ".media-work/natalie-max/img02-algarve-wedding-photography-and-video.jpg",
+      "bytes": 367656,
+      "sha256": "4bdc7d17e2fe7ea99339f3555e5a22bb6df64a9f7c4d98cd97816a99b86a5fd3"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg",
+      "file": ".media-work/natalie-max/img03-Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg",
+      "bytes": 426777,
+      "sha256": "e157b6d1ce603de9257e6f284a177994d271fdb5ff85e2b004dff07642303d04"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg",
+      "file": ".media-work/natalie-max/img04-Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg",
+      "bytes": 348306,
+      "sha256": "d53b0fd4910f723e3538ff1c247bbef67d645a6dccce8b5b7092645614d75f7f"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg",
+      "file": ".media-work/natalie-max/img05-Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg",
+      "bytes": 346997,
+      "sha256": "01ab5c57d89d35879822d4aa2bf1c8b6158f7dc862fa2a2acb0afc87b67b9eb1"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Volty-Manor.jpg",
+      "file": ".media-work/natalie-max/img06-Natalie-and-Max-Photo-and-Films-Volty-Manor.jpg",
+      "bytes": 400316,
+      "sha256": "4564701cfb3e86c2f4c8f80a5b668d840cbddb3c5c7fb77ec338b6f4cde5227d"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-.jpg",
+      "file": ".media-work/natalie-max/img07-Natalie-and-Max-Photo-and-Films-Northbrook-Park-.jpg",
+      "bytes": 534868,
+      "sha256": "12c6908053eb488c3ae3b91210131c66e9fd42c7bf4dc88990359c38f776403f"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-wedding-photography.jpg",
+      "file": ".media-work/natalie-max/img08-Natalie-and-Max-Photo-and-Films-Northbrook-Park-wedding-photography.jpg",
+      "bytes": 333840,
+      "sha256": "f5914c3db4c310d5b152562f779cd7b9c22ed5dece4977373207fc536e09371d"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud.jpg",
+      "file": ".media-work/natalie-max/img09-Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud.jpg",
+      "bytes": 384827,
+      "sha256": "086150326efc3688c82453d717eced61361df5287cdc3ccce784e5a9fd475967"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2023/06/Ibiza-Wedding-Photography-by-Natalie-and-Max-Photo-and-Films-Portfolio.jpg",
+      "file": ".media-work/natalie-max/img10-Ibiza-Wedding-Photography-by-Natalie-and-Max-Photo-and-Films-Portfolio.jpg",
+      "bytes": 339277,
+      "sha256": "122abf2724506cdcee8f9b2e521ce0111da528769246bc7415cd354040af1def"
+    },
+    {
+      "kind": "image",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2025/06/Natalie-and-Max-Photo-and-Films-Essex-and-Hertfordshire-Wedding-Photographer-DUO-Fun-Friendly.jpg",
+      "file": ".media-work/natalie-max/img11-Natalie-and-Max-Photo-and-Films-Essex-and-Hertfordshire-Wedding-Photographer-DUO-Fun-Friendly.jpg",
+      "bytes": 174282,
+      "sha256": "d7961155259ad8b6388c34dbe5b2f7dcb2f431bf86c3bf5815f2bdf4cbeb70df"
+    },
+    {
+      "kind": "video",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Filming-at-the-Beach.mp4",
+      "file": ".media-work/natalie-max/vid00-Natalie-Max-Photo-and-Filming-at-the-Beach.mp4",
+      "bytes": 4373367,
+      "sha256": "e5727b0141ea2997d0c410677264df2263956b5d5dd5f7546254f722dfbae04a",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/natalie-max/sheet-vid00.jpg",
+        "frames": 21,
+        "every": 0.5,
+        "width": 1920,
+        "height": 600,
+        "duration": 10.645333,
+        "fps": 23.98,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 4373367
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-at-the-Pinecliffs.mp4",
+      "file": ".media-work/natalie-max/vid01-Natalie-Max-Photo-and-Films-at-the-Pinecliffs.mp4",
+      "bytes": 4521231,
+      "sha256": "06373ab51206c0ceb53f49e382a2b388101dd6024aa9ddac5efc699b06f85713",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/natalie-max/sheet-vid01.jpg",
+        "frames": 24,
+        "every": 0.5,
+        "width": 1920,
+        "height": 600,
+        "duration": 12.16,
+        "fps": 23.98,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 4521231
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+      "file": ".media-work/natalie-max/vid02-Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+      "bytes": 3349910,
+      "sha256": "38b63538736cfcc345e75e4e6fbeafb17afb2e7ba67b31199c2cf1e947a25205",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/natalie-max/sheet-vid02.jpg",
+        "frames": 18,
+        "every": 0.5,
+        "width": 1920,
+        "height": 900,
+        "duration": 8.896,
+        "fps": 23.98,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 3349910
+      }
+    },
+    {
+      "kind": "video",
+      "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Loule.mp4",
+      "file": ".media-work/natalie-max/vid03-Natalie-Max-Photo-and-Films-Loule.mp4",
+      "bytes": 2906236,
+      "sha256": "53ab8d5c614aeac4a62f2aad9c2240487b51fee7d4d2792f2a315e58172ec66c",
+      "probe": {
+        "sheet": "/Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/natalie-max/sheet-vid03.jpg",
+        "frames": 20,
+        "every": 0.5,
+        "width": 1920,
+        "height": 900,
+        "duration": 10.112,
+        "fps": 23.98,
+        "codec": "h264",
+        "hasAudio": true,
+        "bytes": 2906236
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.youtube.com/watch?v=5xM-OgimI50",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1-M-jakDeb4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OL1HFQH1f08",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=m1gUoWx1A9s",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_s5nzsat5Xw",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jOIP76bMYpI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XOHTOwGnxFQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=T2lPgK_2rlA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D5yT-iE-QFM",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iR_M__K-urY",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w0ltoglyc1c",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lWsvuswwsS0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1kKgI97g7F8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sUPvNGf4rPc",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=J2Iyp0ywMwA",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=X-0Q7wLPtow",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RwO7gLjI1Mg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2RGbPSxAAI0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JeuL2Zd8PLQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eUs9IO5MrDc",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=78AXsreIuvI",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U6Bw_aQB0U4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jAJ2sZ4AnAs",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-15mV2bKUy8",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5yxL96jph1Y",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QNS2hA3_14o",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FfN06S_bv7M",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GMh7PJYtU_g",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WyT9Ljf2zPQ",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YcCbuJFG690",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aUqshO-2mrg",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=giomTKKG3us",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XPv_9UOZVB0",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4sBf9N0FhR4",
+      "why": "youtube not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Deg-MLfOTE3/",
+      "why": "instagram not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DeHhLvCun33/",
+      "why": "instagram not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dd_qs0hO8rI/",
+      "why": "instagram not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/reel/Dd8mxStuNt6/",
+      "why": "instagram not a public direct file"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DdtIWFMOxnz/",
+      "why": "instagram not a public direct file"
+    }
+  ],
+  "totalBytes": 19770488
+}
