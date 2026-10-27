@@ -1,5 +1,76 @@
 # Anyvendor — handoff
 
+## Milestone 3: premium cards, best photos, homepage, smart search, pricing (27 Oct 2026, evening)
+
+Owner: `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree: `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles`, claim `6bf2c244`. Branch: `claude/bookedevents-reconstruction`.
+
+Commits:
+- `6874609`: photos and collectible cards.
+- `81d0169`: homepage hero, smart search and pricing.
+- `86494bb`: deeper profile content.
+- `3ee51ba`: hero overlay.
+- The handoff commit that adds this section.
+
+Preview (protected): https://anyvendor-m4njg45ce-anyos.vercel.app was superseded by **https://anyvendor-qabb52ijb-anyos.vercel.app** (Ready). Release claim `d1f99f13` was released. `main`, production, domains, DNS, payments, enquiries and outbound messages are all untouched.
+
+Jake's requests and what was done:
+- **Best photos for every existing supplier.**
+  - Candidates were downloaded at original resolution from two places: each business's own uploads on the old Booked Events / The Event People WordPress (read-only), and each business's own website.
+  - Each business's current old-site card photo was identified from the live old homepage.
+  - Photos were hand-picked from contact sheets. Picks are in `content/photo-picks.json` and alt text in `content/photo-alt.json`. Output comes from `scripts/media/apply_photos.py`: `card.webp` (4:3, up to 1200×900) and galleries up to 2000 px.
+  - Excluded:
+    - T&L's old card, a Mercedes at a terminal. Research found the listing's T&L gallery files are OpenArt AI renders, and this card has the same AI-render look.
+    - The old site's `openart-image_*` placeholder galleries.
+    - Images that are really other businesses' (related-listing carousel), including paella shots on Grape & Fig's page and Meat Stop's burger on Magpie's page.
+    - The unrelated "Mensah" MC photo on Calleo.
+    - Toot Sweet photos with private customer names.
+    - CJ Sax celebrity and venue-watermarked shots.
+  - Lucy Jane Cakes has nothing above 500 px publicly. T&L's only genuine photo is 1200×600 from a 2016 archive.
+- **Pokémon-style premium cards** (`src/components/site/BusinessCard.tsx`, `HoloCard.tsx`, `.holo-card` CSS).
+  - Category-tinted holographic foil frame, logo seal over the photo (pill-shaped for wide wordmarks), type pill, name, Est. year, categories in the type colour, place, and a price strip.
+  - Mouse pointer: tilt, glare and shimmer. Static for touch and reduced motion.
+- **Fuller profile text.**
+  - Four research agents wrote `content/profiles-extra/*.json`: highlights, how it works, good to know, FAQs and extra service detail. Every item has a source on the business's own pages.
+  - The coordinator removed the Jamie Roche O2/"Ed Sheeran" fan-video claim, Natalie & Max prices that appear only on an unlisted page, Toot Sweet's 2020 prices, and a "rave reviews" claim.
+  - Profiles are now about 850–1,500 words. Jamie Roche, Lucy Jane and Toot Sweet stay about 400–500 because little is public.
+  - The Bar People's package prices are quoted from thebarpeople.co.uk pages last updated May 2024, so Jake should confirm them.
+- **OpenAI concept screens.**
+  - Seven GPT Image 2.5 Sunburst images via the OpenArt account, project "Anyvendor concepts", in `docs/concepts-20261027/`: homepage hero with smart search, collectible cards, search results with multi-vendor enquiry, profile, inbox, pricing, and mobile.
+  - Medium quality at 2K. Actual spend 310 credits (5,423 → 5,113). High quality would have cost 170 credits per image.
+  - These are concepts only. The AI invented some logos, businesses, ratings and locations, so they are not content.
+- **Homepage** (`src/components/site/HomeHero.tsx`).
+  - Follows concept 01. Vendors' own showreels play full-bleed and cross-fade vendor to vendor, with a vendor rail and prev/pause/next controls.
+  - Only the active video loads. Reduced motion shows posters only.
+  - The original three pillars sit below the hero.
+- **Smart search** (`src/lib/smartSearch.ts`).
+  - Takes a plain-English "What are you looking for?" query and works out services, places (counties and towns), event types, guests, date and time.
+  - It is deterministic, with no AI calls or data sharing. It shows what it understood, and explicit filters still refine.
+  - Verified: "DJ for a wedding in Essex" → Tony Poole, Ozzy&Stix, CJ Sax; "magician for corporate event London" → Harry De Cruz; "wedding photographer hertfordshire" → Natalie & Max.
+- **Pricing tiers** (`/list-my-business`).
+  - Listing at £10/month or £100/year. Website+ at £50/month: a designed website, unlimited updates, hosting and directory access.
+  - The monthly/yearly toggle works. Buttons are disabled with an honest "sign-ups and payments not open" note.
+
+Verification:
+- `tsc` passes.
+- eslint: the new files have 0 errors (only deliberate `<img>` warnings).
+- Vercel cloud builds are Ready. No local build was run: memory pressure was at WARNING and disk free about 11.5 GiB.
+- Authenticated `vercel curl` on the final preview: `/`, `/directory`, `/directory?ask=…`, `/list-my-business` and profiles return 200; the unknown profile returns 404.
+- Smart-search outputs, pricing text and the profile FAQ / How it works / Good to know sections were checked on preview `7ql3tlsas`.
+- Limited browser checks (one short isolated Playwright session per preview because of the memory warning; the stale `avq` session from earlier was closed):
+  - Directory cards at 1440 and 390: no overflow; mouse tilt active.
+  - Homepage hero at 1440 and 390: the right reel plays (16:9 and 9:16), Next switches vendor, no overflow.
+  - Magpie FAQs/Good to know render; 0 console errors.
+- Screenshots are in `docs/screenshots/cards-20261027/`.
+
+Decisions and gaps for Jake:
+1. **Video resolution:** many reels come from 540–818p sources. Higher-resolution footage exists on the businesses' YouTube, Vimeo and Instagram, but downloading a newer yt-dlp release and fetching Vimeo's player feed were both blocked by this session's permission classifier. Jake can add a permission rule, or supply original files (or ask the vendors).
+2. **Messaging and multi-vendor enquiries** (concepts 03 and 05) need a backend and outbound messages to real businesses, plus Jake's approval. They are not built.
+3. **Payments and subscriptions** (£10 / £100 / £50) are not built. They need a Stripe decision and approval.
+4. **Lucy Jane Cakes:** needs higher-resolution photos (vendor originals, or a labelled AI upscale at about 40 credits).
+5. **Permission:** each business's permission is still needed before going public. Toot Sweet's trading status is unconfirmed.
+
+---
+
 ## Milestone 2 — full business profiles (27 Oct 2026)
 
 Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same Claude session; Opus 5.5). Requested directly by Jake: "build each profile for the businesses on the website", with genuine logos (SVG), live-profile content and a showreel hero of about six 2–3 s clips each, taken from each business's own website or social media. This builds on Lippy LFG 2's brief for The Bar People.
