@@ -112,15 +112,15 @@ export default function HomeHero({ vendors }: { vendors: HeroVendor[] }) {
             className="absolute inset-0 h-full w-full animate-[fadein_1s_ease] object-cover"
           />
         )}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,0,48,0.35)_0%,rgba(8,0,48,0.7)_70%),linear-gradient(180deg,rgba(8,0,48,0.25)_0%,rgba(8,0,48,0.15)_40%,rgba(8,0,48,0.9)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,0,48,0.22)_0%,rgba(8,0,48,0.5)_75%),linear-gradient(180deg,rgba(8,0,48,0.2)_0%,rgba(8,0,48,0)_40%,rgba(8,0,48,0.85)_100%)]" />
       </div>
 
       <div className="relative mx-auto flex min-h-[calc(100svh-196px)] max-w-7xl flex-col px-4 pt-14 lg:min-h-[calc(100svh-150px)] lg:pt-20">
         <div className="mx-auto w-full max-w-4xl text-center">
-          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight [text-shadow:0_2px_24px_rgba(8,0,48,0.55)] md:text-7xl">
             Find the perfect vendors for <span className="font-caveat text-[1.15em] font-semibold text-be-cyan">any</span> event
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-white/80 md:text-xl">Bars, caterers, DJs, marquees, photographers and more — starting across Essex, London and Hertfordshire.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-white/90 [text-shadow:0_1px_12px_rgba(8,0,48,0.6)] md:text-xl">Bars, caterers, DJs, marquees, photographers and more — starting across Essex, London and Hertfordshire.</p>
 
           <form action="/directory" method="get" role="search" aria-label="Find vendors" className="mx-auto mt-8 flex max-w-3xl items-center gap-2 rounded-full bg-white p-1.5 pl-5 text-be-navy shadow-2xl">
             <Sparkles size={20} className="shrink-0 text-be-cyan" aria-hidden />
