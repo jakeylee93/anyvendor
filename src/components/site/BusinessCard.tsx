@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { type Business, categoriesOf } from "@/lib/directory";
+import { getProfile } from "@/lib/profiles";
 
 const TINTS = [
   ["#33ccff", "#212235"],
@@ -36,17 +37,36 @@ export function locationLabel(b: Business) {
   return b.address ?? "No Address";
 }
 
+function CardMedia({ business }: { business: Business }) {
+  const p = getProfile(business.slug);
+  const cover = p?.reel?.outputs.desktop.posterWebp ?? p?.gallery[0]?.src;
+  if (!p || !cover) return <Monogram business={business} className="aspect-4/3 w-full" />;
+  return (
+    <div className="relative aspect-4/3 w-full overflow-hidden bg-be-mist">
+      <img src={cover} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+      {p.logo && (
+        <span
+          className={`absolute bottom-3 left-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl p-1.5 shadow-md ${p.logo.plate === "dark" ? "bg-be-deep" : "bg-white"}`}
+        >
+          <img src={p.logo.src} alt={`${p.displayName} logo`} className="max-h-full max-w-full object-contain" />
+        </span>
+      )}
+    </div>
+  );
+}
+
 export default function BusinessCard({ business }: { business: Business }) {
+  const price = getProfile(business.slug)?.cardPrice ?? business.price;
   const cats = categoriesOf(business);
-  const inferred = !business.listedCategories.length && cats.length > 0;
+  const inferred = !business.verified && !business.listedCategories.length && cats.length > 0;
   return (
     <Link
       href={`/businesses/${business.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md focus-visible:outline-2 focus-visible:outline-be-cyan"
     >
-      <Monogram business={business} className="aspect-4/3 w-full" />
+      <CardMedia business={business} />
       <div className="flex flex-1 flex-col px-4 pt-4">
-        <h3 className="truncate text-lg font-semibold text-be-navy group-hover:text-be-cyan">{business.name}</h3>
+        <h3 className="truncate text-lg font-semibold text-be-navy group-hover:text-be-cyan">{getProfile(business.slug)?.displayName ?? business.name}</h3>
         <p className="text-xs font-light text-be-grey">{business.established}</p>
         {cats.length > 0 && (
           <p className="mt-2 text-xs text-be-navy">
@@ -62,8 +82,8 @@ export default function BusinessCard({ business }: { business: Business }) {
       <div className="mt-4 flex items-baseline justify-between gap-2 border-t border-gray-100 px-4 py-3">
         <span className="text-xs text-be-grey">Price from:</span>
         <span className="text-right">
-          <strong className="text-base font-semibold text-be-navy">{business.price.from}</strong>{" "}
-          <span className="text-xs text-be-grey">{business.price.unit}</span>
+          <strong className="text-base font-semibold text-be-navy">{price.from}</strong>{" "}
+          <span className="text-xs text-be-grey">{price.unit}</span>
         </span>
       </div>
     </Link>

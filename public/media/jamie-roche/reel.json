@@ -1,0 +1,64 @@
+{
+  "slug": "jamie-roche",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+      "durationSec": 2.8,
+      "kind": "still",
+      "note": "Thumbnail frame of his own-channel video 'The Green Fields Of France | Live @ St Mary Magdalene Church, Enfield' (https://www.youtube.com/watch?v=drMAH8eFYi4; videography Max Bandicoot): Jamie singing at the mic with his guitar. 1280x720 source upscaled 2x with Lanczos."
+    },
+    {
+      "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Thumbnail frame of his own-channel video 'The Tide | Live @ Painter Studios | London' (https://www.youtube.com/watch?v=Q8CHA6G6Abg; video by Christopher Painter): black-and-white shot of Jamie playing acoustic guitar at a mic. 1280x720 source upscaled 2x."
+    },
+    {
+      "sourceUrl": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Thumbnail frame of his own-channel video 'Wicked Game | Sixty Sixty Sounds' (https://www.youtube.com/watch?v=aW_3BWmWTkI): Jamie singing in front of a wall of guitars. 1280x720 source upscaled 2x."
+    },
+    {
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "His Booked Events listing photo: seated on stage playing an acoustic guitar into a mic. 1000x800 source upscaled 2x; a 96 px mirrored strip of the dark wall was added above so the slow push-in does not clip his hair."
+    },
+    {
+      "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Thumbnail frame of his own-channel video 'Such A Simple Thing | St John's Church, Hoxton' (https://www.youtube.com/watch?v=_CEzdGc6tMw): Jamie singing with an acoustic guitar at a studio mic. 1280x720 source upscaled 2x."
+    },
+    {
+      "sourceUrl": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Thumbnail frame of his own-channel video 'Amsterdam' cover (https://www.youtube.com/watch?v=jVrJUBJm75w): Jamie in a flat cap singing with a guitar. 1280x720 source upscaled 2x."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/jamie-roche/reel-desktop.mp4",
+      "poster": "/media/jamie-roche/poster-desktop.jpg",
+      "posterWebp": "/media/jamie-roche/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.2,
+      "bytes": 1280971
+    },
+    "mobile": {
+      "video": "/media/jamie-roche/reel-mobile.mp4",
+      "poster": "/media/jamie-roche/poster-mobile.jpg",
+      "posterWebp": "/media/jamie-roche/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.2,
+      "bytes": 1260913
+    }
+  }
+}

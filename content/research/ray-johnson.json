@@ -1,0 +1,318 @@
+{
+ "slug": "ray-johnson",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "displayName changed from 'Elton Ray Johnson' to 'Ray Elton Johnson'. 'Ray Elton Johnson' is the directory name, the order in the domain (rayeltonjohnson.co.uk) and on the Booked Events badge ('RAY Elton Johnson TRIBUTE ACT'), and the order behind the 'REJ' initials he uses himself ('R.E.J Entertaiment' on his poster, the 'REJ promo 1.46' YouTube playlist). 'Elton Ray Johnson' (About-page bio, Instagram handle) is kept as an alternate name.",
+  "The 'five films' about item cited /god-save-the-tuche, but that page does not say it. The '5 movies as EJ, latest God Save The Tuche in 2025' statement is on /about-us; the Tuche page says only '5th sequel' (meaning the film franchise) and shows set photos in Lille. Split into two correctly sourced items.",
+  "Gazette paraphrase corrected. The article says Ray 'performed on stage with his double during a concert in Paris', not that he was 'brought on stage'. It has no publication date, only 'Converted for the new archive on 19 November 2001', so it is described as an article archived in 2001. It also says he had joined Derek's Doubles 18 months earlier.",
+  "Logo technical note was wrong: ray_johnson_logo.png is an 8-bit RGBA PNG (IHDR colour type 6), not a palette PNG. HEAD gives 200, image/png, 157,228 bytes, 1000×1000, last-modified 15 Dec 2024.",
+  "Image description fixes: in 8afc1d09 (Charlotte Tilbury set) the piano is dark and glossy, not red. In 11d9dba1 the jacket is floral print and the backdrop is an LED video wall, not a starry stage cloth.",
+  "Image swap: the Declan Donnelly pub selfie (img_1534) shows a celebrity in a social setting rather than his work, so it was replaced with his own studio promo portrait (img_7843, 529×718, from the testimonials page). The selfie is listed in gaps.",
+  "The researcher did not mention the 'Business cards and banners' page. It holds only his poster (img_922d38018089-1, 452×640), which carries his mobile number, so it is not a logo or a usable photo. The site footer image (img_0061, 1920×1440, a silhouette at the Chris Moyles / Dominic Byrne Palladium evening) was also missed, but it is not usable.",
+  "TV credits on /about-us that were left out have been added: Jimmy Carr's Big Fat Wedding and Big Fat Quiz of Everything. The Palladium gallery caption is dated Jan 2026 (with Chesney Hawkes and Tommy Cannon).",
+  "The video record now includes metadata from the public watch page: length 106 s, matching the '1.46' in the playlist title, and published 17 Feb 2025.",
+  "eventTypesSourceUrl can hold only one URL, but Private Parties and Corporate Events come from /gallery, not /about-us. This is recorded in gaps."
+ ],
+ "record": {
+  "slug": "ray-johnson",
+  "displayName": "Ray Elton Johnson",
+  "tagline": "Bringing the magic of Elton John to your event",
+  "identity": {
+   "officialWebsite": "https://www.rayeltonjohnson.co.uk/",
+   "confidence": "high",
+   "alternateNames": [
+    "Elton Ray Johnson",
+    "Ray Johnson",
+    "Rayeltonjohnson.co.uk",
+    "Ray Johnson Elton John Tribute Act",
+    "Ray Johnson as Elton John",
+    "R.E.J Entertainment (spelled 'R.E.J Entertaiment' on his own poster)"
+   ],
+   "evidence": "The live Booked Events listing (https://bookedevents.co.uk/businesses/ray-johnson/) is titled 'Ray Elton Johnson – Booked Events' and shows 'Verified · Est.2009 · London', 'Price from: £750 per event' and 'Elton John Tribute/Impersonator'. Its 'Visit Website' link is https://rayeltonjohnson.co.uk, which 301-redirects to https://www.rayeltonjohnson.co.uk/. The listing's contact mailto address is the same mailbox as the mailto link on his site (checked by hash comparison; the address is not reproduced here). The Webador site brands itself 'Rayeltonjohnson.co.uk – ELTON JOHN TRIBUTE'. Its About page is headed 'Ray Johnson Elton John Tribute Act' and also calls him 'Elton Ray Johnson'. It links Instagram @eltonrayjohnson, and its testimonials page links YouTube video N6SEEaAMMt8, whose oEmbed author is 'Ray Johnson' (@eltonrayjohnson). The Booked Events 'Business Logo' badge reads 'RAY Elton Johnson TRIBUTE ACT', and his own poster and YouTube playlist use the initials 'REJ'. Trade matches: Elton John tribute, lookalike and impersonator. Area partly matches: the listing says 'London', while the site gives Theydon Bois (homepage) or Chigwell (contact page), Essex, and serves East London, Essex, Kent, Herts and the M25 area. Year does not match: the site claims 30 years in the business, and a Gazette (Colchester/Essex) article archived in November 2001 describes Ray Johnson, 43, from Witham, as an Elton lookalike on ITV's The Lookalikes Agency, which is the show his site names as the start of his TV career. Nothing supports the listing's 'Est. 2009'. Namesakes excluded: the collage artist Ray Johnson (1927–1995), the YouTuber Ray William Johnson, Ray S. Johnson (Minnesota memorial page), the US Elton tribute 'Elton Rohn', and Elton's percussionist Ray Cooper."
+  },
+  "about": [
+   {
+    "text": "Ray Johnson is an Elton John tribute act, lookalike and singer. His site says he has been doing this for 30 years.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "His TV career began on ITV's 'The Lookalike Agency', a programme about the Derek's Doubles lookalike agency. Since then he has appeared on Ant & Dec's Saturday Night Takeaway, Jimmy Carr's Big Fat Wedding, That Peter Kay Thing (Channel 4), Have I Got News For You (BBC), The Weakest Link and Big Fat Quiz of Everything, among other shows.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "He took part in LadBaby's 2022 UK Christmas No. 1.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "He has appeared as Elton John in five films. The latest is the French comedy 'God Save The Tuche' (2025).",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "His God Save The Tuche page shows photos from the set in Lille, including one with lead actor Jean-Paul Rouve ('Jeff Tuche').",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/god-save-the-tuche"
+   },
+   {
+    "text": "The Lookalikes Agency series was sold to 39 countries. After that he performed in New Zealand and several European countries.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "He performs a duo set in pubs and clubs with Nigel Silk, a drummer from the tribute band T Rexasy.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "text": "His gallery says he body-doubled for Elton on the set of Charlotte Tilbury's 2023 Christmas promo. It also mentions an evening with Chris Moyles and Dominic Byrne at the London Palladium in January 2026 (with Chesney Hawkes and Tommy Cannon) and a show at Firs Park Resort in Essex.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/gallery"
+   },
+   {
+    "text": "The site lists his location as Theydon Bois on the homepage and Chigwell on the contact page. It describes the act as covering East London, Essex, Kent, Herts and the M25 area.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "text": "He has started a new 'George 'n' Elton' show, a George Michael and Elton John tribute. It opened at the Comrades Club in Clacton-on-Sea.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/george-michael-elton-john-tribute-act"
+   },
+   {
+    "text": "His FAQ recommends booking at least three months ahead. It says clients can choose their favourite Elton John songs for the setlist.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "text": "A Gazette article (archived 19 November 2001) describes Ray Johnson, 43, from Witham, as an Elton John lookalike with the Derek's Doubles agency, which he had joined 18 months earlier. It reports his appearance on ITV's The Lookalikes Agency and says he once performed on stage with Elton during a concert in Paris.",
+    "sourceUrl": "https://www.gazette-news.co.uk/news/5515142.witham-saturday-nights-all-right-for-ray"
+   }
+  ],
+  "services": [
+   {
+    "name": "Live Performances",
+    "description": "Live Elton John tribute performances. In the site's words: 'Experience the magic of Elton John in person! Book our live performances for a show-stopping event.' Clients can add their favourite Elton John songs to the setlist. The site publishes no prices.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "name": "Event Hosting",
+    "description": "Ray hosts events in character: 'Let us take the stress out of event hosting with our talented performer as your host.'",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "name": "Celebrity Parties",
+    "description": "An Elton John impersonator for celebrity-themed parties, 'adding glamour and excitement to the occasion.'",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "name": "Basic sound equipment",
+    "description": "The FAQ says he can provide basic equipment such as microphones and speakers. Anything beyond that may need to be arranged separately.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
+   },
+   {
+    "name": "Duo set with Nigel Silk",
+    "description": "A duo set with Nigel Silk on percussion, played in pubs and clubs. The About page says performances are customisable and suit anything 'from intimate pub gigs to grand weddings'.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+   },
+   {
+    "name": "George 'n' Elton show",
+    "description": "A combined George Michael and Elton John tribute show. It opened at the Comrades Club in Clacton-on-Sea, and the site says it 'went to rave reviews'.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/george-michael-elton-john-tribute-act"
+   },
+   {
+    "name": "Corporate meet-and-greet / lookalike appearances",
+    "description": "Corporate 'mix and mingling' in character, wearing an Elton suit he bought at the EJAF 'Out The Closet' sale. His gallery also lists lookalike and body-double work, such as Charlotte Tilbury's 2023 Christmas promo and TV and film appearances.",
+    "sourceUrl": "https://www.rayeltonjohnson.co.uk/gallery"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Private Parties",
+   "Corporate Events"
+  ],
+  "eventTypesSourceUrl": "https://www.rayeltonjohnson.co.uk/about-us",
+  "areasServed": [
+   "East London",
+   "Essex",
+   "Kent",
+   "Hertfordshire",
+   "M25 area"
+  ],
+  "areasSourceUrl": "https://www.rayeltonjohnson.co.uk/",
+  "industry": "entertainment",
+  "categories": [
+   "Tribute Act",
+   "Singers",
+   "Performers"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://www.rayeltonjohnson.co.uk/contact"
+  },
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ray_johnson_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "Black circular disc with white lettering: 'RAY' in serif caps, 'Elton' in large brush script, 'Johnson' in small script, 'TRIBUTE ACT' in sans caps. Transparent outside the disc.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/ray-johnson/",
+    "notes": "Re-verified: HEAD 200, image/png, 157,228 bytes, last-modified 15 Dec 2024, 1000×1000, 8-bit RGBA (colour type 6, not palette). It is the 'Business Logo' image on the Booked Events listing, with 200/400/600/800 px variants. It is the only badge-style brand mark found, but it does not appear anywhere on rayeltonjohnson.co.uk, so it may have been made by Booked Events. Confirm provenance with the business before treating it as his official mark. No SVG or vector version exists."
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_2243-high.jpg",
+    "format": "jpg",
+    "width": 750,
+    "height": 440,
+    "background": "photo",
+    "colours": "Multicolour photo banner with rounded corners on white: five photos of Ray in different Elton costumes behind large red and gold marquee-bulb letters spelling 'ELTON'.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/",
+    "notes": "The business's own header logo on every page (img#jw-header-image, rendered at 250×147; img.jw-mobile-logo at height 70/140). It is also the logo in the site's schema.org Organization JSON-LD. Re-verified: 200, image/jpeg, 78,092 bytes, 750×440, which is the largest version. It is a raster photo banner rather than a true logo mark. The site has no inline header SVG (the only inline SVGs are accordion arrow icons), no .svg logo file, and no favicon or apple-touch-icon link."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg",
+    "width": 1920,
+    "height": 2012,
+    "description": "Ray as Elton in a floral jacket and white-framed glasses, singing at a red-lacquered piano under a pink 'Eden' neon sign in a venue. This is the homepage hero image and the og:image.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg",
+    "width": 1200,
+    "height": 1600,
+    "description": "Ray performing live with a microphone in a pink floral jacket, in front of an LED video-wall backdrop, with audience members in the foreground.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/firs-high.jpg",
+    "width": 1080,
+    "height": 1351,
+    "description": "Ray at a red keyboard on stage against a blue star-cloth backdrop. Captioned 'at Firs Park Resort Essex'.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/gallery",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg",
+    "width": 1920,
+    "height": 1292,
+    "description": "The duo set outdoors: Ray in a gold jacket at a red piano, with Nigel Silk on congas and percussion. Captioned 'With Nigel Silk on percussion with our duo set'.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/gallery",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg",
+    "width": 843,
+    "height": 1124,
+    "description": "Ray in a blue sequinned jacket and green glasses, pointing from a glossy dark piano in front of a lit star, disco balls and oversized lipstick props. Captioned 'On set at Charlotte Tilburys Xmas promo 2023 body doubling for Elton'. The set belongs to a third-party brand.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/gallery",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3250-standard.jpg",
+    "width": 1210,
+    "height": 1375,
+    "description": "Ray in a blue sequinned jacket and green-framed glasses, seated at a glossy piano on a staged set. This is the About page image; the '-standard' file is the largest version, as '-high' returns 404.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/about-us",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_2192-high.jpg",
+    "width": 750,
+    "height": 528,
+    "description": "Ray at a red piano on an outdoor stage at night, with gold '50' balloons and an 'An Evening with Elton John' banner, in front of a building lit in blue, with a crowd in the foreground.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_7843-high.jpg",
+    "width": 529,
+    "height": 718,
+    "description": "Studio promo portrait of Ray as Elton, in a black military-style jacket with gold braid and jewelled sunglasses, seated with arms folded against a fiery orange smoke background.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_2697-high.jpg",
+    "width": 1919,
+    "height": 1197,
+    "description": "A group recording session in a red-walled studio, with Ray (light-blue jacket and glasses) among the singers in headphones. Captioned 'Appearing on the Ladbabys 2022 no 1 Xmas hit'.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/gallery",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_2175-high.jpg",
+    "width": 896,
+    "height": 1658,
+    "description": "Ray as Elton in a gold brocade suit and purple shoes, with a woman in a pink outfit, on the set of the French comedy film 'God Save The Tuche'.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/gallery",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3742-high.jpg",
+    "width": 1302,
+    "height": 1936,
+    "description": "Behind the scenes on 'God Save The Tuche': Ray as Elton in a group with actors dressed as Beefeaters (Yeoman Warders).",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/god-save-the-tuche",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1487-high.jpg",
+    "width": 1920,
+    "height": 1440,
+    "description": "Ray as Elton in a gold suit and red-tinted glasses, posing with another man in front of a Virgin Media O2 press backdrop. This is the testimonials page header image.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www.youtube.com/watch?v=N6SEEaAMMt8",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "YouTube promo clip titled '17 February 2025' (length 106 s, published 17 Feb 2025). It shows Ray as Elton in a straw hat, blue-rimmed shades and a white jacket against a smoky amber background (confirmed from the thumbnail). A 1280×720 maxresdefault thumbnail exists (HTTP 200). The site links it as part of playlist PLD1PZOPVhsQ4wJm9NRZ3gcblo2SN8W_3O ('REJ promo 1.46').",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "ownContentEvidence": "YouTube oEmbed gives author_name 'Ray Johnson' and author_url https://www.youtube.com/@eltonrayjohnson (channel UCKdnX_wMDaJBqGOzVU3SJQA), matching his Instagram handle. His own site links it from the testimonials page (https://youtu.be/N6SEEaAMMt8?list=PLD1PZOPVhsQ4wJm9NRZ3gcblo2SN8W_3O).",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null
+   },
+   {
+    "url": "https://www.youtube.com/playlist?list=PLD1PZOPVhsQ4wJm9NRZ3gcblo2SN8W_3O",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "YouTube playlist 'REJ promo 1.46' (REJ = Ray Elton Johnson; 1.46 matches the 106-second promo). Its first item is N6SEEaAMMt8; I could not list any other items.",
+    "sourcePage": "https://www.rayeltonjohnson.co.uk/testimonials",
+    "ownContentEvidence": "oEmbed for the playlist returns author 'Ray Johnson' (/@eltonrayjohnson), and his own site links to it.",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/eltonrayjohnson/",
+   "youtube": "https://www.youtube.com/@eltonrayjohnson",
+   "facebook": null,
+   "tiktok": null,
+   "vimeo": null,
+   "other": []
+  },
+  "instagramAccess": "The site links Instagram as https://instagram.com/@eltonrayjohnson, a malformed path with '@'. One plain GET to https://www.instagram.com/eltonrayjohnson/ with a desktop User-Agent and no cookies returned HTTP 200: a ~505 KB JavaScript app shell with <title>Instagram</title>, no og: meta tags and route pageID 'httpErrorPage', so no profile data is visible without logging in. I did not retry. The profile is indexed in search results as 'Elton Ray Johnson (@eltonrayjohnson)'.",
+  "gaps": [
+   "No own-hosted video files (.mp4, <video> or <source>) on rayeltonjohnson.co.uk. The only video iframe is Vimeo 683858488 ('Water - 11066 - background', author Webador), which is the site's stock background, not his footage. Do not use it.",
+   "Could not list the other videos on YouTube channel @eltonrayjohnson (UCKdnX_wMDaJBqGOzVU3SJQA): /videos redirects cookieless requests to consent.youtube.com (302), and the channel RSS feed returned 404. Only N6SEEaAMMt8 is confirmed as his own footage.",
+   "Third-party footage, not his own: a Facebook video posted by the venue The Railway Inn Paphos ('Ray Johnson as Elton John, what a great night'); an ITV 'Stars And Their Doubles' 2001 clip uploaded by an archive channel; LadBaby's 2022 Christmas No. 1 and the God Save The Tuche film, both owned by their producers.",
+   "Establishment year: the directory says 2009, but nothing supports it. His site claims 30 years in the business, and a Gazette article archived in November 2001 already describes him as an active lookalike, so 2009 may be the year he joined a platform or set up a trading name. Confirm with the business.",
+   "Location: the directory says 'London'. The site gives Theydon Bois (homepage) and Chigwell (contact page), both in Essex, and serves East London, Essex, Kent, Herts and the M25. The 2001 article placed him in Witham, Essex.",
+   "The site publishes no prices. '£750 per event' comes only from the Booked Events listing.",
+   "Event types: Weddings comes from /about-us ('from intimate pub gigs to grand weddings'). Private Parties ('private parties') and Corporate Events ('Corporate mix and mingling') come from /gallery. The single eventTypesSourceUrl cannot show both. One homepage testimonial mentions a birthday party; it was not counted as the business's own statement.",
+   "Logo provenance: the only badge-style logo (ray_johnson_logo.png, 1000×1000) is hosted on the Booked Events listing, not on his site, and may have been made by Booked Events. His own site uses a photo collage as its header logo. There is no SVG and no favicon.",
+   "The Booked Events listing gallery holds only AI-generated OpenArt images (openart-image_*_raw.jpg), unrelated to Ray; do not use them. The listing thumbnail elton_ray_johnson_tribute_thumb.jpg (1000×800) is an upscaled crop of his own poster img_922d38018089-1-high.jpg (452×640).",
+   "His posters (img_922d38018089-1-high.jpg on /business-cards-and-banners, and the PosterMyWall design a-new-design-made-with-postermywall-high-ku3cb3.jpg, 600×900, on the homepage) show his mobile number, so they were not used as photos.",
+   "Other own images not used: img_0519 (1350×1800, 'Ray Johnson as Elton John' text overlay); img_2368 (744×975, George Michael and Elton John tribute poster); glasgow2 (429×601, low-res corporate mingling photo); img_2219 (Have I Got News For You screenshot from Instagram Reels); img_0061 (the Palladium silhouette used site-wide in the footer); and the Declan Donnelly pub selfie img_1534 (1920×2555, high-res but a celebrity in a social setting, so consent is needed).",
+   "Placeholder or empty content on his site: the Testimonials page holds template service tiers (Basic/Professional/Business/Enterprise with identical boilerplate), so they were not recorded. The About page has a 'Videos' heading with nothing under it. The 'Ray on Radio Elton John' and 'Business cards and banners' pages have no text. The homepage says the site is 'under construction' and asks clients to book by text message or Instagram.",
+   "Facebook and TikTok: the site links neither, and no account was verified (a Facebook search hit, facebook.com/rejsolutions, is unverified), so both are excluded.",
+   "A 2026 Radio Elton John podcast episode ('Ray Johnson | Encore!') is indexed as profiling him as Elton's double, saying he appeared in commercials and the Tuche films and worked with Elton four times. The Podbean channel is login-locked and podbay returned 403, so it was not directly verified or used.",
+   "Image rights: several gallery items show celebrities, branded or film sets (Charlotte Tilbury, God Save The Tuche, Virgin Media O2 backdrop) or are screenshots. Confirm consent before publishing.",
+   "Licences and insurance: the Booked Events listing says 'No' (events of 10–100 guests; no booking or cancellation policy stated). His own site does not mention insurance or public liability insurance."
+  ]
+ }
+}

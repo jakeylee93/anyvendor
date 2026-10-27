@@ -1,0 +1,74 @@
+{
+  "slug": "ozzy-stix",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+      "durationSec": 2.1,
+      "kind": "video",
+      "startSec": 29.2,
+      "endSec": 31.3,
+      "note": "Vocalist singing beside his bongos on a white dance floor in a panelled ballroom, bride and guests behind. Frame cropped to the top 1216 of 1920 px rows to exclude the post's burned-in caption; timecode is the original post's."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@ozzyandstix/video/7693250822364433666",
+      "durationSec": 2.3,
+      "kind": "video",
+      "startSec": 33.2,
+      "endSec": 35.5,
+      "note": "Outdoor garden wedding: acoustic guitarist and vocalist performing for the couple and guests. Source is only 576x1024; cropped to the top 672 rows to exclude the burned-in caption."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@ozzyandstix/video/7694311421823307030",
+      "durationSec": 2.5,
+      "kind": "video",
+      "startSec": 3.4,
+      "endSec": 5.9,
+      "note": "Vocalist and bride singing together into the microphone on an evening dance floor. Cropped to the top 1248 rows to exclude the burned-in caption."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@ozzyandstix/video/7686215079620054294",
+      "durationSec": 2.4,
+      "kind": "video",
+      "startSec": 21.6,
+      "endSec": 24.0,
+      "note": "Packed dance floor under coloured party lighting during their set. Cropped to the top 1136 rows to exclude the burned-in caption."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+      "durationSec": 2.0,
+      "kind": "video",
+      "startSec": 6.22,
+      "endSec": 8.22,
+      "note": "Vocalist singing at his bongos while wedding guests dance behind him (same post as segment 1, earlier moment)."
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo from the videos page banner: the duo playing acoustic and electric guitars on a sea-view terrace."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/ozzy-stix/reel-desktop.mp4",
+      "poster": "/media/ozzy-stix/poster-desktop.jpg",
+      "posterWebp": "/media/ozzy-stix/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 10.3,
+      "bytes": 3517794
+    },
+    "mobile": {
+      "video": "/media/ozzy-stix/reel-mobile.mp4",
+      "poster": "/media/ozzy-stix/poster-mobile.jpg",
+      "posterWebp": "/media/ozzy-stix/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 10.3,
+      "bytes": 3157289
+    }
+  }
+}

@@ -1,0 +1,504 @@
+{
+ "slug": "calleo",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "about[5] cited /how-it-works for the '13 amp power socket' detail and the 'prepaid return label'. Neither is on that page: the 13 amp line is in the /check-availability FAQ and the pre-paid label is on /packages. Split into correctly sourced items.",
+  "about[6] cited /how-it-works for 'Calleo listens to and edits every voicemail'. That wording is on the homepage ('We carefully listen to every voicemail, edit them'). Re-sourced and split.",
+  "The company-policies item left out the Cookies Policy, which the page also links. Added.",
+  "The three Love My Dress YouTube videos (AJI5wUtFphk, HsxcUo9nsmU, I-BTWX0MTU8) were uploaded by the @lovemydress channel (oEmbed author 'Love My Dress® - British Wedding Blog & Podcast'), not by Calleo. They are third-party uploads, so I dropped them from videos and noted them in gaps.",
+  "The Mensah overlay was marked UNVERIFIED, but it can be confirmed. The Booked Events featured image (media 16279, uploaded 14 Feb 2026) is visibly the same photograph as the Bark profile avatar of 'Mensah', a wedding MC/host in Surbiton (bark.com/en/gb/b/mensah/bRpPP/; the bio points to Instagram @Menszh). So the current title and photo belong to a different business (an MC). The listing's substance (description, website, Instagram, hello@ email domain, £338 price, est. 2023, London, unique-services industry) is all Calleo's.",
+  "'Mensah' was listed in identity.alternateNames even though it is not a Calleo name. Removed it from alternateNames and kept it in evidence and gaps.",
+  "A logo candidate was missed: Loader.png (2000x2000 transparent RGBA PNG, black rotary-dial mark), referenced from the site's custom.css. It is a higher-resolution standalone dial mark than the 600x600 favicon. Added.",
+  "Image description fix: the Patrick Partridge photo shows a pale blue phone, not a white one.",
+  "Image credit fix: on the Image Credits page, the Notley Abbey styled-shoot credits name @suzyelizabethphotography as photographer. DSC07793 (Christmas-tree bride) sits under a separate styled-shoot credit block (tags include @bubearphotography and @minstrelcourtweddings), with no named photographer.",
+  "The Lewis Cannon homepage photo description said the neon reads 'I just called to say'. That is not clearly legible in that frame (it is legible in the second Lewis Cannon image), so I made the wording neutral.",
+  "No other factual errors found. I re-verified the package prices (£219/£338/£437/£1399, +£100 Elegant phones), the destination costing, the Companies House data (B R VENTURES LTD 14783321, incorporated 5 Apr 2023, W1T 6EB, SIC 18201, directors Bailey Mansfield and Robert Martin-Logue), the award and 'Featured on' badges (viewed the images), and all 12 photo URLs (2xx, image/jpeg, dimensions match). Logo URLs return 200 image/png with the stated dimensions. HLS playlist: 200 application/x-mpegURL, 792 B. 1080p segment: 200 video/mp2t, 4,700,400 B. MP4 variants: 404. All 11 Calleo YouTube IDs have oEmbed author 'Audio Guest Book UK - CALLEO'. TikTok profile: 'Calleo - Audio Guest Book UK', 478 videos, 5,555 followers. linktr.ee/calleouk: 404."
+ ],
+ "record": {
+  "slug": "calleo",
+  "displayName": "Calleo",
+  "tagline": "Ring, Record, Remember",
+  "identity": {
+   "officialWebsite": "https://www.calleo-uk.com/",
+   "confidence": "high",
+   "alternateNames": [
+    "CALLEO",
+    "Calleo Audio Guest Book",
+    "Audio Guest Book UK - CALLEO (YouTube display name)",
+    "Calleo - Audio Guest Book UK (TikTok display name)",
+    "B R Ventures Ltd (legal entity; Calleo is its trading name)"
+   ],
+   "evidence": "Booked Events post 15223 (slug 'calleo', created 27 Feb 2025, modified 17 Feb 2026) is now titled 'Mensah', but every substantive field is Calleo's. (1) The description is word for word the calleo-uk.com homepage copy: 'Capture heartfelt voicemails from your guests in a unique way. Our easy-to-use telephones offer a fun alternative to traditional written guestbooks...'. (2) 'Visit Website' links to https://www.calleo-uk.com/. (3) The Instagram link is instagram.com/calleouk/, and @calleouk is credited as 'Audio Guestbook' supplier on calleo-uk.com/image-credits. (4) The contact email is on the calleo-uk.com domain. (5) '£338' is Calleo's published ESSENTIAL package price. (6) 'Est. 2023' and 'London' match Companies House: the Calleo footer says 'CALLEO is a trading name of B R Ventures Ltd (company number 14783321)', and B R VENTURES LTD was incorporated on 5 April 2023 with its registered office at 45 Fitzroy Street, Fitzrovia, London W1T 6EB (SIC 18201, Reproduction of sound recording). (7) The post's industry-type term 432 is 'unique-services'. The 'Mensah' title and featured photo (media 16279, uploaded 14 Feb 2026) belong to a different business: the photo is visibly the same image as the Bark avatar of 'Mensah', a wedding MC/host in Surbiton (bark.com/en/gb/b/mensah/bRpPP/). Calleo's directors are Bailey Mansfield and Robert Martin-Logue (Our Story: 'Bailey & Rob'). Calleo's own site links its TikTok (@calleouk video on Our Story). YouTube oEmbed attributes videos to 'Audio Guest Book UK - CALLEO' at youtube.com/@calleouk."
+  },
+  "about": [
+   {
+    "text": "Calleo provides audio guest books. Guests pick up a telephone, hear the hosts' greeting and leave a voicemail instead of writing in a traditional guest book. It markets this for weddings, birthdays and any celebration.",
+    "sourceUrl": "https://www.calleo-uk.com/"
+   },
+   {
+    "text": "Calleo is a trading name of B R Ventures Ltd (company number 14783321).",
+    "sourceUrl": "https://www.calleo-uk.com/"
+   },
+   {
+    "text": "B R Ventures Ltd was incorporated on 5 April 2023 and is active. Its registered office is in Fitzrovia, London (W1T 6EB), and its nature of business is 18201 – Reproduction of sound recording. Its two directors, Bailey Mansfield and Robert Martin-Logue, were both appointed on 5 April 2023.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14783321"
+   },
+   {
+    "text": "Calleo was founded by Bailey and Rob. The death of Rob's grandfather, Bob Langley, in 2021 inspired its launch: Rob wished he could hear his grandfather's voice again, which a handwritten guest book entry could not capture.",
+    "sourceUrl": "https://www.calleo-uk.com/our-story"
+   },
+   {
+    "text": "In a 2023 Love My Dress feature, the founders said Bailey and Rob met at university and launched CALLEO in 2022.",
+    "sourceUrl": "https://www.lovemydress.net/blog/2023/04/calleo-audio-guest-book.html"
+   },
+   {
+    "text": "Calleo describes itself as a family-run business. Bailey's parents, Sarah and Phil, handle the admin and prepare each phone once a booking is made.",
+    "sourceUrl": "https://www.calleo-uk.com/our-story"
+   },
+   {
+    "text": "Booking starts with an availability form; the customer then chooses a phone and package. Full payment is requested through a secure link by debit/credit card or Klarna. Customers receive a welcome pack and record a custom greeting that plays when the handset is picked up.",
+    "sourceUrl": "https://www.calleo-uk.com/how-it-works"
+   },
+   {
+    "text": "The phone arrives by courier two days before the event at an address of the customer's choice. It needs no Wi-Fi or landline, and guests can leave voicemails of unlimited length and number. The phone is returned at a post office afterwards.",
+    "sourceUrl": "https://www.calleo-uk.com/how-it-works"
+   },
+   {
+    "text": "The phone needs only a standard 13 amp power socket. Calleo recommends placing it at least 5 metres from loud sound sources such as bands, DJs or speakers, and supplies a framed how-to-use guide for guests.",
+    "sourceUrl": "https://www.calleo-uk.com/check-availability"
+   },
+   {
+    "text": "Calleo says it listens to and edits every voicemail, and every customer receives a compiled MP3 file. Keepsake options include a vinyl record or a custom-engraved USB.",
+    "sourceUrl": "https://www.calleo-uk.com/"
+   },
+   {
+    "text": "After the event, customers receive a first-draft MP3, listen to it in an online gallery, can make changes (adding or removing voicemails), and then approve the personalisation of their USB, vinyl record or video memory book.",
+    "sourceUrl": "https://www.calleo-uk.com/how-it-works"
+   },
+   {
+    "text": "Calleo covers weddings in England, Scotland and Wales, and destination weddings. It cannot ship to Northern Ireland.",
+    "sourceUrl": "https://www.calleo-uk.com/check-availability"
+   },
+   {
+    "text": "The company policies page links to Calleo's Cookies Policy, Privacy & Recording Policy, Terms & Conditions of Hire, Public Liability Insurance and PAT Certificates.",
+    "sourceUrl": "https://www.calleo-uk.com/company-policies"
+   },
+   {
+    "text": "The homepage shows a 'The 2024 Wedding Industry Awards – Regional Winner' badge and 'Featured on' badges for Hitched, Same-Sex Wedding Guide and Whimsical Wonderland Weddings.",
+    "sourceUrl": "https://www.calleo-uk.com/"
+   },
+   {
+    "text": "Calleo's own tagline is 'Calleo. The UK's top rated Audio Guest Book'. This is the business's own claim.",
+    "sourceUrl": "https://www.calleo-uk.com/"
+   }
+  ],
+  "services": [
+   {
+    "name": "CORE package",
+    "description": "Published price '£219'. Includes: Dahlia, Lily or Poppy phone; digital PDF instruction sign; courier delivery no later than 2 days before the wedding; pre-paid post office return label; digital audio guest book in 21 days; one opportunity to remove voicemails. Not included: personalised greeting message, physical instruction sign, final presentations such as a USB.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "ESSENTIAL package",
+    "description": "Published price '£338', which matches the '£338 per event' on the Booked Events listing. Includes: Dahlia, Lily, Poppy or Bluebell phone; non-personalised instruction sign; courier delivery no later than 2 days before the wedding; pre-paid post office return label; digital audio guest book in 21 days; one opportunity to remove voicemails; final presentation on an Engraved USB.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "ELEVATED package",
+    "description": "Published price '£437'. Includes: all phones except King, Duchess and Duke; personalised instruction sign; courier delivery no later than 2 days before the wedding; pre-paid post office return label; digital audio guest book in 10 days; one opportunity to remove voicemails or add up to 5 new ones; final presentation as a Vinyl Record or Video Memory Book.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "ELEGANT package",
+    "description": "Published price '£1399'. Includes: any phone type; Lilibet Telephone Box stand; hand-crafted instruction sign; set-up and collection by Calleo staff; digital audio guest book in 5 days; unlimited revisions to remove or add voicemails; final presentation as a Vinyl Record or Video Memory Book.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "Elegant phone upgrade (King, Duchess, Duke)",
+    "description": "The King, Duchess or Duke vintage phones can be added to the packages 'for just an extra £100'.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "Phone collection",
+    "description": "Retro phones (per image alt text): Dahlia (black), Lily (off-white), Poppy (red), Bluebell (light blue), Fern (green) and Pearl (white). Elegant vintage phones: King (antique brass rotary), Duchess (vintage white) and Duke (vintage black).",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   },
+   {
+    "name": "Destination wedding hire",
+    "description": "Choice of Dahlia or Lily phone with the Essential package features. The phone is delivered by Royal Mail 2 days before UK departure and must travel in checked luggage only, in a travel bag Calleo provides (about 20cm x 15cm, 2kg). It is returned via the Post Office on an agreed date with a provided label. Published costing: 'Approx cost is £338 for the first weekend of hire + £100 for every subsequent weekend the phone is not in our possession.'",
+    "sourceUrl": "https://www.calleo-uk.com/destination-weddings"
+   },
+   {
+    "name": "Final presentation keepsakes",
+    "description": "Engraved USB (up to 10 custom options, from font styles to personal text); Video Book (wedding photos or video combined with the voicemails); Vinyl Record with custom artwork, limited to 30 minutes.",
+    "sourceUrl": "https://www.calleo-uk.com/packages"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties"
+  ],
+  "eventTypesSourceUrl": "https://www.calleo-uk.com/",
+  "areasServed": [
+   "England",
+   "Scotland",
+   "Wales",
+   "Destination weddings abroad (the phone travels with the couple)"
+  ],
+  "areasSourceUrl": "https://www.calleo-uk.com/check-availability",
+  "industry": "unique-services",
+  "categories": [
+   "Audio Guestbook"
+  ],
+  "contact": {
+   "bookingUrl": "https://www.calleo-uk.com/check-availability",
+   "email": null,
+   "phone": null
+  },
+  "logos": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e035b406-71d8-491b-819a-6b5a2700ed75/Logo+adaptation1.png",
+    "format": "png",
+    "width": 2500,
+    "height": 1184,
+    "background": "transparent",
+    "colours": "off-white/cream wordmark; needs a dark or photo background",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "notes": "The site header logo (img alt 'Calleo'): a 'Calleo' serif wordmark whose final 'o' is a rotary-dial mark. Re-verified as 200 image/png, 2500x1184 RGBA, 150,624 bytes when requested with 'Accept: image/png' (otherwise WebP). No SVG: the header uses a raster img; the only inline SVGs are Squarespace UI icons, and /logo.svg and /favicon.svg return 404."
+   },
+   {
+    "url": "https://static1.squarespace.com/static/66eadddb3c2db3331cf0c0a8/t/670f93b55f647c68214641c6/1729074102062/Loader.png",
+    "format": "png",
+    "width": 2000,
+    "height": 2000,
+    "background": "transparent",
+    "colours": "black",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "notes": "NEW: a standalone rotary-dial mark (the dial element of the brand icon, without the speech-bubble tail), used as the page-loader image in the site's custom.css (static1.squarespace.com/static/custom-css/66eadddb3c2db3331cf0c0a8/.../custom.css). 200 image/png, 2000x2000 RGBA, 62,619 bytes. The highest-resolution standalone brand icon found."
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/14cd1428-b06a-4778-9c2d-d65ebb950719/Favicon+%284%29.png",
+    "format": "png",
+    "width": 600,
+    "height": 600,
+    "background": "transparent",
+    "colours": "black",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "notes": "The brand icon: a rotary telephone dial inside a speech bubble, used as the favicon source. 200 image/png, 600x600 RGBA, 16,889 bytes with Accept: image/png."
+   },
+   {
+    "url": "https://static1.squarespace.com/static/66eadddb3c2db3331cf0c0a8/t/6710df0e91a06d7f93687081/1729158926817/Favicon+%285%29.png",
+    "format": "png",
+    "width": 600,
+    "height": 600,
+    "background": "transparent",
+    "colours": "black",
+    "sourcePage": "https://www.calleo-uk.com/packages",
+    "notes": "The same dial-in-speech-bubble icon, used as the Packages page tooltip image. 200 image/png, 600x600 RGBA, 15,904 bytes."
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2025/02/67c0cf251148c.png",
+    "format": "png",
+    "width": 1500,
+    "height": 710,
+    "background": "transparent",
+    "colours": "white wordmark",
+    "sourcePage": "https://bookedevents.co.uk/businesses/calleo/",
+    "notes": "The Calleo wordmark uploaded to Booked Events on 27 Feb 2025 with the original listing (media 15227). 200 image/png, 1500x710 RGBA, 90,344 bytes. Lower resolution than the site header logo."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/66eadddb3c2db3331cf0c0a8/0331576e-b4c7-49a5-ac0b-5333ae7da796/Harry+Michael+Photographer.jpeg",
+    "width": 2500,
+    "height": 1667,
+    "description": "At an evening reception, a guest records a message on a Calleo handset while other guests look on. This is the homepage og:image (the static1 og:image URL 301-redirects here). The filename credits Harry Michael Photographer.",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fe2edbf1-564d-486b-a879-063ef20abbed/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg.jpg",
+    "width": 2000,
+    "height": 1333,
+    "description": "A bride records a message on a white Calleo phone beside a large white neon sign in a dark, moody venue (Lewis Cannon Photography).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg",
+    "width": 2000,
+    "height": 1334,
+    "description": "A couple share a Calleo handset in front of an 'I just called to say' neon sign framed by trailing white florals (Lewis Cannon Photography).",
+    "sourcePage": "https://www.calleo-uk.com/how-it-works",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/a6e7e6a5-1bc1-47bd-86a0-7eaec8110ce1/Patrick+Partridge+Photography-min.jpg",
+    "width": 2500,
+    "height": 3750,
+    "description": "A seated guest records on a pale blue Calleo phone next to a 'To the moon and back' neon sign (Patrick Partridge Photography).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/aae401cc-7881-4f1d-a7ea-8c58940e0d54/Char+Cook+Photography-min.jpeg",
+    "width": 2500,
+    "height": 1664,
+    "description": "Wedding guests crowd around a table to leave a message on a white Calleo phone in a stone-walled venue (Char Cook Photography).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e2b0fd09-7846-41e5-a6c3-d7934640a1ce/Char+Cook+Photography+%282%29.jpeg",
+    "width": 2500,
+    "height": 3757,
+    "description": "Guests at a stone-walled reception taking turns on the Calleo phone (Char Cook Photography).",
+    "sourcePage": "https://www.calleo-uk.com/check-availability",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/9c4041a7-54fe-4e41-9ca7-4c78577353af/BDP_CalleoPosable_StyledShoot-244.jpg",
+    "width": 2500,
+    "height": 3750,
+    "description": "Black-and-white table styling: a Calleo-branded rotary phone with coupe glasses, roses and a table-number card (Calleo x Posable styled shoot).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/61d05075-c6cb-4a77-b032-f20927254636/Beth+Beresford+Photography+-+The+Grange+Leverton+Preview-23.jpg",
+    "width": 1600,
+    "height": 1067,
+    "description": "A styled-shoot model lying on a bed holding a black rotary Calleo handset (Beth Beresford Photography, The Grange Leverton; @calleouk credited as audio guestbook supplier).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/44cd7330-41e2-4528-922b-39f07e13cbb4/268_Prestwold_Gina+Fernandes+Photography_.jpg",
+    "width": 2500,
+    "height": 1667,
+    "description": "A couple in heart-shaped sunglasses using a white Calleo phone in front of a copper tinsel backdrop (Gina Fernandes Photography, Prestwold Hall styled shoot).",
+    "sourcePage": "https://www.calleo-uk.com/how-it-works",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/502bdb0a-c55b-4668-ad4b-355f7bcee7b0/Notley+Abbey+Styled+Shoot-212.jpg",
+    "width": 2500,
+    "height": 3750,
+    "description": "A couple at Calleo's white telephone-box stand (the Lilibet stand) with a 'Happily Ever After' neon, from the Notley Abbey styled shoot. Image Credits names @suzyelizabethphotography as photographer and @calleouk as audio guest book. The same asset is the Lilibet stand photo on Packages.",
+    "sourcePage": "https://www.calleo-uk.com/image-credits",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/dcfbb4a4-e9ac-4c99-b302-e45ddaccc304/DSC07793.jpg",
+    "width": 2500,
+    "height": 3750,
+    "description": "A bride in an off-shoulder gown talks on a red Calleo phone beside a decorated Christmas tree (styled shoot; Image Credits tags include @minstrelcourtweddings, @bubearphotography and @calleouk).",
+    "sourcePage": "https://www.calleo-uk.com/image-credits",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg",
+    "width": 2500,
+    "height": 1667,
+    "description": "Calleo phones on display: a light blue Calleo-branded phone, the ornate brass King and a pink phone. The filename says 'Nick Cannon Photography'; the Image Credits page lists Nick Rutter Photography.",
+    "sourcePage": "https://www.calleo-uk.com/packages",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8",
+    "kind": "hls",
+    "httpStatus": 200,
+    "contentType": "application/x-mpegURL",
+    "bytes": 792,
+    "publiclyFetchable": true,
+    "description": "Native background video on the calleo-uk.com homepage, about 12.6 s (6.03 s + 6.57 s segments), with 1920x1080 and 640x360 variants, h264/aac; source filename 'Untitled design.mp4'. Hands arrange Calleo keepsakes: a framed 'Charlie & Tai' song/QR print, a personalised vinyl sleeve with the Calleo dial mark, and engraved wooden USB boxes. Re-verified: master playlist HEAD 200 (792 B); 1080p segment file HEAD 200 video/mp2t, 4,700,400 B (Range 206). Segments are AES-128 encrypted with a publicly served key. The /mp4, /1920:1080 and /original variants return 404. Poster: .../6ac021e8-1c67-4052-b33d-ace498889069/thumbnail (200 image/jpeg, 78,608 B).",
+    "sourcePage": "https://www.calleo-uk.com/",
+    "ownContentEvidence": "Hosted in Calleo's own Squarespace video library (site id 66eadddb3c2db3331cf0c0a8) and embedded on its homepage. The Calleo dial logo is visible on the vinyl sleeve in the poster frame."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=zZRVCFfqhxI",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'CALLEO Audio Guest Book: Tai & Charlie'. Landscape video, embedded in Wedissimo's blog feature on Calleo.",
+    "sourcePage": "https://wedissimo.com/blog/unique-uk-wedding-guest-book-idea-audio/",
+    "ownContentEvidence": "YouTube oEmbed (re-verified) author 'Audio Guest Book UK - CALLEO', author_url youtube.com/@calleouk."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/RukIz7SO4qw",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Preserving memories on Vinyl 💿🎵✨'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/7HbWkzpQcSo",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Our Small Business Story ☎️✨'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/-rFJow1j4wE",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'My biggest wedding regret 😩'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/yW0davpYgtQ",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'CALLEO Audio Guest Book 💍☎️ A special touch for your wedding ✨'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/iVwsEKkQxOo",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Small Business Owner ☎️ Day in the Life 🤍'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/mgIfG5wwtOQ",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'It’s the Vinyl for me ☎️✨ CALLEO Audio Guest Book'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/VKXfBku-QOg",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'POV: It’s your wedding day ✨☎️'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/6cgEDP7efZA",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Happy Valentines Day ☎️❤️'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/tMw73_CSImU",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Capture all of your wedding memories 🤍 Link in bio to book your 2023 UK Audio Guest Book ☎️'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.youtube.com/shorts/1y_sgM7mc84",
+    "kind": "youtube",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Short: 'Unique things to have at your wedding 💍 CALLEO Audio Guest Book UK'.",
+    "sourcePage": "https://www.youtube.com/@calleouk",
+    "ownContentEvidence": "oEmbed author 'Audio Guest Book UK - CALLEO' (@calleouk), re-verified."
+   },
+   {
+    "url": "https://www.tiktok.com/@calleouk/video/7176369468455668998",
+    "kind": "tiktok",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": false,
+    "description": "TikTok about Corinne & Greg's story: their grandfather left a voicemail at their August 2022 wedding and passed away afterwards. Calleo's Our Story page links it ('Watch more about their story linked here'). Title and thumbnail are unverified because TikTok oEmbed returned 429 again.",
+    "sourcePage": "https://www.calleo-uk.com/our-story",
+    "ownContentEvidence": "Linked from Calleo's own Our Story page and posted under the @calleouk account."
+   },
+   {
+    "url": "https://www.tiktok.com/@calleouk/video/7134792883428674822",
+    "kind": "tiktok",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": false,
+    "description": "@calleouk TikTok embedded in the Boho Weddings feature on Calleo. Content unverified (oEmbed 429).",
+    "sourcePage": "https://www.boho-weddings.com/235482/calleo-audio-guest-book/",
+    "ownContentEvidence": "Posted under the @calleouk handle, the same account Calleo's own site links."
+   },
+   {
+    "url": "https://www.tiktok.com/@calleouk/video/7175656720377646342",
+    "kind": "tiktok",
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": false,
+    "description": "@calleouk TikTok embedded in the Boho Weddings feature on Calleo. Content unverified (oEmbed 429).",
+    "sourcePage": "https://www.boho-weddings.com/235482/calleo-audio-guest-book/",
+    "ownContentEvidence": "Posted under the @calleouk handle, the same account Calleo's own site links."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/calleouk/",
+   "tiktok": "https://www.tiktok.com/@calleouk",
+   "youtube": "https://www.youtube.com/@calleouk",
+   "facebook": "https://www.facebook.com/calleouk",
+   "vimeo": null,
+   "other": [
+    "https://linktr.ee/calleouk (TikTok bio link; re-checked: HTTP 404 on 27 Oct 2026)"
+   ]
+  },
+  "instagramAccess": "One plain GET of https://www.instagram.com/calleouk/ (desktop Chrome UA, no cookies) on 27 Oct 2026 returned HTTP 200 with no redirect: a ~505 KB generic app shell titled 'Instagram', with no og:title/og:description and no profile or post data. Posts are not visible without JS/login. Not retried. The handle is confirmed by the Booked Events listing's Instagram link and by @calleouk credits on calleo-uk.com/image-credits. For comparison: one plain GET of https://www.tiktok.com/@calleouk returned 200 with public profile JSON (nickname 'Calleo - Audio Guest Book UK', bio 'No.1 Rated UK Audio Guest Book / Family run Business ♥️ / PRICES & AVAILABILITY ⏬', 478 videos, 5,555 followers, bio link linktr.ee/calleouk). One plain GET of https://www.facebook.com/calleouk returned HTTP 400 'Error'. YouTube channel pages 302-redirect to consent.youtube.com, which was not bypassed.",
+  "gaps": [
+   "NAME CONFLICT (business resolved). Booked Events post 15223 at slug 'calleo' was re-titled 'Mensah' (modified 17 Feb 2026). On 14 Feb 2026 its featured image was replaced (media 16279) with a photo of a man in a tuxedo holding a microphone, and an Apple Watch face screenshot (media 16278) was also attached. Verified: the featured photo is the same image as the Bark profile avatar of 'Mensah', a wedding MC/host in Surbiton (bark.com/en/gb/b/mensah/bRpPP/; Instagram @Menszh per his Bark bio). The 'Mensah' title and photo therefore belong to an unrelated MC business. All substantive listing fields (description, website, Instagram, email domain, £338, est. 2023, London, unique-services) are Calleo's. Recommendation: publish this slug as Calleo, do not use the Mensah photo or name, and have Jake confirm with the Booked Events admin.",
+   "The phone number on the Booked Events listing does not appear on calleo-uk.com, so its owner (Calleo or Mensah) is unknown. Not copied.",
+   "Establishment year: the listing says 2023, which matches B R Ventures Ltd's incorporation on 5 Apr 2023. But Love My Dress quotes the founders saying 'We launched CALLEO in 2022', and Our Story mentions a Calleo booking for an August 2022 wedding. Trading probably began in 2022, before incorporation.",
+   "The ARCHIVED card image 67c0cf25118b3.jpg is NOT Calleo's work: it shows a GAIL's bakery flower wall (visually identical to 67c0cf2513474.jpg). The post's other 2025 uploads (67c0cf251203f, 67c0cf2512783, 67c0cf2513ba6, 67c0cf251484d, 1-tbp, 2-tbp, 3-tbp) are not Calleo's either. Only 67c0cf251148c.png (the Calleo wordmark) is.",
+   "No SVG logo exists: the header uses a raster PNG, the inline SVGs are only Squarespace UI icons, and /logo.svg and /favicon.svg return 404. The best wordmark is a 2500x1184 off-white transparent PNG, which needs a dark background. No dark-on-light wordmark was found. The standalone dial icon is black (2000x2000 Loader.png; 600x600 speech-bubble favicon).",
+   "Squarespace's CDN caps image delivery at 2500px wide. Request with 'Accept: image/jpeg' or 'image/png', or the CDN returns WebP.",
+   "Rights: the photos are by credited third-party wedding photographers (calleo-uk.com/image-credits). The footer says CALLEO's 'intellectual property rights include images and videos shown on this website and other platforms. Their usage is regularly policed.' Get Calleo's permission before republishing any photo, logo or video.",
+   "The only own video on the website is a ~12.6 s HLS background clip with AES-128-encrypted segments; no MP4 exists. Using it needs an HLS player, or better, the original file supplied by Calleo. The YouTube Shorts are vertical; the only landscape Calleo-channel video found is zZRVCFfqhxI. The YouTube channel page sits behind a consent redirect, so the full upload list was not enumerated.",
+   "The three Love My Dress YouTube videos about Calleo (AJI5wUtFphk 'CALLEO Audio Wedding Guestbook', HsxcUo9nsmU 'CALLEO Audio Wedding Guest Book - Emotional Voice Recording', I-BTWX0MTU8 'CALLEO Audio guestbook for weddings') were uploaded by the Love My Dress channel, not Calleo. They were removed from videos as third-party uploads. Calleo may have supplied the footage; confirm with Calleo before use.",
+   "TikTok oEmbed returned 429 'ratelimit triggered' for all three linked TikTok videos and was not retried, so their titles, thumbnails and public playability are unverified. The account's 478 videos were not enumerated.",
+   "The Facebook URL (facebook.com/calleouk) is linked only from third-party features (Smashing the Glass, Boho Weddings), not from Calleo's own site. A plain request returned HTTP 400, so it is unverified.",
+   "Event types: Calleo's site names weddings and birthdays ('and any celebration'). The Booked Events post ticks all 13 type_of_event terms, but it is unknown whether the business chose them, so they were not used.",
+   "Prices are verbatim from calleo-uk.com/packages and /destination-weddings as fetched on 27 Oct 2026, and may change. The site also offers a short audio sample of real voicemails (static1.squarespace.com/.../Fair+Messages+2.mp3, HEAD 200 audio/mpeg, 605,427 bytes). Publishing it needs permission because it contains guests' voices.",
+   "The homepage hero image 'Desktop - 2 (3)-min.png' (phones scattered on green) is a product composite, not an event photo, so it was not included."
+  ]
+ }
+}

@@ -1,0 +1,322 @@
+{
+ "slug": "harry-de-cruz",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Image width/height values were the declared upload sizes from Squarespace's data-image-dimensions attribute. The CDN serves at most 2500px wide, even with ?format=original. Seven entries were corrected to the served sizes, e.g. 'Copy of 49' 4000x2667 -> 2500x1667, IMG_4822/4823 5760x3840 -> 2500x1667, IMG_3136 6016x4016 -> 2500x1669.",
+  "FIRE.jpg was marked stockRisk 'own', but the performer is a silhouette and cannot be identified, and the image carries another photographer's watermark. It was replaced with IMG_1525+2.JPG from /magic, which the site's alt text explicitly names as 'Magician Harry De Cruz performing to surprised Bride and Groom at a wedding' (verified 200, 2500x1667).",
+  "Emma&Edward020821-428.jpg was described as Harry performing for the couple. On inspection, the man in the bow tie reacting to the trick appears to be the groom, and the performer is not clearly identifiable. The description was neutralised.",
+  "IMG_3136+2.JPG described a 'participant' walking with Harry. The second man is a camera operator wearing a headset, and Harry (in black, glasses) is holding up a phone/calculator. The description was corrected.",
+  "'magic show-073': Harry wears a teal boiler suit, not a teal suit. Corrected.",
+  "8C299568…JPG: the site's alt text calls it a wedding, but a guest wears a lanyard. The description was neutralised to a drinks reception.",
+  "Three third-party YouTube videos (Vanishing Inc. Magic, The Magicians' Podcast Network, SylarMagic; owners confirmed via oEmbed) were listed under videos. The rules say to drop third-party footage, so they were moved to gaps.",
+  "The Facebook URL https://www.facebook.com/harrydecruzmagician was placed in socials although it is not linked from his site, a plain request returns HTTP 400, and a web search did not corroborate it. Set to null and kept in gaps.",
+  "Dynamo credit: the record said 'nearly a decade', but /consultancy says 'the better part of a decade'. Wording fixed.",
+  "The identity evidence called 'over 15 years of experience' 'broadly consistent with 2014'. It is not: 15+ years implies a start around 2011 or earlier, and his own credits run from 2012 (Magician Impossible, BGT). The listing's 2014 remains unverified.",
+  "Favicon format was given as a PNG under a .ico name. The CDN negotiates content: browser-style requests get WebP (1,044 bytes) and Accept: image/png gets PNG (2,199 bytes). Both are 180x180 RGBA.",
+  "The og:image is a separate PNG copy (static1.squarespace.com/.../0I5A4375+2.png?format=1500w, 1500x1000), not the JPG listed.",
+  "alternateNames included 'London Magician Harry De Cruz'. That is footer SEO text, not a trading name, so it was removed.",
+  "The researcher did not report the unlinked sitemap pages (/home, /young-harry, /qrcode, /qr-page, /blog, /site-map). All were checked: no further video blocks, YouTube/Vimeo embeds or MP4s.",
+  "Minor about fixes: added the Champions of Magic venue (Boulevard Theatre) as shown on the homepage. The Berkhamsted listing is described as repeating the 2024 title, not independently confirming an award body's decision."
+ ],
+ "record": {
+  "slug": "harry-de-cruz",
+  "displayName": "Harry De Cruz",
+  "identity": {
+   "officialWebsite": "https://www.harrydecruz.com",
+   "confidence": "high",
+   "alternateNames": [
+    "Harry de Cruz"
+   ],
+   "evidence": "Re-fetched on 27 Oct 2026. The live Booked Events listing https://bookedevents.co.uk/businesses/harry-de-cruz/ (title 'Harry De Cruz – Booked Events', 'Est.2014 · London', 'Price from £500 per event', listed 15 Dec 2024, last updated 12 Jan 2025) has its 'Visit Website' link pointing to https://www.harrydecruz.co.uk, which returns a 301 to https://www.harrydecruz.com/ (Squarespace). The listing copy (one of London's busiest performers, a stand-up comedy background, technical sleight of hand, mind reading, a relaxed and conversational style) closely matches the harrydecruz.com homepage copy. The listing thumbnail harry_decruz_thumb.jpg (1000x800: a man throwing playing cards in front of red paisley wallpaper) and its 'logo' (a 1000x1000 circular headshot on green) show the same person as the site's headshot 663A6149.jpg. Trade: magician, mind reader and event host, based in London and New York. Namesakes searched: 'Harry de la Cruz' (a Liverpool WWI soldier, d. 1915) and other non-matching hits are different people. Independent corroboration: the Absolutely Magazine profile (Feb 2022) and the Berkhamsted Society event listing (Feb 2025) both describe the same Buckinghamshire-born magician. Establishment year 2014 is NOT stated by the business; his site says 'over 15 years of experience performing at events' and lists credits from 2012, which points to an earlier start than 2014. Repo notes verified: src/data/vendors.ts lists him as 'Photography', est. 2017, £600, Unsplash image, rating 4.8 from 26 reviews (all wrong). In docs/reference/bookedevents-cards-parsed-20250331.json the card links are shifted by one (Harry's card links to /paint-and-pour/, and Grape & Fig's to /harry-de-cruz/)."
+  },
+  "about": [
+   {
+    "text": "Harry De Cruz describes himself as an award-winning London magician, mind reader and event host. He combines a background in stand-up comedy with technical sleight of hand and mentalism, in a relaxed, conversational performing style.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "text": "He says he is based in London and New York and available worldwide. His site says that by 2026 he had worked in more than 34 countries, including product launches in the United States, private dinners across Europe and celebrations at Soneva Fushi in the Maldives.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "text": "His website says he was awarded London Magician of the Year in 2024, 2025 and 2026 and has entertained over 50,000 audience members. These claims are self-reported; a February 2025 Berkhamsted Society event listing also bills him as 'London Magician of the Year 2024'.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "text": "He says he co-wrote and performs in the magic show AMAZE (New World Stages, New York), which he describes as Drama Desk-winning and, as of summer 2026, extended for a fifth time. His homepage also lists Wonderville (The Palace Theatre, London's West End) and Champions of Magic (Boulevard Theatre).",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "text": "He says he has over 15 years of experience performing at events. He offers to meet clients free of charge for a coffee or over Zoom, and to show them some magic, before they book.",
+    "sourceUrl": "https://www.harrydecruz.com/magic"
+   },
+   {
+    "text": "He says he has performed at hundreds of weddings and works with each couple to choose the best times for magic during the day.",
+    "sourceUrl": "https://www.harrydecruz.com/weddings"
+   },
+   {
+    "text": "Behind the scenes he works as a creative advisor, writer and designer for magicians and theatre shows. Credits he lists include Magic Director and Resident Director of Derren Brown's Unbelievable at London's Criterion Theatre, and 'the better part of a decade' with Dynamo as Head of Magic, Lead Consultant and Production Manager.",
+    "sourceUrl": "https://www.harrydecruz.com/consultancy"
+   },
+   {
+    "text": "A February 2022 Absolutely Magazine profile says he was born and raised in Buckinghamshire (growing up in Aylesbury), joined The Magic Circle at 18 and is an Associate of the Inner Magic Circle.",
+    "sourceUrl": "https://absolutelymagazines.com/harry-de-cruz-the-buckinghamshire-magician-casting-a-spell/"
+   },
+   {
+    "text": "On 6 February 2025 the Berkhamsted Society presented a one-night performance of his show 'Sleightly Impressive' at the Centenary Theatre, Berkhamsted. The listing says it combined his Edinburgh Fringe show with some of the best tricks of his career.",
+    "sourceUrl": "https://connections.berkhamsted.com/event/berkhamsted-society-presents-harry-de-cruz"
+   },
+   {
+    "text": "His Booked Events listing (listed 15 Dec 2024, last updated 12 Jan 2025) describes him as one of London's busiest performers and gives the size of events he caters for as 10–100 guests.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/harry-de-cruz/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Close-up and roaming magic",
+    "description": "Conversational, intimate magic performed in guests' hands while he mingles among them. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "name": "Stage and after-dinner magic",
+    "description": "Interactive stage performances of modern magic, mind reading and British humour, for anything from intimate private rooms to large theatres. The /magic page says his stage magic can scale to hundreds or thousands of people. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "name": "Event hosting and compèring",
+    "description": "Hosting and compèring an event: keeping it moving and the energy up, with magic and mind reading placed through the transitions. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "name": "Bespoke brand magic",
+    "description": "Custom magic built around a client's brand, campaign, message, slogan or product, drawing on his work as a consultant, writer and magic creator. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/"
+   },
+   {
+    "name": "Parlour show",
+    "description": "An intimate, interactive show of magic and mind reading for small to medium groups in a living room or private dining room. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/magic"
+   },
+   {
+    "name": "Wedding magic",
+    "description": "Magic planned with the couple. Common slots are the drinks reception (mingling), the wedding breakfast (table to table between courses), 'the turnover' before evening guests arrive, and the evening reception. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/weddings"
+   },
+   {
+    "name": "Magic consultancy",
+    "description": "Creative advisor, writer and designer for magicians and theatre productions. Listed credits include Derren Brown's Unbelievable, Dynamo, Oliver!, Groundhog Day The Musical, Back to the Future The Musical, 2:22 A Ghost Story, Illusionarium and Amaze. No price published.",
+    "sourceUrl": "https://www.harrydecruz.com/consultancy"
+   }
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Private Parties",
+   "Weddings",
+   "Product Launches"
+  ],
+  "eventTypesSourceUrl": "https://www.harrydecruz.com/",
+  "areasServed": [
+   "London",
+   "New York",
+   "UK-wide",
+   "Worldwide"
+  ],
+  "areasSourceUrl": "https://www.harrydecruz.com/",
+  "tagline": "Modern Magic, designed to be remembered.",
+  "industry": "entertainment",
+  "categories": [
+   "Magician",
+   "Masters of Ceremonies"
+  ],
+  "contact": {
+   "bookingUrl": "https://www.harrydecruz.com/contact",
+   "email": null,
+   "phone": null
+  },
+  "logos": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/ed357811-5d3d-4d7a-85c5-4a6963a99169/favicon.ico",
+    "format": "PNG or WebP by content negotiation (served under a .ico name)",
+    "width": 180,
+    "height": 180,
+    "background": "transparent",
+    "colours": "#005522-style dark green rounded square with a white serif 'H'",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "notes": "The site icon (link rel=icon, ?format=100w in the HTML). HTTP 200. With 'Accept: image/png' it returns a 180x180 RGBA PNG (2,199 bytes); with a browser-style request it returns WebP (1,044 bytes). ?format=original is also 180x180. https://www.harrydecruz.com/favicon.ico 301s to the same asset as apple-touch-icon.png (100w WebP). It is a monogram, not a full logo. No SVG exists: the 11 inline <svg> elements on the homepage are cart, social and Instagram icons, a marquee path and image clip masks; /logo.svg returns 404."
+   },
+   {
+    "url": "https://www.harrydecruz.com/",
+    "format": "text wordmark (web font, no image file)",
+    "width": null,
+    "height": null,
+    "background": "white",
+    "colours": "Dark text on a light header",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "notes": "The header logo is the Squarespace site title 'Harry De Cruz' set as live text (CSS selector .header-title-text a#site-title), using --site-title-font-font-family which resolves to 'ivypresto-display' (Typekit). Body font is 'degular-text'; meta font is 'Newsreader'. No logo image or inline SVG in the header. A crisp mark would have to be a typographic reconstruction with its provenance noted. Rejected: https://bookedevents.co.uk/wp-content/uploads/2024/12/harry_de-cruz_logo.png (1000x1000 PNG, 200) is a circular-cropped headshot, not a brand mark."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg",
+    "width": 2500,
+    "height": 1667,
+    "description": "Harry on a theatre stage in a hazy spotlight beam, flicking a playing card towards a seated gala audience (credited @domdommartin in the filename). Served at 2500px; the declared upload size is 4000x2667.",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG",
+    "width": 2362,
+    "height": 1575,
+    "description": "Harry in an olive suit and glasses holding up a playing card and fanned deck while guests applaud. The site's og:image is a PNG copy of this photo.",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg",
+    "width": 2500,
+    "height": 1667,
+    "description": "Gala dinner guests react with open-mouthed amazement to a card trick at their table (credited @domdommartin). Harry is not in frame.",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/1646149967211-6IA69WBE6ITE1685MWTJ/IMG_1525+2.JPG",
+    "width": 2500,
+    "height": 1667,
+    "description": "Harry, in a dark suit, performs close-up magic for a laughing bride and groom at their wedding table (the site's alt text: 'Magician Harry De Cruz performing to surprised Bride and Groom at a wedding')",
+    "sourcePage": "https://www.harrydecruz.com/magic",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG",
+    "width": 1228,
+    "height": 977,
+    "description": "Harry, in a green shirt and glasses, shows a card to three astonished guests at an indoor drinks reception (one wears a lanyard)",
+    "sourcePage": "https://www.harrydecruz.com/magic",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG",
+    "width": 2500,
+    "height": 1667,
+    "description": "Harry in a brown tweed suit stands holding a card as the bride and a guest laugh during a candlelit wedding breakfast",
+    "sourcePage": "https://www.harrydecruz.com/weddings",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG",
+    "width": 2500,
+    "height": 1667,
+    "description": "Table magic at a wedding: Harry holds a card out to the bride as she and the guests laugh",
+    "sourcePage": "https://www.harrydecruz.com/weddings",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG",
+    "width": 2500,
+    "height": 1667,
+    "description": "Harry in a navy suit shaking hands with a guest at an outdoor wedding drinks reception",
+    "sourcePage": "https://www.harrydecruz.com/weddings",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg",
+    "width": 2048,
+    "height": 1365,
+    "description": "A bride and a groom in a bow tie react with delight to a card trick at their table in a stone-walled venue (Hannah McClune wedding photography). The performer is not clearly identifiable in the frame.",
+    "sourcePage": "https://www.harrydecruz.com/weddings",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg",
+    "width": 2500,
+    "height": 1406,
+    "description": "Harry in a teal boiler suit performing on a dark stage, with a camera operator in the foreground",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG",
+    "width": 2500,
+    "height": 1669,
+    "description": "Theatre show seen from behind the audience: Harry, in black, holds up a phone/calculator in the aisle under teal stage light while a camera operator with a headset follows",
+    "sourcePage": "https://www.harrydecruz.com/reviews",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/73d1ddec-12aa-4f80-a922-5554930fbc94/663A6149.jpg",
+    "width": 2500,
+    "height": 1875,
+    "description": "Professional headshot of Harry in a black T-shirt against a green backdrop (the same image Booked Events uses as his avatar); suitable for a profile avatar",
+    "sourcePage": "https://www.harrydecruz.com/magic",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8",
+    "kind": "hls",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "application/x-mpegURL",
+    "bytes": 792,
+    "description": "70-second 16:9 showreel (durationSeconds 70; 12 HLS segments summing to 70s). H.264/AAC with 1920x1080 and 640x360 variants, AES-128-encrypted segments. Poster frame: Harry doing close-up magic under the title card \"'SENSATIONAL' – Sir David Attenborough\". The poster JPEG https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/thumbnail returns HTTP 200, image/jpeg, 68,343 bytes, 1920x1080. The 792 bytes are the master playlist only. Child playlists carry signed URLs that expire about 12 hours later. The 1080p segment file (…/segments/mpegts-h264-1920:1080) answers HEAD with 200, video/mp2t, 25,068,256 bytes, but it is AES-128-encrypted, so it is not usable as a progressive file. The /1920:1080 and /640:360 progressive paths return 404. Best candidate for the hero showreel, via an HLS player and with his permission.",
+    "sourcePage": "https://www.harrydecruz.com/showreel",
+    "ownContentEvidence": "A native Squarespace video block on his own /showreel page (in the sitemap, not the nav), hosted in the same Squarespace library (621cf749a78ec40dfe3874cf) as the photos on harrydecruz.com. The poster shows Harry performing, with a celebrity quote also used on his homepage."
+   },
+   {
+    "url": "https://www.instagram.com/reel/Chc1iiYIef0/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "description": "Instagram reel embedded (iframe to /embed/) in the Instagram gallery on his homepage, captioned 'Still social distancing in 2022'. The site's poster image (1152x2048) is https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/1660939964370-WUTDJ7PZPZ0M3VCUAEG8/image-asset.jpeg. The media is not reachable without login.",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "ownContentEvidence": "Embedded in the @harrydecruz Instagram feed gallery on his own homepage."
+   },
+   {
+    "url": "https://www.instagram.com/tv/CfuJfuuoDiR/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "httpStatus": null,
+    "contentType": null,
+    "bytes": null,
+    "description": "Instagram video embedded on the homepage: a satirical lockdown video he made about performers being told to find jobs in other industries (caption mentions Rishi Sunak). Not event footage, so not suitable for the hero. The site's poster image is 770x1364.",
+    "sourcePage": "https://www.harrydecruz.com/",
+    "ownContentEvidence": "Embedded on his own homepage with a first-person caption ('Here's a video I made during Lockdown 1…')."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/harrydecruz",
+   "facebook": null,
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": []
+  },
+  "instagramAccess": "One plain unauthenticated GET to https://www.instagram.com/harrydecruz/ on 27 Oct 2026 returned HTTP 200 with no redirect (504,792 bytes). It was Instagram's generic app shell: <title>Instagram</title>, no og:title, og:description or og:image, and no profile data or posts visible without login. Not retried. The handle is confirmed by the header and footer links on harrydecruz.com (href https://www.instagram.com/harrydecruz, 'Instagram @HarryDeCruz') and by the Feb 2022 Absolutely Magazine profile.",
+  "gaps": [
+   "The website publishes no prices. '£500 per event' comes only from the Booked Events listing, so no price was added to any service.",
+   "No SVG or high-resolution logo exists. The brand is a typeset site title ('Harry De Cruz' in ivypresto-display) plus a 180x180 green 'H' favicon monogram. A crisp mark would need a faithful typographic reconstruction, with its provenance noted.",
+   "The 2014 establishment year is not confirmed by the business and is probably not his career start. His site says 'over 15 years of experience performing at events', and /consultancy lists credits from 2012 (Magician Impossible 2012–2015, Britain's Got Talent 2012–2021).",
+   "The awards ('London Magician of the Year 2024, 2025 & 2026'), the audience and country counts (the homepage says both '30+' and 'more than 34' countries) and the celebrity quotes (Prince Harry, Sir David Attenborough, Jimmy Carr, Sir Elton John) are self-published. Only the 2024 title appears in a third-party listing (Berkhamsted Society), and that listing probably repeats his own promotional copy.",
+   "Facebook candidate https://www.facebook.com/harrydecruzmagician is not linked from his site, returns HTTP 400 to a plain request, and a web search did not corroborate it. Ownership is unverified, so it is left out of socials.",
+   "TikTok @harrydecruz was reported by the first researcher as private with 0 visible videos. It is not linked from his site, so it is unverified and left out of socials.",
+   "No own YouTube or Vimeo channel was found. youtube.com/@harrydecruz 302s to a Google consent page (not followed), and channel oEmbed returns 404. Web searches for Vimeo/TikTok footage found nothing.",
+   "Third-party videos featuring him, excluded from videos because they are not his own footage (owners confirmed via YouTube oEmbed): https://www.youtube.com/watch?v=Iu5Z5oOCfaA ('Harry De Cruz - The Insider', Vanishing Inc. Magic); https://www.youtube.com/watch?v=cesk9YOvdwg ('Ep 69 - Harry De Cruz Interview', The Magicians' Podcast Network); https://www.youtube.com/watch?v=d0Djc6cUniU ('Harry De Cruz Loves Hot Sauce | Hot Tricks', SylarMagic).",
+   "The only own event footage is the 70-second HLS showreel on /showreel. There is no progressive MP4, the segments are AES-128-encrypted and the signed child URLs expire. Hotlinking or re-hosting it in the directory should have his permission.",
+   "Unlinked sitemap pages (/home, /young-harry, /qrcode, /qr-page, /blog, /site-map) were checked: no further video. /qrcode offers a 'Save Contact Details' vCard, which was deliberately not opened or copied.",
+   "Squarespace serves images at most 2500px wide (?format=original included). Larger uploads exist (e.g. IMG_3136 6016x4016, IMG_4822 5760x3840) but are not publicly served at full size.",
+   "Excluded: FIRE.jpg (a silhouetted fire act carrying another photographer's watermark; performer not identifiable), IMG_5814-2.jpg (a stage levitation; uncertain it is Harry), and template stock from another Squarespace library (5ec321c2af33de48734cc929: 'Aro Ha_0428.jpg', '20140301_Trade-151_012-2.jpg', '20140228_Trade 151_0046.jpg'). Also excluded: celebrity photos, 18 client-brand logos and theatre-show posters on the homepage and /consultancy.",
+   "Further usable own photos not in the 12: 35def48b-db22-425d-b1ac-c4514934f1a6.JPG (Champions of Magic stage shot, only 1170x770), Emma&Edward020821-514/518/538/546 (wedding set, 2048x1365), IMG_1520.JPG, IMG_4821.JPG.",
+   "Photo credits on the site: Hannah McClune (weddings), Andy Hone (press shots), @domdommartin (some stage shots). Image rights belong to the photographers or Harry. Use on Anyvendor should be with consent.",
+   "The site's LocalBusiness structured data includes a street address that was deliberately not recorded; use 'London' only. The contact email on the Booked Events listing was not copied, per the rules.",
+   "/weddings and /showreel are live and in the sitemap but not linked from the main navigation. The nav label 'Private Bookings' points to /magic.",
+   "'Masters of Ceremonies' is included because he explicitly offers 'Event hosting and compèring'. The primary category is Magician (entertainment).",
+   "Repo placeholder data in src/data/vendors.ts (lines 173–185: category 'Photography', est. 2017, £600, an Unsplash image, rating 4.8 from 26 reviews) is incorrect and should be replaced. In docs/reference/bookedevents-cards-parsed-20250331.json the card links are shifted by one."
+  ]
+ }
+}

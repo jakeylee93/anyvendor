@@ -1,0 +1,64 @@
+{
+  "slug": "magpie-catering",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+      "durationSec": 2.8,
+      "kind": "still",
+      "note": "Magpie gallery photo: rows of king prawn and mango canap\u00e9 skewers on bamboo picks."
+    },
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Magpie private fine dining page photo: rows of dessert glasses with heart shortbread and edible flowers, with brownie bites."
+    },
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Magpie gallery photo: mezze sharing board with cured meats, houmous, a chicken and pepper skewer and olives."
+    },
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Magpie gallery photo: baklava and Turkish pastries with a strawberry and spun-sugar garnish on slate."
+    },
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Magpie gallery photo: grilled halloumi with pomegranate, mint, chilli and balsamic."
+    },
+    {
+      "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Magpie special events page photo: white chocolate and raspberry tart with a sesame tuile, coulis and raspberries."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/magpie-catering/reel-desktop.mp4",
+      "poster": "/media/magpie-catering/poster-desktop.jpg",
+      "posterWebp": "/media/magpie-catering/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.2,
+      "bytes": 1819168
+    },
+    "mobile": {
+      "video": "/media/magpie-catering/reel-mobile.mp4",
+      "poster": "/media/magpie-catering/poster-mobile.jpg",
+      "posterWebp": "/media/magpie-catering/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.2,
+      "bytes": 1836818
+    }
+  }
+}

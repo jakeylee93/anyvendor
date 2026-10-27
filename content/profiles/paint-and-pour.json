@@ -1,0 +1,97 @@
+{
+ "slug": "paint-and-pour",
+ "displayName": "Paint & Pour",
+ "tagline": "Unwind, Create. Connect",
+ "intro": "Paint & Pour runs guided sip-and-paint nights in Epping and Chingford. Its founder, Bryony, guides guests through a painting step by step, with no experience needed. Each guest gets a drink on arrival, all materials are supplied and everyone takes their finished canvas home.",
+ "about": [
+  "Paint & Pour runs guided paint-and-wine evenings in Epping and Chingford, led by its founder, Bryony. She says she started it with a simple idea: most people haven't picked up a paintbrush since school, and they really should, preferably with a glass of wine in the other hand. No experience is needed, and guests can come with friends, with a date or on their own.",
+  "Each night is a three-hour guided session. Guests arrive, get a drink and find an easel. Bryony then takes them through the painting one step at a time, with music playing. Canvas, paints, brushes and aprons are all provided, and a complimentary drink is included on arrival. The evening ends with a 'Mini Gallery & Photo Time', and everyone takes their painting home.",
+  "Public nights take place at Carpino Lounge on Epping High Street and at The Royal Forest on Ranger's Road, Chingford. Tickets for the currently listed nights are sold through Eventbrite at £35 each. Doors open at 6:40pm, with check-in at 7pm and painting from 7:30pm. Under-18s must come with a parent or legal guardian. Tickets are non-refundable, but Bryony offers a transfer to an event on another date.",
+  "The organiser says the events usually sell out and suggests following their Eventbrite page to hear about new dates first. Their public pages do not describe private or exclusive bookings, so anyone planning a group occasion should ask them directly, through Eventbrite or Instagram, about availability and format."
+ ],
+ "services": [
+  {
+   "name": "Paint & Pour Night, Epping",
+   "description": "A three-hour guided sip-and-paint evening at Carpino Lounge, 183 High Street, Epping. It includes a complimentary drink on arrival, all supplies and step-by-step instruction from Bryony. Tickets for the listed dates are £35."
+  },
+  {
+   "name": "Paint & Pour Night, Chingford",
+   "description": "The same guided evening at The Royal Forest, Ranger's Road, Chingford (E4 7QH). It includes a drink on arrival, all painting supplies and step-by-step teaching. Tickets for the listed dates are £35."
+  },
+  {
+   "name": "Beginner-friendly tuition",
+   "description": "No experience is needed. Guests are taken through one painting a step at a time, with music on and room to go off-piste. As the organiser puts it, wobbly lines are part of the fun."
+  },
+  {
+   "name": "Materials and a take-home canvas",
+   "description": "Canvas, paints, brushes and aprons are all provided, so guests only need to bring themselves. Evenings finish with a 'Mini Gallery & Photo Time', and everyone takes their painting home."
+  }
+ ],
+ "eventTypes": [],
+ "areasServed": [
+  "Epping, Essex",
+  "Chingford, London (E4)"
+ ],
+ "website": null,
+ "socials": {
+  "instagram": "https://www.instagram.com/_paint_and_pour_/",
+  "facebook": null,
+  "tiktok": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": null,
+ "basedIn": null,
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "Paint & Pour has no website of its own and trades through an Eventbrite organiser account in its founder's name and an Instagram account; an older, unverified directory listing gives a 2015 start date and an Epping High Street address, neither of which appears on the business's own pages."
+ },
+ "sources": [
+  {
+   "label": "Paint & Pour — Eventbrite organiser page",
+   "url": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+  },
+  {
+   "label": "Paint & Pour Night at Carpino Lounge, Epping — Eventbrite",
+   "url": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+  },
+  {
+   "label": "Paint & Pour Night at Carpino Lounge (December date) — Eventbrite",
+   "url": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784406751"
+  },
+  {
+   "label": "Paint & Pour Night at The Royal Forest, Chingford — Eventbrite",
+   "url": "https://www.eventbrite.co.uk/e/paint-pour-night-the-royal-forest-tickets-2003372586335"
+  },
+  {
+   "label": "Paint & Pour — Instagram",
+   "url": "https://www.instagram.com/_paint_and_pour_/"
+  },
+  {
+   "label": "Paint and Pour — earlier directory listing, not verified, last updated Feb 2025 (Booked Events)",
+   "url": "https://bookedevents.co.uk/businesses/paint-and-pour/"
+  }
+ ],
+ "gaps": [
+  "No official website: the website field on the Eventbrite organiser page points to Instagram, and paintandpour.co.uk is a parked domain with no link to this business.",
+  "Private, exclusive or mobile bookings (for example at a client's own venue) are not described in any source from the business that could be fetched.",
+  "The business does not say which event types it caters for (birthdays, hen parties, corporate and so on), so no event types are listed.",
+  "No from-price for private events is published. The only current price the business publishes is £35 per ticket for public nights.",
+  "The business does not state minimum or maximum group sizes.",
+  "The business does not state its founding year. A directory gives 2015, which could not be corroborated; the Eventbrite organiser account shows six years of hosting, which still does not reach 2015.",
+  "The business does not say where it is based and publishes no address. It runs its public nights at partner venues in Epping and Chingford, and the Epping High Street address shown in a directory is unconfirmed.",
+  "No public email address or phone number. Public-night tickets are sold through Eventbrite.",
+  "No Facebook, TikTok or YouTube presence was found, and the Instagram profile cannot be viewed without logging in.",
+  "No video footage and no vector (SVG) logo were found."
+ ],
+ "taxonomy": {
+  "industry": "unique-services",
+  "categories": [
+   "Paint & Wine Night"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+ }
+}

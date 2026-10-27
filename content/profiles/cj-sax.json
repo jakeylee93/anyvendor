@@ -1,0 +1,134 @@
+{
+ "slug": "cj-sax",
+ "displayName": "CJ SAX LIVE",
+ "tagline": "Based in London, creating vibes worldwide…",
+ "intro": "CJ SAX LIVE is the business of CJ, a London-based saxophonist, DJ and event planner. He offers live sax and sax-and-DJ sets for weddings, corporate events and parties in the UK and abroad, and recommends and coordinates other live performers.",
+ "about": [
+  "CJ SAX LIVE is the act and events business of CJ, who describes himself as a saxophonist, DJ and event planner based in London. His website offers wedding, corporate event and party hire, and the site's name describes wedding sax and DJ work in London alongside event planning and entertainment in Essex. Under the line 'Based in London, creating vibes worldwide…', its Destinations section highlights Ibiza (Ushuaia), the Amalfi Coast (Villa Cimbrone), D'Maris Bay (Nusr'et Restaurant) and Cape Town (MolenVliet Vineyard).",
+  "His website and press pack say CJ has performed at the London 2012 Olympics and at the Abu Dhabi and Monaco F1 Grand Prix. They also name venues such as The O2, the Tower of London, The Dorchester and Ronnie Scott's, along with performances in Ibiza, Dubai, Marbella, Cannes and Mallorca. According to the press pack, he launched his own events company and works with high-profile clients, and the business says it has provided event services for over a decade.",
+  "Planners can book CJ to play sax alongside their own DJ, or as a combined sax-and-DJ act that brings his own sound system and lighting. His DJ sets are open format and aim to read the crowd, running from 70s and 80s soul through club classics, house, dance anthems, old-school RnB and garage. The business also recommends performers from its network, such as DJs, bongo players, violinists and a magician, and helps coordinate them.",
+  "CJ's own packages include public liability insurance, an event contract and invoice, and WhatsApp support. His pricing calendar treats May to September (worldwide) and November to December (London) as peak periods. January to April and October (Dubai and London) are off-peak, and discounted off-peak prices are available on enquiry, subject to availability."
+ ],
+ "services": [
+  {
+   "name": "CJ SAX LIVE: live saxophone",
+   "description": "CJ plays live saxophone, improvising alongside your DJ with a wireless sax microphone. Includes public liability insurance, an event contract and invoice, and WhatsApp support. Prices start from £1,000, subject to date and location."
+  },
+  {
+   "name": "CJ SAX DJ LIVE: sax and DJ",
+   "description": "CJ plays live saxophone and DJs. The package includes a sound system, DJ lighting, wireless sax and vocal microphones and event planning advice. Prices start from £3,000, subject to date and location."
+  },
+  {
+   "name": "Recommended artists",
+   "description": "Performers recommended from CJ's network, including DJs, sax players, bongo players, violinists and a magician. Clients negotiate directly with the performer. Prices start from £375, subject to date and location."
+  },
+  {
+   "name": "Sound, lighting and DJ booths",
+   "description": "Standard kit includes a Pioneer XDJ-AZ, QSC K12.2 tops and KS118 subs, LED effects, moving heads and Equinox DJ booths. Extras include uplighters, mirror balls, a combi booth, plinths and a QSC TouchMix mixer."
+  },
+  {
+   "name": "Event planning and performer coordination",
+   "description": "CJ describes himself as an event planner as well as a performer. He recommends and coordinates other live acts for weddings, corporate events and parties, and his sax-and-DJ package includes event planning advice."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Corporate Events",
+  "Private Parties"
+ ],
+ "areasServed": [
+  "London",
+  "Essex",
+  "Dubai",
+  "Ibiza",
+  "Mallorca",
+  "Marbella",
+  "Monaco",
+  "Cannes",
+  "Amalfi Coast",
+  "Worldwide (destination events)"
+ ],
+ "website": "https://cjsax.com",
+ "socials": {
+  "facebook": "https://www.facebook.com/cj.sax.live",
+  "instagram": "https://www.instagram.com/cj_sax",
+  "tiktok": "https://www.tiktok.com/@cj_sax",
+  "youtube": "https://www.youtube.com/@CJSAXLIVE",
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Providing event services for over a decade",
+  "sourceUrl": "https://cjsax.com/contact"
+ },
+ "basedIn": {
+  "text": "London",
+  "sourceUrl": "https://cjsax.com/"
+ },
+ "price": {
+  "text": "Live saxophone (CJ SAX LIVE): prices start from £1,000, subject to date & location",
+  "sourceUrl": "https://cjsax.com/packages/"
+ },
+ "identity": {
+  "confidence": "high",
+  "note": "The business trades as CJ SAX LIVE (also written CJ Sax), and a 2010 start year shown on an earlier directory listing is not confirmed by its own site, which says only 'over a decade'."
+ },
+ "sources": [
+  {
+   "label": "CJ SAX LIVE — Home",
+   "url": "https://cjsax.com/"
+  },
+  {
+   "label": "CJ SAX LIVE — Packages",
+   "url": "https://cjsax.com/packages/"
+  },
+  {
+   "label": "CJ SAX LIVE — Equipment",
+   "url": "https://cjsax.com/equipment-hire/"
+  },
+  {
+   "label": "CJ SAX LIVE — Mixes",
+   "url": "https://cjsax.com/listen/"
+  },
+  {
+   "label": "CJ SAX LIVE — Contact",
+   "url": "https://cjsax.com/contact"
+  },
+  {
+   "label": "CJ SAX LIVE — Press pack and showreel",
+   "url": "https://cjsax.com/2012/10/09/13/"
+  },
+  {
+   "label": "CJ SAX LIVE — YouTube channel",
+   "url": "https://www.youtube.com/@CJSAXLIVE"
+  }
+ ],
+ "gaps": [
+  "Founding year not confirmed. The business says only that it has provided event services 'for over a decade', and an earlier directory listing's 2010 start date is not stated on its own site.",
+  "CJ's full name does not appear on the current website. A 2013 archived copy of the site was titled 'CJ Turner', but no current page confirms this.",
+  "No street address or postcode is published. The site says 'based in London', and its site name also mentions Essex.",
+  "Insurance: CJ's packages list public liability insurance, but an earlier directory listing showed 'Licenses & Insurance: No'. Planners should ask for cover documents.",
+  "Only 'from' prices are published, each 'subject to date & location'. Exact peak and off-peak rates are given on enquiry. An older directory figure of £750 per event does not match the current published prices.",
+  "Set lengths and guest-capacity limits are not published. The enquiry form asks the client for a set time.",
+  "No independent third-party reviews were found. The only testimonials are quotes on the business's own website.",
+  "The Facebook page content could not be checked, and a Twitter/X account in the site data was not verified."
+ ],
+ "taxonomy": {
+  "industry": "entertainment",
+  "categories": [
+   "Saxophonist",
+   "DJs & Disco",
+   "Musician"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://cjsax.com/"
+ },
+ "cardPrice": {
+  "from": "£1,000",
+  "unit": "live sax"
+ }
+}

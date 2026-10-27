@@ -1,0 +1,212 @@
+{
+ "slug": "paint-and-pour",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Missed own photo: the Eventbrite event pages embed a 3530x1713 group photo (cdn.evbuc.com image 1120464843, original.20250910-201329, HTTP 200, 677,853 bytes). It shows about 20 guests holding Scream paintings in the same pink-neon venue with wine shelves as the Booked Events thumbnail. It is the second-best high-resolution own image, it strengthens the identity link, and it has been added.",
+  "Price attribution: Service 1 cites the event page for the text '35.00 GBP'. That display string is on the organiser page. The event page only has the JSON-LD AggregateOffer lowPrice/highPrice '35.0' GBP. The text has been reworded.",
+  "Logo gap overclaim: the record said 'No SVG exists anywhere'. All that can be supported is that no SVG was found on the Booked Events listing or the Eventbrite pages. Reworded.",
+  "alternateNames: 'Bryony doran' is an individual organiser's account name, not a trading name, and the Instagram handle is already in socials. Both were removed from alternateNames. The organiser link stays in the evidence.",
+  "About item 1 called Bryony an 'artist' and cited the organiser page, which only says 'I started Paint & Pour'. The words 'artist Bryony' come from the event pages. Reworded, with the 'artist Bryony' wording attributed to the event pages.",
+  "Gap note on founding date was incomplete. The Eventbrite organiser JSON includes metrics hostingYears '6 years', totalEvents 44 and attendeesHosted 241. This suggests Eventbrite activity since about 2020, earlier than the 10 Sept 2025 earliest asset. It still does not corroborate 2015. Added to gaps.",
+  "The raw cdn.evbuc.com originals return content-type binary/octet-stream, not image/*. I confirmed by byte sniffing that they are valid JPEG/PNG. Consumers should sniff the type or re-encode. Noted in gaps.",
+  "A third public event was not recorded: Paint & Pour Night at Carpino Lounge, 4 Dec 2026, £35 (eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784406751). Added to services.",
+  "Everything else checked out: Booked Events listing (HTTP 200; Not Verified; Est.2015; 90 High St, Epping CM16 4AE; £350 per event; 10–100 guests; Listed Dec 15, 2024; Last Updated Feb 7, 2025; Perfect For empty); the Eventbrite bio, agenda, FAQ, under-18 rule and no-refund/transfer policy; venues; all logo and image URLs (HTTP 200) and their dimensions; the parked paintandpour.co.uk; ClassBento 403; TikTok statusCode 10221; Instagram 200 with a generic shell. No video was found anywhere."
+ ],
+ "record": {
+  "slug": "paint-and-pour",
+  "displayName": "Paint and Pour",
+  "identity": {
+   "officialWebsite": null,
+   "confidence": "high",
+   "alternateNames": [
+    "Paint & Pour",
+    "Paint & Pour Night"
+   ],
+   "evidence": "The Booked Events listing (bookedevents.co.uk/businesses/paint-and-pour/) returned HTTP 200 on 27 Oct 2026. It is marked 'Not Verified', shows 'Est.2015', '90 High St, Epping CM16 4AE', 'Price from £350 per event' and 'Listed on Dec 15, 2024', and its thumbnail is paint_and_Pour_thumb.jpg. It matches the Eventbrite organiser 'Paint & Pour' (eventbrite.co.uk/o/bryony-doran-28148057737, whose bio begins 'I started Paint & Pour…') on four points. (1) Both logos share one distinctive design: an arched serif 'Paint and Pour' wordmark over a single-line drawing of a wine glass and a paintbrush, with the brush's line running out of the glass base. Booked Events shows a black version in a ring; Eventbrite shows a terracotta version on paper. (2) The Booked Events thumbnail shows a curly-haired host with a microphone beside a Scream-style canvas, in a venue with pink-lit wine shelves and neon. One of the Eventbrite event-page photos (image 1120464843) shows a group holding Scream paintings in the same pink-neon venue, and the Eventbrite hero photo shows the same woman. This is visual judgement. (3) Both are guided paint-and-wine nights in Epping High Street. The Eventbrite events are at Carpino Lounge, 183 High Street, Epping CM16 (also The Royal Forest, Ranger's Road, E4 7QH). (4) Event pages say 'Follow on instagram @_paint_and_Pour_', and the organiser socials (website and instagram) both point to instagram.com/_paint_and_pour_/. Two directory details remain unconfirmed: the founding year 2015 and the 90 High St address. Namesakes ruled out: unrelated 'Paint and Pour' events in the USA, Australia and South Korea (e.g. daegu.armymwr.com) and 'Easely Created' on Ticket Tailor. paintandpour.co.uk is a parked domain whose HTML just runs a JS redirect to /lander. No official website was found."
+  },
+  "about": [
+   {
+    "text": "Paint & Pour was started by its organiser, Bryony. She says most people haven't picked up a paintbrush since school and should, preferably with a glass of wine in the other hand.",
+    "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+   },
+   {
+    "text": "Guests arrive, get a drink and find an easel. They are then guided through the painting one step at a time, with music on. No experience is needed.",
+    "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+   },
+   {
+    "text": "Canvas, paints, brushes and aprons are all provided. Guests can come with friends, with a date or on their own.",
+    "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+   },
+   {
+    "text": "The organiser says the events usually sell out and asks people to follow the Eventbrite page for new dates.",
+    "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+   },
+   {
+    "text": "Public Paint & Pour Nights run at Carpino Lounge, 183 High Street, Epping. The event page describes them as a sip and paint night in Epping, with step-by-step instruction from artist Bryony.",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+   },
+   {
+    "text": "Each night is a 3-hour guided session. Doors open at 6:40pm. The agenda is check-in at 7pm, painting from 7:30pm, and a 'Mini Gallery & Photo Time' at the end. Guests get a complimentary drink on arrival and take their painting home.",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+   },
+   {
+    "text": "Under-18s are admitted with a parent or legal guardian. Tickets are non-refundable, but the FAQ offers a transfer to an event on another date.",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+   },
+   {
+    "text": "Paint & Pour Nights are also held at The Royal Forest, Ranger's Road, London E4 7QH. The event page describes them as a sip and paint night in Chingford.",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-the-royal-forest-tickets-2003372586335"
+   },
+   {
+    "text": "The Booked Events listing, marked 'Not Verified', puts Paint and Pour under Unique Services as a provider of paint and wine events for groups of 10 to 100.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/paint-and-pour/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Paint & Pour Night (Epping)",
+    "description": "A 3-hour guided sip-and-paint night at Carpino Lounge, 183 High Street, Epping CM16. It includes a complimentary drink on arrival, all painting supplies, and step-by-step instruction from artist Bryony. Guests take their painting home, and it is suitable for beginners. Tickets are £35: the event page's structured data has lowPrice/highPrice 35.0 GBP, and the organiser page shows '35.00 GBP'. Listed dates include 13 Nov 2026 and 4 Dec 2026 (event 1990784406751).",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460"
+   },
+   {
+    "name": "Paint & Pour Night (Chingford)",
+    "description": "The same 3-hour guided format at The Royal Forest, Ranger's Road, London E4 7QH. The event page calls it a sip and paint night in Chingford. It includes a drink on arrival, all supplies and step-by-step instruction, and guests take their painting home. Tickets are £35 (lowPrice/highPrice 35.0 GBP), with a listed date of 12 Dec 2026.",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/paint-pour-night-the-royal-forest-tickets-2003372586335"
+   },
+   {
+    "name": "Paint and wine events (directory listing)",
+    "description": "The Booked Events directory listing, marked 'Not Verified', offers paint and wine experiences from £350 per event for 10 to 100 guests. No fetchable source from the business itself offers private bookings; see gaps.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/paint-and-pour/"
+   }
+  ],
+  "eventTypes": [],
+  "eventTypesSourceUrl": null,
+  "areasServed": [
+   "Epping, Essex",
+   "Chingford, London (E4)"
+  ],
+  "areasSourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+  "tagline": "Unwind, Create. Connect",
+  "industry": "unique-services",
+  "categories": [
+   "Paint & Wine Night"
+  ],
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_pour_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "Black serif wordmark and black single-line glass and brush on a white disc, inside a black and light-blue circular ring",
+    "sourcePage": "https://bookedevents.co.uk/businesses/paint-and-pour/",
+    "notes": "The largest raster found. Re-verified 27 Oct 2026: HTTP 200, image/png, 333,693 bytes, RGBA, 1000x1000, last-modified 15 Dec 2024. Booked Events uses it as the listing's 'Business Logo' (wp-image-12048). It has the same design as the Eventbrite mark but is a different rendition (black lines, no wine swirl, plain brush, outer ring), so confirm the current master with the business. No SVG was found on the listing or on Eventbrite."
+   },
+   {
+    "url": "https://cdn.evbuc.com/images/1186100156/102619908941/1/original.20260603-204930",
+    "format": "jpeg",
+    "width": 506,
+    "height": 506,
+    "background": "photo",
+    "colours": "Terracotta/coral serif wordmark and maroon line-drawn wine glass (with swirl) and paintbrush on a peach crumpled-paper texture",
+    "sourcePage": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "notes": "The business's current Eventbrite profile logo, uploaded 3 June 2026. HTTP 200, 18,808 bytes, JPEG with no alpha. The CDN serves it as binary/octet-stream. Image 1187044761 (original.20260616-171657) is the same size (18,808 bytes) and appears to be a copy. Small, and the textured background cannot be removed cleanly."
+   },
+   {
+    "url": "https://cdn.evbuc.com/images/1196449260/102619908941/1/original.20261023-153343",
+    "format": "png",
+    "width": 960,
+    "height": 350,
+    "background": "white",
+    "colours": "Dark brown arched wordmark, gold/sepia line art of a glass, brush, palette and paint tube on a cream panel within a white canvas",
+    "sourcePage": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "notes": "The organiser's cover banner, uploaded 23 Oct 2026. HTTP 200, 192,653 bytes, RGB PNG with no alpha. The CDN serves it as binary/octet-stream. A horizontal lockup with the tagline 'Unwind, Create. Connect' and a small circled 'e' mark at bottom right. Better used as a banner than as a logo."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533",
+    "width": 3616,
+    "height": 4156,
+    "description": "Bryony, smiling, presents a group's finished canvases of Monet's 'Woman with a Parasol' on table easels in a bar with exposed brick walls. The best high-resolution hero candidate.",
+    "sourcePage": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329",
+    "width": 3530,
+    "height": 1713,
+    "description": "About 20 guests hold up their finished 'The Scream'-style paintings in a lounge with pink neon signage and lit wine shelves, the same venue as the Booked Events thumbnail. A wide, high-resolution group shot.",
+    "sourcePage": "https://www.eventbrite.co.uk/e/paint-pour-night-carpino-lounge-tickets-1990784309460",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+    "width": 1000,
+    "height": 800,
+    "description": "Bryony hosting with a microphone beside an easel holding a 'Scream'-style painting, with pink-lit wine shelves and guests behind.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/paint-and-pour/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg",
+    "width": 765,
+    "height": 1020,
+    "description": "A venue set up before a session: blank canvases on table easels, paint palettes, brushes and Van Gogh 'Sunflowers' reference prints along a long table with a green cloth, green walls and a window hung with wisteria.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/paint-and-pour/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832",
+    "width": 480,
+    "height": 640,
+    "description": "A group of about 20 guests holding up their finished cat-portrait paintings in a restaurant with a patterned tile floor. Low resolution.",
+    "sourcePage": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839",
+    "width": 480,
+    "height": 640,
+    "description": "Guests painting landscapes at a long table in a room with floral wallpaper, gilt-framed paintings and globe pendant lights. Low resolution.",
+    "sourcePage": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [],
+  "socials": {
+   "instagram": "https://www.instagram.com/_paint_and_pour_/",
+   "facebook": null,
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://www.eventbrite.co.uk/o/bryony-doran-28148057737",
+    "https://classbento.co.uk/paint-and-pour"
+   ]
+  },
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+  },
+  "instagramAccess": "Re-checked 27 Oct 2026 with one plain unauthenticated GET to https://www.instagram.com/_paint_and_pour_/ (desktop browser user agent, no cookies). It returned HTTP 200 with no redirect and a ~505 KB generic app shell titled 'Instagram'. There was no og:title, og:description, og:image or biography, and no post data, so the profile and posts cannot be seen without logging in. I did not retry. The handle is confirmed by the Eventbrite organiser socials and by the event text 'Follow on instagram @_paint_and_Pour_'.",
+  "gaps": [
+   "No official website found. The organiser's Eventbrite 'website' field points to the Instagram profile. paintandpour.co.uk is a parked domain (a JS redirect to /lander) with no link to this business. paintandpour.uk, paintandpourepping.co.uk and paintandpourepping.com did not resolve.",
+   "Founding year 2015 (from the directory) is not corroborated. The earliest dated image asset was uploaded 10 Sept 2025. The Eventbrite organiser page's embedded JSON shows hostingYears '6 years', totalEvents 44 and attendeesHosted 241, which suggests Eventbrite activity since about 2020. That covers the account, not necessarily this trading name, and still does not reach 2015. Confirm the year with the business.",
+   "The directory address '90 High St, Epping CM16 4AE' is not corroborated by any source from the business, and web searches found no venue tied to it. The business's public events are at Carpino Lounge, 183 High Street, Epping CM16 and The Royal Forest, Ranger's Road, London E4 7QH. It runs at partner venues, so there is no evidence of premises of its own. Do not publish 90 High St as its address without confirmation.",
+   "The directory figures 'Price from £350 per event' and '10–100 guests' come from the 'Not Verified' Booked Events listing, not from the business. The only price the business publishes is £35 per ticket for public nights on Eventbrite.",
+   "Private or mobile bookings are unverified. Search-engine snippets of ClassBento (classbento.co.uk/paint-and-pour, /paint-and-pour-night, /c/cbdj) say the teacher can travel within 10 miles of Epping for private classes and give class sizes of 1–30 or 5–30. Those pages returned HTTP 403 when re-checked, so they are not used as sources.",
+   "The business does not state any event types (weddings, birthdays, corporate, etc.) in a source that could be fetched, so eventTypes is left empty. The Booked Events 'Perfect For' field is also empty.",
+   "No video footage found. The Booked Events listing and the four Eventbrite pages (organiser plus three events) have no <video>, mp4, YouTube or Vimeo embeds. Instagram needs login. tiktok.com/@_paint_and_pour_ returned statusCode 10221 (no public account). Web searches found no YouTube, Vimeo or Facebook presence. Ask the business for footage or check Instagram while logged in.",
+   "No SVG logo was found, only rasters. The Booked Events PNG (1000px, transparent, black with a ring) and the Eventbrite profile JPEG (506px, terracotta on a paper texture) are different renditions. Ask the business for a vector master.",
+   "The raw cdn.evbuc.com originals are served with content-type binary/octet-stream. Byte sniffing confirmed they are valid JPEG/PNG, so re-encode or sniff the type when importing.",
+   "Few own photos are high-resolution: two Eventbrite photos (3616x4156 and 3530x1713) and two Booked Events photos of about 1000px. The two Eventbrite 'Media' photos are only 480x640. Image 1185859190 is a byte-identical re-upload of the 3616x4156 hero (same 1,434,689 bytes).",
+   "Excluded: the Booked Events 'View all photos' gallery holds five OpenArt AI-generated images (openart-image_*.jpg). They are not this business's work.",
+   "No Facebook page found.",
+   "The tagline 'Unwind, Create. Connect' is copied, punctuation included, from text inside the Eventbrite cover banner image, not from HTML text. The event pages' HTML summary is 'Sip wine, paint, and unwind – no experience needed!'.",
+   "The Booked Events listing says 'Last Updated: February 7, 2025' and lists no website, phone, email or social links for the business."
+  ]
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "slug": "calleo",
+ "displayName": "Calleo",
+ "tagline": "Ring, Record, Remember",
+ "intro": "Calleo is a family-run audio guest book company. Guests pick up a retro-style telephone, hear a recorded greeting and leave a voicemail, which Calleo edits into a keepsake recording. They cover weddings in England, Scotland and Wales, plus destination weddings.",
+ "about": [
+  "Calleo offers an alternative to the written guest book. Instead of signing a page, guests pick up a retro-style telephone, listen to a recorded greeting and leave a voicemail. Calleo suggests it for weddings, birthdays and any celebration. It covers weddings in England, Scotland and Wales, as well as destination weddings abroad, but cannot ship to Northern Ireland.",
+  "The business was founded by Bailey and Rob. Calleo says the idea came after Rob's grandfather, Bob Langley, died in 2021: Rob wished he could hear his grandfather's voice once more, which his handwritten guest book entry could not capture. Calleo describes itself as family-run. Bailey's parents, Sarah and Phil, handle the admin and prepare each phone once a booking is made. Calleo is a trading name of B R Ventures Ltd.",
+  "Booking starts with an availability form. Customers then choose a phone and package and pay in full by debit or credit card or Klarna. A welcome pack follows, and customers record a custom greeting, though the CORE package excludes a personalised greeting. The phone arrives by courier two days before the event. It needs no Wi-Fi or landline, only a standard 13 amp socket, and Calleo recommends placing it at least five metres from bands, DJs or speakers.",
+  "Calleo says it listens to and edits every voicemail. After the event, the phone is returned at a post office (the ELEGANT package includes collection by Calleo staff). Customers review a first-draft MP3 in an online gallery and can request changes within their package's allowance before approving any USB, vinyl record or video memory book. Calleo's company policies page links its public liability insurance and PAT certificates. Its homepage displays a 2024 Wedding Industry Awards regional winner badge."
+ ],
+ "services": [
+  {
+   "name": "Audio guest book phone hire",
+   "description": "Retro phones in six styles (Dahlia, Lily, Poppy, Bluebell, Fern and Pearl), with choice depending on package. They need no Wi-Fi or landline, just a 13 amp socket; guests can leave unlimited voicemails."
+  },
+  {
+   "name": "CORE, ESSENTIAL and ELEVATED packages",
+   "description": "CORE (£219), ESSENTIAL (£338) and ELEVATED (£437) include courier delivery at least two days ahead and a pre-paid return label. They differ in phones, signage, turnaround, revisions and keepsake; CORE excludes a personalised greeting."
+  },
+  {
+   "name": "ELEGANT package",
+   "description": "At £1,399 it includes any phone, the Lilibet Telephone Box stand, a hand-crafted sign, set-up and collection by Calleo staff, a five-day turnaround, unlimited revisions and a vinyl record or video memory book."
+  },
+  {
+   "name": "Vintage phone upgrade",
+   "description": "The King (antique brass rotary), Duchess (vintage white) and Duke (vintage black) phones. Calleo says any of them can be added to its packages for an extra £100."
+  },
+  {
+   "name": "Keepsake presentations",
+   "description": "Beyond the edited MP3, ESSENTIAL adds an engraved USB; ELEVATED and ELEGANT offer a video memory book, pairing photos or video with the voicemails, or a custom-artwork vinyl record of up to 30 minutes."
+  },
+  {
+   "name": "Destination wedding hire",
+   "description": "A Dahlia or Lily phone with ESSENTIAL features, posted two days before UK departure and carried in checked luggage. Calleo gives an approximate cost of £338 for the first weekend plus £100 per extra weekend."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Birthday Parties"
+ ],
+ "areasServed": [
+  "England",
+  "Scotland",
+  "Wales",
+  "Destination weddings abroad"
+ ],
+ "website": "https://www.calleo-uk.com/",
+ "socials": {
+  "instagram": "https://www.instagram.com/calleouk/",
+  "tiktok": "https://www.tiktok.com/@calleouk",
+  "youtube": "https://www.youtube.com/@calleouk",
+  "facebook": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Launched in 2022",
+  "sourceUrl": "https://www.lovemydress.net/blog/2023/04/calleo-audio-guest-book.html"
+ },
+ "basedIn": null,
+ "price": {
+  "text": "Fixed package prices: CORE £219, ESSENTIAL £338, ELEVATED £437, ELEGANT £1399",
+  "sourceUrl": "https://www.calleo-uk.com/packages"
+ },
+ "identity": {
+  "confidence": "high",
+  "note": "An earlier directory listing at this address had been retitled 'Mensah' and given a photo of an unrelated wedding MC, but its description, website, Instagram and price all belong to Calleo, so this profile is published as Calleo."
+ },
+ "sources": [
+  {
+   "label": "Calleo — Home",
+   "url": "https://www.calleo-uk.com/"
+  },
+  {
+   "label": "Calleo — Our Story",
+   "url": "https://www.calleo-uk.com/our-story"
+  },
+  {
+   "label": "Calleo — Packages",
+   "url": "https://www.calleo-uk.com/packages"
+  },
+  {
+   "label": "Calleo — How It Works",
+   "url": "https://www.calleo-uk.com/how-it-works"
+  },
+  {
+   "label": "Calleo — Check Availability (FAQs)",
+   "url": "https://www.calleo-uk.com/check-availability"
+  },
+  {
+   "label": "Calleo — Destination Weddings",
+   "url": "https://www.calleo-uk.com/destination-weddings"
+  },
+  {
+   "label": "Companies House — B R Ventures Ltd",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14783321"
+  },
+  {
+   "label": "Love My Dress — CALLEO Audio Guest Book",
+   "url": "https://www.lovemydress.net/blog/2023/04/calleo-audio-guest-book.html"
+  }
+ ],
+ "gaps": [
+  "Start date: the founders told Love My Dress they launched Calleo in 2022, and its Our Story page mentions a booking for an August 2022 wedding. The trading company, B R Ventures Ltd, was incorporated on 5 April 2023.",
+  "Location: Calleo's website does not say where the team works from. Companies House lists B R Ventures Ltd's registered office in Fitzrovia, London, which may not be where the business operates.",
+  "No public phone number could be confirmed. Enquiries go through the availability form on Calleo's website.",
+  "A Facebook page (facebook.com/calleouk) is linked only from third-party features and could not be verified, so it is not listed.",
+  "Calleo names weddings and birthdays ('and any celebration'). It does not confirm corporate or other event types.",
+  "Prices are as published on Calleo's Packages page in October 2026 and may change. Calleo lists fixed package prices and says it does not use 'Prices From'. Destination hire is an approximate cost, with a detailed quote on request.",
+  "Availability for specific dates was not checked. Calleo says phones can be fully booked months in advance."
+ ],
+ "taxonomy": {
+  "industry": "unique-services",
+  "categories": [
+   "Audio Guestbook"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties"
+  ],
+  "sourceUrl": "https://www.calleo-uk.com/"
+ },
+ "cardPrice": {
+  "from": "£219",
+  "unit": "per package"
+ }
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "the-bar-people",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+      "durationSec": 2.5,
+      "kind": "video",
+      "startSec": 1.7,
+      "endSec": 4.2,
+      "note": "Busy mobile bar in a marquee: copper and gold tins, garnishes and guests (Event Management page video)"
+    },
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+      "durationSec": 2.0,
+      "kind": "video",
+      "startSec": 6.16,
+      "endSec": 8.16,
+      "note": "Bartender in a Bar People badge shirt shaking a cocktail (Cash Bar Hire page video); trim verified frame-accurate inside one shot"
+    },
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "durationSec": 2.35,
+      "kind": "video",
+      "startSec": 0.05,
+      "endSec": 2.4,
+      "note": "Overhead view of staff serving guests along a long white bar (Dry Hire page video)"
+    },
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "durationSec": 2.2,
+      "kind": "video",
+      "startSec": 12.6,
+      "endSec": 14.8,
+      "note": "Garnishing cocktails in mixing tins, badge shirt visible (All Inclusive Hire page video)"
+    },
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "durationSec": 2.05,
+      "kind": "video",
+      "startSec": 9.3,
+      "endSec": 11.35,
+      "note": "Bar team at work under festoon lights at a large event (Dry Hire page video)"
+    },
+    {
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "durationSec": 2.1,
+      "kind": "video",
+      "startSec": 7.45,
+      "endSec": 9.55,
+      "note": "Martinis handed across the bar (All Inclusive Hire page video)"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/the-bar-people/reel-desktop.mp4",
+      "poster": "/media/the-bar-people/poster-desktop.jpg",
+      "posterWebp": "/media/the-bar-people/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 9.6,
+      "bytes": 2006126
+    },
+    "mobile": {
+      "video": "/media/the-bar-people/reel-mobile.mp4",
+      "poster": "/media/the-bar-people/poster-mobile.jpg",
+      "posterWebp": "/media/the-bar-people/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 9.6,
+      "bytes": 1707269
+    }
+  }
+}

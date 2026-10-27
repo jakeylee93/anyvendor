@@ -1,0 +1,76 @@
+{
+  "slug": "natalie-max",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+      "durationSec": 3.0,
+      "kind": "video",
+      "startSec": 0.2,
+      "endSec": 3.2,
+      "note": "Bride and groom walk through a confetti throw between lines of guests in front of a stone chateau (business's own 'Confetti Throw' clip)"
+    },
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Loule.mp4",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 4.4,
+      "endSec": 7.2,
+      "note": "Bridal portrait with tiara, hair moving in the breeze, against green shutters and a pink wall in Loule (business's own 'Loule' clip)"
+    },
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Filming-at-the-Beach.mp4",
+      "durationSec": 2.0,
+      "kind": "video",
+      "startSec": 0.0,
+      "endSec": 2.0,
+      "note": "Behind the scenes: a photographer in yellow photographs a bride at the water's edge on a beach (business's own 'Photo and Filming at the Beach' clip)"
+    },
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+      "durationSec": 2.9,
+      "kind": "video",
+      "startSec": 5.5,
+      "endSec": 8.4,
+      "note": "The couple kiss on a gravel courtyard lined with guests (business's own 'Confetti Throw' clip)"
+    },
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-at-the-Pinecliffs.mp4",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 7.3,
+      "endSec": 10.1,
+      "note": "Bride in a lace gown among pine trees and sandstone cliffs at Pine Cliffs, Algarve (business's own 'at the Pinecliffs' clip)"
+    },
+    {
+      "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Loule.mp4",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 0.6,
+      "endSec": 3.4,
+      "note": "Bride in an off-the-shoulder ball gown walks along a pink-walled street in Loule (business's own 'Loule' clip)"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/natalie-max/reel-desktop.mp4",
+      "poster": "/media/natalie-max/poster-desktop.jpg",
+      "posterWebp": "/media/natalie-max/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.7,
+      "bytes": 2847411
+    },
+    "mobile": {
+      "video": "/media/natalie-max/reel-mobile.mp4",
+      "poster": "/media/natalie-max/poster-mobile.jpg",
+      "posterWebp": "/media/natalie-max/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.7,
+      "bytes": 2548502
+    }
+  }
+}

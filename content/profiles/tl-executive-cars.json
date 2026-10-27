@@ -1,0 +1,126 @@
+{
+ "slug": "tl-executive-cars",
+ "displayName": "T&L Executive Cars",
+ "tagline": "Taking You On Your Journey",
+ "intro": "T&L Executive Cars is a private hire and chauffeur car service based in Theydon Bois, Essex. They provide wedding transport and guest transfers, corporate and special-event travel, and airport and cruise terminal transfers in a fleet that includes Mercedes E, S and V Class vehicles.",
+ "about": [
+  "T&L Executive Cars, also known as Theydon and Loughton Executive Cars, is a private hire car service based in Theydon Bois. The founder writes that he set the business up in 2008 to serve local individuals and businesses, and that he personally guarantees the service to every customer. They say the business was built on a professional, prompt and reliable service, and that over the years many of their clients have come to them through personal recommendation.",
+  "They describe themselves as an alternative, affordable car service for local individuals, small businesses and corporate clients, including several multinational companies. The fleet listed on their website is a Mercedes E Class and a Mercedes S Class (each for four passengers and three bags), a Mercedes V Class (seven passengers, seven bags) and a 'Toureno Custom Executive Spec' vehicle for eight passengers and eight bags.",
+  "For weddings, they can provide anything from a single car to the venue to a small fleet, and they also run a guest logistics service between hotels and the venue. They say their vehicles are licensed and inspected by Epping Forest District Council and certificated as exempt from displaying a private hire plate, so journeys can be discreet. They describe their drivers as smart and polite.",
+  "They serve Theydon Bois, Loughton, Epping, Abridge, Ongar, Buckhurst Hill, Chigwell and Woodford Green, with transfers to all London airports and to a number of seaports and cruise terminals. Their listed hours are Monday to Friday, 9.00am to 6.30pm, and they say they reply within 24 hours. Quotes can be requested through an online form on their website, and accepted payment methods include Visa, MasterCard, American Express and Apple Pay."
+ ],
+ "services": [
+  {
+   "name": "Wedding Transport",
+   "description": "From a single car to the venue to a small fleet, they arrange wedding transport, and they run a guest logistics service between hotels and the venue that they say is popular and cost-effective."
+  },
+  {
+   "name": "Special Events & Days Out",
+   "description": "Transfers for occasions such as a London theatre trip, a day at Cheltenham, Ascot or Newmarket races, West End shopping or fine dining, plus safe journeys home after rugby or football."
+  },
+  {
+   "name": "Corporate Services",
+   "description": "A bespoke, discreet service tailored to each business's needs, with liveried drivers; they say they are exempt from displaying licensing logos and that confidentiality and discretion are assured."
+  },
+  {
+   "name": "Media & Speaker Transfers",
+   "description": "Keynote speaker transfers for several London speaking bureaux, plus logistical support for film and television shoots in London and the Home Counties; they say they are familiar with most red carpet events."
+  },
+  {
+   "name": "Airport Transfers",
+   "description": "Covers all London airports, including Heathrow, Gatwick, London City, Luton, Stansted and Southend, at short notice if needed, with flight monitoring, arrivals meet and greet and an optional chaperone to check-in."
+  },
+  {
+   "name": "Seaport & Cruise Terminal Transfers",
+   "description": "Executive transfers to the Southampton cruise terminals and to Harwich, Tilbury, Ramsgate, Dover and Swansea, with luggage assistance and a driver waiting in arrivals for the return journey."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Corporate Events"
+ ],
+ "areasServed": [
+  "Theydon Bois",
+  "Loughton",
+  "Epping",
+  "Abridge",
+  "Ongar",
+  "Buckhurst Hill",
+  "Chigwell",
+  "Woodford Green",
+  "All London airports (Heathrow, Gatwick, London City, Luton, Stansted, Southend)",
+  "Seaports and cruise terminals (Southampton, Harwich, Tilbury, Ramsgate, Dover, Swansea)",
+  "London and the Home Counties (film and TV shoot logistics)"
+ ],
+ "website": "https://tlexecutivecars.co.uk/",
+ "socials": {
+  "facebook": null,
+  "instagram": null,
+  "tiktok": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Established 2008",
+  "sourceUrl": "https://tlexecutivecars.co.uk/"
+ },
+ "basedIn": {
+  "text": "Theydon Bois, Essex",
+  "sourceUrl": "https://tlexecutivecars.co.uk/request-a-quote/"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "The business also trades as Theydon and Loughton Executive Cars, and while one directory listing gives its founding year as 2007, its own website (current and archived) says 2008."
+ },
+ "sources": [
+  {
+   "label": "T&L Executive Cars — Home",
+   "url": "https://tlexecutivecars.co.uk/"
+  },
+  {
+   "label": "T&L Executive Cars — Special Events & Weddings",
+   "url": "https://tlexecutivecars.co.uk/special-events-weddings/"
+  },
+  {
+   "label": "T&L Executive Cars — Airport & Seaport Transfers",
+   "url": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+  },
+  {
+   "label": "T&L Executive Cars — Media & Corporate Services",
+   "url": "https://tlexecutivecars.co.uk/media-corporate-services/"
+  },
+  {
+   "label": "T&L Executive Cars — Request a Quote",
+   "url": "https://tlexecutivecars.co.uk/request-a-quote/"
+  },
+  {
+   "label": "T&L Executive Cars — Archived homepage (2014)",
+   "url": "https://web.archive.org/web/20140516231006/http://tlexecutivecars.co.uk/"
+  }
+ ],
+ "gaps": [
+  "No prices are published; quotes are given on request through the online form.",
+  "No official social media accounts could be found.",
+  "Only one photo of the business's own vehicle was found, and only in a 2016 web archive; the images on the current site are stock or manufacturer photos, and no video exists.",
+  "Founding year differs between sources: a directory listing says 2007, while the business's website says 2008.",
+  "The stated Epping Forest District Council licensing could not be checked independently against a public council register.",
+  "Testimonials and client logos shown on the website are self-published and were not independently verified.",
+  "The phone number and email address published on their website appear to be personal, so no contact details are listed here; enquiries can be made through the quote form.",
+  "No Companies House entity was identified for the trading name.",
+  "They do not publish a list of event types; corporate events are included because they offer corporate and media services and say they cover 'personal, business or that special event' occasions."
+ ],
+ "taxonomy": {
+  "industry": "transport-logistics",
+  "categories": [
+   "Chaffeur",
+   "Car Hire"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events"
+  ],
+  "sourceUrl": "https://tlexecutivecars.co.uk/"
+ }
+}

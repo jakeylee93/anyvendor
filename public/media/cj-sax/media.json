@@ -1,0 +1,63 @@
+{
+  "slug": "cj-sax",
+  "logo": {
+    "file": "public/media/cj-sax/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://cjsax.com/wp-content/uploads/2017/06/cj-sax-logo.png",
+    "plate": "light"
+  },
+  "gallery": [
+    {
+      "file": "public/media/cj-sax/photo-01.webp",
+      "alt": "Saxophonist in a white T-shirt sitting at the end of a weathered wooden jetty over clear turquoise sea, with a saxophone beside him.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG"
+    },
+    {
+      "file": "public/media/cj-sax/photo-02.webp",
+      "alt": "Saxophonist in sunglasses and a black T-shirt playing a gold saxophone on an outdoor festival stage beneath a large lighting rig, with Ibiza and Disturbing signage on the stage.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/ushuaia2.jpg"
+    },
+    {
+      "file": "public/media/cj-sax/photo-03.webp",
+      "alt": "A bride and guests cheering and dancing around a saxophonist playing on a wedding dance floor at night.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg"
+    },
+    {
+      "file": "public/media/cj-sax/photo-04.webp",
+      "alt": "Performer in sunglasses and headphones working DJ decks on a boat, with a saxophone on a strap and a city skyline across the water.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg"
+    },
+    {
+      "file": "public/media/cj-sax/photo-05.webp",
+      "alt": "Saxophonist in a striped shirt and shorts playing while standing in shallow water at a pool edge, against a pale sky and a distant hillside town.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG"
+    },
+    {
+      "file": "public/media/cj-sax/photo-06.webp",
+      "alt": "DJ wearing headphones behind a pale upholstered booth outdoors, with trees and a sunlit orange mountain ridge behind.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg"
+    },
+    {
+      "file": "public/media/cj-sax/photo-07.webp",
+      "alt": "Gold saxophone resting on a stone garden wall beside pink flowers, overlooking green gardens and a coastal mountain range.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg"
+    },
+    {
+      "file": "public/media/cj-sax/photo-08.webp",
+      "alt": "DJ setup with a star-lit DJ booth, speakers on stands, two mirror balls on tripods and lighting on an illuminated dance floor under a draped canopy.",
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction (potrace, 1 colour #000000) of the 2196x868 transparent 'CJ SAX / LIVE' wordmark PNG from cjsax.com; QA meanAbsDiff 2.16 on white. It is not the business's own vector file. Black mark on transparent, so shown on a light plate.",
+    "Reel: 5 video clips + 1 photo still, all from cjsax.com's own media library/uploads (VideoPress files titled 'CJ SAX @ ...'); audio stripped. Performer identity relies on those media titles.",
+    "Reel clips 2 (O Beach Ibiza) and 3 (Botley's Mansion) were cut from the original 1080x1920 HLG/HEVC uploads (same VideoPress IDs as the HD transcodes in the record) for sharper desktop crops; decoded without HDR tone mapping.",
+    "Reel outputs were losslessly retagged to BT.709 colour metadata after reel.py build, because the first source carried BT.2020 tags that would otherwise apply to the whole reel.",
+    "Reel size: desktop 5.23 MB + mobile 5.19 MB = 10.4 MB, above the ~9 MB target (busy crowd footage at the tool's fixed CRF 26).",
+    "Excluded footage: the CJ SAX SHOWREEL, Soultown Festival, Garden Party, Maldives and wedding-1 clips (burned-in 'CJ SAX LIVE EVENTS' watermark); TikTok exports (TikTok watermark); brunch films (letterboxed, text overlays, mostly guests and network DJs); clips whose performer is unclear.",
+    "Reel and gallery show identifiable adult event guests (wedding dance floors, Ibiza and festival crowds); no children were visible in the chosen clips.",
+    "Gallery photo-02 (Ushuaïa Ibiza stage) carries a small Ushuaïa venue watermark in the bottom-right corner; it is probably a venue photographer's image that CJ publishes on his homepage.",
+    "Photos featuring celebrities (rio-wedding.jpg, IMG_9611_polarr.jpg with the Nusr-Et chef, tinie-tempah.jpg, 413-1.jpg with Rio Ferdinand) were left out of the gallery pending image-rights permission, as flagged in the research record.",
+    "photo-04 is the image supplied by the business for its Booked Events listing (1000x800, not upscaled)."
+  ]
+}

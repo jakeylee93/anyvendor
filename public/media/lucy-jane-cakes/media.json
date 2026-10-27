@@ -1,0 +1,62 @@
+{
+  "slug": "lucy-jane-cakes",
+  "logo": {
+    "file": "public/media/lucy-jane-cakes/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/lucy_jane_cakes.png",
+    "plate": "none"
+  },
+  "gallery": [
+    {
+      "file": "public/media/lucy-jane-cakes/photo-01.webp",
+      "alt": "Two-tier pink buttercream cake with white chocolate drips and pink cupcakes around the base, as a gloved hand sets a cupcake and a pink '30' topper on top.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-02.webp",
+      "alt": "A box of six cupcakes piped with pink buttercream and decorated as pig faces with pink snouts, ears and black eyes.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-03.webp",
+      "alt": "A three-tier smooth white buttercream cake on a turntable being finished with a piping bag.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-04.webp",
+      "alt": "A gloved hand holds a cupcake topped with a pink buttercream rosette over a box of matching cupcakes.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-05.webp",
+      "alt": "Top of a pale pink buttercream cake decorated with a winged unicorn figure, a pastel rainbow arch with a gold fairy, a small pink '4' and pastel and pearl sugar balls.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-06.webp",
+      "alt": "A small black buttercream bento cake with a piped shell border and raised lettering, boxed with black-iced cupcakes.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-07.webp",
+      "alt": "A gloved hand holds a cupcake decorated as a pig face in pink buttercream above a box of matching cupcakes.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-08.webp",
+      "alt": "A spoon adds white chocolate drips to the edge of a smooth two-tier pink buttercream cake on a turntable.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+    },
+    {
+      "file": "public/media/lucy-jane-cakes/photo-09.webp",
+      "alt": "Oven-gloved hands hold a freshly baked heart-shaped sponge in its tin.",
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7265710948135079201"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction (not the business's own vector file) of the 500x500 transparent PNG hosted on the Booked Events listing, which is identical to the @lucy_jane_cakes TikTok avatar. It was upscaled to 1500 px and posterised to its three flat colours (blush #f8dfdb, white #ffffff, hot pink #fa8fcd), with the original's bluish antialias fringe on the rim removed, then traced with logo_trace.py --colours 3 (render-back mean abs diff 0.68). Plate 'none': the mark carries its own solid blush circle.",
+    "No business website exists and Instagram is login-walled, so the business has no standalone high-resolution photos. Gallery photos 01, 02 and 05-09 are full-resolution still frames from the business's own public TikTok videos (1080x1920 sources). 03 is the TikTok cover of her wedding-cake video (540x960). 04 is the Booked Events listing cover (500x455, top 10 px trimmed to remove a social-media UI fragment). sourceUrl gives the TikTok post page because the signed cover/CDN URLs expire.",
+    "Privacy: several celebration cakes carry personal names (Romee, Teddy, Geri, Sophia, Shannon). Photo 05 is cropped above the name on the rainbow cake. The reel and gallery use only moments before named toppers are added, or with no names. The photo-cake tutorial was not used because the cake shows photographs of private individuals.",
+    "Reel: six clips from three of her TikTok posts ('ALL THE PINKS', 'Oink', 'Bento Love'), downloaded with yt-dlp --no-cookies, with audio stripped. Sources are vertical 9:16, so the desktop 16:9 reel is a horizontal band crop of each frame. Rejected: the 'Rainbows and unicorns' footage (a child's name is legible throughout), the Spider-Man cake (540p only, and a name topper is visible), and the cowgirl-cake scraper shot (the supplier LissieLou's logo is prominent on the scraper)."
+  ]
+}

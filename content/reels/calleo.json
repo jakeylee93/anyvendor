@@ -1,0 +1,70 @@
+{
+  "slug": "calleo",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "file": ".media-work/calleo/hls-home.mp4",
+      "url": "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8",
+      "start": 9.85,
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.6,
+      "mfy": 0.5,
+      "note": "Calleo homepage background video: a personalised vinyl record is drawn from its custom sleeve."
+    },
+    {
+      "image": ".media-work/calleo/still-harry-michael.jpg",
+      "url": "https://images.squarespace-cdn.com/content/66eadddb3c2db3331cf0c0a8/0331576e-b4c7-49a5-ac0b-5333ae7da796/Harry+Michael+Photographer.jpeg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.35,
+      "mfx": 0.52,
+      "mfy": 0.5,
+      "note": "Calleo homepage photo (Harry Michael Photographer): a guest records a message on a Calleo handset at an evening reception."
+    },
+    {
+      "file": ".media-work/calleo/hls-home.mp4",
+      "url": "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8",
+      "start": 3.3,
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Calleo homepage background video: hands place an engraved wooden USB keepsake beside a framed song print and vinyl."
+    },
+    {
+      "image": ".media-work/calleo/still-lewis-cannon-couple.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.4,
+      "mfx": 0.3,
+      "mfy": 0.5,
+      "note": "Calleo How It Works photo (Lewis Cannon Photography): a couple share a Calleo handset beside a neon sign."
+    },
+    {
+      "file": ".media-work/calleo/hls-home.mp4",
+      "url": "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8",
+      "start": 7.0,
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.4,
+      "mfy": 0.5,
+      "note": "Calleo homepage background video: a Calleo video memory book is opened, its screen playing wedding footage."
+    },
+    {
+      "image": ".media-work/calleo/still-phones-display.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.55,
+      "mfx": 0.28,
+      "mfy": 0.5,
+      "note": "Calleo Packages photo: a light blue Calleo-branded phone, the brass King and a pink phone on display."
+    }
+  ]
+}

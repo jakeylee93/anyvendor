@@ -1,0 +1,72 @@
+{
+  "slug": "grape-fig",
+  "fade": 0.6,
+  "segments": [
+    {
+      "file": ".media-work/grape-fig/vid00-d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+      "start": 22.78,
+      "dur": 2.9,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.48,
+      "mfy": 0.5,
+      "note": "Finished grazing board with edible flowers held up to camera (homepage Virtual Masterclasses video)"
+    },
+    {
+      "file": ".media-work/grape-fig/vid07-74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/74d62ed667f34d559b0025b11b1c96d4/74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4?v=0",
+      "start": 5.3,
+      "dur": 2.5,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Seasonal Fruit Platter close-up: figs, kiwi, melon and cherries (homepage product video)"
+    },
+    {
+      "file": ".media-work/grape-fig/vid00-d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+      "start": 15.82,
+      "dur": 2.35,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Overhead: hands folding charcuterie onto a cheese board (homepage Virtual Masterclasses video)"
+    },
+    {
+      "file": ".media-work/grape-fig/vid02-28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/28cd542befc5487697d4091055e26445/28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4?v=0",
+      "start": 4.0,
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "The British Cheese & Charcuterie Platter (homepage product video)"
+    },
+    {
+      "file": ".media-work/grape-fig/vid09-65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/65205974cf894f36b838549cdcda2669/65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4?v=0",
+      "start": 0.2,
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "The Crudites & Hummus Platter (homepage product video)"
+    },
+    {
+      "file": ".media-work/grape-fig/vid03-4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4",
+      "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/4ab669f6ed1043709d8f5f727d731541/4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4?v=0",
+      "start": 0.05,
+      "dur": 2.2,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Cheese & Charcuterie Number graze in its box (homepage product video)"
+    }
+  ]
+}

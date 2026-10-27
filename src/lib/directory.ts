@@ -104,12 +104,16 @@ export interface Business {
   listedCategories: string[];
   /** Industry/category we inferred when the card showed none. */
   inferred: { industry: IndustrySlug; category?: string; basis: string } | null;
+  /** Confirmed from the business's own website/socials during profile research (Oct 2026). */
+  verified?: { industry: IndustrySlug; categories: string[]; eventTypes: string[]; sourceUrl: string };
   price: { from: string; unit: string };
   /** Original image path on bookedevents.co.uk (not recoverable yet). */
   originalImage: string;
   sources: ("archive" | "observed-2025-09-25")[];
   note?: string;
 }
+
+import taxonomy from "@/data/taxonomy.generated.json";
 
 const UP = "/wp-content/uploads/";
 
@@ -334,12 +338,20 @@ export const AUDIT_ONLY = [
   { slug: "vish-testing", name: "Vish Testing", reason: "apparent test listing seen live; unverified" },
 ];
 
+// Industry/categories/event types confirmed from each business's own channels
+// during profile research (Oct 2026); see content/profiles/<slug>.json.
+const VERIFIED = taxonomy as Record<string, { industry: IndustrySlug; categories: string[]; eventTypes: string[]; sourceUrl: string }>;
+for (const b of BUSINESSES) {
+  if (VERIFIED[b.slug]) b.verified = VERIFIED[b.slug];
+}
+
 export function industryName(slug: string) {
   return INDUSTRIES.find((i) => i.slug === slug)?.name ?? slug;
 }
 
 /** Industry for a business: from listed categories, else inferred, else null. */
 export function industryOf(b: Business): IndustrySlug | null {
+  if (b.verified) return b.verified.industry;
   for (const c of b.listedCategories) {
     const hit = INDUSTRIES.find((i) => (i.categories as readonly string[]).includes(c));
     if (hit) return hit.slug;
@@ -348,6 +360,7 @@ export function industryOf(b: Business): IndustrySlug | null {
 }
 
 export function categoriesOf(b: Business): string[] {
+  if (b.verified?.categories.length) return b.verified.categories;
   if (b.listedCategories.length) return b.listedCategories;
   return b.inferred?.category ? [b.inferred.category] : [];
 }
@@ -365,11 +378,11 @@ export interface Filters {
 }
 
 export function filterBusinesses(f: Filters) {
-  // Event-type tags were not recoverable from the source, so an event filter
-  // cannot match anything honestly.
-  if (f.event) return [];
+  // Event types only come from what each business says on its own channels
+  // (b.verified); businesses without that evidence never match an event filter.
   const q = f.q?.trim().toLowerCase();
   return BUSINESSES.filter((b) => {
+    if (f.event && !b.verified?.eventTypes.includes(f.event)) return false;
     if (f.industry && industryOf(b) !== f.industry) return false;
     if (f.category && !categoriesOf(b).includes(f.category)) return false;
     if (f.location && b.region !== f.location) return false;

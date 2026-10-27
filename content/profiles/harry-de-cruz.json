@@ -1,0 +1,122 @@
+{
+ "slug": "harry-de-cruz",
+ "displayName": "Harry De Cruz",
+ "tagline": "Modern Magic, designed to be remembered.",
+ "intro": "Harry De Cruz is a magician, mind reader and event host based in London and New York. He offers close-up, stage and wedding magic, parlour shows and compèring for corporate events, product launches, private parties and weddings.",
+ "about": [
+  "Harry De Cruz is a magician, mind reader and event host who describes himself as an award-winning London magician. He combines a background in stand-up comedy with technical sleight of hand and mentalism, and performs in a relaxed, conversational style. He says he is based in London and New York and available worldwide, and that he has worked in more than 30 countries, from product launches in the United States to private dinners across Europe and celebrations in the Maldives.",
+  "Harry says he has performed at hundreds of weddings and plans the timing of the magic with each couple, whether that means mingling at the drinks reception, going from table to table at the wedding breakfast or performing in the evening. He says he has over 15 years of experience performing at events. Before clients book, he offers to meet them for a coffee or over Zoom, free of charge, and show them some magic.",
+  "Alongside his event work, he says he co-wrote and performs in the magic show AMAZE at New World Stages in New York. His homepage also lists Wonderville at The Palace Theatre in London's West End and Champions of Magic at the Boulevard Theatre among his theatre shows, without saying whether those runs are current. Behind the scenes, he works as a creative advisor, writer and designer for magicians and theatre shows. The credits he lists include Magic Director and Resident Director on Derren Brown's Unbelievable, and 'the better part of a decade' with Dynamo, including as Head of Magic.",
+  "His website says he was awarded London Magician of the Year in 2024, 2025 and 2026. A 2022 profile in Absolutely Magazine describes him as born and raised in Buckinghamshire, says he joined The Magic Circle at 18 and names him as an Associate of the Inner Magic Circle."
+ ],
+ "services": [
+  {
+   "name": "Close-up and roaming magic",
+   "description": "Conversational, intimate magic performed right in guests' hands, often with their own belongings, as Harry mingles between groups or gives a mini show at the table."
+  },
+  {
+   "name": "Stage and after-dinner magic",
+   "description": "Interactive stage performances of modern magic, mind reading and British humour, for anything from an intimate private room to a large theatre. He says his stage magic can play to hundreds or thousands of people."
+  },
+  {
+   "name": "Wedding magic",
+   "description": "Magic planned with each couple. Common slots are the drinks reception, table to table between courses at the wedding breakfast, the turnover before evening guests arrive, and the evening reception."
+  },
+  {
+   "name": "Event hosting and compèring",
+   "description": "Hosting and compèring an event to keep it moving and the energy up, with magic and mind reading placed in the transitions between parts of the programme."
+  },
+  {
+   "name": "Parlour show",
+   "description": "An intimate, interactive show of magic and mind reading for small to medium groups, designed for a living room or private dining room."
+  },
+  {
+   "name": "Bespoke brand magic",
+   "description": "Custom magic built around a client's brand, campaign, message, slogan or product, drawing on his behind-the-scenes work as a magic consultant, writer and creator."
+  }
+ ],
+ "eventTypes": [
+  "Corporate Events",
+  "Private Parties",
+  "Weddings",
+  "Product Launches"
+ ],
+ "areasServed": [
+  "London",
+  "New York",
+  "UK-wide",
+  "Worldwide"
+ ],
+ "website": "https://www.harrydecruz.com",
+ "socials": {
+  "instagram": "https://www.instagram.com/harrydecruz",
+  "facebook": null,
+  "tiktok": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Over 15 years' experience performing at events",
+  "sourceUrl": "https://www.harrydecruz.com/magic"
+ },
+ "basedIn": {
+  "text": "London and New York",
+  "sourceUrl": "https://www.harrydecruz.com/"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "He trades under his own name at harrydecruz.com (the older harrydecruz.co.uk address redirects there); the 2014 start year on an earlier directory listing is not stated by him, and his own listed credits go back to 2012."
+ },
+ "sources": [
+  {
+   "label": "Harry De Cruz — Home",
+   "url": "https://www.harrydecruz.com/"
+  },
+  {
+   "label": "Harry De Cruz — Private Bookings (Magic)",
+   "url": "https://www.harrydecruz.com/magic"
+  },
+  {
+   "label": "Harry De Cruz — Weddings",
+   "url": "https://www.harrydecruz.com/weddings"
+  },
+  {
+   "label": "Harry De Cruz — Consultancy",
+   "url": "https://www.harrydecruz.com/consultancy"
+  },
+  {
+   "label": "Harry De Cruz — Contact",
+   "url": "https://www.harrydecruz.com/contact"
+  },
+  {
+   "label": "Absolutely Magazine — Harry De Cruz profile (Feb 2022)",
+   "url": "https://absolutelymagazines.com/harry-de-cruz-the-buckinghamshire-magician-casting-a-spell/"
+  }
+ ],
+ "gaps": [
+  "His website does not publish prices for any service.",
+  "He does not give a founding or start year. His site says he has 'over 15 years of experience performing at events', and the credits he lists go back to 2012.",
+  "The awards (London Magician of the Year 2024, 2025 and 2026), the audience and country counts, and the celebrity quotes are all self-published and have not been independently verified. The homepage also gives two different country counts ('30+' and 'more than 34'). Only the 2024 title appears in a third-party listing, which probably repeats his own promotional copy.",
+  "His website gives no public email address or phone number. Enquiries go through the form on the contact page at https://www.harrydecruz.com/contact.",
+  "Only Instagram (@harrydecruz) is linked from his website. Facebook, TikTok and YouTube accounts could not be confirmed as his.",
+  "His website does not state a typical guest range or minimum event size. It says only that the parlour show suits small to medium groups and that stage shows can play to hundreds or thousands.",
+  "His website does not explicitly mention event types such as birthdays, anniversaries or charity galas. The homepage also mentions conferences, and the magic page mentions dinner parties.",
+  "No logo file or SVG is published. The brand is the typeset name 'Harry De Cruz' and a small green 'H' site icon.",
+  "No independent reviews or review scores were verified."
+ ],
+ "taxonomy": {
+  "industry": "entertainment",
+  "categories": [
+   "Magician"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Private Parties",
+   "Weddings",
+   "Product Launches"
+  ],
+  "sourceUrl": "https://www.harrydecruz.com/"
+ }
+}

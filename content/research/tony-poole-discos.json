@@ -1,0 +1,1175 @@
+{
+ "slug": "tony-poole-discos",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Wrong source for the podium claim. The 'Standard & Premier Set Ups' service said lighting units stand on podiums ('Premier Lighting Set Up'), but its sourceUrl (/dance-floors-backdrops/) does not say this. The text is on the blog post /uncategorized/the-new-premier-lighting-set-up-in-action/ and in the homepage news teaser. I split it into its own service with the correct source.",
+  "Engagement Parties was not supported by its source. It was in eventTypes, but eventTypesSourceUrl (/our-services/) never mentions engagement parties. Only the video gallery's own captions do ('Engagement Party Chalkwell Park Rooms in Southend', 'Engagement Party in a Marquee in Abridge'). I removed it from eventTypes and recorded it in gaps so it can be added back with the video-gallery source.",
+  "Video eujRieSpl3E description: the record said 'Westcliff', taken from the YouTube title. The site's own gallery caption says 'Chalkwell Park Rooms in Southend'. I changed it to the site caption and noted the YouTube wording.",
+  "YouTube playlist entry had httpStatus null and 'not enumerated'. Playlist oEmbed returns HTTP 200 with title and author 'Tony Poole Discos' (@tonypoolediscos5120), which confirms ownership. I updated the entry; the individual items still cannot be listed without passing YouTube's consent wall.",
+  "Establishment-year gap updated. I fetched FreeIndex profile 246850 directly: it shows 'Member since: 22 Feb 2010' at CM16 7LU, which is the likely origin of the directory's 2010. The same listing says 'over 25 years experience'; the business's own site says 'over 30 years'. 2010 is a listing date, not a founding date.",
+  "alternateNames held domain strings (tonypoolediscos.com, www redirect), which are not trading names. I replaced them with the social handle and moved the redirect detail into evidence. The www redirect itself re-verified: 301 to https://tonypoolediscos.com/.",
+  "Confetti service wording: /our-services/ says 'confetti bombs'. Confetti cannons are mentioned only on the homepage. I reworded the service to match.",
+  "areasServed: 'Home Counties' comes from /about-us/ and 'South East' from /our-services/ and /dj-weddings-events/, not from the homepage cited in areasSourceUrl. I kept them and noted their real sources in gaps.",
+  "Everything else held up when I re-fetched it. All about and service facts are supported by their cited pages. All 5 logo URLs and 12 photo URLs return 200 with image content types, dimensions as stated and logo alpha bounding boxes as stated. All 12 photos appear on the pages cited for them, and the spot-checked thumbnails match their descriptions. All 74 YouTube IDs on the site (homepage 1, blog 1, video-gallery pages 1–6 with 72) return oEmbed 200 with author 'Tony Poole Discos'. There is no SVG logo: there is no inline svg, /logo.svg returns 404, and the media library has no svg. There are no direct video files: no <video> tags, no .mp4/.mov/.webm, and the media REST call with media_type=video returns []. The record contains no email or phone number."
+ ],
+ "record": {
+  "slug": "tony-poole-discos",
+  "displayName": "Tony Poole Discos",
+  "tagline": "The Ultimate Party Experience",
+  "identity": {
+   "officialWebsite": "https://tonypoolediscos.com/",
+   "confidence": "high",
+   "alternateNames": [
+    "tonypoolediscos (Instagram/Facebook handle)"
+   ],
+   "evidence": "The trading name 'Tony Poole Discos' matches exactly. It appears as the Yoast Organization name, og:site_name and the logo lockup. The site footer and the Contact/Privacy page give 52 Blackacre Road, Theydon Bois, Essex CM16 7LU, which is the same as the directory address (52 Blackacre Rd, Theydon Bois, Epping CM16 7LU). The privacy policy states the site is 'owned by Tony Poole at the address below'. The trade matches: wedding, party and corporate event DJs and mobile discos. www.tonypoolediscos.com 301-redirects to https://tonypoolediscos.com/. The site's header and footer link to its own Instagram (/tonypoolediscos), Facebook (/tonypoolediscos), a YouTube playlist owned by @tonypoolediscos5120 (oEmbed author 'Tony Poole Discos') and the owner's LinkedIn. A FreeIndex profile (fetched) lists 'Tony Poole Discos' at Theydon Bois, Epping, CM16 7LU, 'Member since: 22 Feb 2010', which is the likely origin of the directory's 2010. Bridebook, Guides for Brides and Add to Event listings in search results show the same name in Theydon Bois/Epping. The only mismatch is the year: the site claims 'over 30 years' in the DJ industry (see gaps). A namesake, Tony Poole the musician and producer (Starry Eyed And Laughing), appears in search results, for example a Lonesome Highway interview. Nothing links him to this business, so he is not treated as the same person."
+  },
+  "about": [
+   {
+    "text": "Tony Poole Discos describes itself as a team of experienced, versatile DJs who personalise special occasions and mix clients' requests with tracks they know will work.",
+    "sourceUrl": "https://tonypoolediscos.com/"
+   },
+   {
+    "text": "It provides DJs and mobile discos, ambience uplighting, dance floors, backdrops, light-up LOVE letters and numbers, photo booths and 360 video booths in Essex, Herts, London and beyond.",
+    "sourceUrl": "https://tonypoolediscos.com/"
+   },
+   {
+    "text": "The business says it has been in the DJ industry for over 30 years and performs at venues in London and the Home Counties.",
+    "sourceUrl": "https://tonypoolediscos.com/about-us/"
+   },
+   {
+    "text": "It is based at 52 Blackacre Road, Theydon Bois, Essex CM16 7LU, and the website is owned by Tony Poole.",
+    "sourceUrl": "https://tonypoolediscos.com/contact-us/"
+   },
+   {
+    "text": "According to the business, every booking includes an experienced DJ who co-ordinates and comperes parts of the event, such as the First Dance, a surprise entrance, announcements and introductions.",
+    "sourceUrl": "https://tonypoolediscos.com/dj-weddings-events/"
+   },
+   {
+    "text": "The business states that its sound and lighting set-up is PAT (safety) tested and health-and-safety compliant, that it holds Public Liability Insurance, and that it keeps backup DJs and vehicle breakdown cover for emergencies.",
+    "sourceUrl": "https://tonypoolediscos.com/dj-weddings-events/"
+   },
+   {
+    "text": "The business says it has over 200 Google reviews, all 5-star, and that it won Bridebook's Platinum Award in 2024 for service to engaged couples. Both claims are self-reported.",
+    "sourceUrl": "https://tonypoolediscos.com/dj-weddings-events/"
+   },
+   {
+    "text": "The business says it has played at London venues including Buckingham Palace, Grosvenor House, The Dorchester, The Ritz and The Shard. It lists clients including the England Rugby World Cup Squad 2007 (after-party in Paris) and the Daily Mirror (after-parties at Labour Party Annual Conferences, 2013–2024). These claims are self-reported.",
+    "sourceUrl": "https://tonypoolediscos.com/prestigious-venues-clients/"
+   },
+   {
+    "text": "Music is tailored to each event. Clients can send tracks they want and tracks they don't want in advance, and the DJ reads the room and takes guest requests on the night.",
+    "sourceUrl": "https://tonypoolediscos.com/the-music-2/"
+   },
+   {
+    "text": "The DJs page lists a team of 20 DJs, including DJ Tony Poole and DJ Richard Poole.",
+    "sourceUrl": "https://tonypoolediscos.com/the-djs/"
+   },
+   {
+    "text": "Booking terms: a reservation form is confirmed by email, and a 25% deposit is generally due within 14 days. The balance is due on the night (cash or cheque) or in advance (BACS). Deposits are normally non-refundable but can be transferred to another event. Cancelling within 14 days of the event normally incurs a further 25% payment.",
+    "sourceUrl": "https://tonypoolediscos.com/booking/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Wedding DJs & Discos (including All Day Service)",
+    "description": "Wedding DJ with an optional ALL DAY SERVICE. The DJ sets up before guests arrive and plays background music through the drinks reception and meal. The DJ comperes the entrance to the banqueting room, introduces the speeches (or provides a wireless microphone for a Toastmaster) and provides a wireless microphone for the speeches. The party follows straight on from the speeches. When the ceremony is at the reception venue, ceremony music can be played through a mini PA.",
+    "sourceUrl": "https://tonypoolediscos.com/services/wedding-djs-discos/"
+   },
+   {
+    "name": "Corporate Event DJs & Discos",
+    "description": "DJs for corporate parties, dinner/dances and awards nights at venues in London and the South East.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "Birthday Party DJs & Discos",
+    "description": "DJs for birthday and anniversary parties, with a wide music catalogue for audiences of mixed ages and tastes.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "Christmas Party DJs & Discos",
+    "description": "December bookings for private company or organisation parties, and for venue or agency party nights (sometimes block booked). Venue event managers can discuss seasonal packages.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "New Years Eve DJs & Discos",
+    "description": "New Year's Eve DJs at hotels, clubs, pubs and private residences.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "School Prom & School Disco DJs",
+    "description": "DJs for school proms and school discos, with lighting that includes lasers.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "Ambience uplighting",
+    "description": "Colour uplighting to transform the venue. The site shows before-and-after galleries at Broxbourne Golf Complex, Theydon Bois Golf Club and Ware Priory in many colours.",
+    "sourceUrl": "https://tonypoolediscos.com/uplighting-before-after/"
+   },
+   {
+    "name": "Standard & Premier Set Ups (DJ booths)",
+    "description": "Set-up packages from the Standard Set Up to the Premier Set Up, 'something for every budget'. Booths come in black or white, many with starlights.",
+    "sourceUrl": "https://tonypoolediscos.com/dance-floors-backdrops/"
+   },
+   {
+    "name": "Premier Lighting Set Up",
+    "description": "Instead of standing on traditional DJ stands, the lighting units are placed on podiums that can be lit in any colour.",
+    "sourceUrl": "https://tonypoolediscos.com/uncategorized/the-new-premier-lighting-set-up-in-action/"
+   },
+   {
+    "name": "White LED dance floors & starlit backdrops",
+    "description": "White LED dance floors, plus starlit or white LED backdrops for the DJ area, the top table or the wedding ceremony, as shown in the gallery captions.",
+    "sourceUrl": "https://tonypoolediscos.com/dance-floors-backdrops/"
+   },
+   {
+    "name": "Giant light-up LOVE letters & LED numbers",
+    "description": "Giant LOVE letters and LED numbers with controllable colours.",
+    "sourceUrl": "https://tonypoolediscos.com/dance-floors-backdrops/"
+   },
+   {
+    "name": "Photo Booth & 360 Video Booth",
+    "description": "A deluxe Photo Booth or a 360 Video Booth, which the business says comes 'with more props than we have seen at anybody else's'.",
+    "sourceUrl": "https://tonypoolediscos.com/dance-floors-backdrops/"
+   },
+   {
+    "name": "Confetti bombs",
+    "description": "A confetti bomb fired during the First Dance at weddings.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   },
+   {
+    "name": "Live entertainment arranged",
+    "description": "The business says it can arrange live entertainment.",
+    "sourceUrl": "https://tonypoolediscos.com/our-services/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Birthday Parties",
+   "Anniversaries",
+   "Seasonal Events",
+   "Private Parties"
+  ],
+  "eventTypesSourceUrl": "https://tonypoolediscos.com/our-services/",
+  "areasServed": [
+   "Essex",
+   "Hertfordshire",
+   "London",
+   "Home Counties / South East (\"and beyond\")"
+  ],
+  "areasSourceUrl": "https://tonypoolediscos.com/",
+  "industry": "entertainment",
+  "categories": [
+   "DJs & Disco",
+   "Staging & Lighting"
+  ],
+  "logos": [
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png",
+    "format": "png",
+    "width": 964,
+    "height": 467,
+    "background": "transparent",
+    "colours": "White wordmark 'TONY POOLE DISCOS', tagline 'The Ultimate Party Experience', stars and rectangular frame, with glowing purple arcs (about #A554FF). The site accent is #593A81.",
+    "sourcePage": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png",
+    "notes": "Best candidate: the largest genuine master, with a transparent background (8-bit palette PNG with tRNS). HEAD 200 image/png, 16,564 bytes. The artwork is white, so it needs a dark background; on white only the purple arcs show. It has a large transparent margin (alpha bbox x176–753, y94–358, re-verified), so crop before use. WP media id 358. No SVG exists: the header has no inline <svg>, /logo.svg returns 404 and the media library has no image/svg+xml entries."
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-01.png",
+    "format": "png",
+    "width": 964,
+    "height": 467,
+    "background": "dark",
+    "colours": "The same lockup inside a solid black panel: white text, frame and stars with purple arcs.",
+    "sourcePage": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-01.png",
+    "notes": "Variant with a solid black panel (alpha bbox x158–772, y100–397, re-verified) on a transparent canvas. Works on light backgrounds. HEAD 200 image/png, 16,374 bytes. WP media id 359."
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2016/06/logo-1.png",
+    "format": "png",
+    "width": 239,
+    "height": 110,
+    "background": "transparent",
+    "colours": "White and purple on a transparent background",
+    "sourcePage": "https://tonypoolediscos.com/",
+    "notes": "The live site header logo (#logo img) and the Yoast Organization schema logo. Small, so use only as a fallback. HEAD 200 image/png."
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02-300x145-1.png",
+    "format": "png",
+    "width": 182,
+    "height": 85,
+    "background": "transparent",
+    "colours": "White and purple",
+    "sourcePage": "https://tonypoolediscos.com/",
+    "notes": "Used as the site's shortcut icon (favicon link). /favicon.ico returns 404. The apple-touch-icons are generic 'muzak' theme icons, not the brand, so they are excluded."
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2015/06/Tony-Poole-Discos.jpg",
+    "format": "jpg",
+    "width": 1917,
+    "height": 2499,
+    "background": "photo",
+    "colours": "Purple flyer with the white logo lockup",
+    "sourcePage": "https://tonypoolediscos.com/wp-content/uploads/2015/06/Tony-Poole-Discos.jpg",
+    "notes": "Promotional flyer, not a clean mark. Use only as a colour and brand reference. HEAD 200 image/jpeg, 559,816 bytes."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg",
+    "width": 4000,
+    "height": 2666,
+    "description": "Parklands Quendon Hall, Essex: Premier Set Up with a white starlit booth and backdrop, white LED dance floor, LOVE letters and lilac uplighting",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg",
+    "width": 4000,
+    "height": 2666,
+    "description": "Wedding first dance in a draped, fairy-lit marquee at Parklands, Essex, with a confetti burst over the white LED dance floor",
+    "sourcePage": "https://tonypoolediscos.com/events-shots/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg",
+    "width": 2340,
+    "height": 1316,
+    "description": "Hanbury Manor, Ware: wedding first dance with confetti under pink and purple uplighting",
+    "sourcePage": "https://tonypoolediscos.com/events-shots/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg",
+    "width": 4002,
+    "height": 2253,
+    "description": "Packed starlit dance floor with guests' hands in the air at a wedding at Stock Brook Manor, Essex",
+    "sourcePage": "https://tonypoolediscos.com/events-shots/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg",
+    "width": 4032,
+    "height": 1816,
+    "description": "First dance in a timber barn at Easton Grange, Suffolk, under fairy lights with pink heart projections",
+    "sourcePage": "https://tonypoolediscos.com/events-shots/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/The-Shard-Premier-Set-Up-White-Starlight-Booth-White-LED-Dance-FloorLilac-Uplighting.jpg",
+    "width": 4002,
+    "height": 2253,
+    "description": "Premier Set Up at The Shard: white starlit booth and white LED dance floor with lilac/pink uplighting. Heavily compressed file (197,357 bytes).",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg",
+    "width": 4032,
+    "height": 2268,
+    "description": "Broxbourne Golf Complex, Herts: Premier Set Up with a white starlit booth and backdrop, LED dance floor, giant LED numbers and lilac uplighting",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg",
+    "width": 4032,
+    "height": 2268,
+    "description": "Fulham Palace, London: Premier Set Up with a white starlit booth, white LED dance floor and rose uplighting",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Sheene-Mill-Royston-Herts-Premier-Set-Up-White-Booth-White-LED-Backdrop-LOVE-Letters-Pink-And-Blue-Uplighting.jpg",
+    "width": 4032,
+    "height": 2268,
+    "description": "Sheene Mill, Royston, Herts: white Premier Set Up booth with a white LED backdrop, light-up LOVE letters and pink and blue uplighting",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2024/02/The-Grove-Watford-Herts-Photo-Booth.jpg",
+    "width": 4032,
+    "height": 2268,
+    "description": "Photo booth set up at The Grove, Watford, Herts",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2026/01/Sheene-Mill-Royston-Herts-360-Video-Booth.jpg",
+    "width": 4032,
+    "height": 1816,
+    "description": "360 Video Booth platform with an LED surround and rope barriers at Sheene Mill, Royston",
+    "sourcePage": "https://tonypoolediscos.com/dance-floors-backdrops/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://tonypoolediscos.com/wp-content/uploads/2017/10/IMG_1993.jpg",
+    "width": 4000,
+    "height": 2666,
+    "description": "The Honourable Artillery Company, London: winter-themed banqueting room in blue ambience uplighting with snowflake projections, before guests arrive (media title and alt: 'The Honourable Artillery Company, Shoreditch, London')",
+    "sourcePage": "https://tonypoolediscos.com/setting-the-scene/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www.youtube.com/watch?v=OeO8ee-0p88",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Tony Poole Discos Promotional Video 2025, featured as 'Promo Video' on the homepage. Best hero showreel candidate.",
+    "sourcePage": "https://tonypoolediscos.com/",
+    "ownContentEvidence": "Homepage 'Promo Video' link. YouTube oEmbed (HTTP 200, re-verified) gives author_name 'Tony Poole Discos', channel @tonypoolediscos5120."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=-eY3BvBCOuI",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Premier Lighting Package at Hunton Park, Herts",
+    "sourcePage": "https://tonypoolediscos.com/uncategorized/the-new-premier-lighting-set-up-in-action/",
+    "ownContentEvidence": "Embedded on the business's own blog post. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=aasQIdM5DHg",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Lodge Event at West Essex Golf Club",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=mO6bmloztGg",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Dancing at a Peaky Blinders themed 50th, Theydon Bois Golf Club, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Qf508hgiJqw",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Christmas Party at 8 Rocks, Loughton, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=lOgN0LaY6CM",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Fulham Palace, London",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=aH1SWM-EMDA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Prom in a marquee in Ware, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Lo2a9jpSZdg",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Family Celebrations in a marquee in Sussex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=354szepMFME",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "60th at Cheshunt Park Golf Course, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=WCHrgKl9EEY",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Disco at Davenant School, Loughton",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=YbXCWToKepo",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Event at Cheshunt Marriott, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=eujRieSpl3E",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Engagement Party at Chalkwell Park Rooms, Southend (site caption; the YouTube title says 'in Westcliff')",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=-AcEXcSGLbs",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Engagement Party in a marquee in Abridge",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=BvyDbAVGGWE",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Party at Albert Docks, Liverpool",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=zXVEh3Y6RT0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Stationers Hall, St Paul's",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=NBtp2jfVuM0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at That Amazing Place, near Harlow, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=pTP6myEi8aU",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding in a marquee in Henley On Thames",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=YBcVgXzoYwM",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Scouts Party at Gilwell Park, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=wA64QyofIEY",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th at Hertford House Hotel, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=BQSC8WooExE",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Cheshunt Marriott, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=1U6Jmwxh8-8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Dalston Heights, Hackney, London",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=C53MvTyUU6o",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Party at Parlour Bar, Docklands",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=wn-Xe_Tjd8A",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "60th at Uplands Social Club, Woodford, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=4Z_hJ0YulgQ",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th Birthday Party at Mooro's, Chigwell, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ErB1OoPy4w8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Disco at Davenant School, Loughton, Essex (2017)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=v6_xDE8JEng",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Disco at Theydon Bois Primary School, Essex (2017, 1st clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/2/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=BMbieeow-uU",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate event at the Grosvenor Hotel, Mayfair",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=fxg-e48ny6c",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Annual black tie Dinner/Dance at Theydon Bois Golf Club, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=NAZsNH4_gIA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Ashridge House, Berkhamsted, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ZGYpWHe5DG4",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Lancaster House, London",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=MKN_NkzvIw8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Red Brick Barn, Rochford, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=1GKDSSriKlA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Stock Brook Manor, Billericay, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=FLvNL4kWP4M",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Residency at One Under Lime in The City",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=VmdOjI4dKT8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Bar Mitzvah at Theydon Bois Village Hall, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=aIQzJCbiJKo",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "40th at Smith's of Smithfield (Rooftop Bar), The City",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=kxxWoZQgWSQ",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th at Chingford Golf Club, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=VtYh5WEIf4M",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at The Grims Dyke Hotel, Harrow (3rd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=nS6LkItjYj4",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at The Grims Dyke Hotel, Harrow (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/3/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=30ga7orExO0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Essendon Country Club, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=VGQELsZ0KSc",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Grims Dyke Hotel, Harrow",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ipMlvDRvNIg",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Houchins Farm, Essex (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ihGEIKjQjL0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Houchins Farm, Essex (1st clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=SCpJrdXTry4",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Event at Hanbury Manor, Herts",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ZhnPjj-o5KU",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Cheshunt Golf Club, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=99gnWbGgtFE",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Fancy Dress Party in a marquee at Barrow Hills Prep School, Surrey",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=9MEaAqPSWgA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Event at The Willis Building, Ipswich",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=smQt7VnZJuo",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th Birthday Party at Cheshunt Golf Club, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=FD3WzZXcT_8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Event at St Andrews Church Holborn (1st clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=cadCs-xHUbA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate Event at St Andrews Church Holborn (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=oDMtWo2zFJ0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Gilwell Park (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/4/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Q2KoEPhlbaU",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Gilwell Park (1st clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Nzs7NVBU9po",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at The Reid Rooms",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=TuEPOybprpA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at The Reid Rooms (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=_TQHj2HUdSE",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at The Reid Rooms (3rd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=xGlLHdKutD4",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "21st at Cheshunt Golf Club, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=F7ltrCoOji0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Multi Birthday Party at The Irish Centre, Tottenham",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=bNsalIjXK6I",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Multi Birthday Party at The Irish Centre, Tottenham (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=__U2JS_wtuQ",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Multi Birthday Party at The Irish Centre, Tottenham (3rd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=x8nyCZ6RaKk",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate event at the Grosvenor Hotel, Mayfair",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=6Ao82YiYfKM",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Awards Night at Stoke Newington Town Hall",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=EeSsZxpP1S8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate event at The Honourable Artillery Company, The City (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=AvjzZ7WdKZQ",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate event at The Honourable Artillery Company, The City",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/5/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=n9wn2o99ve8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Awards Night at Stoke Newington Town Hall (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=STC3G6uuAG4",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Corporate event at The Riverbank Park Plaza on The Embankment",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=yXsUiwpETis",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Awards Night at The Atrium, Bethnal Green",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=L6a3YVUiB_U",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th in a marquee",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=48JJPsyJjyk",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Disco at Davenant School, Loughton, Essex (2015, 1st clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=u63BvPWNrG0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "School Disco at Davenant School, Loughton, Essex (2015, 2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=8BEZybdB_rA",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Marygreen Manor, Essex (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=to07JW3gOQo",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Crabbs Barn, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ZwuLFT02g0s",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "40th at Hertford House Hotel, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=j-OFpzLLh6I",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "50th in a marquee (2nd clip)",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=wjUmKroIyNw",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Marygreen Manor, Essex",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=H7mfg1DGkVg",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "Wedding at Hunton Park, Hertfordshire",
+    "sourcePage": "https://tonypoolediscos.com/video-gallery/page/6/",
+    "ownContentEvidence": "Own video gallery. oEmbed author 'Tony Poole Discos' (@tonypoolediscos5120)"
+   },
+   {
+    "url": "https://www.youtube.com/playlist?list=PL2ZvDPgUn8EO2po_2-LJfa4CCua0iluqk",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": null,
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "The business's YouTube playlist, linked from the site's header and footer social icons. Playlist oEmbed returns HTTP 200 (title 'Tony Poole Discos', thumbnail from H7mfg1DGkVg). The playlist page and RSS feed are not enumerable without consent (the page redirects to consent.youtube.com and RSS returns 404), so its full contents are not listed.",
+    "sourcePage": "https://tonypoolediscos.com/",
+    "ownContentEvidence": "Linked by the YouTube icon in the business's own site header. Playlist oEmbed author_name 'Tony Poole Discos', author_url /@tonypoolediscos5120."
+   }
+  ],
+  "socials": {
+   "facebook": "https://www.facebook.com/tonypoolediscos/",
+   "instagram": "https://www.instagram.com/tonypoolediscos/",
+   "youtube": "https://www.youtube.com/@tonypoolediscos5120",
+   "tiktok": null,
+   "vimeo": null,
+   "other": [
+    "https://www.youtube.com/playlist?list=PL2ZvDPgUn8EO2po_2-LJfa4CCua0iluqk",
+    "https://uk.linkedin.com/in/tony-poole-b6bb33124 (owner's LinkedIn, linked from the site header)"
+   ]
+  },
+  "instagramAccess": "Re-verified 2026-10-27. One plain unauthenticated GET to https://www.instagram.com/tonypoolediscos/ returned HTTP 200 with no redirect (504,801 bytes). It was a generic app shell titled 'Instagram' with no og:title, og:description, bio or posts, so profile content is effectively behind login. I did not retry. One plain GET to https://www.facebook.com/tonypoolediscos/ returned HTTP 400 with a page titled 'Error'. One plain GET to https://www.youtube.com/@tonypoolediscos5120 returned 302 to consent.youtube.com, which I did not bypass.",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://tonypoolediscos.com/booking/"
+  },
+  "gaps": [
+   "Establishment year does not match. The directory lists 2010. The FreeIndex profile (fetched, freeindex.co.uk/profile(tony-poole-discos)_246850.htm) shows 'Member since: 22 Feb 2010' at Theydon Bois CM16 7LU, the likely origin of 2010, but that is a listing date, not a founding date. FreeIndex says 'over 25 years experience'; the business's own site says 'over 30 years' (/about-us/) and 'last 30+ years' (/testimonials/). The true founding year is unverified.",
+   "Price: the directory's '£295 per event' does not appear anywhere on the business's own site, which publishes no prices. Third-party search snippets (Bridebook) mention starting prices of £350 and £450. These are unverified and were not used.",
+   "Engagement Parties is not in eventTypes because /our-services/ does not mention it. The business's own video gallery (https://tonypoolediscos.com/video-gallery/) does show two engagement parties (Chalkwell Park Rooms, Southend; a marquee in Abridge), so it could be added with that page as the source. The gallery also shows a Bar Mitzvah, a Scouts party, a Lodge event and awards nights.",
+   "Where the areas come from: 'Essex, Herts, London and beyond' is on the homepage. 'Home Counties' comes from /about-us/, and 'South East' from /our-services/ and /dj-weddings-events/.",
+   "Self-reported claims only: the Bridebook Platinum Award 2024, 'over 200, all 5*' Google reviews, and the celebrity venue and client claims (Buckingham Palace, Princes William and Harry, and others) appear only on the business's own site and were not independently verified. The superlatives 'more Google reviews than any other similar company' and 'one of the premium providers' were deliberately left out.",
+   "No direct video files: the site has no <video>/<source> tags and no .mp4/.mov/.webm files, and the WP media REST call with media_type=video returns []. All footage is on YouTube (74 videos linked from the site, all oEmbed-verified as the business's own), so a hero showreel needs a YouTube embed or the owner's original file.",
+   "The full YouTube channel and playlist contents were not enumerated because of YouTube's consent wall, so there may be uploads on @tonypoolediscos5120 beyond the 74 linked from the site.",
+   "No genuine SVG logo was found: there is no inline header svg, /logo.svg returns 404 and the media library has no svg. The best mark is a 964x467 transparent PNG with white artwork, so it needs a dark background or the black-panel variant.",
+   "Some 4000px originals are heavily compressed (for example, The Shard set-up at about 197 KB), so check quality before using them at hero size.",
+   "Several event photos and videos show identifiable guests, including children at school discos, and the site lists named celebrities. The privacy policy says the business may use event images, but consider likeness and consent before reuse. School and celebrity images were left out of the selection.",
+   "TikTok and Vimeo: none found on the site (no links or embeds) or in web search."
+  ]
+ }
+}

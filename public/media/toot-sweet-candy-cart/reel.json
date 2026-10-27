@@ -1,0 +1,64 @@
+{
+  "slug": "toot-sweet-candy-cart",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "The white Toot Sweet Candy Cart, its name painted on the front panel, dressed with a peach and gold balloon garland, flowers, a tiered cake and sweet jars (photo from the business's Booked Events listing)."
+    },
+    {
+      "sourceUrl": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "@CartToot photo (5 Jun 2020): an open 16-compartment sweet box of pick 'n' mix and Ferrero Rochers."
+    },
+    {
+      "sourceUrl": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "@CartToot photo (23 Jun 2020): the cart styled for brunch in a garden with flowers, a balloon garland and an 'On Weekends We Brunch' sign."
+    },
+    {
+      "sourceUrl": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "@CartToot photo (6 Jun 2020): a personalised sweet box with pale-blue ribbon and a navy 'I Love You' tag."
+    },
+    {
+      "sourceUrl": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "@CartToot photo (23 Jun 2020): close-up of the brunch-styled cart with a Victoria sponge, champagne, scones and sandwiches."
+    },
+    {
+      "sourceUrl": "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "@CartToot photo (5 Jun 2020): a sweet box tied with yellow ribbon, with a 'Happy Daddy's Day' tag and the round Toot Sweet Candy Cart logo sticker, on cupcake-print paper."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/toot-sweet-candy-cart/reel-desktop.mp4",
+      "poster": "/media/toot-sweet-candy-cart/poster-desktop.jpg",
+      "posterWebp": "/media/toot-sweet-candy-cart/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.0,
+      "bytes": 2115238
+    },
+    "mobile": {
+      "video": "/media/toot-sweet-candy-cart/reel-mobile.mp4",
+      "poster": "/media/toot-sweet-candy-cart/poster-mobile.jpg",
+      "posterWebp": "/media/toot-sweet-candy-cart/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.0,
+      "bytes": 2035589
+    }
+  }
+}

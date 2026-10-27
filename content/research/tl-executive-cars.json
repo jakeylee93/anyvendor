@@ -1,0 +1,246 @@
+{
+ "slug": "tl-executive-cars",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "The images array had 11 likely-stock images (manufacturer fleet renders, a wedding, a racehorse, a rugby player, a jet handshake, the Royal Albert Hall, a jet slide). The task says to drop likely-stock photos, so only the business's own archived photo of its branded Mercedes E-Class (car1.jpg) is kept. Its 1200x600 size, its 200 status and the T&L plate surround were checked directly.",
+  "Airport Transfers service: the VIP areas list left out 'Diamond Hangar' (spelt 'Dimond Hanger' on the site). The 'short notice' claim comes from the homepage ('Airport Transfers – Offered at short notice'), not from the airport page cited. Fixed.",
+  "'Request a Quote' was listed as a service. It is a booking form, not a service, and is already recorded as contact.bookingUrl, so it is removed from services. The fact that no prices are published stays in gaps.",
+  "A genuine brand lockup was missing: wp-content/uploads/2019/02/tl-logo-header-1-e1550160471535.png (media id 606, 300x70, transparent, badge plus 'T&L EXECUTIVE CARS' plus tagline). Added.",
+  "Logo note for the 1000x1000 Booked Events badge: it is a tighter crop of the circle with visible compression or upscaling softness, not just a resized copy. The note now says this.",
+  "eventTypes 'Corporate Events' is not supported by the cited special-events-weddings page. It rests on the homepage ('whatever the occasion, personal, business or that special event') and the Media & Corporate Services page (keynote speaker transfers for speaking bureaux, corporate services). It is kept, but the support is recorded here because there is only one eventTypesSourceUrl field.",
+  "Media-library gap updated: the 2022/01 uploads (917.jpg, 369.jpg, 338.jpg and others, 2000x821 or larger) are also Avada construction-demo images, such as a suburban house at dusk, and are not the business's photos. Other unlisted 2019 site images (tl-main-quote, tl-main-slide-1, tl-main-slide-corporate, tl-main-testimonials, tl-page-header) are stock backgrounds. 2020/01/3916628.png is a client logo (GB Helicopters), not this brand's.",
+  "Identity re-verified and strengthened: the 2014 Wayback snapshot says 'Theydon and Loughton Executive Cars has been established since 2008 and is a private hire company' and '© 2008 - 2013'. The Booked Events description matches the site word for word, and its only outbound business link is tlexecutivecars.co.uk/special-events-weddings/.",
+  "Every other about and service fact was re-checked against the live page text and is supported. No personal phone or email is included."
+ ],
+ "record": {
+  "slug": "tl-executive-cars",
+  "displayName": "T&L Executive Cars",
+  "identity": {
+   "officialWebsite": "https://tlexecutivecars.co.uk/",
+   "confidence": "high",
+   "alternateNames": [
+    "Theydon & Loughton Executive Cars",
+    "Theydon and Loughton Executive Cars",
+    "Theydon Executive Cars"
+   ],
+   "evidence": "The live Booked Events listing (https://bookedevents.co.uk/businesses/tl-executive-cars/), which shows 'Est.2007 · Thrifts Mead, Theydon Bois CM16 7NE' and 'Transport & Logistics', has one outbound business link: https://tlexecutivecars.co.uk/special-events-weddings/. Its description is word-for-word the 'Special Events' paragraph on that page. The site's <title> and og:site_name are 'T&L Executive Cars'. The footer and contact block on every page give the same address, 'Thrifts Mead, Theydon Bois CM16 7NE'. Both describe the same trade, an executive/chauffeur private-hire car service. A Wayback snapshot from 2014-05-16 is titled 'Chauffeur Hire in Loughton, Buckhurst Hill, Chigwell, Theydon Bois | Essex'. It says 'Theydon and Loughton Executive Cars has been established since 2008 and is a private hire company', with '© 2008 - 2013'. One founding-year mismatch: the directory says Est. 2007, but the site says 2008. Namesake check: the owner shares a name with the former Chelmsford MP Simon Burns, who is unrelated; search results about him concern a 2013 ministerial-car story. Other 'Executive Cars' firms in search results (Derby, Cheshire, central London) are unrelated businesses. The alternate name 'Theydon Executive Cars' appears only in a client testimonial on the business's own homepage."
+  },
+  "tagline": "Taking You On Your Journey",
+  "about": [
+   {
+    "text": "T&L Executive Cars also trades as Theydon and Loughton Executive Cars. It says it has been established since 2008.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "An archived 2014 version of its website described it as a private hire company established in 2008.",
+    "sourceUrl": "https://web.archive.org/web/20140516231006/http://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "It describes itself as an alternative, affordable car service for local individuals, small businesses and corporate clients, including several multinational companies.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "It covers Theydon Bois, Loughton, Epping, Abridge, Ongar, Buckhurst Hill, Chigwell and Woodford Green.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "The business says it was built on a professional, prompt and reliable service, and that over the years it has gained many clients through personal recommendation.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "It says its vehicles are licensed and inspected by Epping Forest District Council. They are also certificated as exempt from displaying a private hire plate, so the service can be discreet. It describes its drivers as smart and polite.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "The fleet listed on the site is a Mercedes E Class (4 passengers, 3 bags), a Mercedes S Class (4 passengers, 3 bags), a Mercedes V Class (7 passengers, 7 bags) and a 'Toureno Custom Executive Spec' (8 passengers, 8 bags).",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "Accepted payment methods include Visa, MasterCard, American Express and Apple Pay.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "The founder writes that he set up Theydon & Loughton Executive Cars in 2008 to serve local individuals and businesses. He says he has built a loyal client base and personally guarantees the service to every customer.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/"
+   },
+   {
+    "text": "The business is based at Thrifts Mead, Theydon Bois CM16 7NE. Its listed hours are Monday to Friday, 9.00am to 6.30pm, and it says it replies within 24 hours.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/request-a-quote/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Airport Transfers",
+    "description": "Covers all London airports; the homepage lists Heathrow, Gatwick, London City, Luton, Stansted and Southend. Drivers know the VIP areas, including the Windsor Suite, Harrods Air, Tag Aviation, Signature and Diamond Hangar. On departures the car arrives 10 minutes before the agreed departure time, and a chaperone to the check-in desk is available if requested at booking. On arrivals the business monitors the flight and offers a full meet and greet in the arrivals terminal. The homepage says airport transfers can be offered at short notice.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+   },
+   {
+    "name": "Seaport & Cruise Terminal Transfers",
+    "description": "Executive car transfers to seaports and cruise terminals, with help with luggage and a driver waiting in arrivals for the return. Covers the Southampton cruise terminals plus Harwich, Tilbury, Ramsgate, Dover and Swansea.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/airport-seaport-transfers/"
+   },
+   {
+    "name": "Wedding Transport",
+    "description": "Arranges wedding transport, from one car to the venue to a small fleet, with what the site calls very competitive and affordable options. Also runs a guest logistics service between hotels and the venue, which it says is very popular and cost-effective.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/special-events-weddings/"
+   },
+   {
+    "name": "Special Events & Occasions",
+    "description": "Transfers for outings such as a London theatre visit, a day at Cheltenham, Ascot or Newmarket races, West End shopping or a fine dining experience.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/special-events-weddings/"
+   },
+   {
+    "name": "Sporting Events",
+    "description": "Gets clients home safely after a day at the rugby or football.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/special-events-weddings/"
+   },
+   {
+    "name": "Media Services",
+    "description": "Handles transfers of keynote speakers for several London speaking bureaux, from industry leaders, senior politicians and motivational speakers to broadcasters. Has also given logistical support to media production companies for film and television shoots in London and the Home Counties. Says it is familiar with most red carpet events.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/media-corporate-services/"
+   },
+   {
+    "name": "Corporate Services",
+    "description": "A bespoke, discreet and personalised service built around each business's needs. The business says it is exempt from displaying licensing logos, its drivers are liveried, and confidentiality and discretion are assured.",
+    "sourceUrl": "https://tlexecutivecars.co.uk/media-corporate-services/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events"
+  ],
+  "eventTypesSourceUrl": "https://tlexecutivecars.co.uk/special-events-weddings/",
+  "areasServed": [
+   "Theydon Bois",
+   "Loughton",
+   "Epping",
+   "Abridge",
+   "Ongar",
+   "Buckhurst Hill",
+   "Chigwell",
+   "Woodford Green",
+   "All London airports (Heathrow, Gatwick, London City, Luton, Stansted, Southend)",
+   "Seaports: Southampton, Harwich, Tilbury, Ramsgate, Dover, Swansea",
+   "London and Home Counties (film/TV shoot logistics)"
+  ],
+  "areasSourceUrl": "https://tlexecutivecars.co.uk/",
+  "industry": "transport-logistics",
+  "categories": [
+   "Chaffeur",
+   "Car Hire"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://tlexecutivecars.co.uk/request-a-quote/"
+  },
+  "logos": [
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/03/tl-logo-badge.png",
+    "format": "png",
+    "width": 600,
+    "height": 545,
+    "background": "transparent",
+    "colours": "Charcoal/dark-grey disc with a metallic silver ring and band. Silver serif 'THEYDON' / 'LOUGHTON' and dark serif 'EXECUTIVE CARS' on the band.",
+    "sourcePage": "https://tlexecutivecars.co.uk/",
+    "notes": "Best native raster of the circular badge on the official site, and the site's shortcut icon (favicon). Re-verified as HTTP 200 image/png, 600x545 with an alpha channel. WP media id 678, uploaded 2019-03-01. No SVG exists: the only inline <svg> elements are Avada 'fusion-big-half-circle-candy' section dividers, /logo.svg returns 404, and the only .svg upload is the Avada theme icon font avada-construction.svg."
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tandl_executive_cars_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "Same charcoal and silver badge as above.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/tl-executive-cars/",
+    "notes": "Largest raster of the badge, but hosted by the Booked Events directory, not the business. It is a tight crop of the circle and shows compression or upscaling softness, so the business's own 600x545 PNG is the cleaner source. Re-verified as 200 image/png, 1000x1000 with alpha."
+   },
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/02/tl-logo-header.png",
+    "format": "png",
+    "width": 384,
+    "height": 90,
+    "background": "transparent",
+    "colours": "Grey/silver badge with black sans-serif 'T&L EXECUTIVE CARS' and the tagline 'TAKING YOU ON YOUR JOURNEY'.",
+    "sourcePage": "https://tlexecutivecars.co.uk/wp-json/wp/v2/media?per_page=100",
+    "notes": "Horizontal lockup (badge plus wordmark plus tagline) from 2019, in the public WP media library as id 605. It is not used in the current live header. Small, but it is the largest transparent wordmark lockup. Re-verified at 384x90 with alpha."
+   },
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/02/tl-logo-header-1-e1550160471535.png",
+    "format": "png",
+    "width": 300,
+    "height": 70,
+    "background": "transparent",
+    "colours": "Grey/silver badge with black sans-serif 'T&L EXECUTIVE CARS' and the tagline 'TAKING YOU ON YOUR JOURNEY'.",
+    "sourcePage": "https://tlexecutivecars.co.uk/wp-json/wp/v2/media?per_page=100",
+    "notes": "A smaller, WP-edited variant of the same 2019 lockup (media id 606) that the researcher missed. It has an alpha channel and is not used on the live header."
+   },
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/02/tl-logo-header-2.png",
+    "format": "png",
+    "width": 300,
+    "height": 90,
+    "background": "white",
+    "colours": "Grey/silver badge, black serif-caps 'T&L EXECUTIVE CARS', italic tagline.",
+    "sourcePage": "https://tlexecutivecars.co.uk/wp-json/wp/v2/media?per_page=100",
+    "notes": "Alternate 2019 lockup (media id 626), with no alpha channel. Not used on the live header."
+   },
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/02/tl-logo-header-3.png",
+    "format": "png",
+    "width": 300,
+    "height": 90,
+    "background": "white",
+    "colours": "Grey/silver badge, black sans-serif 'T&L Executive Cars', tagline 'Taking you on your journey'.",
+    "sourcePage": "https://tlexecutivecars.co.uk/wp-json/wp/v2/media?per_page=100",
+    "notes": "Alternate 2019 lockup (media id 638), with no alpha channel. Not used on the live header."
+   },
+   {
+    "url": "https://tlexecutivecars.co.uk/wp-content/uploads/2021/12/theydon-executive-cars-loughton-logo.jpg",
+    "format": "jpg",
+    "width": 300,
+    "height": 300,
+    "background": "white",
+    "colours": "Charcoal and silver badge on white.",
+    "sourcePage": "https://tlexecutivecars.co.uk/",
+    "notes": "The current live header logo: the 2x retina version of the 100x100 theydon-executive-cars-loughton.jpg (img.fusion-standard-logo, alt 'T&L Executive Cars Logo'). The 100x100 version is the og:image. This file is also the apple-touch-icon (180 and 167). JPEG with no transparency."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://web.archive.org/web/20160316212529im_/http://tlexecutivecars.co.uk/img/car1.jpg",
+    "width": 1200,
+    "height": 600,
+    "description": "The business's own dark-grey Mercedes E-Class saloon parked on a sunlit village lane beside a white five-bar gate. The front plate surround carries the T&L Executive Cars badge and name.",
+    "sourcePage": "https://web.archive.org/web/20160316212529/http://tlexecutivecars.co.uk/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [],
+  "socials": {
+   "facebook": null,
+   "instagram": null,
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": []
+  },
+  "instagramAccess": "No request was made to Instagram, because no official account exists to request. tlexecutivecars.co.uk links to no social profiles at all: every anchor on the homepage was re-checked and they are only internal pages, mailto and tel links. The Booked Events listing's social links point only to the directory's own accounts (instagram.com/theeventpeopleuk, facebook.com/theeventpeople) and a Facebook share link. Web searches for the trading names plus facebook, instagram, youtube and linkedin returned nothing for this business. No guessed handle was requested, to avoid attributing an unrelated account.",
+  "gaps": [
+   "NO VIDEO EXISTS. The live site HTML on all 5 public pages has no <video>, <source>, iframe, .mp4, YouTube or Vimeo. The public WP REST query media?media_type=video returns 0 items. The Wayback CDX has no video MIME captures for the domain. The 2014 and 2016 archived homepages contain no video. Web searches found nothing. A hero showreel of the business's own footage cannot be built from public sources.",
+   "Only ONE photo of the business's own work exists: a 1200x600 photo of its Mercedes E-Class with the branded T&L plate surround. It is available only from a Wayback snapshot dated 2016-03-16; the original http://tlexecutivecars.co.uk/img/car1.jpg returns 404. car2.jpg from the same old site was never archived. The other archived old-site images (airporttransfers.jpg, specialevents.jpg, corporatebusiness.jpg) are stock. Every photo on the live site is stock or a manufacturer studio render: fleet cards, hero slides for weddings, racing, airports and corporate, a theatre-masks background, a chauffeur-at-wheel slide and testimonial backgrounds. They are excluded.",
+   "The Booked Events listing's own media is not genuine. Its 5 gallery images (bookedevents.co.uk/wp-content/uploads/2024/12/openart-image_*_raw.jpg) are OpenArt AI renders of glassware, unrelated to a car service. The thumbnail tle_executive_cars_thumb.jpg (1000x800) shows a black Mercedes E-Class with a blank plate in front of a generic glass terminal, with a clear AI-render look. Neither should be shown as the business's own photos.",
+   "No SVG logo exists. The best native mark is a 600x545 transparent PNG badge. A 1000x1000 directory-hosted PNG exists but is a softer crop. A vector would have to be faithfully reconstructed from the badge, with provenance recorded.",
+   "Founding year conflict: the directory says Est. 2007, but the business's site says 'established since 2008' and 'I founded ... in 2008'. The 2014 archived site also says 2008 and '© 2008 - 2013'. The site's own year is preferable.",
+   "Licensing discrepancy: the directory listing shows 'Licenses & Insurance: No', but the site says its vehicles and drivers are licensed and that vehicles are inspected by Epping Forest District Council. The council's public register could not be found online to check this independently.",
+   "No prices are published on the site; quotes come via the online form. The directory lists 'POA, No Minimum Spend'.",
+   "The site shows testimonials naming individuals and a 'Some of Our Clients' strip of client logos (2020/01 uploads such as chapmanfreenew.jpg, endemolshinenew.jpg and 3916628.png for GB Helicopters). These are self-published and not independently verified, so they are not recorded as reviews or endorsements. Client logos must not be used as this brand's logo.",
+   "No social media accounts of any kind were found. No Companies House entity was identified; the trading name may belong to a sole trader.",
+   "The repo record for this slug in src/data/vendors.ts is placeholder data that contradicts the sources and should be replaced: name 'TL Executive Cars', location 'London', established 2015, price_from 200 'per event', an Unsplash image, rating 4.8 from 14 reviews, verified true. src/lib/directory.ts correctly holds the listing's address and Est. 2007, with category inferred as Car Hire.",
+   "The WP media library also holds leftover Avada 'construction' demo images: 2015–2017 uploads (image*, about-*, services-*, team, construction logos) and 2022-01-02 re-imports (917.jpg, 369.jpg, 338.jpg and others, such as a suburban house at dusk). They are theme content, not the business's photos.",
+   "Event-type mapping: 'Weddings' is stated directly. 'Corporate Events' is inferred from the homepage ('whatever the occasion, personal, business or that special event') and the Media & Corporate Services page (keynote-speaker transfers, corporate services), not from the special-events page.",
+   "A personal mobile number and a personal Gmail address are published on the site and the listing. As instructed, neither was copied."
+  ]
+ }
+}

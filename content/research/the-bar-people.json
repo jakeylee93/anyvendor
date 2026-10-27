@@ -1,0 +1,415 @@
+{
+ "slug": "the-bar-people",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Image IMG_8143.jpg was described as a 'branded bar'. Viewing a 768px probe shows a plain checkerboard bar front; only the staff shirts carry the Bar People badge. Description corrected.",
+  "Image circular_led.jpg (LED bar in a purple marquee) was rated stockRisk 'own' without evidence. It is unattached in the WP media library (post: null) and appears on no live page, so its provenance cannot be confirmed. Replaced with batistebar.jpg, which is embedded on the live /corporate-events/ page. circular_led is recorded in gaps as 'unclear'.",
+  "eventTypesSourceUrl pointed to the homepage, which does not mention Private Parties or Anniversaries. Changed to /contact-us/, which carries the event-type footer menu plus 'milestone birthday, an anniversary', 'from festivals to private parties' and 'music fest, fair, or gala'. Product Launches is sourced from /corporate-events/ and noted in gaps.",
+  "The Dry Hire 100-guest package description says '10ft bar setup' while its 'what you'll get' list says '15FT Mobile Bar'. The record's gaps noted only the 20ft/30FT mismatch on the 250-guest package. Added.",
+  "Identity evidence missed a second third-party listing: AddToEvent 'the bar people' (London/Essex/Hertfordshire, 'over 10 years'). It does not link the site, so it is noted as probably the same business but unverified.",
+  "The site's WordPress install still serves Avada e-bike demo pages, including /reviews/ with fake e-bike testimonials ('Samantha Smith' etc.), /about-us/, demo blog posts, and a '+1 (800) 555 555' placeholder on /events/. The record did not warn about these. Added to gaps so no one uses them as reviews or contact details.",
+  "LinkedIn: the public URL https://www.linkedin.com/company/5394184/ returns 302 to a login page, so which company it belongs to cannot be verified beyond the site's own (admin) link. The wa.me link returned 400 to a plain curl. Both noted in gaps.",
+  "Minor: the site also shows a general enquiries address (hello@) that the record did not mention. It is left out of contact, which uses only Jake's authorised details, and noted in gaps."
+ ],
+ "record": {
+  "slug": "the-bar-people",
+  "displayName": "The Bar People",
+  "identity": {
+   "officialWebsite": "https://thebarpeople.co.uk/",
+   "confidence": "high",
+   "alternateNames": [
+    "The Bar People Limited"
+   ],
+   "evidence": "Every page footer reads '© Copyright 2014 – 2024 | The Bar People Limited | Company Number: 12161824'. Companies House 12161824 (fetched) is THE BAR PEOPLE LIMITED: active private limited company, incorporated 19 August 2019, SIC 56210 event catering activities. Its registered office, 'Leytonstone House, 3 Hanbury Drive, London, England, E11 1GA', matches the directory address. The trade matches: the site sells all-inclusive, dry hire and cash mobile bars, staff and event management. The footer's 2014 start and the homepage '10 Years Of' rotating banner (page modified May 2024) match the directory's 'established 2014'. The site links instagram.com/thebarpeople, and the owner (Jake) confirms the business. Namesakes ruled out: 'The Mobile Bar People' (AddToEvent, South East) and 'The Bar Guys UK' (Berkshire) are different businesses. Two third-party profiles are probably older listings for the same business but do not link the site, so they are unverified: AddToEvent 'the bar people' ('London/Essex/Hertfordshire based', 'over 10 years') and WeddingPlanner.co.uk 'The Bar People' (Essex)."
+  },
+  "about": [
+   {
+    "text": "The Bar People is a mobile bar company based in London that brings its bespoke mobile bars to events anywhere in the country.",
+    "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+   },
+   {
+    "text": "Its homepage lists five services: all-inclusive bars, dry hire, cash bars, staff hire and event management.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "text": "Its pop-up bars are modular and can be customised for indoor or outdoor use, in any size or colour. Listed sizes run from 5ft to a 40ft island.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "text": "For corporate events the company describes more than a decade of experience. It offers signature cocktails, branded bar setups and interactive cocktail stations, and handles everything from setup to cleanup.",
+    "sourceUrl": "https://thebarpeople.co.uk/corporate-events/"
+   },
+   {
+    "text": "For weddings it offers bar service for a few hours or the whole day, with custom cocktail menus, themed bar setups, mocktails and wine and beer stations.",
+    "sourceUrl": "https://thebarpeople.co.uk/weddings/"
+   },
+   {
+    "text": "Event management is presented as a team effort: Jake Lee covers corporate events and logistics, and Kim Knight covers private events and weddings.",
+    "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+   },
+   {
+    "text": "Its cash bars are described as licensed to serve alcohol at any venue and take both cash and card payments.",
+    "sourceUrl": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+   },
+   {
+    "text": "Non-alcoholic drinks and mocktails can be added to any package, and all-inclusive packages include setup and takedown.",
+    "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+   },
+   {
+    "text": "The company recommends booking at least three months ahead, particularly for peak dates, and says it also caters for last-minute events.",
+    "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+   },
+   {
+    "text": "Eco-friendly bar options are offered, such as biodegradable straws and locally sourced ingredients.",
+    "sourceUrl": "https://thebarpeople.co.uk/corporate-events/"
+   },
+   {
+    "text": "The homepage 'We've Supported' section shows logos of Salesforce, Sky, O2, ITV2, EE, Batiste, Boux Avenue, Bulb and Crisis.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "text": "The business is run by The Bar People Limited (company number 12161824). The website footer carries a 2014–2024 copyright.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "text": "The Bar People Limited is an active private limited company, incorporated on 19 August 2019 under SIC 56210 (event catering activities). Its registered office is Leytonstone House, 3 Hanbury Drive, London E11 1GA.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/12161824"
+   }
+  ],
+  "services": [
+   {
+    "name": "All Inclusive Hire",
+    "description": "One per-person price covers drinks, staff, bar, glassware, ice and setup, with unlimited drinks during the event. Published packages, verbatim: '50 Guests | 4 Hrs | All Inclusive £1495 /ex VAT' (2 x Bar People, beer, wine and spirits, 5FT Mobile Bar, fridge, ice, glassware); '100 Guests | 4 Hrs | All Inclusive £2995 /ex VAT' (4 x Bar People, 15FT Mobile Bar); '250 Guests | 5 Hrs | All Inclusive £6995 /ex VAT' (6 x Bar People, 30FT Mobile Bar, 2 x Fridge). The page notes that packages depend on availability, date, location and requirements.",
+    "sourceUrl": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+   },
+   {
+    "name": "Dry Hire",
+    "description": "The client supplies the drinks; The Bar People provides the bar, staff, glassware and ice. Published packages, verbatim: '50 Guests | 4 Hrs | Dry Hire £695 /ex VAT' (2 x Bar People (4hrs), 5FT Mobile Bar, fridge, ice, glassware); '100 Guests | 4 Hrs | Dry Hire £1395 /ex VAT' (4 x Bar People (4hrs), 15FT Mobile Bar); '250 Guests | 5 Hrs | All Inclusive £2395 /ex VAT' (labelled that way on the dry hire page; 6 x Bar People (5hrs), 30FT Mobile Bar, 2 x Fridge). Indoor and outdoor events are both covered.",
+    "sourceUrl": "https://thebarpeople.co.uk/services/dry-hire/"
+   },
+   {
+    "name": "Cash Bar Hire",
+    "description": "Guests pay for their own drinks. The company handles licensing, staff, equipment and a customisable menu, takes cash and card, and offers optional pre-purchased drink tickets or vouchers. A setup fee is charged and a minimum sales requirement usually applies. Published packages, verbatim: '50 Guests | Unlimited hrs | Cash Bar £495 /ex VAT' (2 x Bar People, 5FT Mobile Bar); '100 Guests | Unlimited hrs | Cash Bar £895 /ex VAT' (4 x Bar People, 15FT Mobile Bar); '250 Guests | Unlimited hrs | Cash Bar £1495 /ex VAT' (6 x Bar People, 30FT Mobile Bar).",
+    "sourceUrl": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+   },
+   {
+    "name": "Pop-Up Bars (modular)",
+    "description": "'Fully Customisable' modular bar setups for indoor or outdoor use, in any size or colour. Listed sizes: 5FT, 10FT, 15FT, 35FT, 40FT Island. Price shown verbatim: 'From £295'.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "name": "Event Management",
+    "description": "Full event planning from start to finish: venue selection and coordination, vendor management (catering and entertainment), timeline management and on-site coordination on the day. Costs are itemised in proposals.",
+    "sourceUrl": "https://thebarpeople.co.uk/event-management/"
+   },
+   {
+    "name": "Corporate & Branded Bars",
+    "description": "Customised bar services for corporate events, from product launches to gala dinners. Includes signature cocktails, branded bar setups and merchandise, interactive cocktail stations, professional mixologists and mobile bar units that fit any venue.",
+    "sourceUrl": "https://thebarpeople.co.uk/corporate-events/"
+   },
+   {
+    "name": "Festival Bars",
+    "description": "Large-scale festival service ranging from extensive cash bars to all-inclusive packages with custom cocktails, professional bar setups and expert staff. Suited to music festivals, fairs and galas.",
+    "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+   },
+   {
+    "name": "Glass Hire",
+    "description": "Polished, wrapped glasses are delivered to the venue and collected afterwards, and can be returned dirty. Published per-glass prices, verbatim: 12oz £0.60, Margarita £0.80, Flute £0.60, Wine £0.60, Gin Bowl £0.80, Martini £0.75, Shot £0.50, 1/2 Pint £0.50, Pint £0.50, Whisky £0.65.",
+    "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+   },
+   {
+    "name": "Staff Hire",
+    "description": "Staff hire is listed as a core service in the homepage menu and service tiles. The staff-hire pages (/staff-hire/ and /services/staff-hire/) currently have no descriptive content.",
+    "sourceUrl": "https://thebarpeople.co.uk/"
+   },
+   {
+    "name": "Wedding Bars",
+    "description": "Bespoke wedding bar service for a few hours or the full day. Includes customisable and themed bars, branded setups, custom cocktail menus, mocktails, wine and beer stations, and setup through clean-up.",
+    "sourceUrl": "https://thebarpeople.co.uk/weddings/"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/Bar-People-Logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "black disc with a white outer ring and white hand-lettered 'the BAR PEOPLE' wordmark",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "notes": "Best candidate. Used as the site og:image (declared 1000x1000) and as the shortcut icon. Re-verified: HTTP 200, image/png, 381,394 bytes, PNG colour type 6 (RGBA). The pixel check and a visual check confirm a transparent area outside the circle and solid white lettering, so it works on any background. Hint-verified authentic. Resized copies exist at -800x800, -600x600, -400x400 and -200x200."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2023/09/logo_header_tbp.png",
+    "format": "png",
+    "width": 1479,
+    "height": 263,
+    "background": "transparent",
+    "colours": "black only. The ring and disc are black and the lettering is knocked out (transparent), so it shows the background colour",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "notes": "Site header logo (img alt 'The Bar People'). Re-verified: HTTP 200, image/png, 45,440 bytes, 1479x263 RGBA. The opaque badge occupies only bbox (11,11)-(252,252); the rest of the canvas is transparent padding, so crop to about 263x263. Because the letters are transparent knockouts, it needs a light background. No genuine SVG brand logo exists: the only inline <svg> is the Font Awesome Instagram icon; /logo.svg and /apple-touch-icon.png return 404; uploads footer-logo.svg and ebike-logo-large.svg are Avada e-bike demo bicycle marks; footer-bg.svg is a decorative pattern; margarita-1.svg is the 'Ask Marg' chatbot mascot."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/cocktail_bar_home2.jpeg",
+    "width": 2200,
+    "height": 1294,
+    "description": "Bartender in a white shirt embroidered with the Bar People badge, wearing braces, pours a cocktail at a sequin-fronted mobile bar with copper pineapple cups and martini glasses, outdoors in a garden in front of a Tudor-style building",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media/3305",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg",
+    "width": 3024,
+    "height": 4032,
+    "description": "Two staff in Bar People-badged shirts holding champagne behind a checkerboard-fronted bar lined with flutes, in a large glass-roofed exhibition hall (CEW signage visible). Original iPhone upload (a -scaled 1920x2560 copy also exists)",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media/3409",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/SIP_SIP.jpg",
+    "width": 2560,
+    "height": 884,
+    "description": "Green flower-wall bar with a 'Sip Sip Hooray!' neon, balloon garland, copper mugs and shakers. Used as a homepage section background",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/slide_home_bar.jpg",
+    "width": 2560,
+    "height": 913,
+    "description": "Wide banner of two staff behind a bar at an exhibition hall, with The Bar People badge on the pink backdrop. Darkened overlay is baked into the file",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media/3713",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg",
+    "width": 2305,
+    "height": 1537,
+    "description": "Close-up of a white bar laid with champagne flutes, a cut-crystal mixing glass, bar spoon and copper mug against floor-to-ceiling windows at night",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media/3986",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg",
+    "width": 1200,
+    "height": 1500,
+    "description": "Overhead view of a yellow EE and Salesforce branded corporate bar under chandeliers, an example of the branded bar service",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media/3415",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg",
+    "width": 1000,
+    "height": 1000,
+    "description": "Bartender pouring champagne into rows of flutes in front of the CEW (UK) Consumer Choice Awards 2024 backdrop",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/customporsche.jpg",
+    "width": 1000,
+    "height": 1000,
+    "description": "Two staff behind a custom bar wrapped in colourful Porsche artwork in a showroom",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/lovemirror.jpg",
+    "width": 1000,
+    "height": 1000,
+    "description": "Giant white 'LOVE' letter bar set up outdoors in front of a graffiti shipping-container venue",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/batistebar.jpg",
+    "width": 800,
+    "height": 600,
+    "description": "Batiste-branded corporate bar with pink, teal and yellow product panels and a balloon arch at an indoor brand event",
+    "sourcePage": "https://thebarpeople.co.uk/corporate-events/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/weddingbarimg.jpg",
+    "width": 800,
+    "height": 600,
+    "description": "Bride and groom kissing in front of a rustic mobile bar in a timber barn venue",
+    "sourcePage": "https://thebarpeople.co.uk/weddings/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/gallery_Alex.jpg",
+    "width": 1024,
+    "height": 769,
+    "description": "Bartender in a white shirt presenting a pineapple cocktail at an outdoor bar with copper mugs",
+    "sourcePage": "https://thebarpeople.co.uk/event-management/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/C6846F6D-BE19-4CAE-87F5-28C600074CEE.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 14095623,
+    "description": "Homepage hero background reel (autoplay, muted, loop). 1920x1080, about 28 s. The 1 KB range probe shows ftyp followed by moov (faststart). Recommended hero showreel.",
+    "sourcePage": "https://thebarpeople.co.uk/",
+    "ownContentEvidence": "Embedded as the <video><source> background on the business's own homepage (re-verified), with an Apple UUID filename (own phone export). Jake (owner) verified it as own footage."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 9446667,
+    "description": "All Inclusive Hire page background video. 1920x818 (cinematic crop), about 20 s. moov at front.",
+    "sourcePage": "https://thebarpeople.co.uk/services/all-inclusive-hire/",
+    "ownContentEvidence": "Embedded as a <video> source on the business's own service page (re-verified) and attached to that page (id 1268) in its WordPress media library. Apple UUID filename. Frames not viewed (no download)."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 8045836,
+    "description": "Dry Hire page background video. 1920x818, about 13 s. moov at front.",
+    "sourcePage": "https://thebarpeople.co.uk/services/dry-hire/",
+    "ownContentEvidence": "Embedded on the business's own Dry Hire page (re-verified) and attached to it (id 3531) in its WordPress media library. Apple UUID filename. Frames not viewed."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 9033015,
+    "description": "Event Management page background video. 1920x818, about 20 s. moov at front.",
+    "sourcePage": "https://thebarpeople.co.uk/event-management/",
+    "ownContentEvidence": "Embedded on the business's own Event Management page (re-verified) and attached to it (id 4499) in its WordPress media library. Apple UUID filename. Frames not viewed."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 4457680,
+    "description": "Cash Bar Hire page background video. 1920x818, about 12 s. moov at front.",
+    "sourcePage": "https://thebarpeople.co.uk/services/cash-bar-hire/",
+    "ownContentEvidence": "Embedded on the business's own Cash Bar Hire page (re-verified) and attached to it (id 3535) in its WordPress media library. Apple UUID filename. Frames not viewed."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/D0CF2346-CADB-442D-BF3A-E40B621F031F.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 5759762,
+    "description": "Media-library clip attached to the Home page (id 4536) but not placed on any live page. 1920x818, about 12 s. An identical duplicate is at …/2024/05/D0CF2346-CADB-442D-BF3A-E40B621F031F-1.mp4 (200, video/mp4, 5,759,762 bytes).",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "Uploaded to the business's own WordPress media library (parent: Home page), with the same Apple UUID naming and 1920x818 crop as the embedded service-page reels. Frames not viewed."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/263904B1-F7A9-4A7D-9592-CBC0BC424317.mov",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 14515191,
+    "description": "QuickTime clip in the media library, attached to the Home page but not placed on a live page. 1920x818, about 11 s. Browser playback of .mov is less reliable than MP4.",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "Uploaded to the business's own WordPress media library (parent: Home page), with Apple UUID naming and the same crop as the embedded reels. Frames not viewed."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/18944927-DE5A-4240-921D-72A0868782B3-1.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 12312603,
+    "description": "Media-library clip, 1920x1080, about 28 s, uploaded 18 minutes before the homepage reel on 28 Apr 2024. Possibly an earlier export of it. Not placed on a live page.",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "Own-site upload with Apple UUID naming, attached to the same page (id 3690, an Avada template page titled 'E-Bike Home') as the verified homepage reel. Frames not viewed, so ownership is inferred."
+   },
+   {
+    "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/F521A64B-7A18-4895-8CD3-F837DA293F14.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 7269343,
+    "description": "Media-library clip, 1920x1080, about 20 s. Not placed on a live page.",
+    "sourcePage": "https://thebarpeople.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "Own-site upload with Apple UUID naming, attached to the same template page (id 3690) as the verified homepage reel. Frames not viewed, so ownership is inferred."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/thebarpeople/",
+   "facebook": "https://www.facebook.com/thebarpeople",
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://www.linkedin.com/company/5394184/",
+    "https://wa.me/message/GAHJS6QVNJWQK1"
+   ]
+  },
+  "instagramAccess": "Verifier repeated one plain GET to https://www.instagram.com/thebarpeople/ with a desktop UA and no cookies. It returned HTTP 200 with no redirect (504,822 bytes). The page was the generic Instagram JS app shell: <title>Instagram</title>, no og:title/og:description/og:image profile meta, and 'login' strings throughout. No profile name, bio, posts or media were readable without logging in. Not retried. The site's own Instagram widget (homepage, and the Gallery page /4878-2/) renders no items server-side.",
+  "tagline": "You bring the guests, we’ll bring the rest!",
+  "industry": "drink-services",
+  "categories": [
+   "Mobile Bars",
+   "Mixologists"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Weddings",
+   "Birthday Parties",
+   "Garden Parties",
+   "Engagement Parties",
+   "Festivals",
+   "Seasonal Events",
+   "Charity Galas",
+   "Private Parties",
+   "Anniversaries",
+   "Product Launches"
+  ],
+  "eventTypesSourceUrl": "https://thebarpeople.co.uk/contact-us/",
+  "areasServed": [
+   "London",
+   "Nationwide (UK)"
+  ],
+  "areasSourceUrl": "https://thebarpeople.co.uk/contact-us/",
+  "contact": {
+   "email": "jake@thebarpeople.co.uk",
+   "phone": "+447557402200",
+   "bookingUrl": "https://thebarpeople.17hats.com/p#/lcf/dnbgsbhvhntfxrvknrgwrkrdgpnnbfcd"
+  },
+  "gaps": [
+   "The directory price '£195 per head' does not appear anywhere on the official site. The site publishes package prices ex VAT and 'From £295' for pop-up bars instead, so the £195 figure should not be published as verified.",
+   "The street address is not on the website, which only says 'Based in the Heart of London, Serving Events Nationwide'. Leytonstone House, 3 Hanbury Drive, London E11 1GA is verified only as the Companies House registered office.",
+   "Founding year: the site implies 2014 (footer copyright 2014–2024 and a '10 Years Of' banner in 2024). The company was incorporated in 2019. Two third-party listings are not linked from the site and were not reconciled: a WeddingPlanner.co.uk profile says the business was 'born' in 2013 in Essex, and an AddToEvent 'the bar people' listing says 'London/Essex/Hertfordshire based' and 'over 10 years'.",
+   "No reviews, testimonials, awards or ratings were verified, so none are included. Warning: the site's /reviews/ page contains Avada e-bike demo testimonials ('Samantha Smith', 'Mark Strong', 'Lisa Monroe'), and /about-us/, the e-bike blog posts and the '+1 (800) 555 555' placeholder on /events/ are also theme demo content. None of it may be used as business facts.",
+   "No genuine vector (SVG) logo was found. The best available is Bar-People-Logo.png at 1000x1000 with transparency.",
+   "The 'Ask Marg' chatbot mascot (marg2.png 1024x1024, and margarita-1.svg) is a mascot, not the brand logo, and was excluded from logos.",
+   "Video contents were not visually verified because no files were downloaded beyond 1 KB range probes. Four media-library videos (D0CF2346, 263904B1.mov, 18944927, F521A64B) are not placed on live pages. Two of them sit on an Avada template page titled 'E-Bike Home', so their ownership is inferred from Apple-UUID naming and upload timing.",
+   "Excluded: halloween-party-promo-hero.mp4/.webm and halloween-party-promo-cta.mp4 in the media library. These are Avada theme demo assets, not this business's footage.",
+   "The media library also holds Avada demo stock images and logos (e.g. 2024/04/490-492.jpg, staff-01..06.jpg, studio-post-card.jpg, logo-avada-business-*.png, footer-logo.svg / ebike-logo-large.svg and the 2022–2023 hero/blog/team images). All were excluded.",
+   "circular_led.jpg (2024/02, 1024x769, an LED bar in a purple marquee) is unattached in the media library and appears on no live page. Its provenance is unclear, so it was replaced in images by batistebar.jpg from the live Corporate Events page.",
+   "The Gallery page (/4878-2/) is only an Instagram feed that renders no items, so no gallery photos are available from it. Many more own event photos (800x600) sit in the 2024/05 media library (e.g. salesforcebar, praxisbar, hewlettpackard, capsulecommsbar, weddingchigwell) if more images are needed.",
+   "Event photos are moderate resolution: most are 800x600 or 1000x1000. The 1600x600 banners (corporate_hero, alexbanner, weddingbars) have a darkened overlay baked into the file. Higher-resolution originals are listed in the images.",
+   "Several event-type pages (Engagement, Festivals, Retirement, Networking, Christmas, Charity) repeat the Corporate Events placeholder text. Birthday and Garden Party pages have their own text. Event types are taken from the site menu plus the Contact Us text ('milestone birthday, an anniversary', 'from festivals to private parties'); Product Launches comes from https://thebarpeople.co.uk/corporate-events/.",
+   "The Dry Hire page labels its 250-guest package 'All Inclusive', and its description says 20ft while the list says 30FT. Its 100-guest description says '10ft bar setup' while the list says '15FT Mobile Bar'. These are quoted from the list, not corrected. Both Staff Hire pages are empty.",
+   "The site footer's Facebook link has no https:// scheme. A plain request to facebook.com/thebarpeople returned HTTP 400, so the page is unverified beyond the site's own link. The site's LinkedIn link points to an admin URL. The public URL https://www.linkedin.com/company/5394184/ redirects (302) to a login page, so the company name behind it is unverified. The wa.me link returned 400 to a plain non-browser request.",
+   "No YouTube, Vimeo or TikTok channel is linked from the site, and web searches found none.",
+   "The site also lists a general enquiries email (hello@) and a second manager's direct phone and email (Kim Knight). These were deliberately omitted; only Jake's authorised contact details are used."
+  ]
+ }
+}

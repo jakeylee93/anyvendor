@@ -1,0 +1,670 @@
+{
+ "slug": "natalie-max",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "The identity evidence misdescribed Bridebook. The live listing (bridebook.com/.../new-pixels-photo-film-by-natalie-ware-hertfordshire-csW8e3Jy5g) is now titled 'Natalie & Max Photo and Films', says 'Based in Ware, Hertfordshire', links to natalieandmax.co.uk, lists 2006 as the year established and prices from £2,500 to £5,500. 'New Pixels Photo & Film By Natalie' survives only in the URL slug and an old dev-proxy copy. This strengthens the identity match. (A direct curl got a Cloudflare 403 challenge, which I did not bypass; WebFetch read the page.)",
+  "The alternate name 'New Pixels Photography' could not be verified anywhere, so I removed it. The former name the business itself uses is 'New Pixels Photo + Film': it appears in their own image titles (e.g. 'Chateau la Durantie Wedding Photography & Video - New Pixels Photo + Film-878') and in the @newpixelsphotofilm handles still linked from older pages.",
+  "The gap saying the Bridebook listing mentions the Essex Wedding Awards and National Wedding Awards is wrong for the live page, whose 'Press & Awards' section is empty. Only the old dev-proxy copy in search snippets mentions those awards.",
+  "Image description errors: in the Chateau Lacanaud group shot the bridesmaids wear dusty-blue sequin dresses, not silver. The Lady of the Rock dip-kiss is in bright daylight, not golden hour.",
+  "Image file-size note: in 6 of the 10 hero slides, the 5443x2551 'original' is a smaller file than its 2560x1200 -scaled copy (e.g. Chateau Lacanaud photo-and-video: 543 KB original vs 601 KB scaled). The 'originals' are probably upscaled or heavily recompressed. The site itself serves -scaled.",
+  "Facts the record missed: (a) the business says it shoots fashion and editorial work and is 'official photographers & videographers' for dress designers Ivory & Co and Dress Me Pretty (algarve-editorial-photography page); (b) the T&Cs charge £1 per mile beyond the 30-mile radius from Ware and require a non-refundable 30% deposit; (c) 'The Signature' album is a digital album with a 10-inch screen that plays the wedding video. The homepage og:description directly says 'husband and wife ... team from Hertfordshire'.",
+  "Sourcing caveat: the 'Natalie on photos, Max on film / natural, warm style' text exists only as homepage image alt text, which still contains the placeholder '[X] weddings'. It is kept but flagged.",
+  "The /COLLections/ price page is missing from the sitemap and has no canonical tag; it reads like a booking-proposal page sent with enquiry emails. Its £2,300/£2,200 starting prices are confirmed by the public /investment/ page.",
+  "Everything else I checked was confirmed. Logos (1500x593 RGBA PNG; 512x512 monogram from a 48x48 original): HEAD 200 image/png, no SVG anywhere (logo.svg and .svg variants 404; inline SVGs are only Font Awesome icons). The 4 MP4s: 200 video/mp4, ftyp isom, sizes as recorded. All 32 YouTube embeds: oEmbed author 'Natalie & Max Photo and Films' (@nataliemaxphotoandfilms9990). XPv_9UOZVB0 returns 404 and 4sBf9N0FhR4 returns 403. A crawl of all 100 sitemap pages on both sites found no further YouTube, Vimeo or MP4 footage.",
+  "Identity rechecked: postcodes.io puts SG12 0BH in the Ware St Mary's ward (East Hertfordshire), matching 'Ware, Hertfordshire' on the contact page and T&Cs. No namesake music duo called 'Natalie and Max' was found (the nearest is 'Natalie and Mac', an unrelated act)."
+ ],
+ "record": {
+  "slug": "natalie-max",
+  "displayName": "Natalie & Max Photo and Films",
+  "tagline": "Wedding photography and videography in Hertfordshire and beyond.",
+  "industry": "photography-video",
+  "categories": [
+   "Photographer",
+   "Videographer",
+   "Drones"
+  ],
+  "identity": {
+   "officialWebsite": "https://www.natalieandmax.co.uk/",
+   "confidence": "high",
+   "alternateNames": [
+    "NATALIE & MAX",
+    "N&M Photo and Films",
+    "Natalie & Max Photo & Films",
+    "New Pixels Photo + Film (former trading name; @newpixelsphotofilm)",
+    "New Pixels Photo & Film By Natalie (former Bridebook listing name, still in its URL)"
+   ],
+   "evidence": "The name matches. The site's og:site_name is 'NATALIE & MAX', its title is 'Hertfordshire Wedding Photography - N&M Photo and Films', and its T&Cs define the photographer/videographer as 'Natalie & Max Photo & Films [Ware, Hertfordshire/ Surfal, Portugal]'. The town matches. The contact page says 'VISIT US Ware, Hertfordshire, England', and the directory postcode SG12 0BH is in the Ware St Mary's ward of East Hertfordshire (postcodes.io). The trade fits the directory image name 'natandmaxphoto.jpg': the homepage og:description says 'a husband and wife wedding photography & videography team from Hertfordshire'. The live Bridebook listing is titled 'Natalie & Max Photo and Films', says 'Based in Ware, Hertfordshire', links to natalieandmax.co.uk and has reviews crediting 'Max at New Pixels'. The former brand domain newpixels.co.uk 301-redirects to natalieandmax.co.uk. Their own media titles use the former name 'New Pixels Photo + Film'. The sister site natalieandmaxphotofilms.com, which covers their Algarve work, uses the same logo, socials and media library. Namesakes ruled out: natalieandmax.com is an unrelated US couple's wedding site, and no music duo called 'Natalie and Max' was found. The founding year does not match: the directory says 2016, the About page says 2012, the Algarve site says 2015 for the Algarve, and Bridebook says 2006."
+  },
+  "about": [
+   {
+    "text": "Natalie & Max describe themselves as a husband-and-wife wedding photography and videography team from Hertfordshire.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/"
+   },
+   {
+    "text": "They are based in Ware, Hertfordshire, England.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/contact/"
+   },
+   {
+    "text": "They say they have photographed and filmed weddings throughout the UK and around the world for over 15 years.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/"
+   },
+   {
+    "text": "Natalie and Max met at university, where they studied Photography & Design. They say they started photographing weddings together, and set up their company Natalie & Max Photo and Films, in 2012.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/about/"
+   },
+   {
+    "text": "After graduating they moved to the Algarve to live and work, and from then on photographed both UK and destination weddings.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/about/"
+   },
+   {
+    "text": "They describe themselves as a British duo who spend half the year in the UK and the rest in the Algarve. They say they started photographing weddings in the Algarve in 2015 and married there in 2022.",
+    "sourceUrl": "https://www.natalieandmaxphotofilms.com/"
+   },
+   {
+    "text": "The homepage image description says they work every wedding together, with Natalie on photos and Max on film, in a natural, warm style with gentle direction.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/"
+   },
+   {
+    "text": "They aim to blend in like 'one of the guests' and describe what they do as 'Two guests with great cameras'.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "text": "They say they take a maximum of 35 bespoke weddings a year, including destination weddings, and that couples usually book 12-18 months ahead.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "text": "Coverage runs from prep to party. They usually arrive at bridal prep about 2 hours before the couple leaves for the ceremony and stay about 30 minutes after the first dance.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "text": "Photos are delivered within 4-6 weeks and films within 6-8 weeks, both through a private online gallery.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "text": "Their terms name the business 'Natalie & Max Photo & Films', with locations in Ware, Hertfordshire and Surfal, Portugal. A non-refundable 30% deposit secures the date, and travel beyond a 30-mile radius of Ware is charged at £1 per mile.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
+   }
+  ],
+  "services": [
+   {
+    "name": "N&M Signature Collection (photo + film)",
+    "description": "Price: '£ 4000'. Full-day photography and videography with one photographer and one videographer. Includes a 5-10 minute highlight video, professional audio recording, an online gallery with free downloads, 10 complimentary printed and mounted photographs, a one-to-one consultation, a customised wedding-day timeline, and travel within a 30-mile radius. Delivery in 6-8 weeks.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "name": "Signature Collection Plus (photo + film + drone)",
+    "description": "Price: '£ 5000'. Everything in the Signature Collection, plus a feature film of up to 90 minutes ('movie style wedding video') and drone coverage. Includes 10 complimentary printed and mounted photographs. Delivery in 6-8 weeks.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "name": "Photo Collection (photography only)",
+    "description": "Price: '£ 2300'. Full-day coverage 'From Prep - Party' with one photographer. Includes a customised timeline, edited photographs, 5 complimentary printed and mounted photographs, an online gallery with free downloads, a one-to-one consultation, and travel within a 30-mile radius. Delivery in 4-6 weeks. The investment page confirms: 'Collections start from £2,300 for full day photography'.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "name": "Films Collection (videography only)",
+    "description": "Price: '£ 2200'. Full-day coverage 'From Prep - Party' with one videographer. Includes a professional 5-10 minute highlight video, professional audio recording, online access to share the video, a one-to-one consultation, and travel within a 30-mile radius. Delivery in 6-8 weeks. The investment page confirms: '£2,200 for full day videography'.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "name": "Collection extras",
+    "description": "Published add-ons: 'Additional Photographer £500', 'Photo Album £550', 'Engagement or Trash Shoot £400', 'Drone Footage £500', 'Engagement or Trash Session Film £400', 'Up to 90 minute Feature Film (Includes Ceremony , Speeches & First Dance) £700', 'Full Length Ceremony £300', 'Full Length Speeches £300', 'Full Length First Dance £300'.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/COLLections/"
+   },
+   {
+    "name": "Bespoke collections",
+    "description": "Photo and video can be booked together or separately. Signature Collections combine both at a discount, and they will create a bespoke collection for a particular wedding.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/investment/"
+   },
+   {
+    "name": "Wedding albums",
+    "description": "Four album styles: 'The Signature', 'The Frame', 'The Flush' and 'The Mounted'. The Frame is designed to fit inside a photo frame for display. The Flush comes in six sizes and materials including leather, cotton, linen and vegan leather. The Mounted uses ivory mounts and suits 100-200 photos. The Signature is a digital album with a 10-inch screen that plays the wedding video alongside the photos. The album page gives no prices; the extras list prices a photo album at £550.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/albums/"
+   },
+   {
+    "name": "Destination weddings",
+    "description": "They photograph and film destination weddings, listing the Algarve, the South of France, the Greek Islands, Italy, Sicily, Spain, Thailand and America.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/portfolio/"
+   },
+   {
+    "name": "Editorial and fashion shoots",
+    "description": "They show editorial and fashion shoots and say they are 'the official photographers & videographers for major wedding dress designers such as Ivory & Co and Dress Me Pretty'. Their collections page also mentions 'capturing fashion shoots, editorials and destination weddings'.",
+    "sourceUrl": "https://www.natalieandmax.co.uk/algarve-editorial-photography/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings"
+  ],
+  "eventTypesSourceUrl": "https://www.natalieandmax.co.uk/",
+  "areasServed": [
+   "Hertfordshire",
+   "Essex",
+   "UK-wide",
+   "Algarve (Portugal)",
+   "South of France",
+   "Greek Islands",
+   "Italy",
+   "Sicily",
+   "Spain",
+   "Thailand",
+   "America"
+  ],
+  "areasSourceUrl": "https://www.natalieandmax.co.uk/portfolio/",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://www.natalieandmax.co.uk/contact/"
+  },
+  "logos": [
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/Natalie-and-Max-Photo-and-Films-logo.png",
+    "format": "png",
+    "width": 1500,
+    "height": 593,
+    "background": "transparent",
+    "colours": "Warm taupe/greige serif capitals 'NATALIE & MAX' above a grey italic 'photo & films'",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "notes": "The genuine main wordmark, used as the header logo (img.btMainLogo, alt 'NATALIE & MAX') on both natalieandmax.co.uk and natalieandmaxphotofilms.com. Re-verified: HEAD 200 image/png, 31,279 bytes, PNG IHDR 1500x593, RGBA (colour type 6), corner pixel fully transparent. WordPress copies exist at 1280x506, 768x304, 640x253 and 320x127. No SVG version exists: logo.svg and .svg variants of the filename return 404, the media library has no SVG uploads, and the page's inline SVGs are only Font Awesome icons in the Instagram feed. It needs a light background, because the taupe text would be lost on dark."
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/cropped-Natalie-and-Max-Favicon-Logo-.png",
+    "format": "png",
+    "width": 512,
+    "height": 512,
+    "background": "transparent",
+    "colours": "Taupe serif 'N' and 'M' with a pale grey script ampersand interlaced",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "notes": "The N&M monogram site icon (favicon 32/192, apple-touch-icon 180, msapplication tile 270). Re-verified: 200 image/png, 512x512 RGBA. It is upscaled from a 48x48 original (2022/02/Natalie-and-Max-Favicon-Logo-.png, verified 48x48), so it is visibly pixelated; use only as a small avatar. The 2020/10 logo_*.png and footer_logo*.png uploads are leftover theme demo files, and client-logo-*.png are partner/magazine marks; none of them is this brand."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Chateau Lacanaud, France: a laughing bride with five bridesmaids in dusty-blue sequin dresses holding pink and white bouquets. A homepage hero slide. The site serves a 2560x1200 -scaled.jpg copy, which is a larger file (601 KB vs 543 KB).",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Lady of the Rock (Senhora da Rocha), Algarve: the groom dips the bride for a kiss beside the white-walled chapel in bright daylight. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/algarve-wedding-photography-and-video.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Algarve beach: the bride and groom, seen from behind, walk arm in arm along the sand between golden rock formations. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Monte Das Oliveiras, Algarve: the bride with bridesmaids in blush satin dresses and crystal headbands under palm trees. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Royal Berkshire Hotel: the groom nuzzles the bride from behind in a lush garden; she holds a white and green bouquet. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Braxted Park, Essex: the groom in a navy velvet tuxedo walks and laughs with his groomsmen in black tie. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Volty-Manor.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Vaulty Manor, Essex: the bride and groom walk hand in hand down a tree-lined gravel drive. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Northbrook Park, Hampshire: the couple walks in front of the orangery's arched glass doors and clipped topiary. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-wedding-photography.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Northbrook Park detail: the seated couple's joined hands, with pillar candles and a brick fireplace behind. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud.jpg",
+    "width": 5443,
+    "height": 2551,
+    "description": "Chateau Lacanaud, France: close-up of a pink-rose and white bouquet against dusty-blue sequin bridesmaid dresses. A homepage hero slide; -scaled.jpg is 2560x1200.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2023/06/Ibiza-Wedding-Photography-by-Natalie-and-Max-Photo-and-Films-Portfolio.jpg",
+    "width": 2308,
+    "height": 1800,
+    "description": "Ibiza wedding (Iberostar & Nikki Beach): a two-photo layout of the couple kissing at the Nikki Beach bar and a portrait of them facing each other. Portfolio tile.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2025/06/Natalie-and-Max-Photo-and-Films-Essex-and-Hertfordshire-Wedding-Photographer-DUO-Fun-Friendly.jpg",
+    "width": 990,
+    "height": 800,
+    "description": "Team portrait of Natalie and Max smiling under blossom, Max holding a gimbal-mounted video camera and Natalie a stills camera. Shown on the homepage. It is their own branding image, probably taken by someone else. A similar 990x1300 portrait (verified 200 image/jpeg) is at 2024/02/Algrave-Wedding-Photographers-Natalie-Max-Couple.jpg on the About page.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Filming-at-the-Beach.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 4373367,
+    "description": "'Natalie & Max Photo and Filming at the Beach'. An 11-second, 1920x600 widescreen clip (from the WordPress media metadata), well suited to a hero loop. Uploaded 2022-03-16. Re-verified: HEAD 200 video/mp4, accept-ranges bytes, and a byte-range probe returned ftyp isom. Also in the sister site's media library.",
+    "sourcePage": "https://www.natalieandmax.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "In the business's own WordPress media library on both of its domains and titled with the business name. Not embedded in any current page (none of the 100 sitemap pages references an .mp4)."
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-at-the-Pinecliffs.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 4521231,
+    "description": "'Natalie & Max Photo and Films at the Pinecliffs' (Algarve). A 12-second, 1920x600 clip. Re-verified: HEAD 200 video/mp4 and the range probe returned ftyp isom.",
+    "sourcePage": "https://www.natalieandmax.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "In the business's own WordPress media library and titled with the business name."
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 3349910,
+    "description": "'Natalie & Max Photo and Films Confetti Throw'. A 9-second, 1920x900 clip. Re-verified: HEAD 200 video/mp4 and the range probe returned ftyp isom.",
+    "sourcePage": "https://www.natalieandmax.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "In the business's own WordPress media library and titled with the business name."
+   },
+   {
+    "url": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Loule.mp4",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 2906236,
+    "description": "'Natalie & Max Photo and Films Loule' (Loulé, Algarve). A 10-second, 1920x900 clip. Re-verified: HEAD 200 video/mp4 and the range probe returned ftyp isom.",
+    "sourcePage": "https://www.natalieandmax.co.uk/wp-json/wp/v2/media?media_type=video",
+    "ownContentEvidence": "In the business's own WordPress media library and titled with the business name."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=5xM-OgimI50",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Natalie and Max Photo and Films - Behind the scenes photographing and filming weddings worldwide'. The best showreel-style candidate.",
+    "sourcePage": "https://www.natalieandmax.co.uk/about/",
+    "ownContentEvidence": "Embedded as 'Behind the Scenes' on the About pages of both sites. The oEmbed author is 'Natalie & Max Photo and Films' (@nataliemaxphotoandfilms9990)."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=1-M-jakDeb4",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Monte Das Oliveiras & Lady Of The Rock by Natalie & Max Photo and Films- A+D'. The first item in the featured films section.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded under 'FEATURED Films' on the portfolio page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=OL1HFQH1f08",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Chateau la Durantie, South of France by Natalie & Max Photo and Films- M + J'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded on the portfolio page and many venue pages on both sites. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=m1gUoWx1A9s",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Ktima Lindos Wedding, Rhodes by Natalie & Max Photo and Films - K+ N'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded on the portfolio and ktima-lindos-wedding pages. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=_s5nzsat5Xw",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Teaser Video at Monte Das Oliveiras, Albufeira by Natalie & Max Photo and Films: C+S'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded on the portfolio page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=jOIP76bMYpI",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Vidamar, Algarve by Natalie & Max Photo and Films- J+R'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded on the portfolio and pestana-viking-vidamar pages. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=XOHTOwGnxFQ",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Monte Das Oliveiras, Algarve by Natalie & Max Photo and Films: S+D Teaser Video'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/portfolio/",
+    "ownContentEvidence": "Embedded on the portfolio page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=T2lPgK_2rlA",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Amy & Nick's Wedding at Fanhams Hall by Natalie & Max Photo and Films' (Fanhams Hall is in Ware).",
+    "sourcePage": "https://www.natalieandmax.co.uk/fanhams-hall-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=D5yT-iE-QFM",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Baddow Park House Wedding Film | Jess & Dec's Fun Essex Wedding by Natalie & Max Photo and Films'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/baddow-park-house-wedding-photographers/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=iR_M__K-urY",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Baddow Park House, Essex by Natalie & Max Photo and Films: N+A'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/baddow-park-house-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=w0ltoglyc1c",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jack and Erica's Wedding at Chippenham Park by Natalie & Max photo and Films'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/chippenham-park-wedding-photography/",
+    "ownContentEvidence": "Embedded on their Chippenham Park, Gosfield Hall and South Farm pages. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=lWsvuswwsS0",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'A Domaine d'Essendiéras Wedding - Leanne & Conor'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/domaine-dessendieras-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=1kKgI97g7F8",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Torre San Marco in Lake Garda - Georgie & Alex's Wedding'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/torre-san-marco-lake-garda-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=sUPvNGf4rPc",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'A Parkland Quendon Hall Wedding by Natalie and Max Photo and Films- Hollie & Alex'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/parklands-quendon-hall-wedding-photographer/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=J2Iyp0ywMwA",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Parkland Quendon Hall, Essex by Natalie & Max Photo and Films: J+J'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/parklands-quendon-hall-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=X-0Q7wLPtow",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Down Hall Wedding by Natalie and Max Photo and Film - S+A Chinese and British fusion wedding.'",
+    "sourcePage": "https://www.natalieandmax.co.uk/down-hall-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=RwO7gLjI1Mg",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Maiden's Barn by Natalie & Ma Photo and Films: L+J' (typo in the original title).",
+    "sourcePage": "https://www.natalieandmax.co.uk/maidens-barn/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=2RGbPSxAAI0",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Senhora da Rocha & Monte Das Oliveiras by Natalie & Max Photo and Films- N + M'. The portfolio lists 'OUR WEDDING DAY, Senhora Da Rocha, Algarve', so this is probably their own 2022 wedding.",
+    "sourcePage": "https://www.natalieandmax.co.uk/algarve-wedding-photography/",
+    "ownContentEvidence": "Embedded on their Algarve page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=JeuL2Zd8PLQ",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Northbrook Park Wedding by Natalie & Max Photo and Films: H+J'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/northbrook-park-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=eUs9IO5MrDc",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Vaulty Manor, Essex by Natalie & Max Photo and Films: J+G'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/vaulty-manor-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=78AXsreIuvI",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Hutton Hall, Essex by Natalie & Max Photo and Films- T & J'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/hutton-hall-wedding-photographer/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=U6Bw_aQB0U4",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Hedsor House, Buckinghamshire by Natalie & Max Photo and Films- A + A'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/hedsor-house-wedding-photography/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=jAJ2sZ4AnAs",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Lindos Wedding Beach Party, Rhodes by Natalie & Max Photo and Films- K + N'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/ktima-lindos-wedding/",
+    "ownContentEvidence": "Embedded on their venue page. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=-15mV2bKUy8",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Lady Of The Rock & Monte Das Oliveiras by Natalie & Max Photo and Films- J + B'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/portfolio/",
+    "ownContentEvidence": "Embedded on their Algarve sister site (portfolio and lady-of-the-rock-wedding-photography pages). The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=5yxL96jph1Y",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'W Algarve by Natalie & Max Photo and Films: I+C'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/portfolio/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=QNS2hA3_14o",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'W Algarve by Natalie & Max Photo and Films: Teaser Video'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/w-algarve-luxury-wedding-photographer/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=FfN06S_bv7M",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Monte Das Oliveiras, Albufeira by Natalie & Max Photo and Films: S+D'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/portfolio/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=GMh7PJYtU_g",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Monte Das Oliverais Wedding Photography & Videography - E+C'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/monte-das-oliveiras-wedding-photography-algarve/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=WyT9Ljf2zPQ",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'A Tivoli Marina Wedding by Natalie and Max Photo and Films- Adrienne & Dan'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/tivoli-marina-wedding-algarve/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=YcCbuJFG690",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Lady of the Rock and Monte Das Oliveiras wedding by Natalie & Max Photo and Films - L&L'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/lady-of-the-rock-wedding/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=aUqshO-2mrg",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Sé de Silves & As Fontes by Natalie & Max Photo and Films- A+J'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/as-fontes-wedding-algarve/",
+    "ownContentEvidence": "Embedded on their Algarve sister site (as-fontes page and portfolio). The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=giomTKKG3us",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'VidaMar, Algrave by Natalie & Max Photo and Films A+D'.",
+    "sourcePage": "https://www.natalieandmaxphotofilms.com/portfolio/",
+    "ownContentEvidence": "Embedded on their Algarve sister site. The oEmbed author is their own channel."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=XPv_9UOZVB0",
+    "kind": "youtube",
+    "publiclyFetchable": false,
+    "description": "Embedded on the South Farm page, but YouTube oEmbed returns 404 Not Found (re-checked), so the video is probably deleted or private. Title unknown.",
+    "sourcePage": "https://www.natalieandmax.co.uk/south-farm-wedding-photography/",
+    "ownContentEvidence": "Embedded on their own venue page only. The channel owner could not be verified."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=4sBf9N0FhR4",
+    "kind": "youtube",
+    "publiclyFetchable": false,
+    "description": "Hanbury Manor wedding film embed. YouTube oEmbed returns 403 Forbidden (re-checked), meaning embedding is disabled or the video is private. Title unknown.",
+    "sourcePage": "https://www.natalieandmax.co.uk/hanbury-manor-wedding-photography/",
+    "ownContentEvidence": "Embedded on their own venue page only. The owner could not be verified."
+   },
+   {
+    "url": "https://www.instagram.com/reel/Deg-MLfOTE3/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel whose caption begins 'Emma & Jake have been together for years, and thei…'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "ownContentEvidence": "A video item (sbi_type_video) in the site's own '@natalieandmax' Instagram feed widget. Instagram requires login, so not opened."
+   },
+   {
+    "url": "https://www.instagram.com/reel/DeHhLvCun33/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel: 'Megan & Mike's wedding at The Barn at Redcoats was…'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "ownContentEvidence": "A video item in the site's @natalieandmax feed widget."
+   },
+   {
+    "url": "https://www.instagram.com/reel/Dd_qs0hO8rI/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel: 'It's time to get inspired. If you feel like you ne…'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "ownContentEvidence": "A video item in the site's @natalieandmax feed widget."
+   },
+   {
+    "url": "https://www.instagram.com/reel/Dd8mxStuNt6/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel: 'Hollie & Edward | Friern Manor Wedding 🤍 Some wed…'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "ownContentEvidence": "A video item in the site's @natalieandmax feed widget."
+   },
+   {
+    "url": "https://www.instagram.com/reel/DdtIWFMOxnz/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel: 'One of those wedding days where you genuinely don'…'.",
+    "sourcePage": "https://www.natalieandmax.co.uk/",
+    "ownContentEvidence": "A video item in the site's @natalieandmax feed widget."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/natalieandmax/",
+   "facebook": "https://www.facebook.com/natalieandmaxphotofilms",
+   "youtube": "https://www.youtube.com/@nataliemaxphotoandfilms9990",
+   "tiktok": null,
+   "vimeo": null,
+   "other": [
+    "https://www.pinterest.co.uk/natalieandmax",
+    "https://www.natalieandmaxphotofilms.com/ (their own Algarve sister site)",
+    "https://www.newpixels.co.uk/ (former brand domain, 301-redirects to natalieandmax.co.uk)"
+   ]
+  },
+  "instagramAccess": "Re-checked with one plain unauthenticated GET to https://www.instagram.com/natalieandmax/: HTTP 200 text/html (~505 KB), but it was a generic shell titled 'Instagram' with no og:title/og:description profile metadata and a login reference. No profile data or posts were visible, and I did not retry. The handle is confirmed by links on natalieandmax.co.uk and natalieandmaxphotofilms.com. One plain request to https://www.facebook.com/natalieandmaxphotofilms returned HTTP 400 with title 'Error'.",
+  "gaps": [
+   "The founding year conflicts. The directory says 2016. The About page says they started photographing weddings together and founded the company in 2012 (its timeline labels read 2009/2013/2024). The Algarve site says they started in the Algarve in 2015. The live Bridebook listing gives 2006 as the year established, and the homepage claims 'over 15 years'. No single year is verified.",
+   "The directory street address (10 Delfcroft, Ware SG12 0BH) appears nowhere on the business's sites, which say only 'Ware, Hertfordshire'. postcodes.io confirms SG12 0BH is in Ware (Ware St Mary's ward). It may be a home address, so publish only the town.",
+   "The directory price '£1000 per event' does not match the business's published prices: Photo Collection £2,300, Films Collection £2,200, Signature £4,000, Signature Plus £5,000. Bridebook shows £2,500-£5,500. Use the published figures.",
+   "The detailed price list is on /COLLections/, which is missing from the sitemap and has no canonical tag; it reads like a booking-proposal page. The public /investment/ page confirms the £2,300 photo and £2,200 video starting prices.",
+   "The YouTube channel @nataliemaxphotoandfilms9990 is not linked directly from either site; it is identified as the oEmbed author of every embedded video. The channel page was not browsed (consent wall), so it may hold more videos than the 32 confirmed embeds (the portfolio playlist PLUdtBBorwHsbpJE5OB782CZp4xCbkbFFG has at least 18 items). A sequential check of all 100 sitemap pages on both sites found no other YouTube, Vimeo or MP4 footage.",
+   "Two embedded YouTube videos could not be verified: XPv_9UOZVB0 (oEmbed 404) and 4sBf9N0FhR4 (oEmbed 403).",
+   "The four direct MP4 clips (9-12 s, 1920 wide, 2022) are publicly fetchable but not embedded on any current page. Their visual content was not viewed (only HEAD and range probes).",
+   "TikTok @natalieandmax exists (nickname 'NatalieandMax', 2 followers, 1 video, empty bio) but is not linked from either business site, so it was left out of socials.",
+   "Older Algarve and editorial pages still link legacy accounts @newpixelsphotofilm (Instagram and Facebook) and pinterest.co.uk/Newpixels. These were not opened and are not listed as current socials.",
+   "No Vimeo account found; the only Vimeo references on the site are the WordPress mediaelement library script.",
+   "No SVG logo exists. The N&M monogram is only available upscaled from a 48 px original, so it is pixelated.",
+   "The collections page calls the business 'AWARD WINNING' and 'featured in top magazines', but names no specific award. The live Bridebook 'Press & Awards' section is empty; only an old dev-proxy copy mentions the Essex Wedding Awards and National Wedding Awards. No award is claimed.",
+   "The 'official photographers & videographers' claim for Ivory & Co and Dress Me Pretty is the business's own statement and was not independently verified.",
+   "In 6 of 10 hero slides, the 5443x2551 'originals' are smaller files than their 2560x1200 -scaled copies, which suggests they are upscaled. The site serves -scaled; check sharpness before choosing.",
+   "The homepage image alt text that describes their style ('Natalie on photos, Max on film') still contains the placeholder 'After shooting over [X] weddings', so the wedding count is unknown.",
+   "Event types: they say they serve only weddings. Engagement and 'trash the dress' shoots and editorial/fashion shoots do not map to directory event types such as Engagement Parties.",
+   "Bark.com has a Ware listing using the same 'adventurous couples' wording, but it was not fetched, so it is not relied on."
+  ]
+ }
+}

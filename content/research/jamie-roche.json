@@ -1,0 +1,294 @@
+{
+ "slug": "jamie-roche",
+ "verdict": "corrected",
+ "identityConfidence": "medium",
+ "problemsFound": [
+  "instagramAccess and gaps both printed the guessed handle 'misterjamieroche'. It is the local part of the personal Gmail address shown on the listing, so printing it republishes a personal email. Removed from the record. I repeated the single plain GET once: HTTP 200, 504,783 bytes, <title>Instagram</title>, no og: tags. That is the generic shell, so the handle is still unverified.",
+  "Missed own release: the same YouTube Topic channel (UCIyAfmVdBanKP20bPE3INtA) also carries 'Play The Fool' (iIyZlxXXxXY). It was released 23 Oct 2026 via DistroKid, ℗ Orange Tree Records, credited 'Vocal: Jamie Roche, Studio Producer: Kealan Kenny'. Added to about, services and videos.",
+  "Avatar image was used at 800px when the original is far larger: the same yt3.ggpht.com URL with =s0 returns 200 image/jpeg, 1,078,332 bytes, 3532x3532 (dimensions read from a range probe). URL and dimensions updated.",
+  "Four third-party YouTube uploads (by @MartinCox0155 x2, @carleywhawell9521 and @michalsobota9756) are not his own footage, and the person on camera is unverified. Dropped from videos and moved to gaps, as the task requires.",
+  "About item: 'The Tide' was described as 'written by Jamie Roche and Luke Carey'. The source says 'Lyrics written by, Jamie Roche & Luke Carey'. Corrected.",
+  "About item: 'He says his music is heavily influenced…'. The influence line is the listing's own third-person text, not a quote from him. Reworded.",
+  "Service 'Live singer/songwriter performance' called him a 'Solo' performer. The listing does not say solo. Removed.",
+  "Covers service cited one URL (the Wicked Game video) for six different covers, so most of its claims had no source. Restructured: each cover is now its own sourced about item, and the service is reduced to 'guitar and vocals', which the Green Fields video description credits.",
+  "Identity evidence named namesakes I could not reproduce ('Swedish footballer Jamie Roche', 'Marie Roche'). Replaced them with the namesakes my searches actually returned: Jake Roche of Rixton, James Roche the Shelbourne footballer, Claire Roche, and Taylor Roche of NZ.",
+  "Purple Rain about item paraphrased 'before Ed Sheeran' as 'before an Ed Sheeran show'. It now quotes the source wording.",
+  "Logo entry is a portrait headshot, not a brand mark. It is kept only because the directory uses it as its 'Business Logo', and the note is clarified. Confirmed: HEAD 200 image/png, 1,061,141 bytes, 1000x1000 RGBA with a transparent corner (alpha 0). The listing has no website, so no SVG or wordmark exists to find.",
+  "Confirmed as accurate, no change: listing facts (Est. 2017, London, Musician/Singers, 'Verified', £500 per event, 10–100 guests, listed 15 Dec 2024, updated 3 Feb 2025, 'Perfect For' empty, 'Visit Website' button with no href, no social links). All 7 own-channel videos: oEmbed author @JamieRoche, channel UCZQax_Mikh4RczYcTdmhYMA (200 subscribers), playableInEmbed true. All image URLs return 200 image/jpeg. The repo mismatch in src/data/vendors.ts (Photography / Essex / 2018 / Unsplash) is real."
+ ],
+ "record": {
+  "slug": "jamie-roche",
+  "displayName": "Jamie Roche Folk Artist",
+  "identity": {
+   "officialWebsite": null,
+   "confidence": "medium",
+   "alternateNames": [
+    "Jamie Roche"
+   ],
+   "evidence": "Directory listing: https://bookedevents.co.uk/businesses/jamie-roche/ (HTTP 200, re-fetched). It reads 'Jamie Roche Folk Artist', Verified, Est. 2017, London, Musician · Singers, from £500 per event. It describes him as an Irish-born singer/songwriter who grew up in North London, influenced by Ray LaMontagne and Van Morrison. Its 'Visit Website' button has no href and 'Find Us On' lists no social links, so the listing names no official site. Web presence used: the YouTube channel @JamieRoche (UCZQax_Mikh4RczYcTdmhYMA, 200 subscribers per the watch-page data). All 7 of its known uploads are titled 'Jamie Roche - …' (oEmbed author confirmed) and were filmed in London or North London: St Mary Magdalene Church in Enfield, St John's Church in Hoxton, Sixty Sixty Sounds in Soho, Victoria Park in Hackney, Painter Studios and the O2. One is a cover of Ray LaMontagne's 'Such a Simple Thing', and LaMontagne is an influence named in the listing. Another is the folk song 'The Green Fields of France'. Visual check: the red-haired, bearded man in the listing thumbnail and the listing's circular 'logo' portrait appears to be the same person as in the channel avatar and the video frames. A 2016 Shoreditch gig listing surfaced by search (dash.booked.it/event/207298, which now 302-redirects to the dashboard home) carries the same Irish-born / North London / LaMontagne / Van Morrison bio. Confidence stays medium: neither side links to the other, and the channel About page sits behind consent.youtube.com, which I did not bypass. Namesakes I excluded: Jake Roche (Rixton), James Roche (Shelbourne footballer), Claire Roche (musician) and Taylor Roche (NZ singer)."
+  },
+  "about": [
+   {
+    "text": "The Booked Events listing describes Jamie as an Irish-born singer/songwriter who grew up in North London, with a style of music heavily influenced by artists such as Ray LaMontagne and Van Morrison.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/"
+   },
+   {
+    "text": "Listed on Booked Events as 'Jamie Roche Folk Artist' (marked Verified), based in London, established 2017, under the Musician and Singers categories. Listed on 15 Dec 2024 and last updated 3 Feb 2025.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/"
+   },
+   {
+    "text": "His Booked Events listing gives the size of events he caters for as 10 to 100 guests.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/"
+   },
+   {
+    "text": "A video uploaded in August 2019 shows him performing his single 'The Tide' on guitar and vocals at Painter Studios, London. The description credits the lyrics to Jamie Roche & Luke Carey, with recording and video by Christopher Painter.",
+    "sourceUrl": "https://www.youtube.com/watch?v=Q8CHA6G6Abg"
+   },
+   {
+    "text": "'The Tide (Acoustic)' by Jamie Roche was released on 22 September 2022, provided to YouTube by DistroKid, ℗ Orange Tree Records.",
+    "sourceUrl": "https://www.youtube.com/watch?v=asm-mMNgGqk"
+   },
+   {
+    "text": "'Play The Fool' by Jamie Roche was released on 23 October 2026, provided to YouTube by DistroKid, ℗ Orange Tree Records. Credits: vocal Jamie Roche, studio producer Kealan Kenny.",
+    "sourceUrl": "https://www.youtube.com/watch?v=iIyZlxXXxXY"
+   },
+   {
+    "text": "Performed a cover of Eric Bogle's 'The Green Fields of France' at St Mary Magdalene Church, Enfield, North London: Jamie Roche on guitar/vocals, Eilish Byrne-Whelehan on violin, videography by Max Bandicoot (uploaded 11 November 2022).",
+    "sourceUrl": "https://www.youtube.com/watch?v=drMAH8eFYi4"
+   },
+   {
+    "text": "Covered Ray LaMontagne's 'Such a Simple Thing' at St John's Church, Hoxton, London, on 7 July 2018.",
+    "sourceUrl": "https://www.youtube.com/watch?v=_CEzdGc6tMw"
+   },
+   {
+    "text": "Covered Chris Isaak's 'Wicked Game' at Sixty Sixty Sounds, Denmark Street, Soho, London, on 21 May 2018.",
+    "sourceUrl": "https://www.youtube.com/watch?v=aW_3BWmWTkI"
+   },
+   {
+    "text": "Covered Fleetwood Mac's 'Dreams' at the Chinese Pagoda in Victoria Park, South Hackney, London, on 14 September 2018.",
+    "sourceUrl": "https://www.youtube.com/watch?v=oh9KSH-2DmU"
+   },
+   {
+    "text": "Covered Gregory Alan Isakov's 'Amsterdam' (uploaded June 2019).",
+    "sourceUrl": "https://www.youtube.com/watch?v=jVrJUBJm75w"
+   },
+   {
+    "text": "Performed 'Purple Rain' in The O2 Arena's Priority Lounge 'before Ed Sheeran'. The upload's description calls it 'a fan made video' (uploaded December 2016).",
+    "sourceUrl": "https://www.youtube.com/watch?v=W4Rj_JX_1-8"
+   }
+  ],
+  "services": [
+   {
+    "name": "Live singer/songwriter performance for events",
+    "description": "Irish-born singer/songwriter listed under Musician and Singers, catering for events of 10 to 100 guests. The listing gives the price as 'Price from: £500 per event'.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/"
+   },
+   {
+    "name": "Guitar and vocals",
+    "description": "Performs on guitar and vocals ('Guitar/Vocals - Jamie Roche'). His filmed performances mix covers and folk songs; see the about items for each one. This is evidence of repertoire, not a published set list or package.",
+    "sourceUrl": "https://www.youtube.com/watch?v=drMAH8eFYi4"
+   },
+   {
+    "name": "Original songs",
+    "description": "Performs his own material, including the single 'The Tide' (lyrics by Jamie Roche & Luke Carey).",
+    "sourceUrl": "https://www.youtube.com/watch?v=Q8CHA6G6Abg"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "Full-colour photo: dark woodland background, dark navy/black jacket, white shirt; transparent outside the circle",
+    "sourcePage": "https://bookedevents.co.uk/businesses/jamie-roche/",
+    "notes": "This is the image the Booked Events listing uses in its 'Business Logo' slot. Re-verified: HEAD 200, image/png, 1,061,141 bytes, last modified 15 Dec 2024. It is a 1000x1000 RGBA PNG and the corner pixel has alpha 0. It is a circular-cropped portrait headshot, NOT a wordmark or brand mark, so use it only as an avatar. The listing also has WordPress sizes at -200x200, -400x400, -600x600 and -800x800. There is no official website, so there was no header SVG, favicon or og:image to inspect, and no genuine SVG or text logo exists."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+    "description": "Jamie Roche seated on stage playing a Takamine acoustic guitar into a mic, in front of a dark venue wall with a 'Live' sign. This is the photo supplied for his directory listing.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/jamie-roche/",
+    "stockRisk": "own",
+    "width": 1000,
+    "height": 800
+   },
+   {
+    "url": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0",
+    "description": "Portrait of Jamie Roche beside a stained-glass window in a dark wood-panelled interior. This is his YouTube channel avatar at original size (=s0); an =s800 variant also exists.",
+    "sourcePage": "https://www.youtube.com/watch?v=drMAH8eFYi4",
+    "stockRisk": "own",
+    "width": 3532,
+    "height": 3532
+   },
+   {
+    "url": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+    "description": "Close-up of Jamie singing with a patterned guitar strap inside St Mary Magdalene Church, Enfield (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=drMAH8eFYi4",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   },
+   {
+    "url": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+    "description": "Jamie singing with an acoustic guitar at a studio mic in St John's Church, Hoxton (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=_CEzdGc6tMw",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   },
+   {
+    "url": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+    "description": "Jamie in a flat cap and white shirt singing with a guitar, warm studio lighting (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=jVrJUBJm75w",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   },
+   {
+    "url": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+    "description": "Jamie singing in front of a wall of guitars at Sixty Sixty Sounds, Denmark Street, Soho (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=aW_3BWmWTkI",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   },
+   {
+    "url": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg",
+    "description": "Close-up of Jamie singing outdoors at the Chinese Pagoda, Victoria Park, Hackney (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=oh9KSH-2DmU",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   },
+   {
+    "url": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+    "description": "Black-and-white shot of Jamie playing acoustic guitar against a timber wall at Painter Studios, London (video frame, own channel).",
+    "sourcePage": "https://www.youtube.com/watch?v=Q8CHA6G6Abg",
+    "stockRisk": "own",
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www.youtube.com/watch?v=drMAH8eFYi4",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - The Green Fields Of France (No Mans Land) | Live @ St Mary Magdalene Church, Enfield'. Uploaded 11 Nov 2022, 5:10, about 1.9k views, playableInEmbed true. Credits: guitar/vocals Jamie Roche, violin Eilish Byrne-Whelehan, videography Max Bandicoot. Professionally shot; the strongest hero candidate.",
+    "sourcePage": "https://www.youtube.com/watch?v=drMAH8eFYi4",
+    "ownContentEvidence": "Uploaded by his own channel @JamieRoche (UCZQax_Mikh4RczYcTdmhYMA; oEmbed author_url re-checked). The description credits Jamie Roche on guitar/vocals, and he is visible on camera."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=_CEzdGc6tMw",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - Such A Simple Thing | St John's Church, Hoxton | 7th July 2018' (Ray LaMontagne cover). Uploaded 13 Jul 2018, 4:31, about 3k views, embeddable. Recorded by Max Bandicoot.",
+    "sourcePage": "https://www.youtube.com/watch?v=_CEzdGc6tMw",
+    "ownContentEvidence": "Uploaded by @JamieRoche (own channel, oEmbed confirmed); he is shown performing."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=aW_3BWmWTkI",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - Wicked Game | Sixty Sixty Sounds', a Chris Isaak cover filmed at Denmark Street, Soho, on 21 May 2018. Uploaded 23 May 2018, 4:20, about 3.1k views, embeddable. Recorded by Max Bandicoot.",
+    "sourcePage": "https://www.youtube.com/watch?v=aW_3BWmWTkI",
+    "ownContentEvidence": "Uploaded by @JamieRoche (own channel, oEmbed confirmed); he is shown performing."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=oh9KSH-2DmU",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - Dreams (Fleetwood Mac Cover)' at the Chinese Pagoda, Victoria Park, South Hackney, on 14 Sep 2018. Uploaded 16 Sep 2018, 4:29, about 2.2k views, embeddable. Recorded by Max Bandicoot.",
+    "sourcePage": "https://www.youtube.com/watch?v=oh9KSH-2DmU",
+    "ownContentEvidence": "Uploaded by @JamieRoche (own channel, oEmbed confirmed); he is shown performing."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Q8CHA6G6Abg",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - The Tide | Live @ Painter Studios | London', an original single. Uploaded 6 Aug 2019, 3:13, about 1k views, embeddable. Recorded and filmed by Christopher Painter.",
+    "sourcePage": "https://www.youtube.com/watch?v=Q8CHA6G6Abg",
+    "ownContentEvidence": "Uploaded by @JamieRoche (own channel, oEmbed confirmed). The description credits the lyrics to Jamie Roche & Luke Carey and the guitar and vocals to Jamie Roche."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=jVrJUBJm75w",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - Amsterdam (Gregory Alan Isakov Cover)'. Uploaded 17 Jun 2019, 4:03, about 1.2k views, embeddable. The video has no description.",
+    "sourcePage": "https://www.youtube.com/watch?v=jVrJUBJm75w",
+    "ownContentEvidence": "Uploaded by @JamieRoche (own channel, oEmbed confirmed); he is shown performing in the frame."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=W4Rj_JX_1-8",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Jamie Roche - Purple Rain | The o2 Arena, Greenwich, London'. Uploaded 30 Dec 2016, 4:37, about 2k views, embeddable. Filmed in the O2 Priority Lounge 'before Ed Sheeran'. Low production quality; not a hero candidate.",
+    "sourcePage": "https://www.youtube.com/watch?v=W4Rj_JX_1-8",
+    "ownContentEvidence": "Posted on his own channel @JamieRoche, but the description says 'A fan made video', so the camera work may belong to a fan."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=asm-mMNgGqk",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'The Tide (Acoustic)', a YouTube auto-generated 'Jamie Roche - Topic' art track (audio with static artwork). Released 22 Sep 2022 via DistroKid, ℗ Orange Tree Records, 4:26. Audio only; not usable as showreel footage.",
+    "sourcePage": "https://www.youtube.com/watch?v=asm-mMNgGqk",
+    "ownContentEvidence": "His own release, credited to Jamie Roche and distributed by DistroKid. The song matches 'The Tide' on his own channel. YouTube generated the Topic channel automatically (UCIyAfmVdBanKP20bPE3INtA)."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=iIyZlxXXxXY",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Play The Fool', a YouTube auto-generated 'Jamie Roche - Topic' art track. Released 23 Oct 2026 via DistroKid, ℗ Orange Tree Records, 4:45, playableInEmbed true. Credits: vocal Jamie Roche, studio producer Kealan Kenny. Audio only.",
+    "sourcePage": "https://www.youtube.com/watch?v=iIyZlxXXxXY",
+    "ownContentEvidence": "Same auto-generated Topic channel (UCIyAfmVdBanKP20bPE3INtA) and same label (Orange Tree Records) as 'The Tide (Acoustic)', which is his song. Found among related items on his own-channel watch pages."
+   }
+  ],
+  "socials": {
+   "youtube": "https://www.youtube.com/@JamieRoche",
+   "instagram": null,
+   "facebook": null,
+   "tiktok": null,
+   "vimeo": null,
+   "other": [
+    "https://www.youtube.com/channel/UCIyAfmVdBanKP20bPE3INtA (YouTube auto-generated 'Jamie Roche - Topic' music channel)"
+   ]
+  },
+  "tagline": null,
+  "industry": "entertainment",
+  "categories": [
+   "Musician",
+   "Singers"
+  ],
+  "eventTypes": [],
+  "eventTypesSourceUrl": null,
+  "areasServed": [
+   "London"
+  ],
+  "areasSourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": null
+  },
+  "instagramAccess": "No official Instagram handle is confirmed: the Booked Events listing links none, and web searches found none. The previous researcher made one plain unauthenticated GET to a handle guessed from the listing's personal contact email. I repeated that single request once to verify it: HTTP 200, 504,783 bytes, <title>Instagram</title>, no og: meta tags. That is the generic login-wall shell, so it neither confirms nor rules out the account. The guessed handle is deliberately not recorded here, because it reproduces the personal email address. I used no login, no cookies and no retries.",
+  "gaps": [
+   "No official website. The Booked Events 'Visit Website' button has no URL and the listing's 'Find Us On' block is empty.",
+   "No genuine brand logo or wordmark exists. The listing's 'logo' is a circular portrait headshot. The profile needs a text or wordmark treatment, or the portrait used as an avatar.",
+   "No official Instagram, Facebook or TikTok confirmed. A handle guessed from the contact email is unverified and must not be published.",
+   "YouTube channel, About page and release playlists (@JamieRoche/videos and the OLAK5uy_ album playlists) 302-redirect to consent.youtube.com. I did not accept consent, so the channel description, external links and any uploads beyond those found from watch pages are unverified. The channel RSS feed returns 404.",
+   "No direct (self-hosted) video files exist. All footage is on YouTube, so a hero must use a YouTube embed; all 7 own-channel videos report playableInEmbed=true. The rights to cut or re-host the footage are unconfirmed: camera work is credited to Max Bandicoot and Christopher Painter.",
+   "Dropped from videos as third-party and unverified: yaq31hXKeCg and W5P3Dcx2V6Y (both @MartinCox0155, 'Home House, London 14/06/16'), A6_MlIWswUw (@carleywhawell9521, 'Purple Rain cover song') and 8zZ_R_O3cXo (@michalsobota9756, The Goat pub, Ponders End). These are not his uploads, and the person on camera is not verified.",
+   "Event types are not stated: the listing's 'Perfect For' section is empty. The enquiry form's event-type dropdown is a generic site-wide form, not his own claim.",
+   "Areas served are not stated. 'London' is only the base location on the listing.",
+   "The listing shows 'No' for Licenses & Insurance and states no booking or cancellation policy.",
+   "A 2016 gig listing (dash.booked.it/event/207298, Apples & Pears, Shoreditch) now 302-redirects to dash.booked.it/ and could not be fetched. Its fuller bio (Joe Cocker influence, BOYBETTERKNOW collaborators, Fuse ODG support slot, a 2016 EP) appears only in search snippets and is NOT included.",
+   "A Bandsintown event surfaced in search (bandsintown.com/e/107862884) returned 403 and was not retried, so whether it relates to him is unknown.",
+   "Spotify, Apple Music and Bandcamp artist pages were not located. Release evidence comes only from the YouTube Topic tracks ('The Tide (Acoustic)' 2022, 'Play The Fool' 2026, both Orange Tree Records).",
+   "Established year: the listing says 2017, but his own channel has a performance upload from Dec 2016. Minor discrepancy, not resolved.",
+   "Local data mismatch: src/data/vendors.ts (line ~187) lists jamie-roche as 'Photography', 'Essex, UK', est. 2018, with an Unsplash stock image and an invented rating/review count (4.7 / 21). That contradicts the listing and src/lib/directory.ts (Musician/Singers, London, est. 2017) and should be corrected."
+  ]
+ }
+}

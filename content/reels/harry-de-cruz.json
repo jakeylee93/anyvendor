@@ -1,0 +1,12 @@
+{
+  "slug": "harry-de-cruz",
+  "fade": 0.6,
+  "segments": [
+    {"file": ".media-work/harry-de-cruz/showreel-hls.mp4", "url": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8", "start": 30.7, "dur": 2.6, "fx": 0.5, "fy": 0.5, "mfx": 0.5, "mfy": 0.5, "note": "Showreel (harrydecruz.com/showreel): Harry on a theatre stage producing a pint of beer from a paper bag"},
+    {"image": ".media-work/harry-de-cruz/jpg/img02.jpg", "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg", "dur": 2.6, "fx": 0.5, "fy": 0.45, "mfx": 0.47, "mfy": 0.5, "note": "Gala dinner guests reacting to a card trick at their table"},
+    {"image": ".media-work/harry-de-cruz/jpg/img06.jpg", "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG", "dur": 2.6, "fx": 0.5, "fy": 0.42, "mfx": 0.655, "mfy": 0.5, "note": "Table magic at a wedding breakfast: Harry holds a card out to the laughing bride"},
+    {"file": ".media-work/harry-de-cruz/showreel-hls.mp4", "url": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8", "start": 42.1, "dur": 2.7, "fx": 0.5, "fy": 0.5, "mfx": 0.84, "mfy": 0.5, "note": "Showreel: Harry on stage with an audience volunteer at a microphone"},
+    {"image": ".media-work/harry-de-cruz/jpg/img01.jpg", "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG", "dur": 2.6, "fx": 0.5, "fy": 0.4, "mfx": 0.58, "mfy": 0.5, "note": "Harry holding up a playing card and fanned deck while guests applaud"},
+    {"image": ".media-work/harry-de-cruz/jpg/img00.jpg", "url": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg", "dur": 2.8, "fx": 0.5, "fy": 0.5, "mfx": 0.68, "mfy": 0.5, "note": "Harry on a theatre stage in a spotlight beam, flicking a playing card towards a gala audience"}
+  ]
+}

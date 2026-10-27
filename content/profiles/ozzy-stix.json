@@ -1,0 +1,123 @@
+{
+ "slug": "ozzy-stix",
+ "displayName": "Ozzy&Stix",
+ "tagline": "We Create The Best Memories on Your Big Day",
+ "intro": "Ozzy&Stix is an Essex-based duo: a vocalist and a guitarist who both also play bongos and percussion. They offer acoustic sets and party sets for weddings and parties. Both members also DJ, and they can add a sax, violin or trumpet.",
+ "about": [
+  "Ozzy&Stix pairs a vocalist with a guitarist, and both members also play bongos and percussion. Their website says they suit acoustic performances at an event, a party set, or both. The site is focused on weddings, under the line 'We Create The Best Memories on Your Big Day'. The contact page places them in Essex, and the site's own description and 'LDN' logo also present them as a London duo.",
+  "Both members also DJ, and they say they are comfortable with Jewish dancing, Bhangra and plenty of other genres that may come up at weddings. Through their #MADE offer, clients can add a sax, violin or trumpet, and their FAQ says further musicians and singers are available from their own books. They say they can provide music and entertainment from the ceremony through to the full party. They will also perform alongside other acts, including external DJs, if they feel the combination will work well.",
+  "They build sets from a guide to what the crowd enjoys. They will learn specific songs within reason, and ask for at least six weeks' notice for a first dance or ceremony song. They are happy to remove songs connected to bad memories. PAT test and public liability documents, and a repertoire list, are available on request. They do not provide lighting but may be able to suggest a supplier. They will travel abroad, and the client pays flights, accommodation and transfers on top of the fee.",
+  "Previous clients named on their website include the V&A Museum London, Deutsche Bank, Just Seventy Events, London Rox Events, Royal Caribbean Cruises, Sunseeker Luxury Yachts, BNP Paribas and PHJR Events. They play a few public gigs each year and announce the dates on Instagram. Their YouTube channel has acoustic covers, mashups and an 'O&S Presents' session series, which give a feel for their sound."
+ ],
+ "services": [
+  {
+   "name": "Acoustic performance",
+   "description": "Live acoustic sets built around vocals and guitar, with both members also playing bongos and percussion. They can be booked on their own or alongside a party set."
+  },
+  {
+   "name": "Party set",
+   "description": "A party set, booked on its own or with their acoustic performance. They build sets from a guide to what the crowd enjoys and will remove songs connected to bad memories."
+  },
+  {
+   "name": "DJ Live Experience",
+   "description": "Both members DJ, and they describe their DJ Live Experience as a way to supercharge a party. They say they are comfortable with Jewish dancing, Bhangra and other genres that come up at weddings."
+  },
+  {
+   "name": "#MADE additional performers",
+   "description": "Through #MADE, clients can add a sax, violin or trumpet 'to design your perfect combination of performers'. Their FAQ says further musicians and singers are available from their own books."
+  },
+  {
+   "name": "Ceremony-to-party music",
+   "description": "Music and entertainment from the ceremony through to the full party. They will also learn specific songs within reason, asking for at least six weeks' notice for a first dance or ceremony song."
+  },
+  {
+   "name": "Overseas performances",
+   "description": "They will travel abroad to perform at events. The client pays flights, accommodation, transfers and other trip costs on top of the performance fee."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Private Parties"
+ ],
+ "areasServed": [
+  "Essex",
+  "London",
+  "Overseas (travel abroad on request)"
+ ],
+ "website": "https://www.ozzyandstix.com",
+ "socials": {
+  "instagram": "https://www.instagram.com/ozzyandstix/",
+  "tiktok": "https://www.tiktok.com/@ozzyandstix",
+  "youtube": "https://www.youtube.com/@ozzystix3324",
+  "vimeo": "https://vimeo.com/user90384348",
+  "facebook": null
+ },
+ "contact": null,
+ "established": null,
+ "basedIn": {
+  "text": "Essex",
+  "sourceUrl": "https://www.ozzyandstix.com/contact"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "The business writes its name as Ozzy&Stix (also Ozzy & Stix), and the 2010 founding year shown on an earlier directory listing does not appear on any of its own channels."
+ },
+ "sources": [
+  {
+   "label": "Ozzy&Stix — Home",
+   "url": "https://www.ozzyandstix.com/"
+  },
+  {
+   "label": "Ozzy&Stix — FAQ",
+   "url": "https://www.ozzyandstix.com/new-page"
+  },
+  {
+   "label": "Ozzy&Stix — #MADE",
+   "url": "https://www.ozzyandstix.com/what-we-do"
+  },
+  {
+   "label": "Ozzy&Stix — Contact",
+   "url": "https://www.ozzyandstix.com/contact"
+  },
+  {
+   "label": "Ozzy&Stix — Book Now",
+   "url": "https://www.ozzyandstix.com/take-action"
+  },
+  {
+   "label": "Ozzy & Stix — YouTube channel",
+   "url": "https://www.youtube.com/@ozzystix3324/videos"
+  },
+  {
+   "label": "Ozzy&Stix — TikTok",
+   "url": "https://www.tiktok.com/@ozzyandstix"
+  },
+  {
+   "label": "Mike Savory (wedding videographer, third-party) — Ozzy and Stix",
+   "url": "https://mikesavory.co.uk/ozzy-and-stix/"
+  }
+ ],
+ "gaps": [
+  "Founding year: none of the business's own channels states one. The 2010 date appears only on an earlier directory listing, and their earliest content is a YouTube upload from August 2017.",
+  "Pricing: there are no published prices. Their FAQ says no two bookings are the same and that quotes are based on event details.",
+  "Deposit terms conflict: the FAQ says a 30% non-refundable deposit, while the Book Now page says 50%. Confirm with the business.",
+  "Exact base: their own site says only Essex. A wedding videographer places them southeast of Brentwood and says they cover East Anglia, including Norfolk, but the business does not say this itself.",
+  "Corporate events are not listed as a service, though their website names corporate past clients.",
+  "The members' full names are not given beyond 'Ozzy' and 'Stix'.",
+  "No official Facebook page could be found.",
+  "Their Instagram content, including public gig dates, could not be viewed without logging in."
+ ],
+ "taxonomy": {
+  "industry": "entertainment",
+  "categories": [
+   "Musician",
+   "Singers",
+   "DJs & Disco"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://www.ozzyandstix.com/"
+ }
+}

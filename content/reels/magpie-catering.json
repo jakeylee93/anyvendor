@@ -1,0 +1,67 @@
+{
+  "slug": "magpie-catering",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "image": ".media-work/magpie-catering/img00-2017-03-16-PHOTO-00000030.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+      "dur": 2.8,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.4,
+      "mfy": 0.5,
+      "note": "Magpie gallery photo: rows of king prawn and mango canapé skewers on bamboo picks."
+    },
+    {
+      "image": ".media-work/magpie-catering/img06-15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.6,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Magpie private fine dining page photo: rows of dessert glasses with heart shortbread and edible flowers, with brownie bites."
+    },
+    {
+      "image": ".media-work/magpie-catering/img02-2017-03-16-PHOTO-00000040.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Magpie gallery photo: mezze sharing board with cured meats, houmous, a chicken and pepper skewer and olives."
+    },
+    {
+      "image": ".media-work/magpie-catering/img05-2017-03-16-PHOTO-00000039.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.62,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Magpie gallery photo: baklava and Turkish pastries with a strawberry and spun-sugar garnish on slate."
+    },
+    {
+      "image": ".media-work/magpie-catering/img04-2017-03-16-PHOTO-00000038.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.4,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Magpie gallery photo: grilled halloumi with pomegranate, mint, chilli and balsamic."
+    },
+    {
+      "image": ".media-work/magpie-catering/img07-Special-Events.jpg",
+      "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.42,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Magpie special events page photo: white chocolate and raspberry tart with a sesame tuile, coulis and raspberries."
+    }
+  ]
+}

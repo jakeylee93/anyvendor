@@ -1,0 +1,76 @@
+{
+  "slug": "lucy-jane-cakes",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 3.35,
+      "endSec": 6.15,
+      "note": "Lucy Jane Cakes TikTok 'ALL THE PINKS': white chocolate drips spooned onto a smooth two-tier pink buttercream cake on a turntable."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665",
+      "durationSec": 2.9,
+      "kind": "video",
+      "startSec": 0.35,
+      "endSec": 3.25,
+      "note": "Lucy Jane Cakes TikTok 'Oink': overhead view of pink buttercream piped onto a cupcake above a box of cupcakes."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 12.45,
+      "endSec": 15.25,
+      "note": "Lucy Jane Cakes TikTok 'ALL THE PINKS': a pink '30' topper and cupcake set on the top tier of the drip cake (clip ends before the name plaque is added)."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 7.55,
+      "endSec": 10.35,
+      "note": "Lucy Jane Cakes TikTok 'Bento Love': buttercream filling piped onto a sponge layer on a turntable."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+      "durationSec": 2.15,
+      "kind": "video",
+      "startSec": 7.05,
+      "endSec": 9.2,
+      "note": "Lucy Jane Cakes TikTok 'ALL THE PINKS': a pink buttercream swirl piped onto a cupcake in front of the drip cake."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665",
+      "durationSec": 2.6,
+      "kind": "video",
+      "startSec": 10.6,
+      "endSec": 13.2,
+      "note": "Lucy Jane Cakes TikTok 'Oink': a finished pig-face buttercream cupcake held over its box."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/lucy-jane-cakes/reel-desktop.mp4",
+      "poster": "/media/lucy-jane-cakes/poster-desktop.jpg",
+      "posterWebp": "/media/lucy-jane-cakes/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.45,
+      "bytes": 1555644
+    },
+    "mobile": {
+      "video": "/media/lucy-jane-cakes/reel-mobile.mp4",
+      "poster": "/media/lucy-jane-cakes/poster-mobile.jpg",
+      "posterWebp": "/media/lucy-jane-cakes/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.45,
+      "bytes": 1492378
+    }
+  }
+}

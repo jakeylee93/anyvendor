@@ -1,0 +1,224 @@
+{
+ "calleo": {
+  "industry": "unique-services",
+  "categories": [
+   "Audio Guestbook"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties"
+  ],
+  "sourceUrl": "https://www.calleo-uk.com/"
+ },
+ "cj-sax": {
+  "industry": "entertainment",
+  "categories": [
+   "Saxophonist",
+   "DJs & Disco",
+   "Musician"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://cjsax.com/"
+ },
+ "grape-fig": {
+  "industry": "food-services",
+  "categories": [
+   "Grazing Tables",
+   "Caterers"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Product Launches",
+   "Private Parties",
+   "Seasonal Events"
+  ],
+  "sourceUrl": "https://grapeandfig.com/pages/bespoke-food-displays-tables"
+ },
+ "harry-de-cruz": {
+  "industry": "entertainment",
+  "categories": [
+   "Magician"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Private Parties",
+   "Weddings",
+   "Product Launches"
+  ],
+  "sourceUrl": "https://www.harrydecruz.com/"
+ },
+ "jamie-roche": {
+  "industry": "entertainment",
+  "categories": [
+   "Musician",
+   "Singers"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://bookedevents.co.uk/businesses/jamie-roche/"
+ },
+ "lucy-jane-cakes": {
+  "industry": "food-services",
+  "categories": [
+   "Cake Maker"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+ },
+ "magpie-catering": {
+  "industry": "food-services",
+  "categories": [
+   "Caterers",
+   "Grills & BBQ",
+   "Turkish"
+  ],
+  "eventTypes": [
+   "Anniversaries",
+   "Birthday Parties",
+   "Corporate Events",
+   "Garden Parties",
+   "Private Parties",
+   "Product Launches",
+   "Weddings"
+  ],
+  "sourceUrl": "https://www.magpiecatering.com/"
+ },
+ "meatstop": {
+  "industry": "food-services",
+  "categories": [
+   "Grills & BBQ",
+   "Caterers"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://www.meatstop.co.uk/catering"
+ },
+ "natalie-max": {
+  "industry": "photography-video",
+  "categories": [
+   "Photographer",
+   "Videographer",
+   "Drones"
+  ],
+  "eventTypes": [
+   "Weddings"
+  ],
+  "sourceUrl": "https://www.natalieandmax.co.uk/investment/"
+ },
+ "ozzy-stix": {
+  "industry": "entertainment",
+  "categories": [
+   "Musician",
+   "Singers",
+   "DJs & Disco"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://www.ozzyandstix.com/"
+ },
+ "paint-and-pour": {
+  "industry": "unique-services",
+  "categories": [
+   "Paint & Wine Night"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
+ },
+ "ray-johnson": {
+  "industry": "entertainment",
+  "categories": [
+   "Tribute Act",
+   "Singers",
+   "Performers"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Private Parties",
+   "Corporate Events"
+  ],
+  "sourceUrl": "https://www.rayeltonjohnson.co.uk/about-us"
+ },
+ "the-bar-people": {
+  "industry": "drink-services",
+  "categories": [
+   "Mobile Bars",
+   "Mixologists"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Weddings",
+   "Private Parties",
+   "Festivals",
+   "Birthday Parties",
+   "Anniversaries",
+   "Engagement Parties",
+   "Garden Parties",
+   "Seasonal Events",
+   "Charity Galas",
+   "Product Launches"
+  ],
+  "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+ },
+ "tl-executive-cars": {
+  "industry": "transport-logistics",
+  "categories": [
+   "Chaffeur",
+   "Car Hire"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events"
+  ],
+  "sourceUrl": "https://tlexecutivecars.co.uk/"
+ },
+ "tm-event-hire": {
+  "industry": "decor-ambiance",
+  "categories": [
+   "Marquees",
+   "Mobile Bars"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties",
+   "Baby Showers",
+   "Anniversaries",
+   "Corporate Events",
+   "Private Parties",
+   "Garden Parties",
+   "Festivals"
+  ],
+  "sourceUrl": "https://tmeventhire.co.uk/"
+ },
+ "tony-poole-discos": {
+  "industry": "entertainment",
+  "categories": [
+   "DJs & Disco",
+   "Staging & Lighting"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Birthday Parties",
+   "Anniversaries",
+   "Seasonal Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://tonypoolediscos.com/our-services/"
+ },
+ "toot-sweet-candy-cart": {
+  "industry": "food-services",
+  "categories": [
+   "Candy Carts"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://x.com/CartToot"
+ }
+}

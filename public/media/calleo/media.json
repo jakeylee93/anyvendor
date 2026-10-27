@@ -1,0 +1,64 @@
+{
+  "slug": "calleo",
+  "logo": {
+    "file": "public/media/calleo/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e035b406-71d8-491b-819a-6b5a2700ed75/Logo+adaptation1.png",
+    "plate": "dark"
+  },
+  "gallery": [
+    {
+      "file": "public/media/calleo/photo-01.webp",
+      "alt": "A guest in a white dress smiles as she speaks into a cream telephone handset at an evening reception, with other guests laughing and raising glasses around her.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/66eadddb3c2db3331cf0c0a8/0331576e-b4c7-49a5-ac0b-5333ae7da796/Harry+Michael+Photographer.jpeg"
+    },
+    {
+      "file": "public/media/calleo/photo-02.webp",
+      "alt": "A couple share a white telephone handset in front of an 'I just called to say' neon sign framed by trailing white flowers.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg"
+    },
+    {
+      "file": "public/media/calleo/photo-03.webp",
+      "alt": "Calleo phones on display: a light blue rotary phone with Calleo branding, an ornate brass rotary phone and a pink phone.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg"
+    },
+    {
+      "file": "public/media/calleo/photo-04.webp",
+      "alt": "Wedding guests gather around a table in a stone-walled room while a woman in a green dress speaks into a cream rotary phone.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/aae401cc-7881-4f1d-a7ea-8c58940e0d54/Char+Cook+Photography-min.jpeg"
+    },
+    {
+      "file": "public/media/calleo/photo-05.webp",
+      "alt": "A bride and groom at a white telephone-box stand holding a handset, beside a 'Happily Ever After' neon sign and a stone wall.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/502bdb0a-c55b-4668-ad4b-355f7bcee7b0/Notley+Abbey+Styled+Shoot-212.jpg"
+    },
+    {
+      "file": "public/media/calleo/photo-06.webp",
+      "alt": "A bride and groom in white heart-shaped sunglasses share a pale pink phone handset in front of a copper tinsel backdrop.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/44cd7330-41e2-4528-922b-39f07e13cbb4/268_Prestwold_Gina+Fernandes+Photography_.jpg"
+    },
+    {
+      "file": "public/media/calleo/photo-07.webp",
+      "alt": "A bride in an off-shoulder gown holds a red rotary phone and its handset beside a decorated Christmas tree.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/dcfbb4a4-e9ac-4c99-b302-e45ddaccc304/DSC07793.jpg"
+    },
+    {
+      "file": "public/media/calleo/photo-08.webp",
+      "alt": "Black-and-white table styling: a Calleo rotary phone with coupe glasses, white roses, a miniature gin bottle and a table-number card.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/9c4041a7-54fe-4e41-9ca7-4c78577353af/BDP_CalleoPosable_StyledShoot-244.jpg"
+    },
+    {
+      "file": "public/media/calleo/photo-09.webp",
+      "alt": "A guest seated on a stool laughs while talking on a pale blue rotary phone, next to a 'To the moon and back' neon sign.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/a6e7e6a5-1bc1-47bd-86a0-7eaec8110ce1/Patrick+Partridge+Photography-min.jpg"
+    }
+  ],
+  "notes": [
+    "Logo: single-colour (#f9fafa off-white) potrace reconstruction of Calleo's own site-header wordmark PNG (2500x1184, fetched with Accept: image/png; sha256 aa22b9ce...60a8f2). Calleo publishes no SVG. Off-white mark, so it needs the dark (navy) plate. Trace QA: mean abs diff 0.16 on white (not meaningful for a white mark) and 3.69 on navy at 600 px; letterforms and the rotary-dial speech-bubble 'o' visually match.",
+    "Other genuine brand marks found but not used: black rotary-dial loader mark and black dial-in-speech-bubble favicon (calleo-uk.com), and the white wordmark uploaded to Booked Events (lower resolution than the site header).",
+    "Reel: 3 clips from the calleo-uk.com homepage background video (public Squarespace HLS, 1920x1080, ~12.6 s, four shots of keepsakes: QR song print, vinyl, engraved USB, video book) plus 3 of Calleo's own landscape photos as still segments. The fourth video shot (0-2.6 s, a smartphone held close to the lens scanning the QR print) was left out as less sharp and dominated by the handset.",
+    "TikTok: 8 @calleouk posts were tried. 3 were photo-slideshow posts (yt-dlp returned audio only; deleted unused). The 5 videos were not used: burned-in text captions throughout (7554828522418638102, 7560017338418875651, 7571159657109097750; the last also opens with talking-head speech), a 'Calleo tour' of ~1 s shots, too short for 2-3 s clips, with captions at the start and end (7561878016595332375), and caption-covered phone shots followed by shaky dance-floor footage that doesn't clearly show the product (7545174947736587522).",
+    "Gallery: 9 photos from calleo-uk.com (Squarespace CDN), converted to WebP (longest edge 1600 px, q80). Photographer credits in Calleo's filenames/Image Credits page include Harry Michael, Lewis Cannon, Char Cook, Suzy Elizabeth (Notley Abbey), Gina Fernandes, Patrick Partridge and Nick Rutter/Nick Cannon.",
+    "The Booked Events 'calleo' listing's current 'Mensah' title/featured photo belong to an unrelated MC business and were not used."
+  ]
+}

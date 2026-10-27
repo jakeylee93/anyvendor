@@ -1,0 +1,62 @@
+{
+  "slug": "tony-poole-discos",
+  "logo": {
+    "file": "public/media/tony-poole-discos/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png",
+    "plate": "dark"
+  },
+  "gallery": [
+    {
+      "file": "public/media/tony-poole-discos/photo-01.webp",
+      "alt": "A bride and groom share their first dance on a white LED dance floor in a draped, fairy-lit marquee as a burst of white confetti falls over them and the watching guests.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-02.webp",
+      "alt": "A white starlit DJ booth and backdrop with speakers, lit pillars and light-up LOVE letters beside a white LED dance floor, in a draped room with a fairy-light ceiling and lilac uplighting.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-03.webp",
+      "alt": "Wedding guests with their arms raised dance on a starlit LED dance floor under purple lighting, with the bride among the crowd.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-04.webp",
+      "alt": "A white starlit DJ booth flanked by white pillars topped with mirror-ball and moving-head lights, speakers on stands and a large white LED dance floor, in a room washed with red uplighting.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-05.webp",
+      "alt": "A bride and groom dance in the centre of a timber-beamed barn under strings of fairy lights, with pink heart projections on the walls and guests standing in a circle around them.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-06.webp",
+      "alt": "A bride and groom dance among a crowd of guests as confetti falls through pink and magenta uplighting in a high-ceilinged room.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-07.webp",
+      "alt": "A white starlit DJ booth and backdrop with moving-head lights on white pillars, speakers on stands, giant light-up '21' numbers and a white LED dance floor, beside a white sweet cart.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-08.webp",
+      "alt": "A banqueting room laid with round tables, white cloths and clear chairs under blue uplighting, with white ceiling drapes and snowflake light projections.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/IMG_1993.jpg"
+    },
+    {
+      "file": "public/media/tony-poole-discos/photo-09.webp",
+      "alt": "A photo booth with a red curtain behind chrome posts and red rope barriers, a 'Photobooth this way' sign, and a stand and table of fancy-dress props and hats.",
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/The-Grove-Watford-Herts-Photo-Booth.jpg"
+    }
+  ],
+  "notes": [
+    "Logo is a vector reconstruction (potrace via logo_trace.py, 2 layers: #ffffff and #a554ff) of the business's own transparent 964x467 PNG master; no genuine SVG exists. Source was cropped and upscaled 4x and its alpha edge threshold raised (128 -> 180) before tracing to cancel the tool's 1px dilation, so stroke weight matches the original (text ink within ~2%). The faint purple glow around the arcs is not reproduced. The mark is white, so it needs the dark plate.",
+    "Showreel is a photo reel (6 stills with a gentle push-in) from the business's own website photos. No direct, HLS or TikTok video exists; all 74 of the business's videos are on YouTube, which is not an allowed download source in this session.",
+    "All gallery photos are the business's own uploads on tonypoolediscos.com (Events Shots, Dance Floors & Backdrops and Setting the Scene pages). Wedding photos show identifiable guests; no school or celebrity images were used.",
+    "Photo 06 (Hanbury Manor) source is 2340 px wide; others are ~4000 px originals resized to 1600 px."
+  ]
+}

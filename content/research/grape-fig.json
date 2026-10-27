@@ -1,0 +1,459 @@
+{
+ "slug": "grape-fig",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Address is out of date. The business's own Our Story page now has a banner reading 'SUMMER POP-UP IS BACK – BRITYARD 285 REGENT STREET, W1B 2HQ – BUILD YOUR PERFECT BRITISH CHEESE BOX'. The listing's 310-312 Regent Street W1B 3AU was the 2024 Brityard site reported by Hot Dinners. The record treated 310-312 as the current location; the cheese box bar is a seasonal summer pop-up. ma.to lists Brityard events up to 5 Sep 2026 and shows 'No upcoming events scheduled'.",
+  "Identity evidence was missing the official register. Companies House lists GRAPE & FIG LIMITED (11853620): Active, incorporated 28 February 2019, SIC 56210 'Event catering activities', registered office 109 Victoria Road, Romford RM1 2LX, which is the same as the HQ/collection address on the How We Work page. Added. This still does not support the listing's 'established 2014'.",
+  "About item on delivery was sourced to /pages/how-we-work, but 'We deliver to most of the M25 & Essex' appears only on /pages/delivery. Split into two items with the correct sources.",
+  "About item 'Postable gifts and kits ship UK-wide' overstates coverage. The Delivery Policy says UK shipping is 'available for select products', usually by DHL overnight, to 'Most of mainland UK' with Highlands, islands, NI and Channel Islands postcodes excluded. How We Work also gives a £50 minimum spend for UK shipping. Corrected.",
+  "Ready-to-eat platter service cited /pages/how-we-work for prices that are only on the homepage (£98.00 Seasonal Fruit Platter; £142.00 appears on how-we-work only in the site-wide menu). Source changed to the homepage, with the £130 minimum attributed correctly.",
+  "Regent Street cheese box bar service described a permanent 2024 counter. Updated to the 2026 summer pop-up at Brityard, 285 Regent Street W1B 2HQ, using the business's own banner, with the 2024 launch kept.",
+  "Hot Dinners about item did not say the address dates from April 2024. Date qualifier added.",
+  "areasServed / areasSourceUrl: 'UK nationwide (postable gifts…)' was refined to match the Delivery Policy wording. Hertfordshire postcodes (AL2, EN, WD) listed on the delivery page were added.",
+  "Masterclass video description refined: on the homepage it is a background loop in the 'Virtual Masterclasses' hero, plus a play-button popup with controls. HLS master confirmed 1920x1080 + 1280x720 + 852x480 with mp4a audio.",
+  "No fabricated content found. All 3 logos, 12 images and 12 direct MP4s re-verified 200 with matching types, sizes and dimensions, and all appear on the stated source pages. Tagline, prices, florist/bespoke wording, PR client work and Our Story timeline all verified verbatim."
+ ],
+ "record": {
+  "slug": "grape-fig",
+  "displayName": "GRAPE & Fig",
+  "identity": {
+   "officialWebsite": "https://grapeandfig.com/",
+   "confidence": "high",
+   "alternateNames": [
+    "Grape & Fig",
+    "Grape and Fig",
+    "GRAPE & FIG",
+    "GRAPE & FIG LIMITED"
+   ],
+   "evidence": "Name and trade match: grapeandfig.com (og:site_name 'GRAPE & Fig') is a London/M25 grazing platter and grazing table company, and the listing's original image was grazingtables.png. The listing address is unique among the Booked Events cards in docs/reference/bookedevents-cards-parsed-20250331.json. It exactly matches the business's 2024 'Build Your Own British Cheese Box Bar', which Hot Dinners (2 Apr 2024) placed at 'Brityard, 310-312 Regent Street, London W1B 3AU', run by 'Romford-based sisters Toria and Catherine'. The business's own Our Story timeline says: '2024 UK's First 'Build Your Own Brititsh Cheese Box Bar' on London's Regent Street'. Companies House: GRAPE & FIG LIMITED (11853620), Active, incorporated 28 Feb 2019, SIC 56210 Event catering activities, registered office 109 Victoria Road, Romford RM1 2LX. That is the same HQ/collection address given on grapeandfig.com/pages/how-we-work. The current 2026 summer pop-up has moved to Brityard, 285 Regent Street W1B 2HQ (banner on the business's own site). Founding year does not match: the listing says 2014, the business says it was founded by Toria Smith in 2017, and the limited company was incorporated in 2019. No namesake business with a London/Regent Street presence was found."
+  },
+  "about": [
+   {
+    "text": "GRAPE & Fig is run by two sisters, Toria and Catherine. Toria Smith founded the company in 2017. She got the idea while planning her own wedding the year before, when she wanted a four-metre grazing table to serve as canapés and starters combined.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "The business says it brought the concept of 'grazing' over to the UK from Australia in 2017. Catherine joined in Spring 2019.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "Since the start of 2022 the company has used only 100% British cheese and charcuterie, sourced from small dairy farms and independent artisan producers across the UK. Every cheese or charcuterie-based platter comes with a menu and a map showing where in the UK the produce comes from.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "The business says every product is handmade each morning in its kitchens, using locally-sourced, seasonal and fresh produce.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "In 2024 the business opened what it calls the UK's first 'Build Your Own British Cheese Box Bar' on London's Regent Street.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "At its April 2024 launch the cheese box bar was at Brityard, 310-312 Regent Street, London W1B 3AU. Customers chose a box size and a base (cheese, charcuterie or vegan cheese), added condiments, and the team built the box with them.",
+    "sourceUrl": "https://hot-dinners.com/2024040213111/Gastroblog/Latest-news/grape-and-fig-cheese-box-bar-regent-street-london"
+   },
+   {
+    "text": "The business's site now advertises the cheese box bar as a summer pop-up: 'SUMMER POP-UP IS BACK – BRITYARD 285 REGENT STREET, W1B 2HQ – BUILD YOUR PERFECT BRITISH CHEESE BOX'.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "text": "The team are trained florists. They combine food and flowers in 'runner' platters, abundance-style tables and bespoke setups for events, press days, brand activations and intimate gatherings.",
+    "sourceUrl": "https://grapeandfig.com/pages/bespoke-food-displays-tables"
+   },
+   {
+    "text": "Ready-to-eat products are made fresh each morning and hand-delivered the same day by the company's own fragile-goods courier service to most of the M25 and Essex. Local delivery runs Tuesday to Saturday, and customers can also collect from the HQ in RM1.",
+    "sourceUrl": "https://grapeandfig.com/pages/delivery"
+   },
+   {
+    "text": "Only 48 hours' notice is needed for last-minute orders, though days may close once capacity is reached. A £130 minimum spend applies for hand-delivery within the M25/Essex.",
+    "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+   },
+   {
+    "text": "Selected products, such as gift boxes, kits and hampers, ship overnight (usually by DHL) to most of mainland UK. The homepage advertises free UK nationwide delivery for postable gifts and kits.",
+    "sourceUrl": "https://grapeandfig.com/pages/delivery"
+   },
+   {
+    "text": "The company describes itself as 'The UK's Leading Sharing Platter Company, Run by Sisters, with British Cheese & Charcuterie at its Heart.' This is the business's own claim.",
+    "sourceUrl": "https://grapeandfig.com/"
+   },
+   {
+    "text": "The company is registered as GRAPE & FIG LIMITED (company number 11853620). It was incorporated on 28 February 2019, its registered office is in Romford, and its listed nature of business is event catering activities.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/11853620"
+   }
+  ],
+  "services": [
+   {
+    "name": "Ready-to-eat sharing & grazing platters",
+    "description": "Freshly made, styled sharing platters (British cheese & charcuterie, vegan cheese, ploughman's, crudités & hummus, seasonal fruit, mini bagels, demi-brioche buns, sourdough focaccia and more), hand-delivered within London/M25 and Essex. Published prices include 'The British Cheese & Charcuterie Platter £142.00' and 'The Seasonal Fruit Platter £98.00'. The homepage banner reads 'READY-TO-EAT? MINIMUM SPEND OF £130 FOR HAND-DELIVERY WITHIN THE M25'.",
+    "sourceUrl": "https://grapeandfig.com/"
+   },
+   {
+    "name": "Cheese & Charcuterie Number, Letter & Symbol Grazes",
+    "description": "Cheese and charcuterie grazes shaped as numbers, letters or symbols. Homepage price: 'Cheese & Charcuterie Number, Letter & Symbol Grazes £149.00'.",
+    "sourceUrl": "https://grapeandfig.com/"
+   },
+   {
+    "name": "Styling Kits (build-your-own grazing table)",
+    "description": "Add-on kits that turn a platter order into a grazing table display. Four sizes are available. Each includes floral arrangements in vases, wooden stackers and a styling guide, and the customer keeps everything. Price text: 'Styling Kits (from just £108)'.",
+    "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
+   },
+   {
+    "name": "Bespoke Food Displays & Tablescaping",
+    "description": "Food displays and tablescapes built on site, including 'runner' platters, abundance-style tables and bespoke setups for events, press days, brand activations and intimate gatherings. Food, products, props and florals are styled together. No published price.",
+    "sourceUrl": "https://grapeandfig.com/pages/bespoke-food-displays-tables"
+   },
+   {
+    "name": "PR / Press / Influencer Mailers & brand activations",
+    "description": "Bespoke branded mailers, grazing tables and food content for brands. Past work listed includes a launch-event grazing table, virtual launch brunch and cheese boxes, a press cheese grazing runner, and pop-up picnics at Fulham Palace. No published price.",
+    "sourceUrl": "https://grapeandfig.com/pages/pr-press-influencer-mailers"
+   },
+   {
+    "name": "Breakfast, brunch & lunch catering for office and events",
+    "description": "Pastry platters, brioche bun and bagel platters, deli pots, yoghurt and granola pots, and drinks, sold through 'For Office' and 'For Events' menus. Published prices include 'The Croissant & Pastry Platter £55.00' (24 portions) and 'Greek Yoghurt with Lemon, Blackcurrant & Granola Pots (x10) £49.00'.",
+    "sourceUrl": "https://grapeandfig.com/"
+   },
+   {
+    "name": "Nationwide gifting",
+    "description": "Build-your-own and curated gift boxes, DIY cheese kits, greeting cards and digital gift cards, shipped to most of mainland UK. Price text: 'Build Your Own Gift Box £12.50'.",
+    "sourceUrl": "https://grapeandfig.com/"
+   },
+   {
+    "name": "Masterclasses & workshops",
+    "description": "Virtual online masterclasses and in-person workshops. The business says it was the first grazing company in the UK to host cheese platter and wine workshops (Summer 2019) and was first to launch a digital masterclass series (2024).",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   },
+   {
+    "name": "Build Your Own British Cheese Box Bar (Regent Street summer pop-up)",
+    "description": "A counter where customers build their own British cheese box. It launched in 2024 and is now advertised as a returning summer pop-up at Brityard, 285 Regent Street, W1B 2HQ.",
+    "sourceUrl": "https://grapeandfig.com/pages/our-story"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/thumbnail_Grape_and_Fig_Logo_BW.png?v=1665205626",
+    "format": "png",
+    "sourcePage": "https://grapeandfig.com/",
+    "width": 1786,
+    "height": 484,
+    "background": "transparent",
+    "colours": "black on transparent",
+    "notes": "The main header wordmark: serif capitals 'GRAPE &' with a script 'Fig'. Re-verified HTTP 200 image/png, 35,084 bytes, RGBA (colour type 6), 1786x484. This is the best candidate. No genuine SVG exists: the header's inline SVGs are only UI icons (menu, search, cancel, profile, bag), the theme .svg assets are icons only, and /logo.svg returns 404."
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/GrapeFig_BrandColourBreakdown_FINAL-08_48d1e90f-d18c-47be-a9c0-857055b6421d.jpg?v=1764777336",
+    "format": "jpeg",
+    "sourcePage": "https://grapeandfig.com/",
+    "width": 1773,
+    "height": 1773,
+    "background": "cream (solid, not transparent)",
+    "colours": "black wordmark and thin black circle on warm cream/off-white",
+    "notes": "The og:image brand lockup: the wordmark inside a thin circle. Re-verified HTTP 200 image/jpeg, 55,086 bytes. Usable as a square avatar."
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/Grape___Fig_Favicon.png?v=1744866297",
+    "format": "png",
+    "sourcePage": "https://grapeandfig.com/",
+    "width": 200,
+    "height": 200,
+    "background": "transparent",
+    "colours": "black serif 'GF' monogram on a cream circle; transparent outside the circle",
+    "notes": "The favicon / monogram mark (rel=icon). Re-verified HTTP 200 image/png, RGBA. Small at 200x200."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042",
+    "description": "A bespoke tablescape: a long dining table with wildflower florals, grazing food and full place settings, set up for a brand event (part of the brand signage is visible).",
+    "sourcePage": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 4321
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/Bespoke_Food_Displays_GRAPE_Fig.jpg?v=1763060954",
+    "description": "A green-themed bespoke food display table with fresh produce, foliage, green juices and styled books.",
+    "sourcePage": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 4321
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/Beauty_Pie_Bespoke_Table.jpg?v=1763060918",
+    "description": "A bespoke floral and fruit display for a Beauty Pie brand event, with pink flowers, citrus and the client's products.",
+    "sourcePage": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 4321
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/M_S_Food_Bespoke_Food_Display_63f21294-93e2-488c-96b4-e661a6b4e3be.jpg?v=1763062194",
+    "description": "A bespoke produce and grazing display for an M&S Food press event (#ss24mands).",
+    "sourcePage": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 4321
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221",
+    "description": "A pastry and brunch grazing display with plants and the client's products, set up in an office for Skin + Me.",
+    "sourcePage": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 4321
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906",
+    "description": "A brunch table of croissants, pastries and toast boxes with white daisy florals, against a brick wall.",
+    "sourcePage": "https://grapeandfig.com/pages/our-story",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 5184
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757",
+    "description": "A grazing table with candles, white florals, baguettes and platters.",
+    "sourcePage": "https://grapeandfig.com/pages/our-story",
+    "stockRisk": "own",
+    "width": 3572,
+    "height": 5358
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316",
+    "description": "An event grazing spread on a kitchen island, with blossom florals and a brioche bun platter (alt 'grazing platters for events').",
+    "sourcePage": "https://grapeandfig.com/",
+    "stockRisk": "own",
+    "width": 1290,
+    "height": 1603
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492",
+    "description": "GRAPE & Fig at Brityard, Regent Street: the Build Your Own British Cheese Box Bar counter with its menu wall and the two sisters behind the counter (alt 'GRAPE AND FIG AT BRITYARD').",
+    "sourcePage": "https://grapeandfig.com/pages/our-story",
+    "stockRisk": "own",
+    "width": 1200,
+    "height": 1640
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720",
+    "description": "A cheese and charcuterie board with fruit, built on brown paper with handwritten labels at a workshop.",
+    "sourcePage": "https://grapeandfig.com/pages/our-story",
+    "stockRisk": "own",
+    "width": 3456,
+    "height": 3456
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771",
+    "description": "A festive wreath-shaped cheese and charcuterie platter with fruit and a velvet ribbon, in a GRAPE & Fig box.",
+    "sourcePage": "https://grapeandfig.com/",
+    "stockRisk": "own",
+    "width": 2560,
+    "height": 3413
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958",
+    "description": "Founders Toria and Catherine with a fresh grazing platter (alt 'Toria and Catherine enjoying a fresh grape and fig grazing platter'). The filename suggests a commissioned shoot by Amber-Rose Smith.",
+    "sourcePage": "https://grapeandfig.com/pages/our-story",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 2250
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "Virtual Masterclasses promo: landscape 1920x1080 with audio, showing the two founders in a kitchen with wooden boards. On the homepage it plays as the 'Virtual Masterclasses' hero background, with a play button that opens it with controls. Best hero/showreel candidate. HLS master .../d54640d25f514ad8871616691651212c.m3u8 is also available (200, application/vnd.apple.mpegurl; 1080p/720p/480p, avc1 + mp4a).",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Hosted on the business's own Shopify CDN and embedded in its homepage hero. The founders on camera match the Our Story photo captioned 'Toria and Catherine'.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 25030323
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/d0e8876bba57491bb7fb2c52af7fbfe9/d0e8876bba57491bb7fb2c52af7fbfe9.HD-1080p-3.3Mbps-46791560.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "'Learn to platter with us - Virtual Classes': portrait 900x1080 with audio (HLS codecs avc1 + mp4a), featuring the founders in a kitchen.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Hosted on the business's own Shopify CDN and embedded on its homepage; the founders appear on camera.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 11687097
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/28cd542befc5487697d4091055e26445/28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The British Cheese & Charcuterie Platter: a muted, looping portrait close-up at 810x1080 (no audio track in HLS).",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, autoplaying on its homepage and in the site-wide menu product cards.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 7598985
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/4ab669f6ed1043709d8f5f727d731541/4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "Cheese & Charcuterie Number graze (a number-shaped graze in a box): a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage (aria-label 'Cheese & Charcuterie Number').",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 2105693
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/3fef527e91e74fbda8c6c4a8153d16c4/3fef527e91e74fbda8c6c4a8153d16c4.HD-1080p-7.2Mbps-76786449.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The British Cheese Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 8898044
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/5bc522ce2d7b429993ce5bcdc4876113/5bc522ce2d7b429993ce5bcdc4876113.HD-1080p-7.2Mbps-76786600.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "Vegan Cheese Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 8554541
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/be0c9ab28f274c8380163558159e6fe3/be0c9ab28f274c8380163558159e6fe3.HD-1080p-7.2Mbps-76785876.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "British Charcuterie Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 9469292
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/74d62ed667f34d559b0025b11b1c96d4/74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "Seasonal Fruit Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 7047661
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/2b7f4c999fd14063859a446b381e515d/2b7f4c999fd14063859a446b381e515d.HD-1080p-4.8Mbps-76786165.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The Pre-Cut British Cheese & Charcuterie Platter: a muted portrait close-up loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 1744114
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/65205974cf894f36b838549cdcda2669/65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The Crudités & Hummus Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 3299759
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/2b0fc1868bca47e2adc86a467bc34276/2b0fc1868bca47e2adc86a467bc34276.HD-1080p-7.2Mbps-76649359.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The Mini Bagel Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 1686364
+   },
+   {
+    "url": "https://grapeandfig.com/cdn/shop/videos/c/vp/24f36653ec504484b9ff75be05ba84a4/24f36653ec504484b9ff75be05ba84a4.HD-1080p-7.2Mbps-76787073.mp4?v=0",
+    "kind": "direct-file",
+    "publiclyFetchable": true,
+    "description": "The Sourdough Focaccia Platter: a muted portrait loop.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Product video on the business's own Shopify CDN, embedded on its homepage.",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 1822453
+   },
+   {
+    "url": "https://www.tiktok.com/@grape_and_fig",
+    "kind": "tiktok",
+    "publiclyFetchable": false,
+    "description": "Official TikTok profile linked from the site footer. Individual videos could not be listed: a plain request returns HTTP 200 with only the generic 'TikTok - Make Your Day' JS shell.",
+    "sourcePage": "https://grapeandfig.com/",
+    "ownContentEvidence": "Linked from the business's own website footer (TikTok icon link).",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/grapeandfig/",
+   "facebook": "https://www.facebook.com/GRAPEandFig/",
+   "tiktok": "https://www.tiktok.com/@grape_and_fig",
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://uk.pinterest.com/grapeandfig/",
+    "https://uk.trustpilot.com/review/grapeandfig.com"
+   ]
+  },
+  "instagramAccess": "Re-checked with one plain unauthenticated GET to https://www.instagram.com/grapeandfig/ (desktop UA): HTTP 200, no redirect, ~505 KB generic JS app shell titled 'Instagram' with no og:title/og:description and no readable posts, so it is effectively login/JS-walled. Not retried. The handle @grapeandfig is confirmed by the site footer link and the 'please tag us @grapeandfig' line on the How We Work page.",
+  "industry": "food-services",
+  "categories": [
+   "Grazing Tables",
+   "Caterers"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Product Launches",
+   "Private Parties",
+   "Seasonal Events"
+  ],
+  "eventTypesSourceUrl": "https://grapeandfig.com/pages/bespoke-food-displays-tables",
+  "areasServed": [
+   "London (most of the area inside the M25)",
+   "Essex",
+   "Hertfordshire (selected postcodes on the delivery list, e.g. AL2, EN, WD)",
+   "Romford (collection from HQ in RM1)",
+   "Most of mainland UK (overnight shipping for selected postable products only)"
+  ],
+  "areasSourceUrl": "https://grapeandfig.com/pages/delivery",
+  "tagline": "THE HOME OF 100% BRITISH, ARTISAN CHEESE & CHARCUTERIE, STYLED BEAUTIFULLY",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": null
+  },
+  "gaps": [
+   "Founding year conflict: the listing says established 2014. The business's Our Story page says Toria Smith founded it in 2017, and Hot Dinners says the sisters have been 'doing grazing boards… since 2017'. Companies House shows GRAPE & FIG LIMITED incorporated 28 Feb 2019. Nothing supports 2014.",
+   "Listing price '£100 per head' does not appear on the business's site. The site publishes per-product prices instead (e.g. £142.00 platter, £149.00 number graze, Styling Kits from £108), plus a £130 minimum spend for M25/Essex hand-delivery and £15 standard delivery.",
+   "Address: the listing's 310-312 Regent Street W1B 3AU was Brityard's site when the cheese box bar launched in April 2024 (Hot Dinners). The business's own site now advertises the summer pop-up at 'BRITYARD 285 REGENT STREET, W1B 2HQ'. The bar is seasonal: ma.to lists Brityard events up to 5 Sep 2026 and says 'No upcoming events scheduled', so it is probably not running in late October 2026. The permanent HQ/kitchen and registered office is 109 Victoria Road, Romford RM1 2LX (business premises).",
+   "Event types: 'events, press days, brand activations & intimate gatherings' (bespoke page); 'intimate gatherings, large celebrations or a brand moment' (Our Story); launch-event grazing tables (PR page); the CHRISTMAS 'Ready-to-eat catering (London & M25)' menu. Weddings and birthdays come only from third parties (Hot Dinners: 'parties, weddings and more') or the founder's own wedding origin story, so they were left out of eventTypes.",
+   "grapeandfig.com rate-limits requests: HTTP 429 on /products/virtual-cheese-charcuterie-platter-class, /collections/in-person-workshops and /blogs/news during verification. These were not retried, so in-person workshop details, the blog/inspiration content and any extra footage on those pages are unverified.",
+   "No SVG logo exists. The header logo is a raster PNG (1786x484, transparent). The site's inline SVGs and theme .svg assets are UI icons only, and /logo.svg returns 404.",
+   "YouTube: no channel is linked from the site, and youtube.com/@grapeandfig redirects (302) to the Google consent wall, which was not bypassed. Vimeo: none linked. A web search found no YouTube videos.",
+   "TikTok video list and Facebook page could not be read without login/JS.",
+   "Client brand logos on the site (ASOS, Burberry, Dior, Maybelline, etc.) are third-party marks and must not be used as Grape & Fig brand assets. Several bespoke-display photos show client products and branding (Beauty Pie, M&S Food, Skin + Me).",
+   "All product videos are short muted portrait loops (810x1080). The only landscape footage is the 1080p Virtual Masterclasses promo featuring the founders.",
+   "Contact email and phone deliberately not recorded, per the rules."
+  ]
+ }
+}

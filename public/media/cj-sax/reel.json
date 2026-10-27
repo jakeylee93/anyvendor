@@ -1,0 +1,75 @@
+{
+  "slug": "cj-sax",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://videos.files.wordpress.com/VcsR70uE/soultown-2022_mov_hd.mp4",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 23.4,
+      "endSec": 26.2,
+      "note": "CJ SAX DJ LIVE @ Soultown 2022: CJ playing gold sax at the DJ booth, festival crowd behind"
+    },
+    {
+      "sourceUrl": "https://videos.files.wordpress.com/cjhfiO7V/cj-o-beach.mov",
+      "durationSec": 2.8,
+      "kind": "video",
+      "startSec": 37.0,
+      "endSec": 39.8,
+      "note": "CJ SAX @ O Beach Ibiza: CJ at the decks, arm raised to a daytime pool-party crowd"
+    },
+    {
+      "sourceUrl": "https://videos.files.wordpress.com/l03zYkWO/cj-botleys.mov",
+      "durationSec": 2.4,
+      "kind": "video",
+      "startSec": 18.0,
+      "endSec": 20.4,
+      "note": "CJ SAX @ Botley's Mansion: CJ playing sax on a wedding dance floor among guests with LED foam sticks"
+    },
+    {
+      "sourceUrl": "https://videos.files.wordpress.com/Xaj1TW1i/soultown-02_mov_hd.mp4",
+      "durationSec": 2.4,
+      "kind": "video",
+      "startSec": 10.4,
+      "endSec": 12.8,
+      "note": "CJ SAX @ The O2: CJ walking the stage with his sax in front of an arena crowd"
+    },
+    {
+      "sourceUrl": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Photo still (downscaled to 2560 px): CJ playing sax standing in shallow water at a pool edge"
+    },
+    {
+      "sourceUrl": "https://videos.files.wordpress.com/DY64LI5g/ashridge-house_mov_hd.mp4",
+      "durationSec": 2.5,
+      "kind": "video",
+      "startSec": 20.3,
+      "endSec": 22.8,
+      "note": "CJ SAX @ The Banjo Wedding: packed wedding dance floor with hands in the air in a wood-panelled room"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/cj-sax/reel-desktop.mp4",
+      "poster": "/media/cj-sax/poster-desktop.jpg",
+      "posterWebp": "/media/cj-sax/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 11.9,
+      "bytes": 5225613
+    },
+    "mobile": {
+      "video": "/media/cj-sax/reel-mobile.mp4",
+      "poster": "/media/cj-sax/poster-mobile.jpg",
+      "posterWebp": "/media/cj-sax/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 11.9,
+      "bytes": 5186191
+    }
+  },
+  "colour": "H.264 VUI retagged to BT.709 (primaries/transfer/matrix) after build; segment 1 source carried BT.2020 tags"
+}

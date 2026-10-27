@@ -1,0 +1,133 @@
+{
+ "slug": "tony-poole-discos",
+ "displayName": "Tony Poole Discos",
+ "tagline": "The Ultimate Party Experience",
+ "intro": "Tony Poole Discos is a team of wedding, party and corporate event DJs based in Theydon Bois, Essex. As well as mobile discos, they supply uplighting, LED dance floors, backdrops, light-up LOVE letters, and photo and 360 video booths across Essex, Herts, London and beyond.",
+ "about": [
+  "Tony Poole Discos describes itself as a team of experienced, versatile DJs who personalise each occasion, mixing requests with tracks they know will work. The business says it has been in the DJ industry for over 30 years and plays at venues across London and the Home Counties. Its DJs page lists a team of 20, including Tony Poole and Richard Poole.",
+  "Music is tailored to each event. Before the day, clients are asked to send the tracks and genres they want played, plus a list of tracks or types of music they don't want played. On the night, the DJ reads the room and does their best to work in guests' requests. According to the business, every booking comes with an experienced DJ who co-ordinates and comperes moments such as the First Dance, a surprise entrance, announcements and introductions.",
+  "Beyond the music, they can dress a venue with ambience uplighting, white LED dance floors, starlit backdrops and giant light-up LOVE letters and numbers. They can also add photo or 360 video booths and confetti bombs, and arrange live entertainment. The business states that its sound and lighting equipment is PAT tested and complies with health and safety rules, and that it holds Public Liability Insurance. It also says it has backup DJs and breakdown cover on its vehicles in case of emergencies.",
+  "They say they have played at London venues including Buckingham Palace, Grosvenor House, The Dorchester, The Ritz and The Shard. To book, event details go onto a reservation form, which the client confirms by email. A 25% deposit is generally due within 14 days. The balance is paid on the night by cash or cheque, or in advance by BACS. Deposits are normally non-refundable but can be moved to another event."
+ ],
+ "services": [
+  {
+   "name": "Wedding DJs & All Day Service",
+   "description": "A wedding DJ with an optional All Day Service. It covers set-up before guests arrive, background music for the drinks reception and meal, compering and wireless microphones for the speeches, and ceremony music through a mini PA."
+  },
+  {
+   "name": "Corporate, Christmas & New Year's Eve DJs",
+   "description": "DJs for corporate parties, dinner dances and awards nights, Christmas parties booked by companies and organisations, and venue or agency party nights. They also play New Year's Eve events at hotels, clubs, pubs and private residences."
+  },
+  {
+   "name": "Birthday, Anniversary & School Prom DJs",
+   "description": "DJs for birthday and anniversary parties, with a wide music catalogue for guests of mixed ages and tastes. They also play school proms and school discos, with lighting that includes lasers."
+  },
+  {
+   "name": "Ambience Uplighting",
+   "description": "Colour uplighting to change the look of a venue. Their site shows before-and-after galleries in a range of colours at Broxbourne Golf Complex, Theydon Bois Golf Club and Ware Priory."
+  },
+  {
+   "name": "Dance Floors, Backdrops & Light-Up Letters",
+   "description": "White LED dance floors, starlit or white LED backdrops for the DJ area, top table or ceremony, giant light-up LOVE letters and LED numbers, and DJ booth set-ups from Standard to Premier."
+  },
+  {
+   "name": "Photo Booth, 360 Video Booth & Confetti",
+   "description": "A deluxe photo booth or a 360 video booth for guests, which the business says comes with plenty of props. Confetti bombs can also be fired during the First Dance at weddings."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Corporate Events",
+  "Birthday Parties",
+  "Anniversaries",
+  "Seasonal Events",
+  "Private Parties"
+ ],
+ "areasServed": [
+  "Essex",
+  "Hertfordshire",
+  "London",
+  "Home Counties",
+  "South East"
+ ],
+ "website": "https://tonypoolediscos.com/",
+ "socials": {
+  "facebook": "https://www.facebook.com/tonypoolediscos/",
+  "instagram": "https://www.instagram.com/tonypoolediscos/",
+  "tiktok": null,
+  "vimeo": null,
+  "youtube": "https://www.youtube.com/@tonypoolediscos5120"
+ },
+ "contact": null,
+ "established": {
+  "label": "Over 30 years in the DJ industry (their own description)",
+  "sourceUrl": "https://tonypoolediscos.com/about-us/"
+ },
+ "basedIn": {
+  "text": "Theydon Bois, Essex",
+  "sourceUrl": "https://tonypoolediscos.com/contact-us/"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "Some online listings give 2010 as a start date, but that appears to be when the business joined a directory: it says it has been in the DJ industry for over 30 years and does not publish a founding year."
+ },
+ "sources": [
+  {
+   "label": "Tony Poole Discos — Home",
+   "url": "https://tonypoolediscos.com/"
+  },
+  {
+   "label": "Tony Poole Discos — About Us",
+   "url": "https://tonypoolediscos.com/about-us/"
+  },
+  {
+   "label": "Tony Poole Discos — Our Services",
+   "url": "https://tonypoolediscos.com/our-services/"
+  },
+  {
+   "label": "Tony Poole Discos — Why Book Us?",
+   "url": "https://tonypoolediscos.com/dj-weddings-events/"
+  },
+  {
+   "label": "Tony Poole Discos — Set Ups & Event Accessories",
+   "url": "https://tonypoolediscos.com/dance-floors-backdrops/"
+  },
+  {
+   "label": "Tony Poole Discos — The Music",
+   "url": "https://tonypoolediscos.com/the-music-2/"
+  },
+  {
+   "label": "Tony Poole Discos — Making a Booking",
+   "url": "https://tonypoolediscos.com/booking/"
+  },
+  {
+   "label": "Tony Poole Discos — Prestigious Venues & Clients",
+   "url": "https://tonypoolediscos.com/prestigious-venues-clients/"
+  }
+ ],
+ "gaps": [
+  "No prices are published on the business's own website, so there is no confirmed starting price.",
+  "The founding year is not published. The 'over 30 years' in the DJ industry is the business's own description, and a 2010 date seen elsewhere appears to be a directory listing date.",
+  "Engagement parties appear in the business's own video gallery (Chalkwell Park Rooms, Southend, and a marquee in Abridge), but its services page does not list them as an event type.",
+  "The venue and client claims, the Bridebook Platinum Award 2024 and the 'over 200, all 5-star' Google reviews come only from the business's own website and have not been independently verified.",
+  "The Instagram and Facebook profile content could not be viewed without logging in, and the full contents of the YouTube channel could not be listed.",
+  "No TikTok or Vimeo accounts were found."
+ ],
+ "taxonomy": {
+  "industry": "entertainment",
+  "categories": [
+   "DJs & Disco",
+   "Staging & Lighting"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Birthday Parties",
+   "Anniversaries",
+   "Seasonal Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://tonypoolediscos.com/our-services/"
+ }
+}

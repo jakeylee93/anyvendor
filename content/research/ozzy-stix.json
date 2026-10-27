@@ -1,0 +1,538 @@
+{
+ "slug": "ozzy-stix",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Missed footage: the record lists only 2 YouTube videos and says the channel could not be listed because of a consent redirect. Fetched again, https://www.youtube.com/@ozzystix3324/videos loaded (12 videos, 86 subscribers). It showed 10 more of the business's own videos (covers, mashups and 'O&S Presents' sessions), each confirmed by oEmbed with author 'Ozzy & Stix' and a watch page returning 200. They are now added and the gap is updated.",
+  "Wrong dates in the founding-year evidence: the record says the business's own channels date from October 2018 (Squarespace and Vimeo). The YouTube channel has an upload from 23 Aug 2017: 'Friends – Justin Bieber x Bloodpop x Michael Jackson Mashup (Ozzy & Stix Cover)', publishDate 2017-08-23. The 2010 founding year is still unverified, but the earliest own-channel evidence is August 2017.",
+  "Overstated service: 'They will also drop songs a client asks them to avoid' goes beyond the FAQ. It actually says they are happy to remove songs 'connected to bad memories such as loss of a loved one'. Reworded.",
+  "Incomplete fact: the record says 'They do not provide lighting'. The FAQ adds that they 'may be able to suggest a supplier near you'. Added. A supported fact was also missing: the FAQ says they will perform with other acts and external DJs if the fit is right. Added.",
+  "Sitemap pages were missed: /new-page-1 is the site's Privacy Policy ('Last updated January 30, 2025'), which shows the site was still maintained in 2025. /home duplicates the homepage. Added to gaps; no new media found.",
+  "Not stated in the record: the poster image for the Instagram video post B1ttjWkAOJ- is 1567016848177-V4TNP00OHGVHNGSXKXQ9/image-asset.jpeg (640x640, a motion-blurred frame). Added to that video's description; it was not added as a photo.",
+  "Everything else held up when checked. The Booked Events listing (post 12042, listed Dec 15 2024, Est.2010, Brentwood, Essex, £500, Visit Website link to ozzyandstix.com/contact, the ozzyandstix.com email, word-for-word description) matches. All logo and photo URLs returned 200 with image types, and every dimension matched (whitebig.png is 1280x720 with a palette tRNS chunk and alpha bounds 56,196–1223,525; the favicon is 1280x720 with no tRNS; the og image is 500x500; the BE logo is 1000x1000 RGBA at 1,034,610 bytes). No SVG anywhere: no inline header svg apart from Squarespace social-icon sprites, /logo.svg is 404, and the header uses whitebig.png. The 6 Vimeo videos (user90384348 'ozzy&stix', 6 uploads, created 2018-10-08) and their durations and sizes match. TikTok shows 'Ozzy&Stix', 393 videos, 3,679 followers, created 2023-10-17. Instagram gives a logged-out PolarisErrorRoot/httpErrorPage shell. Facebook /ozzyandstix returns 400. Mike Savory's quotes are verbatim. Web searches found no namesake business. No personal email or phone appears in contact."
+ ],
+ "record": {
+  "slug": "ozzy-stix",
+  "displayName": "Ozzy&Stix",
+  "identity": {
+   "officialWebsite": "https://www.ozzyandstix.com",
+   "confidence": "high",
+   "alternateNames": [
+    "Ozzy & Stix",
+    "Ozzy and Stix",
+    "ozzyandstix",
+    "Ozzy&Stix LDN Music",
+    "O&S"
+   ],
+   "evidence": "The Booked Events listing (https://bookedevents.co.uk/businesses/ozzy-stix/, WP post 12042, 'Listed on Dec 15, 2024', 'Est.2010 · Brentwood, Essex', 'Price from: £500 per event') has a 'Visit Website' button linking to https://www.ozzyandstix.com/contact and shows the info@ ozzyandstix.com address. Its description matches the official homepage text word for word ('What do you get when you cross a fantastic vocalist with an equally talented guitarist who both play bongos and percussion? Ozzy&Stix are perfect for both Acoustic Performances at your Event and/or a Party Set'). The listing's featured image Ozzy-Stix.jpeg (2295x2383) is the same photo as the official site's IMG_0596.JPG (2295x2383). The official contact page says 'Our Location In Sunny Essex'. Third-party videographer Mike Savory (mikesavory.co.uk/ozzy-and-stix) says Ozzy and Stix 'are based southeast of Brentwood, Essex' and links to ozzyandstix.com. The TikTok account @ozzyandstix (display name 'Ozzy&Stix') gives the same ozzyandstix.com email in its bio. The site's Vimeo and YouTube embeds belong to accounts named 'ozzy&stix' (vimeo user90384348) and 'Ozzy & Stix' (@ozzystix3324, channel UC8hbfrLu3jtylW3qJTnOdug). Web searches found no other business with this name. One mismatch: the 2010 establishment year appears on none of the business's own channels. The earliest own-channel content is a YouTube upload of 23 Aug 2017, and the Squarespace site and Vimeo account date from Oct 2018."
+  },
+  "about": [
+   {
+    "text": "Ozzy&Stix is a duo of a vocalist and a guitarist, and both of them also play bongos and percussion.",
+    "sourceUrl": "https://www.ozzyandstix.com/"
+   },
+   {
+    "text": "The duo offers acoustic performances at events, a party set, or both.",
+    "sourceUrl": "https://www.ozzyandstix.com/"
+   },
+   {
+    "text": "The website pitches the duo mainly at weddings ('Email Us Today About Making Your Wedding Incredible'). Its meta description reads 'london duo music wedding party'.",
+    "sourceUrl": "https://www.ozzyandstix.com/"
+   },
+   {
+    "text": "The contact page gives the duo's location as Essex ('Our Location In Sunny Essex').",
+    "sourceUrl": "https://www.ozzyandstix.com/contact"
+   },
+   {
+    "text": "Both members DJ, and they say they are comfortable with Jewish dancing, Bhangra and other genres that come up at weddings.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "They can supply extra performers from their own roster, such as sax players and violinists, and can provide music from the ceremony through to the full party.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "They will travel abroad for events. The client pays flights, accommodation, transfers and other trip costs on top of the performance fee.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "PAT test and public liability documents, and a repertoire list, are available on request.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "They can learn specific songs within reason, with at least six weeks' notice for a first dance or ceremony song. They don't provide lighting but may be able to suggest a supplier.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "They will perform alongside other acts, including external DJs, if they think the combination will work well.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "They play a few public gigs each year and announce the dates on Instagram.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "text": "Previous clients named on the site: V&A Museum London, Deutsche Bank, Just Seventy Events, London Rox Events, Royal Caribbean Cruises, Sunseeker Luxury Yachts, BNP Paribas and PHJR Events.",
+    "sourceUrl": "https://www.ozzyandstix.com/what-we-do"
+   },
+   {
+    "text": "The site quotes client testimonials, including 'Faultless Vocals, Fantastic Musicians, Unbelievable Entertainers' (Steve Taylor, BNP Paribas) and 'You guys were amazing!! (as expected)' (Zoe Ward, Deutsche Bank).",
+    "sourceUrl": "https://www.ozzyandstix.com/what-we-do"
+   },
+   {
+    "text": "The duo's TikTok bio reads 'ELITE wedding entertainment' and lists both DJ and live performance.",
+    "sourceUrl": "https://www.tiktok.com/@ozzyandstix"
+   },
+   {
+    "text": "Their YouTube channel posts acoustic covers and mashups (Ben E. King, Michael Jackson, Dua Lipa, Drake, a UK garage medley) and an 'O&S Presents' session series.",
+    "sourceUrl": "https://www.youtube.com/@ozzystix3324/videos"
+   },
+   {
+    "text": "Third-party source, not the business itself: wedding videographer Mike Savory says Ozzy and Stix are based southeast of Brentwood, Essex, and cover East Anglia including Norfolk.",
+    "sourceUrl": "https://mikesavory.co.uk/ozzy-and-stix/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Acoustic performance",
+    "description": "Live acoustic sets with vocals and guitar, with both members also playing bongos and percussion ('perfect for both Acoustic Performances at your Event').",
+    "sourceUrl": "https://www.ozzyandstix.com/"
+   },
+   {
+    "name": "Party set",
+    "description": "A party set, booked alone or together with an acoustic performance ('and/or a Party Set').",
+    "sourceUrl": "https://www.ozzyandstix.com/"
+   },
+   {
+    "name": "DJ Live Experience",
+    "description": "'Supercharge your party with our carefully curated DJ Live Experience.' Both members DJ, and the FAQ says they are comfortable with Jewish dancing and Bhangra.",
+    "sourceUrl": "https://www.ozzyandstix.com/what-we-do"
+   },
+   {
+    "name": "Additional performers (#MADE)",
+    "description": "'Add a Sax, Violin, or Trumpet to design your perfect combination of performers.' The FAQ says sax players, violinists and other musicians and singers are available from their roster.",
+    "sourceUrl": "https://www.ozzyandstix.com/what-we-do"
+   },
+   {
+    "name": "Ceremony-to-party music",
+    "description": "'Yes we offer music/entertainment solutions from ceremony to full on party.'",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "name": "Song requests / first-dance learning",
+    "description": "They learn specific songs within reason, with at least six weeks' notice for a first dance or ceremony song. They build sets from a guide to the crowd's tastes, and will remove songs connected to bad memories, such as the loss of a loved one.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   },
+   {
+    "name": "Overseas performances",
+    "description": "They will travel abroad. The client pays flights, accommodation and transfers on top of the performance fee.",
+    "sourceUrl": "https://www.ozzyandstix.com/new-page"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "background": "transparent",
+    "colours": "white script wordmark",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "notes": "The official site header logo (the <img> in #header, and logoImageUrl in the Squarespace context): a white script wordmark 'Ozzy&Stix'. It is a palette PNG with a tRNS chunk, so the background is transparent. Visible content sits at x56–1223, y196–525 (verified). Append ?format=original to get the PNG rather than WebP. No SVG exists: the header has no inline svg (only Squarespace social-icon sprites) and /logo.svg returns 404."
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087597808-W2WTTP3UYILMJEBE6YKZ/favicon.ico?format=original",
+    "format": "png",
+    "width": 1280,
+    "height": 720,
+    "background": "white",
+    "colours": "black script wordmark on white",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "notes": "The site favicon. Despite the .ico name it is a 1280x720 palette PNG with no tRNS chunk, so it is opaque. It shows the same wordmark in black on white, with ink bounds x56–1223, y196–525."
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539087637519-LIHPNY893JVO1JX9ELV0/image.jpg?format=original",
+    "format": "jpeg",
+    "width": 500,
+    "height": 500,
+    "background": "dark",
+    "colours": "white on black",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "notes": "The og:image/social logo (socialLogoImageUrl), a boxed lockup reading 'Ozzy&Stix | LDN | MUSIC' in white on black. Low resolution (500x500). The same file is also served at https://images.squarespace-cdn.com/content/5bbc76358d97402a0b1c7905/1539087637519-LIHPNY893JVO1JX9ELV0/image.jpg?content-type=image%2Fjpeg."
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "neon pink, cyan and yellow on a black circle; transparent corners",
+    "sourcePage": "https://bookedevents.co.uk/businesses/ozzy-stix/",
+    "notes": "The logo on the Booked Events listing (RGBA PNG, 1,034,610 bytes, uploaded Dec 2024): a circular neon-sign design reading 'Ozzy & Stix'. Probably supplied by the business, but its provenance is unverified because it appears nowhere on ozzyandstix.com, and the TikTok avatar is a different design."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original",
+    "width": 2295,
+    "height": 2383,
+    "description": "Black-and-white studio promo portrait of the duo, Ozzy left and Stix right, with an electric guitar, Marshall amp and bongos (the homepage 'About' image; also the featured image on Booked Events)",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+    "width": 2500,
+    "height": 1044,
+    "description": "The duo playing acoustic guitars on a sea-view terrace (videos page banner). Wide format, suitable for a hero.",
+    "sourcePage": "https://www.ozzyandstix.com/videos",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original",
+    "width": 2500,
+    "height": 856,
+    "description": "Sepia-toned shot of the duo seated with an acoustic guitar (Book Now page banner)",
+    "sourcePage": "https://www.ozzyandstix.com/take-action",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original",
+    "width": 1200,
+    "height": 911,
+    "description": "The duo with acoustic guitars in a flower-decked garden pavilion at a wedding venue",
+    "sourcePage": "https://www.ozzyandstix.com/contact",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original",
+    "width": 1284,
+    "height": 737,
+    "description": "Black-and-white live performance shot: guitarist singing with an electric guitar",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original",
+    "width": 1200,
+    "height": 625,
+    "description": "Expanded #MADE line-up in a studio: sax, guitar, vocals, violin and percussion",
+    "sourcePage": "https://www.ozzyandstix.com/what-we-do",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539084406620-UHWG73Y9QHCRHWTAFMHX/IMG_3845.jpg?format=original",
+    "width": 2320,
+    "height": 2320,
+    "description": "Informal selfie of the two members at a venue window (homepage). Playful, less polished.",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg",
+    "width": 1000,
+    "height": 800,
+    "description": "Recent photo of the duo sitting on a stone wall outdoors (Booked Events listing thumbnail, Dec 2024; appears to show the same two people as the official site)",
+    "sourcePage": "https://bookedevents.co.uk/businesses/ozzy-stix/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg",
+    "width": 640,
+    "height": 640,
+    "description": "Instagram feed image 'Right before we tear it up': the duo on a garden bench in smart wedding attire (only 640px)",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937138401-YZ14529T5UBD1S8U70AV/image-asset.jpeg",
+    "width": 640,
+    "height": 640,
+    "description": "Instagram feed image 'Vocals and guitar we got you covered': black-and-white live shot with an electric guitar at a brick venue (only 640px)",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg",
+    "width": 640,
+    "height": 640,
+    "description": "Instagram feed image 'Stix holding down the rhythm guitar': black-and-white acoustic performance at an outdoor event (only 640px)",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://vimeo.com/294118993",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Ozzy&Stix Promo': 119s, 1920x1080, uploaded 2018-10-09. Shown as 'Ozzy&Stix Present #MADE' on the videos page, embedded on #MADE, and linked from the homepage #MADE button. This is the best showreel candidate. Poster: https://i.vimeocdn.com/video/730935170-b2a41d4183e19c51233f6458834e7d49bfd18cc4266493005a4a60ea7d66a901-d_1920x1080 (HEAD 200, image/jpeg).",
+    "sourcePage": "https://www.ozzyandstix.com/videos",
+    "ownContentEvidence": "Embedded on the business's own site. The Vimeo oEmbed author is 'ozzy&stix' (vimeo.com/user90384348)."
+   },
+   {
+    "url": "https://vimeo.com/294198440",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'wanna dance': 60s, 1920x1080, uploaded 2018-10-09, embedded on the homepage",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "ownContentEvidence": "Embedded on the own homepage; the Vimeo author is 'ozzy&stix' (user90384348)."
+   },
+   {
+    "url": "https://vimeo.com/294240593",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'pyt' (shown as 'PYT' on the site): 60s, 1920x1080, uploaded 2018-10-09",
+    "sourcePage": "https://www.ozzyandstix.com/videos",
+    "ownContentEvidence": "Embedded on the own videos page; the Vimeo author is 'ozzy&stix' (user90384348)."
+   },
+   {
+    "url": "https://vimeo.com/294240985",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'lets stay together' (shown as 'Let's Stay Together'): 73s, 1920x1080, uploaded 2018-10-09",
+    "sourcePage": "https://www.ozzyandstix.com/videos",
+    "ownContentEvidence": "Embedded on the own videos page; the Vimeo author is 'ozzy&stix' (user90384348)."
+   },
+   {
+    "url": "https://vimeo.com/316600625",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'If I Ain't Got You': 35s, 640x640 square, uploaded 2019-02-11. Not embedded on the site.",
+    "sourcePage": "https://vimeo.com/user90384348",
+    "ownContentEvidence": "Uploaded by the same 'ozzy&stix' Vimeo account (user90384348, 6 uploads in total) whose videos the official site embeds."
+   },
+   {
+    "url": "https://vimeo.com/316599127",
+    "kind": "vimeo",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'IMG_3266': 60s, 640x640 square, uploaded 2019-02-11. Not embedded on the site; contents not viewed.",
+    "sourcePage": "https://vimeo.com/user90384348",
+    "ownContentEvidence": "Uploaded by the same 'ozzy&stix' Vimeo account (user90384348) that the official site embeds."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=KnSKfOQlGQE",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Recap of Summer 2018 Ozzy&Stix': about 50s, published 2018-10-10, embedded on the videos page. Only hqdefault exists (maxresdefault 404), which suggests lower-resolution footage.",
+    "sourcePage": "https://www.ozzyandstix.com/videos",
+    "ownContentEvidence": "Embedded on the own site. The YouTube oEmbed author is 'Ozzy & Stix' (youtube.com/@ozzystix3324)."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=32pRwih934w",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'O&S Promo', published 2018-10-09, linked from the #MADE page. A maxresdefault thumbnail exists (HD).",
+    "sourcePage": "https://www.ozzyandstix.com/what-we-do",
+    "ownContentEvidence": "Linked from the own site. The YouTube oEmbed author is 'Ozzy & Stix' (@ozzystix3324)."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=OxvX1304j0U",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Valerie - O&S Presents' (about 7 years old, 294 views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by the business's own YouTube channel @ozzystix3324 ('Ozzy & Stix', the channel whose videos the site embeds); oEmbed author confirmed."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=wLz3GKJwA4U",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Dreams - O&S Presents' (about 7 years old, 219 views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=cw82ymbCr2U",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Sex On Fire - O&S Presents' (about 7 years old, 201 views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=kRvHEyr7oY0",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Stand By Me - Ozzy&Stix (Ben E. King Cover)' (about 6 years old, 565 views). No maxresdefault (lower resolution).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=cfhkZ9S5SiI",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'UK Garage Acoustic Mashup (Ozzy&Stix Cover) Craig David x SFA x Monsta Boy x Shola Ama' (about 8 years old, 3.1K views, the channel's most viewed). No maxresdefault.",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=HWGHT4mPQOI",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Bruno Mars - Finesse (Remix) [Feat. Cardi B] Cover x Remember The Time x Poison' (about 8 years old, 2K views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=hHJWjOg9kKM",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Friends - Justin Bieber x Bloodpop x Michael Jackson Mashup (Ozzy & Stix Cover)', 188s, published 2017-08-23 (the channel's oldest upload; 2.5K views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=dlgovempC6I",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Hotline Bling - Drake (Ozzy&Stix Cover)' (about 8 years old, 478 views). maxresdefault exists (HD).",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=QGZMnFEFbz8",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Michael Jackson - The Way You Make Me Feel (Ozzy&Stix 1 minute Cover)' (about 8 years old, 616 views). No maxresdefault.",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Mk0qblDrbDM",
+    "kind": "youtube",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "'Dua Lipa - IDGAF (Ozzy&Stix) 1 Minute Cover' (about 8 years old, 400 views). No maxresdefault.",
+    "sourcePage": "https://www.youtube.com/@ozzystix3324/videos",
+    "ownContentEvidence": "Posted by own channel @ozzystix3324; oEmbed author 'Ozzy & Stix'."
+   },
+   {
+    "url": "https://www.instagram.com/p/B1ttjWkAOJ-/",
+    "kind": "instagram",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": false,
+    "description": "Instagram video post (Aug 2019) shown in the site's Instagram feed block (Squarespace slide data-type='video', iframe src instagram.com/p/B1ttjWkAOJ-/embed/). The site's poster frame is https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1567016848177-V4TNP00OHGVHNGSXKXQ9/image-asset.jpeg (640x640, motion-blurred). A logged-out request to the embed gave a generic shell with no post data.",
+    "sourcePage": "https://www.ozzyandstix.com/",
+    "ownContentEvidence": "From the @ozzyandstix Instagram feed connected to the official Squarespace site."
+   },
+   {
+    "url": "https://www.tiktok.com/@ozzyandstix",
+    "kind": "tiktok",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "publiclyFetchable": true,
+    "description": "TikTok profile 'Ozzy&Stix': 393 videos, 3,679 followers, 61.9k likes, created 2023-10-17. The server-rendered page exposed profile data but no individual video IDs, so no specific videos were listed.",
+    "sourcePage": "https://www.tiktok.com/@ozzyandstix",
+    "ownContentEvidence": "The profile bio gives the same ozzyandstix.com email address as the official site, and the display name 'Ozzy&Stix' matches."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/ozzyandstix/",
+   "tiktok": "https://www.tiktok.com/@ozzyandstix",
+   "youtube": "https://www.youtube.com/@ozzystix3324",
+   "vimeo": "https://vimeo.com/user90384348",
+   "facebook": null,
+   "other": []
+  },
+  "tagline": "We Create The Best Memories on Your Big Day",
+  "eventTypes": [
+   "Weddings",
+   "Private Parties"
+  ],
+  "eventTypesSourceUrl": "https://www.ozzyandstix.com/",
+  "areasServed": [
+   "Essex",
+   "London",
+   "Overseas (travel abroad on request)"
+  ],
+  "areasSourceUrl": "https://www.ozzyandstix.com/contact",
+  "industry": "entertainment",
+  "categories": [
+   "Musician",
+   "Singers",
+   "DJs & Disco"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://www.ozzyandstix.com/take-action"
+  },
+  "gaps": [
+   "Establishment year 2010 (from the Booked Events listing) does not appear on any of the business's own channels. The earliest own-channel content is a YouTube upload of 23 Aug 2017 ('Friends' mashup cover). The Vimeo account was created 8 Oct 2018 and the Squarespace site went live in Oct 2018. The TikTok account was created 17 Oct 2023.",
+   "Price: the site's FAQ says 'No two bookings are the same' and quotes are given on request. The '£500 per event' figure appears only on the Booked Events directory listing.",
+   "The deposit terms conflict: the FAQ says a 30% non-refundable deposit, while the Book Now page says 'a Non Refundable 50% Deposit is Required'. Do not publish either without checking with the business.",
+   "Areas: 'Essex' comes from the contact page, 'London' from the site meta description ('london duo') and the 'LDN' logo, and travel abroad from the FAQ. 'East Anglia including Norfolk' and 'southeast of Brentwood' are third-party claims only (mikesavory.co.uk). The exact Brentwood address is not on the business's own site.",
+   "Event types: 'Private Parties' rests on the homepage's 'Party Set' and 'Try Ozzy&Stix with friends / For your party' wording plus the meta 'wedding party'. Corporate events are not listed as a service, but the site names corporate past clients (Deutsche Bank, BNP Paribas, V&A Museum, Royal Caribbean, Sunseeker), so corporate work is likely. Not added to eventTypes.",
+   "The members' full names are not stated beyond 'Ozzy (left)' and 'Stix (right)'. The site's Squarespace social config also links a personal Instagram (instagram.com/bobbystix, 'Bobby Stix'), which was left out of the business socials.",
+   "No SVG logo exists: the header uses whitebig.png and /logo.svg is 404. The best official mark is the 1280x720 transparent PNG script wordmark. The neon circular logo comes from Booked Events and its provenance is unverified. The TikTok avatar uses a third, different design.",
+   "The Booked Events gallery for this listing uses five 'openart-image_*_raw.jpg' files (1024x1024), which look like AI-generated placeholders and are not the business's real photos. They were excluded.",
+   "Unused template pages: '/content' (lorem ipsum) and '/home-alt-bedford' (Squarespace template slideshow credited to photographer Jared Chambers). Their images are stock and were excluded. '/new-page-1' is the Privacy Policy ('Last updated January 30, 2025'), and '/home' duplicates the homepage. Neither has extra media.",
+   "Squarespace's CDN returns WebP unless '?format=original' is appended. The Instagram-feed images are only 640x640. IMG_5618.PNG and IMG_5620.PNG are phone screenshots and were excluded.",
+   "No direct video files (mp4/HLS) were found on the site. All footage is hosted on Vimeo (6 videos), YouTube (12 videos on @ozzystix3324, 86 subscribers) or social platforms. No progressive or HLS file extraction was attempted.",
+   "The YouTube channel videos page loaded without a consent redirect on re-check, and 11 of its 12 videos were listed. 'Recap of Summer 2018' (KnSKfOQlGQE) is the 12th (embedded on the site). Several are only standard-definition (no maxresdefault).",
+   "The TikTok profile shows 393 videos, but none of their URLs were listed, so it cannot yet supply specific hero footage.",
+   "The Facebook page was not found: Mike Savory's page mentions one but gives no URL, and a plain request to facebook.com/ozzyandstix returned HTTP 400. The 'Facebook application (ozzyandstix)' line in the site's privacy policy is generator boilerplate.",
+   "Third-party footage exists but is not the business's own: Mike Savory's wedding film '2019 Maia + Graeme' (https://youtu.be/3QgB1-fQj2U) features the duo. It is the videographer's content and was not counted as own footage.",
+   "Mike Savory's page attributes the phrase 'Small Footprint, with a Big Sound' to the duo, but it does not appear on any of their own channels, so it was not used as the tagline.",
+   "The contact page shows a mobile number and personal email addresses. They were deliberately left out (contact details are recorded only for The Bar People)."
+  ],
+  "instagramAccess": "Re-checked with one plain GET to https://www.instagram.com/ozzyandstix/ (desktop Chrome user agent, no cookies). It returned HTTP 200 with a roughly 505 KB JavaScript app shell titled just 'Instagram', with no og: meta and no profile data. The route config contained 'PolarisErrorRoot' / 'httpErrorPage' with page_type 'PROFILE', which is the logged-out error page, so profile content can't be seen without logging in. Nothing was retried. The handle comes from the official site's Instagram button (https://www.instagram.com/ozzyandstix/?hl=en) and its Squarespace social config (userName 'ozzyandstix', display name 'Ozzy&Stix')."
+ }
+}

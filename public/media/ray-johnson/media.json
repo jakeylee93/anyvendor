@@ -1,0 +1,54 @@
+{
+  "slug": "ray-johnson",
+  "logo": {
+    "file": "public/media/ray-johnson/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ray_johnson_logo.png",
+    "plate": "none"
+  },
+  "gallery": [
+    {
+      "file": "public/media/ray-johnson/photo-01.webp",
+      "alt": "A performer dressed as Elton John, in a floral jacket and white-framed glasses, sings into a microphone at a red piano beneath a pink neon 'Eden' sign and trailing ivy.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-02.webp",
+      "alt": "Outdoor duo performance: a performer in a gold jacket and red-tinted glasses sings at a red piano while a percussionist in sunglasses plays congas beside him.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-03.webp",
+      "alt": "A performer in a pink floral jacket and glasses sings into a hand-held microphone on stage in front of a starry LED video wall, with audience members watching from the foreground.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-04.webp",
+      "alt": "A performer in a sequinned black jacket and red-tinted sunglasses sings at a red Yamaha keyboard in front of a blue backdrop dotted with small lights.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/firs-high.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-05.webp",
+      "alt": "A performer dressed as Elton John, in a blue sequinned jacket, blue satin shirt and jewelled green glasses, seated at a glossy piano on a gold-lit set.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3250-standard.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-06.webp",
+      "alt": "A performer in a blue sequinned jacket and green glasses points out from behind a glossy piano, on a set with a lit marquee star, mirror balls and oversized lipstick props.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg"
+    },
+    {
+      "file": "public/media/ray-johnson/photo-07.webp",
+      "alt": "Studio portrait of a performer dressed as Elton John in a black military-style jacket with gold braid and jewelled sunglasses, seated with arms folded against an orange smoke backdrop.",
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_7843-high.jpg"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction of the 1000x1000 'Business Logo' badge on the Booked Events listing (black disc, white 'RAY / Elton / Johnson / TRIBUTE ACT'). It is not on rayeltonjohnson.co.uk and may have been made by Booked Events, so confirm provenance with the business. His own site header is a photo collage with marquee 'ELTON' letters, which cannot be traced. The badge was traced with potrace in two layers: the disc from alpha, and the white ink at a 50% luminance threshold with no dilation. scripts/media/logo_trace.py --colours 2 bolded the thin 'TRIBUTE ACT' and 'Johnson' strokes (meanAbsDiff 7.28), and --colours 3 gave ragged edges. The direct trace gives meanAbsDiff 1.27 and matched stroke weights on white and navy. Plate 'none' because the mark has its own solid black disc.",
+    "Reel: a photo reel of 6 of his own website photos. His only own footage is a YouTube promo (https://www.youtube.com/watch?v=N6SEEaAMMt8, playlist PLD1PZOPVhsQ4wJm9NRZ3gcblo2SN8W_3O), and YouTube downloads are not allowed. The site has no own-hosted, HLS or TikTok video.",
+    "Reel segment 1 (the Eden still) was pre-rendered as a 2.6 s push-in clip, using the same zoom as reel.py's stills, so the loop point is seamless. reel.json lists it as kind 'still'.",
+    "Gallery photos come from rayeltonjohnson.co.uk (Webador CDN primary.jwwb.nl). Photos 5 and 6 are from a third-party brand's Christmas promo set (2023) where his site says he body-doubled for Elton. No brand name is visible, but the research flags image consent. Photo 2 shows his duo partner Nigel Silk (named in his site caption). Photo 3 shows audience members from behind only.",
+    "Left out: God Save The Tuche film-set photos (other identifiable actors), the LadBaby recording session (identifiable celebrities), the Virgin Media O2 press-backdrop photo (third-party logos dominate), and img_2192 (750 px, with black screenshot borders, possibly composited).",
+    "Photo 7 (studio promo portrait) is only 529x718 at source, the largest version available."
+  ]
+}

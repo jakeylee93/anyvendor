@@ -1,0 +1,330 @@
+{
+ "slug": "meatstop",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "areasServed included 'Brentwood', but the cited areasSourceUrl (the /catering page) does not list Brentwood. Brentwood was removed; the Essex towns that remain are exactly the ones the page lists.",
+  "Logo list included the dark-mode favicon (18af95a6.../favicon.ico, 496x536). It is a generic burger pictogram, not a brand mark, so it was removed from logos and noted in gaps. The light-mode favicon is a Twemoji-style burger emoji (92x92 WebP); this was confirmed and it stays excluded.",
+  "Identity evidence said TikTok @meatstop_ is 'region GB'. My unauthenticated fetch returned no region field (uniqueId meatstop_, nickname 'Meat Stop', public, created 4 Feb 2022, 304 followers, 28 videos, 604 likes), so the region claim was removed.",
+  "HLS video note said the signed variant/segment tokens expire about 24 h after fetch. My fetch at 06:50 UTC carried Expires=18:50 UTC, so the window is about 12 h. Master playlist size also varies with the signed query strings: 1103 bytes this fetch, not a fixed 788.",
+  "Owner gap was out of date. The archived 2015 official homepage (Wayback 20150903) itself names 'Chef and founder Benjamin' and says it is Brentwood's only boutique burger bar, with dine-in and takeaway from the Crown Street site. The gap and about were updated to cite the business's own words.",
+  "Image 224557b3 (filename 'Screenshot 2025-03-31…', sauce pour) is a screenshot of a product shot whose origin cannot be confirmed. It was downgraded from 'own' to 'unclear'.",
+  "Image descriptions tightened. bc49a4a0 also shows a taco-style item and parmesan/chimichurri skins. 7947dce3 and acaff588 are screenshots of social posts (7947dce3 has a carousel arrow), and the people shown are not confirmed to be customers.",
+  "Service 'Prepped DIY BBQ Kit' said it was 'for hosts who cook it themselves'. That is inference: the page only lists 'Prepped DIY Kit from £22.95pp (min. 10x)' under the 3 Meats & 3 Salads Collection. Reworded.",
+  "Identity evidence was missing related and namesake Companies House entities. MEAT STOP DELIVERIES LTD (12857835) has the same 25 Crown Street address and the same director, SIC 56103, and was dissolved on 18 Oct 2022, so it is related. MEATSTOP EVENTS LTD (17233530) was incorporated 20 May 2026 at 66 Paul Street EC2A, SIC 56301, with a different director, so it is an unconfirmed or likely unrelated namesake. MEAT STOP PREMIUM HALAL MEAT LTD (Birmingham, 2026) and THE MEAT STOP CORPORATION LIMITED (London SW19, 2022) are unrelated. I confirmed that meatstop.com redirects to the atom.com domain marketplace.",
+  "Missed source: the site's VIEW MENU button links to /s/Meat-Stop-Menu-2026-web.pdf. It returns a 302 to a static1.squarespace.com PDF (200 application/pdf, 1 page, Canva export, no raster images). It confirms the menu and prices and is added as a service source.",
+  "Missed third-party video: the Burger Dudes review (27 Jul 2026) embeds the YouTube video zH6vgGK6iFw, 'We Ate Every Burger at Burger Fest UK... Here's the Winner', by @BurgerdudesYT. It is third-party footage, so it is noted in gaps and not listed as own video.",
+  "Missed archive logo: Wayback has a June 2017 WordPress upload, Meatstop-Logo-Medium-300x300.jpg (300x300). It is an earlier roundel: a red ring with black 'MEAT STOP' text. It is noted with the roundel logo. It is the only '2017' artefact found, and nothing states 2017 as the founding year.",
+  "Wanderlog, which aggregates Google data, now lists Meat Stop at 240 Amhurst Rd E8 2BS (Hand of Glory) and marks it 'Temporarily Closed'. Its reviews date back to 2020, when the business was in Brentwood. Added to gaps as further doubt about the Brentwood listing address."
+ ],
+ "record": {
+  "slug": "meatstop",
+  "displayName": "MEAT STOP",
+  "identity": {
+   "officialWebsite": "https://www.meatstop.co.uk",
+   "confidence": "high",
+   "alternateNames": [
+    "Meat Stop",
+    "MeatStop",
+    "Meatstop",
+    "MEAT STOP LTD"
+   ],
+   "evidence": "meatstop.co.uk is the business's own domain. Wayback captures go back to 3 Sep 2015, when the homepage was titled 'Meatstop - Brentwood's Premium Burger Restaurant' and offered dine-in and takeaway 'from our Crown Street residence, located in Brentwood, Essex'. The archived 2023 WordPress About page (web.archive.org/web/20230407143308/https://meatstop.co.uk/about-us/) gives '25 Crown St, Brentwood, Essex, CM14 4BA', exactly the directory listing's address, and links to Instagram @meatstop_. The current Squarespace site (same domain, site ID 668c009ec8f5ef57a5c3a8d7) links the same Instagram @meatstop_ and shows the same Brentwood (01277) landline as the 2023 page. Companies House lists MEAT STOP LTD (09278362), incorporated 23 Oct 2014, registered office 25 Crown Street, Brentwood CM14 4BA, SIC 56101 (licensed restaurants). A related company, MEAT STOP DELIVERIES LTD (12857835), had the same address and the same director, SIC 56103, and was dissolved in Oct 2022. TikTok @meatstop_ ('Meat Stop', public, created Feb 2022) uses the red MEAT STOP® roundel as its avatar. The same roundel is on the chef's apron in the event photo on the live /catering page. The trade matches: burger and BBQ catering for weddings, corporate events and parties. Namesakes ruled out: MEATSTOP EVENTS LTD (17233530, London EC2A, inc. May 2026, SIC 56301 licensed clubs, different director; no link to this business found), MEAT STOP PREMIUM HALAL MEAT LTD (Birmingham) and THE MEAT STOP CORPORATION LIMITED (London SW19). meatstop.com redirects to the atom.com domain marketplace. The original researcher also reported a Morden 'The Meat Stop' grocer and TikTok @meatstop (a Polish meat-snack seller) as unrelated; I did not re-check those two. Year: the company was incorporated in 2014 and the site was trading by 2015, so the directory's 'established 2017' is unverified (see gaps). The brand now trades from London residencies in Shoreditch and Dalston."
+  },
+  "tagline": "fast food, upgraded.",
+  "about": [
+   {
+    "text": "MEAT STOP describes itself as 'Essex-born. London-serving. Premium fast food.' and uses the line 'fast food, upgraded.'",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   },
+   {
+    "text": "The homepage's meta description says MEAT STOP grills BBQ burgers for private catering, weddings, corporate events and parties.",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   },
+   {
+    "text": "The business says its dry-aged beef is farmed in its home county of Essex and ground fresh for its burgers. It also cites in-house recipes and custom-spec brioche buns, and says it keeps the menu tight and cooks everything fresh.",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   },
+   {
+    "text": "The menu includes a made-from-scratch spiced bean patty ('Not a token veggie option'). Any burger can also be made with a fermented vegetable patty from Symplicity (+£1).",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   },
+   {
+    "text": "The site lists two London locations: Shoreditch (The Commercial Tavern, 142 Commercial St, London E1 6NU) and Dalston (Hand of Glory, 240 Amhurst Rd, Lower Clapton, London E8 2BS).",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   },
+   {
+    "text": "On catering, MEAT STOP says it has gone 'back to our roots; the garden BBQ'. It cites over 20 years of experience in catering, event planning and preparing food, and offers to do the heavy lifting so hosts can enjoy their event.",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "text": "The catering page says the business is active across Essex, including Colchester, Chelmsford, Southend, Braintree, Clacton, Harlow, Leigh on Sea, Thurrock, Basildon, Billericay, Epping and Maldon.",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "text": "In 2015 the business's website described Meat Stop as Brentwood's only boutique burger bar. It offered dine-in and takeaway from its Crown Street premises in Brentwood, Essex, and named 'Chef and founder Benjamin'.",
+    "sourceUrl": "https://web.archive.org/web/20150903201910/http://www.meatstop.co.uk/"
+   },
+   {
+    "text": "The business's 2023 website gave its location as 25 Crown St, Brentwood, Essex, CM14 4BA. Its About text read: 'Our story began with food, grew with events and matured with age.'",
+    "sourceUrl": "https://web.archive.org/web/20230407143308/https://meatstop.co.uk/about-us/"
+   },
+   {
+    "text": "Companies House lists MEAT STOP LTD (company 09278362), incorporated on 23 October 2014, with its registered office at 25 Crown Street, Brentwood CM14 4BA and SIC code 56101 (licensed restaurants). The register shows the company as active with a proposal to strike off, and its accounts and confirmation statement are overdue.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/09278362"
+   },
+   {
+    "text": "The business's Add to Event profile uses the tagline 'Essex Born, Flavour Driven with Unmatched Quality.' It describes premium, locally sourced burgers for weddings, corporate events, private parties and festivals.",
+    "sourceUrl": "https://www.addtoevent.co.uk/suppliers/meatstop"
+   },
+   {
+    "text": "Burger Source reviewed the Meat Stop residency at the Commercial Tavern, Shoreditch, on 21 April 2026 (third-party review). It describes Essex-sourced dry-aged beef ground daily, with burgers cooked fresh on site.",
+    "sourceUrl": "https://burgersource.co.uk/tag/meat-stop/"
+   },
+   {
+    "text": "A Burger Dudes review dated 27 July 2026 (third-party) says Meat Stop originally comes from Essex and opened in the Commercial Tavern pub in Shoreditch at the end of 2025. The reviewers visited its stall at Burger Fest UK 2026.",
+    "sourceUrl": "https://www.burgerdudes.se/england/london/meat-stop/"
+   }
+  ],
+  "services": [
+   {
+    "name": "The 3 Meats & 3 Salads Collection (catered BBQ)",
+    "description": "'A perfect afternoon BBQ with friends and family.' Signature Cheeseburgers, Butchers Sausages and Marinated Chicken Thighs, with Greek Salad, Hot Potato Salad and Coleslaw. Published price, verbatim: '£32.95pp catered BBQ (min. 40x)'.",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "name": "Prepped DIY BBQ Kit",
+    "description": "Listed under the 3 Meats & 3 Salads Collection as a prepped DIY kit option. Published price, verbatim: 'Prepped DIY Kit from £22.95pp (min. 10x)'.",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "name": "The Signature Collection",
+    "description": "'Your go-to for evening events and wedding receptions': Signature Burgers, Fries and Halloumi Fries. Published price, verbatim: 'From £12.00pp'.",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "name": "Event burger & BBQ catering (quotes)",
+    "description": "Catering for weddings, corporate events and parties across Essex, with an enquiry form for an accurate quote ('Let's get grillin''). Copy reads: 'From weddings, to corporate, to a good old party. We have a solution to cater for all your needs.'",
+    "sourceUrl": "https://www.meatstop.co.uk/catering"
+   },
+   {
+    "name": "Dry-aged beef burger menu (London residencies)",
+    "description": "Eat-in burger menu at The Commercial Tavern (Shoreditch) and Hand of Glory (Dalston). Burgers: Original Nutta (dry-aged beef, American cheese, pancetta, crunchy peanut butter, chilli jam) 13.5; Trouble 13; Blue Magic 13; The Classic 12; Car Boot (Oklahoma-style with grilled onions) 11. Sides are 'skins' (crushed baby potatoes), with dips and add-ons. There is a 12–3pm lunch deal. The menu has a spiced bean patty and a Symplicity fermented vegetable patty swap. Prices as published on the homepage and in the 2026 menu PDF (/s/Meat-Stop-Menu-2026-web.pdf).",
+    "sourceUrl": "https://www.meatstop.co.uk/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "eventTypesSourceUrl": "https://www.meatstop.co.uk/catering",
+  "areasServed": [
+   "Essex",
+   "Colchester",
+   "Chelmsford",
+   "Southend",
+   "Braintree",
+   "Clacton",
+   "Harlow",
+   "Leigh-on-Sea",
+   "Thurrock",
+   "Basildon",
+   "Billericay",
+   "Epping",
+   "Maldon"
+  ],
+  "areasSourceUrl": "https://www.meatstop.co.uk/catering",
+  "industry": "food-services",
+  "categories": [
+   "Grills & BBQ",
+   "Caterers"
+  ],
+  "contact": {
+   "bookingUrl": "https://www.meatstop.co.uk/catering",
+   "email": null,
+   "phone": null
+  },
+  "logos": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/9bf65533-fde9-4cb6-b990-c46a3632f946/MEAT+STOP+LOGO+%28600+x+170+px%29.png",
+    "format": "png",
+    "width": 1275,
+    "height": 361,
+    "background": "transparent",
+    "colours": "charcoal #202020 wordmark on transparent (RGBA)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "notes": "Current primary horizontal wordmark 'MEAT STOP®'. It is the desktop header logo (img elementtiming='nbf-header-logo-desktop'), og:image and itemprop image. Re-verified: 200 image/png, 29,829 bytes, 1275x361, colour type 6 (RGBA), when requested with an Accept: image/png header. Squarespace may serve WebP otherwise. No SVG exists: the header's only inline svg is a hidden icon sprite, and /logo.svg and /favicon.svg return 404."
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/a2435a91-7953-4ec9-be04-f1dd2a01b130/MEAT+STOP+LOGO+%28600+x+170+px%29+%28600+x+170+px%29+%28Logo%29+%281%29.png",
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "background": "white",
+    "colours": "charcoal #202020 on solid white (RGB, no alpha)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "notes": "Stacked square version ('MEAT' over 'STOP®'), used as the mobile header logo (img elementtiming='nbf-header-logo-mobile'). Re-verified: 200 image/png, 19,815 bytes, 500x500, colour type 2. A byte-identical copy (same MD5) is in page content at .../da299b9e-813c-4337-b266-947bbec58472/MEAT+STOP+LOGO+%28600+x+170+px%29+%28600+x+170+px%29+%28Logo%29+%281%29.png."
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/cfa8b923b64d2f61c9ebd4805abbbde4~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=e511939e&x-expires=1793253600&x-signature=h96rjOe8VJniOqN%2FUkotjvie%2BGo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast2b",
+    "format": "jpeg",
+    "width": 1080,
+    "height": 1080,
+    "background": "white",
+    "colours": "red ~#B71415 ring and 'MEAT STOP®' wordmark on white",
+    "sourcePage": "https://www.tiktok.com/@meatstop_",
+    "notes": "Red roundel brand mark, the TikTok @meatstop_ avatar. The same mark is on the chef's apron in the /catering event photo. Re-verified: 200 image/jpeg, 1080x1080. It is a SIGNED, EXPIRING TikTok CDN URL (x-expires = 29 Oct 2026 06:00 UTC), so save it promptly or re-fetch it from the profile. Older archived variants are on Wayback only: wp-content/uploads/2019/05/meat-stop-logo-red.png (small, plus 192x192 'cropped' site icon) and an earlier June 2017 roundel, wp-content/uploads/2017/06/Meatstop-Logo-Medium-300x300.jpg (300x300 JPEG, red ring with black text)."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/b1548200-76c6-4acb-a590-09d3b165bfe6/meat+stop+crop-1.jpeg",
+    "description": "Studio close-up of a double cheeseburger with pickles, red onion and burger sauce on a brioche bun",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 2051,
+    "height": 2051
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg",
+    "description": "Studio close-up of a bacon cheeseburger with ketchup on a brioche bun",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1951,
+    "height": 1951
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg",
+    "description": "Event catering: chef in a MEAT STOP roundel-branded apron lifting smoking ribs at an outdoor gazebo grill",
+    "sourcePage": "https://www.meatstop.co.uk/catering",
+    "stockRisk": "own",
+    "width": 2048,
+    "height": 1365
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg",
+    "description": "Event catering: team member in black gloves holding out a cheeseburger under a gazebo at an outdoor event",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 2048,
+    "height": 1365
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png",
+    "description": "Overhead shot of a steel tray with two burgers, a taco-style item and parmesan/chimichurri skins on MEAT STOP-branded paper",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1074,
+    "height": 1346
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png",
+    "description": "Three people eating Meat Stop burgers at an outside table in front of The Commercial Tavern, Shoreditch (screenshot of a social post; carousel arrow visible)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1160,
+    "height": 1410
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/acaff588-a333-40e6-be4e-400c5be85aa6/Screenshot+2026-02-09+at+11.38.08.png",
+    "description": "Person in a green cap biting into a Meat Stop burger (screenshot of a social post)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1168,
+    "height": 1546
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e0973ac1-1b26-4cd9-beae-4669ebf15ceb/Screenshot+2024-07-08+at+20.04.36.png",
+    "description": "Hand-held fried chicken burger with slaw outdoors (2024 shot; chicken burger not on the current menu)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1034,
+    "height": 1292
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg",
+    "description": "Bacon double cheeseburger small in frame on a grey studio sweep (hero video fallback image)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 1600,
+    "height": 1066
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/224557b3-f783-40da-a8d8-4b8cc6df11c3/Screenshot+2025-03-31+at+21.10.59.png",
+    "description": "Sauce poured from a steel jug over a stacked burger on a pale studio background (a screenshot of a product shot whose origin is unconfirmed)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "unclear",
+    "width": 1484,
+    "height": 1484
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/049ab256-f0d1-4445-9fbe-4dce8b255420/WhatsApp+Image+2025-03-20+at+12.26.51+%283%29.jpg",
+    "description": "Studio shot of a bacon cheeseburger with ketchup, full frame (lower resolution)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 727,
+    "height": 727
+   },
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/2a71d3b3-5312-4497-af91-614aa7d4ad6f/WhatsApp+Image+2025-03-20+at+12.26.51.jpg",
+    "description": "Studio shot of a double cheeseburger with pickles and red onion, full frame (lower resolution)",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "stockRisk": "own",
+    "width": 637,
+    "height": 637
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/playlist.m3u8",
+    "kind": "hls",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "application/x-mpegURL",
+    "bytes": 1103,
+    "description": "Homepage hero background video, source filename '6 - HIGHLIGHTS.mov'. Vertical 1080x1920 plus a 360x640 rendition, 12.68 s, h264/aac. Re-verified 27 Oct 2026: the master playlist returned 200 application/x-mpegURL (1103 bytes; the size varies with the signed query strings). The 1080x1920 variant is AES-128 HLS with 2 segments. A Range 0-1023 probe on the first segment returned 206 video/mp2t, total 3,927,152 bytes. Variant and segment URLs carry signed tokens that expired about 12 h after fetch, so always start from the stable master playlist. No progressive MP4 variant exists. Poster: https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/thumbnail (200 image/jpeg, 61,548 bytes).",
+    "sourcePage": "https://www.meatstop.co.uk/",
+    "ownContentEvidence": "Hosted in MEAT STOP's own Squarespace video library (alexandriaLibraryId 668c009ec8f5ef57a5c3a8d7, the same site ID as all its images). It is set as the native background video of the official homepage hero, and its fallback image is MEAT STOP's own burger studio photo. It is the only video asset on the homepage or /catering."
+   },
+   {
+    "url": "https://www.tiktok.com/@meatstop_",
+    "kind": "tiktok",
+    "publiclyFetchable": false,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "Official TikTok profile 'Meat Stop' (@meatstop_, public, created 4 Feb 2022). One unauthenticated request returned 200 with server-rendered data: 304 followers, 28 videos, 604 likes. The server-rendered HTML contained no individual /video/ URLs, and web search indexed none, so no per-video URLs or media bytes are verified.",
+    "sourcePage": "https://www.tiktok.com/@meatstop_",
+    "ownContentEvidence": "The avatar is the red MEAT STOP® roundel, which matches the apron logo in the catering photo on meatstop.co.uk. The handle matches Instagram @meatstop_, which the official site links. A Burger Source review (Apr 2026) mentions Meat Stop 'blowing up on TikTok'."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/meatstop_/",
+   "tiktok": "https://www.tiktok.com/@meatstop_",
+   "facebook": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://www.addtoevent.co.uk/suppliers/meatstop"
+   ]
+  },
+  "instagramAccess": "One plain GET of https://www.instagram.com/meatstop_/ (desktop UA, no cookies, 27 Oct 2026) returned HTTP 200 text/html, about 505 KB, with no redirect. It was a generic app shell titled 'Instagram' with no og:title, og:description, follower count or post data, so profile content was not visible without login. I did not retry. The handle is confirmed as official: the live site's Squarespace socialAccounts link it, and the 2023 WordPress site's 'Find Us On Instagram' also pointed to it. The live config also has a second connected Instagram, 'salidav'. It appears to be a personal account connected for a feed block and is not a business handle.",
+  "gaps": [
+   "Established year: the directory says 2017, but Companies House shows MEAT STOP LTD incorporated on 23 Oct 2014, and the site was trading in Brentwood by Sep 2015 (Wayback). The archived About page (captured 2023, written around 2019: '2020, we're coming') says '5 years of learning, creating & developing'. The only 2017 artefact is a June 2017 logo upload in the old WordPress media library. No source states 2017 as the founding year.",
+   "Brentwood status: the live site no longer lists 25 Crown St, Brentwood, only London (Commercial Tavern, Shoreditch; Hand of Glory, Dalston). Wanderlog, which aggregates Google data, now places the Meat Stop listing at 240 Amhurst Rd E8 2BS and marks it 'Temporarily Closed'. Companies House shows an active proposal to strike off MEAT STOP LTD, with accounts overdue since 2022. It is unverified whether the Brentwood shop is still trading, and the trading entity behind the current brand is unclear.",
+   "Directory price '£500 per event' is not published by the business. Its own published prices are per-head: £32.95pp catered BBQ (min. 40), DIY kit from £22.95pp (min. 10), Signature Collection from £12.00pp.",
+   "Event types: the official site names weddings (incl. wedding receptions), corporate events and parties. The business's self-written Add to Event profile also lists festivals, birthday parties, dinner parties and food markets/pop-ups. These are not on the official site, so they are not mapped. The business traded at Burger Fest UK 2026, per a third-party Burger Dudes review.",
+   "The '20 years of experience' claim is the business's own statement on the catering page and has not been independently verified.",
+   "No Facebook page, YouTube channel or Vimeo account was found or linked from the official site.",
+   "TikTok: there are 28 videos on @meatstop_, but no individual video URLs could be enumerated without login or the signed TikTok API, so they are unverified.",
+   "Third-party footage only (not own, so not listed): the Burger Dudes review embeds the YouTube video https://www.youtube.com/watch?v=zH6vgGK6iFw ('We Ate Every Burger at Burger Fest UK... Here's the Winner', @BurgerdudesYT), which covers the Burger Fest UK 2026 stalls.",
+   "The only own-footage video found is a 12.7 s vertical (1080x1920) HLS clip. There is no progressive MP4 and no landscape footage, so a horizontal hero would need cropping or more footage from the business.",
+   "No SVG logo exists. The current wordmark is available only as a 1275x361 PNG, and the red roundel as a 1080x1080 TikTok avatar (signed URL expiring 29 Oct 2026) or small archived WordPress files. The 2026 menu PDF (Canva export, no embedded raster images) renders the red 'MEAT STOP®' heading as vector text or paths, which could guide a faithful reconstruction, but no SVG file is published.",
+   "Excluded from logos: the dark-mode favicon (generic white burger pictogram on a dark tile, 496x536) and the light-mode favicon (emoji-style burger, 92x92 WebP). Neither is a brand mark.",
+   "Images excluded: 'Nici-Eberl-20200304-Pub-Quiz-0898-copy-1.jpg' (2500x1667, a pub interior credited by filename to a photographer, likely the venue's photo). Two social-video screenshots with caption overlays ('THREE CUT PATTY', 758x1296; 'HAD SO MUCH FLAVOUR' influencer still, 800x1170). Three Squarespace template images from another site ID (5ec321c2…). A 672x672 duplicate studio shot (ea9a0eeb…).",
+   "Several site images are phone screenshots or WhatsApp exports. They are real Meat Stop content but some are under 1000px. The 'Screenshot 2025-03-31' sauce-pour shot's origin could not be confirmed.",
+   "Founder/owner: the archived 2015 official homepage names 'Chef and founder Benjamin', and review aggregators mention 'Ben'. The current site names no one."
+  ]
+ }
+}

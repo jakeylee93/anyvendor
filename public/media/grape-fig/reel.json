@@ -1,0 +1,76 @@
+{
+  "slug": "grape-fig",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+      "durationSec": 2.9,
+      "kind": "video",
+      "startSec": 22.78,
+      "endSec": 25.68,
+      "note": "Finished grazing board with edible flowers held up to camera (homepage Virtual Masterclasses video)"
+    },
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/74d62ed667f34d559b0025b11b1c96d4/74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4?v=0",
+      "durationSec": 2.5,
+      "kind": "video",
+      "startSec": 5.3,
+      "endSec": 7.8,
+      "note": "Seasonal Fruit Platter close-up: figs, kiwi, melon and cherries (homepage product video)"
+    },
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+      "durationSec": 2.35,
+      "kind": "video",
+      "startSec": 15.82,
+      "endSec": 18.17,
+      "note": "Overhead: hands folding charcuterie onto a cheese board (homepage Virtual Masterclasses video)"
+    },
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/28cd542befc5487697d4091055e26445/28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4?v=0",
+      "durationSec": 2.6,
+      "kind": "video",
+      "startSec": 4.0,
+      "endSec": 6.6,
+      "note": "The British Cheese & Charcuterie Platter (homepage product video)"
+    },
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/65205974cf894f36b838549cdcda2669/65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4?v=0",
+      "durationSec": 2.6,
+      "kind": "video",
+      "startSec": 0.2,
+      "endSec": 2.8,
+      "note": "The Crudites & Hummus Platter (homepage product video)"
+    },
+    {
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/videos/c/vp/4ab669f6ed1043709d8f5f727d731541/4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4?v=0",
+      "durationSec": 2.2,
+      "kind": "video",
+      "startSec": 0.05,
+      "endSec": 2.25,
+      "note": "Cheese & Charcuterie Number graze in its box (homepage product video)"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/grape-fig/reel-desktop.mp4",
+      "poster": "/media/grape-fig/poster-desktop.jpg",
+      "posterWebp": "/media/grape-fig/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 11.55,
+      "bytes": 2784234
+    },
+    "mobile": {
+      "video": "/media/grape-fig/reel-mobile.mp4",
+      "poster": "/media/grape-fig/poster-mobile.jpg",
+      "posterWebp": "/media/grape-fig/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 11.55,
+      "bytes": 2806615
+    }
+  }
+}

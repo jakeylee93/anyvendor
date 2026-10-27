@@ -1,0 +1,139 @@
+{
+ "slug": "meatstop",
+ "displayName": "Meat Stop",
+ "tagline": "fast food, upgraded.",
+ "intro": "Meat Stop is an Essex-born burger business offering BBQ and burger catering for weddings, corporate events and parties across Essex. Its website also lists two London locations: The Commercial Tavern in Shoreditch and Hand of Glory in Dalston.",
+ "about": [
+  "Meat Stop describes itself as 'Essex-born. London-serving. Premium fast food.' The business explains that its line 'fast food, upgraded.' means better ingredients, in-house recipes and custom-spec brioche buns rather than bigger portions. It says it keeps the menu tight, cooks everything fresh and uses dry-aged beef farmed in its home county of Essex, ground fresh for its burgers.",
+  "For events, Meat Stop says it has gone 'back to our roots; the garden BBQ', catering 'from weddings, to corporate, to a good old party'. It says it has over 20 years of experience in catering, event planning and preparing food, and offers to do the heavy lifting so hosts can sit back and enjoy their event. Its catering page names towns across Essex, including Colchester, Chelmsford, Southend, Basildon, Billericay, Epping and Maldon, and invites enquiries for an accurate quote.",
+  "The business has its roots in Brentwood, Essex. In 2015 its website described Meat Stop as Brentwood's only boutique burger bar, serving dine-in and takeaway from Crown Street, and named Benjamin as its chef and founder. Its website now lists two London locations: The Commercial Tavern in Shoreditch and Hand of Glory in Dalston. A Burger Dudes review published in July 2026 reports that Meat Stop opened at The Commercial Tavern by the end of 2025, and that the reviewers tried its burgers at Burger Fest UK 2026."
+ ],
+ "services": [
+  {
+   "name": "The 3 Meats & 3 Salads Collection",
+   "description": "Described as 'a perfect afternoon BBQ with friends and family': signature cheeseburgers, butchers sausages and marinated chicken thighs with Greek salad, hot potato salad and coleslaw. Published as '£32.95pp catered BBQ (min. 40x)'."
+  },
+  {
+   "name": "Prepped DIY Kit",
+   "description": "Listed on the catering page under the 3 Meats & 3 Salads Collection as a prepped DIY kit option, published as 'Prepped DIY Kit from £22.95pp (min. 10x)'."
+  },
+  {
+   "name": "The Signature Collection",
+   "description": "Billed as 'your go-to for evening events and wedding receptions': signature burgers served with fries and halloumi fries, published as 'From £12.00pp'."
+  },
+  {
+   "name": "Burger and BBQ event catering",
+   "description": "Burger and BBQ catering across Essex, 'from weddings, to corporate, to a good old party'. Hosts fill in the enquiry form on the catering page and are invited to get in touch for an accurate quote."
+  },
+  {
+   "name": "Dry-aged beef burgers in London",
+   "description": "Burger menu at The Commercial Tavern, Shoreditch, and Hand of Glory, Dalston, including the Original Nutta, Blue Magic and Car Boot, with potato 'skins', a 12–3pm lunch deal and meat-free patty options."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Corporate Events",
+  "Private Parties"
+ ],
+ "areasServed": [
+  "Essex",
+  "Colchester",
+  "Chelmsford",
+  "Southend",
+  "Braintree",
+  "Clacton",
+  "Harlow",
+  "Leigh-on-Sea",
+  "Thurrock",
+  "Basildon",
+  "Billericay",
+  "Epping",
+  "Maldon"
+ ],
+ "website": "https://www.meatstop.co.uk",
+ "socials": {
+  "instagram": "https://www.instagram.com/meatstop_/",
+  "tiktok": "https://www.tiktok.com/@meatstop_",
+  "facebook": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": null,
+ "basedIn": {
+  "text": "Essex-born, with London locations in Shoreditch and Dalston",
+  "sourceUrl": "https://www.meatstop.co.uk/"
+ },
+ "price": {
+  "text": "The Signature Collection: 'From £12.00pp'",
+  "sourceUrl": "https://www.meatstop.co.uk/catering"
+ },
+ "identity": {
+  "confidence": "high",
+  "note": "Meat Stop traded as a burger bar in Brentwood, Essex, by 2015, but its website now lists only London locations in Shoreditch and Dalston, and neither the current status of the Brentwood premises nor the 2017 start year shown on an older listing could be confirmed."
+ },
+ "sources": [
+  {
+   "label": "Meat Stop — Home",
+   "url": "https://www.meatstop.co.uk/"
+  },
+  {
+   "label": "Meat Stop — Catering",
+   "url": "https://www.meatstop.co.uk/catering"
+  },
+  {
+   "label": "Meat Stop — 2026 Menu (PDF)",
+   "url": "https://www.meatstop.co.uk/s/Meat-Stop-Menu-2026-web.pdf"
+  },
+  {
+   "label": "Meat Stop — Archived homepage (2015)",
+   "url": "https://web.archive.org/web/20150903201910/http://www.meatstop.co.uk/"
+  },
+  {
+   "label": "Meat Stop — Archived About page (2023)",
+   "url": "https://web.archive.org/web/20230407143308/https://meatstop.co.uk/about-us/"
+  },
+  {
+   "label": "Companies House — MEAT STOP LTD",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09278362"
+  },
+  {
+   "label": "Meat Stop — Add to Event supplier profile",
+   "url": "https://www.addtoevent.co.uk/suppliers/meatstop"
+  },
+  {
+   "label": "Burger Dudes — Meat Stop review",
+   "url": "https://www.burgerdudes.se/england/london/meat-stop/"
+  }
+ ],
+ "gaps": [
+  "Founding year: the business does not state one. An older listing gives 2017, but MEAT STOP LTD was incorporated in October 2014 and the website was trading in Brentwood by September 2015.",
+  "It is unverified whether the Brentwood (Crown Street) premises still trade. Companies House shows a proposal to strike off MEAT STOP LTD with overdue filings, so the company now trading under the brand is unclear.",
+  "Wanderlog, which aggregates Google listing data, places the Meat Stop listing at the Hand of Glory address (240 Amhurst Rd, E8) and marks it 'Temporarily Closed'. Whether the Dalston location is currently serving is unconfirmed.",
+  "No per-event or minimum-spend price is published, only per-head prices with minimum numbers (£32.95pp catered BBQ for at least 40; DIY kit from £22.95pp for at least 10; Signature Collection from £12.00pp).",
+  "The catering page names Essex towns only. It does not say whether events in London or elsewhere are catered.",
+  "Festivals, birthday parties, dinner parties and food markets/pop-ups appear only on the business's own Add to Event supplier profile, not on its official website, so they are not listed as event types.",
+  "The claim of over 20 years of catering and event experience is the business's own and has not been independently verified.",
+  "It is not stated whether the meat-free patties on the restaurant menu are offered on the catering menus. Allergen and dietary handling for events is also not stated.",
+  "Staffing, equipment, set-up needs, insurance and food hygiene rating for event catering could not be verified.",
+  "No Facebook page, YouTube channel or Vimeo account was found. Instagram content could not be viewed without logging in.",
+  "The current website names no owner or chef. The founder, Benjamin, is named only on the archived 2015 website."
+ ],
+ "taxonomy": {
+  "industry": "food-services",
+  "categories": [
+   "Grills & BBQ",
+   "Caterers"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "sourceUrl": "https://www.meatstop.co.uk/catering"
+ },
+ "cardPrice": {
+  "from": "£12.00",
+  "unit": "per person"
+ }
+}

@@ -1,0 +1,382 @@
+{
+ "slug": "tm-event-hire",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "socials.other included https://wa.me/+447595979451. The link contains the business mobile number, which breaks the no-phone rule for non-Bar-People listings (contact.phone was correctly null). Removed.",
+  "Two Vimeo items were not the business's own footage: 817045023 'TM Event Hire Website' and 1226220052 'tm-event-hire-mockup'. Both are laptop website mockups on the web designer's (Vishal Mayo) account, are not embedded anywhere on tmeventhire.co.uk, and contain no event footage. Removed from videos and noted in gaps. The '1920x1080' claimed for 1226220052 was also unverified: oEmbed only reports a 426x240 embed size.",
+  "The Companies House about item cited a search-results URL. Replaced it with the company page https://find-and-update.company-information.service.gov.uk/company/09643286 and added the verified status (Active), SIC 56210 (event catering activities) and the registered office (Unit 16 Griffin Farm, Great Canfield, Dunmow CM6 1JZ).",
+  "Birthday packages service misread the source. The 18th/21st package offers a 'Transparent or LED Blackout Roof', not only LED blackout. The nightclub package is described as 'Fast becoming our most popular party package', not 'fastest-growing'. Corrected.",
+  "A gap called one Booked Events gallery photo a 'Leez Priory-style pagoda'. That is speculation; it is a pagoda in front of a Tudor brick gatehouse. Rewritten neutrally.",
+  "The vimeo player gap said player.vimeo.com returned a 401 JS bot challenge. In this check a HEAD request returned 405, and no further attempts were made. Wording adjusted.",
+  "The former-name claim (TM Catering Hire) rested on X alone. It is now also backed by the site's own Google-review widget (2019 reviews name 'TM Catering Hire') and the site-hosted T&Cs file tm-catering-hire-terms-and-conditions.pdf. The X profile was re-verified from its public HTML meta: 'T M Catering Hire', joined June 2014, links tmcateringhire.co.uk."
+ ],
+ "record": {
+  "slug": "tm-event-hire",
+  "displayName": "TM Event Hire",
+  "identity": {
+   "officialWebsite": "https://tmeventhire.co.uk/",
+   "confidence": "high",
+   "alternateNames": [
+    "T MCL Catering Hire Limited",
+    "TM Catering Hire",
+    "T M Catering Hire"
+   ],
+   "evidence": "Exact trading-name match. tmeventhire.co.uk has og:site_name 'TM Event Hire'. It is an Essex marquee and event-equipment hire company at Unit 7 Martels Events Village, Barnston, Dunmow CM6 1NA, which matches the Booked Events listing ('Verified · Est.2016 · Essex', listed 22 Oct 2024). The Booked Events logo (bookedevents.co.uk/wp-content/uploads/2024/10/tm_event_logo.png) is the same mark as the site header logo: a marquee peak over 'TM' between a fork and knife, with 'Event Hire' beneath. The Booked Events gallery image Screenshot-2024-09-30-at-14.21.32-1.png shows the same outdoor wedding ceremony as the site's marquee-Wedding-ceremony-in-english-country-garden.jpg. The site footer reads 'TM Event Hire T/A T MCL CATERING HIRE LIMITED'. Companies House 09643286 is Active, SIC 56210 event catering activities, with its registered office in Great Canfield, Dunmow, next to Barnston. The TikTok @tmeventhire bio links https://tmeventhire.co.uk and @TM_Event_Hire. Year discrepancy: Booked Events says est. 2016, the About page says founded 2013, and the company was incorporated 17 June 2015. Name, place and trade all match, so this is a data inconsistency, not a namesake. Namesakes ruled out: TM Events Group (Australia, event management) and TM Events Inc (US academic conferences)."
+  },
+  "tagline": "Quality Event Equipment & Marquee Hire For Events, Weddings & Parties",
+  "about": [
+   {
+    "text": "TM Event Hire says it was founded in 2013 by director Thomas Mclean. At first it specialised in catering equipment, tableware and glassware hire.",
+    "sourceUrl": "https://tmeventhire.co.uk/about/"
+   },
+   {
+    "text": "Thomas's younger brother Michael Mclean joined in 2014 and became joint owner and chief of operations. Thomas leads sales and customer dealings. Michael makes sure events are organised and equipment is delivered on time.",
+    "sourceUrl": "https://tmeventhire.co.uk/about/"
+   },
+   {
+    "text": "From its base in Barnston, Essex, the team delivers, sets up, de-rigs and collects event equipment across Essex, London and Hertfordshire, 7 days a week.",
+    "sourceUrl": "https://tmeventhire.co.uk/about/"
+   },
+   {
+    "text": "The business lists its address as Unit 7 Martels Events Village, Martels Industrial Estate, Barnston, Dunmow, Essex CM6 1NA.",
+    "sourceUrl": "https://tmeventhire.co.uk/about/"
+   },
+   {
+    "text": "It hires out marquee tents, Chinese hat (pagoda) marquees, mobile bars, furniture, kitchen equipment and tableware for weddings, private and public events, corporate functions, birthdays and more.",
+    "sourceUrl": "https://tmeventhire.co.uk/"
+   },
+   {
+    "text": "It says all its prices include delivery, setup and pickup.",
+    "sourceUrl": "https://tmeventhire.co.uk/"
+   },
+   {
+    "text": "It describes itself as a member of the Event Hire Association with over 10 years of experience in the events, catering and wedding industries.",
+    "sourceUrl": "https://tmeventhire.co.uk/"
+   },
+   {
+    "text": "The site footer states that TM Event Hire trades as T MCL Catering Hire Limited.",
+    "sourceUrl": "https://tmeventhire.co.uk/"
+   },
+   {
+    "text": "Companies House lists T MCL CATERING HIRE LIMITED, company number 09643286: active private limited company, incorporated 17 June 2015, SIC 56210 (event catering activities), registered office in Great Canfield, Dunmow, Essex.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/09643286"
+   },
+   {
+    "text": "The business previously traded as TM Catering Hire. Its X account 'T M Catering Hire' (@TMCateringHire, joined June 2014) describes hire for wedding receptions, corporate events and private functions in Hertfordshire, Essex and London.",
+    "sourceUrl": "https://x.com/TMCateringHire"
+   },
+   {
+    "text": "For marquees, the process is a site visit, then a 25% non-refundable deposit to secure the booking. Equipment is delivered and installed 1–3 days before the event and collected the next day.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+   },
+   {
+    "text": "Mobile bars come without alcohol or staff. The FAQ refers customers who need drinks or staff to 'our friends at The Bar People'.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/bars/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Clear Span Marquee Hire",
+    "description": "Modular clear-span marquees with no centre poles or guy ropes, for weddings, birthdays and private, corporate or public events. They can go on almost any terrain (two-level gardens, paving, shingle, decking) and have interchangeable white or transparent PVC walls. Accessories: doors, festoon lights, carpet, transparent roofs, black-out ceilings, industrial-grade heaters, Chinese hat add-ons, mobile bars and furniture. Covers wedding, garden, small and party marquee hire.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/marquees/"
+   },
+   {
+    "name": "Chinese Hat (Pagoda) Marquee Hire",
+    "description": "Pagoda-style marquees with curved roofs and an interior fabric lining. They work standalone for garden parties, doubled or tripled up, or as a catering tent or grand entrance joined to a bigger marquee. Accessories: swags, festoon lights, carpet, coconut-matting rustic flooring, dance floors (black and white, white LED starlit, or wooden parquet), mobile bars and furniture.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/chinese-hats/"
+   },
+   {
+    "name": "Mobile Bar Hire",
+    "description": "Mobile drinks bars: LED Straight Bar, Circular Mirror Bar, Circular LED Bar and Wooden Straight Bar. They are modular (curved and straight), have two behind-bar storage shelves, and bar stools and accessories are available. Glassware, refrigeration and bar equipment can also be hired. Bars are delivered the day before and picked up the day after, free of charge. Equipment only: no alcohol and no staff.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/bars/"
+   },
+   {
+    "name": "Furniture Hire",
+    "description": "Limewash Chiavari banquet chairs, wooden folding chairs, child's high chairs, round banquet tables (3ft, 4ft, 5ft, 5.6ft, 6ft), trestle tables (4ft, 6ft), bar stools for poser tables, glass poser tables, white cubes, white 2-seater sofas, white armchairs and white coffee tables. Fees include delivery and pickup across Essex, London and Hertfordshire.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
+   },
+   {
+    "name": "Kitchen Equipment Hire",
+    "description": "Industrial-grade catering equipment: 6 ring gas oven, large hot cupboard (13amp), 6ft gas BBQ, 8L double fryer, tall drinks fridge, double under-counter bar fridge, 30 litre water urn and chafing dishes. Covers anything from a simple drinks-fridge setup to a fully functional kitchen for a professional catering team.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/kitchen-equipment/"
+   },
+   {
+    "name": "Tableware Hire",
+    "description": "Crockery, glassware, cutlery and miscellaneous items, delivered and collected from the Essex base, with a full wash-up service. The site states: 'A washing up charge of 25% is added to the total cost of your tableware order'.",
+    "sourceUrl": "https://tmeventhire.co.uk/services/tableware/"
+   },
+   {
+    "name": "Wedding Marquee Hire Packages",
+    "description": "Themed packages, each built around a clear-span marquee. White Weddings: white linings, wooden tables with white linen, limewash Chiavari chairs, LED or mirror bar, white LED dance floor, fairy lights and/or chandeliers, wooden flooring with cream carpet. Boho / Rustic: coconut matting, transparent roofs, ends and sides available, rustic wooden bar, parquet dance floor, LED fairy lights, and festoon lighting on shepherd crooks. Indian Weddings: trestle and round tables, limewash Chiavari chairs, wooden, mirror or LED bar, parquet dance floor, LED fairy lighting, colourful overlays.",
+    "sourceUrl": "https://tmeventhire.co.uk/event-themes/weddings/"
+   },
+   {
+    "name": "Birthday Party Packages",
+    "description": "Toddlers' parties: marquee, colourful carpet, soft furnishings, colourful LED uplighters. 18th / 21st parties: clear-span marquee, transparent or LED blackout roof, LED or mirror bar, drinks tables and stools, dance floor, LED lighting. Milestone birthdays: tables, chairs, bar, dance floor, fairy lights and/or chandeliers. Nightclub-style parties: LED blackout roof, bar, sofas and cubes for a chill-out area, dance floor, LED lighting. The site calls the nightclub package 'fast becoming our most popular party package'.",
+    "sourceUrl": "https://tmeventhire.co.uk/event-themes/birthdays/"
+   },
+   {
+    "name": "Funeral / Wake Equipment Hire",
+    "description": "Small funeral and wake packages for gatherings indoors or in back gardens, large packages for memorial services of up to 200 guests, and individual hire items.",
+    "sourceUrl": "https://tmeventhire.co.uk/event-themes/funerals/"
+   },
+   {
+    "name": "Corporate & Public Event Equipment Hire",
+    "description": "Marquees, chairs, bars, stages, furniture and more for conferences, music festivals, awards ceremonies, fun fairs, farmers markets and sporting events across London, Essex and Hertfordshire.",
+    "sourceUrl": "https://tmeventhire.co.uk/event-themes/corporate-events/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties",
+   "Baby Showers",
+   "Anniversaries",
+   "Corporate Events",
+   "Private Parties",
+   "Garden Parties",
+   "Festivals"
+  ],
+  "eventTypesSourceUrl": "https://tmeventhire.co.uk/",
+  "areasServed": [
+   "Essex",
+   "Hertfordshire",
+   "London"
+  ],
+  "areasSourceUrl": "https://tmeventhire.co.uk/about/",
+  "industry": "decor-ambiance",
+  "categories": [
+   "Marquees",
+   "Mobile Bars"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://tmeventhire.co.uk/get-a-quote/"
+  },
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/10/tm_event_logo.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "Royal blue circle with white mark (marquee peak, 'TM', fork and knife, 'Event Hire')",
+    "sourcePage": "https://bookedevents.co.uk/businesses/tm-event-hire/",
+    "notes": "Largest raster found: HEAD 200 image/png, 334,267 bytes. Re-checked at 1000x1000 with an alpha channel (transparent outside the circle). Hosted on the Booked Events directory, not the business site; probably supplied by the business. Same mark as the site logo. No genuine SVG exists: the site header has no inline logo svg, /logo.svg returns 404, and the WP media library has no SVG or other TM logo upload."
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/01/tm-event-hire.jpg",
+    "format": "jpg",
+    "width": 255,
+    "height": 255,
+    "background": "white",
+    "colours": "Mid-grey mark on white",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "notes": "The official site's header logo, also used as shortcut icon, apple-touch-icon, 192 icon and og:image. HEAD 200 image/jpeg, 10,034 bytes. Small. A 200x200 variant is at /2022/01/tm-event-hire-200x200.jpg. The site's logo-8/9/10.png and avada_*_logo_g.png uploads are Avada theme demo files, not TM's. The green 'eha Member' badge (/2022/01/B9BA753770A4492985A19955FD860B7A49077255.jpg, 193x193) is the Event Hire Association membership badge, not a TM logo."
+   },
+   {
+    "url": "https://pbs.twimg.com/profile_images/476118586394562560/mmjTFRPH_400x400.jpeg",
+    "format": "jpeg",
+    "width": 400,
+    "height": 400,
+    "background": "white",
+    "colours": "Silver/grey bevelled 'TM' between fork and knife, 'Catering Hire' beneath",
+    "sourcePage": "https://x.com/TMCateringHire",
+    "notes": "Legacy 'TM Catering Hire' logo: the X avatar of @TMCateringHire (joined 2014). HEAD 200 image/jpeg. Not the current brand; for reference only."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Essex-girl-21st-birthday-party-marquee-hire.jpg",
+    "description": "Guests celebrating a 21st birthday inside a clear-roof marquee dressed with pink swags and fairy lights",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 2000,
+    "height": 1333
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/first-dance-wedding-marquee-hire.jpg",
+    "description": "Wedding first dance on a black and white dance floor inside a lined marquee with chandeliers, surrounded by guests",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 2000,
+    "height": 1125
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/nightclub-themed-party-blackout-ceiling-marquee.jpg",
+    "description": "Nightclub-themed marquee with black-out starlit ceiling, purple-lit circular LED bar, stools and a lit blossom tree",
+    "sourcePage": "https://tmeventhire.co.uk/services/bars/",
+    "stockRisk": "own",
+    "width": 2000,
+    "height": 1125
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/clear-span-marquee-hire-in-essex.jpg",
+    "description": "White clear-span marquee with pagoda at the end of a hedged garden path under blue sky",
+    "sourcePage": "https://tmeventhire.co.uk/services/marquees/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/marquee-Wedding-ceremony-in-english-country-garden.jpg",
+    "description": "Outdoor wedding ceremony on a lawn with wooden folding chairs and a marquee behind (the same scene appears in the Booked Events gallery)",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/marquee_wedding_reception_in_full_swing_time_to_party.jpg",
+    "description": "Wedding reception in full swing in a white-lined marquee with chandeliers and long candlelit tables",
+    "sourcePage": "https://tmeventhire.co.uk/news/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/pink-birthday-party-marquee-decor.jpg",
+    "description": "Clear-roof marquee with pink swags and floral hanging, white dance floor and DJ setup with a 'TG 21' sign",
+    "sourcePage": "https://tmeventhire.co.uk/event-themes/birthdays/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/09/clear-span-marquee-with-pagodas-for-entrance-in-field-in-essex.jpg",
+    "description": "Large white clear-span marquee with pagoda entrances in a hillside field in Essex",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Luxury-wedding-marquees-in-essex.jpg",
+    "description": "Lined wedding marquee set with round tables, white linen, Chiavari chairs and chandeliers",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 844
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/11/event-equipment-hire-equipment-for-public-events.jpg",
+    "description": "Row of Chinese hat pagoda marquees set up in a car park for a public event",
+    "sourcePage": "https://tmeventhire.co.uk/event-themes/corporate-events/",
+    "stockRisk": "own",
+    "width": 1500,
+    "height": 1000
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/07/reliable_event_equipment_hire_company_in_essex.jpg",
+    "description": "TM Event Hire team member working in a back garden during a marquee installation (portrait)",
+    "sourcePage": "https://tmeventhire.co.uk/about/",
+    "stockRisk": "own",
+    "width": 1166,
+    "height": 1484
+   },
+   {
+    "url": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Thomas-Mclean-director-TM-Event-Hire.jpg",
+    "description": "Director Thomas Mclean setting up a marquee in a garden",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "stockRisk": "own",
+    "width": 1000,
+    "height": 667
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://vimeo.com/736283697",
+    "kind": "vimeo",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'TM Event Hire Marquee Drone Footage': 127s aerial footage of a large white clear-span marquee with pagodas in a field. Uploaded 2022-08-03. Embedded as a background video on the homepage and 14 other site pages (About, News, Contact, Services and every Service / Event-theme page). Best showreel candidate.",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "ownContentEvidence": "Embedded on the business's own site across 15 pages (confirmed via the WP REST pages content). The title names TM Event Hire. Uploaded by Vishal Mayo, whose design studio the site footer credits ('Created by Vishal Mayo Designs'). The thumbnail shows a TM-style clear-span marquee with pagodas."
+   },
+   {
+    "url": "https://vimeo.com/695204796",
+    "kind": "vimeo",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'TM Event Hire': 44s, uploaded 2022-04-02. Thumbnail shows a marquee frame going up beside an office building with a box van. Homepage background video.",
+    "sourcePage": "https://tmeventhire.co.uk/",
+    "ownContentEvidence": "Embedded on the business's own homepage. The title is the business name. Uploaded by the site's credited web designer. Shows a marquee build."
+   },
+   {
+    "url": "https://vimeo.com/745565312",
+    "kind": "vimeo",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'TM Event Hire - Marquee Hire': 40s, uploaded 2022-09-01. Aerial view of a clear-roof marquee with a lounge area of white sofas and cubes.",
+    "sourcePage": "https://tmeventhire.co.uk/services/marquees/",
+    "ownContentEvidence": "Embedded on the business's own Marquee Hire page. The title names the business. Uploaded by the site's credited web designer."
+   },
+   {
+    "url": "https://vimeo.com/695225980",
+    "kind": "vimeo",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'TM Event Hire - Furniture Hire': 26s, uploaded 2022-04-02. A team member unloads stacked Chiavari chairs from a van.",
+    "sourcePage": "https://tmeventhire.co.uk/services/furniture/",
+    "ownContentEvidence": "Embedded on the business's own Furniture Hire page. The title names the business. Shows the team and its equipment."
+   },
+   {
+    "url": "https://vimeo.com/694119648",
+    "kind": "vimeo",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'Chinese hat page': 18s, uploaded 2022-03-30. A team member walks through a garden with festoon lighting during a setup.",
+    "sourcePage": "https://tmeventhire.co.uk/services/chinese-hats/",
+    "ownContentEvidence": "Embedded on the business's own Chinese Hat Hire page. Uploaded by the site's credited web designer. Shows the same team member as the furniture video."
+   },
+   {
+    "url": "https://www.tiktok.com/@tmeventhire",
+    "kind": "tiktok",
+    "publiclyFetchable": false,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "Official TikTok profile 'TM Event Hire' (@tmeventhire). The server-rendered profile data reports 36 videos, 256 followers and 1,558 likes. Individual video URLs were not in the server HTML, so no single video was verified.",
+    "sourcePage": "https://www.tiktok.com/@tmeventhire",
+    "ownContentEvidence": "The profile bio reads 'Marquees, Mobile Bars, Furniture and Catering Equipment for parties & events! … 📸 @TM_Event_Hire' and links https://tmeventhire.co.uk."
+   }
+  ],
+  "socials": {
+   "facebook": "https://www.facebook.com/tmeventhire/",
+   "instagram": "https://www.instagram.com/tm_event_hire/",
+   "tiktok": "https://www.tiktok.com/@tmeventhire",
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://x.com/TMCateringHire"
+   ]
+  },
+  "instagramAccess": "One plain unauthenticated GET to https://www.instagram.com/tm_event_hire/ with a desktop Chrome User-Agent returned HTTP 200 text/html (~505KB). It was a generic app shell titled 'Instagram' with no og:description profile metadata, so no profile or post data was visible without login. Not retried. One plain GET to https://www.facebook.com/tmeventhire/ returned HTTP 400 with the title 'Error'.",
+  "gaps": [
+   "The establishment year conflicts. Booked Events lists est. 2016, the About page says founded 2013 (Michael joined 2014), the site footer says '© Copyright 2013-', the @TMCateringHire X account dates from June 2014, and Companies House shows T MCL CATERING HIRE LIMITED incorporated 17 June 2015. Jake should choose which to publish; 2013 is the business's own claim.",
+   "Price: the Booked Events listing shows 'Price from £500 Excl VAT / £500 per event', but the business site publishes no hire prices. The bar FAQ says 'Please get in touch with us today for our full price list', so the £500 figure is unverified. The only published charges are the 25% tableware washing-up charge and the 25% non-refundable marquee deposit.",
+   "Booked Events listing fields (event size 10–100, 'No' licences & insurance, no booking or cancellation policy) are directory data that the business site does not confirm. The site does say it is an Event Hire Association member.",
+   "No SVG logo exists. The largest logo is the 1000x1000 transparent PNG hosted on bookedevents.co.uk; the official site's own logo is only a 255x255 JPG on white.",
+   "No direct MP4/WebM files exist on the site: the WP media API with media_type=video returned an empty list, and no <video> or .mp4 references appear in the pages or posts. All footage is Vimeo-hosted. A HEAD to player.vimeo.com/video/736283697 returned 405; no further attempt was made to extract progressive MP4 URLs or sizes. The public vimeo.com pages and oEmbed returned 200.",
+   "Two further Vimeo uploads on the web designer's account (vimeo.com/user85861206) are not the business's footage and were left out of videos. 817045023 'TM Event Hire Website' (40s, 2023-04-12) and 1226220052 'tm-event-hire-mockup' (14s, 2026-09-12) are both laptop website mockups, and neither is embedded on tmeventhire.co.uk.",
+   "The YouTube link on the site (channel UC_C7uAOAH9RMzZs-CKCZ62w) sits in an Avada default social block next to ThemeFusion's Facebook, Twitter and Instagram links. It is a theme placeholder, not TM's channel; its RSS feed returned 404. No TM YouTube channel was found.",
+   "TikTok @tmeventhire is confirmed as theirs (bio links the site), but individual video IDs could not be listed without JS or login.",
+   "Instagram and Facebook content could not be viewed without login (Instagram returned a generic shell, Facebook HTTP 400).",
+   "The Booked Events gallery for this listing also holds 6 business-supplied photos at bookedevents.co.uk/wp-content/uploads/2024/07/ (all HEAD 200). tmeventhire-e1729605053143.jpg (928x523) shows a pagoda marquee in a garden with folding chairs. Screenshot-2024-09-30-at-14.22.28.png (1614x1210) shows a pagoda with dance floor in front of a Tudor brick gatehouse. Screenshot-2024-09-30-at-14.23.34.png shows twin pagodas on a lawn. Screenshot-2024-09-30-at-14.23.26.png shows a clear-span marquee with pagoda beside a pool. Screenshot-2024-09-30-at-14.21.32-1.png shows the outdoor wedding ceremony. 461308741_517440467661949_1227622997195319072_n-copy.jpg (1439x960) shows a lined marquee interior. Several are screenshots, so the business's own site originals were preferred.",
+   "Category note: 'Mobile Bars' is included because TM hires bar units, but it is equipment-only dry hire. TM supplies no alcohol or staff and refers customers to The Bar People.",
+   "Event-type sourcing: 'Festivals' comes from the corporate-events page ('music festival'), not the homepage given as eventTypesSourceUrl. Garden parties come from the homepage meta description ('weddings, parties, gardens and corporate events') and the marquee and Chinese hat pages. The homepage also mentions bar mitzvahs and a 'full scale fundraising event' (possible Charity Galas mapping, not added), and the blog covers Halloween marquee parties and corporate end-of-year events (possible Seasonal Events, not added). TM also serves funerals and wakes, which have no taxonomy equivalent.",
+   "Business phone numbers, the email address and the WhatsApp click-to-chat link (which embeds the mobile number) are on the site but deliberately left out, following the contact-data rule."
+  ]
+ }
+}

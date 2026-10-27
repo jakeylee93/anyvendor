@@ -1,0 +1,64 @@
+{
+  "slug": "ray-johnson",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Homepage hero photo: Ray as Elton in a floral jacket singing at a red piano under a pink 'Eden' neon sign (still photo; pre-rendered as a 2.6 s push-in clip so the loop point is seamless)"
+    },
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/firs-high.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Gallery photo: singing at a red keyboard against a blue star-cloth backdrop at Firs Park Resort, Essex"
+    },
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Gallery photo: the outdoor duo set, Ray in a gold jacket at a red piano with Nigel Silk on congas"
+    },
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3250-standard.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "About page photo: blue sequinned jacket and green glasses at a glossy piano on a staged set"
+    },
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Testimonials page photo: singing with a hand-held microphone on stage in front of an LED wall, audience in the foreground"
+    },
+    {
+      "sourceUrl": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Gallery photo: pointing from a piano under a lit star on the set of a 2023 Christmas promo where he body-doubled for Elton"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/ray-johnson/reel-desktop.mp4",
+      "poster": "/media/ray-johnson/poster-desktop.jpg",
+      "posterWebp": "/media/ray-johnson/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.0,
+      "bytes": 2028417
+    },
+    "mobile": {
+      "video": "/media/ray-johnson/reel-mobile.mp4",
+      "poster": "/media/ray-johnson/poster-mobile.jpg",
+      "posterWebp": "/media/ray-johnson/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.0,
+      "bytes": 1947287
+    }
+  }
+}

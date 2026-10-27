@@ -1,0 +1,64 @@
+{
+  "slug": "meatstop",
+  "logo": {
+    "file": "public/media/meatstop/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/9bf65533-fde9-4cb6-b990-c46a3632f946/MEAT+STOP+LOGO+%28600+x+170+px%29.png",
+    "plate": "light"
+  },
+  "gallery": [
+    {
+      "file": "public/media/meatstop/photo-01.webp",
+      "alt": "A chef in a white MEAT STOP apron and black gloves lifts a rack of smoking ribs at an outdoor grill under a gazebo.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg"
+    },
+    {
+      "file": "public/media/meatstop/photo-02.webp",
+      "alt": "Close-up of a double cheeseburger with melted cheese, pickles, red onion and sauce in a glossy brioche bun.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/b1548200-76c6-4acb-a590-09d3b165bfe6/meat+stop+crop-1.jpeg"
+    },
+    {
+      "file": "public/media/meatstop/photo-03.webp",
+      "alt": "A person in black gloves holds out a cheeseburger under a gazebo at an outdoor event, with other people blurred in the background.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg"
+    },
+    {
+      "file": "public/media/meatstop/photo-04.webp",
+      "alt": "Overhead view of a steel tray with two burgers, a taco-style item and potato skins topped with grated cheese and green herb sauce, on MEAT STOP-branded paper.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png"
+    },
+    {
+      "file": "public/media/meatstop/photo-05.webp",
+      "alt": "Close-up of a cheeseburger with crispy bacon, melted cheese and ketchup in a brioche bun against a pale grey background.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg"
+    },
+    {
+      "file": "public/media/meatstop/photo-06.webp",
+      "alt": "Three men laugh and eat burgers with pints of beer at an outdoor table in front of The Commercial Tavern pub.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png"
+    },
+    {
+      "file": "public/media/meatstop/photo-07.webp",
+      "alt": "A bacon double cheeseburger with melted cheese on a pale grey studio backdrop.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg"
+    },
+    {
+      "file": "public/media/meatstop/photo-08.webp",
+      "alt": "A person in a green cap takes a bite of a burger held in both hands.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/acaff588-a333-40e6-be4e-400c5be85aa6/Screenshot+2026-02-09+at+11.38.08.png"
+    },
+    {
+      "file": "public/media/meatstop/photo-09.webp",
+      "alt": "A hand holds a fried chicken burger with slaw, pickles and sauce in a brioche bun outdoors.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e0973ac1-1b26-4cd9-beae-4669ebf15ceb/Screenshot+2024-07-08+at+20.04.36.png"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction (potrace) of MEAT STOP's own 1275x361 transparent PNG header wordmark 'MEAT STOP®' from meatstop.co.uk. No genuine SVG is published. The source was upscaled 3x (Lanczos) before tracing so the small ® keeps its ring and counter. Two layers: charcoal #202020 letters and a #000000 ®, matching the source pixels. Mean abs diff vs source 5.71. Charcoal on transparent, so it goes on a light plate.",
+    "The red MEAT STOP® roundel (TikTok avatar, also on the chef's apron) is a second genuine mark. It was not used as the primary logo because the site header uses the charcoal wordmark.",
+    "Reel: 2 video clips and 4 stills, all MEAT STOP's own media. Clip 1 is the only shot of 2.0 s or longer in the 12.7 s homepage HLS hero video (1080x1920). Clip 2 comes from MEAT STOP's own TikTok post 7121257136235040006, which is only available at 576x1024, so it looks soft on the 1280x720 desktop reel. Stills come from meatstop.co.uk.",
+    "Gallery photos are MEAT STOP's own site images. photo-06 (from a social-post screenshot) was cropped on the right to remove an Instagram carousel arrow. photo-08 was cropped at the bottom to remove carousel dots. The people shown in photo-03, photo-06 and photo-08 are not identified, and it is not confirmed whether they are staff or customers.",
+    "photo-09 shows a fried chicken burger from a 2024 post. It is not on the current 2026 menu.",
+    "Excluded: the sauce-pour screenshot (224557b3…, origin unconfirmed), two low-resolution duplicate studio shots (049ab256…, 2a71d3b3…), logos and favicons."
+  ]
+}

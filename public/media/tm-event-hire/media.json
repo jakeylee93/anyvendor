@@ -1,0 +1,64 @@
+{
+  "slug": "tm-event-hire",
+  "logo": {
+    "file": "public/media/tm-event-hire/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/01/tm-event-hire.jpg",
+    "plate": "light"
+  },
+  "gallery": [
+    {
+      "file": "public/media/tm-event-hire/photo-01.webp",
+      "alt": "White clear-span marquee with a pointed pagoda section at the end of a gravel path between clipped hedges, under a blue sky with clouds",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/clear-span-marquee-hire-in-essex.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-02.webp",
+      "alt": "Inside a white-lined marquee with chandeliers and fairy lights, set with round tables in white linen and Chiavari chairs",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Luxury-wedding-marquees-in-essex.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-03.webp",
+      "alt": "Long white clear-span marquee joined to pointed pagoda tents, standing in a hillside field with trees and countryside behind",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/09/clear-span-marquee-with-pagodas-for-entrance-in-field-in-essex.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-04.webp",
+      "alt": "Marquee with a black starlit ceiling and white wall drapes, a purple-lit circular bar with tall bar stools and a hanging lit branch decoration",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/nightclub-themed-party-blackout-ceiling-marquee.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-05.webp",
+      "alt": "Clear-roof marquee dressed with pink fabric swags and a hanging floral arrangement, with a pink floor and a DJ booth with a 'TG 21' sign between two speakers",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/pink-birthday-party-marquee-decor.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-06.webp",
+      "alt": "Couple in a suit and a white gown dancing on a black and white dance floor inside a lined marquee with a chandelier, surrounded by guests",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/first-dance-wedding-marquee-hire.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-07.webp",
+      "alt": "Row of white pagoda tents set up across a car park beside a building, under a blue sky",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/11/event-equipment-hire-equipment-for-public-events.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-08.webp",
+      "alt": "Man in a cap and grey T-shirt holding a strap beside the white wall of a marquee in an ivy-lined garden",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Thomas-Mclean-director-TM-Event-Hire.jpg"
+    },
+    {
+      "file": "public/media/tm-event-hire/photo-09.webp",
+      "alt": "Evening reception in a white-lined marquee with chandeliers, with guests seated at long candlelit tables and standing behind",
+      "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/05/marquee_wedding_reception_in_full_swing_time_to_party.jpg"
+    }
+  ],
+  "notes": [
+    "Logo is a vector reconstruction (potrace, 1 colour #786f72) of the business's own 255x255 site header logo JPG, not a TM-supplied vector. The source was upscaled and converted to an area-preserving coverage mask before tracing so stroke weight matches the original; render-back mean abs diff 3.77 vs the original JPG (1.86 vs the prepared input).",
+    "The 1000x1000 blue-disc PNG on bookedevents.co.uk is the same mark, but its trace lost the tent's seam lines and thickened 'Event Hire', so the business's own site logo was used.",
+    "The grey mark has low contrast on dark backgrounds, so show it on a light tile.",
+    "Showreel: 6 clips from 5 public TikTok posts by @tmeventhire (downloaded without cookies). No usable clip came from Vimeo, because the business's site videos are Vimeo-hosted and Vimeo downloads were not allowed in this session.",
+    "All TikTok sources are portrait (576x1024 to 1080x1920), so the desktop 16:9 reel is a centre band upscaled from those frames and is softer than the phone reel; one clip (post 7429083756129946913) is 576p.",
+    "Gallery photos are the business's own uploads from tmeventhire.co.uk; the outdoor ceremony photo was left out because it shows children in the aisle."
+  ]
+}

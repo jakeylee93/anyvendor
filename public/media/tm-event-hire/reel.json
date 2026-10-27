@@ -1,0 +1,76 @@
+{
+  "slug": "tm-event-hire",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7606365095924387094",
+      "durationSec": 2.9,
+      "kind": "video",
+      "startSec": 2.25,
+      "endSec": 5.15,
+      "note": "Clear-roof marquee at golden hour with white-clothed tables and wooden folding chairs (TikTok @tmeventhire)"
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7672893450060172566",
+      "durationSec": 2.0,
+      "kind": "video",
+      "startSec": 8.45,
+      "endSec": 10.45,
+      "note": "Lined 12 x 25 m wedding marquee: rows of wooden dining tables panning to a circular wooden bar (Emily and Kieran's wedding post)"
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7658230699773742358",
+      "durationSec": 2.0,
+      "kind": "video",
+      "startSec": 19.95,
+      "endSec": 21.95,
+      "note": "Black-out marquee with star-cloth ceiling and black and white dance floor (9 x 20 m birthday marquee post)"
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7647821711454473495",
+      "durationSec": 2.25,
+      "kind": "video",
+      "startSec": 5.55,
+      "endSec": 7.8,
+      "note": "Long dressed wedding tables with cross-back chairs under a clear roof (Sam and Danielle's 9 x 33 m marquee post)"
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7429083756129946913",
+      "durationSec": 2.4,
+      "kind": "video",
+      "startSec": 0.05,
+      "endSec": 2.45,
+      "note": "Lined marquee set with round tables, Chiavari chairs, fairy lights and uplighting (576p source)"
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@tmeventhire/video/7606365095924387094",
+      "durationSec": 2.05,
+      "kind": "video",
+      "startSec": 5.45,
+      "endSec": 7.5,
+      "note": "Rustic wooden straight bar dressed with an autumn garland and wreath inside a clear marquee"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/tm-event-hire/reel-desktop.mp4",
+      "poster": "/media/tm-event-hire/poster-desktop.jpg",
+      "posterWebp": "/media/tm-event-hire/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 10.0,
+      "bytes": 1948342
+    },
+    "mobile": {
+      "video": "/media/tm-event-hire/reel-mobile.mp4",
+      "poster": "/media/tm-event-hire/poster-mobile.jpg",
+      "posterWebp": "/media/tm-event-hire/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 10.0,
+      "bytes": 1794581
+    }
+  }
+}

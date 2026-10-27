@@ -1,0 +1,68 @@
+{
+  "slug": "harry-de-cruz",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8",
+      "durationSec": 2.6,
+      "kind": "video",
+      "startSec": 30.7,
+      "endSec": 33.3,
+      "note": "Showreel (harrydecruz.com/showreel): Harry on a theatre stage producing a pint of beer from a paper bag"
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Gala dinner guests reacting to a card trick at their table"
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Table magic at a wedding breakfast: Harry holds a card out to the laughing bride"
+    },
+    {
+      "sourceUrl": "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8",
+      "durationSec": 2.7,
+      "kind": "video",
+      "startSec": 42.1,
+      "endSec": 44.8,
+      "note": "Showreel: Harry on stage with an audience volunteer at a microphone"
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Harry holding up a playing card and fanned deck while guests applaud"
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg",
+      "durationSec": 2.8,
+      "kind": "still",
+      "note": "Harry on a theatre stage in a spotlight beam, flicking a playing card towards a gala audience"
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/harry-de-cruz/reel-desktop.mp4",
+      "poster": "/media/harry-de-cruz/poster-desktop.jpg",
+      "posterWebp": "/media/harry-de-cruz/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.3,
+      "bytes": 1442046
+    },
+    "mobile": {
+      "video": "/media/harry-de-cruz/reel-mobile.mp4",
+      "poster": "/media/harry-de-cruz/poster-mobile.jpg",
+      "posterWebp": "/media/harry-de-cruz/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.3,
+      "bytes": 1617613
+    }
+  }
+}

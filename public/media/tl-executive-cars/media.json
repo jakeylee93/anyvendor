@@ -1,0 +1,23 @@
+{
+  "slug": "tl-executive-cars",
+  "logo": {
+    "file": "public/media/tl-executive-cars/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/03/tl-logo-badge.png",
+    "plate": "none"
+  },
+  "gallery": [
+    {
+      "file": "public/media/tl-executive-cars/photo-01.webp",
+      "alt": "A dark grey Mercedes-Benz E-Class saloon parked in sunshine on a tarmac lane beside a white five-bar gate and hedges, with a front plate bearing the T&L Executive Cars badge and name.",
+      "sourceUrl": "https://web.archive.org/web/20160316212529im_/http://tlexecutivecars.co.uk/img/car1.jpg"
+    }
+  ],
+  "notes": [
+    "No showreel: the business publishes no video anywhere public (no <video>/iframe on its 5 live pages, WP media API video count 0, no video captures in the Wayback CDX, no social accounts found). Only one photo of its own work exists, below the 3-photo minimum for a photo reel, so no reel spec or reel files were produced.",
+    "Logo: vector reconstruction (not the business's own vector) of its 600x545 transparent badge PNG from tlexecutivecars.co.uk (SHA-256 5360d7f8b8da0d74210fa1cbbc25c717b1a70651f4100207c2b464a2738363e5). logo_trace.py's flat-colour traces (--colours 3/4/5/6: diff 14.50/13.98/9.16/8.49) posterised the metallic gradients into blotches across the lettering, so the badge was rebuilt with fitted geometry: outer ring, bevel and disc as circles fitted to the raster (mean residual 0.2-0.3 px) filled with gradients sampled from it, the curved band and all lettering traced with potrace at 3x. Same QA metric as logo_trace.py: mean abs diff 4.87 (native-res 4.45).",
+    "Plate 'none': the badge is a self-contained dark disc with a silver ring, legible on both white and navy.",
+    "Gallery photo-01 is the only known photo of the business's own car. It survives only in a Wayback snapshot dated 2016-03-16 (the original /img/car1.jpg now returns 404), so it shows the fleet as it was then and is shown at its native 1200x600 (not upscaled). The car's registration is not visible; the plate shows the T&L badge.",
+    "Excluded: every photo on the live site (stock images and manufacturer studio renders), the old site's airport/special-events/corporate images (stock), the Booked Events gallery (OpenArt AI renders of glassware) and its thumbnail (AI-looking render), and the client-logo strip (other companies' marks)."
+  ]
+}

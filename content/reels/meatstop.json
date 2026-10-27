@@ -1,0 +1,69 @@
+{
+  "slug": "meatstop",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "file": ".media-work/meatstop/hls-home.mp4",
+      "url": "https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/playlist.m3u8",
+      "start": 10.45,
+      "dur": 2.2,
+      "fx": 0.5,
+      "fy": 0.6,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "MEAT STOP homepage background video: a finished double cheeseburger with sauce on a brioche bun, on a steel counter."
+    },
+    {
+      "image": ".media-work/meatstop/orig/img02.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "MEAT STOP catering page photo: a chef in a MEAT STOP apron lifts a rack of smoking ribs at an outdoor gazebo grill."
+    },
+    {
+      "image": ".media-work/meatstop/orig/img08.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.55,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "MEAT STOP homepage photo: a bacon double cheeseburger on a grey studio backdrop."
+    },
+    {
+      "file": ".media-work/meatstop/tt-7121257136235040006.mp4",
+      "url": "https://www.tiktok.com/@meatstop_/video/7121257136235040006",
+      "start": 29.05,
+      "dur": 2.1,
+      "fx": 0.5,
+      "fy": 0.6,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "MEAT STOP TikTok 'The Original Nutta': a cloche is lifted on the griddle to reveal melted cheese and bacon on a patty."
+    },
+    {
+      "image": ".media-work/meatstop/orig/img03.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "MEAT STOP homepage photo: a gloved team member holds out a cheeseburger under a gazebo at an outdoor event."
+    },
+    {
+      "image": ".media-work/meatstop/orig/img04.png",
+      "url": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.36,
+      "mfy": 0.5,
+      "note": "MEAT STOP homepage photo: overhead view of a steel tray with two burgers, a taco-style item and loaded skins on MEAT STOP-branded paper."
+    }
+  ]
+}

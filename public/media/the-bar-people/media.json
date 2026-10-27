@@ -1,0 +1,63 @@
+{
+  "slug": "the-bar-people",
+  "logo": {
+    "file": "public/media/the-bar-people/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/Bar-People-Logo.png",
+    "plate": "none"
+  },
+  "gallery": [
+    {
+      "file": "public/media/the-bar-people/photo-01.webp",
+      "alt": "Bartender in a white Bar People shirt and braces pouring a cocktail at a sequin-fronted mobile bar with copper cups and martini glasses, in a garden",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/cocktail_bar_home2.jpeg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-02.webp",
+      "alt": "Smiling bartender holding out a pineapple-garnished cocktail at an outdoor bar with copper mugs",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/gallery_Alex.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-03.webp",
+      "alt": "Bartender pouring champagne into rows of flutes in front of a CEW UK Consumer Choice Awards 2024 backdrop",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-04.webp",
+      "alt": "Two staff in white shirts behind a bar wrapped in colourful Porsche artwork, in a showroom with a white car",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/customporsche.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-05.webp",
+      "alt": "Two staff behind a checkerboard-fronted bar lined with champagne flutes in a large glass-roofed exhibition hall",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-06.webp",
+      "alt": "White bar set with rows of champagne flutes, a cut-glass mixing glass and a copper mug in front of floor-to-ceiling windows at night",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-07.webp",
+      "alt": "Giant white LOVE-letter bar set up outdoors in front of graffiti-covered shipping containers",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/04/lovemirror.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-08.webp",
+      "alt": "Overhead view of a yellow EE and Salesforce branded bar beneath a chandelier",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg"
+    },
+    {
+      "file": "public/media/the-bar-people/photo-09.webp",
+      "alt": "Bride and groom kissing in front of a rustic wooden bar in a barn venue",
+      "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/weddingbarimg.jpg"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction (potrace, 2 colours #231f20 / #ffffff, render-vs-original mean abs diff 7.04) of the business's own 1000x1000 transparent PNG; not the business's own SVG. The badge carries its own black disc and outer ring, so it needs no plate and reads on light or dark backgrounds.",
+    "Reel: six 2.0-2.5 s clips from four of the business's own website background videos (All Inclusive Hire, Dry Hire, Event Management and Cash Bar Hire pages), each verified with scdet to sit inside one shot; audio stripped. Sources are 1920x818, so the 9:16 phone crop is upscaled about 1.56x and is slightly softer than desktop.",
+    "The 1080p homepage hero reel (C6846F6D) and its earlier export (18944927) were reviewed but not used: their shots are 0.7-2.4 s, too short for 2 s single-shot clips. F521A64B has a darkening overlay baked in; D0CF2346 and 263904B1.mov shots are mostly under 1.5 s.",
+    "Gallery: nine of the business's own website photos converted to WebP (longest edge <= 1600 px, q80, metadata stripped). weddingbarimg (800x600) and gallery_Alex (1024x769) are the lowest-resolution originals available. Branded-bar photos show client brands (EE, Salesforce, Porsche, CEW) as event context.",
+    "No HLS, TikTok, Instagram, Facebook, YouTube or Vimeo media was downloaded."
+  ]
+}

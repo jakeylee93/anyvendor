@@ -1,0 +1,152 @@
+{
+ "slug": "the-bar-people",
+ "displayName": "The Bar People",
+ "tagline": "You bring the guests, we’ll bring the rest!",
+ "intro": "The Bar People is a London-based mobile bar company serving events nationwide. They offer all-inclusive, dry hire and cash bars, staff hire and event management for corporate events, weddings, private parties and festivals.",
+ "about": [
+  "The Bar People is a mobile bar company based in London that brings its bespoke bars to events anywhere in the country. Their homepage lists five core services: all-inclusive bars, dry hire, cash bars, staff hire and event management. The business is run by The Bar People Limited (company number 12161824).",
+  "Their pop-up bars are modular and can be customised for indoor or outdoor use, in any size or colour, with listed sizes running from 5ft up to a 40ft island. For corporate events they describe more than a decade of experience, offering signature cocktails, branded bar setups and interactive cocktail stations, plus eco-friendly options such as biodegradable straws and locally sourced ingredients. They handle everything from setup to cleanup.",
+  "For weddings, they provide bar service for a few hours or the whole day, with custom cocktail menus, themed bar setups, mocktails, and wine and beer stations. Non-alcoholic drinks and mocktails can be added to any package, and all-inclusive packages include setup and takedown. Their cash bars are described as licensed to serve alcohol at any venue and take both cash and card.",
+  "Event management is run as a team: Jake Lee looks after corporate events and logistics, and Kim Knight looks after private events and weddings. They recommend booking at least three months ahead, particularly for peak dates, and say they also cater for last-minute events. The 'We've Supported' section of their homepage shows brand logos including Salesforce, Sky, O2, EE and Batiste."
+ ],
+ "services": [
+  {
+   "name": "All-Inclusive Bar Hire",
+   "description": "A single per-person price covers drinks, staff, the bar, glassware, ice and setup, with unlimited drinks during the event. Packages depend on availability, date, location and requirements."
+  },
+  {
+   "name": "Dry Hire",
+   "description": "Clients supply the drinks; The Bar People provides the mobile bar, bar staff, glassware and ice. Dry hire is available for both indoor and outdoor events."
+  },
+  {
+   "name": "Cash Bar Hire",
+   "description": "Guests pay for their own drinks. They handle licensing, staff, equipment and a customisable menu, take cash and card, and can offer pre-purchased drink tickets. A setup fee applies, usually with a minimum sales requirement."
+  },
+  {
+   "name": "Pop-Up and Branded Bars",
+   "description": "Modular bars customised for indoor or outdoor use in any size or colour, from 5ft to a 40ft island. Corporate options include branded bar setups, signature cocktails, interactive cocktail stations and professional mixologists."
+  },
+  {
+   "name": "Event Management",
+   "description": "Full event planning from start to finish, covering venue selection and coordination, vendor management for catering and entertainment, timeline management and on-site coordination on the day. Costs are itemised in proposals."
+  },
+  {
+   "name": "Staff and Glass Hire",
+   "description": "Staff hire is listed among their core services. Glass hire covers polished, wrapped glasses delivered to the venue and collected afterwards, and the glasses can be returned dirty."
+  }
+ ],
+ "eventTypes": [
+  "Corporate Events",
+  "Weddings",
+  "Private Parties",
+  "Festivals",
+  "Birthday Parties",
+  "Anniversaries",
+  "Engagement Parties",
+  "Garden Parties",
+  "Seasonal Events",
+  "Charity Galas",
+  "Product Launches"
+ ],
+ "areasServed": [
+  "London",
+  "Nationwide (UK)"
+ ],
+ "website": "https://thebarpeople.co.uk/",
+ "socials": {
+  "instagram": "https://www.instagram.com/thebarpeople/",
+  "facebook": "https://www.facebook.com/thebarpeople",
+  "tiktok": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": {
+  "email": "jake@thebarpeople.co.uk",
+  "phone": "+44 7557 402200"
+ },
+ "established": {
+  "label": "2014",
+  "sourceUrl": "https://thebarpeople.co.uk/"
+ },
+ "basedIn": {
+  "text": "London",
+  "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+ },
+ "price": {
+  "text": "Pop-up bars from £295",
+  "sourceUrl": "https://thebarpeople.co.uk/"
+ },
+ "identity": {
+  "confidence": "high",
+  "note": "The website's copyright line dates the business to 2014, while The Bar People Limited, the company named on the site, was incorporated in 2019."
+ },
+ "sources": [
+  {
+   "label": "The Bar People — Home",
+   "url": "https://thebarpeople.co.uk/"
+  },
+  {
+   "label": "The Bar People — Contact Us",
+   "url": "https://thebarpeople.co.uk/contact-us/"
+  },
+  {
+   "label": "The Bar People — All Inclusive Hire",
+   "url": "https://thebarpeople.co.uk/services/all-inclusive-hire/"
+  },
+  {
+   "label": "The Bar People — Cash Bar Hire",
+   "url": "https://thebarpeople.co.uk/services/cash-bar-hire/"
+  },
+  {
+   "label": "The Bar People — Corporate Events",
+   "url": "https://thebarpeople.co.uk/corporate-events/"
+  },
+  {
+   "label": "The Bar People — Weddings",
+   "url": "https://thebarpeople.co.uk/weddings/"
+  },
+  {
+   "label": "The Bar People — Event Management",
+   "url": "https://thebarpeople.co.uk/event-management/"
+  },
+  {
+   "label": "Companies House — The Bar People Limited",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12161824"
+  }
+ ],
+ "gaps": [
+  "The website does not publish a street address. It says only 'Based in the Heart of London, Serving Events Nationwide'.",
+  "The founding date is unclear. The website's copyright line implies 2014, but the limited company was incorporated in 2019. Two third-party listings that the site does not link to were not reconciled: a wedding directory profile says the business began in Essex in 2013, and another listing says 'over 10 years'.",
+  "No reviews, testimonials, awards or ratings could be verified. The site's /reviews/ page contains theme demo content, not genuine customer reviews.",
+  "The staff hire pages have no content, so staff roles and rates are not confirmed, nor any minimum booking length beyond what the packages include.",
+  "Package prices on the site are shown ex VAT and depend on date, location and requirements. The pricing pages were last updated in 2024, so check current prices and package contents with the business. The Dry Hire page also has inconsistencies in package labels and bar sizes.",
+  "Several event-type pages (engagement, festival, retirement, networking, Christmas and charity events) repeat generic corporate text, so they give no details of specific offers for those events.",
+  "Public liability insurance was not verified. Alcohol licensing was verified only as far as the cash bar page's statements that its bars are licensed to serve at any venue and that it handles the necessary licensing.",
+  "The Instagram profile linked from the site showed only a login page, and the site's Facebook link (no https:// in the footer) could not be checked. The linked LinkedIn page could not be confirmed either. No YouTube, TikTok or Vimeo channel was found."
+ ],
+ "taxonomy": {
+  "industry": "drink-services",
+  "categories": [
+   "Mobile Bars",
+   "Mixologists"
+  ],
+  "eventTypes": [
+   "Corporate Events",
+   "Weddings",
+   "Private Parties",
+   "Festivals",
+   "Birthday Parties",
+   "Anniversaries",
+   "Engagement Parties",
+   "Garden Parties",
+   "Seasonal Events",
+   "Charity Galas",
+   "Product Launches"
+  ],
+  "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
+ },
+ "cardPrice": {
+  "from": "£295",
+  "unit": "pop-up bars"
+ }
+}

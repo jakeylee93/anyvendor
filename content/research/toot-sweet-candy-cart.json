@@ -1,0 +1,243 @@
+{
+ "slug": "toot-sweet-candy-cart",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Image description was wrong: the open sweet boxes (EZwnjnEWsAE8Fte, and the unlisted EZlfPFSWoAEP1pC) have 16 compartments in a 4x4 grid, not 12. The post says '12 different sweets', not 12 compartments.",
+  "Image description was wrong: the Father's Day box tag (EZwnjmzWsAEY0kK / EZwnjm_X0AIRd7r) reads 'Happy Daddy's Day', not 'Happy Father's Day'. The round grey logo sticker is visible on both photos.",
+  "Privacy point the record missed: images EZlfPHUWsAUX0Mo and EZlfPFMXsAML0gd show a customer's personalised tag with private first names ('Mum, Laurie & Gareth'). Crop or blur it before use.",
+  "Wayback claim was wrong: tootsweetcandycart.co.uk has more than one capture (21 Dec 2021). There are further captures on 8 Mar 2023, 7 Nov 2023 and 1 Jan 2024, and every one is a Wix 'ConnectYourDomain' 404. The conclusion (no website content ever archived) still holds.",
+  "Booking/cancellation policy wording was imprecise. On the Booked Events summary tiles, both read 'No Notice Required'. The policy pop-ups say 'This company has not stated a booking policy' / '...cancellation policy'. The listing also has a 'Verified' badge and the 'Food Services' label, which the record left out.",
+  "The YouTube search detail was wrong. The search page did return 4 videos, but all are unrelated: The Tiny Crew, Ohmyswedesweets, Bentley Sims and UncDennis. None is by this business.",
+  "Small evidence correction: with a desktop browser User-Agent, t.co/XK3mjelmZW returned HTTP 200 with a meta-refresh to http://facebook.com/tootsweetcandycart, not a 301. The profile JSON's expanded_url is the same Facebook URL, so the link is still confirmed.",
+  "Gap added: a search-engine summary of the Instagram bio mentions 'bespoke luxury candy cart hire with a balloon garland and personalised sweet bags' and Harlow, Essex. Neither could be verified (Instagram returns httpErrorPage logged-out), so neither was used.",
+  "Everything else checked out against fresh fetches. The X bio, location 'United Kingdom, Essex' and join date (created_at_ms 1583487756600 = 6 Mar 2020) came from the x.com/CartToot HTML meta and embedded profile data. The 3 Jun and 23 Jun 2020 post texts were confirmed verbatim through X's public embed endpoint. The other Jun 2020 post texts came from the profile HTML. All 12 image URLs and both logo URLs return HTTP 200 with an image content type. The logo is a 1000x1000 RGBA PNG with alpha-0 corners. No .co.uk/.com/.uk domain resolves, and Nominet WHOIS says 'not registered'. TikTok returns statusCode 10221. Facebook returns HTTP 400. No video was found anywhere."
+ ],
+ "record": {
+  "slug": "toot-sweet-candy-cart",
+  "displayName": "Toot Sweet Candy Cart",
+  "identity": {
+   "officialWebsite": null,
+   "confidence": "high",
+   "alternateNames": [
+    "@CartToot (X handle)",
+    "tootsweetcandycart (Facebook/Instagram handle)"
+   ],
+   "evidence": "The trading name matches exactly. The Booked Events profile (https://bookedevents.co.uk/businesses/toot-sweet-candy-cart/, HTTP 200) shows 'Verified · Est.2020 · Essex', category 'Candy Carts', and a 1000x1000 logo whose illustrated cart sign reads 'EST2020'. Its cart photo shows a white cart with 'Toot Sweet Candy Cart' painted on the front panel. The X account @CartToot was re-fetched on 27 Oct 2026. Its display name is 'Toot Sweet Candy Cart', it was created 6 Mar 2020, and its location is 'United Kingdom, Essex'. Its meta description and bio read 'Toot Sweet Candy Cart is a Candy Cart Hire business in Chelmsford, Essex. We hire out our handmade victorian candy cart and have a variety of sweet packages'. That fits the trade, the county and the 2020 start. The same white spoked-wheel cart appears in the account's 23 Jun 2020 photos. The grey circular 'TOOT SWEET / CANDY CART' badge appears as a sticker on the sweet boxes in the account's June 2020 photos, which links the directory logo to the business. The profile's website link (t.co/XK3mjelmZW) points to http://facebook.com/tootsweetcandycart. A 6 Jun 2020 post cross-links to instagram.com/p/CBGK95Sn2j1/. Namesakes ruled out: Toot Sweet in Topeka, Kansas (candy shop), Toot Sweets in Shrewsbury (chocolatier), Toot Sweets in Invercargill, NZ, Tootsweets.Shop (Deliveroo, Stratford-upon-Avon) and Essex Candy Cart (a different business). There is no live official website. tootsweetcandycart.co.uk does not resolve in DNS, and Nominet WHOIS on 27 Oct 2026 says it is not registered. Its Wayback captures (Dec 2021, Mar 2023, Nov 2023, Jan 2024) are all Wix 'ConnectYourDomain' 404 pages."
+  },
+  "about": [
+   {
+    "text": "Toot Sweet Candy Cart describes itself as a candy cart hire business in Chelmsford, Essex. It hires out its handmade Victorian candy cart and offers a variety of sweet packages.",
+    "sourceUrl": "https://x.com/CartToot"
+   },
+   {
+    "text": "The business's X account (@CartToot) was created in March 2020 and gives its location as 'United Kingdom, Essex'. Its profile links to the Facebook page facebook.com/tootsweetcandycart.",
+    "sourceUrl": "https://x.com/CartToot"
+   },
+   {
+    "text": "The business logo, a circular grey badge with an illustrated candy cart, carries the text 'EST 2020'. This matches the 2020 founding year on its Booked Events listing.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/toot-sweet-candy-cart/"
+   },
+   {
+    "text": "In June 2020 the business made personalised sweet boxes with a choice of colour theme and a personalised gift tag and message. It posted them out, and offered free delivery in the Chelmsford / Ingatestone area.",
+    "sourceUrl": "https://x.com/CartToot"
+   },
+   {
+    "text": "In June 2020 the business showed its candy cart restyled as a brunch / afternoon-tea display, with cake, champagne, scones, sandwiches, flowers, a balloon garland and an 'On Weekends We Brunch' sign. It described this as having 'Tried something a little different with the Candy Cart'.",
+    "sourceUrl": "https://x.com/CartToot/status/1275425599394328576"
+   },
+   {
+    "text": "Its Booked Events listing has a 'Verified' badge. It was listed on 2 Dec 2024 and last updated 3 Feb 2025, and places the business in Essex under Candy Carts (Food Services). The listing gives event sizes of 10–100 guests and 'Price from: £300 per event'. Its Licenses & Insurance field reads 'No'. The booking and cancellation tiles read 'No Notice Required', but the policy pop-ups say the company has not stated a booking or cancellation policy.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/toot-sweet-candy-cart/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Candy cart hire",
+    "description": "Hire of the business's handmade Victorian candy cart (X bio: 'We hire out our handmade victorian candy cart'). The price comes from the Booked Events directory listing, not from the business's own channel: 'Price from: £300 per event'. The listing gives event sizes of 10–100 guests.",
+    "sourceUrl": "https://x.com/CartToot"
+   },
+   {
+    "name": "Sweet packages",
+    "description": "The X bio says the business 'have a variety of sweet packages'. No reachable source publishes current package contents or prices.",
+    "sourceUrl": "https://x.com/CartToot"
+   },
+   {
+    "name": "Personalised sweet boxes (2020)",
+    "description": "From a 3 June 2020 post, verbatim: 'Sweet boxes available to order 🎁 Includes 12 different sweets 🍭 Forrero Rochers 🍫 Personalised gift tag and message 🏷 DM me to order 😊 £6.50 per box or 2 for £12.00 🛍 Postage £2.00'. A 5 June 2020 post adds: '1 box is £6.50 or 2 for £12 including personalised message Free delivery to #Chelmsford/ #Ingatestone area'. These are historical 2020 prices.",
+    "sourceUrl": "https://x.com/CartToot/status/1268149522003382273"
+   },
+   {
+    "name": "Themed / personalised cart styling",
+    "description": "In a 23 June 2020 post, the cart is dressed for brunch / afternoon tea with flowers, a balloon garland and a personalised 'On Weekends We Brunch' sign. Hashtags used: #personalisedcandycart, #balloongarland, #afternoontea, #gardenparty, #candycarthire.",
+    "sourceUrl": "https://x.com/CartToot/status/1275425599394328576"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/toot_sweet_candy_cart.png",
+    "format": "png",
+    "width": 1000,
+    "height": 1000,
+    "background": "transparent",
+    "colours": "mid/light grey, black, white (monochrome)",
+    "sourcePage": "https://bookedevents.co.uk/businesses/toot-sweet-candy-cart/",
+    "notes": "Circular grey badge reading 'TOOT SWEET' / 'CANDY CART'. It shows a line-drawn candy cart with an 'EST2020' sign, striped wrapped sweets, hearts and leaf sprigs. Re-verified 27 Oct 2026: HEAD 200 image/png, 771,060 bytes, last-modified 2 Dec 2024. The IHDR is 1000x1000, colour type 6 (RGBA). The 400px derivative was decoded: corner pixels have alpha 0 and the centre is opaque. The WordPress derivatives -200x200, -600x600 and -800x800 return 200; the .svg returns 404. The file is hosted on the directory, not on a business site. It is treated as genuine because the same badge appears as a sticker on the business's own sweet boxes in @CartToot photos from June 2020. No SVG was found anywhere, and there is no business website to check."
+   },
+   {
+    "url": "https://pbs.twimg.com/profile_images/1252530310010548231/yXMHSvyE.jpg",
+    "format": "jpg",
+    "width": 400,
+    "height": 400,
+    "background": "photo",
+    "colours": "photo",
+    "sourcePage": "https://x.com/CartToot",
+    "notes": "This is not a logo. The X avatar is a photo of the cart, recorded only so it is not mistaken for a brand mark. Use the Booked Events PNG above as the logo."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+    "width": 1003,
+    "height": 915,
+    "description": "White candy cart with 'Toot Sweet Candy Cart' painted on the front panel. It is dressed with a cascading peach / pink / cream / gold balloon garland, white hanging flowers, a dried pampas arrangement, a tiered cake, doughnuts and labelled sweet jars, in front of a white-columned building. Best hero still.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/toot-sweet-candy-cart/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig",
+    "width": 1440,
+    "height": 1440,
+    "description": "The white cart styled for brunch in a garden, with an 'On Weekends We Brunch' sign, flowers along the canopy and posts, a white / peach / silver balloon garland, cake and champagne (23 Jun 2020 post).",
+    "sourcePage": "https://x.com/CartToot/status/1275425599394328576",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig",
+    "width": 2048,
+    "height": 1536,
+    "description": "Close-up of the brunch-styled cart: a Victoria sponge with strawberries, a champagne bottle and flutes, scones and sandwiches, watermelon, a vase of flowers and the 'On Weekends We Brunch' sign (23 Jun 2020).",
+    "sourcePage": "https://x.com/CartToot/status/1275425599394328576",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/profile_images/1252530310010548231/yXMHSvyE.jpg",
+    "width": 400,
+    "height": 400,
+    "description": "The white candy cart with bunting, lidded sweet jars and a white / yellow / gold balloon garland in front of a brick house (X avatar, uploaded April 2020). Low resolution.",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZlfPHUWsAUX0Mo?format=jpg&name=orig",
+    "width": 1536,
+    "height": 2048,
+    "description": "Windowed sweet box tied with purple ribbon, with personalised tags and the round grey Toot Sweet Candy Cart logo sticker (3 Jun 2020). Note: one tag shows a private customer's recipient names, so crop or blur it before use.",
+    "sourcePage": "https://x.com/CartToot/status/1268149522003382273",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig",
+    "width": 1536,
+    "height": 2048,
+    "description": "Open 16-compartment (4x4) sweet box with pick 'n' mix sweets and Ferrero Rochers, on cupcake-print paper (5 Jun 2020).",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZwnjmzWsAEY0kK?format=jpg&name=orig",
+    "width": 1536,
+    "height": 2048,
+    "description": "Sweet box wrapped with yellow ribbon, with a yellow 'Happy Daddy's Day' tag and the round grey logo sticker, on cupcake-print paper (5 Jun 2020, Father's Day post).",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig",
+    "width": 1536,
+    "height": 2048,
+    "description": "Wider shot of the same wrapped 'Happy Daddy's Day' sweet box with yellow ribbon and the logo sticker, on cupcake-print paper (5 Jun 2020). Near-duplicate of the previous image.",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig",
+    "width": 2048,
+    "height": 1640,
+    "description": "Two personalised sweet boxes with pale-blue ribbon and navy and white gift tags with sweet-shaped cut-outs (6 Jun 2020).",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig",
+    "width": 2048,
+    "height": 1536,
+    "description": "Single personalised sweet box with pale-blue ribbon and a navy 'I Love You' tag (6 Jun 2020).",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/media/EZlfPFMXsAML0gd?format=jpg&name=orig",
+    "width": 912,
+    "height": 693,
+    "description": "Two sweet boxes with purple ribbon, 'Life is uncertain, eat dessert first' tags and the logo stickers (3 Jun 2020). Note: one tag shows a private customer's recipient names, so crop or blur it before use.",
+    "sourcePage": "https://x.com/CartToot/status/1268149522003382273",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://pbs.twimg.com/profile_banners/1235863275633397761/1583489293/1500x500",
+    "width": 1500,
+    "height": 500,
+    "description": "Lidded glass sweet jars with ribbons, scoops and striped paper bags on a white cart counter with fairy lights and white balloons (X banner, uploaded 6 Mar 2020, the day the account was created). Professionally lit; it is unclear whether this is the business's own cart.",
+    "sourcePage": "https://x.com/CartToot",
+    "stockRisk": "unclear"
+   }
+  ],
+  "videos": [],
+  "socials": {
+   "facebook": "https://www.facebook.com/tootsweetcandycart",
+   "instagram": "https://www.instagram.com/tootsweetcandycart/",
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://x.com/CartToot"
+   ]
+  },
+  "tagline": null,
+  "industry": "food-services",
+  "categories": [
+   "Candy Carts"
+  ],
+  "eventTypes": [],
+  "eventTypesSourceUrl": null,
+  "areasServed": [
+   "Chelmsford, Essex",
+   "Ingatestone (free local delivery of sweet boxes, 2020)",
+   "Essex"
+  ],
+  "areasSourceUrl": "https://x.com/CartToot",
+  "contact": {
+   "bookingUrl": null,
+   "email": null,
+   "phone": null
+  },
+  "gaps": [
+   "No live official website. tootsweetcandycart.co.uk (search snippets say the Facebook page lists it) is unregistered according to Nominet WHOIS on 27 Oct 2026, and it and the .com/.uk variants do not resolve in DNS. Its Wayback captures (21 Dec 2021, 8 Mar 2023, 7 Nov 2023, 1 Jan 2024) are all Wix 'ConnectYourDomain' 404 pages with no content. Booked Events shows a 'Visit Website' button with no link.",
+   "No video footage found. Checked: the X profile (29 posts; only 5 are visible logged-out, all photo posts, no video.twimg.com media), web searches for name + video / reel / tiktok, the TikTok handle @tootsweetcandycart (HTTP 200 but statusCode 10221 = user not found), and a YouTube search for 'toot sweet candy cart' (4 unrelated results by other channels). Facebook and Instagram could not be viewed. An own-footage hero showreel is therefore not possible from public sources.",
+   "Facebook (https://www.facebook.com/tootsweetcandycart) returned HTTP 400 'Error' to one plain request, which was not retried. Search snippets mention a Chelmsford location, a contact email and the tootsweetcandycart.co.uk link. None of this was verified, and the email was not copied.",
+   "Instagram content could not be verified. A search-engine summary says the bio mentions Harlow, Essex and 'bespoke luxury candy cart hire with a balloon garland and personalised sweet bags'. None of this was used.",
+   "Location conflict: X says Chelmsford, Essex (location field 'United Kingdom, Essex'). An unverified search summary of the Instagram bio says Harlow, Essex. Booked Events says only 'Essex'.",
+   "Event types are not stated by the business in its own words. The Booked Events description ('Perfect for weddings, birthdays, and corporate events') is third-person directory copy, so it was not counted. The X posts only use hashtags such as #gardenparty and #afternoontea on a styled set-up.",
+   "The £300-per-event price comes only from the Booked Events directory listing. The sweet-box prices (£6.50 / 2 for £12, postage £2) are historical, from June 2020 X posts.",
+   "Current trading status is unknown. The latest visible business post is from 23 June 2020. The Booked Events listing was last updated 3 Feb 2025.",
+   "On Booked Events, Licenses & Insurance reads 'No'. The booking and cancellation tiles read 'No Notice Required', but the policy pop-ups say no policy has been stated.",
+   "Only a raster logo exists (1000x1000 transparent PNG hosted on Booked Events). No SVG was found.",
+   "Two further own photos from the 3 Jun 2020 post were not included because of the 12-image cap: https://pbs.twimg.com/media/EZlfPFSWoAEP1pC?format=jpg&name=orig (750x1334, open 16-compartment box) and https://pbs.twimg.com/media/EZlfPFjX0AAUMJ3?format=jpg&name=orig (1536x2048, close-up of the 'Life is uncertain eat dessert first' tag). Both return HTTP 200.",
+   "Two box photos (EZlfPHUWsAUX0Mo, EZlfPFMXsAML0gd) show a private customer's names on a personalised tag. Crop or blur them before publishing.",
+   "The current Anyvendor seed entry in src/data/vendors.ts (category 'Cakes & Treats', rating 5.0, review_count 12, tier premium, Unsplash stock image photo-1563729784474) is not supported by any verified source. Replace it with category Candy Carts and the own photos above, and drop the rating and review count.",
+   "Booked Events lists no phone, email or website for the business. None were copied (the business is not The Bar People)."
+  ],
+  "instagramAccess": "The handle https://www.instagram.com/tootsweetcandycart/ comes from a search-engine result titled 'Toot Sweet Candy Cart (@tootsweetcandycart) • Instagram photos and videos'. A 6 Jun 2020 @CartToot post links to instagram.com/p/CBGK95Sn2j1/ (Instagram auto-share format). On 27 Oct 2026, one plain GET to the profile (desktop UA, no cookies) returned HTTP 200 text/html: a 504,801-byte JS shell with <title>Instagram</title>, no og:/description meta, route data pageID 'httpErrorPage' and show_lox_redesigned_404_page:true. No profile name, bio, posts or media were visible logged-out. It is not possible to tell from this whether the account was deleted or Instagram blocks logged-out viewing. The request was not retried and no login was attempted."
+ }
+}

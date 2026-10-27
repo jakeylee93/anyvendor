@@ -1,0 +1,64 @@
+{
+  "slug": "ozzy-stix",
+  "logo": {
+    "file": "public/media/ozzy-stix/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+    "plate": "dark"
+  },
+  "gallery": [
+    {
+      "file": "public/media/ozzy-stix/photo-01.webp",
+      "alt": "Two musicians playing an acoustic guitar and a dark electric guitar on a shaded terrace with wicker sofas, with the sea and a small island behind them.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-02.webp",
+      "alt": "Black-and-white studio portrait of the duo: one in sunglasses holding a white electric guitar beside a Marshall amp, the other standing next to a pair of bongos.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-03.webp",
+      "alt": "Black-and-white live shot of a guitarist singing with his mouth wide open while playing a white electric guitar, with a second performer behind him.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-04.webp",
+      "alt": "The duo standing with acoustic guitars in a flower-decked garden pavilion, with white chairs behind them.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-05.webp",
+      "alt": "Five performers in a white studio: a saxophonist, an electric guitarist, a singer, a violinist and a percussionist at congas, with a camera on a tripod in front.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-06.webp",
+      "alt": "Black-and-white photo of a guitarist smiling as he plays an acoustic guitar among seated guests at a venue strung with fairy lights.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-07.webp",
+      "alt": "Sepia-toned photo of the duo: one in glasses playing an acoustic guitar while the other, in sunglasses, leans on the sofa behind him.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-08.webp",
+      "alt": "The two members sitting on a low stone wall outdoors, one in a white shirt with arms folded and the other in a light blue shirt, with trees behind.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg"
+    },
+    {
+      "file": "public/media/ozzy-stix/photo-09.webp",
+      "alt": "The duo in white shirts and checked trousers sitting on a wooden garden bench in front of a hedge with pink roses.",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg"
+    }
+  ],
+  "notes": [
+    "Logo: vector reconstruction (potrace, 1 colour, #ffffff) of the official site's header wordmark whitebig.png, the white script 'Ozzy&Stix' on a transparent background. It is not the business's own SVG, because none exists. Checked against the original on navy (mean abs diff 4.8/255) and, filled black, against the site favicon's black version on white (6.7/255). Letterforms match. The mark is white, so it needs a dark plate.",
+    "Not used as the logo: the neon circular 'Ozzy & Stix' PNG on Booked Events (it appears nowhere on ozzyandstix.com, so provenance is unverified), and the 500px boxed 'Ozzy&Stix | LDN | MUSIC' social image (too low-res).",
+    "Reel: five clips from four of the business's own public TikTok posts (@ozzyandstix), plus one still of its own terrace photo (IMG_2574). Every TikTok post has a burned-in caption across the lower-middle of the frame for the whole video. Each source was therefore cropped to the rows above the caption before cutting, so no caption text appears in the reel. Audio is stripped.",
+    "Reel segment 2 (garden wedding, post 7693250822364433666) only exists at 576x1024 on TikTok, so it is softer than the 1080p clips.",
+    "Gallery photos come from ozzyandstix.com (Squarespace originals, fetched as the original JPEG with an image Accept header) and one from the Booked Events listing (photo-08). photo-06 and photo-09 come from the site's Instagram feed block and are only 640x640.",
+    "Excluded from the gallery: IMG_3845 (an informal tongue-out selfie), a 640px Instagram live shot with a small child visible in the background, and the Booked Events 'openart' AI placeholder images."
+  ]
+}

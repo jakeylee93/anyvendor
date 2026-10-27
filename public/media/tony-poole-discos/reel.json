@@ -1,0 +1,64 @@
+{
+  "slug": "tony-poole-discos",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg",
+      "durationSec": 2.8,
+      "kind": "still",
+      "note": "Own photo (Events Shots page): wedding first dance in a fairy-lit marquee at Parklands, Essex, with a confetti burst over the white LED dance floor. Source downscaled to 3200 px for the build."
+    },
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo (Dance Floors & Backdrops page): Premier Set Up at Parklands Quendon Hall with white starlit booth and backdrop, white LED dance floor and LOVE letters."
+    },
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo (Events Shots page): guests dancing with hands raised on a starlit dance floor at a wedding at Stock Brook Manor, Essex."
+    },
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo (Dance Floors & Backdrops page): Premier Set Up at Fulham Palace with white starlit booth, white LED dance floor and rose uplighting."
+    },
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo (Events Shots page): first dance in a timber barn at Easton Grange, Suffolk, under fairy lights with pink heart projections."
+    },
+    {
+      "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Own photo (Dance Floors & Backdrops page): Premier Set Up at Broxbourne Golf Complex with white starlit booth and backdrop, moving-head lights, LED dance floor and giant light-up numbers."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/tony-poole-discos/reel-desktop.mp4",
+      "poster": "/media/tony-poole-discos/poster-desktop.jpg",
+      "posterWebp": "/media/tony-poole-discos/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.2,
+      "bytes": 2150347
+    },
+    "mobile": {
+      "video": "/media/tony-poole-discos/reel-mobile.mp4",
+      "poster": "/media/tony-poole-discos/poster-mobile.jpg",
+      "posterWebp": "/media/tony-poole-discos/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.2,
+      "bytes": 1807005
+    }
+  }
+}

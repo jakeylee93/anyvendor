@@ -1,0 +1,732 @@
+[
+ {
+  "slug": "the-bar-people",
+  "reel": {
+   "built": true,
+   "videoClips": 6,
+   "stillClips": 0,
+   "desktopBytes": 2006126,
+   "mobileBytes": 1707269,
+   "durationSec": 9.6,
+   "qaNotes": "The six clips come from four of the business's own website background videos, all 1920x818: Event Management (539E27A6) 1.7-4.2s, Cash Bar Hire (DA9DA527) 6.16-8.16s, Dry Hire (0D33919A) 0.05-2.4s and 9.3-11.35s, and All Inclusive Hire (928EF2CB) 12.6-14.8s and 7.45-9.55s. I checked every trim frame by frame with scdet (scene-change detection, threshold 0): no cut inside any clip, and the highest score after the first frame was 3.7. I extracted frames from both reels and looked at them. The first build cropped a bartender's eyes off at the top of the frame, because the source is framed tightly (928EF2CB at 5.1s). I replaced that clip with a bartender in a Bar People badge shirt shaking a cocktail with his whole face in frame (DA9DA527, which ends exactly at a cut; verified) and moved the first clip's phone focal point to 0.5, then rebuilt. After the fix: no text overlays or watermarks, crossfades are smooth, and the poster is the bright marquee bar with gold and copper tins and guests (desktop and phone). One minor point: in the festoon-light team shot the low camera angle puts heads near the top edge of the phone crop, but they are seen from behind and not cut off. The phone crop is upscaled about 1.56x from 818p, so it is a little softer than desktop. The 1080p homepage hero (C6846F6D) and its earlier export (18944927) were not used because their shots are only 0.7-2.4s. F521A64B has a darkening overlay baked in. Total size is 3.71 MB, well under 9 MB."
+  },
+  "logo": {
+   "file": "public/media/the-bar-people/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://thebarpeople.co.uk/wp-content/uploads/2024/01/Bar-People-Logo.png",
+   "plate": "none",
+   "traceMeanAbsDiff": 7.04,
+   "visualCheck": "I rendered it with rsvg-convert at 600px beside the original 1000x1000 transparent PNG on white and on navy. Letterforms ('the BAR PEOPLE' hand lettering), the black disc, the white ring, the thin outer black edge and the proportions all match. It uses two colours, #231f20 and #ffffff, and the output is byte-identical to the earlier trace. Plate is 'none' because the badge has its own solid disc and outer ring and reads on both light and dark backgrounds. It is a traced reconstruction, not the business's own SVG."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/05/539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/05/DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/01/Bar-People-Logo.png",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/01/cocktail_bar_home2.jpeg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/02/gallery_Alex.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/04/glody.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/04/customporsche.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/02/IMG_8143.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/04/IMG_9306.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/04/lovemirror.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/02/test.jpg",
+   "https://thebarpeople.co.uk/wp-content/uploads/2024/05/weddingbarimg.jpg"
+  ],
+  "gaps": [
+   "The record lists no TikTok account and no HLS streams, so the only video sources were direct files on the business's own site. Instagram (https://www.instagram.com/thebarpeople/) and Facebook (https://www.facebook.com/thebarpeople) footage was not used: those downloads are not allowed in this session, and Instagram is login-walled.",
+   "The own-site service-page videos are 1920x818, so the 9:16 phone reel is upscaled about 1.56x and is a little softer than desktop. The only 1080p sources (the homepage hero C6846F6D and its earlier export 18944927) have no single shot of 2s or more that shows the bar service, so they could not supply clips.",
+   "Two gallery photos come from small originals: weddingbarimg.jpg is 800x600 and gallery_Alex.jpg is 1024x769. No higher-resolution versions were in the record.",
+   "Not used: slide_home_bar.jpg has a darkening overlay baked into the file, as does the F521A64B video. SIP_SIP.jpg (a panoramic banner) and batistebar.jpg (800x600, a second branded bar) were left out for variety and resolution.",
+   "No genuine SVG logo exists. logo.svg is a traced reconstruction of the site's own Bar-People-Logo.png and must be labelled as traced."
+  ],
+  "diskCleanup": "I deleted from .media-work/the-bar-people/ the nine fetched source videos (vid00 to vid08, .mp4/.mov, 84.9 MB), the twelve fetched source images (img00 to img11, 7.4 MB) and a duplicate of the homepage video already in the folder (site-C6846F6D.mp4, 14.1 MB, identical SHA-256 to vid00). That is about 106 MB removed. I also removed my own temporary QA frames in /tmp/tbp-qa. The work dir is now 3.2 MB and keeps contact sheets, fetch-log.json, extra-log.json (no extra downloads), the small logo PNGs, earlier trace SVGs and comparison PNGs. Outputs are in /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/public/media/the-bar-people/ (reel-desktop.mp4, reel-mobile.mp4, posters, reel.json, logo.svg, photo-01 to photo-09.webp, media.json; 5.5 MB) and the spec is /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/content/reels/the-bar-people.json. Nothing was committed."
+ },
+ {
+  "slug": "grape-fig",
+  "reel": {
+   "built": true,
+   "videoClips": 6,
+   "stillClips": 0,
+   "desktopBytes": 2784234,
+   "mobileBytes": 2806615,
+   "durationSec": 11.57,
+   "qaNotes": "Six single-shot clips, all from video files on grapeandfig.com's own Shopify CDN. Cut points were checked with scdet. Clip order: (1) the 1080p Masterclasses promo at 22.78s for 2.9s, a finished grazing board with edible flowers held up to camera. This is the poster, and it is attractive on both desktop and mobile. (2) Seasonal Fruit loop at 5.3s for 2.5s. (3) The promo again at 15.82s for 2.35s, an overhead shot of hands folding charcuterie onto a board. (4) British Cheese & Charcuterie loop at 4.0s for 2.6s. (5) Crudités & Hummus loop at 0.2s for 2.6s. (6) Number graze loop at 0.05s for 2.2s. I checked 10 evenly spaced frames from each output. No heads or products are cut off, there are no burned-in captions, and the fades are smooth. I rebuilt once: the first fruit window (0.2s) showed packaging print reading 'GRAZING PLATTERS @GRAPEANDFIG' at the top of the mobile crop, so I moved it to a close-up at 5.3s. The only text left is small own-brand box print in the number-graze clip and a cracker packet at the edge of the charcuterie-folding shot. The four product loops are portrait 810x1080, so their desktop crops are upscaled about 1.6x and slightly softer than the landscape promo shots. The number-graze clip is short, so only about 1s plays clear of the fades. Desktop and mobile together are 5.6 MB, under 9 MB."
+  },
+  "logo": {
+   "file": "public/media/grape-fig/logo.svg",
+   "kind": "svg-traced",
+   "plate": "light",
+   "sourceUrl": "https://grapeandfig.com/cdn/shop/files/thumbnail_Grape_and_Fig_Logo_BW.png?v=1665205626",
+   "traceMeanAbsDiff": 1.64,
+   "visualCheck": "I compared the header wordmark (serif 'GRAPE &' with a hairline script 'Fig', black on transparent) with the trace on white and on navy, and with a close-up of the script. The first trace (--colours 1, meanAbsDiff 4.50) made the script strokes noticeably thicker. I retraced from a 3x Lanczos upscale of the same PNG (the upscale has been deleted). The result matches the original in letterforms, stroke weight and proportions (meanAbsDiff 1.64). It is a single #000000 layer, 26 KB, viewBox 5358x1452. The mark is black, so it needs a white tile (plate 'light')."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://grapeandfig.com/cdn/shop/videos/c/vp/d54640d25f514ad8871616691651212c/d54640d25f514ad8871616691651212c.HD-1080p-7.2Mbps-46792920.mp4?v=0",
+   "https://grapeandfig.com/cdn/shop/videos/c/vp/74d62ed667f34d559b0025b11b1c96d4/74d62ed667f34d559b0025b11b1c96d4.HD-1080p-7.2Mbps-76814263.mp4?v=0",
+   "https://grapeandfig.com/cdn/shop/videos/c/vp/28cd542befc5487697d4091055e26445/28cd542befc5487697d4091055e26445.HD-1080p-7.2Mbps-76786436.mp4?v=0",
+   "https://grapeandfig.com/cdn/shop/videos/c/vp/65205974cf894f36b838549cdcda2669/65205974cf894f36b838549cdcda2669.HD-1080p-7.2Mbps-76787225.mp4?v=0",
+   "https://grapeandfig.com/cdn/shop/videos/c/vp/4ab669f6ed1043709d8f5f727d731541/4ab669f6ed1043709d8f5f727d731541.HD-1080p-7.2Mbps-76649487.mp4?v=0",
+   "https://grapeandfig.com/cdn/shop/files/thumbnail_Grape_and_Fig_Logo_BW.png?v=1665205626",
+   "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757",
+   "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042",
+   "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906",
+   "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720",
+   "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316",
+   "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771",
+   "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221",
+   "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492",
+   "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958"
+  ],
+  "gaps": [
+   "TikTok (https://www.tiktok.com/@grape_and_fig): the research record has no individual post URLs (the profile page is only a JavaScript shell), so nothing was downloaded. It was not needed, because there were six good clips from the business's own CDN.",
+   "Instagram (https://www.instagram.com/grapeandfig/) and Facebook (https://www.facebook.com/GRAPEandFig/) were not used: they are login-walled and not allowed in this session. No YouTube or Vimeo channel exists.",
+   "The Masterclasses promo has only two shots of at least 2.0s that are not talking heads. Its other hands-on shots (cutting cheese, placing cheese, strawberries, nuts) are 0.9–1.9s each, so the other four clips are portrait product loops (810x1080) that look softer when cropped for desktop.",
+   "The portrait 'Learn to platter' video (d0e8876b…) is a re-crop of the same footage as the landscape promo, so it was not used.",
+   "No genuine SVG logo exists. The logo is a traced reconstruction of the header PNG and must be presented as traced, not as the business's own vector file.",
+   "Left out of the gallery on purpose: Beauty Pie (client branding is prominent), M&S Food (burned-in #ss24mands hashtag), and the green 'Live to Eat' book-launch table (a guest's name card is legible). Gallery photo-07 still shows client Skin + Me product boxes.",
+   "Media pages that returned HTTP 429 during research (workshops, blog) were not retried, so they may hold extra footage that was not reviewed."
+  ],
+  "diskCleanup": "I deleted 24 source files (about 100 MB) from .media-work/grape-fig/: all 12 downloaded source videos (vid00–vid11, about 89 MB) and all 12 full-size source photos (img00–img11). I also deleted the temporary 3x logo upscale and the /tmp/gf QA frames. I kept fetch-log.json, extra-log.json (no extra downloads), the 12 contact sheets and the 3 small logo rasters. The work dir is now 3.0 MB. Published outputs in public/media/grape-fig/ total 8.2 MB. Free disk is about 15 GiB, still below the 20 GiB headroom target. Note that content/reels/grape-fig.json points at the deleted source files, so rebuilding the reel means downloading them again with fetch.py. I made no commits and ran no build or install."
+ },
+ {
+  "slug": "harry-de-cruz",
+  "reel": {
+   "built": true,
+   "videoClips": 2,
+   "stillClips": 4,
+   "desktopBytes": 1442046,
+   "mobileBytes": 1617613,
+   "durationSec": 12.3,
+   "qaNotes": "Reel spec: content/reels/harry-de-cruz.json. Outputs are in public/media/harry-de-cruz/ (reel-desktop.mp4, reel-mobile.mp4, posters, reel.json). Together the two reels are 3.06 MB, well under the 9 MB limit. Video comes from his own 70 s Squarespace HLS showreel (1080p, AES-128 HLS played by ffmpeg, audio stripped). Cut list from scdet: the reel is fast-cut, and most shots are under 1.8 s or carry burned-in title cards, quotes ('SENSATIONAL', Jimmy Carr), a 'Performed in over 30 countries' caption, client-logo walls or John Wick 3 branded cards. Only two text-free shots of 2 s or more were usable: 30.7–33.3 s (Harry on a theatre stage pulling a pint from a paper bag, inside the shot 29.76–33.4) and 42.1–44.8 s (Harry on stage with an adult volunteer at a mic, inside the shot 42.0–44.96). I rejected a 47.2–49.2 s close-up because he is talking to camera and the clip had almost no margin before the cuts. Four of his own photos fill the remaining slots: amazed gala guests, wedding-table card trick, olive suit with applause, and stage spotlight card flick. I avoided the wedding photo with children. The stage video comes first so the loop is seamless. The poster is Harry on stage facing the camera, holding the bag. QA used tiled frames at 8 or more times for both outputs. On the first build the phone crop of the wedding still cut off Harry's face, so I moved mfx from 0.69 to 0.655 and rebuilt once. Now both faces are in frame, no heads or products are cut off on desktop or phone, there are no overlays, fades are smooth and the loop frame matches the start. The phone crop of the stage-volunteer clip shows Harry only, at about 1.2x upscale, so it is slightly soft."
+  },
+  "logo": {
+   "file": "public/media/harry-de-cruz/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/ed357811-5d3d-4d7a-85c5-4a6963a99169/favicon.ico",
+   "plate": "none",
+   "traceMeanAbsDiff": 2.56,
+   "visualCheck": "Source is the site's own 180x180 icon (fetched as PNG): a white serif 'H' on a dark-green #005522 rounded square. Traced with logo_trace.py --colours 2 --keep-bg (raw diff 2.48). The traced square had uneven corners, so I replaced it with an exact <rect rx=109/1200> measured from the original's alpha edge, removed a stray #004a14 edge-fringe layer and kept the traced white H (final diff 2.56). Compared side by side with the original at 600 px on white and on navy, the proportions, colour and letterform are faithful. The only difference is slightly softer serif corners on the H. Plate is 'none' because the mark has its own solid green background. Note that this is a monogram, not a full wordmark."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://video.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/4db5c293-da52-491a-bc41-83fd715e96c8/playlist.m3u8 (own showreel on https://www.harrydecruz.com/showreel; HLS via ffmpeg; sha256 78ad0823…d45e logged in .media-work/harry-de-cruz/extra-log.json)",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/ed357811-5d3d-4d7a-85c5-4a6963a99169/favicon.ico (logo source, fetched as PNG with Accept: image/png)",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/430602cc-f832-41a3-89d5-27134263799d/IMG_4823.JPG (reel only)",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg",
+   "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG"
+  ],
+  "gaps": [
+   "The only usable own footage is the 70 s showreel, and it is fast-cut and heavily captioned. Only 2 text-free shots of 2 s or more exist, so the reel is 2 video clips plus 4 own photos.",
+   "The two Instagram videos embedded on his homepage (https://www.instagram.com/reel/Chc1iiYIef0/, https://www.instagram.com/tv/CfuJfuuoDiR/) are login-walled, and Instagram downloads are not allowed in this session, so they were not used. The second one is a lockdown satire video, not event footage.",
+   "No own TikTok, YouTube or Vimeo channel is verified (TikTok @harrydecruz is unlinked from his site and reported as private). Third-party YouTube videos featuring him (Vanishing Inc. Iu5Z5oOCfaA, Magicians' Podcast cesk9YOvdwg, SylarMagic d0Djc6cUniU) are not his own and YouTube is blocked here.",
+   "There is no full logo image or SVG. The header wordmark 'Harry De Cruz' is live web-font text (ivypresto-display). The logo used is a traced reconstruction of the site's 180 px 'H' monogram icon, with the square rebuilt as an exact rounded rect. If a wordmark is wanted, it would need a typographic reconstruction with provenance noted.",
+   "Squarespace serves photos at most 2500 px wide. The drinks-reception photo (8C299568…JPG) is only 1228x977, so gallery photo-05 is under 1600 px.",
+   "Photo and footage rights sit with Harry or his photographers (credits on his site include @domdommartin and Hannah McClune). Using the showreel clips and photos on Anyvendor should have his consent.",
+   "The source WebP downloads from fetch.py were replaced with JPEG re-fetches (Accept: image/jpeg) for better quality. fetch.py also saved the homepage HTML as 'logo01-logo1' because the second record 'logo' is a page URL for a text wordmark; I deleted it.",
+   "Disk was at 14.6 GiB free at the start, below the 20 GiB headroom target. This job peaked at about 34 MB of working files."
+  ],
+  "diskCleanup": "I deleted these from /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/harry-de-cruz/: showreel-hls.mp4 (24.3 MB source video), the 12 fetch.py WebP source images (img00…img11, about 3.2 MB), the 12 JPEG re-fetches in jpg/ (img00.jpg…img11.jpg, about 4.8 MB) and logo01-logo1 (397 KB of homepage HTML, not a logo). The work dir went from 34 MB to 2.7 MB. It keeps fetch-log.json, extra-log.json (sha256 of every extra download), contact and QA sheets (sheet-showreel.jpg, sheet-images.jpg, fine-a/b/c.jpg, preview-crops.jpg, qa-*.jpg), logo comparisons, logo-trace-raw.svg, logo-fixed.svg, logo00-favicon.ico and jpg/logo-favicon.png. I also removed my temporary helper dirs /tmp/hdc-tools and /tmp/hdc-probe. Nothing was committed."
+ },
+ {
+  "slug": "lucy-jane-cakes",
+  "reel": {
+   "built": true,
+   "videoClips": 6,
+   "stillClips": 0,
+   "desktopBytes": 1555644,
+   "mobileBytes": 1492378,
+   "durationSec": 12.45,
+   "qaNotes": "Six clips, 2.15–2.9 s each. Every clip sits inside one shot, checked with scdet at threshold 8 and 3 plus 0.25 s window sheets. Clips come from her own TikTok posts: 'ALL THE PINKS' 7415537464040885537 (3 clips: white chocolate drip on two-tier pink cake [first clip, poster], '30' topper placed before the name plaque appears, cupcake swirl piping), 'Oink' 7278424180658277665 (2 clips: overhead rosette piping, finished pig-face cupcake) and 'Bento Love' 7477280087339994390 (filling piped onto a sponge layer). The 8-frame QA tiles of reel-desktop.mp4 and reel-mobile.mp4 show no burned-in captions, watermarks or TikTok UI, no faces or children, no names and no black frames. Crossfades are smooth and the poster (drip cake with spoon) is clean. The sources are vertical 1080x1920, so mobile is full-frame and desktop is a horizontal band crop (1080x608 upscaled to 1280x720). Focal points were set per clip and previewed before the build. One fix was made before building (segment 3 moved up so the '30' topper is not clipped); no rebuild was needed after QA. Desktop plus mobile is about 3.05 MB, well under 9 MB. Rejected footage: 'Rainbows and unicorns' (the research's top pick, but the name 'Romee' is legible on the cake throughout), Spider-Man (540p only, 'TEDDY' name topper visible, jump cuts), cowgirl scraper shot (supplier LissieLou's logo prominent on the scraper, name topper elsewhere), photo-cake tutorial (photos of private individuals on the cake), and the level-rise video (jump cuts)."
+  },
+  "logo": {
+   "file": "public/media/lucy-jane-cakes/logo.svg",
+   "kind": "svg-traced",
+   "plate": "none",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/10/lucy_jane_cakes.png",
+   "traceMeanAbsDiff": 0.68,
+   "visualCheck": "Rendered at 600 px next to the original on white and navy. It is faithful: blush circle, white double ring, white bold 'LUCY JANE' with hot-pink offset outline, and hot-pink 'Cakes' script. The script is a hair bolder than the original. A direct trace at 3–5 colours dropped the hot-pink layer, because median-cut split the noisy blush area first; 6 colours produced three duplicate blush layers. So the source was upscaled to 1500 px and posterised to its three exact colours (#f8dfdb, #ffffff, #fa8fcd), keeping pink out of the rim where the original's bluish antialias fringe sat, then traced with --colours 3. Result: 3 layers, 42 KB. Plate 'none' because the mark includes its own solid blush circle. This is a reconstruction with recorded provenance, not the business's own vector file."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://bookedevents.co.uk/wp-content/uploads/2024/10/lucy_jane_cakes.png",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7265710948135079201",
+   "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590"
+  ],
+  "gaps": [
+   "No business website exists and Instagram (https://www.instagram.com/lucy_jane_cakes/) is login-walled. There are no standalone high-resolution photos, so 7 of the 9 gallery images are full-resolution still frames from her own TikTok videos. Photo 03 is the 540x960 TikTok cover of her wedding-cake video (7473914061248269590; the video itself was not downloaded because it is a storytime). Photo 04 is the 500x455 Booked Events listing cover. Both are low resolution.",
+   "The TikTok cover CDN URLs are signed and expire around 29 Oct 2026, so the gallery's sourceUrl gives the stable TikTok post page instead.",
+   "The strongest footage ('Rainbows and unicorns', https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001, finished-cake reveal at 25–28.7 s) was left out of the reel because a child's name ('Romee') is legible on the cake. Photo 05 uses it only as a crop above the name. If the business supplies name-free footage or gives permission, that shot would make a better poster.",
+   "All usable footage is vertical 9:16 TikTok, so the desktop 16:9 reel is a band crop: whole tiered cakes never appear full-height on desktop, and frames are upscaled 1.19x from 1080 px wide. reel.py has no letterbox or blurred-fill option for portrait sources.",
+   "No genuine SVG logo exists. logo.svg is a traced reconstruction of the 500x500 Booked Events-hosted PNG (identical to the TikTok avatar). Original artwork from the business would be needed for a certified-exact mark.",
+   "Downloaded but unused, then deleted: TikTok 7372276808340884769 (Spider-Man; only 576x1024 available, name topper 'TEDDY'), 7486597708946492694 (cowgirl; name topper, supplier logo on scraper), 7480856260108127511 (photo cake showing photos of private individuals), 7265710948135079201 (level rise; jump cuts; used only for gallery photo 09).",
+   "yt-dlp printed a warning that the TikTok extractor 'is attempting impersonation, but no impersonate target is available'. No impersonation library was installed or used, and downloads ran with --no-cookies and default headers only."
+  ],
+  "diskCleanup": "Deleted from .media-work/lucy-jane-cakes/: tt/ (8 TikTok source MP4s, about 42 MB: 7265710948135079201, 7278424180658277665, 7283858750279028001, 7372276808340884769, 7415537464040885537, 7477280087339994390, 7480856260108127511, 7486597708946492694), stills/ (11 full-resolution 1080x1920 PNG frame grabs, about 10 MB), trial traces logo-t4.svg, logo-t5.svg and logo-t6.svg (about 0.85 MB), gallery-draft.json, and my temp helper scripts in /tmp/ljc-tools. The work dir went from about 60 MB to 8.6 MB. Kept: fetch-log.json, extra-log.json (sha256 and bytes for all 8 TikTok downloads), contact and QA sheets (sheets/, 7.9 MB), small source images (listing photo 204 KB, five TikTok covers of 37–64 KB each), logo00 PNG, logo01 avatar JPEG and logo-posterised-1500.png (52 KB). Note: the reel spec references the deleted MP4s, so a rebuild needs a re-download (the hashes are in extra-log.json). Disk free on / was about 15 GiB before and after, still under the 20 GiB headroom target. Nothing was committed."
+ },
+ {
+  "slug": "tony-poole-discos",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 2150347,
+   "mobileBytes": 1807005,
+   "durationSec": 12.2,
+   "qaNotes": "The reel uses only photos. No video source is allowed: all 74 of the business's videos are on YouTube, and a recheck of the homepage found no direct mp4 or HLS files and no TikTok link. It uses 6 of the business's own website photos (downscaled to 3200 px for the build), in this order: Parklands confetti first dance (also the poster), Parklands Quendon Hall Premier set-up with LOVE letters, Stock Brook Manor dance floor, Fulham Palace set-up in rose light, Easton Grange barn first dance with heart projections, and Broxbourne set-up with light-up '21' numbers. I checked 8 evenly spaced frames from each output. Desktop: every crop is clean, with no text overlays; the props and LOVE/'21' letters are physical. The fades are smooth and the confetti poster frame is attractive. Mobile: the couples and DJ booths are centred, but on the Stock Brook crowd shot the guests at the edges are partly cut off and one guest's arm runs across the foreground (the bride is central), which is acceptable for a crowd photo. On the Parklands set-up the LOVE letters fall outside the 9:16 crop, which keeps the booth. No rebuild was needed. Desktop + mobile total about 3.96 MB, under the 9 MB target. The spec is at content/reels/tony-poole-discos.json. The reel-src stills it points to have been deleted, so a rebuild must fetch them again from the public URLs in the spec."
+  },
+  "logo": {
+   "file": "public/media/tony-poole-discos/logo.svg",
+   "kind": "svg-traced",
+   "plate": "dark",
+   "sourceUrl": "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png",
+   "traceMeanAbsDiff": 0.7,
+   "visualCheck": "Compared against the original on navy and on white at 600 px, plus a pixel-aligned zoom. Letterforms, the frame, the stars and the arcs match, using 2 layers: #ffffff and the purple #a554ff. A first trace made with the tool's defaults came out about 15% bolder because of its 1px dilation. To fix this, I cropped the source, upscaled it 4x and raised the alpha edge threshold from 128 to 180 before tracing, which brings the text ink to within about 2% of the original. The only difference is that the faint purple glow around the arcs is not reproduced. Mean absolute difference: 0.70 on white (tool metric) and 3.98 on navy (pixel-aligned). The mark is white, so it needs the dark/navy plate."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://tonypoolediscos.com/wp-content/uploads/2016/05/TonyPooleDiscos_logo-02.png (logo, traced)",
+   "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Essex-Wedding-First-Dance.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2017/10/Parklands-Quendon-Hall-Essex-Premier-Set-Up-White-Starlight-Booth-White-Starlight-Backdrop-White-LED-Dance-Floor-LOVE-Letters-Lilac-Uplighting.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2017/10/Stock-Brook-Manor-Essex-Wedding-1.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2024/02/Fulham-Palace-London-Premier-Set-Up-White-Starlit-Booth-White-LED-Dance-Floor-Rose-Uplighting.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2025/02/Easton-Grange-Suffolk-Wedding-First-Dance-a.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2019/01/Hanbury-Manor-Ware-Wedding-First-Dance-Confetti.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2024/02/Broxbourne-Golf-Complex-Herts-Premier-Set-Up-White-Starlit-Booth-Backdrop-Dance-Floor-And-Numbers-Lilac-Uplighting.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2017/10/IMG_1993.jpg",
+   "https://tonypoolediscos.com/wp-content/uploads/2024/02/The-Grove-Watford-Herts-Photo-Booth.jpg"
+  ],
+  "gaps": [
+   "There is no usable video source. All of the business's footage, 74 videos, is on YouTube, which is blocked for this session. The best candidates are the 2025 promo video https://www.youtube.com/watch?v=OeO8ee-0p88 and the Premier Lighting set-up at Hunton Park https://www.youtube.com/watch?v=-eY3BvBCOuI (channel @tonypoolediscos5120). The site has no direct mp4 or HLS files, there is no TikTok account, and Instagram and Facebook are login-walled. The showreel is therefore a photo reel. A real video reel would need YouTube access or the owner's original files.",
+   "The logo is a traced reconstruction of the 964x467 PNG, because no genuine SVG exists. The faint purple glow around the arcs is not reproduced.",
+   "The Shard photo (heavily compressed), the Sheene Mill LOVE set-up and the 360 video booth photo were left out of the gallery to keep it to 9 varied images. The wedding photos show identifiable adult guests; no school or celebrity images were used.",
+   "No extra downloads beyond fetch.py, so extra-log.json is an empty list."
+  ],
+  "diskCleanup": "Deleted from .media-work/tony-poole-discos/: the 12 downloaded source photos img00–img11 (~5.9 MB); the reel-src/ downscaled 3200 px stills (~6.0 MB); the logo04 promotional flyer JPG (560 KB); the logo upscale intermediates logo00-up4.png and logo00-up4-thin.png (~0.97 MB); trace-up4-full.png; zoom-text.png and zoom-aligned.png; the superseded traces trace-c2.svg and trace-up4-c3.svg; and the qa/ folder of individual frames (~1.1 MB). No videos were downloaded. Kept (2.9 MB): fetch-log.json, extra-log.json, the contact and crop sheets (photos-sheet.jpg, view-a.jpg, crops1.jpg), qa-desktop.jpg and qa-mobile.jpg, the logo comparison images, the small logo PNGs logo00–03, and the trace SVGs and renders (including trace-thin-c3.svg, the source of logo.svg). public/media/tony-poole-discos/ is 6.8 MB: reels, posters, logo.svg, photo-01..09.webp, reel.json and media.json."
+ },
+ {
+  "slug": "paint-and-pour",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 2641266,
+   "mobileBytes": 2553245,
+   "durationSec": 12.2,
+   "qaNotes": "This is a photo-only reel because no video exists in any allowed source. It uses all 6 of the business's own published photos, each shown for 2.6–2.8 s with a push-in, crossfades of 0.6 s and crf 26. Order: (1) host presenting the finished Monet-style canvases, which is also the poster; (2) session set-up table; (3) guests painting; (4) host with a microphone beside a Scream painting; (5) group holding Scream paintings in the pink-neon lounge; (6) group holding cat portraits. QA frames from both outputs at 0, 1.0, 1.9, 3.3, 4.8, 6.4, 7.9, 9.4, 11.0 and 11.9 s were tiled and checked. Heads and paintings are framed on both 16:9 and 9:16. There are no text overlays; the only text is venue signage in the room, such as the '8 Rocks' neon and a 'Rome Paris New York' sign. The fades are smooth, there are no black frames, and the poster is attractive: the host smiling with the Monet canvases against the brick wall. Known weakness: the source photos for segments 2, 3, 4 and 6 are small (765, 480, 1000 and 480 px wide). They were upscaled with Lanczos plus a light unsharp mask, but they are visibly soft on desktop, the 480 px ones especially. Desktop and mobile together come to 5.2 MB, under the 9 MB target. No rebuild was needed."
+  },
+  "logo": {
+   "file": "public/media/paint-and-pour/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_pour_logo.png",
+   "plate": "none",
+   "traceMeanAbsDiff": 3.59,
+   "visualCheck": "I rendered the trace at 600 px next to the original on white and on navy and compared them. The arched serif 'Paint and Pour' letterforms, the single-line wine glass and paintbrush, the black outer ring and the light-blue (#99c8ff) inner ring all match. The line weight is close to the original's hairlines and the lines are continuous. Running logo_trace.py on the raw PNG did not work well: the blue ring disappeared and the lines came out roughly twice as thick (diff 8.5), or the lines picked up a blue fringe. So I first flattened the PNG to its three colours at 3600 px, with a 1 px ink erosion to offset the tool's dilation, then ran logo_trace.py. Finally I swapped the traced white disc and blue ring for exact SVG circles. The file is 65 KB. The diff figure is the mean absolute RGB difference from the original: 3.59 on white and 3.36 on navy. The plate is 'none' because the mark has its own white disc inside its ring."
+  },
+  "galleryCount": 6,
+  "sourcesUsed": [
+   "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533",
+   "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg",
+   "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832",
+   "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_pour_logo.png"
+  ],
+  "gaps": [
+   "There is no video footage in any allowed source. There is no official website. The Booked Events listing and the Eventbrite organiser and event pages have no embedded video. The TikTok account @_paint_and_pour_ is not public (statusCode 10221). Instagram (https://www.instagram.com/_paint_and_pour_/) requires a login, so it is out of scope for this session. The reel is therefore built only from photos. Footage would have to come from the business directly, or from Instagram in a permitted session.",
+   "There are few high-resolution own photos. Only 2 of the 6 are at least 1200 px wide (3616x4156 and 3530x1713). The others are 1000x800, 765x1020 and 480x640 (two). Their reel segments are upscaled and soft, especially on desktop. In the gallery they are published at native size, not upscaled. Better photos are needed from the business.",
+   "The logo is a traced reconstruction, not a vector file from the business. It was traced from the 1000 px PNG that Booked Events hosts. The business's newer Eventbrite profile logo (June 2026) is a different version of the same design: terracotta and maroon on a crumpled-paper photo texture, only 506 px, so it is not suitable for tracing. It is unclear which version is the current master. Ask the business for its vector logo.",
+   "The Booked Events 'View all photos' gallery has OpenArt AI-generated images that are not this business's work. They were excluded, as the research record also notes.",
+   "Nothing was downloaded through HLS or TikTok, so extra-log.json lists only derived files: the resized reel stills, since deleted, and logo.svg."
+  ],
+  "diskCleanup": "I deleted these from .media-work/paint-and-pour/: the 6 downloaded source photos (img00–img05, about 2.7 MB; their SHA-256 hashes are in fetch-log.json), the derived reel-src stills (6 files, about 4.0 MB), the low-res test crops, the 20 individual QA frames, and all intermediate logo traces and posterised PNGs (about 5 MB). The folder went from 19 MB to 3.1 MB. Kept: fetch-log.json, extra-log.json, sheet-images.jpg, preview-crops.jpg, logo-candidates.jpg, qa/tile-desktop.jpg, qa/tile-mobile.jpg, logo-try/cmp-final.jpg, logo-try/zoom-lines2.jpg, logo-try/final.svg, and the three small original logo rasters. Nothing was committed and no other repository was touched. The /tmp helper scripts were removed."
+ },
+ {
+  "slug": "magpie-catering",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 1819168,
+   "mobileBytes": 1836818,
+   "durationSec": 12.2,
+   "qaNotes": "The business has no video of its own (the record lists videos: [], and it has no TikTok, HLS or direct files), so I built a photo reel. It uses six of Magpie's own food photos, each shown for 2.6–2.8 s with reel.py's gentle push-in and 0.6 s fades. In order: prawn and mango canapé skewers (1600x1200; this one is first and gives the poster), dessert glasses with heart biscuits, the cold mezze board, baklava on slate, grilled halloumi, and the white-chocolate raspberry tart. I checked nine frames from each of the desktop and mobile reels, including both fades and the loop point. No heads or main food items are cut off, there is no text or watermark, the fades are smooth and the poster (prawn skewers) looks good. The only flaw is minor: in the desktop crop the top of the tart's crust is trimmed. The tart (896 px) and dessert glasses (1080 px) are under 1200 px wide, so they are upscaled about 1.2–1.4x and look a little softer. No rebuild was needed. Desktop and mobile together come to about 3.66 MB, well under 9 MB. Spec: content/reels/magpie-catering.json. Output: public/media/magpie-catering/reel-desktop.mp4 and reel-mobile.mp4, the posters and reel.json."
+  },
+  "logo": {
+   "file": "public/media/magpie-catering/logo.svg",
+   "kind": "svg-traced",
+   "plate": "light",
+   "sourceUrl": "https://www.magpiecatering.com/wp-content/uploads/2016/06/Magpie-Logo.png",
+   "traceMeanAbsDiff": 0.29,
+   "visualCheck": "Traced from the 680x410 transparent header lockup: a purple #5f2573 'magpie', black 'catering', and a grey #a6a8ab arc with a small bird. The standard logo_trace.py run (with --colours 3, 4 and 5) was not faithful enough. At 3 and 4 colours it produced only 2 layers. At 5 colours (diff 2.35) the thin 'catering' letters came out too bold, from the 1px dilation after upscaling, and light seams appeared inside the purple letters, showing on a dark background. The source PNG has flat colours, so I traced each brand colour separately with potrace at 4x, using a threshold at 50% coverage and no dilation. I used a one-off script in /tmp, now deleted. Rendered at 600 px beside the original on white and on navy, the letterforms, letter spacing, colours, proportions and the bird's white wing details match. The only difference is the faint tapered tip of the grey arc, which ends slightly more bluntly. The mark is coloured on a transparent background, so plate=light."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/Magpie-Logo.png",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg",
+   "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000032.jpg"
+  ],
+  "gaps": [
+   "The business has no video of its own. Its site, WordPress media library and linked socials have no direct, HLS or TikTok footage, so the reel uses six still photos rather than video. Facebook (https://www.facebook.com/MagpieCateringPage/) and Instagram (https://www.instagram.com/magpie.catering/) may hold videos, but both are login-walled or showed errors and are not allowed sources in this session.",
+   "There is no genuine SVG logo. logo.svg is a vector reconstruction traced from Magpie-Logo.png, with its provenance recorded in media.json notes. I did not use the standard logo_trace.py output (too bold, with seams). Instead I traced each flat colour with a one-off potrace script that was not saved to the repo. logo_trace.py could take a no-dilation option for thin letterforms.",
+   "Own photos are low resolution. Only 4 usable own photos are at least 1200 px wide; the 1276x500 strip is too letterboxed. The tart (896 px) and dessert glasses (1080 px) in the reel are slightly upscaled. In the gallery, photo-04 is 896 px and photo-08 and photo-09 are 750 px.",
+   "I left these out of the gallery. alleyn-court-025.jpg (2592x1944 marquee dinner) is shown on Magpie's Links page as partner Castle Marquees' image, so it is unclear who took it. The waiting-team group photo shows identifiable young staff and a readable number plate. Neither image shows a Magpie event setting at high resolution.",
+   "photo-07 (hot mezze board) is cropped at the top and bottom to remove kitchen cloths and stacked packaging. This is noted in media.json."
+  ],
+  "diskCleanup": "I deleted all 12 downloaded source photos (img00–img11 *.jpg, 3.6 MB in total, including the 1.7 MB alleyn-court original), plus the temporary QA frame folder, a large trace render and the one-off /tmp/claude-magpie script folder. There were no videos to delete. Left in .media-work/magpie-catering (2.1 MB): fetch-log.json, extra-log.json (empty [], since no extra downloads were made), contact sheets, QA tiles (qa-desktop.jpg, qa-mobile.jpg), logo comparison images, trial trace SVGs and the 4 small logo source files. Free disk space is about 15 GiB, still under the 20 GiB target; this job used under 6 MB. No git commit was made and no other repository was touched."
+ },
+ {
+  "slug": "tl-executive-cars",
+  "reel": {
+   "built": false,
+   "videoClips": 0,
+   "stillClips": 0,
+   "desktopBytes": null,
+   "mobileBytes": null,
+   "durationSec": null,
+   "qaNotes": "No reel built, and no spec was written to content/reels/. The business has no public video: its 5 live pages have no video or iframe, the WP media API lists 0 videos, the Wayback CDX has no video captures, and it has no social accounts. Only one photo of its own work exists (car1.jpg, 1200x600, from a 2016 Wayback snapshot). That is below the 3-photo minimum for a photo reel. A fresh Wayback CDX query of tlexecutivecars.co.uk/img/* confirmed this: the other archived images are stock, a texture file or 404s."
+  },
+  "logo": {
+   "file": "public/media/tl-executive-cars/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://tlexecutivecars.co.uk/wp-content/uploads/2019/03/tl-logo-badge.png",
+   "plate": "none",
+   "traceMeanAbsDiff": 4.87,
+   "visualCheck": "Source is the business's own 600x545 transparent badge PNG: a charcoal disc with a silver ring and band, 'THEYDON'/'LOUGHTON' in light serif and 'EXECUTIVE CARS' in dark serif. logo_trace.py with --colours 3/4/5/6 scored diff 14.50/13.98/9.16/8.49. Flat posterisation turned the metallic gradients into blotches that cut across the band lettering and added a grey halo, so those traces were not faithful. I built a gradient-aware vector reconstruction instead. The ring, bevel and disc are circles fitted to the raster (mean residual 0.2–0.3 px) and filled with gradients sampled from it. The curved band is a potrace path with gradient, top highlight, bottom edge and a soft drop shadow. All lettering is potraced at 3x. On logo_trace.py's own QA metric it scores a mean absolute difference of 4.87. Rendered with rsvg-convert -w 600 beside the original on white and on navy: the letterforms, greys, band curve and proportions match closely. Remaining differences are subtle: the band's engraved text emboss is flat, and the disc's vignette is slightly more even. The file is 26 KB with valid XML. The viewBox is '35 19 523 494', which matches assemble.py's regex. Plate is 'none' because the badge is a self-contained solid disc that reads well on white and on navy. The file is labelled in its <desc> and in media.json as a reconstruction, not an original vector."
+  },
+  "galleryCount": 1,
+  "sourcesUsed": [
+   "https://tlexecutivecars.co.uk/wp-content/uploads/2019/03/tl-logo-badge.png (logo source, sha256 5360d7f8…63e5)",
+   "https://web.archive.org/web/20160316212529im_/http://tlexecutivecars.co.uk/img/car1.jpg (gallery photo-01, sha256 5a64181b…069e)",
+   "Fetched but not used: the Booked Events-hosted badge PNG (1000x1000, softer) and the 2019 horizontal lockups and 2021 header JPG from tlexecutivecars.co.uk (too small or no transparency)",
+   "Wayback CDX metadata query for tlexecutivecars.co.uk/img/* (no media downloaded)"
+  ],
+  "gaps": [
+   "No video exists from any allowed or blocked source: no site video, no WP video media, no Wayback video and no social accounts (YouTube, Vimeo, Instagram, Facebook or TikTok). A showreel cannot be built from the business's own footage.",
+   "Only 1 photo of the business's own work exists: a 2016 Wayback copy of http://tlexecutivecars.co.uk/img/car1.jpg, which now returns 404. The reel was not built because the minimum is 3 own photos. The gallery has just 1 image, at its native 1200x600 (not upscaled), and it shows the fleet as of 2016 or earlier.",
+   "Excluded as not genuine own media: every live-site photo (stock images and manufacturer renders), the old-site airport, special-events and corporate images (stock), the Booked Events gallery (OpenArt AI renders of glassware), its AI-looking thumbnail, and the client-logo strip.",
+   "No genuine SVG logo exists. logo.svg is our vector reconstruction of the business's own badge PNG, not its own vector file. It was built with fitted circles, sampled gradients and potrace lettering, because logo_trace.py's flat-colour output was not faithful (best diff 8.49–9.16 with visible blotches). The engraved emboss on 'EXECUTIVE CARS' is shown as flat dark letters.",
+   "The reconstruction script copies saved in .media-work (logo-recon-build.py.txt and logo-recon-edges.py.txt) load the band-curve file from /tmp/tl-scripts/curves4.npy, which has been deleted. Point them at .media-work/tl-executive-cars/logo-recon-band-curves.npy to re-run them."
+  ],
+  "diskCleanup": "I downloaded no source videos, so there were none to delete. From .media-work/tl-executive-cars/ I deleted 20 intermediate files: 6 flat-trace SVGs (trace-c3/c4/c5/c6, trace-be-c4/c5), 5 reconstruction drafts (recon-v1 to v5) and 4 of their PNG renders, and 5 comparison or zoom JPGs (cmp2-4, zoom, zoomcmp). I also removed the temporary helper dir /tmp/tl-scripts. Kept (1.3 MB total): fetch-log.json, extra-log.json (no extra downloads), logos-sheet.jpg, logo-trace-flat-compare.jpg, logo-final-compare.jpg, the 7 small logo source files (12–395 KB), img00-car1.jpg (216 KB, the only own photo, kept as it is small), and the reconstruction scripts and band-curves file. Outputs: public/media/tl-executive-cars/logo.svg (26 KB), photo-01.webp (145 KB) and media.json. No reel files. Nothing committed. Disk free is unchanged at about 15 GiB."
+ },
+ {
+  "slug": "jamie-roche",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 1280971,
+   "mobileBytes": 1260913,
+   "durationSec": 12.2,
+   "qaNotes": "This is a photo reel of six stills with a push-in and 0.6 s fades, in 1280x720 and 720x1280 versions. It has no video clips because all of his footage is on YouTube, which this session may not download. Segment order: (1) singing at St Mary Magdalene Church, which is the poster frame; (2) black-and-white at Painter Studios; (3) the guitar wall at Sixty Sixty Sounds; (4) the Booked Events stage photo; (5) St John's Church, Hoxton; (6) the flat-cap shot. I checked 12 desktop and 8 mobile frames. All heads and faces are in frame, there are no text overlays or watermarks, and the fades and the loop back to segment 1 are smooth. The only text in any shot is the venue's physical 'Live' wall sign in segment 4. I fixed the focal points before building: the mobile crop had clipped his mouth in segment 3, and faces sat on the crop edge in segments 1, 5 and 6. Segment 4 gets a 96 px mirrored strip of dark wall added above it, so the push-in does not clip his hair. The poster is attractive (expressive singing, warm church interior). Five stills are 1280x720 YouTube thumbnails upscaled 2x with Lanczos. The phone version uses a 405 px-wide band of each one, so it is visibly softer than the desktop version. The two reels total 2.54 MB, well under 9 MB."
+  },
+  "logo": null,
+  "galleryCount": 8,
+  "sourcesUsed": [
+   "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+   "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+   "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+   "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+   "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+   "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+   "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0"
+  ],
+  "gaps": [
+   "Logo set to null. He has no genuine brand mark. The only 'logo' on record is the circular portrait headshot in the Booked Events 'Business Logo' slot (https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_logo.png): it is a photo with speckled rim artefacts, not a wordmark. He has no website and no text logo. The profile needs a typeset name treatment, or that portrait used as an avatar.",
+   "No video clips are used. All his footage is on YouTube (own channel @JamieRoche), which this session may not download. Best candidates: https://www.youtube.com/watch?v=drMAH8eFYi4 (strongest), https://www.youtube.com/watch?v=_CEzdGc6tMw, https://www.youtube.com/watch?v=aW_3BWmWTkI, https://www.youtube.com/watch?v=oh9KSH-2DmU, https://www.youtube.com/watch?v=Q8CHA6G6Abg and https://www.youtube.com/watch?v=jVrJUBJm75w. All report playableInEmbed=true, so a YouTube embed is an option. He has no website, so there is no HLS or direct video, and no TikTok is confirmed.",
+   "Source flag for orchestrator review: 6 of the 8 gallery photos and 5 of the 6 reel stills are public thumbnail images of his own-channel YouTube videos (i.ytimg.com maxresdefault.jpg, 1280x720), and gallery photo 05 is his YouTube channel avatar (yt3.ggpht.com). fetch.py fetched them as plain image files because the verified record lists them as own images. No video was downloaded and no cookies were used. If even YouTube thumbnail images count as disallowed 'YouTube downloads', only 1 photo would remain (the Booked Events listing photo): the reel could not be built and the gallery would shrink to 1.",
+   "Re-hosting rights for the video-frame photos are unconfirmed: the research credits the camera work to Max Bandicoot and Christopher Painter.",
+   "Image quality is limited. The thumbnails are only 1280x720, and the Booked Events photo is 1000x800, so the reel stills were upscaled 2x. The 9:16 mobile reel is noticeably softer than the desktop version. Gallery photos are published at native size and were not upscaled.",
+   "Gallery has 8 photos, not 9. No other own photos exist. The circular headshot from the logo slot was excluded (transparent corners and rim artefacts)."
+  ],
+  "diskCleanup": "Deleted from .media-work/jamie-roche/: the 8 regenerable upscaled reel stills in reel/ (3.7 MB, and the folder itself), the 1.08 MB YouTube avatar original (img01-…=s0) and the 1.06 MB Booked Events headshot PNG (logo00-jamie_roche_logo.png). Also removed the temporary QA dir /tmp/jr-qa. No source videos were ever downloaded. Kept: fetch-log.json, which has the SHA-256 of all 9 original downloads; extra-log.json, empty because there were no extra downloads; contact sheets sheet-images.jpg and crops-check.jpg; and the 7 small source JPGs (73–147 KB each). The work dir went from 7.0 MB to 1.2 MB. public/media/jamie-roche/ is 4.6 MB: 2 reels, 4 posters, reel.json, 8 WebP photos and media.json. If the reel is rebuilt, the 2x upscaled stills named in content/reels/jamie-roche.json must be regenerated from the kept JPGs first."
+ },
+ {
+  "slug": "cj-sax",
+  "reel": {
+   "built": true,
+   "videoClips": 5,
+   "stillClips": 1,
+   "desktopBytes": 5225613,
+   "mobileBytes": 5186191,
+   "durationSec": 11.9,
+   "qaNotes": "Spec: content/reels/cj-sax.json (fade 0.6). Order: (1) Soultown 2022, CJ with a gold sax at the DJ booth and a festival crowd behind; this is the poster frame. (2) O Beach Ibiza, CJ at the decks with his arm raised to a daytime crowd. (3) Botley's Mansion, CJ playing sax among wedding guests holding LED foam sticks. (4) The O2, CJ walking the stage with his sax. (5) A still of CJ playing sax in shallow water (IMG_6814-2, with a push-in). (6) Banjo Wedding, a packed dance floor with hands in the air. Each clip sits inside one shot, checked with scdet and fine contact sheets. No burned-in watermarks, captions or TikTok UI appear in the chosen clips. QA was 8+8 tiled frames from each output, built twice. The first build cut the edge of CJ's face in the mobile poster (mfx 0.23 changed to 0.19) and dropped CJ's head out of the desktop O Beach band (fy 0.45 changed to 0.53). After the rebuild, faces and the sax are in frame, the posters are attractive and the fades are clean. Remaining minor point: near the end of the O Beach segment, CJ's head sits at the bottom edge of the desktop band. Clips 2 and 3 come from the original 1080x1920 HLG/HEVC uploads, decoded without HDR tone mapping, so desktop crops are sharper. reel.py copied the first source's BT.2020 colour tags onto the whole output. I retagged both MP4s to BT.709 losslessly (h264_metadata bitstream filter, faststart kept) and updated the byte counts in reel.json. Total size is 10.4 MB, over the ~9 MB target, because busy crowd footage at the tool's fixed CRF 26 does not compress well."
+  },
+  "logo": {
+   "file": "public/media/cj-sax/logo.svg",
+   "kind": "svg-traced",
+   "plate": "light",
+   "sourceUrl": "https://cjsax.com/wp-content/uploads/2017/06/cj-sax-logo.png",
+   "traceMeanAbsDiff": 2.16,
+   "visualCheck": "Traced with --colours 1 (#000000) from the 2196x868 transparent wordmark PNG on cjsax.com. I rendered it with rsvg-convert at 600 px beside the original on white and navy, plus a 1:1 zoom on the thin italic 'LIVE'. The heavy 'CJ SAX' letterforms, proportions and the thin italic LIVE strokes match. The LIVE strokes are about 1 px heavier from the trace's dilation, which is not visible at display sizes. The mark is black on transparent, so it needs a light/white plate and is invisible on navy. It is a reconstruction, not the business's own vector."
+  },
+  "galleryCount": 8,
+  "sourcesUsed": [
+   "https://cjsax.com/wp-content/uploads/2017/06/cj-sax-logo.png",
+   "https://videos.files.wordpress.com/VcsR70uE/soultown-2022_mov_hd.mp4",
+   "https://videos.files.wordpress.com/cjhfiO7V/cj-o-beach.mov",
+   "https://videos.files.wordpress.com/l03zYkWO/cj-botleys.mov",
+   "https://videos.files.wordpress.com/Xaj1TW1i/soultown-02_mov_hd.mp4",
+   "https://videos.files.wordpress.com/DY64LI5g/ashridge-house_mov_hd.mp4",
+   "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG",
+   "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG",
+   "https://cjsax.com/wp-content/uploads/2025/07/ushuaia2.jpg",
+   "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg",
+   "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg",
+   "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg",
+   "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG"
+  ],
+  "gaps": [
+   "Reel size is 10.4 MB (desktop 5.23 MB + mobile 5.19 MB), over the ~9 MB target. reel.py's CRF is fixed at 26 and the footage is detail-heavy crowd material.",
+   "reel.py copies the first segment's colour tags to the whole output; here that was BT.2020 from the VideoPress transcode. I retagged both outputs to BT.709 after the build. Other businesses whose first clip is iPhone/HLG-derived may hit the same issue.",
+   "Strong own footage was excluded because it has a burned-in 'CJ SAX LIVE EVENTS' watermark that a 16:9 desktop crop cannot avoid: the CJ SAX SHOWREEL (opening_hd.mp4: Monaco terrace, Dubai, yacht and pool party), Soultown Festival, The Garden Party, Maldives (Billie Faiers wedding) and wedding-1.mp4 (sax at a tipi wedding). An unwatermarked master from the business would allow a better reel.",
+   "TikTok exports in the media library (Gosfield Hall, Botley's TikTok export, the cj-ibiza boat clip) were not used because of TikTok watermarks. The two allowed @cj_sax TikTok posts (https://www.tiktok.com/@cj_sax/video/7547801132941249814, https://www.tiktok.com/@cj_sax/video/7106781707906354438) were not downloaded: own-site footage was sufficient and the work dir was already near its 700 MB cap.",
+   "YouTube (@CJSAXLIVE, e.g. https://www.youtube.com/watch?v=qo6glWqyBn4 'Wedding Movie', https://www.youtube.com/watch?v=Jk1fRBDzbcw Hard Rock Ibiza, https://www.youtube.com/watch?v=FR6nHYW2DDI Ushuaïa) and Instagram reels (https://www.instagram.com/reel/CiFNdjwstKj/, https://www.instagram.com/reel/ChSRsVZFefR/, https://www.instagram.com/reel/CelGW9eFEoe/) are blocked in this session and were not fetched.",
+   "Performer identity in the reel clips rests on the cjsax.com media titles ('CJ SAX @ ...'). CJ's look varies across years (beard and hair), so it could not be confirmed independently by face.",
+   "Gallery has 8 photos, not 9. Celebrity photos (rio-wedding.jpg, IMG_9611_polarr.jpg with the Nusr-Et chef, tinie-tempah.jpg, 413-1.jpg with Rio Ferdinand) were left out pending image-rights permission, as the research record flags. rio-wedding.jpg is the site's og:image and could be added if permission is confirmed.",
+   "Gallery photo-02 (Ushuaïa stage) carries a small Ushuaïa venue watermark in the bottom-right corner. It is probably a venue photographer's shot that CJ publishes on his homepage; consider confirming usage rights.",
+   "The reel and gallery show identifiable adult wedding guests and festival/beach-club crowds. No children are visible in the chosen clips.",
+   "The wordmark is a traced reconstruction (svg-traced). No genuine SVG exists, and the live site header uses only a plain-text title."
+  ],
+  "diskCleanup": "Deleted 37 source files, about 776 MB in total, from .media-work/cj-sax/. First pass: the 17 unused source videos (vid00, 02, 03, 06, 09–21), 486.4 MB. Final pass: 20 files, 289.3 MB: the 5 used HD transcodes (vid01, 04, 05, 07, 08), the 2 original .mov uploads (orig-cj-o-beach.mov, orig-cj-botleys.mov), the 12 source photos (img00–img11) and the 2560 px reel still. Kept (24 MB): fetch-log.json, extra-log.json (SHA-256 for the two originals), fetch.out, contact sheets (sheet-vid00–21, fine-vid*, photos-sheet), the three logo PNGs, logo-compare.png, logo-zoom.png and trace-render-600.png. Temporary /tmp helper files were also removed. Disk free is still about 15 GiB, below the 20 GiB headroom target. Outputs: public/media/cj-sax/ (reel-desktop.mp4, reel-mobile.mp4, posters, reel.json, logo.svg, photo-01…08.webp, media.json; 12 MB) and content/reels/cj-sax.json. Nothing was committed."
+ },
+ {
+  "slug": "natalie-max",
+  "reel": {
+   "built": true,
+   "videoClips": 6,
+   "stillClips": 0,
+   "desktopBytes": 2847411,
+   "mobileBytes": 2548502,
+   "durationSec": 12.7,
+   "qaNotes": "I built the reel from six clips cut from the business's own four MP4s in its WordPress media library. Order: confetti walk through guests at a chateau (opening shot and poster), bridal portrait with tiara in Loulé, a behind-the-scenes shot of a photographer in yellow photographing a bride on a beach, the couple kissing in the guest-lined courtyard, a bride among pines and cliffs at Pine Cliffs, and a bride walking along a pink-walled street in Loulé. Every clip sits inside one shot (scdet cuts: Pinecliffs 2.63/7.05 s, Confetti 5.30 s, Loulé 4.13/7.38 s, Beach none). I checked 12 frames from each of the desktop and mobile files. There are no text overlays, watermarks or black frames, the fades are smooth, and both posters (bride and groom in confetti on desktop, smiling bride with bouquet on mobile) look good. I rebuilt once. In the first build the photographer walked out of the 9:16 mobile crop partway through the beach clip, so I shortened that clip to 0.0-2.0 s with mobile focus x 0.39. She now stays in frame while shooting. Caveats: on mobile the confetti clip is framed on the bride, so only the groom's arm shows at the left edge. The Beach and Pinecliffs sources are 1920x600, so their mobile crops are upscaled about 2.1x and look slightly soft but acceptable at full size. Desktop plus mobile is 5.4 MB, under the 9 MB limit. The spec still points at the deleted source files in .media-work, so a rebuild would need fetch.py run again first."
+  },
+  "logo": {
+   "file": "public/media/natalie-max/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/Natalie-and-Max-Photo-and-Films-logo.png",
+   "plate": "light",
+   "traceMeanAbsDiff": 1.2,
+   "visualCheck": "Source is the business's own 1500x593 transparent PNG header wordmark: taupe #998c7c serif capitals 'NATALIE & MAX' above grey #606358 italic 'photo & films'. The first trace at native size (--colours 2, diff 3.14) made the thin serif strokes visibly too heavy. I retraced from a 3x Lanczos upscale, with fully transparent pixels de-matted to the taupe after resizing so the quantiser keeps both brand colours, using --colours 2. I then compared the rsvg render at 600 px against the original on white and on navy, plus 1:1 crops of both lines. Letterforms, spacing, colours and proportions match closely, and the italic line is only marginally heavier. Use the light plate because the grey line almost disappears on dark."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Confetti-Throw.mp4",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-Loule.mp4",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Filming-at-the-Beach.mp4",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/03/Natalie-Max-Photo-and-Films-at-the-Pinecliffs.mp4",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2022/02/Natalie-and-Max-Photo-and-Films-logo.png",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-lady-of-the-roack.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Chateau-Lacanaud-photo-and-video.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/algarve-wedding-photography-and-video.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Film-Royal-Berkshire-Hotel.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Braxted-Park.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Monte-Das-Oliveiras.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Volty-Manor.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-.jpg",
+   "https://www-static.natalieandmax.co.uk/wp-content/uploads/2024/02/Natalie-and-Max-Photo-and-Films-Northbrook-Park-wedding-photography.jpg"
+  ],
+  "gaps": [
+   "The business's richest footage is on YouTube (@nataliemaxphotoandfilms9990), which this session may not use. 32 of its films are embedded on their own sites, e.g. the behind-the-scenes showreel https://www.youtube.com/watch?v=5xM-OgimI50 and the featured films https://www.youtube.com/watch?v=1-M-jakDeb4, https://www.youtube.com/watch?v=OL1HFQH1f08, https://www.youtube.com/watch?v=m1gUoWx1A9s and https://www.youtube.com/watch?v=T2lPgK_2rlA (Fanhams Hall, Ware). None was downloaded. They could make a stronger UK and ceremony-focused reel if YouTube access is approved later.",
+   "Instagram reels from @natalieandmax (e.g. https://www.instagram.com/reel/Deg-MLfOTE3/, https://www.instagram.com/reel/DeHhLvCun33/, https://www.instagram.com/reel/Dd8mxStuNt6/) are login-walled and not allowed here. The business lists no TikTok, and no HLS video exists on its own sites, so the extra log records no extra downloads.",
+   "The four direct MP4s are short (9-12 s) and two are 1920x600 letterbox crops, so the reel repeats the Confetti and Loulé sources twice each. Mobile crops from the 600 px-high sources are upscaled about 2.1x.",
+   "The gallery images are all 2.13:1 panoramic homepage hero slides, resized to 1600x750; the business publishes no other high-resolution standalone photos in the record. Research says the 5443x2551 'originals' may themselves be upscaled. Left out: the Ibiza two-photo tile (prominent Nikki Beach signage), the near-duplicate bouquet close-up, and the 990 px team portrait (probably taken by a third party).",
+   "The N&M monogram (512x512 favicon, upscaled from 48x48) was not used because it is too pixelated. No genuine vector logo exists, so logo.svg is a traced reconstruction and is recorded as kind=svg-traced."
+  ],
+  "diskCleanup": "I deleted 19.3 MB from .media-work/natalie-max/: the 4 source MP4s (vid00-vid03, 15.2 MB), the 12 source JPEGs (img00-img11, 4.6 MB) and the derived 3x logo upscale (0.5 MB). Kept (2.7 MB): fetch-log.json, extra-log.json, the 2 small original logo PNGs, the contact sheets (sheet-vid00-03 and fine-vid00-03) and the QA sheets in qa/. I also removed my own scratch QA script directory, /tmp/nm-qa-scripts. No ffmpeg or yt-dlp processes are left running. Outputs in public/media/natalie-max/ total about 7.6 MB (reels 5.4 MB, posters, logo.svg, 9 WebPs, media.json, reel.json). The spec is at content/reels/natalie-max.json. Nothing was committed and no other repository was touched."
+ },
+ {
+  "slug": "calleo",
+  "reel": {
+   "built": true,
+   "videoClips": 3,
+   "stillClips": 3,
+   "durationSec": 12,
+   "desktopBytes": 1751225,
+   "mobileBytes": 1506699,
+   "qaNotes": "Spec is at content/reels/calleo.json and was built once. It needed no rebuild after QA. Order: (1) vinyl drawn from its personalised sleeve, homepage HLS 9.85-12.45 s; (2) Harry Michael photo of a guest speaking into a handset at a reception; (3) hands placing an engraved wooden USB box, HLS 3.3-5.9 s; (4) Lewis Cannon photo of a couple sharing a handset by a neon sign; (5) video memory book opened, HLS 7.0-9.6 s; (6) photo of the Calleo phones on display (blue Calleo phone, brass King, pink phone). The scdet cuts in the HLS video are at 2.6, 6.03 and 9.73 s, and every clip sits inside one shot. QA used 9 frames per output. Faces and products are framed in both the 16:9 and 9:16 crops, and the crossfades are smooth with no black frames. The desktop poster (vinyl sleeve with the couple photo on a clean white set) is attractive. On mobile the poster shows the sleeve, and the phones still keeps the blue Calleo phone plus most of the brass King. The only text in shot is printed product text (couple names on the keepsakes) and neon signs that are part of the scene. There are no caption overlays. Desktop and mobile together are 3.26 MB, well under 9 MB. All video comes from one 12.6 s homepage clip, so the three video segments share one white tabletop set, which is why stills were alternated in between. The 4th HLS shot (0-2.6 s: a smartphone close to the lens scanning the QR print, blurry as it enters) was left out as not sharp."
+  },
+  "logo": {
+   "file": "public/media/calleo/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e035b406-71d8-491b-819a-6b5a2700ed75/Logo+adaptation1.png",
+   "plate": "dark",
+   "traceMeanAbsDiff": 3.69,
+   "visualCheck": "Traced from the lossless 2500x1184 PNG of Calleo's own site-header wordmark, fetched with Accept: image/png, using --colours 1 (one off-white colour, #f9fafa). Rendered at 600 px with rsvg-convert and compared side by side with the original on white and navy, plus a zoomed check of the dial. The serif 'Calleo' letterforms, the descender swash on the first 'l' and the rotary-dial speech-bubble 'o' (holes, smile curve, tail) all match. logo_trace.py reports diff 0.16, but it measures on white, which tells us nothing for a white mark. The 3.69 above is my own navy-background diff and includes resampling. The mark is off-white, so it needs the dark plate."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://video.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/6ac021e8-1c67-4052-b33d-ace498889069/playlist.m3u8 (calleo-uk.com homepage HLS, 1920x1080, 3 reel clips)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/e035b406-71d8-491b-819a-6b5a2700ed75/Logo+adaptation1.png (site-header wordmark, traced logo)",
+   "https://images.squarespace-cdn.com/content/66eadddb3c2db3331cf0c0a8/0331576e-b4c7-49a5-ac0b-5333ae7da796/Harry+Michael+Photographer.jpeg (reel still + photo-01)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/5138b6c8-eb10-4dcc-9257-107fd830d532/Lewis+Cannon+%40lewiscannonphotography+Sign+%40fifeweddingentertainmentsjpeg+%281%29.jpeg (reel still + photo-02)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/fae9594c-db68-4820-8cfa-01fe24a97cf2/Nick+Cannon+Photography.jpg (reel still + photo-03)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/aae401cc-7881-4f1d-a7ea-8c58940e0d54/Char+Cook+Photography-min.jpeg (photo-04)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/502bdb0a-c55b-4668-ad4b-355f7bcee7b0/Notley+Abbey+Styled+Shoot-212.jpg (photo-05)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/44cd7330-41e2-4528-922b-39f07e13cbb4/268_Prestwold_Gina+Fernandes+Photography_.jpg (photo-06)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/dcfbb4a4-e9ac-4c99-b302-e45ddaccc304/DSC07793.jpg (photo-07)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/9c4041a7-54fe-4e41-9ca7-4c78577353af/BDP_CalleoPosable_StyledShoot-244.jpg (photo-08)",
+   "https://images.squarespace-cdn.com/content/v1/66eadddb3c2db3331cf0c0a8/a6e7e6a5-1bc1-47bd-86a0-7eaec8110ce1/Patrick+Partridge+Photography-min.jpg (photo-09)",
+   "https://www.tiktok.com/@calleouk (8 posts downloaded and reviewed; none usable, see gaps)"
+  ],
+  "gaps": [
+   "Calleo's only usable public direct video is the 12.6 s homepage background clip: four keepsake shots on one white tabletop, and no footage of phones or guests. The reel therefore has just 3 video clips, completed with 3 of Calleo's own photos.",
+   "Better footage of the phones in use is probably on YouTube, which this session cannot download: the landscape film 'CALLEO Audio Guest Book: Tai & Charlie' https://www.youtube.com/watch?v=zZRVCFfqhxI and Shorts such as https://www.youtube.com/shorts/yW0davpYgtQ, https://www.youtube.com/shorts/VKXfBku-QOg, https://www.youtube.com/shorts/1y_sgM7mc84, https://www.youtube.com/shorts/RukIz7SO4qw and https://www.youtube.com/shorts/mgIfG5wwtOQ. Instagram (instagram.com/calleouk) and Facebook were also not used.",
+   "TikTok (8 @calleouk posts tried, the maximum). 7525515909352541462, 7556692563680333078 and 7568573493432929558 are photo slideshows: yt-dlp returned audio only, and those files were deleted unused. The 5 videos were rejected: 7554828522418638102, 7560017338418875651 and 7571159657109097750 have burned-in captions throughout (7571159657109097750 also opens with a talking head). 7561878016595332375 is built from ~1 s shots, too short for 2-3 s clips. 7545174947736587522 has captions over its phone shots, followed by shaky dance-floor footage that does not clearly show the product. The TikTok downloads were only 576x1024 or 720x1280.",
+   "No genuine SVG logo exists, so logo.svg is a potrace reconstruction of the raster header wordmark. It must be credited as traced, not as Calleo's own vector file.",
+   "The reel spec (content/reels/calleo.json) points at .media-work/calleo source files that have now been deleted. Rebuilding means fetching again with fetch.py, the ffmpeg HLS command and the logged URLs."
+  ],
+  "diskCleanup": "Deleted from .media-work/calleo/ (25 MB down to 4.3 MB): the source videos hls-home.mp4 (4.56 MB) and tt-7545174947736587522.mp4, tt-7554828522418638102.mp4, tt-7560017338418875651.mp4, tt-7561878016595332375.mp4, tt-7571159657109097750.mp4 (about 8.1 MB together). Also the 12 full-size source photos img00-img11 (about 6.4 MB), the 4 intermediate JPEG stills still-*.jpg and the fr/ frame folder. The 3 audio-only TikTok slideshow downloads (.mp3/.m4a) had already been deleted, and the /tmp/calleo-tools scratch folder was removed. Kept: fetch-log.json, extra-log.json (URL, file, sha256 and bytes for the HLS, the 5 TikToks and the PNG wordmark), tiktok-list.txt, all contact sheets, QA tiles and logo comparisons, and the small logo source files (logo00-04 plus logo00-wordmark.png, 150 KB). Free disk was about 15 GiB at the start, below the 20 GiB headroom target. Only one ffmpeg or yt-dlp process ran at a time. No commit, no npm install and no next build."
+ },
+ {
+  "slug": "meatstop",
+  "reel": {
+   "built": true,
+   "videoClips": 2,
+   "stillClips": 4,
+   "desktopBytes": 1360075,
+   "mobileBytes": 1390130,
+   "durationSec": 11.1,
+   "qaNotes": "Built from content/reels/meatstop.json, then checked with 12 evenly spaced frames from each output. The desktop and mobile reels together are 2.75 MB, well under 9 MB.\n\nOrder:\n(1) Homepage HLS hero video, 10.45–12.65 s: the finished double cheeseburger on steel, at 1080x1920. This is the poster frame, and the whole burger is in frame on both desktop and mobile.\n(2) Catering photo: a chef in the MEAT STOP apron lifts smoking ribs under a gazebo. The source frame already cuts off his head. The phone crop is centred on the apron logo and the ribs.\n(3) Studio photo: a bacon double cheeseburger on a grey backdrop, whole burger in frame on both crops. It replaced a tight close-up (img01) that cut off the bun on desktop.\n(4) TikTok 7121257136235040006, 29.05–31.15 s: a cloche is lifted to show melted cheese and bacon. The source is a single continuous shot, but it is only 576x1024, so the desktop version is visibly soft.\n(5) Event photo: a gloved person holds out a cheeseburger. The face is cropped at the nose in the source itself.\n(6) Overhead tray of burgers, taco and skins on MEAT STOP paper. I set mfx 0.36 so the left burger is whole on mobile.\n\nThere are no text overlays, watermarks or talking heads. The fades are smooth and the loop point cross-fades back into the opening burger.\n\nI rebuilt the reel twice:\n- A Double Classic red-onion chopping clip (TikTok 7114638941533392133, 0.05–2.10 s) was replaced by a photo. It is a 576x720 source, and upscaled to 1280x720 it came out mushy and blocky on desktop.\n- I then swapped the bacon close-up for the full-burger studio shot (3) above.\n\nWhy the reel has only two video clips: the homepage HLS has 11 cuts in 12.7 s, so only its final shot lasts 2.0 s or longer. The other TikTok shots of 2 s or more were rejected (see gaps)."
+  },
+  "logo": {
+   "file": "public/media/meatstop/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/9bf65533-fde9-4cb6-b990-c46a3632f946/MEAT+STOP+LOGO+%28600+x+170+px%29.png",
+   "plate": "light",
+   "traceMeanAbsDiff": 5.71,
+   "visualCheck": "Source: the current header wordmark 'MEAT STOP®' from meatstop.co.uk, a 1275x361 transparent PNG. I re-fetched it as a real PNG because the CDN served WebP to fetch.py.\n\nA first trace at native size filled in the small ® (the ring merged with the R). I upscaled the source 3x with Lanczos and traced again with --colours 2. That gives two layers: charcoal #202020 letters and a #000000 ®, which match the source pixel values exactly.\n\nI rendered it with rsvg-convert -w 600 beside the original on white, navy and cream. The letterforms, proportions, ® ring and counter all match. The diff map shows only 1 px anti-alias edges.\n\nThe mark is charcoal on transparent, so the plate is 'light'. The red roundel (TikTok avatar) is a second genuine mark; it is kept only in the work dir and was not used."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/playlist.m3u8 (homepage HLS hero video, reel clip 1)",
+   "https://www.tiktok.com/@meatstop_/video/7121257136235040006 (own TikTok 'The Original Nutta', reel clip 4)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/9bf65533-fde9-4cb6-b990-c46a3632f946/MEAT+STOP+LOGO+%28600+x+170+px%29.png (logo trace source)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg (reel still, photo-01)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg (reel still, photo-07)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg (reel still, photo-03)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png (reel still, photo-04)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/b1548200-76c6-4acb-a590-09d3b165bfe6/meat+stop+crop-1.jpeg (photo-02)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f8a6406f-9338-4649-a943-d24b21aa9110/002E0BEA-9F34-4058-B97D-0247351211BB.jpeg (photo-05)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/7947dce3-1e9d-4474-b0da-a20cd868f03e/Screenshot+2026-02-09+at+11.37.51.png (photo-06, cropped to remove carousel arrow)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/acaff588-a333-40e6-be4e-400c5be85aa6/Screenshot+2026-02-09+at+11.38.08.png (photo-08, cropped to remove carousel dots)",
+   "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e0973ac1-1b26-4cd9-beae-4669ebf15ceb/Screenshot+2024-07-08+at+20.04.36.png (photo-09)",
+   "https://www.tiktok.com/@meatstop_ (public post listing via yt-dlp --no-cookies --flat-playlist: 27 posts)"
+  ],
+  "gaps": [
+   "The homepage HLS video (12.7 s, 1080x1920) has 11 cuts. Only its final hero shot (10.4–12.68 s) is 2.0 s or longer. The smash-patty (0–1.44 s) and burger-stacking (4.4–6.12 s) shots are too short to use.",
+   "TikTok @meatstop_ posts download at 540p at most (576x1024 or 576x720; no higher format is listed). The cloche clip used looks soft on the 1280x720 desktop reel. The Double Classic clips (onion chop, finished burger) were rejected because they are too soft or blocky on desktop.",
+   "Six TikTok posts were downloaded and reviewed. Rejected: 7614479793450388758 has burned-in word-by-word captions throughout. 7125304850136517894 has a burned-in TikTok watermark throughout. 7109371342230752518 has a 'Lunch Deals 12-3pm' text overlay throughout. 7091614476352376070 is mostly glitch effects and in-car footage. All 15 posts from 2026 ('Rebuilding a brand') are talking-head vlogs, judged from their covers, and were not downloaded.",
+   "There is no landscape own footage, so the desktop video clips are 16:9 crops of vertical sources.",
+   "Instagram @meatstop_ is login-walled and was not used (not allowed in this session). The third-party Burger Dudes YouTube video (https://www.youtube.com/watch?v=zH6vgGK6iFw) is not own media and was not used.",
+   "When run on TikTok, yt-dlp warned that its extractor was 'attempting impersonation, but no impersonate target is available'. No impersonation target is installed and no cookies were used.",
+   "Excluded images: the sauce-pour screenshot 224557b3… (origin unconfirmed) and two low-resolution duplicate studio shots (049ab256…, 2a71d3b3…).",
+   "Gallery photo-09 shows a 2024 fried chicken burger that is not on the 2026 menu. The people in photo-03, -06 and -08 are not identified.",
+   "The red MEAT STOP® roundel was not traced. Its only high-res copy is the signed TikTok avatar JPEG (URL expires 29 Oct 2026). A copy is kept in .media-work/meatstop/ if a roundel version is wanted later.",
+   "Disk free was about 14.7 GiB, below the 20 GiB headroom target, before and after this job. The job's peak footprint was about 55 MB."
+  ],
+  "diskCleanup": "Deleted from .media-work/meatstop/ (55 MB → 7.2 MB):\n- Source videos: hls-home.mp4 and the six tt-<id>.mp4 TikTok downloads, about 26.6 MB.\n- The 12 WebP-encoded img* files fetched by fetch.py.\n- The 9 original-format photos in orig/.\n- The tt-thumbs/ folder of 27 TikTok cover images.\n- Temporary logo and QA renders.\n\nKept: contact sheets and QA tiles, crop previews, fetch-log.json, extra-log.json (URL, file, SHA-256 and bytes for all 44 extra downloads), the small logo files and logo-compare.png. Temporary /tmp helper scripts and listings were also removed.\n\nNothing was committed.\n\nOutputs:\n- /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/content/reels/meatstop.json\n- /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/public/media/meatstop/ (reel-desktop.mp4, reel-mobile.mp4, posters, reel.json, logo.svg, photo-01…09.webp, media.json; 5.2 MB)"
+ },
+ {
+  "slug": "tm-event-hire",
+  "reel": {
+   "built": true,
+   "videoClips": 6,
+   "stillClips": 0,
+   "desktopBytes": 1948342,
+   "mobileBytes": 1794581,
+   "durationSec": 10,
+   "qaNotes": "The reel is 6 clips from 5 public TikTok posts by @tmeventhire, downloaded with yt-dlp --no-cookies. Every clip sits inside one shot, checked against scdet cuts. The order is: clear-roof marquee at golden hour (also the poster); lined marquee panning from wooden tables to a circular bar (1080p); black-out starlit marquee with dance floor; clear-roof wedding table run; lined marquee with round tables and Chiavari chairs (576p source); rustic wooden bar with autumn garland. I checked 8 frames from each output: no text overlays, captions or watermarks, no cut-off subjects, no close-ups of children, smooth 0.6 s fades and a seamless loop. The desktop poster (golden-hour tables in front of the clear-span window walls) is attractive. I rebuilt once to move the last clip's desktop fy from 0.62 to 0.68 so its wreath is centred. All sources are portrait (576x1024 to 1080x1920). The phone reel is therefore the full frame, while the desktop 16:9 reel is an upscaled centre band and is noticeably softer, especially the 576p clip. I rejected these posts: 7608915836761394454 (burned-in 'POV: You hired TMEventHire' text throughout), 7613172312011066646 (caption at the start, then chaotic club footage), the letterboxed parts of 7658230699773742358 and 7606365095924387094, and the motion-blurred evening interior in 7672893450060172566. Post 7662118652711308566 was a photo slideshow and only returned audio, which I deleted. Desktop and mobile together come to 3.74 MB, well under 9 MB."
+  },
+  "logo": {
+   "file": "public/media/tm-event-hire/logo.svg",
+   "kind": "svg-traced",
+   "plate": "light",
+   "sourceUrl": "https://tmeventhire.co.uk/wp-content/uploads/2022/01/tm-event-hire.jpg",
+   "traceMeanAbsDiff": 3.77,
+   "visualCheck": "This is the business's own site header logo (a 255 px grey JPG), traced in 1 colour (#786f72). Before tracing I upscaled it and turned it into an area-preserving coverage mask, because the plain trace thickened the strokes. Compared at 600 px and 1400 px on white and dark backgrounds, it is faithful: the pagoda tent keeps its vertical and horizontal seams, the serif 'TM', fork and knife and 'Event Hire' match in weight and proportion, and only the tiny serifs are slightly softened. The mean absolute difference is 3.77 against the original JPG and 1.86 against the prepared input. The grey has low contrast on navy, so the plate is light. I rejected the 1000 px blue-disc PNG hosted on Booked Events (same mark) because its 3-colour trace lost the tent seams and made 'Event Hire' bold (diff 3.99 but visibly unfaithful)."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/01/tm-event-hire.jpg (logo source)",
+   "https://www.tiktok.com/@tmeventhire/video/7606365095924387094",
+   "https://www.tiktok.com/@tmeventhire/video/7672893450060172566",
+   "https://www.tiktok.com/@tmeventhire/video/7658230699773742358",
+   "https://www.tiktok.com/@tmeventhire/video/7647821711454473495",
+   "https://www.tiktok.com/@tmeventhire/video/7429083756129946913",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/05/clear-span-marquee-hire-in-essex.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Luxury-wedding-marquees-in-essex.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/09/clear-span-marquee-with-pagodas-for-entrance-in-field-in-essex.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/03/nightclub-themed-party-blackout-ceiling-marquee.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/05/pink-birthday-party-marquee-decor.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/03/first-dance-wedding-marquee-hire.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/11/event-equipment-hire-equipment-for-public-events.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/03/Thomas-Mclean-director-TM-Event-Hire.jpg",
+   "https://tmeventhire.co.uk/wp-content/uploads/2022/05/marquee_wedding_reception_in_full_swing_time_to_party.jpg"
+  ],
+  "gaps": [
+   "All 5 of the business's own site videos are Vimeo-hosted and could not be downloaded in this session: https://vimeo.com/736283697 (127 s drone footage of the clear-span marquee with pagodas, the best showreel candidate), https://vimeo.com/695204796 (marquee build with van), https://vimeo.com/745565312 (aerial of clear-roof marquee with lounge), https://vimeo.com/695225980 (furniture unloading) and https://vimeo.com/694119648 (Chinese hat setup). If they become allowed, they would give sharper landscape footage for the desktop reel.",
+   "TikTok is the business's only allowed video source, and its posts are portrait and low resolution (576x1024 to 1080x1920; the highest format offered for some posts is 540p). The desktop 16:9 reel is therefore an upscaled centre band and is softer than ideal. One clip (7429083756129946913) is from a 576p source.",
+   "No genuine vector logo exists. logo.svg is a traced reconstruction of the 255 px site header JPG; the source was upscaled and cleaned before tracing.",
+   "The business also uses a blue-disc version of the logo, a 1000 px PNG on bookedevents.co.uk. It was not used as the primary mark because its trace was unfaithful. The site logo is grey only, so it needs a light plate.",
+   "The outdoor wedding ceremony photo (marquee-Wedding-ceremony-in-english-country-garden.jpg) and the 21st-birthday guests photo were left out of the gallery: the first shows children in the aisle, and the second is mostly guests rather than the equipment.",
+   "Instagram and Facebook content were not accessed (login-walled or not allowed)."
+  ],
+  "diskCleanup": "I deleted 19 source files (about 17 MB) from /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/tm-event-hire/: 7 TikTok source videos (tt-7429083756129946913.mp4, tt-7606365095924387094.mp4, tt-7608915836761394454.mp4, tt-7613172312011066646.mp4, tt-7647821711454473495.mp4, tt-7658230699773742358.mp4, tt-7672893450060172566.mp4) and 12 full-size site photos (img00–img11 *.jpg). I had already deleted the audio-only tt-7662118652711308566.mp3, and I removed my temporary /tmp/tm-qa and /tmp/tm-tiktok.* files. The work dir is now 2.6 MB and keeps fetch-log.json, extra-log.json (TikTok URLs with SHA-256 and byte sizes), the contact sheets, the three original logo rasters, the prepared logo PNG and the trace SVGs. public/media/tm-event-hire is 5.6 MB: reel-desktop.mp4, reel-mobile.mp4, posters (jpg and webp), reel.json, logo.svg, photo-01..09.webp and media.json. The spec is at content/reels/tm-event-hire.json. Free disk was about 14.6 GiB at the start, below the 20 GiB headroom target but not critical. I ran one ffmpeg or yt-dlp process at a time. Nothing was committed."
+ },
+ {
+  "slug": "ozzy-stix",
+  "reel": {
+   "built": true,
+   "videoClips": 5,
+   "stillClips": 1,
+   "desktopBytes": 3517794,
+   "mobileBytes": 3157289,
+   "durationSec": 10.3,
+   "qaNotes": "Built in two passes. The six segments are: (1) the vocalist singing beside his bongos in a daylight panelled ballroom, with the bride behind, from TikTok 7692051344248573206 at 29.2s for 2.1s; this is the poster frame; (2) a garden wedding with an acoustic guitarist and a vocalist playing for the couple, from 7693250822364433666 at 33.2s for 2.3s; (3) the vocalist and the bride singing into one microphone, from 7694311421823307030 at 3.4s for 2.5s; (4) a packed dance floor under coloured party lights, from 7686215079620054294 at 21.6s for 2.4s; (5) the vocalist singing at his bongos while guests dance, from the same post as (1) at 6.22s for 2.0s; (6) a still of the business's own photo IMG_2574 (the duo playing guitars on a sea-view terrace) for 2.6s. Every TikTok post has a burned-in caption across the lower-middle of the frame that stays for the whole video. Before cutting, each source was cropped to the full-width rows above the caption (a 1216, 1248, 1136 or 672 px tall band), keeping the original timecodes. No caption text, TikTok watermark or interface appears in any QA frame. Each clip sits inside one continuous shot: scdet found no cut inside any chosen range, and I checked each range on a 0.25s contact sheet. QA pass 1 found that the vocalist's face was clipped at the right edge of the mobile poster, and the singer's face was clipped at the bottom of the desktop crop of segment 3. I moved those focal points and rebuilt; 10 frames from each reel then showed no cut-off heads, and the fades are smooth. Both posters (desktop and mobile) show the vocalist mid-song with the microphone, bongos and the bride behind him, and look good. Weaker points: segment 2 exists only at 576x1024 on TikTok, so it is visibly softer than the 1080p clips. The footage is handheld phone video with some motion blur, and the 2.0s segment 5 ends during a camera pan, but that falls inside the crossfade. Together the two reel files are 6.68 MB, under the 9 MB limit. All audio is stripped."
+  },
+  "logo": {
+   "file": "public/media/ozzy-stix/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+   "plate": "dark",
+   "traceMeanAbsDiff": 4.8,
+   "visualCheck": "This is the official site header's white script 'Ozzy&Stix' wordmark (a transparent PNG), traced with --colours 1 (fill #ffffff). I rendered it with rsvg-convert -w 600 beside the original. On navy the mean absolute difference is 4.8/255 and the letterforms, the ampersand and the proportions match. On white it compares as 0.00, but only because it is a white mark, so that number proves nothing. As a shape check, I filled the trace black and compared it with the site favicon's black version of the same wordmark on white: 6.7/255, visually identical. The trace has slightly smoother edges than the hard-aliased source PNG. The plate is dark because the mark is white. The Booked Events neon circle logo was not used, because its provenance is unverified."
+  },
+  "galleryCount": 9,
+  "sourcesUsed": [
+   "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+   "https://www.tiktok.com/@ozzyandstix/video/7693250822364433666",
+   "https://www.tiktok.com/@ozzyandstix/video/7694311421823307030",
+   "https://www.tiktok.com/@ozzyandstix/video/7686215079620054294",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539078932379-8XTL51KR904ZBTHSUCNM/whitebig.png?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539083656138-9DM00F8KU9UV9ZBBBOTZ/IMG_0596.JPG?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1652946716310-ZXARHZXZF0KL0QNG4O3Q/IMG_1003.jpg?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539103262263-ZBYB07R6EJ1CLEPYS1S8/IMG_4416.JPG?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539086854183-H55C13HRGT14UX90QG8A/21e45c6c-4b32-433d-be65-fb3107133d75.jpg?format=original",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566937139480-1KJSGTSXAS8W3PPNP2AK/image-asset.jpeg",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539080443120-4TV29NHMQL6DKTDQZ5XP/IMG_2018.JPG?format=original",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/ozzy_stix_thumb.jpg",
+   "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1566873178219-JX34SRRT2GL9ER0A8ZQ9/image-asset.jpeg"
+  ],
+  "gaps": [
+   "The best-produced footage could not be downloaded under this session's rules, so it was recorded and not fetched. It is on Vimeo: the 'Ozzy&Stix Promo' / #MADE showreel (https://vimeo.com/294118993, 1080p), plus https://vimeo.com/294198440, https://vimeo.com/294240593, https://vimeo.com/294240985, https://vimeo.com/316600625 and https://vimeo.com/316599127. On YouTube: https://www.youtube.com/watch?v=KnSKfOQlGQE (Summer 2018 recap), https://www.youtube.com/watch?v=32pRwih934w (O&S Promo), the 'O&S Presents' sessions (https://www.youtube.com/watch?v=OxvX1304j0U, https://www.youtube.com/watch?v=wLz3GKJwA4U, https://www.youtube.com/watch?v=cw82ymbCr2U) and the other covers. On Instagram: https://www.instagram.com/p/B1ttjWkAOJ-/. Those sources could give a cleaner reel with no captions.",
+   "Every TikTok post checked has a burned-in marketing caption ('27/8/9 bride? ... Contact us today') for its whole length. The reel only avoids it by cropping each source to the rows above the caption. That changes the framing (lower bodies, bongos and floor are lost) and uses about 63% of each vertical frame.",
+   "Reel segment 2 (garden wedding, https://www.tiktok.com/@ozzyandstix/video/7693250822364433666) is only available at 576x1024 on TikTok, so it is upscaled and softer. Post 7689517583376190742 is a re-upload of the same footage at the same resolution. It was downloaded, found to be a duplicate and deleted before it was hashed, so its extra-log entry has sha256 null.",
+   "The TikTok post pages often redirected to /foryou and failed without impersonation. Downloads only succeeded when spaced apart, with retries. No cookies, impersonation or new tools were used. Six posts were downloaded in total; the limit was eight.",
+   "It is not confirmed which performer in each TikTok clip is 'Ozzy' and which is 'Stix'. The posts come from the business's own account and show its wedding bookings. Post 7692051344248573206 also features a female vocalist in a gold dress whose role is unknown; she is not the main subject of the chosen clips.",
+   "photo-06 and photo-09 are only 640x640 (the site's Instagram feed block). photo-08 is the Booked Events listing thumbnail; the record notes it appears to show the same two people.",
+   "Squarespace returns a re-encoded WebP even with ?format=original unless the request sends an image Accept header. fetch.py's copies were WebP, so the original JPEG/PNG files were fetched again with 'Accept: image/jpeg,image/png' and logged with sha256 in .media-work/ozzy-stix/extra-log.json."
+  ],
+  "diskCleanup": "I deleted about 151.9 MB from /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/.media-work/ozzy-stix/: the 5 TikTok source videos (tt29, tt38, tt44, tt75, tt84, 34.8 MB), the 4 caption-cropped intermediates (crop-tt*.mp4, 109.6 MB), all source images (the img00–img10 WebP copies from fetch.py and the orig-img* original JPEGs, about 6.5 MB) and the 1 MB Booked Events neon logo PNG. The duplicate tt64 download had already been deleted. I kept fetch-log.json, extra-log.json (with sha256 for every download and intermediate), the contact sheets, fine sheets and QA tiles, logo-compare.jpg and the small logo files (all under 30 KB). The folder is now 6.3 MB. I also removed my temporary /tmp/ozzy-probe folder (TikTok cover thumbnails and probe frames) and /tmp/ozzy-scripts. Final outputs are in /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/public/media/ozzy-stix/ (8.8 MB: the reels, posters, logo.svg, photo-01 to photo-09 .webp, reel.json and media.json), and the spec is at /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/content/reels/ozzy-stix.json. Nothing was committed. Because the sources are deleted, rebuilding the reel needs the TikTok downloads and caption crops redone first."
+ },
+ {
+  "slug": "ray-johnson",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 2028417,
+   "mobileBytes": 1947287,
+   "durationSec": 12,
+   "qaNotes": "This is a photo reel of 6 of his own website photos: the Eden neon piano shot, Firs Park keyboard, outdoor duo with Nigel Silk, blue-sequin close-up, live LED-wall stage and the star-set pointing shot. There is no usable own video, because his only footage is on YouTube. QA used 10 frames per output, including the fades and the last frame. No heads or products are cut off on desktop (16:9) or phone (9:16); the phone crop on the duo photo isolates Ray at the red piano. There are no text overlays. The fades are smooth. The poster is the Eden neon piano shot, which looks good on both crops. The first build had a visible snap at the loop point (first-vs-last frame mean diff 23.3) because reel.py restarts a still's push-in on the split tail. I rebuilt once with segment 1 pre-rendered as a 2.6 s push-in clip using the same zoom expression, which makes the split continuous. The loop diff is now 7.6 on desktop and 8.0 on mobile, against 4.3–5.5 for normal adjacent frames. reel.json was edited so segment 1 is listed as kind 'still', not 'video'. Total size is 3.98 MB, well under 9 MB. Minor issues: the live-stage still on phone shows Ray fairly small, with audience members (seemingly young) seen only from behind in the lower half. Photo 6 (843 px wide) is upscaled about 1.5x on desktop."
+  },
+  "logo": {
+   "file": "public/media/ray-johnson/logo.svg",
+   "kind": "svg-traced",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/ray_johnson_logo.png",
+   "plate": "none",
+   "traceMeanAbsDiff": 1.27,
+   "visualCheck": "Rendered at 600 px next to the original on white and on navy, the trace is faithful: the 'Elton' brush script, the serif 'RAY', the 'Johnson' script and the 'TRIBUTE ACT' sans caps all match, with the same proportions and colours (#180d0f disc, #fefefe ink). scripts/media/logo_trace.py --colours 2 (meanAbsDiff 7.28) visibly bolded the thin strokes because of its 1 px dilation, and --colours 3 (3.79) gave ragged letter edges. So the final file is a two-layer potrace done directly: the disc from alpha, the ink at a 50% luminance threshold, no dilation, at 2x resolution. The script is at /tmp/rj-trace/trace2.py; the shared tool was not modified. Plate is 'none' because the mark has its own solid black disc. Caveat: the badge is hosted on the Booked Events listing, not on his own site, and may have been made by Booked Events."
+  },
+  "galleryCount": 7,
+  "sourcesUsed": [
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/firs-high.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3250-standard.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg",
+   "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_7843-high.jpg",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/ray_johnson_logo.png"
+  ],
+  "gaps": [
+   "No real video in the reel. His only own footage is the YouTube promo https://www.youtube.com/watch?v=N6SEEaAMMt8 (playlist https://www.youtube.com/playlist?list=PLD1PZOPVhsQ4wJm9NRZ3gcblo2SN8W_3O), and YouTube downloads are not allowed in this session. The site has no own-hosted, HLS or TikTok video (its only Vimeo iframe is Webador's stock background), so the reel is built from 6 own photos instead.",
+   "Logo provenance is unconfirmed. The traced badge comes from the Booked Events 'Business Logo' upload and does not appear on rayeltonjohnson.co.uk, so it may have been made by Booked Events. His own site header is a photo collage with marquee 'ELTON' letters (img_2243-high.jpg), which cannot be traced. Confirm with the business.",
+   "The logo was traced with a direct potrace pass, not logo_trace.py's output, because the tool's 1 px ink dilation made the thin 'TRIBUTE ACT' and 'Johnson' strokes visibly bolder (meanAbsDiff 7.28 against 1.27 for the direct trace).",
+   "Image consent: gallery photos 5 and 6 (and reel segments 4 and 6) were taken on a third-party brand's 2023 Christmas promo set, where his site says he body-doubled for Elton. No brand name is visible, but the research flags consent.",
+   "Gallery is limited to 7 photos. Left out: God Save The Tuche set photos (img_2175, img_3742: other identifiable actors), the LadBaby recording session (img_2697: identifiable celebrities), the Virgin Media O2 press-backdrop photo (img_1487: third-party logos dominate), and img_2192 (750 px, black screenshot borders, possibly a composite).",
+   "Photo 7 (studio promo portrait img_7843) is only 529x718 at source; no larger version exists.",
+   "Disk free was about 14–15 GiB at start, below the 20 GiB headroom target. This job used under 25 MB at its peak."
+  ],
+  "diskCleanup": "Deleted from .media-work/ray-johnson/: all 12 downloaded source photos (img00–img11, about 3.3 MB), the derived still00-pushin.mp4 (7.4 MB), and the qa/ folder of 20 single-frame QA JPEGs. The work dir went from 15 MB to 1.7 MB. Kept: fetch-log.json, extra-log.json, sheet-photos.jpg, qa-desktop.jpg, qa-mobile.jpg, logo-compare.jpg, logo-detail.jpg, trace-direct-cmp.jpg, logo-render.png, trace-direct.svg, and the two small source logo files (logo00 PNG 157 KB, logo01 JPG 78 KB). Published output in public/media/ray-johnson/ is 5.4 MB. No video was downloaded. Nothing was committed."
+ },
+ {
+  "slug": "toot-sweet-candy-cart",
+  "reel": {
+   "built": true,
+   "videoClips": 0,
+   "stillClips": 6,
+   "desktopBytes": 2115238,
+   "mobileBytes": 2035589,
+   "durationSec": 12,
+   "qaNotes": "I built a photo reel because there is no usable video. It uses six of the business's own photos, each 2.6 s, fade 0.6, in this order: Booked Events cart with balloon garland (first and poster), open sweet box, brunch-styled cart, blue-ribbon 'I Love You' box, brunch close-up, yellow-ribbon box with logo sticker (wide shot EZwnjm_X0AIRd7r). Before building I previewed the 16:9 and 9:16 crops and changed the focal points: seg1 mfx 0.42, seg4 fy 0.5, and seg6 switched from the tight EZwnjmzW crop to the wider EZwnjm_X so the box and sticker fit on desktop. I checked 8 frames from each reel (0.6/1.7/3.0/4.6/6.1/7.6/9.1/11.7 s). No heads or products are cut off and there are no overlays; the only text is on the cart and gift tags themselves. The fades are smooth. The poster shows the 'Toot Sweet Candy Cart' sign with the balloon garland and the top of the canopy slightly cropped, and it looks good. Known issues: (1) The hero source is only 1003x915, so frames from it are upscaled about 1.3x on desktop and 1.4x on mobile and look slightly soft. (2) reel.py restarts the push-in zoom on the 0.6 s tail of segment 1, so there is a small zoom step of about 5.7% at the loop point (frames at 11.97 s and 0.00 s compared). This is the tool's behaviour and affects any reel that opens on a still. (3) On mobile the last segment shows the box quite small, with a lot of cupcake paper around it. Combined size of desktop and mobile is 4.15 MB, under the 9 MB limit. One build, no rebuild needed."
+  },
+  "logo": {
+   "file": "public/media/toot-sweet-candy-cart/logo.webp",
+   "kind": "raster",
+   "plate": "none",
+   "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/toot_sweet_candy_cart.png",
+   "traceMeanAbsDiff": null,
+   "visualCheck": "This is the original 1000x1000 transparent PNG, re-encoded as WebP (q90, lossless alpha, 88 KB). It differs from the PNG on white by a mean of 0.63/255, and it looks identical on white and on navy. I did not publish a trace. logo_trace.py at --colours 2/3/4/5 gave meanAbsDiff 14.6/16.8/12.6/10.3. The badge has thin white embossed edges around the serif lettering, a white oval ring and white fills in the line-art cart and sweet wrappers. With 2 colours all the white was lost. With 3 to 5 colours the white became heavy halos and speckle around the letters and ring. Neither is faithful. The badge has its own solid grey disc, so plate is 'none'."
+  },
+  "galleryCount": 7,
+  "sourcesUsed": [
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+   "https://bookedevents.co.uk/wp-content/uploads/2024/12/toot_sweet_candy_cart.png",
+   "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EZwnjmzWsAEY0kK?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig",
+   "https://pbs.twimg.com/media/EZ1bfkxWkAEt7wW?format=jpg&name=orig"
+  ],
+  "gaps": [
+   "No video footage from any allowed source. There is no business website, so no direct files or HLS. The TikTok handle @tootsweetcandycart returns 'user not found'. The visible @CartToot X posts contain only photos. Facebook (facebook.com/tootsweetcandycart) and Instagram (instagram.com/tootsweetcandycart) are blocked or login-walled in this session and were not tried. The reel is therefore made only from stills.",
+   "No genuine vector logo exists. A traced SVG was not faithful (see the logo notes), so the logo ships as the original raster, re-encoded as WebP (kind=raster). A hand-made vector redraw would be needed for a crisp SVG.",
+   "The best hero photo (Booked Events tootsweet_cart.jpg) is only 1003x915. Reel frames from it are upscaled about 1.3-1.4x, and the gallery photo-01 is 1003 px wide.",
+   "I left out EZlfPHUWsAUX0Mo and EZlfPFMXsAML0gd entirely because their gift tags show private customers' names. I left out the X banner (1500x500) because it is unclear whether it is the business's own cart, and the X avatar because it is only 400x400. That leaves 7 gallery photos, not 9.",
+   "All the photos are from June 2020 (X) or the 2024 Booked Events listing. Whether the business is still trading is unverified.",
+   "reel.py restarts the push-in zoom on the 0.6 s loop tail, so a reel that opens on a still has a small zoom step (about 5.7%) at the loop point. Fixing it needs a change to the shared tool, which I did not make."
+  ],
+  "diskCleanup": "I deleted 24 files from .media-work/toot-sweet-candy-cart/, which cut the folder from 11 MB to 3.2 MB:\n- the 12 downloaded source photos (img00–img11)\n- 6 staged reel stills (5 still-*.jpg remained when deleted; one, still-6-yellow-box.jpg, I had already removed earlier when I swapped it out)\n- 4 trial trace SVGs (logo-trace-c2/c3/c4/c5.svg)\n- 2 trial logo WebPs (logo-lossless.webp, logo-q90.webp)\n\nI kept fetch-log.json, extra-log.json (no extra downloads), the contact and QA sheets (images-sheet, crop-preview, logo-compare, logo-compare2, posters, qa-desktop, qa-mobile, qa-loop) and the small logo source files (logo00 PNG 771 KB, logo01 avatar 42 KB). I also removed my temporary helper scripts in /tmp/tsc-scripts.\n\nThere are no video sources to delete. The reel spec still points at the deleted stills; their public URLs are recorded in the spec and in reel.json.\n\nOutputs:\n- /Users/margaritabot/.openclaw/workspace/anyvendor-profiles/content/reels/toot-sweet-candy-cart.json\n- public/media/toot-sweet-candy-cart/ (reel-desktop.mp4, reel-mobile.mp4, the posters, reel.json, logo.webp, photo-01..07.webp, media.json)\n\nNothing was committed."
+ }
+]

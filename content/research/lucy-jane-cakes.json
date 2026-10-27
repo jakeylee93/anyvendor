@@ -1,0 +1,334 @@
+{
+ "slug": "lucy-jane-cakes",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "About item 2 said she made 'seven buttercream wedding cakes'. The PEOPLE/AOL article never calls the wedding cakes buttercream; it only calls her 'the buttercream specialist behind Lucy Jane Cakes'. Rewritten to what the article says: seven cakes, a three-tier vanilla main cake plus six other flavours, for her wedding in London on 7 Dec 2024, finished two days before.",
+  "About item 4 combined TikTok stats with the PEOPLE Instagram figure under a single TikTok sourceUrl. Split into two items, each with its own source.",
+  "About item 5 listed four how-to topics but cited only the photo-cake video. Narrowed to what that video supports; the other topics stay in the videos list with their own URLs.",
+  "About item 6 cited the 'ALL THE PINKS' video for #londoncakes, #lambethcake and #southwoodford, but that caption has only #essexcakes. Those three tags are in the 'Rainbows and unicorns' caption. Split into two correctly sourced items.",
+  "Service 'Buttercream celebration cakes' was sourced to AOL but also claimed 'colourful buttercream pipework' and 'orders by Instagram DM', which AOL does not say. Rewritten to AOL content only; Instagram-DM ordering stays in about, sourced to the TikTok bio.",
+  "Service 'Themed and character cakes' cited the Spider-Man video for unicorn and cowgirl cakes too. Narrowed to the Spider-Man cake, with the other examples left in the videos list.",
+  "Service 'Heart cakes' described video content ('pink buttercream heart cakes shown') that can only be confirmed from the caption and cover frame. Reworded to the caption plus the visible cover: a two-tier smooth pink cake.",
+  "Videos said LJC10 / LUCYJANE10 were 'the creator's own discount codes'. They are codes for third-party suppliers: cake boards from @OLBAA, a scraper and toppers from @LissieLou. Corrected, and the 'ALL THE PINKS' toppers are now attributed to the supplier.",
+  "Missed own footage: the PEOPLE/AOL article links TikTok video 7473914061248269590 ('Worst experience with a bride…', 21 Feb 2025, 75s, about 50.9K plays, #weddingcake). It shows her own three-tier white wedding cake being finished. Added to videos, and its cover added to images.",
+  "Namesake detail was wrong. Lucy Jane Cake Company (lucyjanecakecompany.co.uk) states its studio collection point is in Milton Keynes, not just 'Buckinghamshire'. Its logo is a navy and gold 'LJ' monogram, its rebrand was in 2024 (from 'Forget Me Not Cakery By Lu'), and it has been baking since 2013. That confirms it is a different business from the listing, whose pink logo matches @lucy_jane_cakes exactly.",
+  "Two image covers show personal names on cake toppers: a child's name and '14' on the cowgirl cake, and a name on the rainbow cake. Added a privacy note to crop or avoid them. The cowgirl frame also shows the baker herself.",
+  "Logo 2 'background' is opaque light blush pink. 'white' is kept as the closest allowed value and explained in the notes."
+ ],
+ "record": {
+  "slug": "lucy-jane-cakes",
+  "displayName": "Lucy Jane Cakes",
+  "identity": {
+   "officialWebsite": null,
+   "confidence": "high",
+   "alternateNames": [
+    "Lucy_Jane_Cakes",
+    "@lucy_jane_cakes"
+   ],
+   "evidence": "Checked again on 27 Oct 2026. The Booked Events listing (https://bookedevents.co.uk/businesses/lucy-jane-cakes/) returns 200. It is marked 'Not Verified', says Est.2014 and Essex, was listed 22 Oct 2024 and last updated 12 Jan 2025. Its logo, lucy_jane_cakes.png (500x500 RGBA, wp-image-10161), is a blush-pink circle with 'LUCY JANE' in white capitals and 'Cakes' in pink script. That mark is identical to the 629x629 TikTok avatar of @lucy_jane_cakes (nickname Lucy_Jane_Cakes). The TikTok bio reads 'Lucy Jane Cakes / London / Message on Instagram for orders' and links to instagram.com/lucy_jane_cakes. The listing cover photo, cakes.jpg, shows pink rosette cupcakes with small cards bearing the same pink circular 'LUCY' mark. PEOPLE/AOL (27 Feb 2025) calls her 'the buttercream specialist behind Lucy Jane Cakes' and links both @lucy_jane_cakes accounts. The trade matches (cake maker). The location fits: the TikTok bio says London, and captions use #essexcakes, #southwoodford, #londoncakes and #lambethcake. The year does not match: the listing says Est.2014, while PEOPLE says she began selling cakes professionally in 2016. No official website exists. The listing's 'Visit Website' anchor has no href, and lucyjanecakes.co.uk/.com/.uk/.london and lucy-jane-cakes.co.uk/.com have no DNS. Companies House search shows no 'Lucy Jane Cakes' company. Namesake ruled out: Lucy Jane Cake Company (lucyjanecakecompany.co.uk) collects from a studio in Milton Keynes, uses a navy and gold 'LJ' monogram logo and rebranded in 2024 from 'Forget Me Not Cakery By Lu', so it is a different business."
+  },
+  "about": [
+   {
+    "text": "PEOPLE describes her as 'the buttercream specialist behind Lucy Jane Cakes' and says she has baked her entire life and began selling cakes professionally in 2016.",
+    "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+   },
+   {
+    "text": "A PEOPLE exclusive, republished on AOL on 27 Feb 2025, reported that she made seven wedding cakes for her own London wedding on 7 December 2024. The main cake was a three-tier classic vanilla sponge, with six other flavours, and all seven were finished two days before the wedding.",
+    "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+   },
+   {
+    "text": "In February 2025 PEOPLE reported that she had 105,000 Instagram followers and nearly 200,000 TikTok followers.",
+    "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+   },
+   {
+    "text": "The TikTok bio reads 'Lucy Jane Cakes / London / Message on Instagram for orders', so orders are taken by Instagram message.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+   },
+   {
+    "text": "The TikTok account @lucy_jane_cakes showed about 193.6K followers, 5.5M likes and 513 videos when fetched on 27 Oct 2026.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+   },
+   {
+    "text": "The account posts cake-decorating how-to videos. One is a photo-cake tutorial that names the Wilton 199 and Jen 2ES nozzles she used.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511"
+   },
+   {
+    "text": "The 'Rainbows and unicorns' video caption is tagged #londoncakes, #lambethcake and #southwoodford.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001"
+   },
+   {
+    "text": "Other captions use #essexcakes, for example the 'ALL THE PINKS' video.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+   },
+   {
+    "text": "The Booked Events listing gives Est.2014 and location Essex. It is marked 'Not Verified' and lists an event size of 10–100 guests.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/lucy-jane-cakes/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Buttercream cakes",
+    "description": "PEOPLE calls her 'the buttercream specialist behind Lucy Jane Cakes' and says she has sold cakes professionally since 2016. The business publishes no prices.",
+    "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+   },
+   {
+    "name": "Heart cakes",
+    "description": "A video captioned 'ALL THE PINKS', tagged #heartcake and #essexcakes. The cover shows a two-tier smooth pink cake on a turntable. Toppers are credited to the supplier @LissieLou.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+   },
+   {
+    "name": "Themed and character cakes",
+    "description": "Example: a red and blue Spider-Man buttercream cake, posted May 2024.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7372276808340884769"
+   },
+   {
+    "name": "Photo cakes",
+    "description": "A how-to video on making a photo cake, using Wilton 199 and Jen 2ES nozzles.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511"
+   },
+   {
+    "name": "Bento cakes",
+    "description": "Small 'Bento Love' cakes, tagged #bentocake and #londoncake.",
+    "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/10/lucy_jane_cakes.png",
+    "format": "png",
+    "width": 500,
+    "height": 500,
+    "background": "transparent",
+    "colours": "blush-pink circle with a white double ring; 'LUCY JANE' in white bold sans with a pink offset shadow; 'Cakes' in hot-pink script",
+    "sourcePage": "https://bookedevents.co.uk/businesses/lucy-jane-cakes/",
+    "notes": "Re-verified: HTTP 200, image/png, 208,252 bytes, last-modified 22 Oct 2024. The IHDR header gives 500x500 with colour type 6 (RGBA). The corners are transparent and the circle is a solid fill. The img tag has alt 'Business Logo' and class wp-image-10161; 200px and 400px variants also exist. No SVG exists anywhere, as there is no business website. This is the best transparent candidate. Large hero use would need a faithful vector redraw, with provenance recorded."
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/060e7c8f384862d3b5ef399c508a7599~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=7a3921ab&x-expires=1793253600&x-signature=87RtotVtpCzTx6uNVJY12GQSNbY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast2b",
+    "format": "jpeg",
+    "width": 629,
+    "height": 629,
+    "background": "white",
+    "colours": "the same mark on an opaque light blush-pink square",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "notes": "TikTok avatarLarger. Re-verified: 200, image/jpeg, 22,384 bytes, 629x629 native. It is visually identical to the directory logo but has no transparency. The background is actually opaque light blush pink; 'white' is the closest allowed value. The signed URL expires around 29 Oct 2026, so re-fetch it from the profile."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/10/cakes.jpg",
+    "width": 500,
+    "height": 455,
+    "description": "A gloved hand holding a pink buttercream rosette cupcake over a box of matching cupcakes. Small cards in the box carry the pink circular 'LUCY' logo. Low resolution, and it looks like a crop of a social-media post. Used as the listing cover and og:image.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/lucy-jane-cakes/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/ef9bb60b943e45b8aa977dcdc966162f_1695905533~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=o5fV7vv7IiMbFZfTVRbHSaJEOq8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+    "width": 540,
+    "height": 960,
+    "description": "Video cover: a tall smooth pale-pink buttercream cake on a turntable as a pastel rainbow topper is placed ('Rainbows and unicorns'). A name in pink lettering is on the cake, so crop it. The signed URL expires around 29 Oct 2026.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-p-0037-euttp/df7a83f0d4d44f5bbe77bc8403548ccc_1726564395~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=QQvqir%2FeGNTB7rExwVAi%2BB%2FHp7M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+    "width": 540,
+    "height": 960,
+    "description": "Video cover: a two-tier smooth pink buttercream cake on a turntable in the baker's kitchen ('ALL THE PINKS'). The signed URL expires around 29 Oct 2026.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/owugAI3CrP6gPAUebOI2f1exESrGEDLDIzZLyz~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=nnH2goA5oZFdW8R0Y4MrisoKfjA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+    "width": 540,
+    "height": 960,
+    "description": "Video cover: a red and blue buttercream Spider-Man cake in progress, with decorations added from an orange cup. The signed URL expires around 29 Oct 2026.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes/video/7372276808340884769",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oEjBsADbQFAzQsB5UBEklvEeFmbsfRilnKPPgi~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=Y7dh7aWb9KlbXW9VUhEdnhVcXeY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+    "width": 540,
+    "height": 960,
+    "description": "Video cover: the baker holding a finished cow-print cowgirl cake with disco-ball decorations and a pink topper showing a child's name and '14'. It shows a person and a personal name, so crop or avoid. The signed URL expires around 29 Oct 2026.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes/video/7486597708946492694",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-p-0037-no/oYmArZiE4YXxISAO2BsYBNZ2pA7iIUdSiBLiv~tplv-tiktokx-origin.image?dr=10395&x-expires=1793253600&x-signature=BCFdqFpudqMH%2BBScVSLyKtQ9KEU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast2b",
+    "width": 540,
+    "height": 960,
+    "description": "Video cover: a three-tier smooth white buttercream cake on a turntable being finished with a piping bag (her own wedding cake video, Feb 2025). The signed URL expires around 29 Oct 2026.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'Rainbows and unicorns' cake decorating. 28s, 576x1024, about 1.0M plays, posted 28 Sep 2023. Tagged #londoncakes, #lambethcake and #southwoodford. The strongest showreel candidate.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes, whose avatar matches the directory logo, and tagged #lucyjanecakes. Filmed in the same kitchen as her other videos."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7473914061248269590",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'Worst experience with a bride…', a storytime video about making her own wedding cakes. 75s, posted 21 Feb 2025, about 50.9K plays, tagged #weddingcake.",
+    "sourcePage": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes. The PEOPLE/AOL article about her wedding cakes links to it."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'ALL THE PINKS' pink cake, tagged #heartcake. 30s, posted 17 Sep 2024, about 35K plays. Tagged #essexcakes. A cookieless Range request to the mp4 playAddr returned 403.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes. The caption gives her supplier codes (LJC10 for @OLBAA cake boards, LUCYJANE10 for @LissieLou), which are not her own products."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7372276808340884769",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "Spider-Man buttercream cake. 37s, posted 23 May 2024, about 89K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and filmed in the same kitchen. The caption gives her supplier codes LJC10 (@OLBAA) and LUCYJANE10 (@LissieLou)."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7486597708946492694",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "Cowgirl cake with disco balls. 65s, posted 27 Mar 2025, about 26K plays. The baker appears on camera.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'How to make a photo cake' tutorial. 61s, posted 12 Mar 2025, about 225K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7483037397538589974",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'The truth behind cake slicing videos'. 60s, posted 18 Mar 2025, about 469K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'Bento Love' bento cake. 67s, posted 2 Mar 2025, about 24K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes and #londoncake."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7265710948135079201",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "Getting a level rise in 6-inch PME tins. 21s, posted 10 Aug 2023, about 311K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes and #londoncakes."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7278424180658277665",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "'Oink' pig cake piping. 17s, posted 13 Sep 2023, about 24K plays.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes."
+   },
+   {
+    "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7349667625263287585",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "bytes": null,
+    "description": "How to freeze cake slices. 26s, posted 23 Mar 2024, about 177K plays. Tagged #essexcakes.",
+    "sourcePage": "https://www.tiktok.com/@lucy_jane_cakes",
+    "ownContentEvidence": "Posted by @lucy_jane_cakes and tagged #lucyjanecakes."
+   }
+  ],
+  "socials": {
+   "instagram": "https://www.instagram.com/lucy_jane_cakes/",
+   "tiktok": "https://www.tiktok.com/@lucy_jane_cakes",
+   "facebook": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": []
+  },
+  "tagline": null,
+  "industry": "food-services",
+  "categories": [
+   "Cake Maker"
+  ],
+  "eventTypes": [],
+  "eventTypesSourceUrl": null,
+  "areasServed": [
+   "London",
+   "Essex"
+  ],
+  "areasSourceUrl": "https://www.tiktok.com/@lucy_jane_cakes",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": null
+  },
+  "instagramAccess": "One plain unauthenticated GET to https://www.instagram.com/lucy_jane_cakes/ with a desktop User-Agent (27 Oct 2026) returned HTTP 200 with no redirect. The body was a ~505KB generic app shell titled 'Instagram', with no og: or description meta tags, no bio, follower count or posts. Profile content is not readable without login, and I did not retry. The handle is confirmed by the TikTok bioLink and by the PEOPLE/AOL article's links.",
+  "gaps": [
+   "No official website. The Booked Events 'Visit Website' anchor has no href. lucyjanecakes.co.uk/.com/.uk/.london, lucy-jane-cakes.co.uk/.com and lucyjanecakesltd.co.uk have no DNS. linktr.ee/lucy_jane_cakes and linktr.ee/lucyjanecakes return 404. No 'Lucy Jane Cakes' company appears in a Companies House name search.",
+   "Establishment year conflict: the listing says Est.2014, while PEOPLE says she began selling cakes professionally in 2016 (it also mentions brownies that 'started in 2008'). The 2014 date is unverified.",
+   "Exact base town not verified. The TikTok bio says London and the listing says Essex. Hashtags include #essexcakes, #southwoodford, #londoncakes and #lambethcake. PEOPLE names London only as the wedding location.",
+   "Price: '£50 per event' appears only on the unverified Booked Events listing. The business publishes no prices.",
+   "Event types are not stated by the business, so eventTypes is left empty. Wedding cakes for clients are not confirmed: PEOPLE and the #weddingcake TikTok cover only her own wedding. Birthday-style cakes appear in videos, but she never names the events she serves.",
+   "Instagram bio and posts are not viewable without login. The 105K follower figure is from PEOPLE (Feb 2025) only.",
+   "No Facebook page confirmed. One plain request to facebook.com/lucyjanecakes returned HTTP 400, not retried. facebook.com/LucyJanesCakes is reported as a different business and was not fetched.",
+   "No YouTube channel found. youtube.com/@lucy_jane_cakes returns a 302 to the Google consent wall, which was not bypassed. Web search found no channel.",
+   "No direct video files. TikTok playAddr returned 403 to a cookieless Range request, and TikTok oEmbed returned 429 (not retried). Use TikTok embeds, or footage the business supplies with permission.",
+   "Logo: no SVG exists. The best assets are the 500x500 transparent PNG from Booked Events and the 629x629 TikTok avatar on pink. A crisp large logo needs a faithful vector redraw or the original artwork from the business.",
+   "Photos: the only non-TikTok image is the 500x455 listing cover. The TikTok covers are 540x960 signed URLs that expire around 29 Oct 2026, so they must be re-fetched or re-hosted with permission. The rainbow and cowgirl covers show personal names on cakes or toppers; crop or avoid them.",
+   "The repo entry in src/data/vendors.ts (lines 117-129) is unsourced and conflicts with the evidence: established 2016, price_from 350, rating 4.9, review_count 41, verified true, and an Unsplash stock image_url. Ratings, review counts and 'verified' have no source and should not be published.",
+   "docs/reference/bookedevents-cards-parsed-20250331.json has its card links offset by one. The 'Lucy Jane Cakes' card (index 7) links to /businesses/ray-johnson/ and the 'Jocee' card (index 6) links to /businesses/lucy-jane-cakes/. The correct listing URL is https://bookedevents.co.uk/businesses/lucy-jane-cakes/.",
+   "Namesakes to avoid: Lucy Jane Cake Company (lucyjanecakecompany.co.uk, Milton Keynes studio, navy and gold LJ monogram, instagram.com/lucyjanecakecompany, verified by fetch). Also reported from search snippets only and not fetched: Lucy Jane's Cakes (Lane End, Bucks; facebook.com/LucyJanesCakes), Lucy Jane's Bakery (Potton) and Instagram @lucyscakesxx. Companies House also lists LUCY JANES BAKERY LTD (London W1W, dissolved May 2026), with no evidence of a link."
+  ]
+ }
+}

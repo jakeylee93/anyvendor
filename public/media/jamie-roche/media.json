@@ -1,0 +1,53 @@
+{
+  "slug": "jamie-roche",
+  "logo": null,
+  "gallery": [
+    {
+      "file": "public/media/jamie-roche/photo-01.webp",
+      "alt": "Jamie Roche singing with his eyes closed at a microphone, a patterned guitar strap over his shoulder, inside a church.",
+      "sourceUrl": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-02.webp",
+      "alt": "Jamie Roche seated on a stage, playing an acoustic guitar and singing into a microphone, in front of a dark teal wall with a 'Live' sign.",
+      "sourceUrl": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-03.webp",
+      "alt": "Black-and-white photo of Jamie Roche playing an acoustic guitar and singing into a microphone in front of a timber plank wall.",
+      "sourceUrl": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-04.webp",
+      "alt": "Jamie Roche singing with his eyes closed while playing guitar, with guitars hanging on the wall behind him.",
+      "sourceUrl": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-05.webp",
+      "alt": "Portrait of Jamie Roche in a dark jacket and pendant necklace, seated beside a stained-glass window in a wood-panelled room.",
+      "sourceUrl": "https://yt3.ggpht.com/Eni1AvBLlWiK96O-QwIwPCaXlOzFjo1dOAKMqDO7rNL1MRANvVz4RGm88o8ifrItDtJ5tL0DTUw=s0"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-06.webp",
+      "alt": "Jamie Roche in a patterned short-sleeved shirt singing and playing an acoustic guitar beside a studio microphone, in a warmly lit room.",
+      "sourceUrl": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-07.webp",
+      "alt": "Jamie Roche in a flat cap and white shirt singing with his eyes closed while playing guitar, with soft lights behind him.",
+      "sourceUrl": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg"
+    },
+    {
+      "file": "public/media/jamie-roche/photo-08.webp",
+      "alt": "Close-up of Jamie Roche in a denim jacket singing with his eyes closed while holding a guitar, against a blurred red and green background.",
+      "sourceUrl": "https://i.ytimg.com/vi/oh9KSH-2DmU/maxresdefault.jpg"
+    }
+  ],
+  "notes": [
+    "Logo: none. The only 'logo' on record is the 1000x1000 circular portrait headshot in the Booked Events 'Business Logo' slot (https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_logo.png). It is a photo of him, not a brand mark, so it was not traced or published as a logo. He has no website, wordmark or text logo. The profile needs a typeset name treatment, or that portrait used as an avatar.",
+    "Reel: a photo reel of six stills, because all of his footage is on YouTube (7 own-channel performance videos), which is not an allowed download source in this session. He has no website, so there is no self-hosted or HLS video, and no TikTok is confirmed. The YouTube videos are playableInEmbed=true, so the profile could embed one (drMAH8eFYi4, 'The Green Fields Of France', is the strongest) in place of or beside the reel.",
+    "Reel and gallery sources: photos 01, 03, 04, 06, 07 and 08 (and five of the six reel stills) are the public maxresdefault thumbnail images (1280x720) of his own-channel YouTube videos, fetched as plain image files from i.ytimg.com. No video was downloaded and no cookies were used. Photo 05 is his own YouTube channel avatar (yt3.ggpht.com, 3532 px, resized to 1600). Photo 02 is the photo he supplied for his Booked Events listing (1000x800). The camera work is credited to Max Bandicoot and Christopher Painter, so re-hosting rights are unconfirmed (see the research gaps).",
+    "The reel stills were upscaled 2x with Lanczos plus a light unsharp mask before the push-in. The 9:16 phone reel crops a 405 px-wide band from each 1280x720 thumbnail, so it is visibly softer than the desktop reel. For segment 4 (the listing photo) a 96 px mirrored strip of the dark wall was added above the image so the push-in does not clip his hair.",
+    "Gallery: the photos are published at their native sizes (1280x720 and 1000x800 were not upscaled). The circular headshot from the logo slot was not used because of its transparent corners and speckled rim. Alt texts describe only what is visible; venue names come from the video titles (St Mary Magdalene Church, Enfield; Painter Studios; Sixty Sixty Sounds, Soho; St John's Church, Hoxton; Victoria Park, Hackney)."
+  ]
+}

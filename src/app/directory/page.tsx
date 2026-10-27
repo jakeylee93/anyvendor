@@ -70,7 +70,7 @@ export default async function DirectoryPage({ searchParams }: { searchParams: SP
             <h2 className="text-lg font-semibold text-be-navy">No businesses match these filters yet</h2>
             <p className="mx-auto mt-2 max-w-lg text-sm text-be-grey">
               {filters.event
-                ? "Event-type tags were not recoverable from the original Booked Events listings, so the Type of Event filter has no matches in this preview."
+                ? "Type of Event only matches businesses whose own website or social channels say they cover that kind of event. Try another event type or view every business."
                 : "Try a different industry or location, or view every business."}
             </p>
             <Link href="/directory" className="mt-5 inline-flex rounded-full bg-be-cyan px-5 py-2.5 text-sm font-semibold text-be-navy">
@@ -80,7 +80,7 @@ export default async function DirectoryPage({ searchParams }: { searchParams: SP
         )}
         <p className="mt-8 text-xs text-be-grey">
           Listings are reconstructed from the March 2025 Booked Events directory. Prices are historical “price from” figures and may be out of date.
-          Categories marked “unconfirmed” were inferred from business names.
+          Event types and categories come from each business’s own channels; anything marked “unconfirmed” was inferred from the business name.
         </p>
       </section>
       <SupplierCta />

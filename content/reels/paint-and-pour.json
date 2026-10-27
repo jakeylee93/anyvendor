@@ -1,0 +1,43 @@
+{
+  "slug": "paint-and-pour",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p00-host-monet.jpg",
+      "url": "https://cdn.evbuc.com/images/1120455523/102619908941/1/original.20250910-200533",
+      "dur": 2.8, "fx": 0.5, "fy": 0.28, "mfx": 0.62, "mfy": 0.5,
+      "note": "Paint & Pour Eventbrite organiser photo: host Bryony presents a group's finished Monet 'Woman with a Parasol' canvases on table easels (downscaled to 2400 px for the reel)."
+    },
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p03-setup.jpg",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/Paint-and-Pour.jpeg",
+      "dur": 2.6, "fx": 0.5, "fy": 0.6, "mfx": 0.45, "mfy": 0.5,
+      "note": "Booked Events listing photo: a session set up with blank canvases on table easels, palettes, brushes and Van Gogh 'Sunflowers' reference prints (765 px original, upscaled with Lanczos for the reel)."
+    },
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p05-painting.jpg",
+      "url": "https://cdn.evbuc.com/images/1196448093/102619908941/1/original.20261023-151839",
+      "dur": 2.6, "fx": 0.5, "fy": 0.62, "mfx": 0.5, "mfy": 0.5,
+      "note": "Paint & Pour Eventbrite organiser photo: guests paint landscapes along a long table (480 px original, upscaled with Lanczos for the reel)."
+    },
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p02-host-mic.jpg",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/paint_and_Pour_thumb.jpg",
+      "dur": 2.6, "fx": 0.5, "fy": 0.37, "mfx": 0.55, "mfy": 0.5,
+      "note": "Booked Events listing photo: Bryony hosts with a microphone beside an easel holding a 'Scream'-style painting (1000 px original, upscaled with Lanczos for the reel)."
+    },
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p01-group-scream.jpg",
+      "url": "https://cdn.evbuc.com/images/1120464843/102619908941/1/original.20250910-201329",
+      "dur": 2.6, "fx": 0.5, "fy": 0.5, "mfx": 0.45, "mfy": 0.5,
+      "note": "Paint & Pour Eventbrite event photo: guests hold up their finished 'The Scream'-style paintings in a pink-neon lounge."
+    },
+    {
+      "image": ".media-work/paint-and-pour/reel-src/p04-group-cats.jpg",
+      "url": "https://cdn.evbuc.com/images/1196448083/102619908941/1/original.20261023-151832",
+      "dur": 2.6, "fx": 0.5, "fy": 0.58, "mfx": 0.5, "mfy": 0.5,
+      "note": "Paint & Pour Eventbrite organiser photo: guests hold up their finished cat-portrait paintings (480 px original, upscaled with Lanczos for the reel)."
+    }
+  ]
+}

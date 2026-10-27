@@ -1,0 +1,67 @@
+{
+  "slug": "toot-sweet-candy-cart",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-1-cart-garland.jpg",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/tootsweet_cart.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.6,
+      "mfx": 0.42,
+      "mfy": 0.5,
+      "note": "The white Toot Sweet Candy Cart, its name painted on the front panel, dressed with a peach and gold balloon garland, flowers, a tiered cake and sweet jars (photo from the business's Booked Events listing)."
+    },
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-2-open-box.jpg",
+      "url": "https://pbs.twimg.com/media/EZwnjnEWsAE8Fte?format=jpg&name=orig",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.53,
+      "mfx": 0.52,
+      "mfy": 0.5,
+      "note": "@CartToot photo (5 Jun 2020): an open 16-compartment sweet box of pick 'n' mix and Ferrero Rochers."
+    },
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-3-brunch-cart.jpg",
+      "url": "https://pbs.twimg.com/media/EbM4xqhXQAEZo-q?format=jpg&name=orig",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.56,
+      "mfx": 0.48,
+      "mfy": 0.5,
+      "note": "@CartToot photo (23 Jun 2020): the cart styled for brunch in a garden with flowers, a balloon garland and an 'On Weekends We Brunch' sign."
+    },
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-4-blue-box.jpg",
+      "url": "https://pbs.twimg.com/media/EZ1bfk1WsAchrXI?format=jpg&name=orig",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.52,
+      "mfy": 0.5,
+      "note": "@CartToot photo (6 Jun 2020): a personalised sweet box with pale-blue ribbon and a navy 'I Love You' tag."
+    },
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-5-brunch-closeup.jpg",
+      "url": "https://pbs.twimg.com/media/EbM4yE4XgAEYLIQ?format=jpg&name=orig",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.58,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "@CartToot photo (23 Jun 2020): close-up of the brunch-styled cart with a Victoria sponge, champagne, scones and sandwiches."
+    },
+    {
+      "image": ".media-work/toot-sweet-candy-cart/still-6-yellow-box-wide.jpg",
+      "url": "https://pbs.twimg.com/media/EZwnjm_X0AIRd7r?format=jpg&name=orig",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.38,
+      "mfx": 0.53,
+      "mfy": 0.5,
+      "note": "@CartToot photo (5 Jun 2020): a sweet box tied with yellow ribbon, with a 'Happy Daddy's Day' tag and the round Toot Sweet Candy Cart logo sticker, on cupcake-print paper."
+    }
+  ]
+}

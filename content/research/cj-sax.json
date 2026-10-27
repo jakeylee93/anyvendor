@@ -1,0 +1,677 @@
+{
+ "slug": "cj-sax",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Image IMG_0987-2.JPG was described as CJ 'playing saxophone' on the jetty. He is actually seated at the end of the jetty with the saxophone resting beside him.",
+  "The homepage destination pairs were mis-split. The headings are Ibiza (Ushuaia), Amalfi Coast (Villa Cimbrone), D'Maris Bay (Nusr'et Restaurant) and Cape Town (MolenVliet Vineyard). The record listed D'Maris Bay and Nusr'Et Restaurant as two separate destinations.",
+  "rio-wedding.jpg was described as 'the Ferdinand wedding celebration'. The site only gives the filename 'rio-wedding' and shows the photo under the homepage heading 'D'Maris Bay – Nusr'et Restaurant'. The description has been reworded to match.",
+  "The 'Peak / off-peak' service put the 'discounted off-peak prices on enquiry' statement on the homepage. That line is on /packages/; only the season table is on the homepage.",
+  "The 'Event planning' service was sourced to /contact. That page has neither the 'Event Planner' site title nor 'Event Planning Advice'. It has been re-sourced to the homepage, and the advice item stays with the DJ package on /packages/.",
+  "The equipment list was inaccurate. Standard kit includes both an Equinox Black DJ Booth and an Equinox White DJ Booth, not 'an Equinox DJ booth'. The extras list left out 'QSC K12.2 12″ Tops x 2'. The Chauvet unit is listed on the site as 'INTIMSPOT 375ZX'.",
+  "The record said the SoundCloud 'profile URL not exposed', which is wrong. https://soundcloud.com/cjsaxlive is in the site's JSON-LD sameAs and on the Linktree, and it returns HTTP 200 with og:title 'CJ SAX LIVE'.",
+  "Verified channels were missing: the Linktree (linktr.ee/cj_sax, linked from the YouTube channel description), Mixcloud (mixcloud.com/cjsaxlive), and the 'Back to CJ's' podcast on Spotify and Apple Podcasts. The second Instagram (@cjsaxlive_events) is confirmed as 'Events Instagram' on the Linktree.",
+  "The TikTok gap is out of date. TikTok oEmbed now returns HTTP 200 with a player iframe for both videos embedded on the site (7547801132941249814 and 7106781707906354438).",
+  "The Gosfield Hall HD transcode was not checked before. It is now HEAD-verified: export_1674049374154_mov_hd.mp4 returns 200, video/mp4, 20,737,324 bytes.",
+  "The record included the video 'bookings: …' (somebody-else's-guy-1.mp4), whose poster shows only a female vocalist. That breaks the record's own rule of excluding network-artist footage, so it has been dropped.",
+  "Attribution of wedding-botleys-mansion-cj.m4v is weaker than claimed. Its sibling upload botleys-mansion-cj.m4v is titled 'DJ Jack @ Botley's Mansion', so 'cj' in a filename does not prove CJ performs in it. The poster shows only the couple on a staircase. It is now marked as performer-unclear.",
+  "The business's email address had been copied into video descriptions via the media titles. It has been removed to comply with the no-email rule for businesses other than The Bar People.",
+  "areasServed included 'UK-wide', which no fetched source states. It has been removed.",
+  "The namesake list was partly unverified. Two verified namesakes have been added. One is Christopher 'CJ' Johnson, a Los Angeles smooth-jazz saxophonist (ccjsax.com). The other is the Wayback Machine record showing cjsax.com in 2003–2005 belonged to an unrelated 'Charles Johnson, Jr.', so domain history before 2012 is not this business.",
+  "The 29:41 duration for YouTube JU8JF7zGRAk could not be confirmed, because the channel grid shows no duration badge for it. The duration has been removed.",
+  "The Booked Events listing shows 'Licenses & Insurance: No', while cjsax.com packages list Public Liability Insurance. The record did not note this conflict; it is now in gaps.",
+  "The record missed the historic site identity. A May 2013 Wayback capture of cjsax.com is titled 'CJ Turner', which matches the WordPress author slug 'cjturnersax'. It is added as an alternate name, with its source."
+ ],
+ "record": {
+  "slug": "cj-sax",
+  "displayName": "CJ SAX LIVE",
+  "identity": {
+   "officialWebsite": "https://cjsax.com",
+   "confidence": "high",
+   "alternateNames": [
+    "CJ Sax",
+    "CJ SAX LIVE",
+    "CJ SAX DJ LIVE",
+    "CJ SAX LIVE Events",
+    "CJ Turner (cjsax.com site title in a May 2013 Wayback capture)",
+    "@cj_sax",
+    "@CJSAXLIVE",
+    "@cjsaxlive_events"
+   ],
+   "evidence": "I fetched the live Booked Events listing (https://bookedevents.co.uk/businesses/cj-sax/). It is titled 'CJ Sax – Booked Events' and shows Verified, Est. 2010, 'No Address', from £750 per event, 10–100 guests, and 'Listed on Dec 15, 2024'. Its 'Visit Website' button links href=\"https://cjsax.com\", and its contact email is on the cjsax.com domain. The listing blurb ('CJ Sax Live is an International artist who made a name for himself playing on some of the world's biggest stages') matches word for word the opening line of the CJ SAX LIVE press pack image embedded at https://cjsax.com/2012/10/09/13/. The cjsax.com homepage title is 'CJ SAX LIVE - Event Planner, Saxophonist & DJ based in London', and its og:site_name says '…Wedding Sax & DJ in London. Event Planning & Entertainment in Essex.' So the trade, a saxophonist/DJ, matches the listing note. The listing thumbnail (CJ DJing with a saxophone on a boat) shows the same performer as the cjsax.com photos. The site header links Facebook (cj.sax.live), Instagram (cj_sax), TikTok (@cj_sax), YouTube (/cjsaxlive → @CJSAXLIVE) and Spotify. The YouTube channel's description ('I'm a saxophonist, DJ & event planner based in London!') links linktr.ee/cj_sax, which links back to www.cjsax.com. Namesakes checked and found to be different: Christopher 'CJ' Johnson, a Los Angeles smooth-jazz saxophonist (ccjsax.com); an unrelated 'Charles Johnson, Jr.' site that occupied cjsax.com in 2003–2005 (Wayback CDX), so domain history before 2012 is not this business; and J-SAX (Montreal), JSax (Elizabeth NJ) and TJ Sax (Holtsville NY). Year: the earliest WordPress media item and post on cjsax.com are dated 9 Oct 2012. The first Wayback capture of this business's site is May 2013 (titled 'CJ Turner'). The contact page says 'over a decade', and the press pack cites the London 2012 Olympics. This is consistent with 2010 but does not confirm it."
+  },
+  "about": [
+   {
+    "text": "CJ SAX LIVE presents itself as an event planner, saxophonist and DJ based in London (site title). It offers wedding, corporate event and party hire (og:description).",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "text": "The homepage describes CJ as a DJ and saxophonist who performs for high-profile clients. Past performances it names include the London 2012 Olympics and the Abu Dhabi F1, in places such as London, Dubai, Monaco, Ibiza, Marbella, Cannes, Mallorca and the Amalfi Coast.",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "text": "The business supplies its own sound equipment and professional lighting. It also recommends and coordinates other live performers for weddings, corporate events and parties.",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "text": "Its own words for its base are 'Based in London, creating vibes worldwide…'. The Destinations section lists Ibiza (Ushuaia), Amalfi Coast (Villa Cimbrone), D'Maris Bay (Nusr'et Restaurant) and Cape Town (MolenVliet Vineyard).",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "text": "The CJ SAX LIVE press pack image on this page says CJ launched his own events company and works with high-profile and celebrity clients. UK venues it lists: The O2, the Tower of London, The Dorchester, Ronnie Scott's and The Ivy Asia. Ibiza: Ushuaia, Ocean Beach, Hard Rock Hotel, Space and Atzaro. Dubai: STK, Drais, White, Asia Asia, Five The Palm and Cirque le Soir. Rest of the world: the Maldives, Amalfi Coast, Sicily, Marbella, Cannes and the Himalayas. Sporting events: the Abu Dhabi and Monaco F1 Grand Prix and the London 2012 Olympics.",
+    "sourceUrl": "https://cjsax.com/2012/10/09/13/"
+   },
+   {
+    "text": "The contact page says the business has provided event services 'for over a decade'. 'Happy clients' it names: Billie & Greg Shepherd (The Mummy Diaries), Tommy & Georgia Fordham (Lobster Club, Mallorca), Mr & Mrs Ferdinand (London, UK) and Mr & Mrs Goldstein (Cap Rocat, Mallorca).",
+    "sourceUrl": "https://cjsax.com/contact"
+   },
+   {
+    "text": "The packages page shows past events labelled Nusr'Et Restaurant / Salt Bae, The Maldives / Billie & Greg's Wedding, London / Rio Ferdinand OBE, and Ibiza / Tinie Tempah. It also says discounted off-peak prices are available, subject to availability and upon enquiry.",
+    "sourceUrl": "https://cjsax.com/packages/"
+   },
+   {
+    "text": "The Mixes page describes an open-format music policy that reads the crowd. Genres run from 70s/80s Soul to Club Classics, House, Dance Anthems, Old School RnB and Garage.",
+    "sourceUrl": "https://cjsax.com/listen/"
+   },
+   {
+    "text": "The homepage quotes a bride testimonial: 'We honestly can't thank you enough for making our day so special, you really went above & beyond!' — Jodie, Botley's Mansion.",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "text": "The packages page quotes a client testimonial: '…you're the best dj they'd ever seen and you made the night.' — Ami, London.",
+    "sourceUrl": "https://cjsax.com/packages/"
+   },
+   {
+    "text": "The YouTube channel description reads: 'I'm a saxophonist, DJ & event planner based in London!' It points to CJ's 'Back to CJ's' podcast on Spotify and Apple Music.",
+    "sourceUrl": "https://www.youtube.com/@CJSAXLIVE"
+   },
+   {
+    "text": "The TikTok profile (nickname 'CJ SAX LIVE') has the bio 'DJ • Saxophonist • Party Starter' and links www.cjsax.com.",
+    "sourceUrl": "https://www.tiktok.com/@cj_sax"
+   },
+   {
+    "text": "A May 2013 archived copy of cjsax.com was titled 'CJ Turner'. Its menu included Artist Management, Charity, 'Saxman to the Stars' and 'The Saxual Soirée'. It announced 2013 performance trips to Marbella and Ibiza and a Saxual Soirée night at NuBar, Loughton, UK.",
+    "sourceUrl": "https://web.archive.org/web/20130527044749/http://cjsax.com/"
+   },
+   {
+    "text": "On the Booked Events listing, CJ Sax is shown as verified, established 2010, catering for events of 10–100 guests, and priced from £750 per event. It was listed on 15 Dec 2024 and last updated 12 Jan 2025.",
+    "sourceUrl": "https://bookedevents.co.uk/businesses/cj-sax/"
+   }
+  ],
+  "services": [
+   {
+    "name": "CJ SAX LIVE (live saxophone)",
+    "description": "Live saxophone by CJ, improvising alongside your DJ. Includes a wireless sax microphone, public liability insurance, an event contract and invoice, and WhatsApp support. Published price, verbatim: 'Prices start from £1,000, subject to date & location'.",
+    "sourceUrl": "https://cjsax.com/packages/"
+   },
+   {
+    "name": "CJ SAX DJ LIVE (sax + DJ)",
+    "description": "Live saxophone and DJ performance by CJ. Includes a sound system, DJ lighting and accessories, wireless sax and vocal microphones, event planning advice, public liability insurance, an event contract and invoice, and WhatsApp support. Published price, verbatim: 'Prices start from £3,000, subject to date & location'.",
+    "sourceUrl": "https://cjsax.com/packages/"
+   },
+   {
+    "name": "Recommended Artists",
+    "description": "Musicians recommended from CJ's network: DJs, sax, bongos, violin, a magician and more. Clients negotiate directly with the performer. Published price, verbatim: 'Prices start from £375, subject to date & location'.",
+    "sourceUrl": "https://cjsax.com/packages/"
+   },
+   {
+    "name": "Seasonal / destination pricing periods",
+    "description": "The homepage pricing table sets these periods: January–April is off-peak (Dubai/London), May–September is peak (worldwide), October is off-peak (Dubai/London), and November–December is peak (London). It promotes 'all inclusive entertainment packages'.",
+    "sourceUrl": "https://cjsax.com/"
+   },
+   {
+    "name": "Sound, lighting & DJ booth equipment",
+    "description": "Included as standard: Pioneer XDJ-AZ; QSC K12.2 12″ tops x 3; QSC KS118 18″ subs x 2; Equinox Black DJ Booth; Stellar 66 Multi FX LED x 2; Chauvet INTIMSPOT 375ZX; 200W LED moving head x 2; Equinox SpectraPix battens x 4; Equinox White DJ Booth. Extras: Pioneer XDJ-XZ; QSC K12.2 12″ tops x 2; Equinox Colour Raider uplighters x 8; Equinox Combi Booth; disco mirror balls x 4; foam glow sticks; Equinox 1.5m plinth x 2; QSC TouchMix 8.",
+    "sourceUrl": "https://cjsax.com/equipment-hire/"
+   },
+   {
+    "name": "DJ mixes / music policy",
+    "description": "Open-format sets that read the crowd: 70s/80s soul, club classics, house, dance anthems, old-school RnB and garage. The page embeds four Spotify playlists ('70s & 80s Soul Classics', 'Sax Set - Main Set', 'Soul Disco', 'Commercial & Deep House') and two SoundCloud sets: 'CJ SAX Guest Set on Pure Ibiza Dubai 94.7 with Kieran Lindsay' and 'CJ's Studio: Ibiza Openings with The Garden Party UK'.",
+    "sourceUrl": "https://cjsax.com/listen/"
+   },
+   {
+    "name": "Event planning & performer coordination",
+    "description": "The site title calls CJ an 'Event Planner, Saxophonist & DJ'. The homepage says the business recommends and coordinates other live performers for weddings, corporate events and parties.",
+    "sourceUrl": "https://cjsax.com/"
+   }
+  ],
+  "logos": [
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2017/06/cj-sax-logo.png",
+    "format": "png",
+    "width": 2196,
+    "height": 868,
+    "background": "transparent",
+    "colours": "black",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?search=logo",
+    "notes": "The best candidate. HEAD returns 200 image/png, 43,080 bytes, and the PNG header gives 2196x868 grey+alpha (colour type 4). I inspected it visually: a heavy black 'CJ SAX' sans wordmark with a thin italic 'LIVE' beneath, on a transparent background. The same mark heads the press pack on https://cjsax.com/2012/10/09/13/. A byte-identical copy is at https://cjsax.com/wp-content/uploads/2012/10/cj-sax-logo.png (200, 43,080 bytes). The live site header does not use it; the header shows the plain-text site title 'CJ SAX LIVE'."
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2017/06/cropped-cj-sax-logo.png",
+    "format": "png",
+    "width": 2196,
+    "height": 868,
+    "background": "transparent",
+    "colours": "black",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?search=logo",
+    "notes": "An RGBA version of the same wordmark (colour type 6, 55,731 bytes), uploaded 2023-02-08. HEAD returns 200 image/png."
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_logo.png",
+    "format": "png",
+    "width": 859,
+    "height": 887,
+    "background": "white",
+    "colours": "black wordmark in a white circle with a thin black outline",
+    "sourcePage": "https://bookedevents.co.uk/businesses/cj-sax/",
+    "notes": "The same CJ SAX LIVE wordmark inside a white circular badge (RGBA; inspected visually), as used on the directory listing. HEAD returns 200 image/png, 57,000 bytes. It is lower resolution than the cjsax.com wordmark. No genuine SVG exists: /logo.svg returns 404, the media library has no SVG, and the inline SVGs on the site are only social, navigation and Jetpack icons. The favicon is a cropped photo (cropped-IMG_0987.jpg), not a logo."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/IMG_0987-2.JPG",
+    "width": 4032,
+    "height": 3024,
+    "description": "CJ seated at the end of a wooden jetty over a turquoise sea, with his saxophone resting beside him (homepage hero image).",
+    "sourcePage": "https://cjsax.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/ushuaia2.jpg",
+    "width": 2048,
+    "height": 1365,
+    "description": "CJ playing saxophone on the main stage at Ushuaïa Ibiza (Disturbing Ibiza staging). It is shown on the homepage under 'Ibiza – Ushuaia'. The press-pack version carries an Ushuaïa watermark, so it was probably taken by the venue photographer.",
+    "sourcePage": "https://cjsax.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2023/02/rio-wedding.jpg",
+    "width": 1620,
+    "height": 1080,
+    "description": "CJ playing saxophone among dancing guests at a terrace celebration (filename 'rio-wedding'). It is shown on the homepage under 'D'Maris Bay – Nusr'et Restaurant' and is also the site's og:image. A celebrity guest appears in it.",
+    "sourcePage": "https://cjsax.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/cj_sax_thumb.jpg",
+    "width": 1000,
+    "height": 800,
+    "description": "CJ DJing with a saxophone at his decks on a boat, with a city skyline behind. This is the image supplied for the directory listing.",
+    "sourcePage": "https://bookedevents.co.uk/businesses/cj-sax/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2020/08/Wedding-2.jpg",
+    "width": 3000,
+    "height": 2000,
+    "description": "A bride and guests dancing as CJ plays saxophone on a wedding dance floor.",
+    "sourcePage": "https://cjsax.com/contact",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/IMG_3996.jpg",
+    "width": 4284,
+    "height": 5712,
+    "description": "A gold saxophone resting on a garden wall above a coastal mountain view, in portrait orientation. It is shown on the homepage under 'Amalfi Coast – Villa Cimbrone'.",
+    "sourcePage": "https://cjsax.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/IMG_2459.jpg",
+    "width": 4284,
+    "height": 5712,
+    "description": "CJ DJing outdoors at sunset with a mountain backdrop, in portrait orientation. It is shown on the homepage under 'Cape Town – MolenVliet Vineyard'.",
+    "sourcePage": "https://cjsax.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG",
+    "width": 5472,
+    "height": 3648,
+    "description": "CJ playing saxophone while standing in shallow water at an infinity-pool or sea edge, against a pale, hazy sky.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?per_page=100",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2025/07/DJ-booth-2.JPG",
+    "width": 2048,
+    "height": 1365,
+    "description": "CJ's DJ setup in a venue: an LED star-cloth booth, QSC speakers, mirror balls on stands and moving heads. DJ-booth-1.JPG and DJ-booth-3.JPG (2048x1365) show the same setup.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?per_page=100",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2020/08/IMG_9611_polarr.jpg",
+    "width": 3024,
+    "height": 4032,
+    "description": "CJ holding his saxophone with the Nusr-Et chef, labelled 'Nusr'Et Restaurant / Salt Bae' on the packages page. It features a celebrity.",
+    "sourcePage": "https://cjsax.com/packages/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2012/10/tinie-tempah.jpg",
+    "width": 960,
+    "height": 1280,
+    "description": "CJ with Tinie Tempah at an Ibiza pool party, labelled 'Ibiza / Tinie Tempah'. It features a celebrity and is low resolution.",
+    "sourcePage": "https://cjsax.com/packages/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2023/01/413-1.jpg",
+    "width": 1620,
+    "height": 1080,
+    "description": "CJ backstage with Rio Ferdinand and another guest, labelled 'London / Rio Ferdinand OBE'. It features a celebrity.",
+    "sourcePage": "https://cjsax.com/contact",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://videos.files.wordpress.com/xTGspx2c/opening_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 23768331,
+    "publiclyFetchable": true,
+    "description": "CJ SAX SHOWREEL, about 60 s, 1920x1080, HD transcode. This is the best hero candidate. The original is https://videos.files.wordpress.com/xTGspx2c/opening.mp4 (HEAD 200, video/mp4, 114,304,147 bytes). Poster: https://videos.files.wordpress.com/xTGspx2c/opening_scruberthumbnail_0.jpg (CJ playing sax on a terrace; CJ SAX LIVE EVENTS watermark).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "First track, 'CJ SAX SHOWREEL', in the public video playlist on CJ's own site post. It is attached to that post in the cjsax.com media library, and the poster carries the CJ SAX LIVE EVENTS watermark."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/Xaj1TW1i/soultown-02_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 31387237,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ The O2, 1920x1080, HD transcode. The original is soultown-02.mov (HEAD 200, video/quicktime, 103,429,481 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ The O2' in the playlist on CJ's own site and attached to that post in the media library."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/av6XBuiB/soultown-festival_m4v_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 27084757,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ Soultown Festival, 1920x1080, HD transcode. The original is soultown-festival.m4v (HEAD 200, video/mp4, 54,579,193 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ Soultown Festival' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/uCA5Wu4e/soultown-festival-2_m4v_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 26453740,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ The Garden Party, 1920x1080, HD transcode. The original is soultown-festival-2.m4v (HEAD 200, video/mp4, 57,772,235 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ The Garden Party' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/DY64LI5g/ashridge-house_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 22044004,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ The Banjo Wedding (file ashridge-house), about 34.5 s, 1920x1440 original, HD transcode. The original is ashridge-house.mov (HEAD 200, video/quicktime, 67,675,881 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ The Banjo Wedding' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/l03zYkWO/cj-botleys_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 34177262,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ Botley's Mansion, vertical 1080x1920, HD transcode. The original is cj-botleys.mov (HEAD 200, video/quicktime, 68,055,665 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ Botley's Mansion' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/vZWfvfOs/le-talbooth_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 21049074,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ Le Talbooth, vertical 1080x1920, HD transcode. The original is le-talbooth.mov (HEAD 200, video/quicktime, 48,872,757 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ Le Talbooth' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/cjhfiO7V/cj-o-beach_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 27594743,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ O Beach Ibiza, vertical 1080x1920, HD transcode. The original is cj-o-beach.mov (HEAD 200, video/quicktime, 47,901,961 bytes).",
+    "sourcePage": "https://cjsax.com/2012/10/09/13/",
+    "ownContentEvidence": "Titled 'CJ SAX @ O Beach Ibiza' in the playlist on CJ's own site."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/VcsR70uE/soultown-2022_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 31490624,
+    "publiclyFetchable": true,
+    "description": "CJ SAX DJ LIVE @ Soultown 2022, about 49.6 s, 1920x1080, HD transcode. The original is soultown-2022.mov (HEAD 200, video/quicktime, 54,999,705 bytes). It is in the media library only and not embedded on a current page.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title 'CJ SAX DJ LIVE @ Soultown 2022' on cjsax.com's own WordPress/VideoPress account."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/bdZoSUaV/maldives_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 24279138,
+    "publiclyFetchable": true,
+    "description": "'Billie Faiers Wedding' (Maldives), about 60 s, 1920x1080. A percussionist and CJ on sax play on an overwater deck. HD transcode; the original is maldives.mp4 (HEAD 200, video/mp4, 115,682,617 bytes). Media library only.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title on cjsax.com; the poster carries the CJ SAX LIVE EVENTS watermark. The packages page lists 'The Maldives – Billie & Greg's Wedding'."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/2PTWLksP/img_4014_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 26727990,
+    "publiclyFetchable": true,
+    "description": "CJ SAX DJ LIVE @ Soultown Festival, about 45 s, 1920x1080, HD transcode. The original is img_4014.mov (HEAD 200, video/quicktime, 44,807,411 bytes). A near-duplicate with the same title is at https://videos.files.wordpress.com/T31KGc0z/img_4016.mov (HEAD 200, video/quicktime, 44,881,331 bytes).",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title 'CJ SAX DJ LIVE @ Soultown Festival' on cjsax.com, attached to the showreel post (post 13)."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/3gVAWN2c/export_1674049374154_mov_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 20737324,
+    "publiclyFetchable": true,
+    "description": "CJ SAX DJ LIVE @ Gosfield Hall, about 60 s, vertical. A wedding dance floor under a chandelier; it is a TikTok export with a TikTok watermark. HD transcode; the original is export_1674049374154.mov (HEAD 200, video/quicktime, 37,897,498 bytes, 576x1024).",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title 'CJ SAX DJ LIVE @ Gosfield Hall' on cjsax.com; the TikTok watermark shows the @cj_sax handle."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/ujr3IWAj/export_1674049484539.mov",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 35775185,
+    "publiclyFetchable": true,
+    "description": "CJ SAX DJ LIVE @ Botley's Mansion, about 57 s, vertical 576x1024, a TikTok export.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title 'CJ SAX DJ LIVE @ Botley's Mansion' on cjsax.com."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/96tDhald/cj-ibiza-1.mov",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 32257417,
+    "publiclyFetchable": true,
+    "description": "CJ SAX @ Ibiza (on a boat), about 52 s, vertical 576x1024, a TikTok export. A byte-identical duplicate is at https://videos.files.wordpress.com/ONqyonxl/cj-ibiza.mov (HEAD 200, 32,257,417 bytes).",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media-library title 'CJ SAX @ Ibiza' on cjsax.com; the poster shows a TikTok @cj_sax watermark."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/MpVlyNeo/wedding-breakfast-botley.mov",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 49100401,
+    "publiclyFetchable": true,
+    "description": "Wedding Breakfast @ Botley's Mansion, about 45 s, vertical 1080x1920. Guests dance in the conservatory during the wedding breakfast.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Uploaded to cjsax.com on 2023-01-18 in the same batch as the 'CJ SAX @' clips. The title does not name the performer and the poster shows only guests, so attribution is moderately confident."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/ApnKRuG1/wedding-botleys-mansion-cj_m4v_hd.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 15479857,
+    "publiclyFetchable": true,
+    "description": "Untitled wedding clip at Botley's Mansion (file wedding-botleys-mansion-cj), about 60 s, 1920x1080. The poster shows the couple on a staircase. HD transcode; the original .m4v returns HEAD 200, video/mp4, 76,289,345 bytes.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "In cjsax.com's own media library with the CJ SAX LIVE EVENTS watermark. However, the performer is unclear: a sibling upload with the same date and filename stem, botleys-mansion-cj.m4v, is titled 'DJ Jack @ Botley's Mansion' (a network DJ). Treat it as business-branded footage, not certainly CJ performing."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/lPxpHqqq/wedding-1.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 69790487,
+    "publiclyFetchable": true,
+    "description": "Wedding party clip with sax under purple marquee lighting, about 40 s, 1920x1080. Its media-library title is the business's bookings email address. An identical-size duplicate is at https://videos.files.wordpress.com/s67efYDF/wedding.mp4 (HEAD 200, 69,790,487 bytes).",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "In cjsax.com's own media library; the poster shows a saxophonist on the dance floor with the CJ SAX LIVE EVENTS watermark."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/lCiMVqxM/wedding-2.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 23730791,
+    "publiclyFetchable": true,
+    "description": "'Wedding Planning and Event Management', about 60 s, 720x406 (low resolution). The poster frame shows a cake-cutting.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "In cjsax.com's own media library with the CJ SAX LIVE EVENTS watermark. The performer is not visible on the poster."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/hHgnxebS/cj-sax-live-brunch-__-chigwell-marquee-__-april-2019-2.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 40700369,
+    "publiclyFetchable": true,
+    "description": "CJ SAX LIVE BRUNCH at Chigwell Marquee, April 2019, about 60 s, 1920x1080. Two related 720x406 brunch clips: https://videos.files.wordpress.com/fVZi6T1u/joined_video_34a44aab4a614475bdbbd7366350edca.mp4 (200, 22,393,535 bytes) and https://videos.files.wordpress.com/DpRgRiWA/joined_video_21313bd40edd400a971a8c962b7e3c34.mp4 (200, 21,146,848 bytes).",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media title 'CJ SAX LIVE BRUNCH', CJ's own event brand, in cjsax.com's media library."
+   },
+   {
+    "url": "https://cjsax.com/wp-content/uploads/2019/01/img_8635.mov",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 15004196,
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE presents… Brunch!', 56 s, 1280x720, hosted directly in cjsax.com uploads.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Media title 'CJ SAX LIVE presents… Brunch!' in cjsax.com's own uploads."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/OeTp9mZT/dji_20250704_192619_968_video.mp4",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/mp4",
+    "bytes": 18721008,
+    "publiclyFetchable": true,
+    "description": "A 2025 vertical DJI clip, about 17.5 s, 1080x1920. The poster shows a mirror ball and lighting at a venue.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Uploaded to cjsax.com on 2025-07-23 alongside the equipment and destination photos. It is untitled and the performer is not visible, so it is unclear."
+   },
+   {
+    "url": "https://videos.files.wordpress.com/50m3qUs5/hover_20250705_1751727573417.mov",
+    "kind": "direct-file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 15756145,
+    "publiclyFetchable": true,
+    "description": "A 2025 vertical 'hover' camera clip, about 8 s, 1080x1920. The poster shows a decorated DJ booth set up at night.",
+    "sourcePage": "https://cjsax.com/wp-json/wp/v2/media?media_type=video&per_page=100",
+    "ownContentEvidence": "Uploaded to cjsax.com on 2025-07-23; it is untitled, so it is unclear."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=qo6glWqyBn4",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE - Wedding Movie', 2:25, about 2k views, about 8 years ago.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE, the channel linked from the cjsax.com header."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ABmqj4Y0uWk",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE', 1:00, about 1.2k views, about 8 years ago.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=Jk1fRBDzbcw",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE at The Hard Rock Hotel Ibiza for Tinie Tempah's Disturbing Ibiza Pool Party!', 0:26, about 19k views, about 11 years ago.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=FR6nHYW2DDI",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE at Ushuaïa Ibiza for Tinie Tempah's #DisturbingIbiza', 1:11, about 462 views, about 10 years ago.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=S1CWYi0hsrc",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE in Taormina, Sicily', 1:01, about 922 views, about 10 years ago.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=JU8JF7zGRAk",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'CJ SAX LIVE SESSIONS - 006 - Deep House Classics', a mix session, about 548 views, about 5 years ago. The channel grid shows no duration.",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE."
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=MaVhb0EYMbY",
+    "kind": "youtube",
+    "publiclyFetchable": true,
+    "description": "'Back to CJ's with Soultown Festival', 37:55, part of a stream/mix series. Other episodes: rPy0aTAvJXc (with Josh Hodges, La Fiesta, 30:10), Pj-CrBGvAdg (with DJ Max Denham, 1:01:49) and rtbx16ggGiY (with DJ Colin Francis, 57:53).",
+    "sourcePage": "https://www.youtube.com/@CJSAXLIVE/videos",
+    "ownContentEvidence": "Posted by @CJSAXLIVE as CJ's own 'Back to CJ's' series, which features guest DJs."
+   },
+   {
+    "url": "https://www.tiktok.com/@cj_sax/video/7547801132941249814",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "description": "'Day in the life of a wedding DJ 🎷 book now via www.cjsax.com #weddingdj #saxophonist #ukwedding #fyp #offleyplace'.",
+    "sourcePage": "https://cjsax.com/equipment-hire/",
+    "ownContentEvidence": "Embedded on CJ's own equipment page from @cj_sax (sound credit 'original sound – CJ SAX LIVE'). TikTok oEmbed returned HTTP 200 with a public player iframe."
+   },
+   {
+    "url": "https://www.tiktok.com/@cj_sax/video/7106781707906354438",
+    "kind": "tiktok",
+    "publiclyFetchable": true,
+    "description": "@cj_sax TikTok tagged #Sax #WeddingDJ #WeddingPlanner #WeddingEntertainment #CJSAX.",
+    "sourcePage": "https://cjsax.com/contact",
+    "ownContentEvidence": "Embedded on CJ's own contact page from @cj_sax. TikTok oEmbed returned HTTP 200 with a public player iframe."
+   },
+   {
+    "url": "https://www.instagram.com/reel/CiFNdjwstKj/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel embedded on the Mixes page.",
+    "sourcePage": "https://cjsax.com/listen/",
+    "ownContentEvidence": "The embed caption reads 'A post shared by • C J S A X L I V E • (@cj_sax)'. Instagram requires login, so it was not opened."
+   },
+   {
+    "url": "https://www.instagram.com/reel/ChSRsVZFefR/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel embedded on the Packages page.",
+    "sourcePage": "https://cjsax.com/packages/",
+    "ownContentEvidence": "The embed caption reads 'A post shared by • C J S A X L I V E • (@cj_sax)'."
+   },
+   {
+    "url": "https://www.instagram.com/reel/CelGW9eFEoe/",
+    "kind": "instagram",
+    "publiclyFetchable": false,
+    "description": "Instagram reel embedded on the Packages page.",
+    "sourcePage": "https://cjsax.com/packages/",
+    "ownContentEvidence": "The embed caption reads 'A post shared by • C J S A X L I V E • (@cj_sax)'."
+   }
+  ],
+  "socials": {
+   "facebook": "https://www.facebook.com/cj.sax.live",
+   "instagram": "https://www.instagram.com/cj_sax",
+   "tiktok": "https://www.tiktok.com/@cj_sax",
+   "youtube": "https://www.youtube.com/@CJSAXLIVE",
+   "vimeo": null,
+   "other": [
+    "https://open.spotify.com/user/1oxztw8o8uy127lnc0ylqfc03 (Spotify playlists, linked from the site header)",
+    "https://soundcloud.com/cjsaxlive (in the site JSON-LD sameAs and on the Linktree; returns 200, og:title 'CJ SAX LIVE')",
+    "https://www.mixcloud.com/cjsaxlive/ (on the Linktree; returns 200)",
+    "https://linktr.ee/cj_sax (linked from the YouTube channel description)",
+    "https://www.instagram.com/cjsaxlive_events (labelled 'Events Instagram' on the Linktree; also in the press pack and the site JSON-LD)",
+    "https://open.spotify.com/show/2KCRgR8rjymtl0swVNn0wf ('Back to CJ's' podcast on Spotify, from the Linktree)",
+    "https://podcasts.apple.com/gb/podcast/back-to-cjs/id1573434069 ('Back to CJ's' on Apple Podcasts; returns 200)",
+    "https://twitter.com/cj_sax (listed only in the site JSON-LD sameAs; not checked)"
+   ]
+  },
+  "tagline": "Based in London, creating vibes worldwide…",
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Private Parties"
+  ],
+  "eventTypesSourceUrl": "https://cjsax.com/",
+  "areasServed": [
+   "London",
+   "Essex",
+   "Dubai",
+   "Ibiza",
+   "Mallorca",
+   "Marbella",
+   "Monaco",
+   "Cannes",
+   "Amalfi Coast",
+   "Worldwide (destination events)"
+  ],
+  "areasSourceUrl": "https://cjsax.com/",
+  "industry": "entertainment",
+  "categories": [
+   "Saxophonist",
+   "DJs & Disco",
+   "Musician",
+   "Event Planning"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://cjsax.com/contact"
+  },
+  "gaps": [
+   "The establishment year 2010 is not confirmed. The site says only 'over a decade'. Its earliest WordPress media item and post are dated 9 Oct 2012, and the press pack cites the London 2012 Olympics. Wayback shows that cjsax.com in 2003–2005 was an unrelated 'Charles Johnson, Jr.' site. This business's site is first captured in May 2013 (titled 'CJ Turner'), and cjsax.co.uk from July 2013.",
+   "The prices conflict. The directory says '£750 per event', but the current cjsax.com packages start at £375 (recommended artists), £1,000 (CJ SAX LIVE) and £3,000 (CJ SAX DJ LIVE), each 'subject to date & location'. The directory figure is not on the business's own site.",
+   "The Booked Events listing shows 'Licenses & Insurance: No', but every cjsax.com package lists Public Liability Insurance. This needs confirming with the business.",
+   "The current site does not give CJ's full name. The 2013 site title 'CJ Turner' and the WordPress author slug 'cjturnersax' suggest a stage name, but no current page states it.",
+   "No street address or postcode is published. The directory says 'No Address' and the site says 'based in London'. Hints of an Essex connection: og:site_name mentions Essex, a 2013 Saxual Soirée night was at NuBar, Loughton, and the 2019 brunch videos are at Chigwell Marquee. No current page states a location in Essex.",
+   "No genuine SVG logo exists. /logo.svg returns 404, the media library has no SVG, and the inline SVGs are only icons. The favicon is a cropped photo. The best mark is the 2196x868 transparent PNG wordmark. A separate 'Saxual Soirée' logo (2013–2015 uploads) belongs to an older event night, not the main brand.",
+   "The Booked Events gallery images for this listing (openart-image_*_raw.jpg in /2024/12/) are AI-generated OpenArt images, not real photos of the business, and should not be used.",
+   "The equipment page's product imagery is manufacturer shots and should not be used as business photos.",
+   "Several photos show celebrities (Rio Ferdinand, Salt Bae, Tinie Tempah) and named private clients. Publishing them may need the business's permission or image-rights consideration.",
+   "Network-artist videos in the cjsax.com media library were excluded: DJ Sam, DJ Jack, DJ Brad (James), DJ Michael Green, Cam Bloomfield, Nick Da Funk, Tony Poole Discos, Magic Fingers, Becka Blanchard, Emilie Rachel, Nino Violin, Jade Michelle, Jocee & The Ways, Taet, Nina MiM, the 'CJ SAX LIVE – MAGICIAN' clip, a Frank Ocean violin cover, The Booth Collection / Chigwell Marquees clips, and the 'bookings' vocalist cover (somebody-else's-guy-1.mp4). That last one is branded but shows only a female vocalist.",
+   "Untitled or ambiguous videos with unverified ownership are not listed: img_8748, 8753, 9453, 9460 and 9462 .mov; 'Hedsor House' (export_1674049387922.mov); 7cd55cc0…mov; video_1.mov; hidden-brunch.mp4; 'Champagne Reception'; 'Wedding Breakfast @ Hengrave Hall'; img_8798.mp4; and 1080p-2.mov. The 'Magic Fingers Percussion' YouTube videos on CJ's channel feature a network percussionist.",
+   "Most CJ videos, apart from the 8-clip playlist on https://cjsax.com/2012/10/09/13/, are in the public WordPress media library but not embedded on any current page. That post also shows a Jetpack 'subscribe to keep reading' prompt; the press-pack image and playlist are in its public HTML, and nothing behind the prompt was accessed.",
+   "A plain request to Facebook (https://www.facebook.com/cj.sax.live) returned HTTP 400 with the title 'Error'. No content was obtained. The site JSON-LD also lists facebook.com/cjsaxlive, which was not checked; the header and Linktree link cj.sax.live / CJ.SAX.LIVE.",
+   "The TikTok profile returned public data: nickname 'CJ SAX LIVE', 1,214 followers, 47 videos, 10.7k likes. Only the two site-embedded videos were checked, both via oEmbed (200).",
+   "The weddings page (https://cjsax.com/weddings/) has no server-rendered content beyond its heading; it appears to be a client-side Instagram gallery.",
+   "No reviews or ratings were found on third-party platforms. The only testimonials are the site's own quotes (Jodie, Botley's Mansion; Ami, London). The repo's placeholder data (4.9 from 22 reviews, London, est. 2015, from £500) is not supported by any source."
+  ],
+  "instagramAccess": "One plain GET to https://www.instagram.com/cj_sax/ (desktop UA, no cookies) returned HTTP 200 with a ~505 KB JavaScript app shell. The title was the generic '<title>Instagram</title>', with no og:title or og:description profile metadata, and the page contained login prompts. The profile is effectively behind the login wall and was not retried. The handle @cj_sax is confirmed by the site's header links, by Instagram embeds on cjsax.com captioned '• C J S A X L I V E • (@cj_sax)', and by the Linktree. The second handle, @cjsaxlive_events, is confirmed on the Linktree and the press pack but was not requested."
+ }
+}

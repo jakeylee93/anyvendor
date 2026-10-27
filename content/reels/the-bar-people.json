@@ -1,0 +1,72 @@
+{
+  "slug": "the-bar-people",
+  "fade": 0.6,
+  "segments": [
+    {
+      "file": ".media-work/the-bar-people/vid03-539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/539E27A6-7C25-4300-9C2C-C686AF260661.mp4",
+      "start": 1.7,
+      "dur": 2.5,
+      "fx": 0.45,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Busy mobile bar in a marquee: copper and gold tins, garnishes and guests (Event Management page video)"
+    },
+    {
+      "file": ".media-work/the-bar-people/vid04-DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/DA9DA527-0A47-4296-A375-B81576469EF6.mp4",
+      "start": 6.16,
+      "dur": 2.0,
+      "fx": 0.45,
+      "fy": 0.5,
+      "mfx": 0.41,
+      "mfy": 0.5,
+      "note": "Bartender in a Bar People badge shirt shaking a cocktail (Cash Bar Hire page video); trim verified frame-accurate inside one shot"
+    },
+    {
+      "file": ".media-work/the-bar-people/vid02-0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "start": 0.05,
+      "dur": 2.35,
+      "fx": 0.45,
+      "fy": 0.5,
+      "mfx": 0.3,
+      "mfy": 0.5,
+      "note": "Overhead view of staff serving guests along a long white bar (Dry Hire page video)"
+    },
+    {
+      "file": ".media-work/the-bar-people/vid01-928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "start": 12.6,
+      "dur": 2.2,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Garnishing cocktails in mixing tins, badge shirt visible (All Inclusive Hire page video)"
+    },
+    {
+      "file": ".media-work/the-bar-people/vid02-0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/0D33919A-5B93-476E-A30A-5A3B43627E28.mp4",
+      "start": 9.3,
+      "dur": 2.05,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.53,
+      "mfy": 0.5,
+      "note": "Bar team at work under festoon lights at a large event (Dry Hire page video)"
+    },
+    {
+      "file": ".media-work/the-bar-people/vid01-928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "url": "https://thebarpeople.co.uk/wp-content/uploads/2024/05/928EF2CB-12C4-479E-A57A-7CD47CD9E6C2.mp4",
+      "start": 7.45,
+      "dur": 2.1,
+      "fx": 0.42,
+      "fy": 0.5,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Martinis handed across the bar (All Inclusive Hire page video)"
+    }
+  ]
+}

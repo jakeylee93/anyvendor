@@ -1,0 +1,68 @@
+{
+  "slug": "meatstop",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://video.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/e1f84f74-3b27-4c43-ace2-871ea4abec36/playlist.m3u8",
+      "durationSec": 2.2,
+      "kind": "video",
+      "startSec": 10.45,
+      "endSec": 12.65,
+      "note": "MEAT STOP homepage background video: a finished double cheeseburger with sauce on a brioche bun, on a steel counter."
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/0e8c04de-f025-4a3a-9597-7ddd14f89485/WhatsApp+Image+2024-07-09+at+10.17.34.jpeg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "MEAT STOP catering page photo: a chef in a MEAT STOP apron lifts a rack of smoking ribs at an outdoor gazebo grill."
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/44f81640-88df-4256-9a02-6a4b72dddc18/WhatsApp+Image+2025-03-20+at+12.26.52.jpeg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "MEAT STOP homepage photo: a bacon double cheeseburger on a grey studio backdrop."
+    },
+    {
+      "sourceUrl": "https://www.tiktok.com/@meatstop_/video/7121257136235040006",
+      "durationSec": 2.1,
+      "kind": "video",
+      "startSec": 29.05,
+      "endSec": 31.15,
+      "note": "MEAT STOP TikTok 'The Original Nutta': a cloche is lifted on the griddle to reveal melted cheese and bacon on a patty."
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/f13ecc96-bdf4-4367-8d6d-d256b7302e66/WhatsApp+Image+2024-07-09+at+10.17.33.jpeg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "MEAT STOP homepage photo: a gloved team member holds out a cheeseburger under a gazebo at an outdoor event."
+    },
+    {
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/668c009ec8f5ef57a5c3a8d7/bc49a4a0-a2e5-4217-98ae-b85d7d56bf4d/Screenshot+2025-05-21+at+19.29.47.png",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "MEAT STOP homepage photo: overhead view of a steel tray with two burgers, a taco-style item and loaded skins on MEAT STOP-branded paper."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/meatstop/reel-desktop.mp4",
+      "poster": "/media/meatstop/poster-desktop.jpg",
+      "posterWebp": "/media/meatstop/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 11.1,
+      "bytes": 1360075
+    },
+    "mobile": {
+      "video": "/media/meatstop/reel-mobile.mp4",
+      "poster": "/media/meatstop/poster-mobile.jpg",
+      "posterWebp": "/media/meatstop/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 11.1,
+      "bytes": 1390130
+    }
+  }
+}

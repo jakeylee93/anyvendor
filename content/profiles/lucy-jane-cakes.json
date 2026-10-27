@@ -1,0 +1,113 @@
+{
+ "slug": "lucy-jane-cakes",
+ "displayName": "Lucy Jane Cakes",
+ "tagline": null,
+ "intro": "Lucy Jane Cakes is a cake maker whose TikTok bio gives London as its base, with some videos tagged for Essex. PEOPLE has called the baker behind it a buttercream specialist. Its videos show heart, character, photo and bento cakes; orders are by Instagram message.",
+ "about": [
+  "The TikTok bio for Lucy Jane Cakes gives London as its location. In February 2025 PEOPLE referred to 'the buttercream specialist behind Lucy Jane Cakes' and reported that she had baked her entire life and began selling cakes professionally in 2016. Her video captions use hashtags for both London and Essex, including #londoncakes, #lambethcake, #southwoodford and #essexcakes.",
+  "The same article reported that she made seven cakes for her own wedding in London on 7 December 2024. The main cake was a three-tier classic vanilla sponge, the other six were each a different flavour, and all seven were finished two days before the wedding. She also told the story of making them in a TikTok video.",
+  "Alongside finished cakes, the TikTok account @lucy_jane_cakes has posted baking and decorating how-to videos. These include a photo-cake tutorial that names the Wilton 199 and Jen 2ES nozzles she used, along with tips on getting a level rise in 6-inch PME tins and on freezing leftover cake slices.",
+  "Lucy Jane Cakes does not appear to have its own website and publishes no prices. Its TikTok bio reads 'Lucy Jane Cakes / London / Message on Instagram for orders', so enquiries about a cake for an event go by direct message to @lucy_jane_cakes on Instagram."
+ ],
+ "services": [
+  {
+   "name": "Buttercream cakes",
+   "description": "PEOPLE has called the baker 'the buttercream specialist behind Lucy Jane Cakes' and reported that she began selling cakes professionally in 2016. No prices are published."
+  },
+  {
+   "name": "Heart cakes",
+   "description": "A TikTok video captioned 'ALL THE PINKS' and tagged #heartcake has a cover showing a two-tier smooth pink cake on a turntable. The caption credits the toppers to an outside supplier."
+  },
+  {
+   "name": "Themed and character cakes",
+   "description": "Her videos show themed and character designs. Examples are a red and blue Spider-Man buttercream cake posted in May 2024 and a cowgirl cake with disco-ball decorations from March 2025."
+  },
+  {
+   "name": "Photo cakes",
+   "description": "She has posted a how-to video on making a photo cake, which names the Wilton 199 and Jen 2ES nozzles she used."
+  },
+  {
+   "name": "Bento cakes",
+   "description": "Small bento cakes appear in a 'Bento Love' TikTok video from March 2025, tagged #bentocake and #londoncake."
+  }
+ ],
+ "eventTypes": [],
+ "areasServed": [
+  "London",
+  "Essex"
+ ],
+ "website": null,
+ "socials": {
+  "instagram": "https://www.instagram.com/lucy_jane_cakes/",
+  "tiktok": "https://www.tiktok.com/@lucy_jane_cakes",
+  "facebook": null,
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Began selling cakes professionally in 2016, according to PEOPLE",
+  "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+ },
+ "basedIn": {
+  "text": "London",
+  "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "An older directory listing gives Essex and a founding year of 2014, but the TikTok bio says London and PEOPLE reports that she began selling cakes professionally in 2016; the Lucy Jane Cake Company in Milton Keynes is a different business."
+ },
+ "sources": [
+  {
+   "label": "Lucy Jane Cakes — TikTok profile",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes"
+  },
+  {
+   "label": "PEOPLE via AOL — Bride bakes 7 cakes for her wedding",
+   "url": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+  },
+  {
+   "label": "Lucy Jane Cakes — 'ALL THE PINKS' heart cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7415537464040885537"
+  },
+  {
+   "label": "Lucy Jane Cakes — 'Rainbows and unicorns' cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7283858750279028001"
+  },
+  {
+   "label": "Lucy Jane Cakes — Spider-Man cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7372276808340884769"
+  },
+  {
+   "label": "Lucy Jane Cakes — Cowgirl cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7486597708946492694"
+  },
+  {
+   "label": "Lucy Jane Cakes — How to make a photo cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511"
+  },
+  {
+   "label": "Lucy Jane Cakes — 'Bento Love' bento cake (TikTok)",
+   "url": "https://www.tiktok.com/@lucy_jane_cakes/video/7477280087339994390"
+  }
+ ],
+ "gaps": [
+  "No official website. Orders are taken by Instagram message, and no public email or phone number is published.",
+  "No prices are published.",
+  "Exact base town not verified. The TikTok bio says London, but an older directory listing says Essex, and video hashtags mention both London (Lambeth, South Woodford) and Essex.",
+  "Founding year conflict: an older directory listing says 2014, but PEOPLE reports she began selling cakes professionally in 2016.",
+  "The business does not say which events it caters for. Wedding cakes for clients are not confirmed, because the wedding cakes reported were for her own wedding.",
+  "The Instagram bio and posts cannot be viewed without logging in, so details there could not be checked.",
+  "No official Facebook page or YouTube channel could be confirmed.",
+  "Flavour range, dietary or allergen options, lead times, and delivery or collection arrangements could not be verified."
+ ],
+ "taxonomy": {
+  "industry": "food-services",
+  "categories": [
+   "Cake Maker"
+  ],
+  "eventTypes": [],
+  "sourceUrl": "https://www.aol.com/bride-bakes-7-cakes-her-192416242.html"
+ }
+}

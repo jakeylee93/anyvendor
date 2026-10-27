@@ -1,0 +1,133 @@
+{
+ "slug": "tm-event-hire",
+ "displayName": "TM Event Hire",
+ "tagline": "Quality Event Equipment & Marquee Hire For Events, Weddings & Parties",
+ "intro": "TM Event Hire is an Essex marquee and event equipment hire company, supplying clear-span and pagoda marquees, mobile bars, furniture, catering equipment and tableware for weddings, parties and corporate events across Essex, London and Hertfordshire.",
+ "about": [
+  "TM Event Hire is a marquee and event equipment hire company based in Barnston, Dunmow, in Essex. According to the business, director Thomas Mclean founded it in 2013, initially specialising in catering equipment, tableware and glassware hire, and it previously traded as TM Catering Hire. His younger brother Michael Mclean joined in 2014 and became joint owner and chief of operations: Thomas looks after sales and customers, while Michael makes sure events are organised and equipment arrives on time.",
+  "Today the range runs from clear-span and Chinese hat marquees to mobile bars, furniture, kitchen equipment and tableware, for weddings, private and public events, corporate functions, birthdays and more. The team delivers, sets up, de-rigs and collects across Essex, London and Hertfordshire, seven days a week, and says its prices include delivery, setup and pickup. They describe themselves as a member of the Event Hire Association with over 10 years of experience in the events, catering and wedding industries.",
+  "For marquees, the process starts with a site visit, and a 25% non-refundable deposit secures the booking. Equipment is installed one to three days before the event and collected the day after. Beyond weddings and parties, they supply equipment for conferences, music festivals, awards ceremonies, fun fairs, farmers' markets and sporting events, as well as funeral and wake gatherings. Their mobile bars are hired as equipment only, without alcohol or staff."
+ ],
+ "services": [
+  {
+   "name": "Clear-Span Marquee Hire",
+   "description": "Modular marquees with no centre poles or guy ropes, suited to gardens, paving, shingle or decking. White or transparent walls, with options including festoon lights, carpet, transparent roofs, black-out ceilings and heaters."
+  },
+  {
+   "name": "Chinese Hat (Pagoda) Marquee Hire",
+   "description": "Curved-roof pagoda marquees with fabric linings, used alone for garden parties, doubled or tripled up, or added to a larger marquee as a catering tent or grand entrance. Dance floors, coconut matting and festoon lighting are available."
+  },
+  {
+   "name": "Mobile Bar Hire",
+   "description": "LED straight, circular mirror, circular LED and wooden straight bars, with stools, glassware and refrigeration also available. Delivered the day before and collected the day after; equipment only, with no alcohol or staff."
+  },
+  {
+   "name": "Furniture Hire",
+   "description": "Limewash Chiavari and wooden folding chairs, round banquet and trestle tables, poser tables with stools, and white cubes, sofas, armchairs and coffee tables, delivered and collected across Essex, London and Hertfordshire."
+  },
+  {
+   "name": "Kitchen Equipment & Tableware Hire",
+   "description": "Industrial-grade catering equipment, including a six-ring gas oven, hot cupboard, gas BBQ, double fryer, drinks and bar fridges, water urn and chafing dishes, plus crockery, glassware and cutlery with a wash-up service (a 25% charge is added to tableware orders)."
+  },
+  {
+   "name": "Themed Event Packages",
+   "description": "Themed hire packages for white, boho/rustic and Indian weddings, and for toddlers' parties, 18ths and 21sts, milestone birthdays and nightclub-style parties, plus small and large funeral and wake packages."
+  }
+ ],
+ "eventTypes": [
+  "Weddings",
+  "Birthday Parties",
+  "Baby Showers",
+  "Anniversaries",
+  "Corporate Events",
+  "Private Parties",
+  "Garden Parties",
+  "Festivals"
+ ],
+ "areasServed": [
+  "Essex",
+  "London",
+  "Hertfordshire"
+ ],
+ "website": "https://tmeventhire.co.uk/",
+ "socials": {
+  "facebook": "https://www.facebook.com/tmeventhire/",
+  "instagram": "https://www.instagram.com/tm_event_hire/",
+  "tiktok": "https://www.tiktok.com/@tmeventhire",
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": {
+  "label": "Founded 2013",
+  "sourceUrl": "https://tmeventhire.co.uk/about/"
+ },
+ "basedIn": {
+  "text": "Barnston, Dunmow, Essex",
+  "sourceUrl": "https://tmeventhire.co.uk/about/"
+ },
+ "price": null,
+ "identity": {
+  "confidence": "high",
+  "note": "The business previously traded as TM Catering Hire and trades through T MCL Catering Hire Limited; its own site says it was founded in 2013, while that limited company was incorporated in June 2015."
+ },
+ "sources": [
+  {
+   "label": "TM Event Hire — Home",
+   "url": "https://tmeventhire.co.uk/"
+  },
+  {
+   "label": "TM Event Hire — About",
+   "url": "https://tmeventhire.co.uk/about/"
+  },
+  {
+   "label": "TM Event Hire — Marquee Hire",
+   "url": "https://tmeventhire.co.uk/services/marquees/"
+  },
+  {
+   "label": "TM Event Hire — Chinese Hat Hire",
+   "url": "https://tmeventhire.co.uk/services/chinese-hats/"
+  },
+  {
+   "label": "TM Event Hire — Mobile Bar Hire",
+   "url": "https://tmeventhire.co.uk/services/bars/"
+  },
+  {
+   "label": "TM Event Hire — Weddings",
+   "url": "https://tmeventhire.co.uk/event-themes/weddings/"
+  },
+  {
+   "label": "TM Event Hire — Corporate Events",
+   "url": "https://tmeventhire.co.uk/event-themes/corporate-events/"
+  },
+  {
+   "label": "Companies House — T MCL Catering Hire Limited",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09643286"
+  }
+ ],
+ "gaps": [
+  "No hire prices are published on the service pages; the mobile bar FAQ asks customers to get in touch for a full price list. The only charges stated there are the 25% non-refundable marquee deposit and the 25% tableware washing-up charge.",
+  "The founding date varies between sources: the business says 2013, its former X account dates from June 2014, and T MCL Catering Hire Limited was incorporated in June 2015.",
+  "Insurance, licences, maximum guest capacity and cancellation terms could not be confirmed. The terms-and-conditions PDF linked from the site is issued under the former TM Catering Hire name and is an unfinished template with placeholder fields, so it was not treated as current terms.",
+  "Instagram and Facebook content could not be viewed without logging in, and individual TikTok videos could not be listed.",
+  "No official YouTube or Vimeo account was found; the site's marquee videos are hosted on its web designer's Vimeo account."
+ ],
+ "taxonomy": {
+  "industry": "decor-ambiance",
+  "categories": [
+   "Marquees",
+   "Mobile Bars"
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties",
+   "Baby Showers",
+   "Anniversaries",
+   "Corporate Events",
+   "Private Parties",
+   "Garden Parties",
+   "Festivals"
+  ],
+  "sourceUrl": "https://tmeventhire.co.uk/"
+ }
+}

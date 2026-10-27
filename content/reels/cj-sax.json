@@ -1,0 +1,71 @@
+{
+  "slug": "cj-sax",
+  "fade": 0.6,
+  "segments": [
+    {
+      "file": ".media-work/cj-sax/vid08-soultown-2022_mov_hd.mp4",
+      "url": "https://videos.files.wordpress.com/VcsR70uE/soultown-2022_mov_hd.mp4",
+      "start": 23.4,
+      "dur": 2.8,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.19,
+      "mfy": 0.5,
+      "note": "CJ SAX DJ LIVE @ Soultown 2022: CJ playing gold sax at the DJ booth, festival crowd behind"
+    },
+    {
+      "file": ".media-work/cj-sax/orig-cj-o-beach.mov",
+      "url": "https://videos.files.wordpress.com/cjhfiO7V/cj-o-beach.mov",
+      "start": 37.0,
+      "dur": 2.8,
+      "fx": 0.5,
+      "fy": 0.53,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "CJ SAX @ O Beach Ibiza: CJ at the decks, arm raised to a daytime pool-party crowd"
+    },
+    {
+      "file": ".media-work/cj-sax/orig-cj-botleys.mov",
+      "url": "https://videos.files.wordpress.com/l03zYkWO/cj-botleys.mov",
+      "start": 18.0,
+      "dur": 2.4,
+      "fx": 0.5,
+      "fy": 0.34,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "CJ SAX @ Botley's Mansion: CJ playing sax on a wedding dance floor among guests with LED foam sticks"
+    },
+    {
+      "file": ".media-work/cj-sax/vid01-soultown-02_mov_hd.mp4",
+      "url": "https://videos.files.wordpress.com/Xaj1TW1i/soultown-02_mov_hd.mp4",
+      "start": 10.4,
+      "dur": 2.4,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.47,
+      "mfy": 0.5,
+      "note": "CJ SAX @ The O2: CJ walking the stage with his sax in front of an arena crowd"
+    },
+    {
+      "image": ".media-work/cj-sax/still-IMG_6814-2-2560.jpg",
+      "url": "https://cjsax.com/wp-content/uploads/2025/07/IMG_6814-2.JPG",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.72,
+      "mfy": 0.5,
+      "note": "Photo still (downscaled to 2560 px): CJ playing sax standing in shallow water at a pool edge"
+    },
+    {
+      "file": ".media-work/cj-sax/vid04-ashridge-house_mov_hd.mp4",
+      "url": "https://videos.files.wordpress.com/DY64LI5g/ashridge-house_mov_hd.mp4",
+      "start": 20.3,
+      "dur": 2.5,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "CJ SAX @ The Banjo Wedding: packed wedding dance floor with hands in the air in a wood-panelled room"
+    }
+  ]
+}

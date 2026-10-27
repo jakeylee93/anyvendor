@@ -1,0 +1,67 @@
+{
+  "slug": "jamie-roche",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "image": ".media-work/jamie-roche/reel/still-img02.jpg",
+      "url": "https://i.ytimg.com/vi/drMAH8eFYi4/maxresdefault.jpg",
+      "dur": 2.8,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Thumbnail frame of his own-channel video 'The Green Fields Of France | Live @ St Mary Magdalene Church, Enfield' (https://www.youtube.com/watch?v=drMAH8eFYi4; videography Max Bandicoot): Jamie singing at the mic with his guitar. 1280x720 source upscaled 2x with Lanczos."
+    },
+    {
+      "image": ".media-work/jamie-roche/reel/still-img07.jpg",
+      "url": "https://i.ytimg.com/vi/Q8CHA6G6Abg/maxresdefault.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.58,
+      "mfy": 0.5,
+      "note": "Thumbnail frame of his own-channel video 'The Tide | Live @ Painter Studios | London' (https://www.youtube.com/watch?v=Q8CHA6G6Abg; video by Christopher Painter): black-and-white shot of Jamie playing acoustic guitar at a mic. 1280x720 source upscaled 2x."
+    },
+    {
+      "image": ".media-work/jamie-roche/reel/still-img05.jpg",
+      "url": "https://i.ytimg.com/vi/aW_3BWmWTkI/maxresdefault.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.58,
+      "mfy": 0.5,
+      "note": "Thumbnail frame of his own-channel video 'Wicked Game | Sixty Sixty Sounds' (https://www.youtube.com/watch?v=aW_3BWmWTkI): Jamie singing in front of a wall of guitars. 1280x720 source upscaled 2x."
+    },
+    {
+      "image": ".media-work/jamie-roche/reel/still-img00.jpg",
+      "url": "https://bookedevents.co.uk/wp-content/uploads/2024/12/jamie_roche_thumb.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.36,
+      "mfx": 0.49,
+      "mfy": 0.5,
+      "note": "His Booked Events listing photo: seated on stage playing an acoustic guitar into a mic. 1000x800 source upscaled 2x; a 96 px mirrored strip of the dark wall was added above so the slow push-in does not clip his hair."
+    },
+    {
+      "image": ".media-work/jamie-roche/reel/still-img03.jpg",
+      "url": "https://i.ytimg.com/vi/_CEzdGc6tMw/maxresdefault.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.52,
+      "mfy": 0.5,
+      "note": "Thumbnail frame of his own-channel video 'Such A Simple Thing | St John's Church, Hoxton' (https://www.youtube.com/watch?v=_CEzdGc6tMw): Jamie singing with an acoustic guitar at a studio mic. 1280x720 source upscaled 2x."
+    },
+    {
+      "image": ".media-work/jamie-roche/reel/still-img04.jpg",
+      "url": "https://i.ytimg.com/vi/jVrJUBJm75w/maxresdefault.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.44,
+      "mfy": 0.5,
+      "note": "Thumbnail frame of his own-channel video 'Amsterdam' cover (https://www.youtube.com/watch?v=jVrJUBJm75w): Jamie in a flat cap singing with a guitar. 1280x720 source upscaled 2x."
+    }
+  ]
+}

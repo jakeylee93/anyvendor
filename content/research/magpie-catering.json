@@ -1,0 +1,354 @@
+{
+ "slug": "magpie-catering",
+ "verdict": "corrected",
+ "identityConfidence": "high",
+ "problemsFound": [
+  "Gap claiming curl/HEAD gets 'Empty reply from server' is out of date. On 2026-10-27, plain curl with a desktop UA returned HTTP 200 for the homepage and all subpages, and 200/206 with correct image content-types for every logo and photo URL. Live status, type and dimensions were verified directly, so that gap was removed.",
+  "The case-studies about item cited /seated-meals/ for everything. Only the Alleyn Court ball (224 guests, 2010) is there. The 122- and 113-guest marquee weddings (Ingatestone Hall) are on /weddings/, and the 170-guest Beaconsfield venue-opening lunch (5 June 2009) is on /corporate-events/. Split the item and fixed the sources.",
+  "The wedding service merged two pages. Themed weddings and glassware/cutlery/tableware/linen options come from the /weddings/ events page, not /menus/weddings/. The quoted tasting term was cut short. The full text is 'The tasting is complimentary for the bride and groom (there is an additional charge for extra guests) for weddings over 60 guests'. The menu included-list also covers glassware up to speeches, beverage staff up to speeches and a full kitchen team.",
+  "Images: the claim that 'apart from alleyn-court-025 no landscape photo of Magpie's work above 1200px was found' is false. The WP media library and gallery hold own landscape shots 2017-03-16-PHOTO-00000030.jpg (1600x1200, prawn and mango skewers) and 2017-03-16-PHOTO-00000037-1.jpg (1276x500, mezze dips board). Also missed: higher-res own images mezze.jpg (1200x1600), PHOTO-00000039 (1112x1600), an Instagram-origin dessert photo (1080x1080) and Special-Events.jpg (896x896). The image list was rebuilt around these.",
+  "alleyn-court-025.jpg is not just a March 2024 Wayback file. It is live (HTTP 200, image/jpeg, 1,725,590 bytes, 2592x1944) and is used on the live Links page (/about-us/links/) as the background image for the Castle Marquees partner entry. The sourcePage was changed from the Wayback URL to the live Links page. It stays 'unclear' because it illustrates a marquee supplier's listing.",
+  "Logos: a larger icon mark was missed. favoicon.png (the original 512x512 RGBA upload, transparent corners) and cropped-favoicon.png (512x512) sit in /wp-content/uploads/2023/04/ and beat the 270px variant. The wordmark purple measures about #5F2573 (rgb 95,37,115), not #5B2172. No SVG was found again: no inline <svg> on any page, /logo.svg and theme svg guesses returned 404, and the WP media library has no svg mime type.",
+  "Socials: x.com/Magpie_Catering is not linked from the business's site and was not verified, so it was removed from socials (noted in gaps). twitter.com/MagpieCatering1 is confirmed as linked from the Jan 2014 Wayback capture of magpiecatering.com, so it is kept as historical. The live site links Facebook as en-gb.facebook.com/MagpieCateringPage/.",
+  "The FSA rating gap is now resolved. The FSA register (FHRSID 716530) lists 'Magpie Catering', Unit 4 Hastingwood Business Centre, Willow Place, Harlow CM17 9GD, business type Mobile caterer, rating 5, inspected 19 January 2026, Epping Forest. Added as an about fact and as identity evidence.",
+  "Identity evidence overstated Wayback: the earliest capture is 15 April 2005 (title 'Magpie catering – Home'), but continuous use was not verified. Facebook search-result claims could not be re-verified (one plain GET returned HTTP 400).",
+  "Establishment-year conflict was understated. The homepage body also says 'recognised throughout the South East ... since 1985' (not only the footer). The About page adds that Elizabeth Joyce won a Young Business Person of the Year award in 1997 for The Magpies Nest Restaurant, Epping and her outside catering service, which conflicts with a 1985 start.",
+  "Companies House detail added: previous name VELLVEDA ASSOCIATES LTD (4 Apr 2007 – 13 May 2008), registered office 5 Ducketts Wharf, South Street, Bishops Stortford CM23 3AR, secretary Robert Webb, active director Elizabeth Jane Joyce.",
+  "The mezze description was wrong. The menu is 'Sharing Boards - Choice of 5', meaning choose five items from cold and hot sharing-board lists, not five boards.",
+  "eventTypesSourceUrl (homepage) does not support every mapped type. Product Launches come from /corporate-events/, Garden Parties from the reunion case study on /special-events/, and Private Parties from /private-fine-dining/. Recorded in gaps."
+ ],
+ "record": {
+  "slug": "magpie-catering",
+  "displayName": "Magpie Catering",
+  "tagline": "Specialist Event Catering Services",
+  "identity": {
+   "officialWebsite": "https://www.magpiecatering.com/",
+   "confidence": "high",
+   "alternateNames": [
+    "Magpie Catering Ltd",
+    "Magpie Catering Limited",
+    "Vellveda Associates Ltd (company's former registered name, 2007–2008)"
+   ],
+   "evidence": "The live homepage footer (fetched with curl on 2026-10-27, HTTP 200) gives exactly the directory address: 'Unit 4, Hastingwood Business Centre, Hastingwood, Essex CM17 9GD'. The trade matches: the site says 'Magpie Catering are a professional events catering service ... Based in Hastingwood, Essex serving the South East of England.' The FSA food hygiene register (FHRSID 716530) lists 'Magpie Catering' at Unit 4 Hastingwood Business Centre, Willow Place, Harlow CM17 9GD as a mobile caterer. Companies House lists MAGPIE CATERING LIMITED (06203649), active, SIC 56210 Event catering activities, incorporated 4 April 2007 (formerly Vellveda Associates Ltd until May 2008). Its active director is Elizabeth Jane Joyce, matching 'Elizabeth Joyce, Managing Director' quoted on the homepage. Wayback captures of magpiecatering.com go back to April 2005. The Jan 2014 capture links twitter.com/MagpieCatering1 and a Facebook page titled 'Hastingwood/Magpie-Catering'. The year differs across the site: About says 'since 1995' (matches the directory), the homepage body and footer say 1985, and the MD quote says 1994. Namesakes ruled out: Magpie Café (Whitby), Magpie (Heddon St, London), The Magpie Bakery (US), Magpie Sacramento, Two Magpies Bakery."
+  },
+  "about": [
+   {
+    "text": "Magpie Catering describes itself as a professional events catering service based in Hastingwood, Essex, serving the South East of England.",
+    "sourceUrl": "https://www.magpiecatering.com/"
+   },
+   {
+    "text": "It offers outside catering for weddings, gala dinners, business lunches, corporate events, conferences, birthdays, anniversary parties, funerals, christenings, reunions, graduations and other celebrations. Menu styles include canapés, bowl food, buffets, BBQs, mezze, seated meals and private fine dining.",
+    "sourceUrl": "https://www.magpiecatering.com/"
+   },
+   {
+    "text": "Managing Director Elizabeth Joyce says the business grew out of a restaurant she part-owned with her father. It started by catering small weddings and events such as funerals.",
+    "sourceUrl": "https://www.magpiecatering.com/"
+   },
+   {
+    "text": "The About page names that restaurant as The Magpies Nest Restaurant, Epping. It says Elizabeth (Lizzy) Joyce won a Young Business Person of the Year award in 1997 at the Essex Business Excellence Awards (NatWest Bank and Epping Forest District Council), for the restaurant and her outside catering service.",
+    "sourceUrl": "https://www.magpiecatering.com/about-us/"
+   },
+   {
+    "text": "The About page says Magpie has catered throughout the South East since 1995. It caters at any venue, marquee or home, for any occasion and any number of guests.",
+    "sourceUrl": "https://www.magpiecatering.com/about-us/"
+   },
+   {
+    "text": "Service ranges from delivered buffets to fully staffed, managed events, and the company brings all the catering equipment needed. Weddings and large events are offered a pre-event tasting, and regular corporate clients can ask for a sample buffet.",
+    "sourceUrl": "https://www.magpiecatering.com/about-us/"
+   },
+   {
+    "text": "The About page lists the team: an operations and executive events manager (since 2008), an events manager and chef (since 2009), a head chef (with Magpie since 1998), a chef and an office manager. Waiting staff are trained in-house and work in uniform.",
+    "sourceUrl": "https://www.magpiecatering.com/about-us/"
+   },
+   {
+    "text": "Seated-meal dishes are designed to work on location, from a small dinner party to a ball for 2,000. Menus include qualified chefs, personal events managers, trained waiting staff, cutlery, china, table laying and table plans.",
+    "sourceUrl": "https://www.magpiecatering.com/seated-meals/"
+   },
+   {
+    "text": "The company describes its menus as globally influenced (English, Asian, Italian, French and others) with a modern approach. It says it follows food trends and researches new products at trade and food shows.",
+    "sourceUrl": "https://www.magpiecatering.com/special-events/"
+   },
+   {
+    "text": "A seated-meals case study covers the Alleyn Court Preparatory School Summer Ball 2010 in Southend-on-Sea: a champagne and canapé reception and a three-course seated meal for 224 guests.",
+    "sourceUrl": "https://www.magpiecatering.com/seated-meals/"
+   },
+   {
+    "text": "Wedding case studies include marquee weddings for 122 day guests and for 113 guests, the latter at Ingatestone Hall. A third is a 114-guest seated wedding at Sutton Hall Farm, Rochford.",
+    "sourceUrl": "https://www.magpiecatering.com/weddings/"
+   },
+   {
+    "text": "A corporate case study covers a celebrity venue-opening lunch on 5 June 2009 in a marquee at a new corporate building in Beaconsfield, Bucks. Canapés and bowl food were served to 170 guests.",
+    "sourceUrl": "https://www.magpiecatering.com/corporate-events/"
+   },
+   {
+    "text": "The FSA food hygiene register lists Magpie Catering (Unit 4 Hastingwood Business Centre, CM17 9GD) as a mobile caterer with a food hygiene rating of 5. The latest inspection was on 19 January 2026.",
+    "sourceUrl": "https://ratings.food.gov.uk/business/716530"
+   },
+   {
+    "text": "The operating company, Magpie Catering Limited (company no. 06203649), is active and was incorporated on 4 April 2007. Its nature of business is event catering activities (SIC 56210).",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/06203649"
+   }
+  ],
+  "services": [
+   {
+    "name": "Wedding catering",
+    "description": "Weddings come with a personalised menu, ranges of glassware, cutlery, tableware and linen, menu tasting and full event management. Themed weddings range from traditional English country garden to East End or modern contemporary.",
+    "sourceUrl": "https://www.magpiecatering.com/weddings/"
+   },
+   {
+    "name": "Wedding menus",
+    "description": "Wedding menus cover cold and hot canapés, starters, mains, a children's menu, desserts and trios of dessert, and evening buffets A–M (including bagels, street food, bowl food, deli and BBQ). Included: a three-course sit-down meal with coffee and luxury chocolates, pre-ordered menu choice, a dietary/allergen option, cutlery, crockery, glassware up to speeches, a personal events manager, waiting and beverage staff up to speeches, a full kitchen team, and laying up of the room or marquee. Published terms (verbatim): \"This pricing structure is based on events over 40 guests. Please ask for a bespoke quotation for numbers below 40 guests.\" and \"The tasting is complimentary for the bride and groom (there is an additional charge for extra guests) for weddings over 60 guests\". Linen, kitchen equipment hire and after-dinner drinks service are extra. No per-head price is published.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/weddings/"
+   },
+   {
+    "name": "Seated menus (summer balls, gala dinners, corporate)",
+    "description": "A bespoke seated menu (Options A, B and C) with a canapé selection and gluten- and dairy-free alternatives. Included: a three-course meal with coffee and luxury chocolates, cutlery, crockery, a personal events manager, waiting staff, beverage staff for reception drinks, a full kitchen team, and laying up of the room or marquee. Published price text (verbatim): Fillet Steak main \"@ £4.00 per person extra\"; \"This pricing structure is based on events of 60 guests. Please ask for a bespoke quotation for numbers above or below\". Linen, equipment and beverage service through the meal are quoted separately.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/seated-menus/"
+   },
+   {
+    "name": "Canapé receptions",
+    "description": "17 cold canapés, 26 hot canapés and 26 sweet finger desserts. They are cooked by your own personal chef and walked around guests by uniformed staff.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/canape-selection/"
+   },
+   {
+    "name": "Bowl food",
+    "description": "Standing-reception dishes served in 4\" bowls with a fork. Savoury sections cover pork and sausage, chicken, beef, lamb, duck and game, fish, vegetarian and salads, followed by dessert bowls and sweet finger desserts.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/bowl-food/"
+   },
+   {
+    "name": "BBQs",
+    "description": "BBQ menus use high-quality meat from a local supplier and run from British-themed to Mediterranean. Options include sharing starter boards and antipasti, a children's BBQ menu, a build-your-own burger station, a Turkish shish station, and a menu with whole lamb shoulder carved from the BBQ and seasoned sirloin steaks. Guests watch the chefs cook.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/bbqs/"
+   },
+   {
+    "name": "Mezze (Turkish)",
+    "description": "A Turkish-inspired mezze menu. Guests choose five items from cold and hot sharing-board lists, served with breads. The main is lamb or chicken shish or vegetable moussaka with tabbouleh, ezme and cacik. Dessert is pistachio and walnut baklava, Turkish milk custard phyllo pies and Turkish delight.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/mezze/"
+   },
+   {
+    "name": "Finger buffets (delivered)",
+    "description": "Freshly prepared, garnished finger buffets delivered ready to serve. Options include afternoon-tea menus on traditional cake stands, a children's buffet, a gluten- and dairy-free menu, a chef's cake selection and sweet finger desserts. Published charges (verbatim): \"Food delivery (free within 7 miles of our kitchens – anything over 7 miles is charged at 85p per mile)\"; \"Minimum order of 15 guests\"; matching black plate and napkin \"@ 35p\"; china, wood and slate platters \"would carry a 50p per person supplement to menu price\"; \"Waiting/Drinks Staff (if required) are charged at £12.50 p/h\"; \"A 25% non-refundable deposit secures your booking\"; \"All prices within the brochure are subject to VAT at the current rate\". No per-head buffet prices are published.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/finger-buffets/"
+   },
+   {
+    "name": "Corporate finger buffets & lunches",
+    "description": "Corporate catering from breakfast meetings to large functions, planned with event co-ordinators. Numbered finger-buffet menus include a Healthy Finger Menu and a gluten- and dairy-free menu, with optional front-of-house staff. Published terms (verbatim): \"Minimum order of £42.50\"; delivery \"anything over 7 miles is charged at 85p per mile\"; plate and napkin \"@ 35p\"; \"We ask for three working days' notice for your bookings\"; \"All prices within the brochure are subject to VAT at the current rate\".",
+    "sourceUrl": "https://www.magpiecatering.com/menus/corporate-finger-buffets/"
+   },
+   {
+    "name": "Cold & hot fork buffets",
+    "description": "A less formal alternative to a plated meal, with many choices and themed options. Supplement dishes are marked, cheese platters are available, and staff and a coffee and tea service can be added.",
+    "sourceUrl": "https://www.magpiecatering.com/menus/cold-hot-fork-buffets/"
+   },
+   {
+    "name": "Corporate event catering",
+    "description": "Catering for meetings, gala balls, new product launches, premises moves, working lunches, directors' dining, client entertaining and AGMs. Formats include seated meals, canapé receptions, finger buffets, hot fork buffets, bowl food, BBQs and hog roasts, with help on planning and logistics.",
+    "sourceUrl": "https://www.magpiecatering.com/corporate-events/"
+   },
+   {
+    "name": "Private fine dining",
+    "description": "A dinner-party service in the client's home for six or more guests. An executive chef advises on the menu, and on the day a personal chef and a member of the waiting staff serve. Magpie brings all equipment and lays the table.",
+    "sourceUrl": "https://www.magpiecatering.com/private-fine-dining/"
+   },
+   {
+    "name": "Special events & celebrations",
+    "description": "Menus for any celebration, at home, in a marquee or at a hired venue. Styles include seated meals, cocktail parties, canapé receptions, finger buffets, hot fork buffets, bowl food, BBQs and hog roasts. Case studies include a family reunion garden party, an 18th birthday at home and a 30th wedding anniversary ball.",
+    "sourceUrl": "https://www.magpiecatering.com/special-events/"
+   },
+   {
+    "name": "Funeral catering",
+    "description": "Funeral catering at short notice with caring, sensitive staff and dedicated menus. Beverages and beverage service, glassware, linen, and hall setting-up and clearing can also be arranged.",
+    "sourceUrl": "https://www.magpiecatering.com/funerals/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Corporate Events",
+   "Birthday Parties",
+   "Anniversaries",
+   "Private Parties",
+   "Product Launches",
+   "Garden Parties"
+  ],
+  "eventTypesSourceUrl": "https://www.magpiecatering.com/",
+  "areasServed": [
+   "South East of England",
+   "Hastingwood, Essex (base)"
+  ],
+  "areasSourceUrl": "https://www.magpiecatering.com/",
+  "industry": "food-services",
+  "categories": [
+   "Caterers",
+   "Grills & BBQ",
+   "Turkish"
+  ],
+  "logos": [
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/Magpie-Logo.png",
+    "format": "png",
+    "width": 680,
+    "height": 410,
+    "background": "transparent",
+    "colours": "Deep purple (~#5F2573) letter-spaced 'magpie' wordmark, black letter-spaced 'catering', grey (~#A3A8AB) swoosh arc and a small grey magpie in flight",
+    "sourcePage": "https://www.magpiecatering.com/",
+    "notes": "The visible header and footer lockup (img alt 'Magpie Catering logo'). Verified live 2026-10-27: HTTP 200 image/png, 22,067 bytes, 680x410 RGBA, transparent background. This is the best full-lockup mark. No SVG exists: no inline <svg> on any page, /logo.svg and theme svg paths return 404, and the WP media library has no svg files."
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/themes/magpie/images/magpie-catering-logo.jpg",
+    "format": "jpeg",
+    "width": 802,
+    "height": 483,
+    "background": "white",
+    "colours": "Same lockup: purple wordmark, black 'catering', grey swoosh and bird on white",
+    "sourcePage": "https://www.magpiecatering.com/",
+    "notes": "Largest raster of the full lockup. It is referenced in the header as a hidden img (style display:none). Verified live: HTTP 200 image/jpeg, 39,904 bytes, 802x483. Opaque white background."
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2023/04/favoicon.png",
+    "format": "png",
+    "width": 512,
+    "height": 512,
+    "background": "transparent",
+    "colours": "White magpie silhouette in flight on a solid purple circle (~#5F2573)",
+    "sourcePage": "https://www.magpiecatering.com/",
+    "notes": "Original 512x512 upload of the WordPress site icon, found in the WP media library (id uploaded 2023-04-04). Verified live: HTTP 200 image/png, 23,262 bytes, RGBA with transparent corners. This is the largest icon or avatar mark. cropped-favoicon.png (512x512, 25,158 bytes) is the WP-cropped twin."
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2023/04/cropped-favoicon-270x270.png",
+    "format": "png",
+    "width": 270,
+    "height": 270,
+    "background": "transparent",
+    "colours": "White magpie on purple circle",
+    "sourcePage": "https://www.magpiecatering.com/",
+    "notes": "msapplication-TileImage declared in the homepage head. Verified live: 270x270 RGBA. Sibling sizes declared: 32x32, 180x180 (apple-touch-icon, verified 180x180 RGBA) and 192x192 (verified)."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000030.jpg",
+    "description": "Landscape close-up of rows of king prawn and mango canapé skewers on knotted bamboo picks, on a wooden board",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1600,
+    "height": 1200
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000037-1.jpg",
+    "description": "Wide shot of a paddle board with five terracotta dishes of mezze (houmous, tabbouleh, Greek salad, tzatziki with mint, baba ganoush) on a stainless kitchen pass",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1276,
+    "height": 500
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000040.jpg",
+    "description": "Mezze sharing board (portrait): cured meats with balsamic, houmous, a chicken and pepper skewer, and marinated olives on a wooden board",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/mezze.jpg",
+    "description": "Hot mezze board (portrait): calamari rings, king prawns in chilli and garlic, a chorizo and mushroom dish, and filo triangles on a wooden board in the kitchen",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000038.jpg",
+    "description": "Grilled halloumi with pomegranate, mint, chilli and balsamic on a white platter, on a stainless kitchen pass (portrait)",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1200,
+    "height": 1600
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000039.jpg",
+    "description": "Baklava and Turkish pastries with a strawberry and spun-sugar garnish on a slate (portrait)",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 1112,
+    "height": 1600
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/15099423_1900549996835397_3066586716400779264_n1.jpg",
+    "description": "Rows of dessert glasses topped with heart-shaped shortbread and edible flowers, with chocolate brownie bites, on mirrored trays",
+    "sourcePage": "https://www.magpiecatering.com/private-fine-dining/",
+    "stockRisk": "own",
+    "width": 1080,
+    "height": 1080
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/07/Special-Events.jpg",
+    "description": "Plated white chocolate and raspberry tart with a sesame tuile, raspberry coulis, fresh raspberries and mint (a dessert on their seated menu)",
+    "sourcePage": "https://www.magpiecatering.com/special-events/",
+    "stockRisk": "own",
+    "width": 896,
+    "height": 896
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000003.jpg",
+    "description": "Magpie waiting team in uniform (black aprons, ties, name badges) lined up outdoors on autumn grounds, with a dark vehicle behind",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 750,
+    "height": 743
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-06-PHOTO-00000022.jpg",
+    "description": "Seated-meal main: trio of pork (crackling belly, tenderloin, pulled pork cake) with spinach, mash and sauce on a square plate",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 750,
+    "height": 743
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/2017-03-16-PHOTO-00000032.jpg",
+    "description": "Rows of tomato and cheese canapés on wooden boards with a carved melon and flower garnish",
+    "sourcePage": "https://www.magpiecatering.com/gallery/",
+    "stockRisk": "own",
+    "width": 750,
+    "height": 743
+   },
+   {
+    "url": "https://www.magpiecatering.com/wp-content/uploads/2016/06/alleyn-court-025.jpg",
+    "description": "Marquee interior set for a black-tie seated dinner: black tablecloths, white chair covers with black organza sashes, ostrich-feather centrepieces. The filename matches Magpie's Alleyn Court summer ball case study. Landscape, high resolution.",
+    "sourcePage": "https://www.magpiecatering.com/about-us/links/",
+    "stockRisk": "unclear",
+    "width": 2592,
+    "height": 1944
+   }
+  ],
+  "videos": [],
+  "socials": {
+   "facebook": "https://www.facebook.com/MagpieCateringPage/",
+   "instagram": "https://www.instagram.com/magpie.catering/",
+   "tiktok": null,
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://twitter.com/MagpieCatering1"
+   ]
+  },
+  "instagramAccess": "The live site's header and footer link to https://www.instagram.com/magpie.catering/. One plain unauthenticated GET (desktop Chrome UA, no cookies) on 2026-10-27 returned HTTP 200 and about 505 KB of HTML. The page was a generic shell titled 'Instagram' whose route config shows \"pageID\":\"httpErrorPage\", with no profile data (no bio, follower count or posts). This is a logged-out error page or login wall, or the handle no longer resolves. It was not retried. One plain GET to https://en-gb.facebook.com/MagpieCateringPage/ (the URL the site links) returned HTTP 400 (title 'Error', 1,542 bytes).",
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": null
+  },
+  "gaps": [
+   "No own video footage found. All 19 fetched site pages (home, about, events, gallery, every menu page, contact) have no <video>/<source>, .mp4/.webm, or YouTube/Vimeo iframes. The WP media library (129 items) has only jpeg/png/gif, no video mime types. No YouTube, Vimeo or TikTok channel is linked, and site-restricted searches found only unrelated 'Magpie' videos. Facebook may hold videos but needs login and was not accessed. A hero showreel can't be built from verified own footage.",
+   "Establishment year conflicts on the business's own site. The About page says 'since 1995' (matches the directory). The homepage body says 'recognised throughout the South East ... since 1985' and the footer says 'established in 1985'. The MD's quote says 'Since starting Magpie in 1994'. The limited company was incorporated in 2007 (as Vellveda Associates Ltd, renamed 2008). Confirm with the business before publishing a year.",
+   "The directory price '£500 per head' is not supported. The site publishes no per-head menu prices (a wedding tasting no-show charge appears as 'per person plus VAT' with the figure blank). It only lists ancillary charges: delivery 85p/mile beyond 7 miles, staff £12.50 p/h, 35p plate/napkin, 50p pp china supplement, £4.00 pp fillet-steak supplement, minimum order 15 guests (buffets) or £42.50 (corporate), and a 25% deposit. Treat the directory figure as a data-entry error.",
+   "alleyn-court-025.jpg is hosted on Magpie's site and named after its Alleyn Court case study. But it is shown on the Links page as the image for partner Castle Marquees (which supplied that marquee), so it is unclear who took the photo.",
+   "Images excluded: IMG_1448.jpg (3264x2448, a Mexican-themed restaurant interior), 147.jpg (3264x2448, a house exterior with a person), IMG_0226.jpg (1899x1644, a lit mobile bar with staff on the Links page, likely a partner bar), Ware-Priory and other Venues-page photos (venues' own), 20000123285.highres.jpg (Miele hob), home-banner.jpg / weddings.jpg / funerals.jpeg (stock-like), Dollarphotoclub_219657261 (stock by filename), trebor-photography.jpg and photo46.jpg (partners'), and client and venue logos. Also own but left out to keep 12: 2017-03-06-PHOTO-00000010/16 (plated mains), bowl1-3.jpg, wedding.jpg, CANAPE-SELECTION-.jpg, seated-meals.jpg (640–750px). angela_rippon.jpg shows a public figure and is not used.",
+   "The best own landscape photo is 1600x1200 (prawn skewers). Apart from alleyn-court-025 (unclear authorship), no own event-setting photo above 1600px was found. Most gallery originals are about 750px.",
+   "No SVG logo exists. The best transparent lockup is the 680x410 PNG and the best icon mark is the 512x512 PNG. A larger crisp lockup would need a faithful vector reconstruction, with provenance noted.",
+   "Instagram @magpie.catering returned a logged-out error shell, so whether it is active is unverified. twitter.com/MagpieCatering1 was linked from the site in Jan 2014 (Wayback) but not from the current site, and its activity was not checked. x.com/Magpie_Catering surfaced only in search results, is not linked from any Magpie page checked, and was not verified, so it is omitted.",
+   "Event-type sources: Weddings, Corporate Events, Birthday Parties and Anniversaries are on the homepage. Product Launches ('a new product launch') come from /corporate-events/, Garden Parties from the 'Family Tree Reunion and Garden Party' case study on /special-events/, and Private Parties from /private-fine-dining/ (dinner parties at home). Event types they serve with no taxonomy match: funerals, christenings, reunions, graduations, conferences, gala dinners and balls. 'Charity Galas' is not mapped because the site never mentions charity."
+  ]
+ }
+}

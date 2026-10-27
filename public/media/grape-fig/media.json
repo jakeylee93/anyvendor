@@ -1,0 +1,64 @@
+{
+  "slug": "grape-fig",
+  "logo": {
+    "file": "public/media/grape-fig/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://grapeandfig.com/cdn/shop/files/thumbnail_Grape_and_Fig_Logo_BW.png?v=1665205626",
+    "plate": "light"
+  },
+  "gallery": [
+    {
+      "file": "public/media/grape-fig/photo-01.webp",
+      "alt": "Grazing table with lit taper candles, white flower arrangements, a baguette, a crudités platter and glasses of rosé on a white tablecloth",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/image00087.jpg?v=1754063757"
+    },
+    {
+      "file": "public/media/grape-fig/photo-02.webp",
+      "alt": "Long dining table laid with wildflower arrangements, grazing boards of cheese, crackers and fruit, and white plates with folded napkins beside glass windows",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_8697_7.jpg?v=1763061042"
+    },
+    {
+      "file": "public/media/grape-fig/photo-03.webp",
+      "alt": "Brunch display of croissants, pastries, banana bread slices and yoghurt pots with white daisy arrangements, against a brick wall",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_0161_9_f9be2e63-27d1-4de8-a53f-666b246b8ad6.jpg?v=1744817906"
+    },
+    {
+      "file": "public/media/grape-fig/photo-04.webp",
+      "alt": "Cheese and charcuterie board with fruit, pickles and flowers on brown paper with handwritten labels, beside crackers and wine glasses",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1470_9.jpg?v=1730134720"
+    },
+    {
+      "file": "public/media/grape-fig/photo-05.webp",
+      "alt": "Kitchen island set with platters of filled brioche buns and fruit beneath a tall pink blossom arrangement",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/IMG_1022.jpg?v=1744817316"
+    },
+    {
+      "file": "public/media/grape-fig/photo-06.webp",
+      "alt": "Wreath-shaped cheese and charcuterie platter with figs, orange slices and a green velvet bow in a printed GRAPE & Fig box",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/DSCF1375_5.jpg?v=1792694771"
+    },
+    {
+      "file": "public/media/grape-fig/photo-07.webp",
+      "alt": "Office brunch display of pastries, yoghurt pots, juices and plants alongside Skin + Me product boxes",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Skin_Me_Bespoke_Food_Display_ab03603a-f42b-483c-ac86-8cbcf3b24b53.jpg?v=1763062221"
+    },
+    {
+      "file": "public/media/grape-fig/photo-08.webp",
+      "alt": "Two women smiling behind the GRAPE & Fig Build Your Own British Cheese Box Bar counter, with a menu wall and a chilled display of cheeses and condiments",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/GRAPE_AND_FIG_AT_BRITYARD.jpg?v=1712716492"
+    },
+    {
+      "file": "public/media/grape-fig/photo-09.webp",
+      "alt": "Two women laughing as they arrange a grazing platter of cheese, charcuterie, fruit and edible flowers at a kitchen counter",
+      "sourceUrl": "https://grapeandfig.com/cdn/shop/files/Grape_Fig-Amber-RoseSmith_40.jpg?v=1614314958"
+    }
+  ],
+  "notes": [
+    "Logo is a vector reconstruction (potrace, 1 colour, #000000) of the business's own header wordmark PNG (1786x484, black on transparent); no genuine SVG exists. Traced from a 3x Lanczos upscale so the hairline script 'Fig' keeps its original stroke weight; render-back mean abs diff 1.64 vs original.",
+    "Showreel: six clips, all from video files on the business's own Shopify CDN embedded on grapeandfig.com: two shots from the 1080p Virtual Masterclasses promo (finished board held up; hands folding charcuterie) and four muted product loops (Seasonal Fruit, British Cheese & Charcuterie, Crudites & Hummus, Number graze). Audio stripped; no talking-head shots used.",
+    "The product loops are portrait 810x1080, so their desktop 16:9 crops are upscaled about 1.6x and slightly softer than the landscape masterclass shots.",
+    "The Number graze clip shows the business's own GRAPE & Fig logo printed on its packaging (not an overlay).",
+    "Gallery photo-07 shows a display made for client Skin + Me with the client's product boxes visible. Other client-branded photos were left out: Beauty Pie (client branding prominent), M&S Food (burned-in #ss24mands hashtag), and the green 'Live to Eat' book-launch table (guest name card legible).",
+    "The two women in photo-08 and photo-09 are identified on the business's own site as founders Toria and Catherine; alt text describes only what is visible."
+  ]
+}

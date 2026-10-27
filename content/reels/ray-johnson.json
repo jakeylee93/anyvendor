@@ -1,0 +1,68 @@
+{
+  "slug": "ray-johnson",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "file": ".media-work/ray-johnson/still00-pushin.mp4",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_1699-high.jpg",
+      "start": 0,
+      "dur": 2.6,
+      "fx": 0.53,
+      "fy": 0.38,
+      "mfx": 0.53,
+      "mfy": 0.5,
+      "note": "Homepage hero photo: Ray as Elton in a floral jacket singing at a red piano under a pink 'Eden' neon sign (still photo; pre-rendered as a 2.6 s push-in clip so the loop point is seamless)"
+    },
+    {
+      "image": ".media-work/ray-johnson/img02-firs-high.jpg",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/firs-high.jpg",
+      "dur": 2.6,
+      "fx": 0.55,
+      "fy": 0.5,
+      "mfx": 0.55,
+      "mfy": 0.5,
+      "note": "Gallery photo: singing at a red keyboard against a blue star-cloth backdrop at Firs Park Resort, Essex"
+    },
+    {
+      "image": ".media-work/ray-johnson/img03-20240505_160301-high.jpg",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/20240505_160301-high.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.4,
+      "mfx": 0.69,
+      "mfy": 0.5,
+      "note": "Gallery photo: the outdoor duo set, Ray in a gold jacket at a red piano with Nigel Silk on congas"
+    },
+    {
+      "image": ".media-work/ray-johnson/img05-img_3250-standard.jpg",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/img_3250-standard.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.24,
+      "mfx": 0.48,
+      "mfy": 0.5,
+      "note": "About page photo: blue sequinned jacket and green glasses at a glossy piano on a staged set"
+    },
+    {
+      "image": ".media-work/ray-johnson/img01-11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/11d9dba1-35d0-422d-ba53-3e7f0f8eb65f-high.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.4,
+      "mfx": 0.42,
+      "mfy": 0.5,
+      "note": "Testimonials page photo: singing with a hand-held microphone on stage in front of an LED wall, audience in the foreground"
+    },
+    {
+      "image": ".media-work/ray-johnson/img04-8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg",
+      "url": "https://primary.jwwb.nl/public/v/r/x/temp-qujbnoouzqrhjvwkejyc/8afc1d09-887f-49f4-aaf8-37921090d1f7-high.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.45,
+      "mfx": 0.4,
+      "mfy": 0.5,
+      "note": "Gallery photo: pointing from a piano under a lit star on the set of a 2023 Christmas promo where he body-doubled for Elton"
+    }
+  ]
+}

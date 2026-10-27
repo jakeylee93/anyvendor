@@ -1,0 +1,72 @@
+{
+  "slug": "ozzy-stix",
+  "fade": 0.6,
+  "crf": 26,
+  "segments": [
+    {
+      "file": ".media-work/ozzy-stix/crop-tt44-7692051344248573206.mp4",
+      "url": "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+      "start": 29.2,
+      "dur": 2.1,
+      "fx": 0.5,
+      "fy": 0.6,
+      "mfx": 0.52,
+      "mfy": 0.5,
+      "note": "Vocalist singing beside his bongos on a white dance floor in a panelled ballroom, bride and guests behind. Frame cropped to the top 1216 of 1920 px rows to exclude the post's burned-in caption; timecode is the original post's."
+    },
+    {
+      "file": ".media-work/ozzy-stix/crop-tt38-7693250822364433666.mp4",
+      "url": "https://www.tiktok.com/@ozzyandstix/video/7693250822364433666",
+      "start": 33.2,
+      "dur": 2.3,
+      "fx": 0.5,
+      "fy": 0.76,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Outdoor garden wedding: acoustic guitarist and vocalist performing for the couple and guests. Source is only 576x1024; cropped to the top 672 rows to exclude the burned-in caption."
+    },
+    {
+      "file": ".media-work/ozzy-stix/crop-tt29-7694311421823307030.mp4",
+      "url": "https://www.tiktok.com/@ozzyandstix/video/7694311421823307030",
+      "start": 3.4,
+      "dur": 2.5,
+      "fx": 0.5,
+      "fy": 0.52,
+      "mfx": 0.6,
+      "mfy": 0.5,
+      "note": "Vocalist and bride singing together into the microphone on an evening dance floor. Cropped to the top 1248 rows to exclude the burned-in caption."
+    },
+    {
+      "file": ".media-work/ozzy-stix/crop-tt84-7686215079620054294.mp4",
+      "url": "https://www.tiktok.com/@ozzyandstix/video/7686215079620054294",
+      "start": 21.6,
+      "dur": 2.4,
+      "fx": 0.5,
+      "fy": 0.62,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Packed dance floor under coloured party lighting during their set. Cropped to the top 1136 rows to exclude the burned-in caption."
+    },
+    {
+      "file": ".media-work/ozzy-stix/crop-tt44-7692051344248573206.mp4",
+      "url": "https://www.tiktok.com/@ozzyandstix/video/7692051344248573206",
+      "start": 6.22,
+      "dur": 2.0,
+      "fx": 0.5,
+      "fy": 0.48,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Vocalist singing at his bongos while wedding guests dance behind him (same post as segment 1, earlier moment)."
+    },
+    {
+      "image": ".media-work/ozzy-stix/orig-img01-IMG_2574.JPG",
+      "url": "https://images.squarespace-cdn.com/content/v1/5bbc76358d97402a0b1c7905/1539119677967-375UWPJ0HGFT7QVQ9WFL/IMG_2574.JPG?format=original",
+      "dur": 2.6,
+      "fx": 0.47,
+      "fy": 0.5,
+      "mfx": 0.64,
+      "mfy": 0.5,
+      "note": "Own photo from the videos page banner: the duo playing acoustic and electric guitars on a sea-view terrace."
+    }
+  ]
+}

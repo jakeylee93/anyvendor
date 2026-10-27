@@ -1,0 +1,63 @@
+{
+  "slug": "harry-de-cruz",
+  "logo": {
+    "file": "public/media/harry-de-cruz/logo.svg",
+    "kind": "svg-traced",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/ed357811-5d3d-4d7a-85c5-4a6963a99169/favicon.ico",
+    "plate": "none"
+  },
+  "gallery": [
+    {
+      "file": "public/media/harry-de-cruz/photo-01.webp",
+      "alt": "Harry De Cruz on a theatre stage in a hazy spotlight, flicking a playing card out towards the darkened audience",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/532c09f8-2d11-458d-8342-da3a05f3ff09/Copy+of+49+by+%40domdommartin.jpg"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-02.webp",
+      "alt": "Two guests at a gala dinner table react with open-mouthed amazement, with other diners seated behind them",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/8cbe11fb-a15c-4aa1-b1d9-a35a43fe95c2/5+by+%40domdommartin.jpg"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-03.webp",
+      "alt": "Harry De Cruz in an olive suit and glasses smiles as he holds up a playing card and a fanned deck, while a guest in the foreground applauds",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/fee04251-fc8e-47fc-9f4d-1ce4af6b9727/0I5A4375+2.JPG"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-04.webp",
+      "alt": "Harry De Cruz in a brown tweed suit stands holding a card beside a candlelit wedding table as the bride and a guest laugh",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/2accd4ba-a09d-46a7-9287-cd1ec63e2414/IMG_4822.JPG"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-05.webp",
+      "alt": "Harry De Cruz in a green shirt and glasses shows a playing card to three astonished guests at an indoor drinks reception",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/d1861727-1eb8-4767-8705-e4f8f8514170/8C299568-B899-4893-95C4-9B416E18D0C7.JPG"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-06.webp",
+      "alt": "A bride and a groom in a bow tie laugh over a playing card at their table against a stone wall, while a man in a blue suit and glasses looks on",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/94d2a874-e451-44eb-bcb8-21f91da1bf7a/Emma%26Edward020821-428.jpg"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-07.webp",
+      "alt": "View from the back of a theatre audience: a performer in black holds up a phone in the aisle under teal stage light, followed by a camera operator",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/997c6827-c4a7-48fd-be60-a6a13e78231e/IMG_3136+2.JPG"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-08.webp",
+      "alt": "Harry De Cruz in a teal boiler suit gestures on a dark stage, with a camera operator in the foreground",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/e7a0f614-5960-4f9a-84ab-1948b4fe454a/magic+show-073+3.jpg.jpg"
+    },
+    {
+      "file": "public/media/harry-de-cruz/photo-09.webp",
+      "alt": "Harry De Cruz in a navy suit shakes hands with a guest at an outdoor wedding drinks reception on a lawn",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/621cf749a78ec40dfe3874cf/80e2aab3-126c-4eba-acd8-cb7108f5dc76/IMG_1523+3.JPG"
+    }
+  ],
+  "notes": [
+    "Logo is the site's own 'H' monogram icon (180x180 PNG served for favicon.ico on harrydecruz.com), traced with logo_trace.py --colours 2 --keep-bg. The white serif H is the potrace trace; the dark-green (#005522) rounded square was replaced by an exact <rect rx> measured from the original (corner radius ~9% of width) because the traced corners were uneven. Mean absolute difference against the original on white: 2.56 (raw trace 2.48). It is a reconstruction, not the business's own vector file.",
+    "The logo is a monogram, not a full wordmark: the header 'Harry De Cruz' is live web-font text (ivypresto-display) with no logo image or SVG. Plate is 'none' because the mark carries its own solid green rounded-square background.",
+    "Reel: 2 video clips from his own 70 s Squarespace HLS showreel (harrydecruz.com/showreel; 1920x1080, audio stripped) plus 4 of his own photos as stills. The showreel is fast-cut (most shots under 1.8 s) and many shots carry burned-in title cards, quotes or client-brand logo walls, so only two text-free shots of 2 s or more were usable.",
+    "Gallery photos are his own published photos from harrydecruz.com (Squarespace CDN), fetched as JPEG and converted to WebP (max 1600 px, q80). Photo credits on his site include @domdommartin and Hannah McClune; use should be with consent.",
+    "Excluded from gallery and reel: IMG_1525 (wedding table shot with young children visible at the edge) and the 663A6149 headshot (a portrait, better suited as an avatar). IMG_4823 (wedding table magic) appears only in the reel, so the gallery does not carry two near-identical wedding-breakfast shots."
+  ]
+}
