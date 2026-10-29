@@ -1,5 +1,30 @@
 # Anyvendor — handoff
 
+## Milestone 4: AI planner homepage, plan and shortlist, video cards, marquee galleries, app install (29 Oct 2026)
+
+Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session, now on Fable 5.1). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`: `163a69f` (feature), `35a0742` (lint), `00f9d2e` (need mapping), `a4e242a` (headings/posters/seals), plus this handoff commit. Final protected preview **https://anyvendor-knb8ymw0k-anyos.vercel.app** (Ready). Release claim `7621a5f9` released after this receipt. `main`, production, domains, payments and enquiries untouched.
+
+Jake's 29 Oct feedback and what was done:
+- Homepage: wordmark, one line, one big AI planner box (describe the party; tick what you need; location, date, guests; rotating example text). No video slider, no play button, no "Now showing". Pillars, Market and newsletter removed; Featured vendors come straight after the hero, then a scrolling category-icon strip. Hero background is a soft animated foil as a placeholder until the header image is chosen.
+- Suggest, don't mass-message: `/plan` shows two or three vendors per need with reasons and a Best match (deterministic scoring in `src/lib/plan.ts`; no AI calls, nothing sent anywhere), with "See more" into the directory. Free-text requests map to needs (e.g. "photographer" → Photo & video).
+- Guest shortlist: heart on every card, floating "My plan" bar, `/plan/my` is the plan document (event details, each vendor with category, place, from-price, website link, email where authorised, print/save as PDF). Kept on the device (localStorage) until accounts exist. Sending one enquiry to everyone is explicitly "coming next".
+- Cards: showreel plays inside the card while on screen (IntersectionObserver, preload none, poster under reduced motion); circular logo seal for everyone (wide wordmarks get a larger seal but still read small, see gaps); category pill with icon on a frosted navy chip; slow foil drift plus category-coloured glow.
+- Profiles: two-row marquee gallery, opposite directions, same height, click for full image, click anywhere or Escape to close.
+- Nav: Directory, People, Venues, How it works, plus List my business and Plan my event. People and Venues are honest "opening soon" pages. Single sticky nav; utility bar and onboarding strip removed.
+- Installable: `public/manifest.webmanifest`, icons, Apple web-app meta, theme colour.
+- Concepts: `docs/concepts-20261029/` (GPT Image 2.5 via OpenArt, project "Anyvendor concepts"): 01 homepage planner, 02 plan suggestions, 03 People, 04 Venues, 05 vendor dashboard with promotions, 06 mobile app. Concept images contain invented names and some star ratings; they are layout ideas, not content.
+
+Verification on the final preview (`knb8ymw0k`): tsc clean; eslint 0 errors in new files (two effect-state warnings fixed); cloud build Ready; `vercel curl`: `/`, `/plan` (free-text and ticked), `/plan/my`, `/people`, `/venues`, `/directory`, profiles, manifest and icons all 200. Playwright (one short session, memory pressure WARNING, disk ~7.6 GiB): home has no play button or "Now showing" and no overflow at 1440/390 with the Find button on the first phone screen; 16 card videos present, 8 playing in view, 16 circular seals; typing a request and submitting produced sections for bar, music, food, photo & video; hearts added two vendors; `/plan/my` showed 2 rows with "Birthday Parties · London · 20 Dec · 80 guests"; gallery rows 2 at equal 256px height; modal opens, closes on image click and Escape; 0 console errors. Screenshots in `docs/screenshots/planner-20261029/`.
+
+Gaps and decisions:
+1. Header image: placeholder foil until Jake picks a direction (concept 01 shows one option).
+2. Wide wordmarks (Grape & Fig, Natalie & Max, CJ Sax, Meat Stop, Magpie, Tony Poole) read small inside a circle; each needs a proper circular mark from the business or a designed roundel.
+3. Video quality: cards look sharp at card size, but the hero-size issue remains; YouTube/Vimeo sources still need a permission rule or supplied originals.
+4. Accounts, enquiries inbox, vendor dashboard, promotions (£5/day, £20/week category top), analytics and payments need a backend (Supabase auth + Postgres, Stripe) and Jake's approval; the plan/shortlist is designed to plug into it.
+5. People and Venues need real listings with permission; nothing invented.
+
+---
+
 ## Milestone 3: premium cards, best photos, homepage, smart search, pricing (27 Oct 2026, evening)
 
 Owner: `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree: `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles`, claim `6bf2c244`. Branch: `claude/bookedevents-reconstruction`.
