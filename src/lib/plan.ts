@@ -1,7 +1,7 @@
 // Event planner: "tell us about your party" → a short suggestion list per need.
 // Deterministic (no AI calls, nothing sent anywhere). Suggests two or three
 // vendors per need rather than letting a visitor message everyone at once.
-import { BUSINESSES, categoriesOf, industryOf, type Business, type Location } from "./directory";
+import { BUSINESSES, INDUSTRIES, categoriesOf, industryOf, type Business, type Location } from "./directory";
 import { getProfile } from "./profiles";
 import { understand, type Understood } from "./smartSearch";
 
@@ -43,12 +43,14 @@ function matchesNeed(b: Business, n: Need): number {
 /** Which needs a plain-English request implies. */
 export function needsFromUnderstood(u: Understood): string[] {
   const keys = new Set<string>();
+  const industryOfCat = (c: string) => INDUSTRIES.find((i) => (i.categories as readonly string[]).includes(c))?.slug;
   for (const s of u.services) {
+    const cats = s.categories ?? [];
+    const inds = new Set<string>([s.industry, ...cats.map(industryOfCat)].filter(Boolean) as string[]);
     for (const n of NEEDS) {
-      const catHit = s.categories?.some((c) => n.categories?.includes(c));
-      const indHit = s.industry && n.industry === s.industry && !n.categories?.length;
-      const indCatHit = s.industry && n.industry === s.industry && !s.categories;
-      if (catHit || indHit || indCatHit) keys.add(n.key);
+      if (n.excludeCategories && cats.length && cats.every((c) => n.excludeCategories!.includes(c))) continue;
+      if (n.categories?.some((c) => cats.includes(c))) keys.add(n.key);
+      else if (n.industry && inds.has(n.industry) && (!n.categories || !cats.length)) keys.add(n.key);
     }
   }
   return [...keys];
