@@ -35,18 +35,26 @@ export function ShortlistProvider({ children }: { children: React.ReactNode }) {
   const [event, setEventState] = useState<PlanEvent | null>(null);
   const [ready, setReady] = useState(false);
 
+  // Load after hydration (deferred a tick so the server and first client render match).
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(KEY);
-      if (raw) {
-        const d = JSON.parse(raw);
-        if (Array.isArray(d.items)) setItems(d.items);
-        if (d.event) setEventState(d.event);
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (cancelled) return;
+      try {
+        const raw = localStorage.getItem(KEY);
+        if (raw) {
+          const d = JSON.parse(raw);
+          if (Array.isArray(d.items)) setItems(d.items);
+          if (d.event) setEventState(d.event);
+        }
+      } catch {
+        /* storage unavailable: shortlist works for this page view only */
       }
-    } catch {
-      /* storage unavailable: shortlist works for this page view only */
-    }
-    setReady(true);
+      setReady(true);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {
