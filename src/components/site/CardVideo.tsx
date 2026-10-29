@@ -33,7 +33,7 @@ export default function CardVideo({ video, poster, alt, className = "" }: { vide
 
   return (
     <>
-      <img src={poster} alt={alt} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full object-cover ${className}`} />
+      <img src={poster} alt={alt} decoding="async" className={`absolute inset-0 h-full w-full object-cover ${className}`} />
       <video
         ref={ref}
         poster={poster}

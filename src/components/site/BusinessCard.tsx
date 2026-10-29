@@ -62,9 +62,10 @@ function cardFacts(b: Business) {
 function LogoSeal({ p }: { p: NonNullable<ReturnType<typeof getProfile>> }) {
   if (!p.logo) return null;
   const bg = p.logo.plate === "dark" ? "bg-be-deep" : "bg-white";
+  const wide = p.logo.width / p.logo.height > 1.8;
   return (
-    <span className={`absolute left-3 top-3 z-[2] flex h-[72px] w-[72px] items-center justify-center overflow-hidden rounded-full shadow-lg ring-[3px] ring-white/90 ${bg}`}>
-      <img src={p.logo.src} alt={`${p.displayName} logo`} className="h-[78%] w-[78%] object-contain" />
+    <span className={`absolute left-3 top-3 z-[2] flex items-center justify-center overflow-hidden rounded-full shadow-lg ring-[3px] ring-white/90 ${bg} ${wide ? "h-[84px] w-[84px]" : "h-[72px] w-[72px]"}`}>
+      <img src={p.logo.src} alt={`${p.displayName} logo`} className={`object-contain ${wide ? "h-[88%] w-[88%]" : "h-[78%] w-[78%]"}`} />
     </span>
   );
 }

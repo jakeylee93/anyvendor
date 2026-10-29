@@ -8,6 +8,8 @@ import { understand, type Understood } from "./smartSearch";
 export interface Need {
   key: string;
   label: string;
+  /** Section heading on the plan page */
+  heading: string;
   /** lucide icon name, resolved in the UI */
   icon: string;
   categories?: string[];
@@ -16,15 +18,15 @@ export interface Need {
 }
 
 export const NEEDS: Need[] = [
-  { key: "bar", label: "Bar", icon: "Wine", industry: "drink-services", categories: ["Mobile Bars", "Mixologists"] },
-  { key: "food", label: "Food", icon: "Utensils", industry: "food-services", excludeCategories: ["Cake Maker", "Candy Carts", "Donuts"] },
-  { key: "desserts", label: "Desserts", icon: "Cake", categories: ["Cake Maker", "Candy Carts", "Donuts"] },
-  { key: "music", label: "DJ & music", icon: "Music", categories: ["DJs & Disco", "Musician", "Singers", "Bands", "Saxophonist"] },
-  { key: "photo", label: "Photo & video", icon: "Camera", industry: "photography-video" },
-  { key: "marquee", label: "Marquee & hire", icon: "Tent", industry: "decor-ambiance", categories: ["Marquees"] },
-  { key: "entertainment", label: "Entertainment", icon: "Sparkles", categories: ["Magician", "Tribute Act", "Performers", "Children's Entertainer", "Hypnotist", "Fireworks", "Dancers"] },
-  { key: "transport", label: "Transport", icon: "Car", industry: "transport-logistics" },
-  { key: "extras", label: "Something different", icon: "Star", industry: "unique-services" },
+  { key: "bar", heading: "For your bar", label: "Bar", icon: "Wine", industry: "drink-services", categories: ["Mobile Bars", "Mixologists"] },
+  { key: "food", heading: "For the food", label: "Food", icon: "Utensils", industry: "food-services", excludeCategories: ["Cake Maker", "Candy Carts", "Donuts"] },
+  { key: "desserts", heading: "For dessert", label: "Desserts", icon: "Cake", categories: ["Cake Maker", "Candy Carts", "Donuts"] },
+  { key: "music", heading: "For the music", label: "DJ & music", icon: "Music", categories: ["DJs & Disco", "Musician", "Singers", "Bands", "Saxophonist"] },
+  { key: "photo", heading: "For photos & video", label: "Photo & video", icon: "Camera", industry: "photography-video" },
+  { key: "marquee", heading: "For your marquee & hire", label: "Marquee & hire", icon: "Tent", industry: "decor-ambiance", categories: ["Marquees"] },
+  { key: "entertainment", heading: "For entertainment", label: "Entertainment", icon: "Sparkles", categories: ["Magician", "Tribute Act", "Performers", "Children's Entertainer", "Hypnotist", "Fireworks", "Dancers"] },
+  { key: "transport", heading: "For transport", label: "Transport", icon: "Car", industry: "transport-logistics" },
+  { key: "extras", heading: "For something different", label: "Something different", icon: "Star", industry: "unique-services" },
 ];
 
 export function needByKey(key: string) {

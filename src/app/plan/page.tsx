@@ -65,7 +65,7 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
                       <span className="flex h-9 w-9 items-center justify-center rounded-full bg-be-cyan-pale text-be-navy">
                         <NeedIcon name={n.icon} size={18} aria-hidden />
                       </span>
-                      For your {n.label.toLowerCase()}
+                      {n.heading}
                     </h2>
                     <Link href={more} className="inline-flex items-center gap-1 text-sm font-semibold text-be-navy hover:text-be-cyan">
                       See more <ArrowRight size={14} aria-hidden />
@@ -81,7 +81,7 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
                     </ul>
                   ) : (
                     <p className="mt-4 rounded-xl border border-dashed border-gray-300 p-6 text-sm text-be-grey">
-                      No {n.label.toLowerCase()} vendors yet{req.location ? ` near ${req.location}` : ""}. We’re adding more businesses every week.
+                      No vendors for this yet{req.location ? ` near ${req.location}` : ""}. We’re adding more businesses every week.
                     </p>
                   )}
                 </div>
