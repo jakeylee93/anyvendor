@@ -1,137 +1,71 @@
 import Link from "next/link";
-import { Store, ShoppingBag, Hammer, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import SiteShell from "@/components/site/SiteShell";
-import { SupplierCta, Newsletter } from "@/components/site/SiteFooter";
+import { SupplierCta } from "@/components/site/SiteFooter";
 import BusinessCard from "@/components/site/BusinessCard";
-import DirectorySearch from "@/components/site/DirectorySearch";
-import { BUSINESSES, MARKET_PRODUCTS, categoriesOf } from "@/lib/directory";
-import { getProfile } from "@/lib/profiles";
-import HomeHero, { type HeroVendor } from "@/components/site/HomeHero";
+import HomeHero from "@/components/site/HomeHero";
+import { NeedIcon } from "@/components/site/icons";
+import { BUSINESSES, INDUSTRIES } from "@/lib/directory";
+import { NEEDS } from "@/lib/plan";
 
-// Vendors with a showreel, in a varied order for the hero slider.
-const HERO_ORDER = ["the-bar-people", "tony-poole-discos", "grape-fig", "cj-sax", "natalie-max", "meatstop", "harry-de-cruz", "tm-event-hire", "calleo", "lucy-jane-cakes", "ozzy-stix", "ray-johnson", "magpie-catering", "paint-and-pour", "toot-sweet-candy-cart", "jamie-roche"];
-const heroVendors: HeroVendor[] = HERO_ORDER.flatMap((slug) => {
-  const b = BUSINESSES.find((x) => x.slug === slug);
-  const p = getProfile(slug);
-  if (!b || !p?.reel) return [];
-  const o = p.reel.outputs;
-  return [
-    {
-      slug,
-      name: p.displayName,
-      category: categoriesOf(b)[0] ?? "",
-      place: p.basedIn?.text.split(/[,(]/)[0].trim() ?? b.region,
-      logo: p.logo ? { src: p.logo.src, plate: p.logo.plate, wide: p.logo.width / p.logo.height > 1.8 } : null,
-      desktop: { video: o.desktop.video, poster: o.desktop.posterWebp },
-      mobile: { video: o.mobile.video, poster: o.mobile.posterWebp },
-    },
-  ];
-});
-
-const PILLARS = [
-  {
-    icon: Store,
-    kicker: "Directory",
-    title: "Connect with the Best",
-    body: "No middlemen, no markups—just great event professionals at your fingertips. Find and book with confidence.",
-    href: "/directory",
-  },
-  {
-    icon: ShoppingBag,
-    kicker: "Market",
-    title: "Event Signage & Custom Merch",
-    body: "From branded signage to bespoke event decor, we help you create and source everything you need to elevate your event.",
-    href: "/shop",
-  },
-  {
-    icon: Hammer,
-    kicker: "Trade Services",
-    title: "Bespoke Builds, Maximum Impact",
-    body: "Custom builds, branded activations, and high-impact event spaces. We take care of every detail so you can focus on making connections that count.",
-    href: "/trade",
-  },
+const BROWSE = [
+  ...NEEDS.filter((n) => n.key !== "extras").map((n) => ({
+    label: n.label,
+    icon: n.icon,
+    href: n.industry ? `/directory?industry=${n.industry}` : `/directory?category=${encodeURIComponent(n.categories![0])}`,
+  })),
+  ...INDUSTRIES.flatMap((i) => i.categories.slice(0, 2).map((c) => ({ label: c, icon: "Star", href: `/directory?industry=${i.slug}&category=${encodeURIComponent(c)}` }))),
 ];
 
 export default function Home() {
   return (
     <SiteShell>
-      <HomeHero vendors={heroVendors} />
+      <HomeHero />
 
-      {/* What Anyvendor does (the original three pillars) */}
-      <section className="border-b border-gray-100 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 md:grid-cols-3">
-          {PILLARS.map(({ icon: Icon, ...p }) => (
-            <Link key={p.kicker} href={p.href} className="group flex gap-4 rounded-2xl p-4 hover:bg-be-mist">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-be-cyan-pale text-be-navy">
-                <Icon size={22} aria-hidden />
-              </span>
-              <span>
-                <span className="block text-xs font-bold uppercase tracking-[0.18em] text-be-cyan">{p.kicker}</span>
-                <span className="mt-0.5 block text-lg font-semibold text-be-navy">{p.title}</span>
-                <span className="mt-1 block text-sm leading-relaxed text-be-grey">{p.body}</span>
-              </span>
-            </Link>
+      <section className="mx-auto max-w-7xl px-4 py-14 md:py-20" aria-labelledby="featured-heading">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="font-caveat text-2xl text-be-cyan">hand-picked</p>
+            <h2 id="featured-heading" className="text-3xl font-bold text-be-navy md:text-5xl">
+              Featured vendors
+            </h2>
+          </div>
+          <Link href="/directory" className="inline-flex items-center gap-1.5 font-semibold text-be-navy hover:text-be-cyan">
+            View all <ArrowRight size={16} aria-hidden />
+          </Link>
+        </div>
+        <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {BUSINESSES.map((b) => (
+            <li key={b.slug}>
+              <BusinessCard business={b} />
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
-      {/* Directory */}
-      <section className="bg-be-mist" aria-labelledby="directory-heading">
-        <div className="mx-auto max-w-7xl px-4 py-14">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <h2 id="directory-heading" className="text-3xl font-bold text-be-navy md:text-4xl">
-                Directory
-              </h2>
-              <p className="mt-2 text-be-grey">Unforgettable Events Begin with Unstoppable Vendors – Start Searching!</p>
-            </div>
-            <Link href="/directory" className="inline-flex items-center gap-1.5 font-semibold text-be-navy hover:text-be-cyan">
-              View all businesses <ArrowRight size={16} aria-hidden />
-            </Link>
-          </div>
-          <div className="mt-6">
-            <DirectorySearch />
-          </div>
-          <ul className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 [scrollbar-width:thin]" aria-label="Featured businesses">
-            {BUSINESSES.map((b) => (
-              <li key={b.slug} className="w-[72%] shrink-0 snap-start sm:w-[44%] md:w-[30%] lg:w-[23%]">
-                <BusinessCard business={b} />
+      <section className="border-y border-gray-100 bg-be-mist py-10" aria-label="Browse by what you need">
+        <h2 className="text-center text-2xl font-bold text-be-navy md:text-3xl">What are you looking for?</h2>
+        <div className="marquee mt-6" style={{ "--dur": "70s" } as React.CSSProperties}>
+          <ul className="marquee-track items-stretch">
+            {[...BROWSE, ...BROWSE].map((b, n) => (
+              <li key={`${b.label}-${n}`} className="shrink-0" aria-hidden={n >= BROWSE.length}>
+                <Link
+                  href={b.href}
+                  tabIndex={n >= BROWSE.length ? -1 : 0}
+                  className="flex h-full w-32 flex-col items-center gap-2 rounded-2xl bg-white px-3 py-4 text-center text-sm font-medium text-be-navy shadow-sm ring-1 ring-gray-200 hover:ring-be-cyan"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-be-cyan-pale text-be-navy">
+                    <NeedIcon name={b.icon} size={22} aria-hidden />
+                  </span>
+                  <span className="line-clamp-2 leading-tight">{b.label}</span>
+                </Link>
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* Market */}
-      <section aria-labelledby="market-heading">
-        <div className="mx-auto max-w-7xl px-4 py-14">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <h2 id="market-heading" className="text-3xl font-bold text-be-navy md:text-4xl">
-                Market
-              </h2>
-              <p className="mt-2 text-be-grey">Your event. Your brand. Everything customised, right here.</p>
-            </div>
-            <Link href="/shop" className="inline-flex items-center gap-1.5 font-semibold text-be-navy hover:text-be-cyan">
-              Browse the Marketplace <ArrowRight size={16} aria-hidden />
-            </Link>
-          </div>
-          <ul className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {MARKET_PRODUCTS.map((p) => (
-              <li key={p.name} className="rounded-xl border border-gray-200 p-4">
-                <p className="text-[11px] font-medium uppercase tracking-wider text-be-grey">Min Order: {p.min}</p>
-                <h3 className="mt-2 font-semibold text-be-navy">{p.name}</h3>
-                <p className="text-xs text-be-grey">{p.category}</p>
-                <p className="mt-3 font-semibold text-be-navy">{p.price}</p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-xs text-be-grey">Archived catalogue prices (March 2025) shown for reference. Ordering is not active in this preview.</p>
         </div>
       </section>
 
       <SupplierCta />
-      <Newsletter />
     </SiteShell>
   );
 }

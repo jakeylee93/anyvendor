@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowUpRight, Mail, Phone, MapPin, CalendarDays, Info, Check
 import SiteShell from "@/components/site/SiteShell";
 import BusinessCard, { Monogram, locationLabel } from "@/components/site/BusinessCard";
 import Showreel from "@/components/site/Showreel";
-import Gallery from "@/components/site/Gallery";
+import GalleryMarquee from "@/components/site/GalleryMarquee";
 import { BUSINESSES, getBusiness, categoriesOf, industryOf, industryName, type Business } from "@/lib/directory";
 import { getProfile, type Profile } from "@/lib/profiles";
 
@@ -263,9 +263,9 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
 
       {/* Gallery */}
       {rest.length > 0 && (
-        <section className={`mx-auto max-w-7xl px-4 pb-16 md:pb-24 ${p.eventTypes.length ? "" : "pt-16 md:pt-20"}`}>
-          <h2 className="mb-8 text-3xl font-bold text-be-navy md:text-4xl">Gallery</h2>
-          <Gallery images={rest} name={p.displayName} />
+        <section className={`pb-16 md:pb-24 ${p.eventTypes.length ? "" : "pt-16 md:pt-20"}`}>
+          <h2 className="mx-auto mb-8 max-w-7xl px-4 text-3xl font-bold text-be-navy md:text-4xl">Gallery</h2>
+          <GalleryMarquee images={rest} name={p.displayName} />
         </section>
       )}
 

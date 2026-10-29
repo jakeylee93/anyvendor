@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { type Business, categoriesOf, industryOf } from "@/lib/directory";
-import HoloCard from "./HoloCard";
 import { getProfile } from "@/lib/profiles";
+import HoloCard from "./HoloCard";
+import CardVideo from "./CardVideo";
+import ShortlistButton from "./ShortlistButton";
+import { NeedIcon, iconFor } from "./icons";
 
 const TINTS = [
   ["#33ccff", "#212235"],
@@ -18,17 +21,12 @@ function initials(name: string) {
   return (words.length > 1 ? words[0][0] + words[1][0] : name.slice(0, 2)).toUpperCase();
 }
 
-/** Stand-in for the original logo/photo, which could not be recovered. */
+/** Stand-in for a business with no recovered photo. */
 export function Monogram({ business, className = "" }: { business: Business; className?: string }) {
   const i = [...business.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % TINTS.length;
   const [bg, fg] = TINTS[i];
   return (
-    <div
-      className={`flex items-center justify-center ${className}`}
-      style={{ background: `linear-gradient(135deg, ${bg}, ${bg}cc)`, color: fg }}
-      role="img"
-      aria-label={`${business.name} (original image not yet recovered)`}
-    >
+    <div className={`flex items-center justify-center ${className}`} style={{ background: `linear-gradient(135deg, ${bg}, ${bg}cc)`, color: fg }} role="img" aria-label={business.name}>
       <span className="text-4xl font-bold tracking-tight">{initials(business.name)}</span>
     </div>
   );
@@ -56,86 +54,95 @@ function cardFacts(b: Business) {
   const p = getProfile(b.slug);
   if (!p) return { year: String(b.established), place: locationLabel(b) };
   const year = p.established?.label.match(/\b(19|20)\d{2}\b/)?.[0] ?? null;
-  const place = p.basedIn?.text ?? b.region ?? null;
+  const place = p.basedIn?.text.split(/[,(]/)[0].trim() ?? b.region ?? null;
   return { year, place };
 }
 
+/** Circular logo seal; wide wordmarks are scaled to fit inside the circle. */
 function LogoSeal({ p }: { p: NonNullable<ReturnType<typeof getProfile>> }) {
   if (!p.logo) return null;
-  const wide = p.logo.width / p.logo.height > 1.8;
   const bg = p.logo.plate === "dark" ? "bg-be-deep" : "bg-white";
   return (
-    <span
-      className={`absolute left-3 top-3 z-[2] flex items-center justify-center shadow-lg ring-[3px] ring-white/90 ${bg} ${
-        wide ? "h-12 max-w-[62%] rounded-full px-3" : "h-[68px] w-[68px] rounded-full p-2"
-      }`}
-    >
-      <img src={p.logo.src} alt={`${p.displayName} logo`} className={`max-h-full object-contain ${wide ? "h-6 w-auto" : "h-full w-full"}`} />
+    <span className={`absolute left-3 top-3 z-[2] flex h-[72px] w-[72px] items-center justify-center overflow-hidden rounded-full shadow-lg ring-[3px] ring-white/90 ${bg}`}>
+      <img src={p.logo.src} alt={`${p.displayName} logo`} className="h-[78%] w-[78%] object-contain" />
     </span>
   );
 }
 
-export default function BusinessCard({ business }: { business: Business }) {
+export default function BusinessCard({ business, need = null, reasons }: { business: Business; need?: string | null; reasons?: string[] }) {
   const p = getProfile(business.slug);
   const price = p?.cardPrice ?? business.price;
   const facts = cardFacts(business);
   const cats = categoriesOf(business);
   const industry = industryOf(business);
   const type = (industry && TYPE_STYLE[industry]) || DEFAULT_TYPE;
-  const cover = p?.card?.src ?? p?.reel?.outputs.desktop.posterWebp ?? p?.gallery[0]?.src;
   const name = p?.displayName ?? business.name;
+  const reel = p?.reel?.outputs.desktop;
+  const cover = p?.card?.src ?? reel?.posterWebp ?? p?.gallery[0]?.src;
+  const icon = iconFor(industry, cats[0]);
 
   return (
-    <Link
-      href={`/businesses/${business.slug}`}
-      aria-label={`${name}${cats[0] ? `, ${cats[0]}` : ""}${facts.place ? `, ${facts.place}` : ""}`}
-      className="group block h-full rounded-[24px] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-be-cyan"
-    >
-      <HoloCard tint={type.tint}>
-        <div className="flex h-full flex-col gap-2">
-          <div className="relative aspect-4/3 overflow-hidden rounded-[16px] bg-be-mist">
-            {cover ? (
-              <img
-                src={cover}
-                alt={p?.card?.alt ?? ""}
-                loading="lazy"
-                decoding="async"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-              />
-            ) : (
-              <Monogram business={business} className="absolute inset-0" />
-            )}
-            {p && <LogoSeal p={p} />}
-            {cats[0] && (
-              <span className="absolute right-3 top-3 z-[2] rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold text-be-navy shadow-sm backdrop-blur">
-                {cats[0]}
-              </span>
-            )}
-          </div>
+    <div className="relative h-full">
+      <Link
+        href={`/businesses/${business.slug}`}
+        aria-label={`${name}${cats[0] ? `, ${cats[0]}` : ""}${facts.place ? `, ${facts.place}` : ""}`}
+        className="group block h-full rounded-[24px] focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-be-cyan"
+      >
+        <HoloCard tint={type.tint}>
+          <div className="flex h-full flex-col gap-2">
+            <div className="relative aspect-4/3 overflow-hidden rounded-[16px] bg-be-mist">
+              {reel ? (
+                <CardVideo video={reel.video} poster={reel.posterWebp} alt={p?.card?.alt ?? ""} />
+              ) : cover ? (
+                <img src={cover} alt={p?.card?.alt ?? ""} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+              ) : (
+                <Monogram business={business} className="absolute inset-0" />
+              )}
+              {p && <LogoSeal p={p} />}
+              {cats[0] && (
+                <span className="absolute right-3 top-3 z-[2] inline-flex items-center gap-1.5 rounded-full bg-be-deep/75 px-3 py-1.5 text-[11px] font-semibold text-white shadow-sm ring-1 ring-white/25 backdrop-blur">
+                  <NeedIcon name={icon} size={13} className="text-be-cyan" aria-hidden />
+                  {cats[0]}
+                </span>
+              )}
+            </div>
 
-          <div className="flex flex-1 flex-col rounded-[16px] bg-white/80 px-4 pb-3 pt-3.5 backdrop-blur-sm">
-            <h3 className="truncate text-lg font-bold leading-tight text-be-navy">{name}</h3>
-            <p className="mt-0.5 text-xs text-be-grey">{facts.year ? `Est. ${facts.year}` : "\u00a0"}</p>
-            {cats.length > 0 && (
-              <p className="mt-1 truncate text-[13px] font-semibold" style={{ color: type.text }}>
-                {cats.join(" · ")}
+            <div className="flex flex-1 flex-col rounded-[16px] bg-white/85 px-4 pb-3 pt-3.5 backdrop-blur-sm">
+              <h3 className="truncate text-lg font-bold leading-tight text-be-navy">{name}</h3>
+              <p className="mt-0.5 text-xs text-be-grey">{facts.year ? `Est. ${facts.year}` : " "}</p>
+              {cats.length > 0 && (
+                <p className="mt-1 truncate text-[13px] font-semibold" style={{ color: type.text }}>
+                  {cats.join(" · ")}
+                </p>
+              )}
+              <div className="my-2.5 h-px bg-be-navy/10" />
+              <p className="flex items-start gap-1.5 text-xs text-be-grey">
+                <MapPin size={14} className="mt-px shrink-0" aria-hidden />
+                <span className="truncate">{facts.place ?? "Location on request"}</span>
               </p>
-            )}
-            <div className="my-2.5 h-px bg-be-navy/10" />
-            <p className="flex min-h-[2.25rem] items-start gap-1.5 text-xs text-be-grey">
-              <MapPin size={14} className="mt-px shrink-0" aria-hidden />
-              <span className="line-clamp-2">{facts.place ?? "Location on request"}</span>
-            </p>
-            <div className="mt-auto flex items-baseline justify-between gap-2 rounded-xl bg-be-mist/80 px-3 py-2">
-              <span className="text-[11px] font-medium uppercase tracking-wider text-be-grey">From</span>
-              <span className="truncate text-right">
-                <strong className="text-base font-bold text-be-navy">{price.from}</strong>{" "}
-                <span className="text-xs text-be-grey">{price.unit}</span>
-              </span>
+              {reasons && reasons.length > 0 && (
+                <ul className="mt-2 flex flex-wrap gap-1.5">
+                  {reasons.map((r) => (
+                    <li key={r} className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${r === "Best match" ? "bg-be-amber text-be-navy" : "bg-be-cyan-pale text-be-navy"}`}>
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <div className="mt-auto flex items-baseline justify-between gap-2 pt-3">
+                <span className="text-[11px] font-medium uppercase tracking-wider text-be-grey">From</span>
+                <span className="truncate text-right">
+                  <strong className="text-base font-bold text-be-navy">{price.from}</strong>{" "}
+                  <span className="text-xs text-be-grey">{price.unit}</span>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </HoloCard>
-    </Link>
+        </HoloCard>
+      </Link>
+      <div className="pointer-events-none absolute left-[9px] right-[9px] top-[9px] aspect-4/3" aria-hidden={false}>
+        <ShortlistButton slug={business.slug} need={need} name={name} className="pointer-events-auto absolute bottom-3 right-3" />
+      </div>
+    </div>
   );
 }

@@ -45,22 +45,19 @@ export function Newsletter() {
 
 const COLS = [
   {
-    title: "Discover",
+    title: "Find",
     links: [
       ["/directory", "Directory"],
-      ["/shop", "Shop"],
-      ["/hire", "Hire"],
-      ["/trade", "Trade"],
-      ["/agency", "Agency"],
+      ["/people", "People"],
+      ["/venues", "Venues"],
+      ["/#plan", "Plan my event"],
     ],
   },
   {
     title: "Anyvendor",
     links: [
-      ["/how-it-works", "How it Works"],
-      ["/trending", "Trending"],
-      ["/list-my-business", "List My Business"],
-      ["/plan-my-event", "Plan My Event"],
+      ["/how-it-works", "How it works"],
+      ["/list-my-business", "List my business"],
       ["/contact", "Contact"],
     ],
   },
@@ -76,7 +73,7 @@ const COLS = [
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-be-deep text-white">
+    <footer className="bg-be-deep text-white print:hidden">
       <div className="be-gradient-line" />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4">
         <div>
