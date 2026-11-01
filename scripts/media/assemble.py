@@ -63,6 +63,7 @@ def main():
             "basedIn": c.get("basedIn"),
             "price": c.get("price"),
             "cardPrice": c.get("cardPrice"),
+            "reviewLinks": c.get("reviewLinks") or {},
             "logo": None,
             "card": None,
             "gallery": [],

@@ -109,7 +109,7 @@ export interface Business {
   price: { from: string; unit: string };
   /** Original image path on bookedevents.co.uk (not recoverable yet). */
   originalImage: string;
-  sources: ("archive" | "observed-2025-09-25")[];
+  sources: ("archive" | "observed-2025-09-25" | "jake-2026-11-01")[];
   note?: string;
 }
 
@@ -312,6 +312,20 @@ export const BUSINESSES: Business[] = [
     price: { from: "£500", unit: "per event" },
     originalImage: UP + "2024/12/ozzy_stix_thumb.jpg",
     sources: ["archive", "observed-2025-09-25"],
+  },
+  {
+    // Added at Jake's request on 1 Nov 2026; details from the business's own site (content/research).
+    slug: "the-farmhouse-caterers",
+    name: "The Farmhouse at Home",
+    established: 2021,
+    address: "Hoddesdon, Hertfordshire",
+    region: "Hertfordshire",
+    listedCategories: ["Caterers", "Grills & BBQ"],
+    inferred: null,
+    price: { from: "£16.95", unit: "per person" },
+    originalImage: "",
+    sources: ["jake-2026-11-01"],
+    note: "Established year is the company's incorporation (Jan 2021); the business does not publish a founding year.",
   },
   {
     slug: "the-bar-people",

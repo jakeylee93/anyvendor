@@ -167,6 +167,26 @@
   ],
   "sourceUrl": "https://thebarpeople.co.uk/contact-us/"
  },
+ "the-farmhouse-caterers": {
+  "industry": "food-services",
+  "categories": [
+   "Caterers",
+   "Grills & BBQ",
+   "Italian",
+   "Greek"
+  ],
+  "eventTypes": [
+   "Anniversaries",
+   "Baby Showers",
+   "Birthday Parties",
+   "Corporate Events",
+   "House Parties",
+   "Private Parties",
+   "Seasonal Events",
+   "Weddings"
+  ],
+  "sourceUrl": "https://thefarmhouseessex.com/"
+ },
  "tl-executive-cars": {
   "industry": "transport-logistics",
   "categories": [

@@ -1,0 +1,149 @@
+{
+ "slug": "the-farmhouse-caterers",
+ "displayName": "The Farmhouse at Home",
+ "tagline": "Events & Private Catering",
+ "intro": "The Farmhouse at Home is a premium events caterer from Essex, delivering buffets, BBQs, private chef dining and cook-at-home boxes across Essex, Hertfordshire, London and surrounding areas, from intimate dinners to weddings and parties.",
+ "about": [
+  "Founder and head chef Teejay Asciak grew up in a large Mediterranean family and trained at Westminster Kingsway College, where he took a diploma in culinary arts. He worked in corporate catering and restaurant kitchens, and was a Sous Chef on Jamie Oliver's team, helping to open new restaurants. He then launched Cheeky Italian, an Italian street-food business run from a restored vintage Citroen H van found in France, trading at UK festivals and international events, including in the UAE.",
+  "Wanting a restaurant in his home county, Teejay developed a rural farmhouse in Waltham Abbey into The Farmhouse Essex, which the business describes as having a rustic warehouse vibe and modern British food. The Farmhouse at Home began as restaurant-quality food delivered to customers' doors, and as it grew he shifted his focus from the restaurant to this side of the business. It now offers a full buffet service, Cook at Home boxes, afternoon teas and private chef dining experiences.",
+  "The team works from Farmhouse HQ at Parkside Business Centre in Hoddesdon, Hertfordshire, which is also the collection point for Cook at Home boxes. Buffets are delivered daily by the company's own drivers, dishes are labelled with allergen information and a full buffet allergen list is published online. The private chef menus were created by Teejay, drawing on his heritage: Italian Feast, Best of British, Spanish Fiesta, Go Greek, Roast Dinner and an a la carte menu, plus bowl food and canapés, with bespoke menus on request.",
+  "Two sister operations extend the format. Farmhouse Caterers Algarve offers the same BBQ catering, with five, seven or nine mains and matching sides plus three or five desserts, for villas and events in the Algarve, Portugal. Pizzetta Essex specialises in wood-fired Neapolitan pizza, from all-you-can-eat pizza buffets to pizza-making classes at home, across Essex, Hertfordshire and London. The Farmhouse at Home is the trading name of Essex Provisions Ltd, as its Terms and Conditions state."
+ ],
+ "services": [
+  {
+   "name": "Drop-off buffets",
+   "description": "Cold buffets of 5, 7, 9 or 11 dishes, delivered on disposable platters ready to serve. Published at '5 options from £16.95 per person (minimum of 30 people)'; a 35% deposit secures the booking."
+  },
+  {
+   "name": "Hot serviced buffets",
+   "description": "The same 5 to 11-dish buffet cooked on site by chefs, with up to two hours of waiting service, buffet decor, chafing dishes, setup and clear-down. A serviced fee applies, 'with prices starting from £300'."
+  },
+  {
+   "name": "BBQ catering",
+   "description": "On-site BBQ with a chef and wait staff for up to two hours of self-serve service, including gazebo, equipment, serving tables and decor. Priced '3 mains & 3 sides from £38 per person'."
+  },
+  {
+   "name": "Private chef dining",
+   "description": "Chefs and wait staff cook and serve a menu at home or a chosen venue, bringing equipment, crockery and cutlery. Best of British, Spanish Fiesta and Go Greek menus are 'priced from £75 per person'."
+  },
+  {
+   "name": "Bowl food and canapés",
+   "description": "Handheld bowl dishes cooked on site and served around the room at standing events, from '3 options from £23 per person'. Handmade canapés, '3 options from £9 per person', are an add-on."
+  },
+  {
+   "name": "Cook at Home boxes",
+   "description": "Vacuum-packed meal boxes for 2, 4 or 6 with cooking instructions, from year-round pies, curries and roasts to Christmas Dinner boxes, published 'Turkey Box from £88', for delivery or collection from Farmhouse HQ."
+  }
+ ],
+ "eventTypes": [
+  "Anniversaries",
+  "Baby Showers",
+  "Birthday Parties",
+  "Corporate Events",
+  "House Parties",
+  "Private Parties",
+  "Seasonal Events",
+  "Weddings"
+ ],
+ "areasServed": [
+  "Essex",
+  "Hertfordshire",
+  "London",
+  "Surrounding areas"
+ ],
+ "website": "https://thefarmhouseessex.com/",
+ "socials": {
+  "facebook": "https://www.facebook.com/thefarmhouseessex",
+  "instagram": "https://www.instagram.com/thefarmhousecaterers/",
+  "tiktok": "https://www.tiktok.com/@thefarmhouseessex",
+  "youtube": null,
+  "vimeo": null
+ },
+ "contact": null,
+ "established": null,
+ "basedIn": {
+  "text": "Hoddesdon, Hertfordshire",
+  "sourceUrl": "https://thefarmhouseessex.com/contact/"
+ },
+ "price": {
+  "text": "Drop-off buffets: '5 options from £16.95 per person (minimum of 30 people)'",
+  "sourceUrl": "https://thefarmhouseessex.com/drop-off-buffets/"
+ },
+ "identity": {
+  "confidence": "high",
+  "note": "No founding year is published; the trading company Essex Provisions Ltd was incorporated in January 2021 and the business grew out of The Farmhouse Essex restaurant, so no year is shown."
+ },
+ "sources": [
+  {
+   "label": "The Farmhouse at Home — Home",
+   "url": "https://thefarmhouseessex.com/"
+  },
+  {
+   "label": "The Farmhouse at Home — Our Story",
+   "url": "https://thefarmhouseessex.com/our-story/"
+  },
+  {
+   "label": "The Farmhouse at Home — Drop Off Buffets",
+   "url": "https://thefarmhouseessex.com/drop-off-buffets/"
+  },
+  {
+   "label": "The Farmhouse at Home — Hot Food Serviced Buffet Options",
+   "url": "https://thefarmhouseessex.com/hot-food-serviced-buffet-options/"
+  },
+  {
+   "label": "The Farmhouse at Home — BBQ Menu",
+   "url": "https://thefarmhouseessex.com/bbq-menu/"
+  },
+  {
+   "label": "The Farmhouse at Home — Private Chef",
+   "url": "https://thefarmhouseessex.com/private-chef/"
+  },
+  {
+   "label": "The Farmhouse at Home — Contact",
+   "url": "https://thefarmhouseessex.com/contact/"
+  },
+  {
+   "label": "The Farmhouse at Home — Terms and Conditions",
+   "url": "https://thefarmhouseessex.com/terms-and-conditions/"
+  }
+ ],
+ "gaps": [
+  "No founding year is stated anywhere on the site. The trading company Essex Provisions Ltd was incorporated on 11 January 2021, the footer reads '© 2025 - The Farmhouse Essex', and Wayback captures of the domain start in August 2018 (presumably the restaurant era, not verified). Ask the business before publishing a year.",
+  "Price conflict between the pages and the online shop: the buffet pages (last modified 1 October 2026) give £16.95/£18.95/£20.95/£22.95 per person with 25–30 minimums and a serviced fee from £300, but the shop still lists older '5 Dish Buffet £12.95', '7 Dish Buffet £14.95' and '9 Dish Buffet £16.95' prices (minimum 15), 'Serviced Options £160–£240' and a 'Tea & Coffee Station £2.50 per person', and several sides are £1–£2 lower in the shop. The page figures are used here as current.",
+  "Contact details are not reproduced in this profile; the site's footer and contact page publish a business email address and landline number, and the contact page has an enquiry form.",
+  "Instagram (@thefarmhousecaterers) and Facebook (/thefarmhouseessex) are linked from the site but neither showed public profile data when checked (logged-out shell and HTTP 400), so their activity is unverified; the Facebook page name was not confirmed. TikTok (@thefarmhouseessex) is linked from the site but was not fetched.",
+  "Garden Parties is not listed because the site describes BBQ catering for 'your outdoor event' and never uses the phrase 'garden party'. Occasions they cater with no matching directory event type: communions, christenings, graduations, hen parties, bridal showers, rehearsal dinners, family reunions, community events and work events. Engagement Parties, Festivals, Charity Galas and Product Launches are not claimed.",
+  "Afternoon Tea is offered (a Farmhouse Afternoon Tea buffet at home with full service, and an enquiry-form option) but has no dedicated page or published price, so it is not listed as a service.",
+  "A Google reviews link is published on the site and testimonials are attributed 'via Google reviews'; no rating or review count was captured and none is shown.",
+  "No transparent or vector logo exists (the best file is a 1920x1080 JPEG lockup on white), and the only own video is a 31.9 MB QuickTime .mov with no poster image. Two photos show identifiable guests or staff and would need consent confirmed before reuse.",
+  "The registered office (Enfield EN2) differs from the operating base Farmhouse HQ (Hoddesdon EN11), and the food hygiene register lists the Hoddesdon unit as 'The Farmhouse Essex'. Whether The Farmhouse Essex restaurant in Waltham Abbey still trades was not verified.",
+  "Some supplements are unpriced: the A La Carte Porterhouse and surf 'n' turf are '£tbc at point of booking', the Kids Buffet shop product shows £0.00, and the Algarve sister site publishes menus without prices."
+ ],
+ "taxonomy": {
+  "industry": "food-services",
+  "categories": [
+   "Caterers",
+   "Grills & BBQ",
+   "Italian",
+   "Greek"
+  ],
+  "eventTypes": [
+   "Anniversaries",
+   "Baby Showers",
+   "Birthday Parties",
+   "Corporate Events",
+   "House Parties",
+   "Private Parties",
+   "Seasonal Events",
+   "Weddings"
+  ],
+  "sourceUrl": "https://thefarmhouseessex.com/"
+ },
+ "cardPrice": {
+  "from": "£16.95",
+  "unit": "per person"
+ },
+ "reviewLinks": {
+  "google": "https://www.google.com/search?q=google+reviews+the+farmhouse+at+home+essex#lrd=0x2fd5b093ac129265:0xd209c1f4c6737b70,1,,,,"
+ }
+}

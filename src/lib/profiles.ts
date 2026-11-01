@@ -84,6 +84,8 @@ export interface Profile {
   price: { text: string; sourceUrl: string } | null;
   /** Short form of `price` for directory cards. */
   cardPrice: { from: string; unit: string } | null;
+  /** Links to the business's own public review pages (no ratings are scraped). */
+  reviewLinks: Partial<Record<"google" | "tripadvisor", string>>;
   identity: { confidence: "high" | "medium" | "low" | "none"; note: string | null };
   sources: { label: string; url: string }[];
   gaps: string[];

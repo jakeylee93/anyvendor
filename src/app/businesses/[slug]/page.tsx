@@ -162,6 +162,23 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
             b.region && <Fact icon={<MapPin size={16} aria-hidden />} label="Area" value={b.region} note="From the 2025 directory listing" />
           )}
           {p.areasServed.length > 0 && <Fact label="Areas covered" value={p.areasServed.join(", ")} />}
+          {(p.reviewLinks.google || p.reviewLinks.tripadvisor) && (
+            <div>
+              <dt className="text-be-grey">Reviews</dt>
+              <dd className="mt-1 flex flex-wrap gap-2">
+                {p.reviewLinks.google && (
+                  <a href={p.reviewLinks.google} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-be-navy hover:border-be-cyan">
+                    See reviews on Google <ArrowUpRight size={14} aria-hidden />
+                  </a>
+                )}
+                {p.reviewLinks.tripadvisor && (
+                  <a href={p.reviewLinks.tripadvisor} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full border border-gray-300 px-3 py-1.5 text-sm font-semibold text-be-navy hover:border-be-cyan">
+                    See reviews on Tripadvisor <ArrowUpRight size={14} aria-hidden />
+                  </a>
+                )}
+              </dd>
+            </div>
+          )}
           {p.price ? (
             <Fact label="Pricing" value={p.price.text} source={p.price.sourceUrl} />
           ) : (

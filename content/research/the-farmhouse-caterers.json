@@ -1,0 +1,399 @@
+{
+ "slug": "the-farmhouse-caterers",
+ "verdict": "confirmed",
+ "identityConfidence": "high",
+ "problemsFound": [],
+ "record": {
+  "slug": "the-farmhouse-caterers",
+  "displayName": "The Farmhouse at Home",
+  "tagline": "Events & Private Catering",
+  "identity": {
+   "officialWebsite": "https://thefarmhouseessex.com/",
+   "confidence": "high",
+   "alternateNames": [
+    "The Farmhouse At Home",
+    "Farmhouse at Home",
+    "The Farmhouse at Home Caterers",
+    "The Farmhouse Caterers / Farmhouse Caterers Essex",
+    "The Farmhouse Essex (FSA listing name and the restaurant the business grew from)",
+    "Farmhouse Restaurant Essex (schema.org organisation name in the site head)",
+    "Essex Provisions Ltd (registered company)"
+   ],
+   "evidence": "Instagram handle @thefarmhousecaterers is linked from the header and footer of thefarmhouseessex.com (fetched with curl, desktop Chrome UA, 2026-11-01, HTTP 200), which is the domain in the Instagram bio. The site is a WordPress/Divi site titled 'Buffet Caterers In Essex | The Farmhouse At Home'; the homepage header logo img alt is 'The Farmhouse at Home' and the largest logo file carries the lockup tagline 'EVENTS & PRIVATE CATERING', matching the Instagram display name 'The Farmhouse at Home | Events & Private Catering'. The bio's service list (private chef, BBQ, hot and cold buffets, cook-at-home Christmas dinner boxes, Essex/Hertfordshire/London/Algarve) matches the site's pages one for one, and the site links the sister site farmhousecaterersalgarve.com ('From the Farmhouse Caterers Essex UK to Farmhouse Caterers Portugal, we are proud to now offer BBQ catering in the Algarve'). The Terms and Conditions page states 'Essex Provisions Ltd t/a The Farmhouse at Home, Company No. 13125607'. Companies House: ESSEX PROVISIONS LTD (13125607), active private limited company, incorporated 11 January 2021, SIC 56210 Event catering activities and 56290 Other food services, registered office 84a Lancaster Road, Via Kynaston Road, Enfield, Middlesex EN2 0BX; sole director Teejay Joseph Asciak (appointed 11 January 2021, identity verified 9 March 2026); micro-company accounts to 31 January 2025 filed, confirmation statement dated 24 January 2026. The site's Our Story page names 'Teejay Asciak and The Farmhouse At Home' and image alt text reads 'Teejay Asciak Chef the Farmhouse Essex at Home'. The operating base on the contact page, footer, Christmas FAQ and T&Cs is 'Farmhouse HQ', Unit 3, Parkside Business Centre, Plumpton Road, Hoddesdon, Hertfordshire EN11 0ES. The FSA food hygiene register (FHRSID 1874611) lists 'The Farmhouse Essex', business type 'Other catering premises', at Unit 3 Parkside Business Centre, Plumpton Road, EN11 0ES (Broxbourne), rating 5, inspected 10 July 2024. Wayback Machine captures of thefarmhouseessex.com exist from 8 August 2018 onward (content of the early captures not checked). Namesakes ruled out: The Farmhouse Kitchen Leamside Ltd (Co. Durham), The Farmhouse Coventry Ltd, Farmhouse Ltd 17066007 (Collier Row, incorporated March 2026, no link found) and US 'farm-to-table' caterers."
+  },
+  "about": [
+   {
+    "text": "The Farmhouse at Home describes itself as a premium events caterer from Essex serving Essex, Hertfordshire, London and surrounding areas, offering buffets, private dining and cook-at-home boxes delivered to the door or to a chosen venue.",
+    "sourceUrl": "https://thefarmhouseessex.com/"
+   },
+   {
+    "text": "The business grew out of The Farmhouse Essex restaurant. It says it provides customised catering from intimate dinners to lavish weddings and parties, and its four headline services are Buffets, Private Chef, BBQs and Christmas Dinner Cook at Home boxes.",
+    "sourceUrl": "https://thefarmhouseessex.com/"
+   },
+   {
+    "text": "Founder and head chef Teejay Asciak grew up in a large Mediterranean family. He trained at Westminster Kingsway College (diploma in culinary arts), worked in corporate catering and then restaurant kitchens, and was a Sous Chef on Jamie Oliver's team, helping to open new restaurants.",
+    "sourceUrl": "https://thefarmhouseessex.com/our-story/"
+   },
+   {
+    "text": "He then launched 'Cheeky Italian', an Italian street-food business run from a restored vintage Citroen H van found in France, trading at UK festivals and international events including in the UAE.",
+    "sourceUrl": "https://thefarmhouseessex.com/our-story/"
+   },
+   {
+    "text": "Wanting a restaurant in his home county, Teejay developed a rural farmhouse in Waltham Abbey into The Farmhouse Essex, described as having a rustic warehouse vibe and modern British food.",
+    "sourceUrl": "https://thefarmhouseessex.com/our-story/"
+   },
+   {
+    "text": "The Farmhouse at Home began as restaurant-quality food delivered to customers' doors. As it grew, Teejay shifted focus from the restaurant to this side of the business, which now offers a full buffet service, Cook at Home boxes, Afternoon Teas and private chef dining experiences.",
+    "sourceUrl": "https://thefarmhouseessex.com/our-story/"
+   },
+   {
+    "text": "The private chef menus were created by head chef Teejay, drawing on his heritage: Italian Feast, Best of British, Spanish Fiesta, Go Greek, Roast Dinner and an a la carte menu, plus bowl food and canapés, with bespoke menus on request.",
+    "sourceUrl": "https://thefarmhouseessex.com/private-chef/"
+   },
+   {
+    "text": "'Farmhouse HQ' is Unit 3, Parkside Business Centre, Plumpton Road, Hoddesdon, Hertfordshire, EN11 0ES. This is also the collection point for Cook at Home boxes.",
+    "sourceUrl": "https://thefarmhouseessex.com/contact/"
+   },
+   {
+    "text": "Buffets are delivered daily across Essex, Hertfordshire, London and surrounding areas by the company's own drivers. Dishes are labelled with allergen information, and the site publishes a full buffet allergen list.",
+    "sourceUrl": "https://thefarmhouseessex.com/buffet-packages/"
+   },
+   {
+    "text": "The published delivery postcode list covers east, north, north-west, west and south-east London (E, N, NW, W, SE), Enfield and Hertfordshire (EN, AL, WD, SG), Essex (IG, RM, CM, SS15) and Harlow/Bishop's Stortford (CM17–CM23). Other postcodes may be arranged at extra cost.",
+    "sourceUrl": "https://thefarmhouseessex.com/delivery-terms/"
+   },
+   {
+    "text": "Booking terms (verbatim extracts): 'A 35% deposit is required for standard bookings.' 'A 50% deposit may be required for peak periods, including Christmas.' 'The final balance is normally due 14 days before the event.' 'Serviced event fees start from £300.' 'Additional time may be charged at £100 per hour per member of staff.' 'A fuel and travel charge starting from £15 may apply.' 'A 12.5% service charge ... applies to serviced events taking place on any bank holiday, public holiday or recognised observance day.' An equipment hire charge of at least £150 may apply where a venue kitchen is unsuitable, and a £50 refundable equipment deposit may be required.",
+    "sourceUrl": "https://thefarmhouseessex.com/terms-and-conditions/"
+   },
+   {
+    "text": "The trading company is Essex Provisions Ltd (company no. 13125607), active, incorporated 11 January 2021, nature of business event catering activities (SIC 56210) and other food services (SIC 56290). Its sole director is Teejay Joseph Asciak.",
+    "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/13125607"
+   },
+   {
+    "text": "The FSA food hygiene register lists the Hoddesdon unit under the name 'The Farmhouse Essex' (other catering premises) with a food hygiene rating of 5, inspected 10 July 2024.",
+    "sourceUrl": "https://ratings.food.gov.uk/business/1874611"
+   },
+   {
+    "text": "A sister operation, Farmhouse Caterers Algarve, offers the same BBQ catering format (5, 7 or 9 mains with matching sides, plus 3 or 5 desserts) for villas and events in the Algarve, Portugal.",
+    "sourceUrl": "https://farmhousecaterersalgarve.com/"
+   },
+   {
+    "text": "Another sister company, Pizzetta Essex, specialises in wood-fired Neapolitan pizza, from all-you-can-eat pizza buffets to pizza-making classes at home, across Essex, Hertfordshire and London.",
+    "sourceUrl": "https://thefarmhouseessex.com/pizza/"
+   }
+  ],
+  "services": [
+   {
+    "name": "Cold Food Drop Off Buffets",
+    "description": "Choose 5, 7, 9 or 11 dishes from the buffet menu, delivered cold on table-presentable disposable platters, ready to serve; staff will lay out the platters if a table is ready. Published prices (verbatim): '5 options from £16.95 per person (minimum of 30 people)', '7 options from £18.95 per person (minimum of 25 people)', '9 options from £20.95 per person (minimum of 25 people)', '11 options from £22.95 per person (minimum of 25 people)'. 'Secure your booking with a 35% deposit or pay in full.' Suggested for weddings, birthdays, graduations, family reunions, corporate events, holiday parties, community events, baby/bridal showers and casual get-togethers.",
+    "sourceUrl": "https://thefarmhouseessex.com/drop-off-buffets/"
+   },
+   {
+    "name": "Hot Food Serviced Buffets",
+    "description": "The same 5/7/9/11-option buffet with on-site cooking by chefs and up to two hours of service by wait staff, full buffet decor, crockery tableware and chafing dishes, labelled dishes with allergen information, setup and clean-down. Food prices are the same per-person rates as the drop-off buffet (from £16.95 to £22.95 per person). Published fee (verbatim): 'In addition to the price of our buffet food, a fee does apply for our serviced buffet package with prices starting from £300.' Disposable plates and cutlery are standard; crockery dinner plates and silver cutlery cost extra. Kitchen access is needed (or a hire fee applies for equipment); serving tables are not provided as standard. The team arrives 1.5–2 hours before service and needs up to 1 hour to clear down; leftovers are boxed up for the client.",
+    "sourceUrl": "https://thefarmhouseessex.com/hot-food-serviced-buffet-options/"
+   },
+   {
+    "name": "Buffet menu (hot and cold dishes)",
+    "description": "Dishes available for both drop-off and serviced buffets include beef and pork ragu, spinach and lemon, and wild mushroom and truffle arancini; breaded chicken escalope; lemon and garlic chicken kebabs; Farmhouse sausage rolls; honey-glazed mini Essex sausages; chicken and fish goujons; fishcakes; chicken wings; Greek 'keftedes' meatballs; spiced beef kebabs with tzatziki; falafel; onion bhajis; samosas; spring rolls; finger sandwiches and tortilla wraps; pizzette; ham, cheddar and spinach tart; goat's cheese tarts; a vegan porcini and tofu tart; Melton Mowbray pork pies; salads, rice and roast potatoes. Dietary markers (v, vg, gf, n) are shown, and gluten-free alternatives are available on request for an additional fee.",
+    "sourceUrl": "https://thefarmhouseessex.com/farmhouse-buffet-menu/"
+   },
+   {
+    "name": "Buffet sides and desserts (add-ons)",
+    "description": "Sides serve up to 15 people and can only be ordered with a buffet package. Published prices (verbatim): Antipasti Cured Meats £20.00; Bread Basket £15.00; Aubergine & Courgette Parmigiana £21.00; Beef & Pork Lasagne £23.00; Farmhouse Cheese Board £24.00; Fennel Sausage & Pepperonata 'Al Forno' £23.00; Mixed Seafood Salad £25.00; Tomato, Mozzarella & Basil Salad £20.00; Finger Sandwich Selection (24 pieces) £24.00; Tortilla Wrap Selection (24 pieces) £24.00; Mac 'n' Cheese £20.00; Sliced Roast Beef £18.50; Sliced Glazed Ham £18.50. Mini desserts: 'per dessert £3.75pp or a choice of 3 desserts for £9.75pp' with a 'Minimum order of 20 portions per dessert' (salted caramel brownie, cheesecakes, chocolate orange mousse, Amalfi lemon curd tart, lemon posset, Essex mess, profiteroles, fruit platter).",
+    "sourceUrl": "https://thefarmhouseessex.com/buffet-sides-and-desserts/"
+   },
+   {
+    "name": "BBQ catering",
+    "description": "On-site BBQ with a chef and wait staff for a self-serve service of up to two hours, including setup and cooking, a 3m x 3m gazebo, the BBQ and equipment, serving tables with hessian cloths, crockery serving plates, wooden boards and hot plates with decor; disposable plates, cutlery and napkins for guests (crockery and silver cutlery available for hire). Published prices (verbatim): '3 mains & 3 sides from £38 per person (minimum of 25 people)', '5 mains & 5 sides from £53 per person (minimum of 20 people)', '7 mains & 7 sides from £68 per person (minimum of 15 people)'. 'All bookings will require to pay a £30 gas charge.' Supplements of £2pp (baby back ribs) or £2.50pp (lamb dishes, steaks, tuna, tiger prawns) apply to some mains; sauces '£7 each for up to 15 people'; desserts 'Choose 3 desserts for £9.75pp | 5 desserts for £14.75pp'. Mains span chicken, pork, lamb, beef (hanger, sirloin, tomahawk and T-bone steaks, Farmhouse burgers), fish and vegetables, with about 25 sides. Needs power (around 3 x 13-amp supplies), water and washing-up facilities.",
+    "sourceUrl": "https://thefarmhouseessex.com/bbq-menu/"
+   },
+   {
+    "name": "Private chef dining",
+    "description": "Chefs and wait staff cook and serve a set menu at the client's home or chosen venue, handling serving and clearing throughout the evening. The team brings all cooking equipment plus crockery and cutlery and arrives 1–2 hours before dinner. Guests choose one starter (excluding sharer boards), one main and one dessert for the party; a second main can sometimes be added if at least 50% of the party orders it. Menus: Italian Feast, Best of British, Spanish Fiesta, Go Greek, Roast Dinner, A La Carte, Bowl Food and Canapés, or a bespoke menu. Suggested for intimate gatherings, family celebrations, bridal showers, rehearsal dinners, birthday parties and anniversary celebrations. All dietary requirements and allergies can be catered for.",
+    "sourceUrl": "https://thefarmhouseessex.com/private-chef/"
+   },
+   {
+    "name": "Italian Feast menu (private chef)",
+    "description": "A four-course Italian menu: an antipasti sharing board (focaccia with tapenade, arancini, bocconcini, cured meats, stuffed peppers, pecorino, heritage tomato salad), a primi course (e.g. beef short rib pappardelle, crab linguine, wild rabbit ragu fettuccine, meatball manicotti, lasagne, seafood or truffle risotto), a secondi (porchetta, lamb lollipops, beef cheek, monkfish in pancetta, chicken supreme, sea bass, cauliflower steak, peppers al forno) and dolci (chocolate ganache torte, panettone bread and butter pudding, bigne, tiramisu, Amalfi lemon curd torte). Published price (verbatim): 'priced from £80 per person with a minimum of 10 people'; 'Additional staff charges starting from £150 will apply and will be confirmed upon booking'; optional sides '£2.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/italian-feast-2/"
+   },
+   {
+    "name": "Best of British menu (private chef)",
+    "description": "A three-course British menu with a sharer starter board (walnut soda bread, haggis scotch egg, baked Cornish brie, chicken liver pate, Gouda goat's cheese, celeriac and kohlrabi salad), mains such as Malbec-braised beef short rib, duck breast, chicken ballotine, pork belly, salmon chowder, lamb rump, roasted celeriac and squash or charred hispi cabbage, and desserts including chocolate orange mousse, apple crumble, sticky toffee pudding, Cambridge burnt cream and lemon posset. Published price (verbatim): 'priced from £75 per person with a minimum of 10 people.'; 'Additional staff charges starting from £150 will apply'; optional sides '£2.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/best-of-british/"
+   },
+   {
+    "name": "Spanish Fiesta menu (private chef)",
+    "description": "A tapas-inspired three-course menu: a tapas sharer starter (pan con tomate, croquetas de jamon, tortilla de patatas, Iberico ham, pimientos de Padron, Manchego with orange blossom honey, avocado and tomato salad), mains including Rioja pork cheeks, Paella Valenciana, bavette steak, grilled sea bream, gambas al ajillo, chicken picante, Paella Verdura and pisto, and desserts such as chocolate churros, tarta de queso, lemon meringue pie, chocolate orange cake and crema Catalana. Published price (verbatim): 'priced from £75 per person with a minimum of 10 people.'; 'Additional staff charges starting from £150 will apply'; optional sides '£2.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/spanish-fiesta/"
+   },
+   {
+    "name": "Go Greek menu (private chef)",
+    "description": "A Greek-Cypriot fusion menu with a sharer meze (flatbreads with htipiti, houmous and tzatziki, calamari, marinated olives, grilled halloumi with pomegranate, village salad), mains such as chicken souvlaki, Essex lamb cutlets, Cypriot pork stew, beef stifado, sea bream, mixed grill, chicken orzo, veggie moussaka and buttery bean stew, and desserts including lemon meringue pie, white chocolate and pistachio cheesecake, mini doughnuts with pistachio cream, custard tart and banoffee pie. Published price (verbatim): 'priced from £75 per person with a minimum of 10 people'; 'Additional staff charges starting from £150 will apply'; Essex Lamb and Mixed Grill carry a 'supplement £5 pp'; optional sides '£2.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/go-greek/"
+   },
+   {
+    "name": "Roast Dinner menu (private chef)",
+    "description": "A three-course roast: starters (breads, prawn cocktail, scotch egg, baked Cornish brie, chicken liver pate, beetroot-cured salmon), mains of roasted sirloin of beef, rolled chicken breast, rolled lamb leg, roast pork belly, hake al forno or Farmhouse vegan pie, each with rosemary and garlic potatoes, honey-glazed carrots and parsnips, greens, giant Yorkshire puddings, gravy, stuffing and pigs in blankets, and desserts such as salted caramel brownie, Cambridge burnt cream, sticky toffee pudding, chocolate orange mousse and apple crumble. Published price (verbatim): 'priced from £80 per person with a minimum of 10 people'; 'Additional staff charges starting from £150 will apply'; optional sides '£2.50pp per group'; Farmhouse Cheese Board add-on '£6.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/roast-dinner/"
+   },
+   {
+    "name": "A La Carte menu (private chef)",
+    "description": "A modern British three-course menu where the client chooses one starter, one main and one dessert for the party. Starters include Guinness soda bread, potted chicken, burrata caprese, roasted scallops, Colchester oysters and a Korean beef short rib croquette; mains include spatchcock poussin, Porterhouse steak, surf 'n' turf with confit lobster tail, pork belly, pan-fried cod, truffle and porcini risotto and squash Wellington; desserts include Cambridge burnt cream, white chocolate and pistachio cheesecake, rhubarb and custard tart, lemon meringue pie and apple tarte tatin. Published price (verbatim): 'priced from £80 per person with a minimum of 10 people'; 'Additional staff charges starting from £150 will apply'; Porterhouse and surf 'n' turf carry a 'supplement £tbc at point of booking'; optional sides '£2.50pp per group'; cheese board add-on '£6.50pp per group'.",
+    "sourceUrl": "https://thefarmhouseessex.com/a-la-carte/"
+   },
+   {
+    "name": "Bowl food",
+    "description": "Handheld bowl dishes cooked on site and served by wait staff around the room for standing or casual events, in disposable tableware on serving boards. Around 35 savoury bowls across British (beer-battered fish and chips, sausage and mash, slider burgers, beef short rib), Italian (meatballs, nduja gnocchi, risottos, parmigiana), comfort food (truffle mac 'n' cheese, buttermilk fried chicken, chilli con carne) and world dishes (lamb tagine, katsu curry, falafel bowl, fish tacos), plus 13 dessert bowls. Published prices (verbatim): '3 options from £23 per person (minimum of 30 people / savoury dishes only)', '5 options from £35 per person (minimum of 30 people ...)', '7 options from £47 per person (minimum of 25 people ...)', '9 options from £59 per person (minimum of 25 people ...)'; 'additional service charges starting from £300 apply and are confirmed upon booking'. Kitchen access is required.",
+    "sourceUrl": "https://thefarmhouseessex.com/bowl-food/"
+   },
+   {
+    "name": "Canapés",
+    "description": "Handmade cold and hot canapés served on guests' arrival by a dedicated on-site chef and wait staff, available only as an addition to private chef or bowl food menus. 19 cold options (e.g. fig and prosciutto crostini, smoked salmon and whipped ricotta crostini, mini Yorkshire puddings with brisket, tuna tartare wonton chips, ceviche spoons) and 19 hot options (truffle arancini, polenta chips, crispy squid, seared scallops, tempura prawns, mini crab cakes, halloumi fries, pork belly skewers). Published prices (verbatim): '3 options from £9 per person', '5 options from £14 per person', '7 options from £18 per person', '9 options from £22 per person'; 'additional service charges starting from £300 apply and are confirmed upon booking'. The site recommends a minimum of 5 canapés per guest, served for up to an hour.",
+    "sourceUrl": "https://thefarmhouseessex.com/canapes/"
+   },
+   {
+    "name": "Christmas Dinner Cook at Home Boxes",
+    "description": "Fully prepared, vacuum-packed roast dinner boxes for 4 or 6 people, insulated and ice-packed, with disposable foil oven trays and finishing instructions, for delivery or collection from Farmhouse HQ on 23 December. Choices: rolled turkey breast with lemon and herb garlic butter, beef sirloin with a mustard and rosemary crust, or Farmhouse vegan pie, each with rosemary and garlic roast potatoes, honey-glazed carrots and parsnips, seasonal greens, giant Yorkshire puddings and gravy. Published prices (verbatim): 'Turkey Box from £88', 'Beef Sirloin Box from £125', 'Veg Pie Box from £88', 'BOX SIZE for 4 or 6 people', 'price includes delivery'; 'Sides & Desserts from £4'. The online shop lists the Turkey and Veg Pie boxes at £88 (4) to £132 (6) and the Beef Sirloin box at £125 (4) to £185 (6).",
+    "sourceUrl": "https://thefarmhouseessex.com/christmas-dinner-boxes/"
+   },
+   {
+    "name": "Christmas sides and desserts (add-ons to a Cook at Home Box)",
+    "description": "Most feed up to 6 people. Published prices (verbatim): Pigs in Blankets £9.50; Pork, Apple & Sage Stuffing £9.50; Cauliflower Cheese £9.00; Marmalade Glazed Gammon £35.00; Wild Mushroom & Truffle Mac 'n' Cheese £10.50; Farmhouse Sausage Rolls £10.50; Extra Yorkies £4.00; Extra Farmhouse Gravy £4.00; Spiced Red Cabbage £7.00; Extra Veggie Gravy £4.00; Veggie Stuffing £9.00; Farmhouse Christmas Cheese Board £30.00; Christmas Salted Caramel Brownie £12.00; Apple & Cranberry Crumble £10; Sticky Toffee & Walnut Pudding £10. The shop also lists jars of Farmhouse Cranberry Sauce and Winter Chutney at £4.50 each and Farmhouse Mince Pies (8) at £9.50.",
+    "sourceUrl": "https://thefarmhouseessex.com/christmas-dinner-sides-desserts/"
+   },
+   {
+    "name": "Cook at Home Boxes (online shop)",
+    "description": "Year-round vacuum-packed meal boxes for 2, 4 or 6 people with cooking instructions, sold through the site's WooCommerce shop. Published shop prices: Farmhouse Burgers £18.50–£55.50; Chicken, Leek & Cider / Steak, Mushroom & Ale / Mushroom, Leek & Cheese pies £17.50–£52.50; Vegan Pie £21.00–£63.00; BBQ Pulled Pork £17.00–£51.00; Chicken & Potato Curry £17.00–£51.00; Sweet Potato, Chickpea & Spinach Curry £17.00–£51.00; Meatball Pasta 'Al Forno' £16.00–£48.00; Aubergine & Courgette Parmigiana £16.00–£48.00; Moroccan Spiced Chicken £15.00–£45.00; Rolled Roast Chicken £25.00–£75.00; Italian Roast Lamb (4 or 6) £62.00–£93.00; Dinner Box 3 Course for 2 £45.00; Greek Easter Box £19.99–£39.99; sides such as Rosemary & Garlic Focaccia £5.95 and cheesecake portions £3.00 each.",
+    "sourceUrl": "https://thefarmhouseessex.com/product-category/cook-at-home-boxes/"
+   },
+   {
+    "name": "Afternoon Tea",
+    "description": "A 'Farmhouse Afternoon Tea buffet, enjoyed in the comfort of your own home with full service', listed alongside the buffet options and as an enquiry-form choice; a customer review on the Christmas page mentions a Mother's Day afternoon tea box. No dedicated page or published price was found.",
+    "sourceUrl": "https://thefarmhouseessex.com/buffet-packages/"
+   },
+   {
+    "name": "Gift vouchers",
+    "description": "Emailed gift vouchers 'Available in denominations of £10 and £20'. Terms state vouchers are valid for 12 months from issue and are non-refundable.",
+    "sourceUrl": "https://thefarmhouseessex.com/product/gift-vouchers/"
+   }
+  ],
+  "eventTypes": [
+   "Weddings",
+   "Birthday Parties",
+   "Anniversaries",
+   "Corporate Events",
+   "Baby Showers",
+   "Private Parties",
+   "House Parties",
+   "Garden Parties",
+   "Seasonal Events"
+  ],
+  "eventTypesSourceUrl": "https://thefarmhouseessex.com/hot-food-serviced-buffet-options/",
+  "areasServed": [
+   "Essex",
+   "Hertfordshire",
+   "London",
+   "Surrounding areas (published delivery postcodes: E, N, NW, W, SE, EN, AL, WD, SG, IG, RM, CM, SS15)",
+   "Hoddesdon, Hertfordshire (base, 'Farmhouse HQ')",
+   "Algarve, Portugal (via sister operation Farmhouse Caterers Algarve)"
+  ],
+  "areasSourceUrl": "https://thefarmhouseessex.com/",
+  "industry": "food-services",
+  "categories": [
+   "Caterers",
+   "Grills & BBQ",
+   "Italian",
+   "Greek"
+  ],
+  "contact": {
+   "email": null,
+   "phone": null,
+   "bookingUrl": "https://thefarmhouseessex.com/contact/"
+  },
+  "logos": [
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2022/09/Farmhouse-events-cater-logo-LARGE-copy.jpg",
+    "format": "jpeg",
+    "width": 1920,
+    "height": 1080,
+    "background": "white",
+    "colours": "Sage-green tree (~#89997C) and hatched sage roof and windows (~#91B792 to #BAC8BB) over a charcoal weatherboard farmhouse (~#585858); letter-spaced charcoal 'THE FARMHOUSE' (~#565656) with 'at Home' in a black brush script and the tagline 'EVENTS & PRIVATE CATERING' in black letter-spaced caps",
+    "sourcePage": "https://thefarmhouseessex.com/wp-json/wp/v2/media/215973",
+    "notes": "Largest and most complete lockup (with tagline). Found in the WordPress media library (uploaded 2022-09-26, title 'Farmhouse events cater logo LARGE copy'); not placed on any fetched page. Verified live 2026-11-01: HTTP 200, image/jpeg, 184,032 bytes, 1920x1080, opaque white background. No transparent or vector version exists: the media library's 11 SVGs are dietary (v/vg/gf/n) and tea/cake/sandwich icons, the only inline SVGs on the homepage are Elementor chevron icons, and no PNG logo is present."
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2022/11/farmhouse-at-home.jpg",
+    "format": "jpeg",
+    "width": 500,
+    "height": 225,
+    "background": "white",
+    "colours": "Same farmhouse-and-tree mark with 'THE FARMHOUSE' and 'at Home' script, no tagline",
+    "sourcePage": "https://thefarmhouseessex.com/",
+    "notes": "The live header logo (img id='logo', alt 'The Farmhouse at Home') and the schema.org organisation logo declared in the site head. Verified live: HTTP 200, image/jpeg, 34,131 bytes, 500x225."
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2023/01/Farmhouse-events-cater-WEB-THUMB-copy-e1677595753958.jpg",
+    "format": "jpeg",
+    "width": 600,
+    "height": 319,
+    "background": "white",
+    "colours": "Same lockup without tagline",
+    "sourcePage": "https://thefarmhouseessex.com/wp-json/wp/v2/media/218325",
+    "notes": "Media library item titled 'The Farmhouse at Home Logo 600px'. Verified live: HTTP 200, image/jpeg, 27,886 bytes, 600x319."
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2023/01/cropped-Farmhouse-events-cater-WEB-THUMB-copy.jpg",
+    "format": "jpeg",
+    "width": 512,
+    "height": 512,
+    "background": "white",
+    "colours": "Square version of the lockup (no tagline) centred on white",
+    "sourcePage": "https://thefarmhouseessex.com/",
+    "notes": "The WordPress site icon source, titled 'The Farmhouse at Home Logo 512px'. The homepage head declares 32x32, 192x192 and 180x180 (apple-touch-icon) crops of this file. Verified live: HTTP 200, image/jpeg, 21,018 bytes, 512x512. Best square avatar candidate."
+   }
+  ],
+  "images": [
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Buffet.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Buffet spread in a hall: a chafing tray of parmesan-dusted arancini in a wooden crate stand, mini pizzette slices on a log slice, cured-meat platters with cornichons and olives, skin-on fries, pesto pasta salad and green salad, dressed with eucalyptus and gold tongs",
+    "sourcePage": "https://thefarmhouseessex.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Italian-Feast.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Italian Feast antipasti: rows of individual wooden paddles with mortadella, salami, mozzarella, pickled peppers and olives, arancini in terracotta dishes, focaccia on boards and heritage tomato salads on blue-rimmed plates, on a black kitchen counter",
+    "sourcePage": "https://thefarmhouseessex.com/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/08/BBQ-August-2026.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Garden BBQ buffet on a hessian-clothed table with rustic log stands: brioche burgers, a chafing dish of sliced steak, salads, corn, a sunflower arrangement, a framed menu card and eucalyptus trails",
+    "sourcePage": "https://thefarmhouseessex.com/bbq-menu/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Go-Greek-Menu.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Go Greek sharer meze from above: grilled flatbreads, houmous with crispy chickpeas, tzatziki, htipiti, marinated olives, village salads, grilled halloumi with pomegranate and calamari with lemon, on a black counter",
+    "sourcePage": "https://thefarmhouseessex.com/private-chef/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/serviced-buffet.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Serviced buffet on a marble surface: lasagne in a crate-mounted chafing tray, fries in a green bowl, stacked finger sandwiches on a wood slice, pizzette, garlic bread on a pink platter, dried-flower posies and eucalyptus",
+    "sourcePage": "https://thefarmhouseessex.com/hot-food-serviced-buffet-options/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/10/Staff-Service-.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "A waitress in a black Farmhouse T-shirt and tan apron offering canapés from a mirrored tray to guests in wedding attire on a sunny lawn, with green parasols and a marquee behind (identifiable guests and staff)",
+    "sourcePage": "https://thefarmhouseessex.com/hot-food-serviced-buffet-options/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/04/IMG_1195.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Outdoor buffet table: pizzette, feta-and-rocket flatbread tart slices on a board, honey-glazed chipolatas, savoury rice, roast potatoes, a bread basket, vegetable skewers and dried-grass posies",
+    "sourcePage": "https://thefarmhouseessex.com/buffet-packages/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/04/Buffet-Desserts.jpg",
+    "width": 2560,
+    "height": 2560,
+    "description": "Buffet desserts: profiteroles with chocolate sauce and coconut, salted caramel brownies topped with toffee popcorn on log slices, and a fruit platter of grapes, strawberries, pineapple, melon and raspberries",
+    "sourcePage": "https://thefarmhouseessex.com/buffet-packages/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Table-5-.jpg",
+    "width": 2048,
+    "height": 2048,
+    "description": "Long BBQ buffet beside a marquee: meatballs and chicken skewers in crate-mounted chafing dishes, corn on the cob, brioche buns, flatbreads, slaws, salads and dips on hessian with eucalyptus",
+    "sourcePage": "https://thefarmhouseessex.com/bbq-menu/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Dessert.jpg",
+    "width": 2048,
+    "height": 2048,
+    "description": "Outdoor BBQ desserts on hessian: an Essex mess platter with strawberries, blueberries and pink meringues, chocolate orange mousse pots on a log slice, and strawberry-topped cheesecake squares on a board",
+    "sourcePage": "https://thefarmhouseessex.com/bbq-menu/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2024/09/Christmas-Dinner-Cook-at-home-box-SOCIAL.jpg",
+    "width": 1536,
+    "height": 1536,
+    "description": "Christmas roast dinner table: plates of pink roast beef with giant Yorkshire puddings and roast potatoes, pigs in blankets, cauliflower cheese, mash, a gravy jug, red wine, candles, pine cones and berried foliage against wood panelling",
+    "sourcePage": "https://thefarmhouseessex.com/christmas-dinner-boxes/",
+    "stockRisk": "own"
+   },
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2025/10/Serviced-Buffet-Wedding.jpg",
+    "width": 1400,
+    "height": 1400,
+    "description": "Chef in a tan apron grating parmesan over a tray of meatballs in tomato sauce at an outdoor wedding, with a gazebo and field behind (alt text names Teejay Asciak)",
+    "sourcePage": "https://thefarmhouseessex.com/our-story/",
+    "stockRisk": "own"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://thefarmhouseessex.com/wp-content/uploads/2024/09/video-output-1D3E447A-66EB-47D9-B72F-5F6668A01650.mov",
+    "kind": "file",
+    "httpStatus": 200,
+    "contentType": "video/quicktime",
+    "bytes": 31894506,
+    "publiclyFetchable": true,
+    "description": "Native <video> on the Christmas Dinner Cook at Home Boxes page (loop, controls, preload=metadata, controlsList=nodownload), titled 'Christmas Dinner Cook at Home Box' in the media library. WordPress media details: 1620x1080, 20 seconds, QuickTime container, AAC stereo audio, created 11 September 2024. Verified by HEAD only (HTTP 200, video/quicktime, 31,894,506 bytes); the file was not downloaded, so the frames were not viewed.",
+    "sourcePage": "https://thefarmhouseessex.com/christmas-dinner-boxes/",
+    "ownContentEvidence": "Hosted in the business's own WordPress uploads and embedded on its own Christmas boxes page; the title matches its Christmas Dinner Cook at Home Box product."
+   }
+  ],
+  "socials": {
+   "facebook": "https://www.facebook.com/thefarmhouseessex",
+   "instagram": "https://www.instagram.com/thefarmhousecaterers",
+   "tiktok": "https://www.tiktok.com/@thefarmhouseessex",
+   "youtube": null,
+   "vimeo": null,
+   "other": [
+    "https://farmhousecaterersalgarve.com/",
+    "https://pizzettaessex.com/",
+    "https://www.google.com/search?q=google+reviews+the+farmhouse+at+home+essex#lrd=0x2fd5b093ac129265:0xd209c1f4c6737b70,1,,,,"
+   ]
+  },
+  "instagramAccess": "The site's header and footer link https://www.instagram.com/thefarmhousecaterers. One plain unauthenticated GET (desktop Chrome UA, no cookies) on 2026-11-01 returned HTTP 200 and about 507 KB of HTML: a generic shell titled 'Instagram' whose route config shows \"pageID\":\"httpErrorPage\", with no bio, follower count or posts. This is Instagram's logged-out error or login wall; it was not retried. The bio details in this record come from the directory owner's own description. One plain GET to https://www.facebook.com/thefarmhouseessex (the URL the site links) returned HTTP 400 (title 'Error', 1,542 bytes). The Facebook page name 'The Farmhouse at Home Caterers' given in the brief could not be verified. TikTok @thefarmhouseessex is linked from the site but was not fetched.",
+  "gaps": [
+   "No founding year is stated anywhere on the site. The trading company Essex Provisions Ltd was incorporated on 11 January 2021; the oldest logo upload in the media library is dated September 2022; the footer reads '© 2025 - The Farmhouse Essex'; Wayback captures of the domain start in August 2018 (presumably the restaurant era, not verified). Ask the business before publishing a year.",
+   "Price conflict between the pages and the WooCommerce shop. The buffet pages (last modified 1 October 2026) give 5/7/9/11 options at £16.95/£18.95/£20.95/£22.95 per person with 25–30 minimums and a serviced fee from £300, but the shop's Store API still lists '5 Dish Buffet £12.95', '7 Dish Buffet £14.95', '9 Dish Buffet £16.95' (per person, minimum 15), 'Serviced Options £160–£240' and a 'Tea & Coffee Station £2.50 per person' (minimum 15), and the /product/5-option-buffet/ page returns 404. Shop prices for several buffet sides are also £1–£2 lower than the sides page (e.g. Antipasti £18 vs £20, Cheese Board £23 vs £24). The page figures are recorded as current; the shop figures look stale.",
+   "No transparent or vector logo exists. The best file is a 1920x1080 JPEG lockup on white; the square 512px site icon is also JPEG on white. A clean cut-out or faithful vector redraw would be needed for use on photography, with provenance noted.",
+   "The only own video is a 31.9 MB QuickTime .mov (1620x1080, 20 s) with no poster image; it may need transcoding to MP4/WebM for reliable playback. No YouTube or Vimeo channel is linked; TikTok @thefarmhouseessex may hold more clips but was not accessed.",
+   "Google reviews: the homepage and serviced-buffet page show a Google 'G' icon (a Vecteezy stock PNG) linking to a Google Search reviews panel (place id 0x2fd5b093ac129265:0xd209c1f4c6737b70), and testimonials are attributed 'via Google reviews'. The link is recorded; no rating or review count was scraped. No TripAdvisor link exists on any page.",
+   "Contact: the site footer and contact page publish a general business email address and an 020 landline, which were deliberately not copied into this record; the contact-form URL is used as bookingUrl instead.",
+   "Instagram and Facebook could not be verified (logged-out shell / HTTP 400). The Facebook page name in the brief ('The Farmhouse at Home Caterers') differs from the site-linked slug /thefarmhouseessex and was not confirmed.",
+   "Photos with identifiable people: Staff-Service-.jpg shows wedding guests' faces and a staff member; Serviced-Buffet-Wedding.jpg shows the chef. Their T&Cs say identifiable customers are not used for marketing without consent, but the directory should confirm it may reuse them.",
+   "Other own high-res photos verified live (HTTP 200) but left out to keep 12: IMG_3300.jpeg (2690x2690, sliced beef sirloin with gravy being poured at a candlelit Christmas table; in the media library but not on any page), Greek-Menu-Main-Chef.jpg (2560, plated lamb with bulgur), serviced-buffet-2025.jpg (2560, indoor buffet with mini desserts), Buffet-Display.jpg (2560, Italian-style buffet with crostata and spring rolls), 8B4216C8… and EA1D8069… (2048, garden BBQ and dessert tables), 83214444… (2046, garden buffet with sliders), BBQ-Algarve-.jpg / BBQ-1-Algarve-.jpg / BBQ-Algarve-2-.jpg (2048, Algarve BBQs), IMG_8640.jpg (1440, smoked salmon crostini and chicken skewers), IMG_4382.jpg and 51D9E8DF… (1440, chef plating in home kitchens). The three 'Cook-at-home-box-instructions' files (1772x2560) are instruction cards, and Test-7-1 / Test-Mobile are menu graphics.",
+   "Event-type mapping: Weddings, Birthday Parties, Anniversaries, Corporate Events and Baby Showers come from the serviced-buffet FAQ ('birthdays, weddings, communions, christenings, graduations, anniversaries, corporate events, baby showers'). Private Parties and House Parties come from 'parties', 'home gatherings' and private chef dining 'at your home' (homepage, /private-chef/). Garden Parties is mapped from BBQ catering for 'your outdoor event' (homepage, /bbq-menu/) and the garden photos; the site never uses the phrase 'garden party'. Seasonal Events is mapped from 'holiday parties' (/drop-off-buffets/), the Christmas boxes, a Greek Easter box and the T&Cs' Mother's Day/Father's Day/Easter serviced events. Types they serve with no taxonomy match: communions, christenings, graduations, hen parties, bridal showers, rehearsal dinners, family reunions, community events and work events. Engagement Parties, Festivals, Charity Galas and Product Launches are not mentioned (festival trading is only in the founder's back-story).",
+   "Afternoon Tea has no dedicated page or published price (the gift voucher product title mentions 'Afternoon Teas Essex'). The Kids Buffet shop product shows £0.00 with 'per child based on a minimum of 10 children'. A La Carte Porterhouse and surf 'n' turf supplements are '£tbc at point of booking'.",
+   "The registered office (Enfield EN2) differs from the operating base (Hoddesdon EN11), and the FSA lists the Hoddesdon unit as 'The Farmhouse Essex'. Whether The Farmhouse Essex restaurant in Waltham Abbey still trades was not verified; Our Story says the founder 'decided to shift focus from the restaurant'.",
+   "The Algarve sister site publishes menus but no prices (contact for a custom quote). Categories: 'Pizza' was not added because wood-fired pizza is offered by the separate sister company Pizzetta Essex; 'Paella' was not added because paella is a single dish on the Spanish Fiesta menu rather than a paella service.",
+   "Customer-named staff: Google reviews quoted on the site repeatedly praise 'Charlotte' as the front-of-house/event contact; this is not recorded as a verified fact about the team."
+  ]
+ }
+}

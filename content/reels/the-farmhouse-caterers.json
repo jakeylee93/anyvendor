@@ -1,0 +1,67 @@
+{
+  "slug": "the-farmhouse-caterers",
+  "fade": 0.6,
+  "crf": 27,
+  "segments": [
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img02-BBQ-August-2026.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/08/BBQ-August-2026.jpg",
+      "dur": 2.8,
+      "fx": 0.5,
+      "fy": 0.55,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Farmhouse BBQ menu page photo: garden BBQ buffet on hessian with brioche burgers on log stands, a chafing dish of sliced steak, salads, a framed menu card and sunflowers."
+    },
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img00-Buffet.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Buffet.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Farmhouse homepage photo: buffet spread with a crate-mounted tray of parmesan-dusted arancini, mini pizzette on a log slice, cured-meat platters, fries and salads."
+    },
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img01-Italian-Feast.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Italian-Feast.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Farmhouse homepage photo: Italian Feast antipasti paddles with mortadella, salami, mozzarella, pickled peppers and olives, arancini, focaccia and tomato salads."
+    },
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img03-Go-Greek-Menu.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Go-Greek-Menu.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.45,
+      "mfy": 0.5,
+      "note": "Farmhouse private chef page photo: Go Greek sharing meze from above with flatbreads, houmous, tzatziki, htipiti, olives, salads, grilled halloumi and calamari."
+    },
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img08-BBQ-Table-5-.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Table-5-.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.5,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Farmhouse BBQ menu page photo: long BBQ buffet beside a marquee with meatballs and chicken skewers in crate-mounted chafing dishes, flatbreads, slaws, salads and dips."
+    },
+    {
+      "image": ".media-work/the-farmhouse-caterers/reel-img09-BBQ-Dessert.jpg",
+      "url": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Dessert.jpg",
+      "dur": 2.6,
+      "fx": 0.5,
+      "fy": 0.52,
+      "mfx": 0.5,
+      "mfy": 0.5,
+      "note": "Farmhouse BBQ menu page photo: outdoor desserts on hessian with an Essex mess platter, chocolate orange mousse pots on a log slice and strawberry-topped cheesecake squares."
+    }
+  ]
+}

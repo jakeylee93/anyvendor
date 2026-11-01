@@ -1,0 +1,64 @@
+{
+  "slug": "the-farmhouse-caterers",
+  "fade": 0.6,
+  "fps": 30,
+  "audio": "stripped",
+  "segments": [
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/08/BBQ-August-2026.jpg",
+      "durationSec": 2.8,
+      "kind": "still",
+      "note": "Farmhouse BBQ menu page photo: garden BBQ buffet on hessian with brioche burgers on log stands, a chafing dish of sliced steak, salads, a framed menu card and sunflowers."
+    },
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Buffet.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Farmhouse homepage photo: buffet spread with a crate-mounted tray of parmesan-dusted arancini, mini pizzette on a log slice, cured-meat platters, fries and salads."
+    },
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Italian-Feast.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Farmhouse homepage photo: Italian Feast antipasti paddles with mortadella, salami, mozzarella, pickled peppers and olives, arancini, focaccia and tomato salads."
+    },
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Go-Greek-Menu.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Farmhouse private chef page photo: Go Greek sharing meze from above with flatbreads, houmous, tzatziki, htipiti, olives, salads, grilled halloumi and calamari."
+    },
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Table-5-.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Farmhouse BBQ menu page photo: long BBQ buffet beside a marquee with meatballs and chicken skewers in crate-mounted chafing dishes, flatbreads, slaws, salads and dips."
+    },
+    {
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Dessert.jpg",
+      "durationSec": 2.6,
+      "kind": "still",
+      "note": "Farmhouse BBQ menu page photo: outdoor desserts on hessian with an Essex mess platter, chocolate orange mousse pots on a log slice and strawberry-topped cheesecake squares."
+    }
+  ],
+  "outputs": {
+    "desktop": {
+      "video": "/media/the-farmhouse-caterers/reel-desktop.mp4",
+      "poster": "/media/the-farmhouse-caterers/poster-desktop.jpg",
+      "posterWebp": "/media/the-farmhouse-caterers/poster-desktop.webp",
+      "width": 1280,
+      "height": 720,
+      "durationSec": 12.2,
+      "bytes": 3930309
+    },
+    "mobile": {
+      "video": "/media/the-farmhouse-caterers/reel-mobile.mp4",
+      "poster": "/media/the-farmhouse-caterers/poster-mobile.jpg",
+      "posterWebp": "/media/the-farmhouse-caterers/poster-mobile.webp",
+      "width": 720,
+      "height": 1280,
+      "durationSec": 12.2,
+      "bytes": 3869808
+    }
+  }
+}

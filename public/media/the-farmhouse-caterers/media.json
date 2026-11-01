@@ -1,0 +1,130 @@
+{
+  "slug": "the-farmhouse-caterers",
+  "logo": {
+    "file": "public/media/the-farmhouse-caterers/logo.png",
+    "kind": "raster",
+    "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2022/09/Farmhouse-events-cater-logo-LARGE-copy.jpg",
+    "plate": "light",
+    "sourceSize": [
+      1920,
+      1080
+    ],
+    "sha256": "8df691e38e227e6d7f711c40410b7047da5f2987d390566a3557c784698c9720",
+    "note": "Tight crop (3% pad) of the business's own 1920x1080 JPEG lockup with tagline, saved as an opaque white-background PNG (1896x1065). No transparent or vector original exists."
+  },
+  "card": {
+    "file": "public/media/the-farmhouse-caterers/card.webp",
+    "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Buffet.jpg",
+    "alt": "Buffet spread with a crate-mounted tray of parmesan-dusted arancini, mini pizzette on a log slice, cured-meat platters and fries",
+    "sourceSize": [
+      2560,
+      2560
+    ],
+    "cropBox": [
+      0,
+      384,
+      2560,
+      2304
+    ],
+    "sha256": "e76ed5ec3243d2a42921619bc688159d6f893c7a03da35904368fb00b7aef6fa"
+  },
+  "gallery": [
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-01.webp",
+      "alt": "Garden BBQ buffet on a hessian-covered table: brioche burgers on log stands, a chafing dish of sliced steak, salads, corn, a framed menu card and a sunflower arrangement.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/08/BBQ-August-2026.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "38cd57d8a1528341ab0bb3e7d118d6569d69fce4593bb60b73dae42cbb166980"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-02.webp",
+      "alt": "Buffet spread in a hall: a crate-mounted tray of parmesan-dusted arancini, mini pizzette on a log slice, cured-meat platters with cornichons and olives, skin-on fries, pesto pasta salad and green salad.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Buffet.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "e76ed5ec3243d2a42921619bc688159d6f893c7a03da35904368fb00b7aef6fa"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-03.webp",
+      "alt": "Italian Feast antipasti: rows of wooden paddles with mortadella, salami, mozzarella, pickled peppers and olives, arancini in terracotta dishes, focaccia and heritage tomato salads on a black counter.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Italian-Feast.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "d09b63a6b3d89fd82c4337a684c5bd94d93ef67200057faca68c7990eba54445"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-04.webp",
+      "alt": "Go Greek sharing meze from above: grilled flatbreads, houmous with crispy chickpeas, tzatziki, htipiti, marinated olives, village salad, grilled halloumi with pomegranate and calamari with lemon.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/Go-Greek-Menu.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "f7b7033fdeacffc1138d88d8d9c83fa752ac9ab40a8ea3dcb9b954bbc5f9a43b"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-05.webp",
+      "alt": "Long BBQ buffet beside a marquee: meatballs and chicken skewers in crate-mounted chafing dishes, corn on the cob, flatbreads, slaws, salads and dips on hessian with eucalyptus.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Table-5-.jpg",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "sha256": "9d35e4ef633a20d7684dd1a9deef2a046b54480a7bf4308c8a5c6b9c31ec9b9b"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-06.webp",
+      "alt": "Outdoor BBQ desserts on hessian: an Essex mess platter with strawberries, blueberries and pink meringues, chocolate orange mousse pots on a log slice and strawberry-topped cheesecake squares.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/09/BBQ-Dessert.jpg",
+      "sourceSize": [
+        2048,
+        2048
+      ],
+      "sha256": "d983f83402015ba9330e42e6a3cf9cdda2c98aaaa9dd5812d18d55d3bcfcff74"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-07.webp",
+      "alt": "Buffet desserts: profiteroles with chocolate sauce and coconut, salted caramel brownies topped with toffee popcorn on log slices, and a platter of grapes, strawberries, pineapple, melon and raspberries.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/04/Buffet-Desserts.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "b0e008fda6a79269bb55deb492cf4a2386754b756c0995726755ac99d546d0ac"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-08.webp",
+      "alt": "Outdoor buffet table: pizzette, feta and rocket flatbread tart slices on a board, honey-glazed chipolatas, savoury rice, roast potatoes, a bread basket, vegetable skewers and dried-grass posies.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2026/04/IMG_1195.jpg",
+      "sourceSize": [
+        2560,
+        2560
+      ],
+      "sha256": "39455ddb7b3c23296ac4fa30a54fb16132eafe89daf41abd5108896d298d5142"
+    },
+    {
+      "file": "public/media/the-farmhouse-caterers/photo-09.webp",
+      "alt": "Christmas roast dinner table: plates of pink roast beef with Yorkshire puddings and roast potatoes, pigs in blankets, cauliflower cheese, mash, a gravy jug, red wine, candles and berried foliage.",
+      "sourceUrl": "https://thefarmhouseessex.com/wp-content/uploads/2024/09/Christmas-Dinner-Cook-at-home-box-SOCIAL.jpg",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "sha256": "8eb9593a44fac8a97baf5451eed8035f38a0c84f17ef7fecfad939bfbe0b814d"
+    }
+  ],
+  "notes": [
+    "Logo: kind=raster. The only logo files are JPEGs on white. Vector tracing was tried with scripts/media/logo_trace.py at 2, 3 and 4 colours (render-back mean absolute difference 14.17, 14.17 and 8.35; the 4-colour trace turned the charcoal text grey and kept a grey background plate) and with a custom per-brand-colour potrace layering (diff 3.84, 319 KB). The custom trace reads correctly at a glance but flattens the weatherboard wood-grain on the farmhouse walls and coarsens the roof hatching, so it was not judged faithful and was not shipped. Plate 'light': show the mark on a white tile.",
+    "Reel: six still segments from the business's own 2560/2048 px photos with a gentle push-in; sources, order and timings are in reel.json. The only own video (video-output-1D3E447A...mov, 19.6 s, 1620x1080, a portrait phone clip pillarboxed with blurred bars) is a beat-cut Christmas box unboxing/cooking montage: ffmpeg scdet at threshold 2 finds cuts roughly every 0.6 s (longest shot about 1.2 s), so no 2.0-3.0 s clip exists inside a single shot and no video clip was used. Its audio was never used.",
+    "Gallery: nine of the business's own photos from thefarmhouseessex.com (homepage, BBQ menu, private chef, buffet packages and Christmas boxes pages), resized to 2000 px square (photo-09 is 1536 px, its source size), WebP quality 82. Alt texts describe the food shown; dish names follow the business's own menu wording.",
+    "Excluded: Staff-Service-.jpg (identifiable wedding guests and staff, flagged in the research); Serviced-Buffet-Wedding.jpg (identifiable chef, 1400 px, alt text names a person); serviced-buffet.jpg (near-duplicate of the buffet theme already covered by photo-02 and photo-08); the four logo JPEGs. No stock, AI or third-party imagery was used.",
+    "Card: 4:3 crop (y 15%-90% of the square) of the homepage Buffet.jpg, 1200x900."
+  ]
+}
