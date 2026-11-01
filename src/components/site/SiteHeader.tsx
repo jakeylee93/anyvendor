@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import InstallButton from "./InstallButton";
+import { BrandLockup } from "./BrandMark";
 
 const MAIN = [
   { href: "/directory", label: "Directory" },
@@ -14,9 +15,8 @@ const MAIN = [
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <Link href="/" className={`inline-flex items-baseline gap-0.5 font-bold tracking-tight ${className}`} aria-label="Anyvendor home">
-      <span className="be-gradient-text text-[1.7rem] leading-none">any</span>
-      <span className="text-be-navy text-[1.7rem] leading-none">vendor</span>
+    <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Anyvendor home">
+      <BrandLockup layout="row" />
     </Link>
   );
 }
