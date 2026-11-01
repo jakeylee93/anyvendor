@@ -1,5 +1,27 @@
 # Anyvendor — handoff
 
+## Milestone 5: mock-up options, short-request fixes, The Farmhouse at Home (1 Nov 2026)
+
+Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`: `a66e2d7` (fixes), `7a9c4c3` (mock-ups), `ae54834` (Farmhouse), plus this handoff commit. Final protected preview **https://anyvendor-oztt4uoay-anyos.vercel.app** (Ready). Release claim `4e5bed27` released after this receipt. `main`, production, domains, payments, enquiries untouched.
+
+Jake's 1 Nov asks and status:
+- Mock-ups first, a few options: six GPT Image 2.5 concepts in `docs/concepts-20261101/` (home A one-box+carousel, B conversation-over-photo, C video-carousel hero; four card borders; simple profile; phone screens with 2-column grid, sign-up sheet, add-to-home-screen). Sent to Jake; awaiting his pick. Recommended: B's conversation box on A's page, border 1 (hairline glow).
+- Short requests ("I'm having a party and need music") now work: everyday-word synonyms in `src/lib/smartSearch.ts`, "party" counts as an event, and `/plan` starts from the basics instead of asking for more.
+- Only the best videos on cards: cards autoplay a reel only when `reelQuality` is "high" (no TikTok-sourced clips); Lucy Jane, TM Event Hire, Ozzy&Stix and Meat Stop cards show their photo. Profile heroes unchanged.
+- Coverage: derived `coverage {base, travels local|regional|nationwide|international, areas}` per profile; card line with plane/car/globe icon.
+- 2-column card grid on phones everywhere; compact card sizing.
+- Add to home screen: `InstallButton` (native prompt on Chrome/Android, iPhone how-to sheet, hidden when installed) in the phone menu and footer.
+- The Farmhouse at Home added (slug `the-farmhouse-caterers`): research (identity high: Essex Provisions Ltd t/a The Farmhouse at Home, HQ Hoddesdon), fact-checked copy with published prices verbatim, extra content, nine own photos, card, photo reel (their only video is a jump-cut edit), raster logo (trace not faithful), Google reviews link rendered as "See reviews on Google" (no rating scraped). Directory now 18.
+- Not built (need Jake's decision and a backend): Google/Tripadvisor ratings (official APIs only), per-profile enquiry forms (email/store), sign-up prompt and accounts, the new homepage/border/profile layouts (await pick).
+
+Verification on the final preview: tsc clean; cloud builds Ready; `vercel curl`: short requests map correctly ("party… music" → music + Private Parties; "food and booze… london" → food + bar; "my sons 18th" → basics fallback), `/businesses/the-farmhouse-caterers` 200, directory 18 of 18, Farmhouse is Best match for food in Hertfordshire, media files 200. Playwright screenshots in `docs/screenshots/farmhouse-20261101/`.
+
+Theydon Bois research (30 Oct) is in `docs/leads/theydon-bois-20261030.md`.
+
+OpenArt: this session's six mock-ups cost about 270 credits, but the balance fell 4,648 → 1,963 between 29 Oct and 1 Nov, so roughly 2,400 credits were used elsewhere; flagged to Jake.
+
+---
+
 ## Milestone 4: AI planner homepage, plan and shortlist, video cards, marquee galleries, app install (29 Oct 2026)
 
 Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session, now on Fable 5.1). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`: `163a69f` (feature), `35a0742` (lint), `00f9d2e` (need mapping), `a4e242a` (headings/posters/seals), plus this handoff commit. Final protected preview **https://anyvendor-knb8ymw0k-anyos.vercel.app** (Ready). Release claim `7621a5f9` released after this receipt. `main`, production, domains, payments and enquiries untouched.
