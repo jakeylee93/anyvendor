@@ -16,9 +16,9 @@ export default function ShortlistButton({ slug, need = null, name, className = "
       }}
       aria-pressed={on}
       aria-label={on ? `Remove ${name} from my plan` : `Add ${name} to my plan`}
-      className={`flex h-10 w-10 items-center justify-center rounded-full shadow-md ring-2 ring-white/90 transition ${on ? "bg-be-amber text-be-navy" : "bg-white/90 text-be-navy hover:bg-white"} ${className}`}
+      className={`flex h-9 w-9 items-center sm:h-10 sm:w-10 items-center justify-center rounded-full shadow-md ring-2 ring-white/90 transition ${on ? "bg-be-amber text-be-navy" : "bg-white/90 text-be-navy hover:bg-white"} ${className}`}
     >
-      <Heart size={18} fill={on ? "currentColor" : "none"} aria-hidden />
+      <Heart size={17} fill={on ? "currentColor" : "none"} aria-hidden />
     </button>
   );
 }

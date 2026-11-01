@@ -74,6 +74,10 @@ export interface Profile {
   card: GalleryImage | null;
   gallery: GalleryImage[];
   reel: Reel | null;
+  /** "high" = every clip came from the business's own full-resolution media; cards only autoplay these. */
+  reelQuality: "high" | "mixed" | null;
+  /** Where they work, derived from what they state. */
+  coverage: { base: string | null; travels: "local" | "regional" | "nationwide" | "international"; areas: string[] };
   /** What the business itself says (overrides the 2025 directory listing on the profile). */
   established: { label: string; sourceUrl: string } | null;
   basedIn: { text: string; sourceUrl: string } | null;

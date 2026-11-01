@@ -22,7 +22,9 @@ function niceDate(d: string | null) {
 export default async function PlanPage({ searchParams }: { searchParams: SP }) {
   const sp = await searchParams;
   const req = planFromParams(sp);
-  const needs = req.needs.map(needByKey).filter(Boolean) as typeof NEEDS;
+  const guessed = req.needs.length === 0 && Boolean(req.ask || req.location || req.date || req.guests);
+  const needKeys = req.needs.length ? req.needs : guessed ? ["bar", "food", "music", "photo"] : [];
+  const needs = needKeys.map(needByKey).filter(Boolean) as typeof NEEDS;
   const summary = [req.event, req.location, niceDate(req.date), req.guests ? `${req.guests} guests` : null].filter(Boolean).join(" · ");
 
   return (
@@ -47,13 +49,17 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
 
       {needs.length === 0 ? (
         <section className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <h1 className="text-2xl font-bold text-be-navy md:text-4xl">Tell us a little more</h1>
-          <p className="mt-3 text-be-grey">Tick what you need above, or describe the party: the bar, the food, the music, the photos.</p>
+          <h1 className="text-2xl font-bold text-be-navy md:text-4xl">What’s the occasion?</h1>
+          <p className="mt-3 text-be-grey">A line is enough: “party in Essex, need music and food”.</p>
         </section>
       ) : (
         <section className="mx-auto max-w-7xl px-4 py-10">
           <h1 className="text-2xl font-bold text-be-navy md:text-4xl">Our suggestions for you</h1>
-          <p className="mt-2 max-w-2xl text-be-grey">Two or three vendors for each thing you need, so you can shortlist without messaging everyone. Tap the heart to add a vendor to your plan.</p>
+          <p className="mt-2 max-w-2xl text-be-grey">
+            {guessed
+              ? "We’ve started with the basics most parties need. Tick what you’re after under “Edit my event” and we’ll narrow it down."
+              : "Two or three vendors for each thing you need, so you can shortlist without messaging everyone. Tap the heart to add a vendor to your plan."}
+          </p>
           <div className="mt-10 space-y-14">
             {needs.map((n) => {
               const picks = suggestFor(n, req.location, req.event);
@@ -72,7 +78,7 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
                     </Link>
                   </div>
                   {picks.length ? (
-                    <ul className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="mt-5 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
                       {picks.map((s) => (
                         <li key={s.business.slug}>
                           <BusinessCard business={s.business} need={n.key} reasons={s.best ? ["Best match", ...s.reasons] : s.reasons} />

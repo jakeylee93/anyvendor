@@ -383,6 +383,17 @@
      "sourceUrl": "https://www.calleo-uk.com/destination-weddings"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": null,
+   "travels": "international",
+   "areas": [
+    "England",
+    "Scotland",
+    "Wales",
+    "Destination weddings abroad"
+   ]
   }
  },
  "cj-sax": {
@@ -719,6 +730,23 @@
      "a": "Yes. The business describes itself as 'Based in London, creating vibes worldwide', and its pricing calendar lists May to September as a worldwide peak season.",
      "sourceUrl": "https://cjsax.com/"
     }
+   ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "London",
+   "travels": "international",
+   "areas": [
+    "London",
+    "Essex",
+    "Dubai",
+    "Ibiza",
+    "Mallorca",
+    "Marbella",
+    "Monaco",
+    "Cannes",
+    "Amalfi Coast",
+    "Worldwide (destination events)"
    ]
   }
  },
@@ -1107,6 +1135,17 @@
      "sourceUrl": "https://grapeandfig.com/pages/how-we-work"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Romford",
+   "travels": "nationwide",
+   "areas": [
+    "London (most areas within the M25)",
+    "Essex",
+    "Parts of Hertfordshire (selected postcodes)",
+    "Most of mainland UK (selected postable gifts and kits only)"
+   ]
   }
  },
  "harry-de-cruz": {
@@ -1447,6 +1486,17 @@
      "sourceUrl": "https://www.harrydecruz.com/magic"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "London and New York",
+   "travels": "international",
+   "areas": [
+    "London",
+    "New York",
+    "UK-wide",
+    "Worldwide"
+   ]
   }
  },
  "jamie-roche": {
@@ -1693,6 +1743,14 @@
      "a": "Yes. His YouTube channel has live performance videos, including his cover of Chris Isaak's 'Wicked Game', recorded at Sixty Sixty Sounds on Denmark Street in Soho.",
      "sourceUrl": "https://www.youtube.com/watch?v=aW_3BWmWTkI"
     }
+   ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "London",
+   "travels": "local",
+   "areas": [
+    "London"
    ]
   }
  },
@@ -1958,6 +2016,15 @@
      "a": "Photo cakes are among the designs she shows. She has posted a how-to video on making one, naming the piping nozzles she used.",
      "sourceUrl": "https://www.tiktok.com/@lucy_jane_cakes/video/7480856260108127511"
     }
+   ]
+  },
+  "reelQuality": "mixed",
+  "coverage": {
+   "base": "London",
+   "travels": "regional",
+   "areas": [
+    "London",
+    "Essex"
    ]
   }
  },
@@ -2364,6 +2431,15 @@
      "sourceUrl": "https://www.magpiecatering.com/funerals/"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Hastingwood",
+   "travels": "nationwide",
+   "areas": [
+    "South East of England",
+    "Essex"
+   ]
   }
  },
  "meatstop": {
@@ -2729,6 +2805,26 @@
      "a": "Fill in the enquiry form on the catering page with details of the event, and the business will be in touch with an accurate quote.",
      "sourceUrl": "https://www.meatstop.co.uk/catering"
     }
+   ]
+  },
+  "reelQuality": "mixed",
+  "coverage": {
+   "base": "Essex-born",
+   "travels": "regional",
+   "areas": [
+    "Essex",
+    "Colchester",
+    "Chelmsford",
+    "Southend",
+    "Braintree",
+    "Clacton",
+    "Harlow",
+    "Leigh-on-Sea",
+    "Thurrock",
+    "Basildon",
+    "Billericay",
+    "Epping",
+    "Maldon"
    ]
   }
  },
@@ -3164,6 +3260,24 @@
      "sourceUrl": "https://www.natalieandmax.co.uk/termsandconditions/"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Ware",
+   "travels": "international",
+   "areas": [
+    "Hertfordshire",
+    "Essex",
+    "UK-wide",
+    "Algarve, Portugal",
+    "South of France",
+    "Greek Islands",
+    "Italy",
+    "Sicily",
+    "Spain",
+    "Thailand",
+    "America"
+   ]
   }
  },
  "ozzy-stix": {
@@ -3513,6 +3627,16 @@
      "sourceUrl": "https://www.ozzyandstix.com/new-page"
     }
    ]
+  },
+  "reelQuality": "mixed",
+  "coverage": {
+   "base": "Essex",
+   "travels": "international",
+   "areas": [
+    "Essex",
+    "London",
+    "Overseas (travel abroad on request)"
+   ]
   }
  },
  "paint-and-pour": {
@@ -3774,6 +3898,15 @@
      "a": "Follow the organiser's Eventbrite page, which announces new dates and special prices first.",
      "sourceUrl": "https://www.eventbrite.co.uk/o/bryony-doran-28148057737"
     }
+   ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": null,
+   "travels": "regional",
+   "areas": [
+    "Epping, Essex",
+    "Chingford, London (E4)"
    ]
   }
  },
@@ -4100,6 +4233,18 @@
      "a": "His homepage says the site is under construction and asks clients to get in touch by text message or on Instagram at @eltonrayjohnson. There is also an enquiry form on the website.",
      "sourceUrl": "https://www.rayeltonjohnson.co.uk/"
     }
+   ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Theydon Bois",
+   "travels": "regional",
+   "areas": [
+    "East London",
+    "Essex",
+    "Kent",
+    "Hertfordshire",
+    "M25 area"
    ]
   }
  },
@@ -4508,6 +4653,15 @@
      "sourceUrl": "https://thebarpeople.co.uk/event-management/"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "London",
+   "travels": "nationwide",
+   "areas": [
+    "London",
+    "Nationwide (UK)"
+   ]
   }
  },
  "tl-executive-cars": {
@@ -4721,6 +4875,24 @@
      "a": "Accepted payment methods include Visa, MasterCard, American Express and Apple Pay.",
      "sourceUrl": "https://tlexecutivecars.co.uk/"
     }
+   ]
+  },
+  "reelQuality": null,
+  "coverage": {
+   "base": "Theydon Bois",
+   "travels": "regional",
+   "areas": [
+    "Theydon Bois",
+    "Loughton",
+    "Epping",
+    "Abridge",
+    "Ongar",
+    "Buckhurst Hill",
+    "Chigwell",
+    "Woodford Green",
+    "All London airports (Heathrow, Gatwick, London City, Luton, Stansted, Southend)",
+    "Seaports and cruise terminals (Southampton, Harwich, Tilbury, Ramsgate, Dover, Swansea)",
+    "London and the Home Counties (film and TV shoot logistics)"
    ]
   }
  },
@@ -5196,6 +5368,16 @@
      "sourceUrl": "https://tmeventhire.co.uk/services/furniture/"
     }
    ]
+  },
+  "reelQuality": "mixed",
+  "coverage": {
+   "base": "Barnston",
+   "travels": "regional",
+   "areas": [
+    "Essex",
+    "London",
+    "Hertfordshire"
+   ]
   }
  },
  "tony-poole-discos": {
@@ -5570,6 +5752,18 @@
      "sourceUrl": "https://tonypoolediscos.com/our-services/"
     }
    ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Theydon Bois",
+   "travels": "regional",
+   "areas": [
+    "Essex",
+    "Hertfordshire",
+    "London",
+    "Home Counties",
+    "South East"
+   ]
   }
  },
  "toot-sweet-candy-cart": {
@@ -5818,6 +6012,15 @@
      "a": "Its June 2020 brunch set-up included a personalised sign, and the post was tagged #personalisedcandycart and #personalised.",
      "sourceUrl": "https://x.com/CartToot/status/1275425599394328576"
     }
+   ]
+  },
+  "reelQuality": "high",
+  "coverage": {
+   "base": "Chelmsford",
+   "travels": "regional",
+   "areas": [
+    "Chelmsford",
+    "Essex"
    ]
   }
  }

@@ -34,7 +34,7 @@ export default function Home() {
             View all <ArrowRight size={16} aria-hidden />
           </Link>
         </div>
-        <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
           {BUSINESSES.map((b) => (
             <li key={b.slug}>
               <BusinessCard business={b} />

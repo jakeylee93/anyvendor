@@ -26,7 +26,7 @@ export default function ListMyBusinessPage() {
       </section>
       <section className="mx-auto max-w-7xl px-4 py-16">
         <h2 className="text-center text-3xl font-bold text-be-navy md:text-4xl">Your card could look like this</h2>
-        <ul className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3">
           {examples.map((b) => (
             <li key={b.slug}>
               <BusinessCard business={b} />

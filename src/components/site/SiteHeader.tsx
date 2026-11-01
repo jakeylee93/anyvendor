@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import InstallButton from "./InstallButton";
 
 const MAIN = [
   { href: "/directory", label: "Directory" },
@@ -71,6 +72,7 @@ export default function SiteHeader() {
           <div className="mt-4 grid gap-3">
             <ListButton />
             <PlanButton />
+            <InstallButton />
           </div>
         </nav>
       )}

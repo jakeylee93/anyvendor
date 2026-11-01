@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo, ListButton } from "./SiteHeader";
+import InstallButton from "./InstallButton";
 
 export function SupplierCta() {
   return (
@@ -81,6 +82,7 @@ export default function SiteFooter() {
             <Logo />
           </div>
           <p className="mt-4 text-sm text-white/70">Find Top Event Professionals. No middlemen, no markups.</p>
+          <InstallButton className="mt-4" />
         </div>
         {COLS.map((c) => (
           <div key={c.title}>

@@ -21,6 +21,15 @@ const SERVICE_WORDS: [RegExp, { industry?: string; categories?: string[]; label:
   [/\b(cars?|chauff\w*|transport|transfers?|driver)\b/, { industry: "transport-logistics", label: "Cars & transport" }],
   [/\b(guest ?book|audio guest\w*|voicemail|phone)\b/, { categories: ["Audio Guestbook"], label: "Audio guestbook" }],
   [/\b(paint\w*|sip and paint|art class)\b/, { categories: ["Paint & Wine Night"], label: "Paint & sip" }],
+  // Everyday words people actually type
+  [/\b(music|tunes|playlist|live act|someone to play)\b/, { categories: ["DJs & Disco", "Musician", "Singers", "Bands"], label: "Music" }],
+  [/\b(eat|eats|nibbles|snacks|lunch|supper|feast|feed)\b/, { industry: "food-services", label: "Food" }],
+  [/\b(booze|alcohol|beer|wine|spirits|bartender\w*)\b/, { industry: "drink-services", categories: ["Mobile Bars", "Mixologists"], label: "Bar & drinks" }],
+  [/\b(desserts?|pudding|treats|brownies|cupcakes|sweet treats)\b/, { categories: ["Cake Maker", "Candy Carts", "Donuts"], label: "Desserts" }],
+  [/\b(pictures|pics|snaps|photos)\b/, { categories: ["Photographer"], label: "Photographer" }],
+  [/\b(tents?|gazebo|tipi|teepee|stretch tent)\b/, { categories: ["Marquees"], label: "Marquees" }],
+  [/\b(entertain\w*|magic|an act|acts|show|performer)\b/, { categories: ["Magician", "Performers", "Tribute Act", "Children's Entertainer"], label: "Entertainment" }],
+  [/\b(lift|taxi|minibus|limo|limousine)\b/, { industry: "transport-logistics", label: "Transport" }],
 ];
 
 const PLACE_WORDS: [RegExp, Location][] = [
@@ -45,6 +54,7 @@ const EVENT_WORDS: [RegExp, string][] = [
   [/\b(launch|brand activation|press day)\b/, "Product Launches"],
   [/\bhouse party\b/, "House Parties"],
   [/\bprivate party\b/, "Private Parties"],
+  [/\b(party|parties|celebration|do|bash|get[- ]together)\b/, "Private Parties"],
 ];
 
 export interface Understood {

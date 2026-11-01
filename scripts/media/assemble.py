@@ -108,9 +108,24 @@ def main():
             w, h = dims(path)
             p["gallery"].append({"src": public_url(g["file"]), "width": w, "height": h, "alt": g["alt"], "sourceUrl": g["sourceUrl"]})
         reel = os.path.join(ROOT, "public", "media", slug, "reel.json")
+        p["reelQuality"] = None
         if os.path.exists(reel):
             r = json.load(open(reel))
             p["reel"] = {k: r[k] for k in ("fade", "audio", "segments", "outputs")}
+            # Cards only play reels cut from the business's own full-resolution media.
+            low = any("tiktok.com" in seg["sourceUrl"] for seg in r["segments"])
+            p["reelQuality"] = "mixed" if low else "high"
+        areas = " ".join(p["areasServed"]).lower()
+        if re.search(r"worldwide|abroad|destination|overseas|portugal|europe|international", areas):
+            travels = "international"
+        elif re.search(r"nationwide|uk-wide|uk wide|\buk\b|united kingdom|england|anywhere|across the country", areas):
+            travels = "nationwide"
+        elif len(p["areasServed"]) >= 2:
+            travels = "regional"
+        else:
+            travels = "local"
+        base = (p["basedIn"] or {}).get("text")
+        p["coverage"] = {"base": base.split(",")[0].split("(")[0].strip() if base else None, "travels": travels, "areas": p["areasServed"]}
         out[slug] = p
     dest = os.path.join(ROOT, "src", "data", "profiles.generated.json")
     with open(dest, "w") as fh:
