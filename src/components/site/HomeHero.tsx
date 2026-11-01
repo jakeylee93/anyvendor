@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Planner from "./Planner";
 
 /** Homepage hero: the wordmark, one line, and the planner. The background is a
@@ -15,6 +16,13 @@ export default function HomeHero() {
         <div className="mt-8 w-full text-left">
           <Planner />
         </div>
+        <p className="mt-5 text-sm text-be-navy/70">
+          Or{" "}
+          <Link href="/swipe" className="font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">
+            swipe through vendors
+          </Link>
+          : right to save, left to skip.
+        </p>
       </div>
     </section>
   );

@@ -355,3 +355,19 @@ html {
   .be-site { background: #fff; }
   a { color: inherit; }
 }
+
+/* Swipe deck: cards spring back or fly off; no transition while a finger is on them. */
+.swipe-card {
+  transition:
+    transform 0.26s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.26s ease;
+  will-change: transform;
+}
+.swipe-card[data-dragging="true"] {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .swipe-card {
+    transition: none;
+  }
+}

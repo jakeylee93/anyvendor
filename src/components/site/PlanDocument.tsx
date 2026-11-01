@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight, Mail, Printer, Trash2 } from "lucide-react";
 import { useShortlist } from "./ShortlistProvider";
 import { NEEDS } from "@/lib/plan";
+import EnquiryComposer from "./EnquiryComposer";
 
 export interface PlanVendor {
   slug: string;
@@ -16,6 +17,9 @@ export interface PlanVendor {
   website: string | null;
   email: string | null;
   phone: string | null;
+  industry: string | null;
+  region: string | null;
+  travels: "local" | "regional" | "nationwide" | "international" | null;
 }
 
 function niceDate(d: string | null) {
@@ -35,6 +39,7 @@ export default function PlanDocument({ vendors }: { vendors: Record<string, Plan
     const label = NEEDS.find((n) => n.key === it.need)?.label ?? "Shortlisted";
     groups.set(label, [...(groups.get(label) ?? []), v]);
   }
+  const toContact = items.flatMap((it) => (vendors[it.slug] ? [{ ...vendors[it.slug], need: it.need }] : []));
   const details = event ? [event.event, event.location, niceDate(event.date), event.guests ? `${event.guests} guests` : null].filter(Boolean) : [];
 
   return (
@@ -46,7 +51,7 @@ export default function PlanDocument({ vendors }: { vendors: Record<string, Plan
           {details.length > 0 && <p className="mt-2 text-be-grey">{details.join(" · ")}</p>}
           {event?.ask && <p className="mt-1 text-sm text-be-grey">“{event.ask}”</p>}
         </div>
-        <div className="flex gap-2 print:hidden">
+        <div className="flex w-full items-center gap-2 sm:w-auto print:hidden">
           <button type="button" onClick={() => window.print()} className="inline-flex items-center gap-2 rounded-full border border-be-navy px-4 py-2 text-sm font-semibold text-be-navy hover:bg-be-mist">
             <Printer size={16} aria-hidden /> Print / save as PDF
           </button>
@@ -81,7 +86,7 @@ export default function PlanDocument({ vendors }: { vendors: Record<string, Plan
                     ) : v.photo ? (
                       <img src={v.photo} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover" />
                     ) : null}
-                    <div className="min-w-0 flex-1">
+                    <div className="min-w-0 flex-1 basis-40">
                       <Link href={`/businesses/${v.slug}`} className="font-bold text-be-navy hover:text-be-cyan">
                         {v.name}
                       </Link>
@@ -97,7 +102,7 @@ export default function PlanDocument({ vendors }: { vendors: Record<string, Plan
                       )}
                       {v.phone && <p className="text-sm text-be-navy">{v.phone}</p>}
                     </div>
-                    <div className="flex gap-2 print:hidden">
+                    <div className="flex w-full items-center gap-2 sm:w-auto print:hidden">
                       {v.email ? (
                         <a href={`mailto:${v.email}?subject=${encodeURIComponent("Event enquiry via Anyvendor")}`} className="inline-flex items-center gap-1.5 rounded-full bg-be-amber px-4 py-2 text-sm font-semibold text-be-navy">
                           <Mail size={15} aria-hidden /> Email
@@ -116,9 +121,10 @@ export default function PlanDocument({ vendors }: { vendors: Record<string, Plan
               </ul>
             </section>
           ))}
-          <section className="mt-10 rounded-2xl bg-be-mist p-5 text-sm text-be-grey print:hidden">
+          <EnquiryComposer vendors={toContact} />
+          <section className="mt-8 rounded-2xl bg-be-mist p-5 text-sm text-be-grey print:hidden">
             <p>
-              <strong className="text-be-navy">Coming next:</strong> one enquiry to everyone on this plan, replies in one inbox, and a free account that keeps your plan on every device. Until vendors have accounts, this plan is saved on this device only.
+              <strong className="text-be-navy">Coming next:</strong> a free account that keeps your plan and your conversations on every device. Until then this plan is saved on this device only.
             </p>
           </section>
         </>

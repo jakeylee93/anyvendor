@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Mail, Phone, MapPin, CalendarDays, Info, Check, Plus } from "lucide-react";
 import SiteShell from "@/components/site/SiteShell";
-import BusinessCard, { Monogram, locationLabel } from "@/components/site/BusinessCard";
+import BusinessCard, { Monogram, cardFacts, locationLabel } from "@/components/site/BusinessCard";
+import ProfileEnquiry from "@/components/site/ProfileEnquiry";
 import Showreel from "@/components/site/Showreel";
 import GalleryMarquee from "@/components/site/GalleryMarquee";
 import { BUSINESSES, getBusiness, categoriesOf, industryOf, industryName, type Business } from "@/lib/directory";
@@ -288,48 +289,27 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
 
       {/* Enquire */}
       <section id="enquire" className="scroll-mt-4 bg-be-navy text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1.3fr_1fr] md:items-center md:py-24">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-[1fr_1.2fr] md:items-start md:py-24">
           <div>
             <p className="font-caveat text-3xl text-be-cyan">Planning an event?</p>
             <h2 className="mt-1 text-3xl font-bold md:text-5xl">Talk to {p.displayName}</h2>
-            {p.contact?.email || p.contact?.phone ? (
-              <p className="mt-4 max-w-xl text-white/75">Send your date, venue, guest numbers and what you have in mind, and the team will come back to you.</p>
-            ) : (
-              <p className="mt-4 max-w-xl text-white/75">
-                Enquiries through Anyvendor are not connected in this testing preview. You can reach {p.displayName} directly through their own website or social
-                channels.
-              </p>
-            )}
-          </div>
-          <div className="grid gap-3">
-            {p.contact?.email && (
-              <a
-                href={`mailto:${p.contact.email}?subject=${encodeURIComponent("Event enquiry via Anyvendor")}`}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-be-amber px-6 py-3.5 font-semibold text-be-navy hover:brightness-95"
-              >
-                <Mail size={18} aria-hidden /> {p.contact.email}
-              </a>
-            )}
-            {p.contact?.phone && (
-              <a
-                href={`tel:${p.contact.phone.replace(/\s/g, "")}`}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white/12 px-6 py-3.5 font-semibold ring-1 ring-white/35 hover:bg-white/20"
-              >
-                <Phone size={18} aria-hidden /> {p.contact.phone}
-              </a>
-            )}
-            {p.website && (
-              <a
-                href={p.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 rounded-full bg-white/12 px-6 py-3.5 font-semibold ring-1 ring-white/35 hover:bg-white/20"
-              >
-                Visit website <ArrowUpRight size={18} aria-hidden />
-              </a>
-            )}
+            <p className="mt-4 max-w-xl text-white/75">
+              Tell us about your party once and we’ll write your message to {p.displayName}, mentioning what they do and where they are. Change anything before you send it.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {p.contact?.phone && (
+                <a href={`tel:${p.contact.phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 rounded-full bg-white/12 px-5 py-3 font-semibold ring-1 ring-white/35 hover:bg-white/20">
+                  <Phone size={18} aria-hidden /> {p.contact.phone}
+                </a>
+              )}
+              {p.website && (
+                <a href={p.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full bg-white/12 px-5 py-3 font-semibold ring-1 ring-white/35 hover:bg-white/20">
+                  Visit website <ArrowUpRight size={18} aria-hidden />
+                </a>
+              )}
+            </div>
             {socials.length > 0 && (
-              <ul className="mt-1 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/80">
+              <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/80">
                 {socials.map(([k, v]) => (
                   <li key={k}>
                     <a href={v} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline decoration-white/30 underline-offset-4 hover:text-white">
@@ -340,6 +320,19 @@ function FullProfile({ b, p }: { b: Business; p: Profile }) {
               </ul>
             )}
           </div>
+          <ProfileEnquiry
+            vendor={{
+              name: p.displayName,
+              categories: categoriesOf(b),
+              industry: industryOf(b) ?? null,
+              need: null,
+              place: cardFacts(b).place,
+              region: b.region ?? null,
+              travels: p.coverage.travels,
+            }}
+            email={p.contact?.email ?? null}
+            website={p.website}
+          />
         </div>
       </section>
 

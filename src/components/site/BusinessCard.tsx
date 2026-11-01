@@ -37,7 +37,7 @@ export function locationLabel(b: Business) {
 }
 
 /** Foil tints and readable text colour per industry (collectible-card "types"). */
-const TYPE_STYLE: Record<string, { tint: [string, string]; text: string }> = {
+export const TYPE_STYLE: Record<string, { tint: [string, string]; text: string }> = {
   "drink-services": { tint: ["#33ccff", "#a78bfa"], text: "#0278b5" },
   "food-services": { tint: ["#fbb102", "#fb7185"], text: "#b45309" },
   entertainment: { tint: ["#ff69eb", "#8b5cf6"], text: "#a21caf" },
@@ -47,10 +47,10 @@ const TYPE_STYLE: Record<string, { tint: [string, string]; text: string }> = {
   "unique-services": { tint: ["#fb7185", "#fbbf24"], text: "#be123c" },
   "event-planning-management": { tint: ["#818cf8", "#22d3ee"], text: "#4338ca" },
 };
-const DEFAULT_TYPE = { tint: ["#33ccff", "#ff69eb"] as [string, string], text: "#0278b5" };
+export const DEFAULT_TYPE = { tint: ["#33ccff", "#ff69eb"] as [string, string], text: "#0278b5" };
 
 /** Year and place as the business itself states them; falls back to the 2025 listing only when no profile exists. */
-function cardFacts(b: Business) {
+export function cardFacts(b: Business) {
   const p = getProfile(b.slug);
   if (!p) return { year: String(b.established), place: locationLabel(b) };
   const year = p.established?.label.match(/\b(19|20)\d{2}\b/)?.[0] ?? null;
@@ -64,7 +64,7 @@ function LogoSeal({ p }: { p: NonNullable<ReturnType<typeof getProfile>> }) {
   const bg = p.logo.plate === "dark" ? "bg-be-deep" : "bg-white";
   const wide = p.logo.width / p.logo.height > 1.8;
   return (
-    <span className={`absolute left-2.5 top-2.5 z-[2] flex items-center justify-center overflow-hidden rounded-full shadow-lg ring-[3px] ring-white/90 sm:left-3 sm:top-3 ${bg} ${wide ? "h-14 w-14 sm:h-[84px] sm:w-[84px]" : "h-12 w-12 sm:h-[72px] sm:w-[72px]"}`}>
+    <span className={`absolute left-2.5 top-2.5 z-[2] flex items-center justify-center overflow-hidden rounded-full shadow-lg ring-[3px] ring-white/90 sm:left-3 sm:top-3 ${bg} ${wide ? "h-[76px] w-[76px] sm:h-[84px] sm:w-[84px]" : "h-16 w-16 sm:h-[72px] sm:w-[72px]"}`}>
       <img src={p.logo.src} alt={`${p.displayName} logo`} className={`object-contain ${wide ? "h-[88%] w-[88%]" : "h-[78%] w-[78%]"}`} />
     </span>
   );
@@ -105,15 +105,15 @@ export default function BusinessCard({ business, need = null, reasons }: { busin
               )}
               {p && <LogoSeal p={p} />}
               {cats[0] && (
-                <span className="absolute right-2.5 top-2.5 z-[2] inline-flex max-w-[55%] items-center gap-1.5 truncate rounded-full bg-be-deep/75 px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm ring-1 ring-white/25 backdrop-blur sm:right-3 sm:top-3 sm:px-3 sm:py-1.5 sm:text-[11px]">
+                <span className="absolute right-2.5 top-2.5 z-[2] inline-flex max-w-[55%] items-center gap-1.5 truncate rounded-full bg-be-deep/75 px-3 py-1.5 text-[11px] font-semibold text-white shadow-sm ring-1 ring-white/25 backdrop-blur sm:right-3 sm:top-3">
                   <NeedIcon name={icon} size={13} className="text-be-cyan" aria-hidden />
                   {cats[0]}
                 </span>
               )}
             </div>
 
-            <div className="flex flex-1 flex-col rounded-[16px] bg-white/85 px-3 pb-3 pt-3 backdrop-blur-sm sm:px-4 sm:pt-3.5">
-              <h3 className="truncate text-base font-bold leading-tight text-be-navy sm:text-lg">{name}</h3>
+            <div className="flex flex-1 flex-col rounded-[16px] bg-white/85 px-4 pb-3 pt-3.5 backdrop-blur-sm">
+              <h3 className="truncate text-lg font-bold leading-tight text-be-navy">{name}</h3>
               <p className="mt-0.5 text-xs text-be-grey">{facts.year ? `Est. ${facts.year}` : " "}</p>
               {cats.length > 0 && (
                 <p className="mt-1 truncate text-[13px] font-semibold" style={{ color: type.text }}>
@@ -143,7 +143,7 @@ export default function BusinessCard({ business, need = null, reasons }: { busin
               <div className="mt-auto flex items-baseline justify-between gap-2 pt-3">
                 <span className="text-[11px] font-medium uppercase tracking-wider text-be-grey">From</span>
                 <span className="truncate text-right">
-                  <strong className="text-sm font-bold text-be-navy sm:text-base">{price.from}</strong>{" "}
+                  <strong className="text-base font-bold text-be-navy">{price.from}</strong>{" "}
                   <span className="text-xs text-be-grey">{price.unit}</span>
                 </span>
               </div>

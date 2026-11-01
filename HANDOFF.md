@@ -1,5 +1,23 @@
 # Anyvendor — handoff
 
+## Milestone 6: swipe-to-shortlist, tailored enquiries, phone tab bar, single-column cards, brand sheets (1 Nov 2026, afternoon)
+
+Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`, one feature commit plus this handoff. Final protected preview **https://anyvendor-9e2sqssc7-anyos.vercel.app** (Ready); QA screenshots were taken on the first build of the same change (`flz1smnwu`) and the three layout fixes were verified on the final build by markup checks. Release claim `def5f817` released after this receipt. `main`, production, domains, payments, enquiries untouched. Nothing is sent from the site: every enquiry still leaves via the visitor's own email app or clipboard.
+
+Jake's afternoon direction and what was built:
+- Phone cards back to a single column everywhere (home, directory, plan, list-my-business); card type sizes restored to the full treatment on phones.
+- `/swipe`: Tinder-style deck (`src/components/site/SwipeDeck.tsx`, `src/app/swipe/page.tsx`). Drag or swipe right saves to the plan, left skips; buttons and arrow keys do the same; Backspace undoes; live region announces each decision; reduced motion drops the fling. Only high-resolution own reels autoplay on the deck. Skips persist on the device, so coming back shows the undecided ones; when the deck is empty there is "Go through the N I skipped again". The deck follows the plan (`?needs=…&location=…&event=…`, interleaving the best pick per need) or shows everyone. Entry points: home ("swipe through vendors"), plan page ("Swipe through these"), phone tab bar.
+- Phone tab bar (`BottomNav.tsx`): Plan, Swipe, Directory, My plan with a count badge; hidden from `lg` up and in print. The floating desktop plan bar now stays off `/swipe` and `/plan/my`.
+- Tailored enquiries (`src/lib/enquiry.ts`, `EnquiryComposer.tsx` on `/plan/my`, `ProfileEnquiry.tsx` in every profile's Enquire section). One brief (name, the party in their words, place, date, guests) produces a message per vendor: their name, a line for what they do (by category), a cover check when they are based outside the visitor's county and do not travel UK-wide ("I can see you're based in Barnston; is London somewhere you cover?"), availability/size/price questions, sign-off. Editable, with "Back to the suggested message". Email button only where a contact email is authorised (The Bar People); otherwise Copy plus their website. Deterministic template, no AI calls; a model-written version can replace `composeEnquiry` later without changing the UI.
+- `ShortlistProvider` now also stores `skipped[]` and `brief {name, message}` under the same `anyvendor.plan.v1` key, and exposes `ready`.
+- Brand: `docs/brand-20261101/logo-sheet-10-options.png` (1–5 one-line "anyvendor" wordmarks, 6–10 AV monograms) and `touchpoints-av-monogram.png` (app icon, cap, tee, tote, lanyard, van) from GPT Image 2.5 via OpenArt, 90 credits (1,963 → 1,873). Option 5 reads as "any^endor"; the rest are usable starting points. Awaiting Jake's pick; a real vector logo still has to be drawn.
+
+Verification: tsc clean; eslint 0 errors (img warnings only); cloud builds Ready. Playwright (phone 390 and desktop 1440, isolated session): drag right saved GRAPE & Fig ("1 in my plan", tab badge 1), ArrowLeft skipped Harry De Cruz, both persisted in localStorage; `/plan/my` composer wrote "Hi GRAPE & Fig … We'd love a grazing table for our guests"; with a planned event (40th, London, 20 Dec 2026, 80 guests) the messages carried the details, the cover check and subjects like "Birthday party in London, 20 December – Mobile Bars"; profile enquiry form present with mailto for The Bar People; home cards 358px single column, no horizontal overflow; desktop tab bar hidden; 0 console errors. Screenshots in `docs/screenshots/swipe-20261101/`.
+
+Not built (decisions still needed): sending from Anyvendor with replies in one inbox and accounts (Supabase/Resend proposal), Google/Tripadvisor ratings via official APIs, the new homepage/border picks, the logo pick.
+
+---
+
 ## Milestone 5: mock-up options, short-request fixes, The Farmhouse at Home (1 Nov 2026)
 
 Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`: `a66e2d7` (fixes), `7a9c4c3` (mock-ups), `ae54834` (Farmhouse), plus this handoff commit. Final protected preview **https://anyvendor-oztt4uoay-anyos.vercel.app** (Ready). Release claim `4e5bed27` released after this receipt. `main`, production, domains, payments, enquiries untouched.

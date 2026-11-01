@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Layers, Sparkles } from "lucide-react";
 import SiteShell from "@/components/site/SiteShell";
 import BusinessCard from "@/components/site/BusinessCard";
 import Planner from "@/components/site/Planner";
@@ -26,6 +26,10 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
   const needKeys = req.needs.length ? req.needs : guessed ? ["bar", "food", "music", "photo"] : [];
   const needs = needKeys.map(needByKey).filter(Boolean) as typeof NEEDS;
   const summary = [req.event, req.location, niceDate(req.date), req.guests ? `${req.guests} guests` : null].filter(Boolean).join(" · ");
+  const swipeQs = new URLSearchParams();
+  if (needKeys.length) swipeQs.set("needs", needKeys.join(","));
+  if (req.location) swipeQs.set("location", req.location);
+  if (req.event) swipeQs.set("event", req.event);
 
   return (
     <SiteShell>
@@ -54,7 +58,12 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
         </section>
       ) : (
         <section className="mx-auto max-w-7xl px-4 py-10">
-          <h1 className="text-2xl font-bold text-be-navy md:text-4xl">Our suggestions for you</h1>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h1 className="text-2xl font-bold text-be-navy md:text-4xl">Our suggestions for you</h1>
+            <Link href={`/swipe?${swipeQs}`} className="inline-flex items-center gap-2 rounded-full bg-be-navy px-5 py-2.5 text-sm font-semibold text-white hover:bg-be-deep">
+              <Layers size={16} className="text-be-cyan" aria-hidden /> Swipe through these
+            </Link>
+          </div>
           <p className="mt-2 max-w-2xl text-be-grey">
             {guessed
               ? "We’ve started with the basics most parties need. Tick what you’re after under “Edit my event” and we’ll narrow it down."
@@ -78,7 +87,7 @@ export default async function PlanPage({ searchParams }: { searchParams: SP }) {
                     </Link>
                   </div>
                   {picks.length ? (
-                    <ul className="mt-5 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
+                    <ul className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
                       {picks.map((s) => (
                         <li key={s.business.slug}>
                           <BusinessCard business={s.business} need={n.key} reasons={s.best ? ["Best match", ...s.reasons] : s.reasons} />

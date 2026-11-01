@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SiteShell from "@/components/site/SiteShell";
 import PlanDocument, { type PlanVendor } from "@/components/site/PlanDocument";
-import { BUSINESSES, categoriesOf } from "@/lib/directory";
+import { BUSINESSES, categoriesOf, industryOf } from "@/lib/directory";
 import { getProfile } from "@/lib/profiles";
 
 export const metadata: Metadata = { title: "My plan — Anyvendor" };
@@ -22,6 +22,9 @@ export default function MyPlanPage() {
       website: p?.website ?? null,
       email: p?.contact?.email ?? null,
       phone: p?.contact?.phone ?? null,
+      industry: industryOf(b) ?? null,
+      region: b.region ?? null,
+      travels: p?.coverage.travels ?? null,
     };
   }
   return (
