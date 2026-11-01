@@ -1,5 +1,22 @@
 # Anyvendor — handoff
 
+## Milestone 7: brand mark chosen, drawn as a vector, animated and applied (1 Nov 2026, evening)
+
+Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`: `31382df` (brand) plus this handoff. Protected preview **https://anyvendor-2kxcxlbsj-anyos.vercel.app** (Ready). Release claim `1a0e4b16` released after this receipt. `main`, production, domains, payments, enquiries untouched.
+
+Logo exploration (OpenArt, GPT Image 2.5, project "Anyvendor concepts"): twelve sheets in `docs/brand-20261101/` (rounds 1–12, plus the touchpoint sheet). Jake's path: round-1 pill wordmark + gradient zigzag → distinct A/V → flat two-tone → tile → round-12 option 13: a heavy white A (with crossbar) and V sharing a stroke, cut from a navy rounded-square tile, with "anyvendor" in navy inside a cyan pill. Rounds 1–12 cost about 550 credits in total (balance 1,963 → 1,371 across the day, all accounted for by this session's generations).
+
+Built from the pick:
+- `src/components/site/BrandMark.tsx`: the mark as five polygons in a 96 × 64 box (A left leg, A right leg, crossbar, V left stroke overlapping the A's right leg, V right stroke); `AvTile` (navy tile, white mark) and `BrandLockup` (tile + cyan pill, stacked or row). The same points generate `public/brand/anyvendor-tile.svg`, `anyvendor-mark-navy.svg`, `anyvendor-mark-white.svg`, and the regenerated app icons in `public/icons/` (192, 512, maskable with the mark inside the safe zone, Apple touch full-bleed).
+- Animation: CSS build-in on `.brand-anim` (tile pops with a small overshoot, A slides in from the left, V from the right, pill scales open, word rises), about 1.5 s, disabled under reduced motion. Plays once on the home hero; `/brand` has a replay button.
+- Applied: header and footer logo (row lockup), home hero (stacked, animated), manifest and Apple icons. Tab bar icons unchanged.
+- Exports: `public/brand/anyvendor-animation.mp4` (1080 × 1080, 3 s, 68 KB) and `.gif` (540 px, 99 KB), rendered from the vector by stepping the CSS animations frame by frame in Playwright (a standalone copy of the lockup served from localhost, because the CLI blocks file: URLs) and encoding with ffmpeg. Sent to Jake.
+- Not done: a lockup SVG with the word outlined as paths (the pill uses the Lexend Deca webfont); a cap/tee mock-up with the final mark; gradient or two-tone colourways were explored but the chosen mark is flat navy/white/cyan.
+
+Verification: tsc clean, eslint clean on the new files; cloud build Ready; `vercel curl`: `/` carries the animated lockup, `/brand` 200 with showcase and downloads, `/directory` header lockup present, tile SVG, MP4, GIF, icons and manifest all 200. Playwright screenshots of the header, hero and `/brand` in `docs/screenshots/brand-20261101/`.
+
+---
+
 ## Milestone 6: swipe-to-shortlist, tailored enquiries, phone tab bar, single-column cards, brand sheets (1 Nov 2026, afternoon)
 
 Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`). Branch `claude/bookedevents-reconstruction`, one feature commit plus this handoff. Final protected preview **https://anyvendor-9e2sqssc7-anyos.vercel.app** (Ready); QA screenshots were taken on the first build of the same change (`flz1smnwu`) and the three layout fixes were verified on the final build by markup checks. Release claim `def5f817` released after this receipt. `main`, production, domains, payments, enquiries untouched. Nothing is sent from the site: every enquiry still leaves via the visitor's own email app or clipboard.
