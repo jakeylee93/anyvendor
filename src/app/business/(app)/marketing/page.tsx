@@ -5,6 +5,8 @@ import { ActionFeedback, Card, CardTitle, Notice, submitCls } from "@/components
 import { loadAccess, loadConnections, requireBusiness } from "@/lib/business/data";
 import { PROVIDERS, type MediaItem, type SocialProvider } from "@/lib/social/providers";
 import { utcToZonedInput, zonedDayKey } from "@/lib/social/time";
+import { marketingScore, POINTS, WEEKLY_GOAL } from "@/lib/business/marketing";
+import { nowMs } from "@/lib/business/requests";
 import { cancelSocialPost, disconnectAccount, saveSocialPost } from "../../social-actions";
 
 type SP = Promise<Record<string, string | string[] | undefined>>;
@@ -12,20 +14,25 @@ interface Post { id: string; body: string; media: MediaItem[]; status: string; s
 
 const STATUS: Record<string, string> = { draft: "Draft", scheduled: "Scheduled", publishing: "Publishing", published: "Published", partially_published: "Partly published", failed: "Failed", cancelled: "Cancelled" };
 
-export default async function SocialPage({ searchParams }: { searchParams: SP }) {
+export default async function MarketingPage({ searchParams }: { searchParams: SP }) {
   const sp = await searchParams;
   const ctx = await requireBusiness();
   const [access, connections] = await Promise.all([loadAccess(ctx), loadConnections(ctx)]);
   const tz = ctx.business.timezone;
   if (!access.modules.includes("social")) {
-    return <Card><CardTitle>Social scheduler</CardTitle><p className="mt-2 text-sm text-be-grey">Schedule your own Instagram and LinkedIn posts with the £100 plan.</p><Link href="/business/account" className={`${submitCls} mt-4`}>See plans</Link></Card>;
+    return (
+      <>
+        <h1 className="text-2xl font-bold text-be-navy md:text-3xl">Marketing</h1>
+        <Card><CardTitle>Social scheduler and marketing points</CardTitle><p className="mt-2 text-sm text-be-grey">Schedule your own Instagram and LinkedIn posts and earn points every week you keep your marketing going. Included in the £100 plan.</p><Link href="/business/account" className={`${submitCls} mt-4`}>See plans</Link></Card>
+      </>
+    );
   }
   const social = connections.filter((c) => c.provider !== "google_search_console");
   let posts: Post[] = [];
   let expiries: Record<string, string | null> = {};
   if (ctx.mode === "live") {
     const [{ data }, { data: exp }] = await Promise.all([
-      ctx.sb.from("social_posts").select("id, body, media, status, scheduled_for, social_post_targets(id, provider, status, last_error, external_url, connection_id)").eq("business_id", ctx.business.id).neq("status", "cancelled").order("scheduled_for", { ascending: true, nullsFirst: true }).limit(100),
+      ctx.sb.from("social_posts").select("id, body, media, status, scheduled_for, social_post_targets(id, provider, status, last_error, external_url, connection_id)").eq("business_id", ctx.business.id).neq("status", "cancelled").order("scheduled_for", { ascending: true, nullsFirst: true }).limit(300),
       ctx.sb.from("provider_connections").select("id, token_expires_at").eq("business_id", ctx.business.id),
     ]);
     posts = (data ?? []) as Post[];
@@ -46,7 +53,21 @@ export default async function SocialPage({ searchParams }: { searchParams: SP })
       {sp.why && <Notice tone="warning">{String(sp.why)}</Notice>}
       {sp.scheduled && <Notice tone="success">Scheduled. It will post at the chosen time and you’ll see the outcome here. Nothing is posted until then.</Notice>}
       {sp.connected && <Notice tone="success">Account connected.</Notice>}
-      <h1 className="text-2xl font-bold text-be-navy md:text-3xl">Social</h1>
+      <h1 className="text-2xl font-bold text-be-navy md:text-3xl">Marketing</h1>
+      {(() => {
+        const sc = marketingScore(posts.map((p) => ({ status: p.status, scheduled_for: p.scheduled_for, targets: p.social_post_targets })), new Date(nowMs()), tz);
+        return (
+          <Card>
+            <CardTitle>This week’s marketing</CardTitle>
+            <div className="mt-3 grid grid-cols-3 gap-2 text-center">
+              <div className="rounded-2xl bg-be-mist py-3"><p className="text-xs text-be-grey">Points</p><p className="text-2xl font-bold text-be-navy">{sc.points}</p></div>
+              <div className="rounded-2xl bg-be-mist py-3"><p className="text-xs text-be-grey">Posts planned</p><p className="text-2xl font-bold text-be-navy">{sc.planned}/{WEEKLY_GOAL}</p></div>
+              <div className="rounded-2xl bg-be-mist py-3"><p className="text-xs text-be-grey">Streak</p><p className="text-2xl font-bold text-be-navy">{sc.streak}w</p></div>
+            </div>
+            <p className="mt-2 text-xs text-be-grey">{POINTS.planned} points for each post planned this week, {POINTS.published} for each post the network confirms, and a {POINTS.goalBonus}-point bonus at {WEEKLY_GOAL} posts. Level: {sc.level}.</p>
+          </Card>
+        );
+      })()}
 
       <Card>
         <CardTitle>Your accounts</CardTitle>
@@ -118,7 +139,7 @@ export default async function SocialPage({ searchParams }: { searchParams: SP })
                   </div>
                   {p.status === "scheduled" && (
                     <span className="flex shrink-0 gap-3">
-                      <Link href={`/business/social?edit=${p.id}`} className="font-semibold text-be-navy underline">Edit</Link>
+                      <Link href={`/business/marketing?edit=${p.id}`} className="font-semibold text-be-navy underline">Edit</Link>
                       <form action={cancelSocialPost}><input type="hidden" name="post" value={p.id} /><button className="text-be-grey underline">Cancel</button></form>
                     </span>
                   )}
@@ -134,7 +155,7 @@ export default async function SocialPage({ searchParams }: { searchParams: SP })
               {drafts.map((p) => (
                 <li key={p.id} className="flex items-center justify-between gap-3 rounded-2xl bg-white px-3 py-2 text-sm ring-1 ring-gray-200">
                   <span className="truncate text-be-navy">{p.body || "(media only)"}</span>
-                  <Link href={`/business/social?edit=${p.id}`} className="shrink-0 font-semibold text-be-navy underline">Edit</Link>
+                  <Link href={`/business/marketing?edit=${p.id}`} className="shrink-0 font-semibold text-be-navy underline">Edit</Link>
                 </li>
               ))}
             </ul>

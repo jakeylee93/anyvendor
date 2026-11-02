@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { UserRound } from "lucide-react";
+import { Settings } from "lucide-react";
 import { AvTile } from "@/components/site/BrandMark";
 import BusinessNav, { BusinessTabBar, type NavKey } from "@/components/business/BusinessNav";
 import { Notice } from "@/components/business/ui";
@@ -14,11 +14,11 @@ export default async function BusinessLayout({ children }: { children: React.Rea
   const access = await loadAccess(ctx);
   const items: { key: NavKey; href: string; label: string }[] = [
     { key: "home", href: "/business", label: "Home" },
-    { key: "requests", href: "/business/requests", label: "Requests" },
+    { key: "profile", href: "/business/profile", label: "My profile" },
     { key: "website", href: "/business/website", label: "Website" },
+    { key: "marketing", href: "/business/marketing", label: "Marketing" },
+    { key: "brand", href: "/business/brand", label: "Brand" },
   ];
-  if (access.modules.includes("seo")) items.push({ key: "seo", href: "/business/seo", label: "SEO" });
-  if (access.modules.includes("social")) items.push({ key: "social", href: "/business/social", label: "Social" });
 
   return (
     <div className="min-h-screen bg-be-mist pb-24 md:pb-10">
@@ -47,14 +47,14 @@ export default async function BusinessLayout({ children }: { children: React.Rea
           </div>
           <BusinessNav items={items} />
           <Link href="/business/account" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-be-mist text-be-navy hover:bg-gray-200" aria-label="Account, plan and billing">
-            <UserRound size={20} aria-hidden />
+            <Settings size={20} aria-hidden />
           </Link>
         </div>
       </header>
       <main className="mx-auto max-w-5xl space-y-4 px-4 py-5 md:py-8">
         {ctx.mode === "demo" && (
           <Notice tone="warning">
-            <strong>Demo.</strong> This is a sample business showing the layout. Sign-in, requests, billing and posting switch on when the AnyVendor database and Stripe are connected.
+            <strong>Demo.</strong> A sample business showing the layout. Nothing here is saved, published or charged. <Link href="/business/demo?exit=1" prefetch={false} className="font-semibold underline">Leave the demo</Link>
           </Notice>
         )}
         {access.notice && <Notice tone={access.notice.tone}>{access.notice.text} <Link href="/business/account" className="font-semibold underline">Billing</Link></Notice>}

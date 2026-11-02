@@ -39,7 +39,7 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
       <Card>
         <CardTitle>Your plan</CardTitle>
         <p className="mt-2 text-be-navy">
-          {ctx.mode === "demo" ? "Demo (all features shown)" : current ? `${current.name}, ${current.priceLabel} a month` : "No plan yet"}
+          {ctx.mode === "demo" ? "Demo (all features shown)" : current ? `${current.name}, ${current.priceLabel} a month inc. VAT` : "No plan yet"}
           {access.status && ctx.mode === "live" && <span className="ml-2 rounded-full bg-be-mist px-2 py-0.5 text-xs text-be-grey">{access.status.replace("_", " ")}</span>}
         </p>
         {periodEnd && <p className="mt-1 text-sm text-be-grey">Current period ends {new Date(periodEnd).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.</p>}
@@ -58,7 +58,7 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
           return (
             <Card key={p.code} className={isCurrent ? "ring-2 ring-be-cyan" : ""}>
               <p className="text-sm font-semibold text-be-grey">{p.name}</p>
-              <p className="mt-1 text-3xl font-bold text-be-navy">{p.priceLabel}<span className="text-base font-medium text-be-grey"> / month</span></p>
+              <p className="mt-1 text-3xl font-bold text-be-navy">{p.priceLabel}<span className="text-base font-medium text-be-grey"> a month inc. VAT</span></p>
               <p className="mt-2 text-sm text-be-grey">{p.summary}</p>
               <ul className="mt-3 space-y-1.5 text-sm text-be-navy">
                 {p.features.map((f) => (

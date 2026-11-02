@@ -3,8 +3,7 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { businessContext } from "@/lib/business/data";
-import { stripeClient } from "@/lib/business/stripe";
-import { priceForPlan, priceIdsFromEnv } from "@/lib/business/stripe-logic";
+import { anyvendorVatRate, resolvePrice, stripeClient } from "@/lib/business/stripe";
 import { supabaseService } from "@/lib/supabase/server";
 import { appUrl } from "@/lib/supabase/env";
 import type { PlanCode } from "@/lib/business/plans";
@@ -37,9 +36,10 @@ async function customerFor(ctx: Awaited<ReturnType<typeof ownerContext>>) {
 export async function startCheckout(form: FormData) {
   const ctx = await ownerContext();
   const plan = String(form.get("plan")) as PlanCode;
-  const price = priceForPlan(plan, priceIdsFromEnv(process.env));
   const stripe = stripeClient();
-  if (!stripe || !price) redirect("/business/account?error=billing_not_configured");
+  if (!stripe || !["website", "seo", "social"].includes(plan)) redirect("/business/account?error=billing_not_configured");
+  const [price, vat] = await Promise.all([resolvePrice(stripe, plan), anyvendorVatRate(stripe)]);
+  if (!price) redirect("/business/account?error=billing_not_configured");
   // One subscription per business: changes to an existing plan go through the billing portal.
   const { data: subs } = await ctx.sb.from("subscriptions").select("status").eq("business_id", ctx.business.id).in("status", ["active", "trialing", "past_due", "incomplete"]);
   if (subs && subs.length) redirect("/business/account?error=already_subscribed");
@@ -54,7 +54,7 @@ export async function startCheckout(form: FormData) {
       client_reference_id: ctx.business.id,
       line_items: [{ price, quantity: 1 }],
       metadata: { business_id: ctx.business.id, plan },
-      subscription_data: { metadata: { business_id: ctx.business.id, plan } },
+      subscription_data: { metadata: { business_id: ctx.business.id, plan }, ...(vat ? { default_tax_rates: [vat] } : {}) },
       success_url: `${origin}/business/account?checkout=returned`,
       cancel_url: `${origin}/business/account?checkout=cancelled`,
     },

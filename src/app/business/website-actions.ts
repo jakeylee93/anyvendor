@@ -10,7 +10,7 @@ const IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp"];
 
 async function live() {
   const ctx = await businessContext();
-  if (ctx.mode !== "live" || !ctx.business) redirect("/business/website?demo=1");
+  if (ctx.mode !== "live" || !ctx.business) redirect("/business/website/edit?demo=1");
   return ctx as typeof ctx & { business: NonNullable<typeof ctx.business> };
 }
 
@@ -36,15 +36,15 @@ export async function saveWebsite(form: FormData) {
   }
   const version = Number(form.get("expected_version"));
   const { data: saved, error } = await ctx.sb.rpc("save_website_draft", { p_business: ctx.business.id, p_content: content, p_expected_version: version });
-  revalidatePath("/business/website");
-  if (error) redirect(`/business/website?error=${encodeURIComponent(error.message)}`);
+  revalidatePath("/business/website/edit");
+  if (error) redirect(`/business/website/edit?error=${encodeURIComponent(error.message)}`);
   if (form.get("intent") === "publish") {
     const p = await ctx.sb.rpc("publish_website", { p_business: ctx.business.id, p_expected_version: Number(saved) });
-    if (p.error) redirect(`/business/website?error=${encodeURIComponent(p.error.message)}`);
+    if (p.error) redirect(`/business/website/edit?error=${encodeURIComponent(p.error.message)}`);
     revalidatePath(`/site/${ctx.business.slug}`);
-    redirect("/business/website?published=1");
+    redirect("/business/website/edit?published=1");
   }
-  redirect("/business/website?ok=1");
+  redirect("/business/website/edit?ok=1");
 }
 
 export async function restoreRevision(form: FormData) {
@@ -54,6 +54,6 @@ export async function restoreRevision(form: FormData) {
     p_revision: String(form.get("revision")),
     p_expected_version: Number(form.get("expected_version")),
   });
-  revalidatePath("/business/website");
-  redirect(`/business/website?${error ? `error=${encodeURIComponent(error.message)}` : "restored=1"}`);
+  revalidatePath("/business/website/edit");
+  redirect(`/business/website/edit?${error ? `error=${encodeURIComponent(error.message)}` : "restored=1"}`);
 }

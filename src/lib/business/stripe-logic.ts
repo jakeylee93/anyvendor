@@ -11,9 +11,12 @@ export function priceIdsFromEnv(env: Record<string, string | undefined>): PriceI
   return { website: env.STRIPE_PRICE_WEBSITE, seo: env.STRIPE_PRICE_SEO, social: env.STRIPE_PRICE_SOCIAL };
 }
 
-export function planForPrice(priceId: string | null | undefined, prices: PriceIds): PlanCode | null {
-  if (!priceId) return null;
-  for (const code of ["website", "seo", "social"] as const) if (prices[code] && prices[code] === priceId) return code;
+/** Stripe lookup keys for the three AnyVendor prices (VAT-inclusive, GBP, monthly). */
+export const LOOKUP_KEYS: Record<PlanCode, string> = { website: "anyvendor_website_monthly", seo: "anyvendor_seo_monthly", social: "anyvendor_social_monthly" };
+
+export function planForPrice(priceId: string | null | undefined, prices: PriceIds, lookupKey?: string | null): PlanCode | null {
+  if (priceId) for (const code of ["website", "seo", "social"] as const) if (prices[code] && prices[code] === priceId) return code;
+  if (lookupKey) for (const code of ["website", "seo", "social"] as const) if (LOOKUP_KEYS[code] === lookupKey) return code;
   return null;
 }
 
@@ -28,7 +31,7 @@ interface SubLike {
   cancel_at_period_end: boolean;
   canceled_at: number | null;
   livemode: boolean;
-  items: { data: { price: { id: string }; current_period_end?: number }[] };
+  items: { data: { price: { id: string; lookup_key?: string | null }; current_period_end?: number }[] };
 }
 
 export interface SubscriptionSnapshot {
@@ -54,7 +57,7 @@ export function snapshotFromSubscription(sub: SubLike, eventCreatedSeconds: numb
     subscriptionId: sub.id,
     customerId: typeof sub.customer === "string" ? sub.customer : sub.customer.id,
     priceId,
-    plan: planForPrice(priceId, prices),
+    plan: planForPrice(priceId, prices, item?.price?.lookup_key ?? null),
     status: sub.status,
     periodEnd: iso(item?.current_period_end),
     cancelAtPeriodEnd: sub.cancel_at_period_end,

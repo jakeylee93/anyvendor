@@ -49,7 +49,8 @@ export const PLANS: Plan[] = [
   },
 ];
 
-export const PLAN_TERMS_NOTE = "Preview pricing per month. Final terms, including VAT, are confirmed before anyone is charged.";
+export const SELLER = "The Bar People Limited";
+export const PLAN_TERMS_NOTE = "All prices are per month and include VAT. AnyVendor is a trading name of The Bar People Limited, which bills your subscription.";
 
 const RANK: Record<PlanCode, number> = { website: 1, seo: 2, social: 3 };
 /** Stripe statuses that keep paid access. past_due keeps it while Stripe retries the card. */

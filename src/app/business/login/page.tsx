@@ -20,7 +20,7 @@ export default async function LoginPage({ searchParams }: { searchParams: SP }) 
           <h1 className="text-xl font-bold text-be-navy">Sign in to your business</h1>
           <p className="mt-1 text-sm text-be-grey">We’ll email you a secure link. No password needed.</p>
           <div className="mt-4 space-y-3">
-            {!ready && <Notice tone="warning">Sign-in isn’t switched on in this preview yet. <Link href="/business" className="font-semibold underline">Open the demo</Link></Notice>}
+            {!ready && <Notice tone="warning">Sign-in isn’t switched on in this preview yet.</Notice>}
             {error && <Notice tone="danger">{error}</Notice>}
             {sp.sent && <Notice tone="success">Check your email for the sign-in link.</Notice>}
           </div>
@@ -32,7 +32,9 @@ export default async function LoginPage({ searchParams }: { searchParams: SP }) 
             <button className={`${submitCls} w-full`} disabled={!ready}>Email me a link</button>
           </form>
         </div>
-        <p className="mt-6 text-center text-sm text-be-grey"><Link href="/" className="underline">Back to AnyVendor</Link></p>
+        <p className="mt-6 text-center text-sm text-be-grey">
+          <Link href="/business/demo" prefetch={false} className="font-semibold text-be-navy underline">Look around the demo</Link> · <Link href="/" className="underline">Back to AnyVendor</Link>
+        </p>
       </div>
     </main>
   );

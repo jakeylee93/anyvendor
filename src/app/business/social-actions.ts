@@ -18,7 +18,7 @@ async function live(back: string) {
 }
 
 export async function saveSocialPost(form: FormData) {
-  const ctx = await live("/business/social");
+  const ctx = await live("/business/marketing");
   const b = ctx.business;
   const body = String(form.get("body") ?? "").slice(0, 3000);
   const schedule = form.get("intent") === "schedule";
@@ -33,7 +33,7 @@ export async function saveSocialPost(form: FormData) {
   }
   for (const f of form.getAll("media")) {
     if (!(f instanceof File) || !f.size || !TYPES[f.type] || media.length >= 10) continue;
-    if (f.size > (TYPES[f.type] === "video" ? 100 : 8) * 1024 * 1024) redirect("/business/social?error=media_too_large");
+    if (f.size > (TYPES[f.type] === "video" ? 100 : 8) * 1024 * 1024) redirect("/business/marketing?error=media_too_large");
     const path = `${b.id}/${randomUUID()}.${f.type.split("/")[1].replace("quicktime", "mov")}`;
     const up = await ctx.sb.storage.from("social-media").upload(path, f, { contentType: f.type, upsert: false });
     if (!up.error) media.push({ path, mime: f.type, bytes: f.size, kind: TYPES[f.type] });
@@ -44,25 +44,25 @@ export async function saveSocialPost(form: FormData) {
   if (schedule) {
     const { data: conns } = await ctx.sb.from("provider_connections").select("id, provider").in("id", accountIds.length ? accountIds : ["00000000-0000-0000-0000-000000000000"]);
     const problems = (conns ?? []).flatMap((c) => validateForProvider(c.provider as SocialProvider, body, media));
-    if (problems.length) redirect(`/business/social?error=${encodeURIComponent("validation")}&why=${encodeURIComponent(problems.join(" "))}`);
+    if (problems.length) redirect(`/business/marketing?error=${encodeURIComponent("validation")}&why=${encodeURIComponent(problems.join(" "))}`);
   }
   const { error } = await ctx.sb.rpc("save_social_post", {
     p_business: b.id, p_post: postId, p_body: body, p_media: media, p_connections: accountIds,
     p_scheduled_for: when ? when.toISOString() : null, p_timezone: b.timezone, p_schedule: schedule,
   });
-  revalidatePath("/business/social");
-  redirect(`/business/social?${error ? `error=${encodeURIComponent(error.message)}` : schedule ? "scheduled=1" : "ok=1"}`);
+  revalidatePath("/business/marketing");
+  redirect(`/business/marketing?${error ? `error=${encodeURIComponent(error.message)}` : schedule ? "scheduled=1" : "ok=1"}`);
 }
 
 export async function cancelSocialPost(form: FormData) {
-  const ctx = await live("/business/social");
+  const ctx = await live("/business/marketing");
   const { error } = await ctx.sb.rpc("cancel_social_post", { p_post: String(form.get("post")) });
-  revalidatePath("/business/social");
-  redirect(`/business/social?${error ? `error=${encodeURIComponent(error.message)}` : "cancelled=1"}`);
+  revalidatePath("/business/marketing");
+  redirect(`/business/marketing?${error ? `error=${encodeURIComponent(error.message)}` : "cancelled=1"}`);
 }
 
 export async function disconnectAccount(form: FormData) {
-  const back = String(form.get("back")) === "/business/seo" ? "/business/seo" : "/business/social";
+  const back = String(form.get("back")) === "/business/seo" ? "/business/seo" : "/business/marketing";
   const ctx = await live(back);
   const { error } = await ctx.sb.rpc("disconnect_provider", { p_connection: String(form.get("connection")) });
   revalidatePath(back);

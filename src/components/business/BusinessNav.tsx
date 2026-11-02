@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Globe, Home, Inbox, Megaphone, Search } from "lucide-react";
+import { Globe, Home, Megaphone, Palette, UserRound } from "lucide-react";
 
-const ICONS = { home: Home, requests: Inbox, website: Globe, social: Megaphone, seo: Search };
+const ICONS = { home: Home, profile: UserRound, website: Globe, marketing: Megaphone, brand: Palette };
 export type NavKey = keyof typeof ICONS;
 
 type Items = { key: NavKey; href: string; label: string }[];

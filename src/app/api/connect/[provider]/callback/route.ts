@@ -12,7 +12,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ prov
   const url = new URL(request.url);
   if (!(provider in PROVIDERS)) return NextResponse.json({ error: "unknown_provider" }, { status: 404 });
   const p = provider as ProviderKey;
-  const back = PROVIDERS[p].module === "seo" ? "/business/seo" : "/business/social";
+  const back = PROVIDERS[p].module === "seo" ? "/business/seo" : "/business/marketing";
   const fail = (code = "connect_failed") => {
     const res = NextResponse.redirect(new URL(`${back}?error=${code}`, url.origin));
     res.cookies.delete({ name: "av_oauth", path: "/api/connect" });

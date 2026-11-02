@@ -41,7 +41,8 @@ export type BusinessContext =
 
 /** Resolves the signed-in user and their selected business. Redirects to sign-in when needed. */
 export const businessContext = cache(async function businessContext(): Promise<BusinessContext> {
-  if (!backendReady()) return { mode: "demo", business: DEMO_BUSINESS, businesses: [DEMO_BUSINESS], staff: false, email: null };
+  const demoCookie = (await cookies()).get("av_demo")?.value === "1";
+  if (!backendReady() || demoCookie) return { mode: "demo", business: DEMO_BUSINESS, businesses: [DEMO_BUSINESS], staff: false, email: null };
   const sb = (await supabaseServer())!;
   const {
     data: { user },

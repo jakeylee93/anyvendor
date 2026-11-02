@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import type { PlanCode } from "./plans";
+import { LOOKUP_KEYS, priceIdsFromEnv } from "./stripe-logic";
 
 export function stripeKey() {
   return process.env.STRIPE_SECRET_KEY ?? null;
@@ -10,5 +12,21 @@ export function stripeClient() {
 }
 
 export function billingReady() {
-  return Boolean(stripeKey() && process.env.STRIPE_PRICE_WEBSITE && process.env.STRIPE_PRICE_SEO && process.env.STRIPE_PRICE_SOCIAL);
+  return Boolean(stripeKey());
+}
+
+
+/** Price for a plan: an explicit STRIPE_PRICE_* id wins, otherwise the AnyVendor lookup key. */
+export async function resolvePrice(stripe: Stripe, plan: PlanCode) {
+  const fixed = priceIdsFromEnv(process.env)[plan];
+  if (fixed) return fixed;
+  const found = await stripe.prices.list({ lookup_keys: [LOOKUP_KEYS[plan]], active: true, limit: 1 });
+  return found.data[0]?.id ?? null;
+}
+
+/** The inclusive 20% UK VAT rate created for AnyVendor (so invoices show the VAT inside the price). */
+export async function anyvendorVatRate(stripe: Stripe) {
+  if (process.env.STRIPE_VAT_RATE_ID) return process.env.STRIPE_VAT_RATE_ID;
+  const rates = await stripe.taxRates.list({ active: true, inclusive: true, limit: 100 });
+  return rates.data.find((r) => r.metadata?.app === "anyvendor" && r.percentage === 20)?.id ?? null;
 }

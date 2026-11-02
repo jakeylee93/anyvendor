@@ -102,7 +102,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-7xl px-4 py-5 text-xs text-white/60">
-          © {new Date().getFullYear()} Anyvendor · Testing preview reconstructed from Booked Events. Listings are historical and
+          © {new Date().getFullYear()} AnyVendor, a trading name of The Bar People Limited · Testing preview reconstructed from Booked Events. Listings are historical and
           unconfirmed; enquiries, bookings and payments are not active.
         </p>
       </div>

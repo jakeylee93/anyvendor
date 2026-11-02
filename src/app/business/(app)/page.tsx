@@ -1,182 +1,212 @@
 import Link from "next/link";
-import { ArrowUpRight, ExternalLink, Pencil, Plus } from "lucide-react";
+import { ArrowRight, CloudSun, ExternalLink, Flame, Palette, Pencil, Plus, Sparkles, Trophy, UserRound } from "lucide-react";
+import DashboardGrid from "@/components/business/DashboardGrid";
+import SitePreviewFrame from "@/components/business/SitePreviewFrame";
 import { ActionFeedback, Btn, Card, CardTitle, Notice, RequestList } from "@/components/business/ui";
-import { loadAccess, loadConnections, loadRequests, loadWebsite, requireBusiness } from "@/lib/business/data";
-import { normaliseContent } from "@/lib/business/site-content";
+import { loadAccess, loadRequests, loadWebsite, requireBusiness } from "@/lib/business/data";
+import { resolveLayout, type WidgetId } from "@/lib/business/dashboard";
+import { marketingScore, POINTS, type PostLite } from "@/lib/business/marketing";
+import { normaliseProfile, profileCompleteness } from "@/lib/business/profile-content";
+import { normaliseKit } from "@/lib/business/brand-kit";
+import { forecastFor } from "@/lib/business/weather";
 import { planByCode } from "@/lib/business/plans";
 import { nowMs } from "@/lib/business/requests";
+import { saveDashboardLayout } from "../kit-actions";
 
 type SP = Promise<Record<string, string | string[] | undefined>>;
-
-function when(iso: string, tz: string) {
-  return new Date(iso).toLocaleString("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: tz });
-}
 
 export default async function BusinessHome({ searchParams }: { searchParams: SP }) {
   const sp = await searchParams;
   const ctx = await requireBusiness();
-  const [access, requests, website, connections] = await Promise.all([loadAccess(ctx), loadRequests(ctx, 20), loadWebsite(ctx), loadConnections(ctx)]);
   const b = ctx.business;
-  const open = requests.filter((r) => r.status !== "completed");
-  const review = requests.filter((r) => r.status === "ready_to_review").length;
-  const overdue = open.filter((r) => new Date(r.due_at).getTime() < nowMs()).length;
-  const content = normaliseContent(website?.draft);
-  const siteHref = website?.kind === "external" ? website.external_url : `/site/${b.slug}`;
-  const published = Boolean(website?.published_revision_id);
+  const tz = b.timezone;
+  const [access, requests, website] = await Promise.all([loadAccess(ctx), loadRequests(ctx, 20), loadWebsite(ctx)]);
 
-  let nextPosts: { id: string; body: string; scheduled_for: string; status: string }[] = [];
-  let publishedCount = 0;
-  let seo: { clicks: number; impressions: number; period_start: string; period_end: string; fetched_at: string } | null = null;
+  let posts: (PostLite & { id: string; body: string })[] = [];
+  let profileRaw: unknown = {};
+  let kitRaw: unknown = {};
+  let insights: { slug: string; title: string; summary: string; category: string; published_at: string }[] = [];
+  let savedLayout: unknown = null;
   if (ctx.mode === "live") {
-    if (access.modules.includes("social")) {
-      const [{ data: np }, { count }] = await Promise.all([
-        ctx.sb.from("social_posts").select("id, body, scheduled_for, status").eq("business_id", b.id).in("status", ["scheduled", "publishing"]).order("scheduled_for").limit(3),
-        ctx.sb.from("social_post_targets").select("id", { count: "exact", head: true }).eq("business_id", b.id).eq("status", "published"),
-      ]);
-      nextPosts = (np ?? []) as typeof nextPosts;
-      publishedCount = count ?? 0;
-    }
-    if (access.modules.includes("seo")) {
-      const { data } = await ctx.sb.from("seo_snapshots").select("clicks, impressions, period_start, period_end, fetched_at").eq("business_id", b.id).order("fetched_at", { ascending: false }).limit(1).maybeSingle();
-      seo = data;
-    }
+    const since = new Date(nowMs() - 7 * 13 * 86400_000).toISOString();
+    const [p, prof, kit, ins, lay] = await Promise.all([
+      ctx.sb.from("social_posts").select("id, body, status, scheduled_for, social_post_targets(status)").eq("business_id", b.id).gte("scheduled_for", since).order("scheduled_for").limit(300),
+      ctx.sb.from("vendor_profiles").select("draft").eq("business_id", b.id).maybeSingle(),
+      ctx.sb.from("brand_kits").select("data").eq("business_id", b.id).maybeSingle(),
+      ctx.sb.from("insights").select("slug, title, summary, category, published_at").order("published_at", { ascending: false }).limit(3),
+      ctx.sb.from("dashboard_layouts").select("layout").eq("business_id", b.id).eq("user_id", ctx.userId).maybeSingle(),
+    ]);
+    posts = (p.data ?? []).map((x) => ({ id: x.id, body: x.body, status: x.status, scheduled_for: x.scheduled_for, targets: (x.social_post_targets ?? []) as { status: string }[] }));
+    profileRaw = prof.data?.draft ?? {};
+    kitRaw = kit.data?.data ?? {};
+    insights = (ins.data ?? []) as typeof insights;
+    savedLayout = lay.data?.layout ?? null;
   }
-  const social = connections.filter((c) => c.provider !== "google_search_console");
-  const gsc = connections.find((c) => c.provider === "google_search_console");
+  const now = new Date(nowMs());
+  const score = marketingScore(posts, now, tz);
+  const profile = normaliseProfile(profileRaw);
+  const completeness = profileCompleteness(profile);
+  const kit = normaliseKit(kitRaw);
+  const weather = await forecastFor(profile.areas[0] || "London").catch(() => null);
+  const open = requests.filter((r) => r.status !== "completed");
+  const overdue = open.filter((r) => Date.parse(r.due_at) < now.getTime()).length;
+  const upcoming = posts.filter((p) => p.status === "scheduled" && p.scheduled_for && Date.parse(p.scheduled_for) > now.getTime()).slice(0, 3);
+  const published = Boolean(website?.published_revision_id);
+  const social = access.modules.includes("social");
+  const link = "text-sm font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4";
+
+  const tickerItems = [
+    `${open.length} open website request${open.length === 1 ? "" : "s"}`,
+    overdue ? `${overdue} overdue` : "Nothing overdue",
+    social ? `${score.planned} of ${score.goal} posts planned this week` : "Marketing scheduler on the £100 plan",
+    `${score.points} marketing points this week`,
+    `Profile ${completeness.percent}% complete`,
+    `Plan: ${ctx.mode === "demo" ? "demo" : (planByCode(access.plan)?.name ?? "none yet")}`,
+  ];
+
+  const nodes: Partial<Record<WidgetId, React.ReactNode>> = {
+    ticker: (
+      <div className="overflow-hidden rounded-3xl bg-be-navy py-3 text-sm text-white">
+        <div className="marquee" style={{ "--dur": "40s" } as React.CSSProperties}>
+          <ul className="marquee-track gap-8 pr-8">
+            {[...tickerItems, ...tickerItems].map((t, i) => (
+              <li key={i} aria-hidden={i >= tickerItems.length} className="flex shrink-0 items-center gap-2 whitespace-nowrap">
+                <Sparkles size={14} className="text-be-cyan" aria-hidden /> {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ),
+    website: (
+      <Card>
+        <CardTitle action={<Link href="/business/website" className={link}>Website</Link>}>Your website</CardTitle>
+        <div className="mt-3">
+          {website?.kind === "external" && website.external_url ? (
+            <SitePreviewFrame src={website.external_url} title={`${b.name} website`} height={260} />
+          ) : published || ctx.mode === "demo" ? (
+            <SitePreviewFrame src={`/site/${b.slug}`} title={`${b.name} website`} height={260} />
+          ) : (
+            <div className="flex h-40 items-center justify-center rounded-2xl bg-be-mist text-sm text-be-grey">Your site appears here once it’s published.</div>
+          )}
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {website?.kind !== "external" && <Btn href="/business/website/edit"><Pencil size={16} aria-hidden /> Edit website</Btn>}
+          <Btn href="/business/requests/new" tone="secondary"><Plus size={16} aria-hidden /> Request an update</Btn>
+        </div>
+      </Card>
+    ),
+    marketing: (
+      <Card>
+        <CardTitle action={<Link href="/business/marketing" className={link}>Marketing</Link>}>
+          <span className="inline-flex items-center gap-2"><Trophy size={18} className="text-be-amber" aria-hidden /> Marketing points</span>
+        </CardTitle>
+        <p className="mt-3 text-4xl font-bold text-be-navy">{score.points}<span className="ml-1 text-base font-medium text-be-grey">this week</span></p>
+        <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-be-mist" role="progressbar" aria-valuemin={0} aria-valuemax={score.goal} aria-valuenow={Math.min(score.planned, score.goal)} aria-label="Posts planned this week">
+          <div className="h-full rounded-full bg-be-cyan" style={{ width: `${Math.min(100, (score.planned / score.goal) * 100)}%` }} />
+        </div>
+        <p className="mt-2 text-sm text-be-grey">
+          {score.metGoal ? "Weekly goal reached. " : `Plan ${score.goal - score.planned} more post${score.goal - score.planned === 1 ? "" : "s"} this week for a ${POINTS.goalBonus}-point bonus. `}
+          {score.streak > 0 && <span className="inline-flex items-center gap-1 font-semibold text-be-navy"><Flame size={14} className="text-orange-500" aria-hidden /> {score.streak}-week streak</span>}
+        </p>
+        <p className="mt-1 text-xs text-be-grey">Level: {score.level} · {score.totalPoints} points in total{social ? "" : " · scheduling is on the £100 plan"}</p>
+      </Card>
+    ),
+    requests: (
+      <Card>
+        <CardTitle action={<Link href="/business/requests" className={link}>All</Link>}>Website requests</CardTitle>
+        <p className="mt-2 text-sm text-be-grey">{open.length} open{overdue ? `, ${overdue} overdue` : ""}</p>
+        <RequestList rows={requests.slice(0, 3)} />
+      </Card>
+    ),
+    next_posts: social ? (
+      <Card>
+        <CardTitle action={<Link href="/business/marketing" className={link}>Schedule</Link>}>Coming up</CardTitle>
+        <ul className="mt-2 space-y-2">
+          {upcoming.map((p) => (
+            <li key={p.id} className="rounded-2xl bg-be-mist px-3 py-2 text-sm">
+              <p className="font-semibold text-be-navy">{new Date(p.scheduled_for!).toLocaleString("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: tz })}</p>
+              <p className="truncate text-be-grey">{p.body || "(media only)"}</p>
+            </li>
+          ))}
+          {upcoming.length === 0 && <li className="text-sm text-be-grey">Nothing scheduled yet.</li>}
+        </ul>
+      </Card>
+    ) : undefined,
+    weather: (
+      <Card>
+        <CardTitle><span className="inline-flex items-center gap-2"><CloudSun size={18} className="text-be-cyan" aria-hidden /> Weather</span></CardTitle>
+        {weather ? (
+          <>
+            <p className="mt-2 text-sm text-be-grey">{weather.place}</p>
+            <p className="text-4xl font-bold text-be-navy">{weather.now.tempC}°<span className="ml-2 text-base font-medium text-be-grey">{weather.now.label}</span></p>
+            <ul className="mt-3 grid grid-cols-4 gap-2 text-center text-xs">
+              {weather.days.map((d) => (
+                <li key={d.date} className="rounded-xl bg-be-mist px-1 py-2">
+                  <p className="font-semibold text-be-navy">{new Date(`${d.date}T12:00:00Z`).toLocaleDateString("en-GB", { weekday: "short" })}</p>
+                  <p className="text-be-navy">{d.maxC}° / {d.minC}°</p>
+                  <p className="text-be-grey">{d.rainChance}% rain</p>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-2 text-[11px] text-be-grey">Forecast by Open-Meteo. Set your area in My profile.</p>
+          </>
+        ) : (
+          <p className="mt-2 text-sm text-be-grey">The forecast isn’t available right now.</p>
+        )}
+      </Card>
+    ),
+    insights: (
+      <Card>
+        <CardTitle>Tips and news</CardTitle>
+        {insights.length ? (
+          <ul className="mt-3 grid gap-3 md:grid-cols-3">
+            {insights.map((a) => (
+              <li key={a.slug} className="rounded-2xl bg-be-mist p-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-be-cyan">{a.category}</p>
+                <p className="mt-1 font-bold text-be-navy">{a.title}</p>
+                <p className="mt-1 line-clamp-3 text-sm text-be-grey">{a.summary}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-2 text-sm text-be-grey">Industry tips and news from the AnyVendor team will appear here. The first articles are being written.</p>
+        )}
+      </Card>
+    ),
+    profile: (
+      <Card>
+        <CardTitle action={<Link href="/business/profile" className={link}>Edit</Link>}><span className="inline-flex items-center gap-2"><UserRound size={18} className="text-be-cyan" aria-hidden /> My profile</span></CardTitle>
+        <p className="mt-3 text-4xl font-bold text-be-navy">{completeness.percent}%<span className="ml-1 text-base font-medium text-be-grey">complete</span></p>
+        <p className="mt-1 text-sm text-be-grey">{completeness.next ? `Next: add ${completeness.next}.` : "Looking good."}</p>
+      </Card>
+    ),
+    brand: (
+      <Card>
+        <CardTitle action={<Link href="/business/brand" className={link}>Open</Link>}><span className="inline-flex items-center gap-2"><Palette size={18} className="text-be-cyan" aria-hidden /> Brand</span></CardTitle>
+        {kit.colours.length ? (
+          <ul className="mt-3 flex flex-wrap gap-2">{kit.colours.map((c) => <li key={c.hex} className="h-9 w-9 rounded-full ring-1 ring-black/10" style={{ background: c.hex }} title={`${c.name} ${c.hex}`} />)}</ul>
+        ) : (
+          <p className="mt-2 text-sm text-be-grey">Keep your logo, colours and company documents in one place.</p>
+        )}
+        <Link href="/business/brand" className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-be-navy">Logos and documents <ArrowRight size={14} aria-hidden /></Link>
+      </Card>
+    ),
+  };
 
   return (
     <>
       <ActionFeedback sp={sp} />
       {sp.welcome && <Notice tone="success">Your business is set up. Choose a plan to switch on your website and requests.</Notice>}
-
-      <Card flush>
-        <div className="bg-be-navy px-5 py-6 text-white md:px-7 md:py-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-be-cyan">Your website</p>
-          <h1 className="mt-2 text-2xl font-bold leading-tight md:text-3xl">{content.headline || b.name}</h1>
-          {content.intro && <p className="mt-2 max-w-2xl text-white/75">{content.intro}</p>}
-          <p className="mt-3 text-sm text-white/70">
-            {website?.kind === "external" ? `Hosted at ${website.external_url}` : published ? `Live at anyvendor/site/${b.slug}` : "Not published yet"}
-          </p>
+      <div className="flex flex-wrap items-end justify-between gap-2">
+        <div>
+          <p className="text-sm text-be-grey">{now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: tz })}</p>
+          <h1 className="text-2xl font-bold text-be-navy md:text-3xl">Hello, {b.name}</h1>
         </div>
-        <div className="flex flex-wrap gap-2 p-5 md:p-6">
-          {website?.kind !== "external" && (
-            <Btn href="/business/website">
-              <Pencil size={16} aria-hidden /> Edit website
-            </Btn>
-          )}
-          <Btn href="/business/requests/new" tone="secondary">
-            <Plus size={16} aria-hidden /> Request an update
-          </Btn>
-          {siteHref && (published || website?.kind === "external") && (
-            <a href={siteHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-sm font-semibold text-be-navy ring-1 ring-gray-300 hover:bg-be-mist">
-              View site <ExternalLink size={14} aria-hidden />
-            </a>
-          )}
-        </div>
-      </Card>
-
-      {!access.plan && (
-        <Card>
-          <CardTitle>Choose a plan</CardTitle>
-          <p className="mt-1 text-sm text-be-grey">Plans start at £50 a month with your website, hosting and unlimited update requests. Your history stays here whatever you choose.</p>
-          <div className="mt-4">
-            <Btn href="/business/account">See plans</Btn>
-          </div>
-        </Card>
-      )}
-
-      <Card>
-        <CardTitle action={<Link href="/business/requests" className="text-sm font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">All requests</Link>}>
-          Requests
-        </CardTitle>
-        <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
-          {[["Open", open.length], ["To review", review], ["Overdue", overdue]].map(([k, v]) => (
-            <div key={k} className={`rounded-2xl px-2 py-3 ${k === "Overdue" && Number(v) > 0 ? "bg-rose-50 text-rose-800" : "bg-be-mist text-be-navy"}`}>
-              <dt className="text-xs">{k}</dt>
-              <dd className="text-2xl font-bold">{v}</dd>
-            </div>
-          ))}
-        </dl>
-        <div className="mt-2">
-          <RequestList rows={requests.slice(0, 4)} />
-        </div>
-      </Card>
-
-      <div className="grid gap-4 md:grid-cols-2">
-        {access.modules.includes("seo") && (
-          <Card>
-            <CardTitle action={<Link href="/business/seo" className="text-sm font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">Open</Link>}>
-              Google search
-            </CardTitle>
-            {ctx.mode === "demo" ? (
-              <p className="mt-2 text-sm text-be-grey">Demo: connect Google Search Console to see your real clicks and impressions here. No sample numbers are shown.</p>
-            ) : !gsc ? (
-              <p className="mt-2 text-sm text-be-grey">Connect Google Search Console to see how people find you on Google.</p>
-            ) : gsc.status !== "connected" ? (
-              <p className="mt-2 text-sm text-amber-800">Search Console needs reconnecting.</p>
-            ) : seo ? (
-              <div className="mt-3 grid grid-cols-2 gap-2">
-                <div className="rounded-2xl bg-be-mist p-3"><p className="text-xs text-be-grey">Clicks</p><p className="text-2xl font-bold text-be-navy">{seo.clicks.toLocaleString("en-GB")}</p></div>
-                <div className="rounded-2xl bg-be-mist p-3"><p className="text-xs text-be-grey">Impressions</p><p className="text-2xl font-bold text-be-navy">{seo.impressions.toLocaleString("en-GB")}</p></div>
-                <p className="col-span-2 text-xs text-be-grey">Google data for {seo.period_start} to {seo.period_end}. Google reports with a 2–3 day delay.</p>
-              </div>
-            ) : (
-              <p className="mt-2 text-sm text-be-grey">Connected. Google hasn’t returned data for this site yet; it usually appears within a few days.</p>
-            )}
-          </Card>
-        )}
-
-        {access.modules.includes("social") && (
-          <Card>
-            <CardTitle action={<Link href="/business/social" className="text-sm font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">Schedule</Link>}>
-              Social
-            </CardTitle>
-            {ctx.mode === "demo" || social.length === 0 ? (
-              <p className="mt-2 text-sm text-be-grey">Connect your own Instagram or LinkedIn to schedule posts from here.</p>
-            ) : (
-              <>
-                {social.some((c) => c.status !== "connected") && <p className="mt-2 text-sm text-amber-800">An account needs reconnecting.</p>}
-                <ul className="mt-2 space-y-2">
-                  {nextPosts.map((p) => (
-                    <li key={p.id} className="rounded-2xl bg-be-mist px-3 py-2 text-sm">
-                      <p className="font-semibold text-be-navy">{when(p.scheduled_for, b.timezone)}</p>
-                      <p className="truncate text-be-grey">{p.body || "(media only)"}</p>
-                    </li>
-                  ))}
-                  {nextPosts.length === 0 && <li className="text-sm text-be-grey">Nothing scheduled.</li>}
-                </ul>
-                <p className="mt-3 text-xs text-be-grey">{publishedCount} post{publishedCount === 1 ? "" : "s"} published through AnyVendor. Engagement numbers aren’t available from these accounts yet.</p>
-              </>
-            )}
-          </Card>
-        )}
+        {!access.plan && ctx.mode === "live" && <Btn href="/business/account" tone="secondary">Choose a plan</Btn>}
+        {ctx.mode === "live" && published && <a href={`/site/${b.slug}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm font-semibold text-be-navy">View site <ExternalLink size={14} aria-hidden /></a>}
       </div>
-
-      <Card>
-        <CardTitle>Listing and enquiries</CardTitle>
-        <ul className="mt-2 space-y-2 text-sm">
-          <li className="flex items-center justify-between gap-3">
-            <span className="text-be-navy">Directory listing</span>
-            {b.directory_slug ? (
-              <Link href={`/businesses/${b.directory_slug}`} className="inline-flex items-center gap-1 font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">
-                View <ArrowUpRight size={14} aria-hidden />
-              </Link>
-            ) : (
-              <span className="text-be-grey">Not linked yet</span>
-            )}
-          </li>
-          <li className="flex items-center justify-between gap-3">
-            <span className="text-be-navy">Enquiries</span>
-            <span className="text-right text-be-grey">Customers contact you by email for now. An enquiry inbox is planned.</span>
-          </li>
-          <li className="flex items-center justify-between gap-3">
-            <span className="text-be-navy">Plan</span>
-            <Link href="/business/account" className="font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">
-              {ctx.mode === "demo" ? "Demo (all features)" : (planByCode(access.plan)?.name ?? "No plan")}
-            </Link>
-          </li>
-        </ul>
-      </Card>
+      <DashboardGrid initial={resolveLayout(savedLayout)} nodes={nodes} save={saveDashboardLayout} demo={ctx.mode === "demo"} />
     </>
   );
 }

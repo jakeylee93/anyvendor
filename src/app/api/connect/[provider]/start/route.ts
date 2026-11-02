@@ -12,7 +12,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ prov
   const origin = new URL(request.url).origin;
   if (!(provider in PROVIDERS)) return NextResponse.json({ error: "unknown_provider" }, { status: 404 });
   const p = provider as ProviderKey;
-  const back = PROVIDERS[p].module === "seo" ? "/business/seo" : "/business/social";
+  const back = PROVIDERS[p].module === "seo" ? "/business/seo" : "/business/marketing";
   const ctx = await businessContext();
   if (ctx.mode !== "live" || !ctx.business) return NextResponse.redirect(new URL(`${back}?demo=1`, origin));
   const [idEnv, secretEnv] = PROVIDERS[p].env;

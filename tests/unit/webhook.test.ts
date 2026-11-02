@@ -65,3 +65,15 @@ test("an unknown price records no plan, so no paid modules are granted", async (
   await handleStripeEvent(ev("customer.subscription.created", { id: "sub_1" }), d);
   assert.equal(applied[0].snap.plan, null);
 });
+
+test("plans are also recognised by AnyVendor lookup keys, so prices created in the Bar People account map correctly", async () => {
+  const { planForPrice, snapshotFromSubscription } = await import("../../src/lib/business/stripe-logic.ts");
+  assert.equal(planForPrice("price_new", {}, "anyvendor_social_monthly"), "social");
+  assert.equal(planForPrice("price_new", {}, "someone_else"), null);
+  const snap = snapshotFromSubscription(
+    { id: "s", customer: "c", status: "active", cancel_at_period_end: false, canceled_at: null, livemode: false, items: { data: [{ price: { id: "price_new", lookup_key: "anyvendor_seo_monthly" } }] } },
+    1762000000,
+    {},
+  );
+  assert.equal(snap.plan, "seo");
+});
