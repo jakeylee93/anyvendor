@@ -1,5 +1,31 @@
 # Anyvendor — handoff
 
+## Milestone 9: AnyVendor database live, new dock, VAT-inclusive Bar People billing (2 Nov 2026, evening)
+
+Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session). Worktree `anyvendor-profiles` (claim `6bf2c244`), branch `claude/bookedevents-reconstruction` at `9420358` + fix commit + this handoff. Protected preview **https://anyvendor-6cu6o5flp-anyos.vercel.app** (Ready). Release claim `396ebc2a` released after this receipt.
+
+Supabase (Jake approved ~$10/month): project `anyvendor` **`rsqgsnfyusqhtgcwbddc`**, London (eu-west-2), created once (a stalled create call was reconciled by read-only listing; the hidden blocker was a local Supabase MCP Accept/Decline prompt not shown on the phone, accepted by Codex, not a crash). Applied migrations: `business_core`, `storage`, `connection_details`, `profile_brand_dashboard` (= repo files 20261102120000, 120100, 120200, 190000+190100). Security advisor: remaining notices are intentional (service-role-only tables without policies; SECURITY DEFINER write functions that check membership; public_site for anon); search_path pinned on three helpers. Vercel Preview env set: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`. `/business` now requires sign-in; `/business/demo` opens the labelled demo.
+
+Jake's brief built:
+- Dock: Home, My profile, Website, Marketing, Brand (settings icon for plan/billing/sign-out). `/business/social` redirects to `/business/marketing`.
+- Home: editable widgets with an edit pen (show/hide, reorder, reset; saved per person per business): ticker of real stats, website preview, weekly marketing points (5 per post planned this week, 10 per provider-confirmed post, 20 bonus at 3 posts, streak, level), requests, upcoming posts, weather (Open-Meteo; commercial use needs their paid key via `OPEN_METEO_API_KEY`), tips and news (staff-written `insights`, empty until published), profile completeness, brand colours.
+- Website: real site embedded in the framed box, Edit website (editor at `/business/website/edit`), SEO widget, requests widget and latest requests.
+- My profile: directory profile editor, prefilled from the existing listing when linked; reviewed before it replaces the public listing (public directory still reads the curated profiles).
+- Marketing: social scheduler plus this week's points.
+- Brand: logos and documents (private bucket, signed download links), colours, fonts, company details with official Companies House links.
+- Billing: prices shown "inc. VAT"; AnyVendor = trading name of The Bar People Limited (footer, plans); Stripe prices found by lookup keys `anyvendor_{website,seo,social}_monthly` (VAT-inclusive, GBP, monthly) in the Bar People account; checkout applies an inclusive 20% VAT tax rate; `/staff/billing` (staff only) shows readiness and creates the prices and VAT rate in TEST mode only.
+
+Tests: `npm test` **74 passing**; tsc and eslint clean; cloud builds Ready. `vercel curl`: `/business` → 307 to sign-in, sign-in enabled, demo switch sets its cookie. Browser pass (390 px and 1280 px; memory pressure normal at the first run, turned to warning at the second short run): all five pages no horizontal overflow, 0 console errors after fixing the Home grid overflow and the demo site 404. Screenshots `docs/screenshots/dock-20261102/`.
+
+Still needed from owner (no secrets in chat):
+1. Supabase dashboard → Auth → URL configuration: Site URL = the preview URL; Redirect URLs add `https://anyvendor-*-anyos.vercel.app/**`. Without this the sign-in email link falls back to the Site URL.
+2. Supabase → Project settings → API keys: copy the secret (service role) key into Vercel Preview as `SUPABASE_SERVICE_ROLE_KEY` (needed for Stripe webhooks, OAuth connections, scheduler, SEO refresh, billing customers).
+3. Stripe (The Bar People account, test mode): put the test secret key in Vercel Preview as `STRIPE_SECRET_KEY`; open `/staff/billing` and press "Create AnyVendor test prices"; add the webhook endpoint (see SETUP-CHECKLIST, needs Vercel Protection Bypass) and set `STRIPE_WEBHOOK_SECRET`.
+4. After Jake signs in once: `insert into public.staff_members (user_id, note) values ('<his auth user id>', 'AnyVendor team');` to open the staff queue and billing setup.
+5. Security keys, `APP_URL`, LinkedIn/Meta/Google apps as before; insights articles from Jake's writers (insert into `public.insights` with `published_at`).
+
+---
+
 ## Milestone 8: business backend review build (2 Nov 2026)
 
 Owner `claude:bc7de487-2154-4284-84d6-ed39a461395b` (same session, now Opus 5.5 at Jake's request). Worktree `/Users/margaritabot/.openclaw/workspace/anyvendor-profiles` (claim `6bf2c244`), branch `claude/bookedevents-reconstruction`: `b1e6c5e` (schema/RLS/tests), `45ee83b` (auth, dashboard, requests, staff, Stripe), `5b12e6f` (website, social, SEO), `82140a1` (phone fixes, checklist), plus this handoff. Protected preview **https://anyvendor-cud5s052f-anyos.vercel.app** (Ready). Release claim `9479a1bf` released after this receipt. Coordinator Codex `01a18dda`, Mission Control task `939e7ccb` (linked billing task `4056fc85`). `main`, production, domains, DNS, payments, anyOS and its database untouched. No Supabase project was created (one create call was stopped mid-run; a read-only listing afterwards showed the same five projects), no Stripe objects, no OAuth apps, no posts, no charges, no invitations.
