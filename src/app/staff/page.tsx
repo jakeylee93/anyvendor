@@ -46,7 +46,7 @@ export default async function StaffQueue({ searchParams }: { searchParams: SP })
         <Link href="/staff?done=1" className={`rounded-full px-4 py-2 font-semibold ${showDone ? "bg-be-navy text-white" : "bg-white text-be-navy ring-1 ring-gray-300"}`}>Completed</Link>
         {!showDone && overdue > 0 && <span className="rounded-full bg-rose-100 px-3 py-1.5 font-semibold text-rose-800">{overdue} overdue</span>}
       </div>
-      <Card className="p-0 md:p-0">
+      <Card flush>
         <ul className="divide-y divide-gray-100">
           {rows.map((r) => {
             const late = r.status !== "completed" && new Date(r.due_at).getTime() < now;

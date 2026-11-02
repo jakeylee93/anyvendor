@@ -137,3 +137,19 @@ test("disconnecting an account cancels its scheduled posts and deletes its token
   assert.equal((await one<{ status: string }>(db, "select status from public.social_post_targets where post_id = $1", [post])).status, "cancelled");
   assert.equal((await rows(db, "select * from public.provider_tokens")).length, 0);
 });
+
+test("a member can choose only a Search Console property the connected Google account actually has", async () => {
+  const { db, A, B } = await setup("seo");
+  const c = await one<{ id: string }>(
+    db,
+    `insert into public.provider_connections (business_id, provider, external_account_id, settings)
+     values ($1, 'google_search_console', 'google:x', '{"sites":["sc-domain:alice.test"]}') returning id`,
+    [A],
+  );
+  await as(db, U.alice, () => db.query("select public.choose_seo_site($1, 'sc-domain:alice.test')", [c.id]));
+  assert.match(await rejects(as(db, U.alice, () => db.query("select public.choose_seo_site($1, 'sc-domain:someone-else.test')", [c.id]))), /site_not_available/);
+  assert.match(await rejects(as(db, U.bob, () => db.query("select public.choose_seo_site($1, 'sc-domain:alice.test')", [c.id]))), /not_member/);
+  const row = await one<{ settings: { site: string } }>(db, "select settings from public.provider_connections where id = $1", [c.id]);
+  assert.equal(row.settings.site, "sc-domain:alice.test");
+  assert.ok(B);
+});

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { UserRound } from "lucide-react";
 import { AvTile } from "@/components/site/BrandMark";
-import BusinessNav, { type NavKey } from "@/components/business/BusinessNav";
+import BusinessNav, { BusinessTabBar, type NavKey } from "@/components/business/BusinessNav";
 import { Notice } from "@/components/business/ui";
 import { loadAccess, requireBusiness } from "@/lib/business/data";
 import { selectBusiness } from "../actions";
@@ -60,6 +60,7 @@ export default async function BusinessLayout({ children }: { children: React.Rea
         {access.notice && <Notice tone={access.notice.tone}>{access.notice.text} <Link href="/business/account" className="font-semibold underline">Billing</Link></Notice>}
         {children}
       </main>
+      <BusinessTabBar items={items} />
     </div>
   );
 }

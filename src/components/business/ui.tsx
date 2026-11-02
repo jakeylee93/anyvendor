@@ -3,8 +3,8 @@ import { STATUS_LABEL, STATUS_STYLE, dueInfo, type RequestStatus } from "@/lib/b
 import { friendlyError } from "@/lib/business/errors";
 import type { RequestRow } from "@/lib/business/data";
 
-export function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <section className={`rounded-3xl bg-white p-5 shadow-sm ring-1 ring-gray-200/80 md:p-6 ${className}`}>{children}</section>;
+export function Card({ children, className = "", flush = false }: { children: React.ReactNode; className?: string; flush?: boolean }) {
+  return <section className={`rounded-3xl bg-white shadow-sm ring-1 ring-gray-200/80 ${flush ? "overflow-hidden" : "p-5 md:p-6"} ${className}`}>{children}</section>;
 }
 
 export function CardTitle({ children, action }: { children: React.ReactNode; action?: React.ReactNode }) {

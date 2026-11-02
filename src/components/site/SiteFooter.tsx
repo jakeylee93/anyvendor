@@ -59,6 +59,7 @@ const COLS = [
     links: [
       ["/how-it-works", "How it works"],
       ["/list-my-business", "List my business"],
+      ["/business", "Business sign in"],
       ["/contact", "Contact"],
     ],
   },

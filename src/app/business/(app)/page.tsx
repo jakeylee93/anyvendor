@@ -49,7 +49,7 @@ export default async function BusinessHome({ searchParams }: { searchParams: SP 
       <ActionFeedback sp={sp} />
       {sp.welcome && <Notice tone="success">Your business is set up. Choose a plan to switch on your website and requests.</Notice>}
 
-      <Card className="overflow-hidden p-0 md:p-0">
+      <Card flush>
         <div className="bg-be-navy px-5 py-6 text-white md:px-7 md:py-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-be-cyan">Your website</p>
           <h1 className="mt-2 text-2xl font-bold leading-tight md:text-3xl">{content.headline || b.name}</h1>

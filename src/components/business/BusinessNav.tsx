@@ -7,21 +7,33 @@ import { Globe, Home, Inbox, Megaphone, Search } from "lucide-react";
 const ICONS = { home: Home, requests: Inbox, website: Globe, social: Megaphone, seo: Search };
 export type NavKey = keyof typeof ICONS;
 
-/** Bottom tab bar on phones, a simple row on larger screens. Only enabled modules are passed in. */
-export default function BusinessNav({ items }: { items: { key: NavKey; href: string; label: string }[] }) {
+type Items = { key: NavKey; href: string; label: string }[];
+
+function useActive() {
   const path = usePathname() ?? "";
-  const active = (href: string) => (href === "/business" ? path === "/business" : path.startsWith(href));
+  return (href: string) => (href === "/business" ? path === "/business" : path.startsWith(href));
+}
+
+/** A simple row in the header on larger screens. Only enabled modules are passed in. */
+export default function BusinessNav({ items }: { items: Items }) {
+  const active = useActive();
   return (
-    <>
-      <nav aria-label="Business" className="hidden gap-1 md:flex">
+    <nav aria-label="Business" className="hidden gap-1 md:flex">
         {items.map((i) => (
           <Link key={i.key} href={i.href} aria-current={active(i.href) ? "page" : undefined}
             className={`rounded-full px-4 py-2 text-sm font-semibold ${active(i.href) ? "bg-be-navy text-white" : "text-be-navy hover:bg-be-mist"}`}>
             {i.label}
           </Link>
-        ))}
-      </nav>
-      <nav aria-label="Business" className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-200 bg-white/95 backdrop-blur md:hidden" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+      ))}
+    </nav>
+  );
+}
+
+/** Bottom tab bar on phones. Rendered outside the header: the header's backdrop blur would trap a fixed element. */
+export function BusinessTabBar({ items }: { items: Items }) {
+  const active = useActive();
+  return (
+      <nav aria-label="Business tabs" className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-200 bg-white/95 backdrop-blur md:hidden" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
         <ul className="grid" style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}>
           {items.map((i) => {
             const Icon = ICONS[i.key];
@@ -37,6 +49,5 @@ export default function BusinessNav({ items }: { items: { key: NavKey; href: str
           })}
         </ul>
       </nav>
-    </>
   );
 }
