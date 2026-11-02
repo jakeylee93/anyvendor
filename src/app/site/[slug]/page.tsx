@@ -9,12 +9,14 @@ import { supabaseServer } from "@/lib/supabase/server";
 type Params = Promise<{ slug: string }>;
 
 async function load(slug: string) {
-  if (slug === DEMO_BUSINESS.slug && !backendReady()) return { name: DEMO_BUSINESS.name, content: DEMO_SITE, demo: true };
+  const demo = { name: DEMO_BUSINESS.name, content: DEMO_SITE, demo: true };
+  if (!backendReady()) return slug === DEMO_BUSINESS.slug ? demo : null;
   const sb = await supabaseServer();
-  if (!sb) return null;
-  const { data } = await sb.rpc("public_site", { p_slug: slug }).maybeSingle();
+  const { data } = sb ? await sb.rpc("public_site", { p_slug: slug }).maybeSingle() : { data: null };
   const row = data as { name: string; content: unknown } | null;
-  return row ? { name: row.name, content: normaliseContent(row.content), demo: false } : null;
+  if (row) return { name: row.name, content: normaliseContent(row.content), demo: false };
+  // The demo site stays available for the labelled demo when no real business has published at this address.
+  return slug === DEMO_BUSINESS.slug ? demo : null;
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {

@@ -56,11 +56,11 @@ export default function DashboardGrid({ initial, nodes, save, demo }: {
           <Pencil size={15} aria-hidden /> {editing ? "Done" : "Edit"}
         </button>
       </div>
-      <ul className="grid gap-4 md:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {visible.map((item) => {
           const i = layout.findIndex((l) => l.id === item.id);
           return (
-            <li key={item.id} className={`${meta[item.id]?.wide ? "md:col-span-2" : ""} ${editing && item.hidden ? "opacity-50" : ""} relative`}>
+            <li key={item.id} className={`min-w-0 ${meta[item.id]?.wide ? "md:col-span-2" : ""} ${editing && item.hidden ? "opacity-50" : ""} relative`}>
               {editing && (
                 <div className="absolute right-3 top-3 z-10 flex gap-1 rounded-full bg-white/95 p-1 shadow ring-1 ring-gray-200">
                   <button type="button" onClick={() => move(i, -1)} aria-label={`Move ${meta[item.id]?.title} up`} className="rounded-full p-1.5 text-be-navy hover:bg-be-mist"><ArrowUp size={16} /></button>
