@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AvTile } from "@/components/site/BrandMark";
 import { Card, DueLabel, Notice, StatusPill } from "@/components/business/ui";
 import { businessContext } from "@/lib/business/data";
-import type { RequestScope, RequestStatus } from "@/lib/business/requests";
+import { nowMs, type RequestScope, type RequestStatus } from "@/lib/business/requests";
 
 export const metadata: Metadata = { title: "Request queue — AnyVendor staff", robots: { index: false, follow: false } };
 type SP = Promise<Record<string, string | string[] | undefined>>;
@@ -36,7 +36,7 @@ export default async function StaffQueue({ searchParams }: { searchParams: SP })
   q = showDone ? q.eq("status", "completed") : q.neq("status", "completed");
   const { data } = await q;
   const rows = (data ?? []) as Row[];
-  const now = Date.now();
+  const now = nowMs();
   const overdue = rows.filter((r) => r.status !== "completed" && new Date(r.due_at).getTime() < now).length;
 
   return shell(

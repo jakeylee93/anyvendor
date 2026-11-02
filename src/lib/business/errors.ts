@@ -28,6 +28,13 @@ const MESSAGES: Record<string, string> = {
   checkout_failed: "Stripe couldn’t start checkout. Please try again.",
   connect_not_configured: "That connection isn’t set up in this preview yet.",
   connect_failed: "The connection didn’t complete. Please try again.",
+  media_too_large: "Photos must be under 8 MB and videos under 100 MB.",
+  validation: "Some accounts can’t take this post as it is.",
+  site_not_available: "Choose one of your verified Search Console properties.",
+  refresh_too_soon: "Search data was refreshed in the last hour. Google updates it daily.",
+  seo_no_site: "Choose which Search Console property to report on.",
+  seo_reconnect: "Search Console needs reconnecting.",
+  seo_error: "Google didn’t return data just now. Try again later.",
 };
 
 export function friendlyError(raw: string | null | undefined): string | null {

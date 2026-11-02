@@ -4,6 +4,7 @@ import { ActionFeedback, Btn, Card, CardTitle, Notice, RequestList } from "@/com
 import { loadAccess, loadConnections, loadRequests, loadWebsite, requireBusiness } from "@/lib/business/data";
 import { normaliseContent } from "@/lib/business/site-content";
 import { planByCode } from "@/lib/business/plans";
+import { nowMs } from "@/lib/business/requests";
 
 type SP = Promise<Record<string, string | string[] | undefined>>;
 
@@ -18,7 +19,7 @@ export default async function BusinessHome({ searchParams }: { searchParams: SP 
   const b = ctx.business;
   const open = requests.filter((r) => r.status !== "completed");
   const review = requests.filter((r) => r.status === "ready_to_review").length;
-  const overdue = open.filter((r) => new Date(r.due_at).getTime() < Date.now()).length;
+  const overdue = open.filter((r) => new Date(r.due_at).getTime() < nowMs()).length;
   const content = normaliseContent(website?.draft);
   const siteHref = website?.kind === "external" ? website.external_url : `/site/${b.slug}`;
   const published = Boolean(website?.published_revision_id);

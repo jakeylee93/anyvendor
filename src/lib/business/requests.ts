@@ -63,3 +63,8 @@ export function dueInfo(dueAt: string, status: RequestStatus, completedAt: strin
   const left = due - now.getTime();
   return left >= 0 ? { overdue: false, label: `Due in ${span(left)}` } : { overdue: true, label: `Overdue by ${span(left)}` };
 }
+
+/** Request-time clock for server components (rendered once per request). */
+export function nowMs() {
+  return Date.now();
+}

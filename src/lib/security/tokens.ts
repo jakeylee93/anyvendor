@@ -27,6 +27,7 @@ export interface OAuthState {
   userId: string;
   provider: string;
   verifier?: string;
+  nonce?: string;
   exp: number;
 }
 
