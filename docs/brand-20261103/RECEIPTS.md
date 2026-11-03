@@ -16,3 +16,4 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 3 Nov, later: Jake rejected the rendered icon style. Replacement direction: flat 2D, single navy ink on white, monoline, consistent stroke and grid, recognisable categories, SVG-reconstructable. Sheet 5 below.
 
 | 5 | Icon contact sheet, flat monoline replacement (15 categories, single navy ink on white, 5×3, labels outside artwork) | GPT Image 2.5 Sunburst (OpenAI) | text2image, no image reference, 4:3, 2K, quality high, png | 150 quoted | yoiia6ASOZ6ejbDx6euf | icons-sheet-02-flat-monoline.png |
+| 6 | Icon contact sheet, app-tile style (navy rounded tiles, solid white custom glyphs, one cyan accent; Jake's "app style cube" direction) | GPT Image 2.5 Sunburst (OpenAI) | text2image, 4:3, 2K, quality high, png | 150 quoted | gu7uOjEsosN8dlMQ5Sda | icons-sheet-03-app-tiles.png |
