@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Lexend_Deca, Caveat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 
-const lexend = Lexend_Deca({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: "--font-lexend-deca" });
-const caveat = Caveat({ subsets: ["latin"], weight: ["600"], variable: "--font-caveat-hand" });
+// Self-hosted (SIL Open Font License, see src/app/fonts/OFL-*.txt) so builds never depend on fetching Google Fonts.
+const lexend = localFont({ src: "./fonts/LexendDeca.ttf", weight: "300 700", display: "swap", variable: "--font-lexend-deca" });
+const caveat = localFont({ src: "./fonts/Caveat.ttf", weight: "400 700", display: "swap", variable: "--font-caveat-hand" });
 
 export const metadata: Metadata = {
   title: "Anyvendor — Find Top Event Professionals",
