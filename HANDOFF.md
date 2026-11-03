@@ -354,3 +354,10 @@ Commits `cab2a9a` (flat monoline icon sheet, replacement direction after Jake re
 **Design assets:** `docs/brand-20261103/` — `rejected-icons-sheet-01-rendered-style.png` (rejected), `icons-sheet-02-flat-monoline.png` (direction Jake described), `icons-svg-set-v1.svg` (the real vectors), homepage/pricing/logo concept sheets (layout reference only; their icon style is superseded). OpenArt spend 798 credits total today; balance 65,183.
 
 **Still held:** both migrations and provisioning (no approval yet). **Not verified in a browser yet:** the new homepage at 375/390/430 and desktop; do a Playwright pass when Mac memory allows.
+
+### Milestone 12 addendum (3 Nov, 21:25 UTC)
+
+- Icon artwork: Jake rejected the rendered sheet, the hand-drawn line SVGs, the hand-drawn tile SVGs and the first OpenArt tile sheet as clip art. Three design directions were generated and sent for his pick: `icons-sheet-06-direction-a-faceted.png` (built from the AV mark's angled strokes), `icons-sheet-07-direction-b-negative.png`, `icons-sheet-08-direction-c-duotone.png`. Recommendation given: A for originality, B for polish. **No direction chosen yet.** The site currently shows interim tiles sliced from `icons-sheet-05-refined-gpt.png` (`public/icons/events/*.webp`); replace once he picks. Recraft V4.1 vector mode works (`icons-sheet-04-recraft-vector.svg`) and is the route to real SVGs for the chosen direction.
+- OpenArt spend today: 1,250 credits; balance 64,259. Receipts in `docs/brand-20261103/RECEIPTS.md`.
+- Homepage verified in a headless browser on deployment `qr1nj8gc8` (share link, expires 4 Nov 20:18 UTC): small row lockup, search-bar planner, floating tiles at the edges, five-card spotlight auto-rotating with centre video, posters paint once in view (earlier blanks were screenshot timing). Commit `44a1d8c` pins the phone tiles to the corners.
+- Vercel: the project is git-connected; pushes auto-build; three builds today failed on Google Fonts fetches until fonts were self-hosted (`9b649c8`). `.vercelignore` patterns are root-anchored.
