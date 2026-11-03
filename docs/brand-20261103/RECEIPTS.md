@@ -14,3 +14,5 @@ Balance after the four sheets: 65,333 credits. Total spent this pass: 648 credit
 Status: all four sheets are generated and saved; none is approved yet. The current logo stays in place until Jake chooses. Production transparent icon exports are a later step after the sheet is reviewed (suggested route: Recraft V4.1 vector mode at 45 credits per icon, or redraw the approved silhouettes as SVG by hand for the small category chips).
 
 3 Nov, later: Jake rejected the rendered icon style. Replacement direction: flat 2D, single navy ink on white, monoline, consistent stroke and grid, recognisable categories, SVG-reconstructable. Sheet 5 below.
+
+| 5 | Icon contact sheet, flat monoline replacement (15 categories, single navy ink on white, 5×3, labels outside artwork) | GPT Image 2.5 Sunburst (OpenAI) | text2image, no image reference, 4:3, 2K, quality high, png | 150 quoted | yoiia6ASOZ6ejbDx6euf | icons-sheet-02-flat-monoline.png |
