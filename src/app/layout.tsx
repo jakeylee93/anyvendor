@@ -4,8 +4,8 @@ import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 
 // Self-hosted (SIL Open Font License, see src/app/fonts/OFL-*.txt) so builds never depend on fetching Google Fonts.
-const lexend = localFont({ src: "./fonts/LexendDeca.ttf", weight: "300 700", display: "swap", variable: "--font-lexend-deca" });
-const caveat = localFont({ src: "./fonts/Caveat.ttf", weight: "400 700", display: "swap", variable: "--font-caveat-hand" });
+const lexend = localFont({ src: "./fonts/LexendDeca-latin.woff2", weight: "300 700", display: "swap", variable: "--font-lexend-deca" });
+const caveat = localFont({ src: "./fonts/Caveat-latin.woff2", weight: "400 700", display: "swap", variable: "--font-caveat-hand" });
 
 export const metadata: Metadata = {
   title: "Anyvendor — Find Top Event Professionals",
