@@ -24,3 +24,6 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 | 11 | Direction C, geometric duotone | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | 7Ls7R9cOnTDlqNbWukpz | icons-sheet-08-direction-c-duotone.png |
 
 3 Nov, 21:40 UTC: Jake rejected all generated icon sheets as AI-looking. Switched to designed vectors: Phosphor Icons (MIT) in the AV tile, Duotone weight with the cyan layer (`src/components/site/EventIcons.tsx`, sheet `icons-sheet-09-phosphor-tiles.png`, no credits). Generated sheets kept as history only.
+| 12 | M1 monograms in the AV construction (AV tile reference) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | 4YQ5m6LLhFeSchXxp3lk | icons-sheet-10-monograms-av-construction.png |
+| 13 | M2 marks built only from the A and V strokes (AV tile reference) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | RTtZ0Pt4tNhOYtW44qXa | icons-sheet-11-marks-from-av-strokes.png |
+| — | M3 typographic monograms (Lexend Deca, rendered locally, no credits) | local | — | 0 | — | icons-sheet-12-type-monograms.png |
