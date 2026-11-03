@@ -1,5 +1,5 @@
 .media-work
-content
-scripts
-docs
+/content
+/scripts
+/docs
 HANDOFF.md
