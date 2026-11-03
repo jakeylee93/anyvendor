@@ -87,7 +87,7 @@ export default function Planner({ initial = {}, compact = false }: Props) {
               }`}
             >
               <input type="checkbox" name="needs" value={n.key} checked={on} onChange={() => toggleNeed(n.key)} className="sr-only" />
-              <EventIcon name={eventIconFor(n.label)} size={15} className={on ? "text-be-cyan" : "text-be-grey"} />
+              <EventIcon name={eventIconFor(n.label)} size={18} tone={on ? "navy" : "light"} className="rounded-[4px]" />
               {n.label}
             </label>
           );

@@ -93,9 +93,7 @@ export default async function Home() {
                   tabIndex={n >= BROWSE.length ? -1 : 0}
                   className="flex h-full w-32 flex-col items-center gap-2 rounded-2xl bg-white px-3 py-4 text-center text-sm font-medium text-be-navy shadow-sm ring-1 ring-gray-200 hover:ring-be-cyan"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-be-cyan-pale text-be-navy">
-                    <EventIcon name={eventIconFor(b.label)} size={26} />
-                  </span>
+                  <EventIcon name={eventIconFor(b.label)} size={48} className="rounded-[11px] shadow-sm" />
                   <span className="line-clamp-2 leading-tight">{b.label}</span>
                 </Link>
               </li>

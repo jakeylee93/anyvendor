@@ -22,14 +22,14 @@ const SPOTS: { name: EventIconName; left: string; top: string; size: number; dur
 /** Small monoline pictograms drifting gently behind the hero. Decorative only; still under reduced motion. */
 export default function FloatingIcons() {
   return (
-    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden text-be-navy" aria-hidden>
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
       {SPOTS.filter((s) => EVENT_ICON_NAMES.includes(s.name)).map((s) => (
         <span
           key={s.name}
           className={`icon-drift absolute ${s.mobile ? "" : "hidden md:block"}`}
-          style={{ left: s.left, top: s.top, opacity: 0.16, "--dur": `${s.dur}s`, "--delay": `${s.delay}s`, "--dx": `${s.dx}px`, "--dy": `${s.dy}px` } as React.CSSProperties}
+          style={{ left: s.left, top: s.top, opacity: 0.9, "--dur": `${s.dur}s`, "--delay": `${s.delay}s`, "--dx": `${s.dx}px`, "--dy": `${s.dy}px` } as React.CSSProperties}
         >
-          <EventIcon name={s.name} size={s.size} strokeWidth={1.5} />
+          <EventIcon name={s.name} size={s.size} className="rounded-[22%] shadow-md" />
         </span>
       ))}
     </div>
