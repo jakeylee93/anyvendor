@@ -31,7 +31,7 @@ function Card({ item, active, visible, soundOn, onSound }: { item: SpotlightItem
     <div className="h-full rounded-[24px] p-[3px]" style={{ background: `linear-gradient(135deg, ${item.tint[0]}, ${item.tint[1]})` }}>
       <div className="flex h-full flex-col gap-2 rounded-[21px] bg-white p-2">
         <div className="relative aspect-4/3 overflow-hidden rounded-[16px] bg-be-mist">
-          {item.poster && <img src={item.poster} alt={item.alt} loading={visible ? "eager" : "lazy"} decoding="async" className="absolute inset-0 h-full w-full object-cover" />}
+          {item.poster && <img src={item.poster} alt={item.alt} loading={visible ? "eager" : "lazy"} decoding={visible ? "sync" : "async"} className="absolute inset-0 h-full w-full object-cover" />}
           {active && item.video && (
             <video key={item.slug} src={item.video} poster={item.poster ?? undefined} autoPlay muted={!soundOn} loop playsInline preload="metadata" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
           )}
