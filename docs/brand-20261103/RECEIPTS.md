@@ -19,3 +19,6 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 | 6 | Icon contact sheet, app-tile style (navy rounded tiles, solid white custom glyphs, one cyan accent; Jake's "app style cube" direction) | GPT Image 2.5 Sunburst (OpenAI) | text2image, 4:3, 2K, quality high, png | 150 quoted | gu7uOjEsosN8dlMQ5Sda | icons-sheet-03-app-tiles.png |
 | 7 | Icon sheet, refined app tiles, VECTOR (SVG output) | Recraft V4.1 Pro | text2image, format vector, mode quality, 4:3 | 170 quoted | XwVCf3xVCpXoDwNER2Ob | icons-sheet-04-recraft-vector.svg (+ .png render) |
 | 8 | Icon sheet, refined app tiles in the AV mark's construction (AV tile as reference) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | ZIJi6wGoVFqL7JFQ1mh4 | icons-sheet-05-refined-gpt.png |
+| 9 | Direction A, faceted monogram (AV tile as reference) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | h04veX8M7xbFwQkMDt70 | icons-sheet-06-direction-a-faceted.png |
+| 10 | Direction B, negative space | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | wG8ckw14B7PdfGniQhHu | icons-sheet-07-direction-b-negative.png |
+| 11 | Direction C, geometric duotone | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | 7Ls7R9cOnTDlqNbWukpz | icons-sheet-08-direction-c-duotone.png |
