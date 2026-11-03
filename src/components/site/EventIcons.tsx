@@ -1,6 +1,6 @@
 /**
  * AnyVendor event icons. The artwork is the OpenArt app-tile set Jake chose on 3 Nov 2026
- * (docs/brand-20261103/icons-sheet-03-app-tiles.png, sliced to public/icons/events/*.webp).
+ * (interim: docs/brand-20261103/icons-sheet-05-refined-gpt.png sliced to public/icons/events/*.webp; final pick pending Jake).
  * Navy rounded tile, bold white glyph, one cyan accent. Vector versions follow once approved.
  */
 export type EventIconName =
