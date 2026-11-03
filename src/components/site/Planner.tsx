@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { CalendarDays, MapPin, Search, Sparkles, Users } from "lucide-react";
 import { NEEDS } from "@/lib/plan";
 import { LOCATIONS } from "@/lib/directory";
-import { NeedIcon } from "./icons";
+import { EventIcon, eventIconFor } from "./EventIcons";
 
 const EXAMPLES = [
   "I'm planning a 40th birthday in London on 20 December for 80 guests and need a mobile bar, a DJ, food and a photographer",
@@ -40,50 +40,24 @@ export default function Planner({ initial = {}, compact = false }: Props) {
     });
 
   return (
-    <form id="plan" action="/plan" method="get" className={`rounded-[28px] bg-white text-be-navy shadow-2xl ring-1 ring-black/5 ${compact ? "p-4" : "p-4 md:p-6"}`}>
-      <label className="block">
-        <span className="sr-only">Tell us about your event</span>
-        <div className="flex items-start gap-3">
-          <Sparkles size={22} className="mt-1 shrink-0 text-be-cyan" aria-hidden />
-          <textarea
+    <form id="plan" action="/plan" method="get" className={`rounded-[28px] bg-white text-be-navy shadow-2xl ring-1 ring-black/5 ${compact ? "p-3" : "p-3 md:p-4"}`}>
+      <div className="grid gap-2 md:grid-cols-[1.6fr_1fr_1fr_auto]">
+        <label className="flex items-center gap-2 rounded-2xl bg-be-mist px-3.5 py-3">
+          <Sparkles size={18} className="shrink-0 text-be-cyan" aria-hidden />
+          <span className="sr-only">What’s the occasion?</span>
+          <input
             name="ask"
             value={ask}
             onChange={(e) => setAsk(e.target.value)}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
-            rows={compact ? 2 : 3}
             placeholder={EXAMPLES[ex]}
-            className="w-full resize-none bg-transparent text-[17px] leading-relaxed placeholder:text-gray-400 focus:outline-none md:text-lg"
+            className="w-full bg-transparent text-[15px] placeholder:text-gray-400 focus:outline-none md:text-base"
           />
-        </div>
-      </label>
-
-      <fieldset className="mt-3 border-t border-gray-100 pt-3">
-        <legend className="sr-only">What do you need?</legend>
-        <ul className="flex flex-wrap gap-2">
-          {NEEDS.map((n) => {
-            const on = needs.has(n.key);
-            return (
-              <li key={n.key}>
-                <label
-                  className={`inline-flex cursor-pointer select-none items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium ring-1 transition ${
-                    on ? "bg-be-navy text-white ring-be-navy" : "bg-white text-be-navy ring-gray-300 hover:bg-be-mist"
-                  }`}
-                >
-                  <input type="checkbox" name="needs" value={n.key} checked={on} onChange={() => toggleNeed(n.key)} className="sr-only" />
-                  <NeedIcon name={n.icon} size={15} className={on ? "text-be-cyan" : "text-be-grey"} aria-hidden />
-                  {n.label}
-                </label>
-              </li>
-            );
-          })}
-        </ul>
-      </fieldset>
-
-      <div className="mt-3 grid gap-2 sm:grid-cols-[1fr_1fr_1fr_auto]">
-        <label className="flex items-center gap-2 rounded-xl bg-be-mist px-3 py-2.5 text-sm">
+        </label>
+        <label className="flex items-center gap-2 rounded-2xl bg-be-mist px-3.5 py-3 text-sm">
           <MapPin size={16} className="shrink-0 text-be-grey" aria-hidden />
-          <span className="sr-only">Location</span>
+          <span className="sr-only">Where</span>
           <select name="location" defaultValue={initial.location ?? ""} className="w-full bg-transparent focus:outline-none">
             <option value="">Where?</option>
             {LOCATIONS.map((l) => (
@@ -91,20 +65,39 @@ export default function Planner({ initial = {}, compact = false }: Props) {
             ))}
           </select>
         </label>
-        <label className="flex items-center gap-2 rounded-xl bg-be-mist px-3 py-2.5 text-sm">
+        <label className="flex items-center gap-2 rounded-2xl bg-be-mist px-3.5 py-3 text-sm">
           <CalendarDays size={16} className="shrink-0 text-be-grey" aria-hidden />
-          <span className="sr-only">Date</span>
+          <span className="sr-only">When</span>
           <input type="date" name="date" defaultValue={initial.date ?? ""} className="w-full bg-transparent focus:outline-none" />
         </label>
-        <label className="flex items-center gap-2 rounded-xl bg-be-mist px-3 py-2.5 text-sm">
-          <Users size={16} className="shrink-0 text-be-grey" aria-hidden />
-          <span className="sr-only">Guests</span>
-          <input type="number" name="guests" min={1} max={5000} defaultValue={initial.guests ?? ""} placeholder="Guests" className="w-full bg-transparent focus:outline-none" />
-        </label>
-        <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-xl bg-be-amber px-6 py-2.5 font-semibold text-be-navy hover:brightness-95">
-          <Search size={18} aria-hidden /> Find my vendors
+        <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-be-cyan px-6 py-3 font-semibold text-be-navy hover:brightness-95">
+          <Search size={18} aria-hidden /> Plan my event
         </button>
       </div>
+
+      <fieldset className="mt-3 flex flex-wrap items-center gap-2 border-t border-gray-100 pt-3">
+        <legend className="sr-only">What do you need?</legend>
+        {NEEDS.map((n) => {
+          const on = needs.has(n.key);
+          return (
+            <label
+              key={n.key}
+              className={`inline-flex cursor-pointer select-none items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium ring-1 transition ${
+                on ? "bg-be-navy text-white ring-be-navy" : "bg-white text-be-navy ring-gray-300 hover:bg-be-mist"
+              }`}
+            >
+              <input type="checkbox" name="needs" value={n.key} checked={on} onChange={() => toggleNeed(n.key)} className="sr-only" />
+              <EventIcon name={eventIconFor(n.label)} size={15} className={on ? "text-be-cyan" : "text-be-grey"} />
+              {n.label}
+            </label>
+          );
+        })}
+        <label className="ml-auto flex items-center gap-2 rounded-full bg-be-mist px-3 py-1.5 text-[13px]">
+          <Users size={15} className="shrink-0 text-be-grey" aria-hidden />
+          <span className="sr-only">Guests</span>
+          <input type="number" name="guests" min={1} max={5000} defaultValue={initial.guests ?? ""} placeholder="Guests" className="w-16 bg-transparent focus:outline-none" />
+        </label>
+      </fieldset>
     </form>
   );
 }

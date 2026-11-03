@@ -1,16 +1,17 @@
 import Link from "next/link";
 import Planner from "./Planner";
 import { BrandLockup } from "./BrandMark";
+import FloatingIcons from "./FloatingIcons";
 
-/** Homepage hero: the wordmark, one line, and the planner. The background is a
- *  placeholder foil until Jake chooses the header image. */
+/** Homepage hero: headline and planner first, a small lockup above, and the event pictograms drifting quietly behind. */
 export default function HomeHero() {
   return (
-    <section aria-label="Plan your event" className="be-hero-foil relative isolate overflow-hidden text-be-navy">
-      <div className="relative mx-auto flex min-h-[calc(100svh-72px)] max-w-5xl flex-col items-center justify-center px-4 py-14 text-center">
-        <BrandLockup animate />
-        <h1 className="mt-5 text-2xl font-semibold text-be-navy md:text-4xl">Find your vendors in seconds</h1>
-        <p className="mt-2 text-base text-be-navy/70 md:text-lg">Tell us about your event. We’ll suggest the right people for each thing you need.</p>
+    <section aria-label="Plan your event" className="relative isolate overflow-hidden bg-white text-be-navy">
+      <FloatingIcons />
+      <div className="relative mx-auto flex min-h-[calc(100svh-72px)] max-w-4xl flex-col items-center justify-center px-4 py-12 text-center">
+        <div className="scale-[0.62] md:scale-75"><BrandLockup animate /></div>
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-be-navy md:text-5xl">Find your vendors in seconds</h1>
+        <p className="mt-3 max-w-xl text-base text-be-navy/70 md:text-lg">Tell us about your event. We’ll suggest the right people for each thing you need.</p>
         <div className="mt-8 w-full text-left">
           <Planner />
         </div>

@@ -19,6 +19,7 @@ export default function PricingPage() {
           <p><strong>Unlimited website updates</strong> means unlimited requests. Normal edits (copy, photos, prices, dates, a new section) are usually done within 24 hours. A larger new feature, such as online booking or a shop, is scoped and scheduled with you first.</p>
           <p><strong>SEO workflows</strong> are the technical and content work we do on your site and the Search Console reporting in your dashboard. We cannot promise rankings.</p>
           <p><strong>Social scheduling</strong> posts to accounts you connect, when you choose. You write and approve what goes out.</p>
+          <p><strong>Featured placement</strong> on the homepage is a separate, clearly labelled local promotion. It is not included in any plan and its price will be published separately.</p>
           <p><strong>AI Plus</strong> gives you an assistant hosted by us that only works inside your own AnyVendor business. Anything that reaches a customer or spends money waits for your approval, and every action is logged. Included usage and overages will be published before it goes on sale.</p>
         </div>
       </section>

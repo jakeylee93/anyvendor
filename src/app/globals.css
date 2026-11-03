@@ -459,3 +459,14 @@ html {
     animation: none;
   }
 }
+
+/* Homepage: small monoline pictograms drifting behind the headline. Pure decoration. */
+@keyframes icon-drift {
+  0% { transform: translate3d(0, 0, 0) rotate(-3deg); }
+  50% { transform: translate3d(var(--dx, 10px), var(--dy, -14px), 0) rotate(3deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(-3deg); }
+}
+.icon-drift { animation: icon-drift var(--dur, 14s) ease-in-out infinite; animation-delay: var(--delay, 0s); will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .icon-drift { animation: none; }
+}
