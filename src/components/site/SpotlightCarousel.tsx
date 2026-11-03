@@ -26,12 +26,12 @@ export interface SpotlightItem {
 
 const mod = (n: number, m: number) => ((n % m) + m) % m;
 
-function Card({ item, active, soundOn, onSound }: { item: SpotlightItem; active: boolean; soundOn: boolean; onSound: () => void }) {
+function Card({ item, active, visible, soundOn, onSound }: { item: SpotlightItem; active: boolean; visible: boolean; soundOn: boolean; onSound: () => void }) {
   return (
     <div className="h-full rounded-[24px] p-[3px]" style={{ background: `linear-gradient(135deg, ${item.tint[0]}, ${item.tint[1]})` }}>
       <div className="flex h-full flex-col gap-2 rounded-[21px] bg-white p-2">
         <div className="relative aspect-4/3 overflow-hidden rounded-[16px] bg-be-mist">
-          {item.poster && <img src={item.poster} alt={item.alt} loading={active ? "eager" : "lazy"} decoding="async" className="absolute inset-0 h-full w-full object-cover" />}
+          {item.poster && <img src={item.poster} alt={item.alt} loading={visible ? "eager" : "lazy"} decoding="async" className="absolute inset-0 h-full w-full object-cover" />}
           {active && item.video && (
             <video key={item.slug} src={item.video} poster={item.poster ?? undefined} autoPlay muted={!soundOn} loop playsInline preload="metadata" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
           )}
@@ -137,7 +137,7 @@ export default function SpotlightCarousel({ items, label, intervalMs = 6000 }: {
               className={`absolute left-1/2 top-0 h-full w-[var(--card)] ${reduced ? "" : "transition-[transform,opacity] duration-500 ease-out"}`}
               style={{ transform: `translateX(calc(-50% + ${o} * (var(--card) + var(--gap)))) scale(${centre ? 1 : 0.94})`, opacity: centre ? 1 : Math.abs(o) >= 3 ? 0 : 0.85, zIndex: centre ? 2 : 1 }}
             >
-              <Card item={item} active={centre} soundOn={soundOn && centre} onSound={() => setSoundOn((s) => !s)} />
+              <Card item={item} active={centre} visible={Math.abs(o) <= 2} soundOn={soundOn && centre} onSound={() => setSoundOn((s) => !s)} />
             </div>
           );
         })}
