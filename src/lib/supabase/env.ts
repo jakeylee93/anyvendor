@@ -22,6 +22,7 @@ export const SETUP_ITEMS: { name: string; env: string[]; purpose: string }[] = [
   { name: "LinkedIn app", env: ["LINKEDIN_CLIENT_ID", "LINKEDIN_CLIENT_SECRET"], purpose: "Businesses connect their own LinkedIn" },
   { name: "Instagram app", env: ["INSTAGRAM_APP_ID", "INSTAGRAM_APP_SECRET"], purpose: "Businesses connect their own Instagram professional account" },
   { name: "Google OAuth client", env: ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET"], purpose: "Businesses connect their own Search Console" },
+  { name: "Bespoke site revalidation", env: ["SITE_REVALIDATE_SECRET"], purpose: "Tells a vendor's bespoke site that a new revision is live (optional; sites can poll instead)" },
 ];
 
 export function missingEnv(names: string[]) {
