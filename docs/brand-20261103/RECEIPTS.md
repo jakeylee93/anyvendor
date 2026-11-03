@@ -22,3 +22,5 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 | 9 | Direction A, faceted monogram (AV tile as reference) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | h04veX8M7xbFwQkMDt70 | icons-sheet-06-direction-a-faceted.png |
 | 10 | Direction B, negative space | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | wG8ckw14B7PdfGniQhHu | icons-sheet-07-direction-b-negative.png |
 | 11 | Direction C, geometric duotone | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | 7Ls7R9cOnTDlqNbWukpz | icons-sheet-08-direction-c-duotone.png |
+
+3 Nov, 21:40 UTC: Jake rejected all generated icon sheets as AI-looking. Switched to designed vectors: Phosphor Icons (MIT) in the AV tile, Duotone weight with the cyan layer (`src/components/site/EventIcons.tsx`, sheet `icons-sheet-09-phosphor-tiles.png`, no credits). Generated sheets kept as history only.

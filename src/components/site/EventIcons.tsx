@@ -1,7 +1,11 @@
+import type { ComponentType } from "react";
+import { Balloon, Cake, Camera, CarProfile, Chair, Disc, FilmStrip, FlowerTulip, ForkKnife, Lightbulb, Martini, MaskHappy, MusicNotes, Tent, VideoCamera, type IconProps } from "@phosphor-icons/react/dist/ssr";
+
 /**
- * AnyVendor event icons. The artwork is the OpenArt app-tile set Jake chose on 3 Nov 2026
- * (interim: docs/brand-20261103/icons-sheet-05-refined-gpt.png sliced to public/icons/events/*.webp; final pick pending Jake).
- * Navy rounded tile, bold white glyph, one cyan accent. Vector versions follow once approved.
+ * AnyVendor event icons: designed glyphs from the Phosphor icon library (MIT licence,
+ * https://phosphoricons.com) set in the AV navy tile with a cyan two-tone layer.
+ * Real vectors, consistent on a shared grid, crisp from 18px chips to 56px hero objects.
+ * Switch `WEIGHT` to "fill" or "bold" to change the whole set.
  */
 export type EventIconName =
   | "transport" | "catering" | "desserts" | "dj" | "music" | "photography" | "videography" | "entertainment"
@@ -9,22 +13,36 @@ export type EventIconName =
 
 export const EVENT_ICON_NAMES: EventIconName[] = ["transport", "catering", "desserts", "dj", "music", "photography", "videography", "entertainment", "hire", "bar", "flowers", "marquee", "lighting", "photobooth", "styling"];
 
+const WEIGHT: IconProps["weight"] = "duotone";
+
+const GLYPHS: Record<EventIconName, ComponentType<IconProps>> = {
+  transport: CarProfile, catering: ForkKnife, desserts: Cake, dj: Disc, music: MusicNotes, photography: Camera, videography: VideoCamera,
+  entertainment: MaskHappy, hire: Chair, bar: Martini, flowers: FlowerTulip, marquee: Tent, lighting: Lightbulb, photobooth: FilmStrip, styling: Balloon,
+};
+
 const LABELS: Record<EventIconName, string> = {
   transport: "Transport", catering: "Catering", desserts: "Desserts", dj: "DJ", music: "Live music", photography: "Photography", videography: "Videography",
   entertainment: "Entertainment", hire: "Hire", bar: "Mobile bar", flowers: "Flowers", marquee: "Marquee", lighting: "Lighting", photobooth: "Photo booth", styling: "Styling",
 };
 
-export function eventIconSrc(name: EventIconName) {
-  return `/icons/events/${name}.webp`;
-}
-
-/** The app-style tile as an image. Decorative by default; pass `alt` to make it meaningful. */
-export function EventIcon({ name, size = 24, alt = "", className = "", ...props }: { name: EventIconName; size?: number; alt?: string; className?: string } & Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src" | "alt" | "width" | "height">) {
-  // eslint-disable-next-line @next/next/no-img-element
-  return <img src={eventIconSrc(name)} alt={alt} width={size} height={size} decoding="async" draggable={false} className={`select-none ${className}`} aria-hidden={alt ? undefined : true} {...props} />;
-}
-
 export const eventIconLabel = (name: EventIconName) => LABELS[name];
+
+/** The app-style tile: navy rounded square, white glyph, cyan two-tone layer. Decorative unless `label` is given. */
+export function EventIcon({ name, size = 24, label, className = "" }: { name: EventIconName; size?: number; label?: string; className?: string }) {
+  const Glyph = GLYPHS[name];
+  const radius = Math.round(size * 0.23);
+  return (
+    <span
+      role={label ? "img" : undefined}
+      aria-label={label}
+      aria-hidden={label ? undefined : true}
+      className={`av-tile inline-flex shrink-0 items-center justify-center bg-be-navy text-white ${className}`}
+      style={{ width: size, height: size, borderRadius: radius }}
+    >
+      <Glyph weight={WEIGHT} size={Math.round(size * 0.58)} />
+    </span>
+  );
+}
 
 /** Pictogram for a planner need key or a category label. */
 export function eventIconFor(keyOrLabel: string): EventIconName {

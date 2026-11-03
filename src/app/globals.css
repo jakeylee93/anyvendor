@@ -470,3 +470,6 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .icon-drift { animation: none; }
 }
+
+/* Event icon tiles: Phosphor duotone glyphs get the cyan secondary layer. */
+.av-tile svg path:first-child { fill: #33ccff; opacity: 1; }
