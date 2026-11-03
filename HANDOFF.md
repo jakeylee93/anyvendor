@@ -361,3 +361,7 @@ Commits `cab2a9a` (flat monoline icon sheet, replacement direction after Jake re
 - OpenArt spend today: 1,250 credits; balance 64,259. Receipts in `docs/brand-20261103/RECEIPTS.md`.
 - Homepage verified in a headless browser on deployment `qr1nj8gc8` (share link, expires 4 Nov 20:18 UTC): small row lockup, search-bar planner, floating tiles at the edges, five-card spotlight auto-rotating with centre video, posters paint once in view (earlier blanks were screenshot timing). Commit `44a1d8c` pins the phone tiles to the corners.
 - Vercel: the project is git-connected; pushes auto-build; three builds today failed on Google Fonts fetches until fonts were self-hosted (`9b649c8`). `.vercelignore` patterns are root-anchored.
+
+### Milestone 12, icons resolved to designed vectors (3 Nov, 21:50 UTC)
+
+Jake rejected every generated sheet as AI-looking and asked for proper icons. The site now uses the Phosphor icon library (MIT, studio-designed) set in the AV navy tile with the cyan duotone layer: `src/components/site/EventIcons.tsx` (`WEIGHT` switches fill/duotone/bold), CSS rule `.av-tile` in `globals.css`, packages `@phosphor-icons/react` and `@phosphor-icons/core`. Comparison sheet `docs/brand-20261103/icons-sheet-09-phosphor-tiles.png`. Verified on deployment `q026pmrrb` (commit `d34e42d`) at desktop and phone. Generated sheets stay in `docs/brand-20261103/` as history only; the raster tiles were removed from `public/`.
