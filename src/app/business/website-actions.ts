@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { businessContext } from "@/lib/business/data";
 import { contentFromForm } from "@/lib/business/site-content";
+import { contentFromManifestForm, manifestProblems, type Manifest } from "@/lib/business/manifest";
 
 const IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp"];
 
@@ -45,6 +46,40 @@ export async function saveWebsite(form: FormData) {
     redirect("/business/website/edit?published=1");
   }
   redirect("/business/website/edit?ok=1");
+}
+
+async function saveBespoke(ctx: Awaited<ReturnType<typeof live>>, form: FormData, manifest: Manifest) {
+  if (manifestProblems(manifest).length) redirect("/business/website/edit?error=manifest_missing");
+  const uploads: Record<string, string> = {};
+  for (const [k, v] of form.entries()) {
+    if (!k.startsWith("file:") || !(v instanceof File) || !v.size) continue;
+    const src = await upload(ctx, v);
+    if (src) uploads[k.slice(5)] = src;
+  }
+  const content = contentFromManifestForm(manifest, form, uploads);
+  const version = Number(form.get("expected_version"));
+  const { data: saved, error } = await ctx.sb.rpc("save_website_draft", { p_business: ctx.business.id, p_content: content, p_expected_version: version });
+  revalidatePath("/business/website/edit");
+  if (error) redirect(`/business/website/edit?error=${encodeURIComponent(error.message)}`);
+  if (form.get("intent") === "publish") {
+    const p = await ctx.sb.rpc("publish_website", { p_business: ctx.business.id, p_expected_version: Number(saved) });
+    if (p.error) redirect(`/business/website/edit?error=${encodeURIComponent(p.error.message)}`);
+    await pingRevalidate(ctx, String(p.data));
+    redirect("/business/website/edit?published=1");
+  }
+  redirect("/business/website/edit?ok=1");
+}
+
+/** Tells a bespoke site a new revision is live (optional; sites can also poll the content endpoint). */
+async function pingRevalidate(ctx: Awaited<ReturnType<typeof live>>, revision: string) {
+  const { data: w } = await ctx.sb.from("websites").select("revalidate_url").eq("business_id", ctx.business.id).maybeSingle();
+  const secret = process.env.SITE_REVALIDATE_SECRET;
+  if (!w?.revalidate_url || !secret) return;
+  try {
+    await fetch(w.revalidate_url, { method: "POST", headers: { "Content-Type": "application/json", Authorization: `Bearer ${secret}` }, body: JSON.stringify({ slug: ctx.business.slug, revision }), signal: AbortSignal.timeout(5000) });
+  } catch {
+    /* the site will pick the change up on its next fetch */
+  }
 }
 
 export async function restoreRevision(form: FormData) {

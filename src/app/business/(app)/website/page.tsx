@@ -14,8 +14,9 @@ export default async function WebsitePage({ searchParams }: { searchParams: SP }
   const b = ctx.business;
   const [website, requests, access, connections] = await Promise.all([loadWebsite(ctx), loadRequests(ctx, 50), loadAccess(ctx), loadConnections(ctx)]);
   const external = website?.kind === "external" && website.external_url;
+  const bespoke = website?.kind === "bespoke";
   const published = Boolean(website?.published_revision_id);
-  const src = external ? website!.external_url! : published || ctx.mode === "demo" ? `/site/${b.slug}` : "/business/preview";
+  const src = external ? website!.external_url! : bespoke && website?.external_url ? website.external_url : published || ctx.mode === "demo" ? `/site/${b.slug}` : "/business/preview";
   const open = requests.filter((r) => r.status !== "completed");
   const overdue = open.filter((r) => Date.parse(r.due_at) < nowMs()).length;
   const gsc = connections.find((c) => c.provider === "google_search_console");
@@ -35,9 +36,9 @@ export default async function WebsitePage({ searchParams }: { searchParams: SP }
         <div className="bg-be-navy p-4 md:p-6">
           <div className="flex flex-wrap items-center justify-between gap-2 pb-3 text-white">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-be-cyan">Your website</p>
-            <p className="text-xs text-white/70">{external ? website!.external_url : published ? `Live at /site/${b.slug}` : "Draft, not published yet"}</p>
+            <p className="text-xs text-white/70">{external || (bespoke && website?.external_url) ? website!.external_url : bespoke ? "Your site’s address will appear here once it’s deployed" : published ? `Live at /site/${b.slug}` : "Draft, not published yet"}</p>
           </div>
-          <SitePreviewFrame src={src} title={`${b.name} website`} height={480} />
+          {bespoke && !website?.external_url ? <div className="flex h-48 items-center justify-center rounded-2xl bg-white/10 text-sm text-white/80">Your website is being built. Your content lives here and appears on the site once it’s connected.</div> : <SitePreviewFrame src={src} title={`${b.name} website`} height={480} />}
         </div>
         <div className="flex flex-wrap gap-2 p-5 md:p-6">
           {!external && <Btn href="/business/website/edit"><Pencil size={16} aria-hidden /> Edit website</Btn>}

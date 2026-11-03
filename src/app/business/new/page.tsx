@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 import { BrandLockup } from "@/components/site/BrandMark";
 import { ActionFeedback, inputCls, submitCls } from "@/components/business/ui";
 import { businessContext } from "@/lib/business/data";
-import { BUSINESSES } from "@/lib/directory";
 import { createBusiness } from "../actions";
 
 export const metadata: Metadata = { title: "Set up your business — AnyVendor", robots: { index: false, follow: false } };
@@ -36,12 +35,9 @@ export default async function NewBusinessPage({ searchParams }: { searchParams: 
               <span className="mt-1 block text-xs text-be-grey">Lowercase letters, numbers and hyphens.</span>
             </label>
             <label className="block">
-              <span className="text-sm font-semibold text-be-navy">Already in the AnyVendor directory? (optional)</span>
-              <select name="directory_slug" defaultValue="" className={`${inputCls} mt-1`}>
-                <option value="">No, or not sure</option>
-                {BUSINESSES.map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
-              </select>
-              <span className="mt-1 block text-xs text-be-grey">We check you own a listing before linking it publicly.</span>
+              <span className="text-sm font-semibold text-be-navy">Already listed on AnyVendor? (optional)</span>
+              <input name="directory_slug" maxLength={120} defaultValue={v("directory_slug")} placeholder="Tell us the listing name" className={`${inputCls} mt-1`} />
+              <span className="mt-1 block text-xs text-be-grey">The AnyVendor team checks you own the listing before it’s linked. Naming it here doesn’t change anything public.</span>
             </label>
             <button className={`${submitCls} w-full`}>Create business</button>
           </form>

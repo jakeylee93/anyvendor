@@ -64,9 +64,17 @@ export interface SubscriptionRow {
   updated_at: string;
 }
 
+export interface InternalPlan {
+  plan: PlanCode;
+  label: string;
+  expires_at: string | null;
+}
+
 export interface Access {
   plan: PlanCode | null;
   status: string | null;
+  /** Where the access comes from: a paid subscription, an internal test plan, or nothing. */
+  source: "subscription" | "internal" | null;
   modules: Module[];
   notice: { tone: "info" | "warning" | "danger"; text: string } | null;
 }
@@ -79,7 +87,18 @@ function ukDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/London" });
 }
 
-export function accessFor(subs: SubscriptionRow[]): Access {
+export function accessFor(subs: SubscriptionRow[], internal: InternalPlan | null = null): Access {
+  const paid = paidAccess(subs);
+  const internalLive = internal && (!internal.expires_at || Date.parse(internal.expires_at) > Date.now()) ? internal : null;
+  if (internalLive && (!paid.plan || RANK[internalLive.plan] > RANK[paid.plan])) {
+    const plan = planByCode(internalLive.plan)!;
+    const until = internalLive.expires_at ? ` until ${ukDate(internalLive.expires_at)}` : "";
+    return { plan: plan.code, status: "internal", source: "internal", modules: plan.modules, notice: { tone: "info", text: `Internal test plan (${internalLive.label})${until}. This is not a paid subscription.` } };
+  }
+  return paid;
+}
+
+function paidAccess(subs: SubscriptionRow[]): Access {
   const live = subs
     .filter((s) => s.plan && ACCESS_STATUSES.includes(s.status))
     .sort((a, b) => RANK[b.plan!] - RANK[a.plan!] || b.updated_at.localeCompare(a.updated_at));
@@ -89,16 +108,16 @@ export function accessFor(subs: SubscriptionRow[]): Access {
     let notice: Access["notice"] = null;
     if (best.status === "past_due") notice = { tone: "warning", text: "Your last payment didn’t go through. Update your card to keep your plan." };
     else if (best.cancel_at_period_end && best.current_period_end) notice = { tone: "info", text: `Your plan ends on ${ukDate(best.current_period_end)}.` };
-    return { plan: plan.code, status: best.status, modules: plan.modules, notice };
+    return { plan: plan.code, status: best.status, source: "subscription", modules: plan.modules, notice };
   }
   const latest = [...subs].sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];
   if (latest && ["canceled", "unpaid", "incomplete_expired", "paused"].includes(latest.status)) {
-    return { plan: null, status: latest.status, modules: [], notice: { tone: "danger", text: "Your plan has ended. Your history is safe; choose a plan to make new requests." } };
+    return { plan: null, status: latest.status, source: null, modules: [], notice: { tone: "danger", text: "Your plan has ended. Your history is safe; choose a plan to make new requests." } };
   }
   if (latest && latest.status === "incomplete") {
-    return { plan: null, status: latest.status, modules: [], notice: { tone: "info", text: "We’re waiting for your first payment to confirm." } };
+    return { plan: null, status: latest.status, source: null, modules: [], notice: { tone: "info", text: "We’re waiting for your first payment to confirm." } };
   }
-  return { plan: null, status: null, modules: [], notice: null };
+  return { plan: null, status: null, source: null, modules: [], notice: null };
 }
 
 export function hasModule(access: Access, m: Module) {

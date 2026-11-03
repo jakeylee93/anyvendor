@@ -40,7 +40,11 @@ export async function signOut() {
 export async function selectBusiness(form: FormData) {
   const ctx = await live();
   const id = str(form, "business", 64);
-  if (!ctx.businesses.some((b) => b.id === id)) redirect("/business");
+  if (!ctx.businesses.some((b) => b.id === id)) {
+    if (!ctx.staff) redirect("/business");
+    const { data, error } = await ctx.sb.rpc("staff_switch", { p_business: id });
+    if (error || !data || (Array.isArray(data) && data.length === 0)) redirect("/staff/businesses?error=not_found");
+  }
   (await cookies()).set(BUSINESS_COOKIE, id, { httpOnly: true, sameSite: "lax", secure: true, path: "/", maxAge: 60 * 60 * 24 * 365 });
   redirect("/business");
 }

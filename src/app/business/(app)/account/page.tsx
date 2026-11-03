@@ -39,11 +39,11 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
       <Card>
         <CardTitle>Your plan</CardTitle>
         <p className="mt-2 text-be-navy">
-          {ctx.mode === "demo" ? "Demo (all features shown)" : current ? `${current.name}, ${current.priceLabel} a month inc. VAT` : "No plan yet"}
+          {ctx.mode === "demo" ? "Demo (all features shown)" : access.source === "internal" ? `${current?.name} (internal test plan, not a paid subscription)` : current ? `${current.name}, ${current.priceLabel} a month inc. VAT` : "No plan yet"}
           {access.status && ctx.mode === "live" && <span className="ml-2 rounded-full bg-be-mist px-2 py-0.5 text-xs text-be-grey">{access.status.replace("_", " ")}</span>}
         </p>
         {periodEnd && <p className="mt-1 text-sm text-be-grey">Current period ends {new Date(periodEnd).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.</p>}
-        {ctx.mode === "live" && isOwner && current && (
+        {ctx.mode === "live" && isOwner && current && access.source === "subscription" && (
           <form action={openPortal} className="mt-4">
             <button className={submitCls}>Manage billing</button>
             <p className="mt-2 text-xs text-be-grey">Change plan, update your card, see invoices or cancel in Stripe’s secure portal.</p>
@@ -65,7 +65,7 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
                   <li key={f} className="flex gap-2"><Check size={16} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />{f}</li>
                 ))}
               </ul>
-              {ctx.mode === "live" && isOwner && !current && (
+              {ctx.mode === "live" && isOwner && access.source !== "subscription" && (
                 <form action={startCheckout} className="mt-4">
                   <input type="hidden" name="plan" value={p.code} />
                   <button className={`${submitCls} w-full`} disabled={!ready}>Choose {p.name}</button>

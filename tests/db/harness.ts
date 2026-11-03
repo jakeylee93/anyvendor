@@ -11,7 +11,7 @@ const BOOTSTRAP = `
   create role authenticated nologin;
   create role service_role nologin bypassrls;
   create schema auth;
-  create table auth.users (id uuid primary key, email text);
+  create table auth.users (id uuid primary key, email text, email_confirmed_at timestamptz);
   create function auth.uid() returns uuid language sql stable as $$
     select nullif(current_setting('request.jwt.claim.sub', true), '')::uuid $$;
   grant usage on schema auth to anon, authenticated, service_role;
@@ -29,8 +29,8 @@ export async function freshDb(): Promise<Db> {
   return db;
 }
 
-export async function addUser(db: Db, id: string, email = `${id.slice(0, 8)}@example.test`) {
-  await db.query("insert into auth.users (id, email) values ($1, $2)", [id, email]);
+export async function addUser(db: Db, id: string, email = `${id.slice(0, 8)}@example.test`, verified = true) {
+  await db.query("insert into auth.users (id, email, email_confirmed_at) values ($1, $2, $3)", [id, email, verified ? new Date().toISOString() : null]);
   return id;
 }
 
@@ -72,6 +72,7 @@ export const U = {
   alice: "00000000-0000-4000-8000-00000000000a",
   bob: "00000000-0000-4000-8000-00000000000b",
   carol: "00000000-0000-4000-8000-00000000000c",
+  dave: "00000000-0000-4000-8000-00000000000d",
   staff: "00000000-0000-4000-8000-0000000000ff",
 };
 
@@ -84,4 +85,9 @@ export async function subscribe(db: Db, business: string, plan: "website" | "seo
       [business, `sub_${business.slice(-6)}`, `cus_${business.slice(-6)}`, plan, `price_${plan}`, status, at.toISOString()],
     ),
   );
+}
+
+/** Marks a user's email as verified, the way Supabase does when a magic link is used. */
+export async function verifyUser(db: Db, id: string) {
+  await db.query("update auth.users set email_confirmed_at = now() where id = $1", [id]);
 }

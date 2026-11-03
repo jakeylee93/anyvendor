@@ -18,6 +18,7 @@ export default async function StaffQueue({ searchParams }: { searchParams: SP })
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
           <AvTile className="h-9 w-9" />
           <p className="font-bold text-be-navy">Request queue</p>
+          <Link href="/staff/businesses" className="ml-auto text-sm font-semibold text-be-navy underline">Businesses</Link>
           <span className="rounded-full bg-be-navy px-2.5 py-0.5 text-xs font-semibold text-white">Staff</span>
         </div>
       </header>

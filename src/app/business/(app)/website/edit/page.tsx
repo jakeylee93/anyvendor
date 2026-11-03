@@ -4,6 +4,8 @@ import { ActionFeedback, Btn, Card, CardTitle, Notice, inputCls, submitCls } fro
 import { loadAccess, loadWebsite, requireBusiness } from "@/lib/business/data";
 import { ACCENTS, normaliseContent } from "@/lib/business/site-content";
 import { restoreRevision, saveWebsite } from "../../../website-actions";
+import ManifestForm from "@/components/business/ManifestForm";
+import { manifestProblems, normaliseByManifest, type Manifest } from "@/lib/business/manifest";
 
 type SP = Promise<Record<string, string | string[] | undefined>>;
 const stamp = (iso: string) => new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/London" });
@@ -26,6 +28,8 @@ export default async function WebsiteEditor({ searchParams }: { searchParams: SP
       </Card>
     );
   }
+  const bespoke = website.kind === "bespoke" ? (website.manifest as Manifest) : null;
+  const bespokeOk = bespoke ? manifestProblems(bespoke).length === 0 : false;
   const c = normaliseContent(website.draft);
   let history: { id: string; version: number; action: string; created_at: string }[] = [];
   if (ctx.mode === "live") {
@@ -48,12 +52,25 @@ export default async function WebsiteEditor({ searchParams }: { searchParams: SP
           </p>
         </div>
         <div className="flex gap-2">
-          <Link href="/business/preview" target="_blank" className="inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-be-navy ring-1 ring-gray-300">Preview draft <ExternalLink size={14} aria-hidden /></Link>
-          {website.published_revision_id && <a href={`/site/${ctx.business.slug}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-be-navy ring-1 ring-gray-300">Live site <ExternalLink size={14} aria-hidden /></a>}
+          <Link href={bespoke && website.external_url ? `${website.external_url}?preview=${website.preview_token}` : "/business/preview"} target="_blank" className="inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-be-navy ring-1 ring-gray-300">Preview draft <ExternalLink size={14} aria-hidden /></Link>
+          {website.published_revision_id && <a href={bespoke && website.external_url ? website.external_url : `/site/${ctx.business.slug}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-be-navy ring-1 ring-gray-300">Live site <ExternalLink size={14} aria-hidden /></a>}
         </div>
       </div>
       {!canPublish && ctx.mode === "live" && <Notice tone="warning">You can edit and preview now. Publishing needs a plan. <Link href="/business/account" className="font-semibold underline">Choose a plan</Link></Notice>}
 
+      {bespoke && !bespokeOk && <Notice tone="warning">This site’s content sections haven’t been set up by its builder yet. Ask the AnyVendor team, or send a request for now.</Notice>}
+      {bespoke && bespokeOk && (
+        <form action={saveWebsite} className="space-y-4">
+          <input type="hidden" name="expected_version" value={website.draft_version} />
+          <Notice tone="info">These are the editable parts of your website. Save a draft to preview it on your site, then publish when you’re happy.</Notice>
+          <ManifestForm manifest={bespoke} content={normaliseByManifest(bespoke, website.draft)} />
+          <div className="sticky bottom-20 z-20 flex flex-wrap gap-2 rounded-3xl bg-white/95 p-3 shadow-lg ring-1 ring-gray-200 backdrop-blur md:bottom-4">
+            <button name="intent" value="save" className={submitCls}>Save draft</button>
+            <button name="intent" value="publish" className="inline-flex items-center rounded-full bg-be-cyan px-5 py-2.5 text-sm font-semibold text-be-navy disabled:opacity-50" disabled={!canPublish}>Save and publish</button>
+          </div>
+        </form>
+      )}
+      {!bespoke && (
       <form action={saveWebsite} className="space-y-4">
         <input type="hidden" name="expected_version" value={website.draft_version} />
         <Card>
@@ -128,6 +145,7 @@ export default async function WebsiteEditor({ searchParams }: { searchParams: SP
           <button name="intent" value="publish" className="inline-flex items-center rounded-full bg-be-cyan px-5 py-2.5 text-sm font-semibold text-be-navy disabled:opacity-50" disabled={!canPublish}>Save and publish</button>
         </div>
       </form>
+      )}
 
       {history.length > 0 && (
         <Card>

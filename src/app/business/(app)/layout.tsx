@@ -43,7 +43,7 @@ export default async function BusinessLayout({ children }: { children: React.Rea
             ) : (
               <p className="truncate font-bold text-be-navy">{ctx.business.name}</p>
             )}
-            <p className="text-xs text-be-grey">AnyVendor business</p>
+            <p className="text-xs text-be-grey">{ctx.mode === "live" && ctx.staff ? <Link href="/staff/businesses" className="underline">AnyVendor staff · switch business</Link> : "AnyVendor business"}</p>
           </div>
           <BusinessNav items={items} />
           <Link href="/business/account" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-be-mist text-be-navy hover:bg-gray-200" aria-label="Account, plan and billing">
@@ -57,7 +57,12 @@ export default async function BusinessLayout({ children }: { children: React.Rea
             <strong>Demo.</strong> A sample business showing the layout. Nothing here is saved, published or charged. <Link href="/business/demo?exit=1" prefetch={false} className="font-semibold underline">Leave the demo</Link>
           </Notice>
         )}
-        {access.notice && <Notice tone={access.notice.tone}>{access.notice.text} <Link href="/business/account" className="font-semibold underline">Billing</Link></Notice>}
+        {ctx.mode === "live" && ctx.actingAsStaff && (
+          <Notice tone="warning">
+            <strong>AnyVendor staff view.</strong> You’re working in <strong>{ctx.business.name}</strong>, which you don’t belong to. Every change is recorded. <Link href="/staff/businesses" className="font-semibold underline">Switch business</Link>
+          </Notice>
+        )}
+        {access.notice && <Notice tone={access.notice.tone}>{access.notice.text} {access.source !== "internal" && <Link href="/business/account" className="font-semibold underline">Billing</Link>}</Notice>}
         {children}
       </main>
       <BusinessTabBar items={items} />
