@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
-import { Balloon, Cake, Camera, CarProfile, Chair, Disc, FilmStrip, FlowerTulip, ForkKnife, Lightbulb, Martini, MaskHappy, MusicNotes, Tent, VideoCamera, type IconProps } from "@phosphor-icons/react/dist/ssr";
+import type { IconProps } from "@phosphor-icons/react";
+import { Balloon, Cake, Camera, CarProfile, Chair, Disc, FilmStrip, FlowerTulip, ForkKnife, Lightbulb, Martini, MaskHappy, MusicNotes, Tent, VideoCamera } from "@phosphor-icons/react/dist/ssr";
 
 /**
  * AnyVendor event icons: designed glyphs from the Phosphor icon library (MIT licence,
