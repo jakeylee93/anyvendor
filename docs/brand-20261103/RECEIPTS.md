@@ -29,3 +29,4 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 | — | M3 typographic monograms (Lexend Deca, rendered locally, no credits) | local | — | 0 | — | icons-sheet-12-type-monograms.png |
 | 14 | Black emblem icons, no background (GPT) | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | 6cf1KmiAXN85glmfwNyE | icons-sheet-13-emblems-gpt.png |
 | 15 | Black emblem icons, no background, VECTOR | Recraft V4.1 Pro | text2image, vector, quality, 4:3 | 170 quoted | 8fNRoiuSQ5uCLwBlNeBb | icons-sheet-14-emblems-recraft.svg (+ .png) |
+| 16 | Car + musical note monograms, four languages (single line, solid, geometric, negative space), black on white | GPT Image 2.5 Sunburst | text2image, 16:9, 2K, high | 150 quoted | cp658glOef0XJhqnpfEM | marks-sheet-01-car-note.png |
