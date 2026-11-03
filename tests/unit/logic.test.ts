@@ -1,23 +1,38 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import Stripe from "stripe";
-import { accessFor, PLANS } from "../../src/lib/business/plans.ts";
+import { PLANS, PLAN_TERMS_NOTE, accessFor } from "../../src/lib/business/plans.ts";
 import { canTransition, dueInfo } from "../../src/lib/business/requests.ts";
-import { planForPrice, snapshotFromSubscription, modeMatches } from "../../src/lib/business/stripe-logic.ts";
+import { PLAN_CODES, lookupKey, modeMatches, planForPrice, planFromLookupKey, snapshotFromSubscription } from "../../src/lib/business/stripe-logic.ts";
 import { encryptToken, decryptToken, signState, verifyState } from "../../src/lib/security/tokens.ts";
 
-const prices = { website: "price_w", seo: "price_s", social: "price_x" };
+const prices = { website: "price_w", marketing: "price_s", social: "price_x" };
 
-test("plans are £50, £75 and £100 and each includes the one below", () => {
-  assert.deepEqual(PLANS.map((p) => p.pricePence), [5000, 7500, 10000]);
-  for (let i = 1; i < PLANS.length; i++) for (const m of PLANS[i - 1].modules) assert.ok(PLANS[i].modules.includes(m));
+test("five tiers: £25, £50, £100, £150, £350 a month inc. VAT, each including the one below; annual is two months free", () => {
+  assert.deepEqual(PLANS.map((p) => [p.code, p.monthlyPence, p.annualPence]), [
+    ["listing", 2500, 25000],
+    ["website", 5000, 50000],
+    ["marketing", 10000, 100000],
+    ["social", 15000, 150000],
+    ["ai", 35000, 350000],
+  ]);
+  for (let i = 1; i < PLANS.length; i++) for (const m of PLANS[i - 1].modules) assert.ok(PLANS[i].modules.includes(m), `${PLANS[i].code} includes ${m}`);
+  assert.deepEqual(PLANS[0].modules, ["listing"]);
+  assert.ok(PLANS[1].modules.includes("website") && PLANS[1].modules.includes("requests"));
+  assert.ok(PLANS[4].modules.includes("agent"));
+  assert.ok(PLANS[1].adds.includes("Unlimited website updates"));
+  assert.deepEqual([...PLAN_CODES], PLANS.map((p) => p.code));
+  assert.equal(lookupKey("ai", "year"), "anyvendor_ai_annual");
+  assert.deepEqual(planFromLookupKey("anyvendor_marketing_monthly"), { plan: "marketing", interval: "month" });
+  assert.equal(planFromLookupKey("anyvendor_seo_monthly"), null);
+  assert.match(PLAN_TERMS_NOTE, /include VAT/);
+  assert.match(PLAN_TERMS_NOTE, /The Bar People Limited/);
 });
-
 test("access mirrors the database: past_due keeps access with a warning, canceled removes it", () => {
-  const row = (plan: "website" | "seo" | "social", status: string, updated = "2026-11-01") =>
+  const row = (plan: "website" | "marketing" | "social", status: string, updated = "2026-11-01") =>
     ({ plan, status, current_period_end: "2026-12-01T00:00:00Z", cancel_at_period_end: false, updated_at: updated });
   assert.deepEqual(accessFor([]).modules, []);
-  assert.deepEqual(accessFor([row("seo", "active")]).modules, ["listing", "website", "requests", "seo"]);
+  assert.deepEqual(accessFor([row("marketing", "active")]).modules, ["listing", "website", "requests", "seo"]);
   const pd = accessFor([row("website", "past_due")]);
   assert.equal(pd.plan, "website");
   assert.equal(pd.notice?.tone, "warning");
@@ -49,7 +64,7 @@ test("subscription snapshots read the price and period from the item", () => {
     1762000000,
     prices,
   );
-  assert.equal(snap.plan, "seo");
+  assert.equal(snap.plan, "marketing");
   assert.equal(snap.periodEnd, "2026-01-01T00:00:00.000Z");
   assert.equal(snap.cancelAtPeriodEnd, true);
   assert.equal(planForPrice("price_unknown", prices), null);

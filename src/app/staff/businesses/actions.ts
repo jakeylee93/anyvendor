@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { businessContext } from "@/lib/business/data";
 import { manifestProblems } from "@/lib/business/manifest";
+import { isPlanCode } from "@/lib/business/plans";
 
 const str = (f: FormData, k: string, max = 2000) => String(f.get(k) ?? "").trim().slice(0, max);
 
@@ -67,7 +68,7 @@ export async function grantInternalPlan(form: FormData) {
   const expires = str(form, "expires", 20);
   const { error } = await ctx.sb.rpc("grant_internal_plan", {
     p_business: id,
-    p_plan: ["website", "seo", "social"].includes(plan) ? plan : null,
+    p_plan: isPlanCode(plan) ? plan : null,
     p_label: str(form, "label", 120) || "Internal test plan",
     p_expires: expires ? new Date(`${expires}T23:59:59Z`).toISOString() : null,
   });

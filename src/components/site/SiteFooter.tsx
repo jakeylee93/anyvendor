@@ -10,7 +10,7 @@ export function SupplierCta() {
           <p className="font-caveat text-2xl text-be-cyan">Grow with us</p>
           <h2 className="mt-1 text-3xl font-semibold md:text-4xl">Are You An Event Supplier?</h2>
           <p className="mt-3 max-w-xl text-white/75">
-            Get your business in front of people planning their next event. Listing is free while we onboard.
+            Get your business in front of people planning their next event. Listings from £25 a month, websites from £50, all including VAT.
           </p>
         </div>
         <ListButton className="px-7 py-3.5" />

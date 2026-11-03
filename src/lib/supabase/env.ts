@@ -17,7 +17,7 @@ export function appUrl(fallbackOrigin?: string) {
 
 export const SETUP_ITEMS: { name: string; env: string[]; purpose: string }[] = [
   { name: "AnyVendor Supabase project", env: ["NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_ANON_KEY", "SUPABASE_SERVICE_ROLE_KEY"], purpose: "Accounts, businesses, requests, storage" },
-  { name: "Stripe (test mode)", env: ["STRIPE_SECRET_KEY", "STRIPE_WEBHOOK_SECRET", "STRIPE_PRICE_WEBSITE", "STRIPE_PRICE_SEO", "STRIPE_PRICE_SOCIAL"], purpose: "£50 / £75 / £100 subscriptions and the billing portal" },
+  { name: "Stripe (test mode)", env: ["STRIPE_SECRET_KEY", "STRIPE_WEBHOOK_SECRET"], purpose: "The five plans (£25 to £350 a month, inclusive of VAT) and the billing portal; prices are found by lookup key" },
   { name: "Security keys", env: ["TOKEN_ENCRYPTION_KEY", "OAUTH_STATE_SECRET", "CRON_SECRET", "APP_URL"], purpose: "Encrypting provider tokens, signing OAuth state, protecting the scheduler" },
   { name: "LinkedIn app", env: ["LINKEDIN_CLIENT_ID", "LINKEDIN_CLIENT_SECRET"], purpose: "Businesses connect their own LinkedIn" },
   { name: "Instagram app", env: ["INSTAGRAM_APP_ID", "INSTAGRAM_APP_SECRET"], purpose: "Businesses connect their own Instagram professional account" },

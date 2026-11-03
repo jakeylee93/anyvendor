@@ -11,6 +11,7 @@ const MAIN = [
   { href: "/people", label: "People" },
   { href: "/venues", label: "Venues" },
   { href: "/how-it-works", label: "How it works" },
+  { href: "/pricing", label: "Pricing" },
 ];
 
 export function Logo({ className = "" }: { className?: string }) {

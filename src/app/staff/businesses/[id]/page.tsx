@@ -4,6 +4,7 @@ import { Card, Notice, inputCls, submitCls } from "@/components/business/ui";
 import { businessContext } from "@/lib/business/data";
 import { BUSINESSES } from "@/lib/directory";
 import { STARTER_MANIFEST } from "@/lib/business/manifest";
+import { PLANS, gbp } from "@/lib/business/plans";
 import { selectBusiness } from "@/app/business/actions";
 import { addPendingAccess, grantInternalPlan, linkListing, revokePendingAccess, rotatePreviewToken, setManifest, setSiteKind } from "../actions";
 
@@ -78,7 +79,7 @@ export default async function StaffBusiness({ params, searchParams }: { params: 
           <p className="mt-1 text-sm text-be-grey">{ent ? `${ent.plan} · ${ent.label}${ent.expires_at ? ` · until ${stamp(ent.expires_at)}` : ""}. Shown to the business as an internal test plan, never as a paid subscription.` : "None. Paid access comes only from Stripe."}</p>
           <form action={grantInternalPlan} className="mt-3 grid gap-2 sm:grid-cols-[1fr_2fr_1fr_auto]">
             <input type="hidden" name="business" value={b.id} />
-            <select name="plan" defaultValue={ent?.plan ?? "social"} className={inputCls}><option value="">Remove</option><option value="website">Website £50</option><option value="seo">+SEO £75</option><option value="social">+Social £100</option></select>
+            <select name="plan" defaultValue={ent?.plan ?? "social"} className={inputCls}><option value="">Remove</option>{PLANS.map((p) => <option key={p.code} value={p.code}>{p.name} ({gbp(p.monthlyPence)})</option>)}</select>
             <input name="label" defaultValue={ent?.label ?? "Internal test plan"} className={inputCls} />
             <input name="expires" type="date" className={inputCls} />
             <button className={submitCls}>Set</button>

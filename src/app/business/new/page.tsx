@@ -22,6 +22,8 @@ export default async function NewBusinessPage({ searchParams }: { searchParams: 
           <p className="mt-1 text-sm text-be-grey">You’ll be the owner. You can add teammates later.</p>
           <div className="mt-3"><ActionFeedback sp={sp} /></div>
           <form action={createBusiness} className="mt-4 space-y-4">
+            {v("plan") && <input type="hidden" name="plan" value={v("plan")} />}
+            {v("interval") && <input type="hidden" name="interval" value={v("interval")} />}
             <label className="block">
               <span className="text-sm font-semibold text-be-navy">Business name</span>
               <input name="name" required minLength={2} maxLength={120} defaultValue={v("name")} className={`${inputCls} mt-1`} />

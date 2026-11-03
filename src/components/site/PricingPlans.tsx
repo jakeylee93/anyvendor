@@ -1,97 +1,62 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Check } from "lucide-react";
+import { ANNUAL_PROPOSAL_NOTE, PLANS, PLAN_TERMS_NOTE, gbp, monthlyEquivalent, type Interval, type PlanCode } from "@/lib/business/plans";
 
-const LISTING = [
-  "Premium profile page with video showreel",
-  "Collectible directory card with your logo",
-  "Photo gallery, services, FAQs and events",
-  "Found by smart search across the UK",
-  "Receive enquiries from event planners",
-];
+const CTA: Partial<Record<PlanCode, string>> = { listing: "Start listing", website: "Get a website" };
 
-const WEBSITE = [
-  "Everything in Listing",
-  "A professionally designed website for your business",
-  "Unlimited updates, whenever you need them",
-  "Hosting included",
-  "Full access to the Anyvendor directory",
-];
+/** Links a plan choice into onboarding with the plan and interval carried through sign-in. */
+export function planHref(plan: PlanCode, interval: Interval) {
+  return `/business/start?plan=${plan}&interval=${interval}`;
+}
 
-export default function PricingPlans() {
-  const [yearly, setYearly] = useState(false);
+export default function PricingPlans({ compact = false }: { compact?: boolean }) {
+  const [interval, setInterval] = useState<Interval>("month");
+  const yearly = interval === "year";
 
   return (
     <div>
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center gap-2">
         <div role="radiogroup" aria-label="Billing period" className="inline-flex items-center gap-1 rounded-full bg-white p-1 shadow-sm ring-1 ring-gray-200">
-          {[
-            { v: false, label: "Monthly" },
-            { v: true, label: "Yearly" },
-          ].map((o) => (
-            <button
-              key={o.label}
-              type="button"
-              role="radio"
-              aria-checked={yearly === o.v}
-              onClick={() => setYearly(o.v)}
-              className={`rounded-full px-5 py-2 text-sm font-semibold transition-colors ${yearly === o.v ? "bg-be-navy text-white" : "text-be-navy hover:bg-be-mist"}`}
-            >
-              {o.label}
+          {([["month", "Monthly"], ["year", "Annual · 2 months free"]] as const).map(([v, label]) => (
+            <button key={v} type="button" role="radio" aria-checked={interval === v} onClick={() => setInterval(v)} className={`rounded-full px-5 py-2 text-sm font-semibold transition-colors ${interval === v ? "bg-be-navy text-white" : "text-be-navy hover:bg-be-mist"}`}>
+              {label}
             </button>
           ))}
-          <span className="ml-1 mr-2 rounded-full bg-be-amber/90 px-2.5 py-1 text-[11px] font-bold text-be-navy">Listing: save £20 a year</span>
         </div>
+        {yearly && <p className="text-xs font-semibold text-be-grey">{ANNUAL_PROPOSAL_NOTE}</p>}
       </div>
 
-      <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-2">
-        <article className="flex flex-col rounded-3xl bg-white p-7 shadow-sm ring-1 ring-gray-200">
-          <h2 className="text-xl font-bold text-be-navy">Listing</h2>
-          <p className="mt-1 text-sm text-be-grey">Get discovered and start receiving enquiries.</p>
-          <p className="mt-6 flex items-baseline gap-1.5">
-            <span className="text-5xl font-bold tracking-tight text-be-navy">{yearly ? "£100" : "£10"}</span>
-            <span className="text-be-grey">{yearly ? "/ year" : "/ month"}</span>
-          </p>
-          <p className="mt-1 text-xs text-be-grey">{yearly ? "Equivalent to £8.33 a month" : "or £100 a year"}</p>
-          <ul className="mt-6 space-y-3 text-[15px] text-gray-700">
-            {LISTING.map((f) => (
-              <li key={f} className="flex gap-2.5">
-                <Check size={18} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />
-                {f}
-              </li>
-            ))}
-          </ul>
-          <button type="button" disabled className="mt-8 rounded-full border-2 border-be-navy px-6 py-3 font-semibold text-be-navy disabled:cursor-not-allowed disabled:opacity-60">
-            Start listing
-          </button>
-        </article>
-
-        <article className="relative flex flex-col rounded-3xl bg-be-navy p-7 text-white shadow-xl ring-2 ring-be-cyan">
-          <span className="absolute -top-3 left-7 rounded-full bg-be-cyan px-3 py-1 text-xs font-bold text-be-navy">Most popular</span>
-          <h2 className="text-xl font-bold">Website+</h2>
-          <p className="mt-1 text-sm text-white/70">Your listing plus a website we design and look after.</p>
-          <p className="mt-6 flex items-baseline gap-1.5">
-            <span className="text-5xl font-bold tracking-tight">£50</span>
-            <span className="text-white/70">/ month</span>
-          </p>
-          <p className="mt-1 text-xs text-white/60">{yearly ? "Billed monthly" : "Includes your directory listing"}</p>
-          <ul className="mt-6 space-y-3 text-[15px] text-white/85">
-            {WEBSITE.map((f) => (
-              <li key={f} className="flex gap-2.5">
-                <Check size={18} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />
-                {f}
-              </li>
-            ))}
-          </ul>
-          <button type="button" disabled className="mt-8 rounded-full bg-be-amber px-6 py-3 font-semibold text-be-navy disabled:cursor-not-allowed disabled:opacity-70">
-            Get Website+
-          </button>
-        </article>
+      <div className={`mx-auto mt-10 grid gap-5 ${compact ? "max-w-5xl md:grid-cols-2" : "max-w-7xl md:grid-cols-2 xl:grid-cols-5"}`}>
+        {(compact ? PLANS.slice(0, 2) : PLANS).map((p) => {
+          const dark = p.popular;
+          return (
+            <article key={p.code} className={`relative flex flex-col rounded-3xl p-6 ${dark ? "bg-be-navy text-white shadow-xl ring-2 ring-be-cyan" : "bg-white text-be-navy shadow-sm ring-1 ring-gray-200"}`}>
+              {p.popular && <span className="absolute -top-3 left-6 rounded-full bg-be-cyan px-3 py-1 text-xs font-bold text-be-navy">Most popular</span>}
+              <h3 className="text-lg font-bold">{p.name}</h3>
+              <p className={`mt-1 text-sm ${dark ? "text-white/70" : "text-be-grey"}`}>{p.summary}</p>
+              <p className="mt-5 flex items-baseline gap-1.5">
+                <span className="text-4xl font-bold tracking-tight">{yearly ? gbp(p.annualPence) : gbp(p.monthlyPence)}</span>
+                <span className={dark ? "text-white/70" : "text-be-grey"}>{yearly ? "/ year" : "/ month"}</span>
+              </p>
+              <p className={`mt-1 text-xs ${dark ? "text-white/60" : "text-be-grey"}`}>{yearly ? `Equivalent to ${monthlyEquivalent(p)} a month, proposed` : `or ${gbp(p.annualPence)} a year (proposed)`}</p>
+              <ul className={`mt-5 space-y-2.5 text-sm ${dark ? "text-white/85" : "text-gray-700"}`}>
+                {p.adds.map((f) => (
+                  <li key={f} className="flex gap-2.5"><Check size={17} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />{f}</li>
+                ))}
+              </ul>
+              {p.notes?.map((n) => <p key={n} className={`mt-3 text-xs ${dark ? "text-white/60" : "text-be-grey"}`}>{n}</p>)}
+              <Link href={planHref(p.code, interval)} className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold ${dark ? "bg-be-amber text-be-navy" : p.code === "listing" ? "bg-be-cyan text-be-navy" : "border-2 border-be-navy text-be-navy hover:bg-be-mist"}`}>
+                {CTA[p.code] ?? "Choose plan"}
+              </Link>
+            </article>
+          );
+        })}
       </div>
-      <p className="mt-6 text-center text-sm text-be-grey">
-        Sign-ups and payments are not open yet in this testing preview. More tiers, including featured placement, are on the way.
-      </p>
+      <p className="mt-6 text-center text-sm text-be-grey">{PLAN_TERMS_NOTE}</p>
+      {compact && <p className="mt-2 text-center text-sm"><Link href="/pricing" className="font-semibold text-be-navy underline decoration-be-cyan decoration-2 underline-offset-4">See all five plans, including Marketing Plus, Social Media Plus and AI Plus</Link></p>}
     </div>
   );
 }

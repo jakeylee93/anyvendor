@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { handleStripeEvent, type MinimalEvent, type SubscriptionSnapshot } from "../../src/lib/business/stripe-logic.ts";
 
-const prices = { website: "price_w", seo: "price_s", social: "price_x" };
+const prices = { website: "price_w", marketing: "price_s", social: "price_x" };
 const sub = (status: string, price = "price_s") => ({
   id: "sub_1", customer: "cus_1", status, cancel_at_period_end: false, canceled_at: null, livemode: false,
   items: { data: [{ price: { id: price }, current_period_end: 1767225600 }] },
@@ -28,7 +28,7 @@ test("checkout completion re-reads the subscription from Stripe; the success URL
   const r = await handleStripeEvent(ev("checkout.session.completed", { mode: "subscription", subscription: "sub_1" }), d);
   assert.equal(r.status, "processed");
   assert.equal(applied[0].business, "biz_1");
-  assert.equal(applied[0].snap.plan, "seo");
+  assert.equal(applied[0].snap.plan, "marketing");
   assert.equal(applied[0].snap.status, "active");
 });
 
@@ -71,9 +71,9 @@ test("plans are also recognised by AnyVendor lookup keys, so prices created in t
   assert.equal(planForPrice("price_new", {}, "anyvendor_social_monthly"), "social");
   assert.equal(planForPrice("price_new", {}, "someone_else"), null);
   const snap = snapshotFromSubscription(
-    { id: "s", customer: "c", status: "active", cancel_at_period_end: false, canceled_at: null, livemode: false, items: { data: [{ price: { id: "price_new", lookup_key: "anyvendor_seo_monthly" } }] } },
+    { id: "s", customer: "c", status: "active", cancel_at_period_end: false, canceled_at: null, livemode: false, items: { data: [{ price: { id: "price_new", lookup_key: "anyvendor_marketing_monthly" } }] } },
     1762000000,
     {},
   );
-  assert.equal(snap.plan, "seo");
+  assert.equal(snap.plan, "marketing");
 });

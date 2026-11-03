@@ -20,7 +20,7 @@ export default function ListMyBusinessPage() {
             A premium profile with your showreel, photos and collectible directory card, in front of people planning weddings, parties and corporate events.
           </p>
           <div className="mt-10">
-            <PricingPlans />
+            <PricingPlans compact />
           </div>
         </div>
       </section>

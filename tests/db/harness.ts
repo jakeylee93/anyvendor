@@ -77,7 +77,7 @@ export const U = {
 };
 
 /** Gives a business a subscription the way the Stripe webhook does (service role). */
-export async function subscribe(db: Db, business: string, plan: "website" | "seo" | "social", status = "active", at = new Date()) {
+export async function subscribe(db: Db, business: string, plan: "listing" | "website" | "marketing" | "social" | "ai", status = "active", at = new Date()) {
   return as(db, "service", () =>
     one<{ r: string }>(
       db,

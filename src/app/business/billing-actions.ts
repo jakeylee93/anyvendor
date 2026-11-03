@@ -6,7 +6,7 @@ import { businessContext } from "@/lib/business/data";
 import { anyvendorVatRate, resolvePrice, stripeClient } from "@/lib/business/stripe";
 import { supabaseService } from "@/lib/supabase/server";
 import { appUrl } from "@/lib/supabase/env";
-import type { PlanCode } from "@/lib/business/plans";
+import { isInterval, isPlanCode } from "@/lib/business/plans";
 
 async function ownerContext() {
   const ctx = await businessContext();
@@ -35,10 +35,12 @@ async function customerFor(ctx: Awaited<ReturnType<typeof ownerContext>>) {
 
 export async function startCheckout(form: FormData) {
   const ctx = await ownerContext();
-  const plan = String(form.get("plan")) as PlanCode;
+  const plan = form.get("plan");
+  const interval = form.get("interval") ?? "month";
+  if (!isPlanCode(plan) || !isInterval(interval)) redirect("/business/account?error=plan_invalid");
   const stripe = stripeClient();
-  if (!stripe || !["website", "seo", "social"].includes(plan)) redirect("/business/account?error=billing_not_configured");
-  const [price, vat] = await Promise.all([resolvePrice(stripe, plan), anyvendorVatRate(stripe)]);
+  if (!stripe) redirect("/business/account?error=billing_not_configured");
+  const [price, vat] = await Promise.all([resolvePrice(stripe, plan, interval), anyvendorVatRate(stripe)]);
   if (!price) redirect("/business/account?error=billing_not_configured");
   // One subscription per business: changes to an existing plan go through the billing portal.
   const { data: subs } = await ctx.sb.from("subscriptions").select("status").eq("business_id", ctx.business.id).in("status", ["active", "trialing", "past_due", "incomplete"]);
@@ -53,12 +55,12 @@ export async function startCheckout(form: FormData) {
       customer,
       client_reference_id: ctx.business.id,
       line_items: [{ price, quantity: 1 }],
-      metadata: { business_id: ctx.business.id, plan },
-      subscription_data: { metadata: { business_id: ctx.business.id, plan }, ...(vat ? { default_tax_rates: [vat] } : {}) },
+      metadata: { business_id: ctx.business.id, plan, interval },
+      subscription_data: { metadata: { business_id: ctx.business.id, plan, interval }, ...(vat ? { default_tax_rates: [vat] } : {}) },
       success_url: `${origin}/business/account?checkout=returned`,
       cancel_url: `${origin}/business/account?checkout=cancelled`,
     },
-    { idempotencyKey: `av-checkout-${ctx.business.id}-${plan}-${minute}` },
+    { idempotencyKey: `av-checkout-${ctx.business.id}-${plan}-${interval}-${minute}` },
   );
   if (!session.url) redirect("/business/account?error=checkout_failed");
   redirect(session.url);

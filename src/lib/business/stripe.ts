@@ -1,6 +1,6 @@
 import Stripe from "stripe";
-import type { PlanCode } from "./plans";
-import { LOOKUP_KEYS, priceIdsFromEnv } from "./stripe-logic";
+import type { Interval, PlanCode } from "./plans";
+import { lookupKey, priceIdsFromEnv } from "./stripe-logic";
 
 export function stripeKey() {
   return process.env.STRIPE_SECRET_KEY ?? null;
@@ -16,11 +16,11 @@ export function billingReady() {
 }
 
 
-/** Price for a plan: an explicit STRIPE_PRICE_* id wins, otherwise the AnyVendor lookup key. */
-export async function resolvePrice(stripe: Stripe, plan: PlanCode) {
-  const fixed = priceIdsFromEnv(process.env)[plan];
+/** Price for a plan and interval: a fixed STRIPE_PRICE_* id wins for monthly, otherwise the AnyVendor lookup key. */
+export async function resolvePrice(stripe: Stripe, plan: PlanCode, interval: Interval = "month") {
+  const fixed = interval === "month" ? priceIdsFromEnv(process.env)[plan] : undefined;
   if (fixed) return fixed;
-  const found = await stripe.prices.list({ lookup_keys: [LOOKUP_KEYS[plan]], active: true, limit: 1 });
+  const found = await stripe.prices.list({ lookup_keys: [lookupKey(plan, interval)], active: true, limit: 1 });
   return found.data[0]?.id ?? null;
 }
 

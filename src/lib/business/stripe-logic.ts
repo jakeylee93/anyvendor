@@ -1,23 +1,42 @@
 // Pure Stripe mapping used by the webhook. No network calls here.
-import type { PlanCode } from "./plans";
+import type { Interval, PlanCode } from "./plans";
 
-export interface PriceIds {
-  website?: string;
-  seo?: string;
-  social?: string;
-}
+// Kept as a literal so this module stays import-free at runtime (the webhook tests load it directly).
+// tests/unit/logic.test.ts asserts it matches PLANS in plans.ts.
+export const PLAN_CODES: readonly PlanCode[] = ["listing", "website", "marketing", "social", "ai"];
+const isPlanCode = (v: unknown): v is PlanCode => typeof v === "string" && (PLAN_CODES as readonly string[]).includes(v);
+
+/** Optional fixed Stripe price ids per plan (monthly), from STRIPE_PRICE_<PLAN> env vars. Lookup keys are the normal route. */
+export type PriceIds = Partial<Record<PlanCode, string>>;
 
 export function priceIdsFromEnv(env: Record<string, string | undefined>): PriceIds {
-  return { website: env.STRIPE_PRICE_WEBSITE, seo: env.STRIPE_PRICE_SEO, social: env.STRIPE_PRICE_SOCIAL };
+  const out: PriceIds = {};
+  for (const code of PLAN_CODES) {
+    const v = env[`STRIPE_PRICE_${code.toUpperCase()}`];
+    if (v) out[code] = v;
+  }
+  return out;
 }
 
-/** Stripe lookup keys for the three AnyVendor prices (VAT-inclusive, GBP, monthly). */
-export const LOOKUP_KEYS: Record<PlanCode, string> = { website: "anyvendor_website_monthly", seo: "anyvendor_seo_monthly", social: "anyvendor_social_monthly" };
+/** Stripe lookup key for a plan and billing interval (VAT-inclusive, GBP). Annual prices are a proposal until approved. */
+export function lookupKey(plan: PlanCode, interval: Interval = "month") {
+  return `anyvendor_${plan}_${interval === "year" ? "annual" : "monthly"}`;
+}
+
+/** Monthly lookup keys, kept for callers that only know the plan. */
+export const LOOKUP_KEYS: Record<PlanCode, string> = Object.fromEntries(PLAN_CODES.map((c) => [c, lookupKey(c)])) as Record<PlanCode, string>;
+
+const KEY_RE = /^anyvendor_([a-z]+)_(monthly|annual)$/;
+
+export function planFromLookupKey(lookupKey: string | null | undefined): { plan: PlanCode; interval: Interval } | null {
+  const m = lookupKey ? KEY_RE.exec(lookupKey) : null;
+  if (!m || !isPlanCode(m[1])) return null;
+  return { plan: m[1], interval: m[2] === "annual" ? "year" : "month" };
+}
 
 export function planForPrice(priceId: string | null | undefined, prices: PriceIds, lookupKey?: string | null): PlanCode | null {
-  if (priceId) for (const code of ["website", "seo", "social"] as const) if (prices[code] && prices[code] === priceId) return code;
-  if (lookupKey) for (const code of ["website", "seo", "social"] as const) if (LOOKUP_KEYS[code] === lookupKey) return code;
-  return null;
+  if (priceId) for (const code of PLAN_CODES) if (prices[code] && prices[code] === priceId) return code;
+  return planFromLookupKey(lookupKey)?.plan ?? null;
 }
 
 export function priceForPlan(plan: PlanCode, prices: PriceIds): string | null {

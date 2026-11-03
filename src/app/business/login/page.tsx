@@ -25,6 +25,7 @@ export default async function LoginPage({ searchParams }: { searchParams: SP }) 
             {sp.sent && <Notice tone="success">Check your email for the sign-in link.</Notice>}
           </div>
           <form action={signIn} className="mt-4 space-y-3">
+            {typeof sp.next === "string" && sp.next.startsWith("/") && <input type="hidden" name="next" value={sp.next} />}
             <label className="block">
               <span className="text-sm font-semibold text-be-navy">Email</span>
               <input name="email" type="email" required autoComplete="email" className={`${inputCls} mt-1`} disabled={!ready} />

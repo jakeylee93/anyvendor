@@ -83,7 +83,7 @@ export async function requireBusiness() {
 }
 
 export async function loadAccess(ctx: BusinessContext): Promise<Access> {
-  if (ctx.mode === "demo") return { plan: "social", status: "demo", source: null, modules: ["listing", "website", "requests", "seo", "social"], notice: null };
+  if (ctx.mode === "demo") return { plan: "ai", status: "demo", source: null, modules: ["listing", "website", "requests", "seo", "social", "agent"], notice: null };
   if (!ctx.business) return accessFor([]);
   const [{ data }, { data: internal }] = await Promise.all([
     ctx.sb.from("subscriptions").select("plan, status, current_period_end, cancel_at_period_end, updated_at").eq("business_id", ctx.business.id),

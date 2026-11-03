@@ -85,7 +85,7 @@ test("an internal test plan unlocks modules but is not a subscription", async ()
   assert.match(seen.label, /Internal test plan/);
   await as(db, U.staff, () => db.query("select public.grant_internal_plan($1, 'website', 'expired', now() - interval '1 day')", [A]));
   assert.equal(await mod("website"), false);
-  await subscribe(db, A, "seo");
+  await subscribe(db, A, "marketing");
   assert.equal(await mod("seo"), true);
 });
 

@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { ActionFeedback, Card, CardTitle, Notice, submitCls } from "@/components/business/ui";
 import { loadAccess, requireBusiness } from "@/lib/business/data";
-import { PLANS, PLAN_TERMS_NOTE, planByCode } from "@/lib/business/plans";
+import { ANNUAL_PROPOSAL_NOTE, PLANS, PLAN_TERMS_NOTE, gbp, isInterval, isPlanCode, planByCode, priceLabel } from "@/lib/business/plans";
 import { billingReady } from "@/lib/business/stripe";
 import { signOut } from "../../actions";
 import { openPortal, startCheckout } from "../../billing-actions";
@@ -10,6 +10,8 @@ type SP = Promise<Record<string, string | string[] | undefined>>;
 
 export default async function AccountPage({ searchParams }: { searchParams: SP }) {
   const sp = await searchParams;
+  const chosen = isPlanCode(sp.plan) ? planByCode(sp.plan) : undefined;
+  const interval = isInterval(sp.interval) ? sp.interval : "month";
   const ctx = await requireBusiness();
   const access = await loadAccess(ctx);
   const ready = billingReady();
@@ -39,7 +41,7 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
       <Card>
         <CardTitle>Your plan</CardTitle>
         <p className="mt-2 text-be-navy">
-          {ctx.mode === "demo" ? "Demo (all features shown)" : access.source === "internal" ? `${current?.name} (internal test plan, not a paid subscription)` : current ? `${current.name}, ${current.priceLabel} a month inc. VAT` : "No plan yet"}
+          {ctx.mode === "demo" ? "Demo (all features shown)" : access.source === "internal" ? `${current?.name} (internal test plan, not a paid subscription)` : current ? `${current.name}, ${priceLabel(current)} inc. VAT` : "No plan yet"}
           {access.status && ctx.mode === "live" && <span className="ml-2 rounded-full bg-be-mist px-2 py-0.5 text-xs text-be-grey">{access.status.replace("_", " ")}</span>}
         </p>
         {periodEnd && <p className="mt-1 text-sm text-be-grey">Current period ends {new Date(periodEnd).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.</p>}
@@ -52,23 +54,32 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
         {ctx.mode === "live" && !isOwner && <p className="mt-3 text-sm text-be-grey">Only the business owner can change the plan.</p>}
       </Card>
 
-      <div className="grid gap-4 md:grid-cols-3">
+      {chosen && (
+        <Notice tone={ready ? "info" : "warning"}>
+          You chose <strong>{chosen.name}</strong>, {priceLabel(chosen, interval)} inc. VAT{interval === "year" ? " (annual pricing is proposed and not yet on sale)" : ""}.{" "}
+          {ready ? "Confirm below to go to secure checkout." : "Payments aren’t connected in this preview yet, so nothing can be charged. Your choice is noted here."}
+        </Notice>
+      )}
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {PLANS.map((p) => {
           const isCurrent = access.plan === p.code;
+          const isChosen = chosen?.code === p.code;
           return (
-            <Card key={p.code} className={isCurrent ? "ring-2 ring-be-cyan" : ""}>
-              <p className="text-sm font-semibold text-be-grey">{p.name}</p>
-              <p className="mt-1 text-3xl font-bold text-be-navy">{p.priceLabel}<span className="text-base font-medium text-be-grey"> a month inc. VAT</span></p>
+            <Card key={p.code} className={isCurrent || isChosen ? "ring-2 ring-be-cyan" : ""}>
+              <p className="text-sm font-semibold text-be-grey">{p.name}{p.popular ? " · most popular" : ""}</p>
+              <p className="mt-1 text-3xl font-bold text-be-navy">{interval === "year" ? gbp(p.annualPence) : gbp(p.monthlyPence)}<span className="text-base font-medium text-be-grey"> {interval === "year" ? "a year" : "a month"} inc. VAT</span></p>
               <p className="mt-2 text-sm text-be-grey">{p.summary}</p>
               <ul className="mt-3 space-y-1.5 text-sm text-be-navy">
-                {p.features.map((f) => (
+                {p.adds.map((f) => (
                   <li key={f} className="flex gap-2"><Check size={16} className="mt-0.5 shrink-0 text-be-cyan" aria-hidden />{f}</li>
                 ))}
               </ul>
+              {p.notes?.map((n) => <p key={n} className="mt-2 text-xs text-be-grey">{n}</p>)}
               {ctx.mode === "live" && isOwner && access.source !== "subscription" && (
                 <form action={startCheckout} className="mt-4">
                   <input type="hidden" name="plan" value={p.code} />
-                  <button className={`${submitCls} w-full`} disabled={!ready}>Choose {p.name}</button>
+                  <input type="hidden" name="interval" value={interval} />
+                  <button className={`${submitCls} w-full`} disabled={!ready} title={ready ? undefined : "Billing isn’t connected in this preview"}>{isChosen ? `Confirm ${p.name}` : `Choose ${p.name}`}</button>
                 </form>
               )}
               {isCurrent && <p className="mt-4 text-sm font-semibold text-be-navy">Your current plan</p>}
@@ -76,7 +87,8 @@ export default async function AccountPage({ searchParams }: { searchParams: SP }
           );
         })}
       </div>
-      <p className="text-xs text-be-grey">{PLAN_TERMS_NOTE} Unlimited requests include new features; larger features are scoped with you before work starts.</p>
+      {interval === "year" && <p className="text-xs text-be-grey">{ANNUAL_PROPOSAL_NOTE}</p>}
+      <p className="text-xs text-be-grey">{PLAN_TERMS_NOTE} Website updates are unlimited requests; larger new features are scoped with you before work starts.</p>
 
       <Card>
         <CardTitle>Business</CardTitle>

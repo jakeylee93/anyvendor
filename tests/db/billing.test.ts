@@ -23,7 +23,7 @@ test("£50 website plan, £75 adds SEO, £100 adds social", async () => {
   const { db, A } = await setup();
   await subscribe(db, A, "website", "active", new Date("2026-11-01T10:00:00Z"));
   assert.deepEqual([await mod(db, A, "requests"), await mod(db, A, "seo"), await mod(db, A, "social")], [true, false, false]);
-  await subscribe(db, A, "seo", "active", new Date("2026-11-01T11:00:00Z"));
+  await subscribe(db, A, "marketing", "active", new Date("2026-11-01T11:00:00Z"));
   assert.deepEqual([await mod(db, A, "seo"), await mod(db, A, "social")], [true, false]);
   await subscribe(db, A, "social", "active", new Date("2026-11-01T12:00:00Z"));
   assert.equal(await mod(db, A, "social"), true);

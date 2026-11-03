@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { freshDb, addUser, as, one, rows, rejects, subscribe, U } from "./harness.ts";
 
-async function setup(plan: "website" | "seo" | "social" | null = "social") {
+async function setup(plan: "listing" | "website" | "marketing" | "social" | "ai" | null = "social") {
   const db = await freshDb();
   for (const id of [U.alice, U.bob]) await addUser(db, id);
   const A = (await as(db, U.alice, () => one<{ id: string }>(db, "select public.create_business('Alice Bars', 'alice-bars') as id"))).id;
@@ -44,7 +44,7 @@ test("restoring a revision becomes a new draft version and keeps history", async
 });
 
 test("social scheduling needs the £100 plan, a future time and the business's own connected account", async () => {
-  const { db, A, B, conn } = await setup("seo");
+  const { db, A, B, conn } = await setup("marketing");
   const mine = await conn(A);
   const theirs = await conn(B);
   const schedule = (conns: string[], when: string) =>
@@ -139,7 +139,7 @@ test("disconnecting an account cancels its scheduled posts and deletes its token
 });
 
 test("a member can choose only a Search Console property the connected Google account actually has", async () => {
-  const { db, A, B } = await setup("seo");
+  const { db, A, B } = await setup("marketing");
   const c = await one<{ id: string }>(
     db,
     `insert into public.provider_connections (business_id, provider, external_account_id, settings)

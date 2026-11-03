@@ -1,66 +1,108 @@
-// Plans and entitlements. The database (public.has_module) is the authority; this
-// mirrors it for display only. Prices are preview copy pending Jake's final terms.
+// Five-tier plans: the single source of truth for names, prices, modules and copy.
+// The database (public.has_module) is the authority for access; this mirrors it.
+// Monthly prices were confirmed by Jake on 3 Nov 2026. Annual prices are a PROPOSAL
+// (two months free, pay for ten) and must not be sold until he approves them.
 
-export type PlanCode = "website" | "seo" | "social";
-export type Module = "listing" | "website" | "requests" | "seo" | "social";
+export type PlanCode = "listing" | "website" | "marketing" | "social" | "ai";
+export type Module = "listing" | "website" | "requests" | "seo" | "social" | "agent";
+export type Interval = "month" | "year";
 
 export interface Plan {
   code: PlanCode;
   name: string;
-  pricePence: number;
-  priceLabel: string;
+  /** Monthly price in pence, inclusive of VAT. */
+  monthlyPence: number;
+  /** Proposed annual price in pence, inclusive of VAT (two months free). */
+  annualPence: number;
   modules: Module[];
   summary: string;
-  features: string[];
+  /** What this tier adds over the one below it. The first tier lists what it includes. */
+  adds: string[];
+  /** Honest limits shown under the features. */
+  notes?: string[];
+  popular?: boolean;
 }
 
 export const PLANS: Plan[] = [
   {
-    code: "website",
-    name: "Website",
-    pricePence: 5000,
-    priceLabel: "£50",
-    modules: ["listing", "website", "requests"],
-    summary: "Your directory listing and your own website, looked after for you.",
-    features: [
-      "Directory listing on AnyVendor",
-      "Your website included, with hosting",
-      "Unlimited update requests, including new features",
-      "We aim to deliver each request within 24 hours",
-    ],
+    code: "listing",
+    name: "Listing",
+    monthlyPence: 2500,
+    annualPence: 25000,
+    modules: ["listing"],
+    summary: "Your business profile in the AnyVendor directory, managed by you.",
+    adds: ["Your directory profile and listing", "Enquiries from people planning events", "Edit your profile, photos and services in your dashboard"],
+    notes: ["No website is included on this plan."],
   },
   {
-    code: "seo",
-    name: "Website + SEO",
-    pricePence: 7500,
-    priceLabel: "£75",
+    code: "website",
+    name: "Website Plus",
+    monthlyPence: 5000,
+    annualPence: 50000,
+    modules: ["listing", "website", "requests"],
+    summary: "Everything in Listing, plus a bespoke website we design and host.",
+    adds: ["Everything in Listing", "A professionally designed bespoke website", "Hosting included", "Unlimited website updates"],
+    notes: ["Updates are unlimited requests. We aim to complete normal edits within 24 hours. Larger new features are scoped and scheduled with you first."],
+    popular: true,
+  },
+  {
+    code: "marketing",
+    name: "Marketing Plus",
+    monthlyPence: 10000,
+    annualPence: 100000,
     modules: ["listing", "website", "requests", "seo"],
-    summary: "Everything in Website, plus search engine optimisation.",
-    features: ["Everything in Website", "SEO for your site", "Your Google search performance in your dashboard"],
+    summary: "Everything in Website Plus, plus search optimisation and clear reporting.",
+    adds: ["Everything in Website Plus", "SEO workflows for your site: titles, descriptions, structured data and content checks", "Your Google Search Console performance in your dashboard"],
+    notes: ["We optimise your site. Rankings depend on Google and are not guaranteed."],
   },
   {
     code: "social",
-    name: "Website + SEO + Social",
-    pricePence: 10000,
-    priceLabel: "£100",
+    name: "Social Media Plus",
+    monthlyPence: 15000,
+    annualPence: 150000,
     modules: ["listing", "website", "requests", "seo", "social"],
-    summary: "Everything in Website + SEO, plus a scheduler for your own social accounts.",
-    features: ["Everything in Website + SEO", "Schedule your own Instagram and LinkedIn posts", "See how your posts perform"],
+    summary: "Everything in Marketing Plus, plus scheduling and reporting for your own social accounts.",
+    adds: ["Everything in Marketing Plus", "Schedule posts to your connected Instagram and LinkedIn accounts", "Post reporting in your dashboard"],
+    notes: ["You write and approve what is posted. This is a scheduling tool, not a managed content agency."],
+  },
+  {
+    code: "ai",
+    name: "AI Plus",
+    monthlyPence: 35000,
+    annualPence: 350000,
+    modules: ["listing", "website", "requests", "seo", "social", "agent"],
+    summary: "Everything in Social Media Plus, plus your own assistant, hosted by us, that you talk to on WhatsApp.",
+    adds: [
+      "Everything in Social Media Plus",
+      "Forward a quote enquiry on WhatsApp and it turns it into a structured enquiry and a draft quote for you to approve",
+      "Once you approve, it sends the quote and follows up, and records everything in your dashboard",
+      "It can act inside your own AnyVendor business only, with permissions you set and an audit trail of every action",
+    ],
+    notes: ["Included WhatsApp and AI usage and any overage charges will be published before this plan goes on sale. Anything that affects a customer or spends money needs your approval."],
   },
 ];
 
 export const SELLER = "The Bar People Limited";
-export const PLAN_TERMS_NOTE = "All prices are per month and include VAT. AnyVendor is a trading name of The Bar People Limited, which bills your subscription.";
+export const PLAN_TERMS_NOTE = "All prices include VAT. AnyVendor is a trading name of The Bar People Limited, which bills your subscription.";
+export const ANNUAL_PROPOSAL_NOTE = "Annual pricing (two months free) is proposed and not yet on sale.";
 
-const RANK: Record<PlanCode, number> = { website: 1, seo: 2, social: 3 };
+export const RANK: Record<PlanCode, number> = { listing: 1, website: 2, marketing: 3, social: 4, ai: 5 };
+export const PLAN_CODES = PLANS.map((p) => p.code);
+export const isPlanCode = (v: unknown): v is PlanCode => typeof v === "string" && (PLAN_CODES as string[]).includes(v);
+export const isInterval = (v: unknown): v is Interval => v === "month" || v === "year";
+
 /** Stripe statuses that keep paid access. past_due keeps it while Stripe retries the card. */
 export const ACCESS_STATUSES = ["active", "trialing", "past_due"];
+
+export const gbp = (pence: number) => (pence % 100 === 0 ? `£${(pence / 100).toLocaleString("en-GB")}` : `£${(pence / 100).toLocaleString("en-GB", { minimumFractionDigits: 2 })}`);
+export const priceLabel = (plan: Plan, interval: Interval = "month") => (interval === "year" ? `${gbp(plan.annualPence)} a year` : `${gbp(plan.monthlyPence)} a month`);
+export const monthlyEquivalent = (plan: Plan) => gbp(Math.round(plan.annualPence / 12));
 
 export interface SubscriptionRow {
   plan: PlanCode | null;
   status: string;
   current_period_end: string | null;
-  cancel_at_period_end: boolean;
+  cancel_at_period_end: boolean | null;
   updated_at: string;
 }
 
@@ -83,9 +125,7 @@ export function planByCode(code: PlanCode | null | undefined): Plan | undefined 
   return PLANS.find((p) => p.code === code);
 }
 
-function ukDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/London" });
-}
+const ukDate = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/London" });
 
 export function accessFor(subs: SubscriptionRow[], internal: InternalPlan | null = null): Access {
   const paid = paidAccess(subs);
@@ -99,14 +139,12 @@ export function accessFor(subs: SubscriptionRow[], internal: InternalPlan | null
 }
 
 function paidAccess(subs: SubscriptionRow[]): Access {
-  const live = subs
-    .filter((s) => s.plan && ACCESS_STATUSES.includes(s.status))
-    .sort((a, b) => RANK[b.plan!] - RANK[a.plan!] || b.updated_at.localeCompare(a.updated_at));
+  const live = subs.filter((s) => s.plan && ACCESS_STATUSES.includes(s.status)).sort((a, b) => RANK[b.plan!] - RANK[a.plan!]);
   const best = live[0];
   if (best) {
     const plan = planByCode(best.plan)!;
     let notice: Access["notice"] = null;
-    if (best.status === "past_due") notice = { tone: "warning", text: "Your last payment didn’t go through. Update your card to keep your plan." };
+    if (best.status === "past_due") notice = { tone: "warning", text: "Your last payment didn’t go through. Please update your card to keep your plan." };
     else if (best.cancel_at_period_end && best.current_period_end) notice = { tone: "info", text: `Your plan ends on ${ukDate(best.current_period_end)}.` };
     return { plan: plan.code, status: best.status, source: "subscription", modules: plan.modules, notice };
   }
@@ -118,8 +156,4 @@ function paidAccess(subs: SubscriptionRow[]): Access {
     return { plan: null, status: latest.status, source: null, modules: [], notice: { tone: "info", text: "We’re waiting for your first payment to confirm." } };
   }
   return { plan: null, status: null, source: null, modules: [], notice: null };
-}
-
-export function hasModule(access: Access, m: Module) {
-  return access.modules.includes(m);
 }

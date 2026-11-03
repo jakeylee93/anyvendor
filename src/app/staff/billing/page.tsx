@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Check, X } from "lucide-react";
 import { Card, Notice, submitCls } from "@/components/business/ui";
 import { businessContext } from "@/lib/business/data";
-import { PLANS, SELLER } from "@/lib/business/plans";
+import { PLANS, SELLER, gbp } from "@/lib/business/plans";
 import { anyvendorVatRate, resolvePrice, stripeClient, stripeKey } from "@/lib/business/stripe";
 import { setUpTestPrices } from "./actions";
 
@@ -19,7 +19,11 @@ export default async function StaffBilling({ searchParams }: { searchParams: SP 
   const key = stripeKey();
   if (!stripe || !key) return wrap(<Notice tone="warning">No Stripe key is set. Add the {SELLER} test-mode secret key as STRIPE_SECRET_KEY in Vercel (Preview).</Notice>);
   const mode = key.startsWith("sk_test_") ? "test" : key.startsWith("sk_live_") ? "live" : "unknown";
-  const [prices, vat] = await Promise.all([Promise.all(PLANS.map((p) => resolvePrice(stripe, p.code).catch(() => null))), anyvendorVatRate(stripe).catch(() => null)]);
+  const [prices, annual, vat] = await Promise.all([
+    Promise.all(PLANS.map((p) => resolvePrice(stripe, p.code, "month").catch(() => null))),
+    Promise.all(PLANS.map((p) => resolvePrice(stripe, p.code, "year").catch(() => null))),
+    anyvendorVatRate(stripe).catch(() => null),
+  ]);
   const row = (ok: boolean, text: string) => <li className="flex items-center gap-2 text-sm">{ok ? <Check size={16} className="text-emerald-600" /> : <X size={16} className="text-rose-600" />}{text}</li>;
   return wrap(
     <>
@@ -28,11 +32,12 @@ export default async function StaffBilling({ searchParams }: { searchParams: SP 
       <Card>
         <p className="text-sm text-be-navy">Stripe key mode: <strong>{mode}</strong> · seller {SELLER}</p>
         <ul className="mt-3 space-y-1.5">
-          {PLANS.map((p, i) => row(Boolean(prices[i]), `${p.name} ${p.priceLabel} a month inc. VAT`))}
+          {PLANS.map((p, i) => row(Boolean(prices[i]), `${p.name} ${gbp(p.monthlyPence)} a month inc. VAT`))}
+          {PLANS.map((p, i) => row(Boolean(annual[i]), `${p.name} ${gbp(p.annualPence)} a year (proposed, test only)`))}
           {row(Boolean(vat), "Inclusive 20% UK VAT rate on invoices")}
           {row(Boolean(process.env.STRIPE_WEBHOOK_SECRET), "Webhook signing secret set")}
         </ul>
-        {mode === "test" && (prices.some((p) => !p) || !vat) && (
+        {mode === "test" && (prices.some((p) => !p) || annual.some((p) => !p) || !vat) && (
           <form action={setUpTestPrices} className="mt-4"><button className={submitCls}>Create AnyVendor test prices</button></form>
         )}
         {mode === "live" && <p className="mt-3 text-sm text-amber-800">Live mode: create products in the Stripe dashboard deliberately; this page never creates live objects.</p>}

@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { supabaseServer } from "@/lib/supabase/server";
 import { appUrl, backendReady } from "@/lib/supabase/env";
+import { isInterval, isPlanCode } from "@/lib/business/plans";
 import { BUSINESS_COOKIE, businessContext } from "@/lib/business/data";
 
 const str = (f: FormData, k: string, max = 8000) => String(f.get(k) ?? "").trim().slice(0, max);
@@ -25,7 +26,9 @@ export async function signIn(form: FormData) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) redirect("/business/login?error=email");
   const sb = (await supabaseServer())!;
   const origin = appUrl((await headers()).get("origin") ?? undefined);
-  const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: `${origin}/auth/callback?next=/business` } });
+  const wanted = str(form, "next", 300);
+  const next = wanted.startsWith("/") && !wanted.startsWith("//") ? wanted : "/business";
+  const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: `${origin}/auth/callback?next=${encodeURIComponent(next)}` } });
   if (error) redirect("/business/login?error=send");
   redirect("/business/login?sent=1");
 }
@@ -54,10 +57,13 @@ export async function createBusiness(form: FormData) {
   const name = str(form, "name", 120);
   const slug = str(form, "slug", 60).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const directory = str(form, "directory_slug", 80) || null;
+  const plan = str(form, "plan", 20);
+  const interval = str(form, "interval", 10);
+  const carry: Record<string, string> = isPlanCode(plan) && isInterval(interval) ? { plan, interval } : {};
   const { data, error } = await ctx.sb.rpc("create_business", { p_name: name, p_slug: slug, p_directory_slug: directory });
-  if (error || !data) redirect(back("/business/new", { error: error?.message ?? "failed", name, slug }));
+  if (error || !data) redirect(back("/business/new", { error: error?.message ?? "failed", name, slug, ...carry }));
   (await cookies()).set(BUSINESS_COOKIE, String(data), { httpOnly: true, sameSite: "lax", secure: true, path: "/", maxAge: 60 * 60 * 24 * 365 });
-  redirect("/business?welcome=1");
+  redirect(carry.plan ? back("/business/account", { ...carry, welcome: "1" }) : "/business?welcome=1");
 }
 
 async function attachFiles(ctx: Awaited<ReturnType<typeof live>>, businessId: string, requestId: string, files: File[]) {
