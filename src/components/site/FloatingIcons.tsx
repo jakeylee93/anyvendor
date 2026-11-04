@@ -27,9 +27,9 @@ export default function FloatingIcons() {
         <span
           key={s.name}
           className={`icon-drift absolute ${s.mobile ? "" : "hidden lg:block"}`}
-          style={{ left: s.left, top: s.top, opacity: 0.55, "--dur": `${s.dur}s`, "--delay": `${s.delay}s`, "--dx": `${s.dx}px`, "--dy": `${s.dy}px` } as React.CSSProperties}
+          style={{ left: s.left, top: s.top, opacity: 0.22, "--dur": `${s.dur}s`, "--delay": `${s.delay}s`, "--dx": `${s.dx}px`, "--dy": `${s.dy}px` } as React.CSSProperties}
         >
-          <EventIcon name={s.name} size={s.size} className="shadow-md" />
+          <EventIcon name={s.name} size={s.size} tone="navy" />
         </span>
       ))}
     </div>

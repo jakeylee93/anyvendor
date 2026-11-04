@@ -30,3 +30,6 @@ Status: all four sheets are generated and saved; none is approved yet. The curre
 | 14 | Black emblem icons, no background (GPT) | GPT Image 2.5 Sunburst | text2image, 4:3, 2K, high | 150 quoted | 6cf1KmiAXN85glmfwNyE | icons-sheet-13-emblems-gpt.png |
 | 15 | Black emblem icons, no background, VECTOR | Recraft V4.1 Pro | text2image, vector, quality, 4:3 | 170 quoted | 8fNRoiuSQ5uCLwBlNeBb | icons-sheet-14-emblems-recraft.svg (+ .png) |
 | 16 | Car + musical note monograms, four languages (single line, solid, geometric, negative space), black on white | GPT Image 2.5 Sunburst | text2image, 16:9, 2K, high | 150 quoted | cp658glOef0XJhqnpfEM | marks-sheet-01-car-note.png |
+
+4 Nov 2026: Jake chose the SOLID silhouette language (refs/jake-pick-car-solid.jpg, refs/jake-pick-note-solid.jpg).
+| 17 | Full fifteen-category set in the approved solid style (both picks as references) | GPT Image 2.5 Sunburst | image2image, 4:3, 2K, high | 152 quoted | aqVwxFztEyg7ROpDZYEu | icons-sheet-15-solid-set.png |

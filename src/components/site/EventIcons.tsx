@@ -1,12 +1,8 @@
-import type { ComponentType } from "react";
-import type { IconProps } from "@phosphor-icons/react";
-import { Balloon, Cake, Camera, CarProfile, Chair, Disc, FilmStrip, FlowerTulip, ForkKnife, Lightbulb, Martini, MaskHappy, MusicNotes, Tent, VideoCamera } from "@phosphor-icons/react/dist/ssr";
-
 /**
- * AnyVendor event icons: designed glyphs from the Phosphor icon library (MIT licence,
- * https://phosphoricons.com) set in the AV navy tile with a cyan two-tone layer.
- * Real vectors, consistent on a shared grid, crisp from 18px chips to 56px hero objects.
- * Switch `WEIGHT` to "fill" or "bold" to change the whole set.
+ * AnyVendor event marks: the solid black silhouette set Jake approved on 4 Nov 2026
+ * (style refs in docs/brand-20261103/refs, sheet icons-sheet-15-solid-set.png, sliced to
+ * public/icons/events/*.webp as black glyphs with transparency). No tiles, no colour.
+ * `tone="white"` inverts the glyph for dark surfaces. Vector tracing follows once the set is signed off.
  */
 export type EventIconName =
   | "transport" | "catering" | "desserts" | "dj" | "music" | "photography" | "videography" | "entertainment"
@@ -14,38 +10,22 @@ export type EventIconName =
 
 export const EVENT_ICON_NAMES: EventIconName[] = ["transport", "catering", "desserts", "dj", "music", "photography", "videography", "entertainment", "hire", "bar", "flowers", "marquee", "lighting", "photobooth", "styling"];
 
-const WEIGHT: IconProps["weight"] = "duotone";
-
-const GLYPHS: Record<EventIconName, ComponentType<IconProps>> = {
-  transport: CarProfile, catering: ForkKnife, desserts: Cake, dj: Disc, music: MusicNotes, photography: Camera, videography: VideoCamera,
-  entertainment: MaskHappy, hire: Chair, bar: Martini, flowers: FlowerTulip, marquee: Tent, lighting: Lightbulb, photobooth: FilmStrip, styling: Balloon,
-};
-
 const LABELS: Record<EventIconName, string> = {
   transport: "Transport", catering: "Catering", desserts: "Desserts", dj: "DJ", music: "Live music", photography: "Photography", videography: "Videography",
   entertainment: "Entertainment", hire: "Hire", bar: "Mobile bar", flowers: "Flowers", marquee: "Marquee", lighting: "Lighting", photobooth: "Photo booth", styling: "Styling",
 };
 
 export const eventIconLabel = (name: EventIconName) => LABELS[name];
+export const eventIconSrc = (name: EventIconName) => `/icons/events/${name}.webp`;
 
-/** The app-style tile: navy rounded square, white glyph, cyan two-tone layer. Decorative unless `label` is given. */
-export function EventIcon({ name, size = 24, label, className = "" }: { name: EventIconName; size?: number; label?: string; className?: string }) {
-  const Glyph = GLYPHS[name];
-  const radius = Math.round(size * 0.23);
-  return (
-    <span
-      role={label ? "img" : undefined}
-      aria-label={label}
-      aria-hidden={label ? undefined : true}
-      className={`av-tile inline-flex shrink-0 items-center justify-center bg-be-navy text-white ${className}`}
-      style={{ width: size, height: size, borderRadius: radius }}
-    >
-      <Glyph weight={WEIGHT} size={Math.round(size * 0.58)} />
-    </span>
-  );
+/** The mark as an image. Black by default; `tone="white"` for navy surfaces; `tone="navy"` tints it brand navy. Decorative unless `label` is given. */
+export function EventIcon({ name, size = 24, tone = "black", label, className = "" }: { name: EventIconName; size?: number; tone?: "black" | "white" | "navy"; label?: string; className?: string }) {
+  const filter = tone === "white" ? "invert(1)" : tone === "navy" ? "invert(12%) sepia(18%) saturate(900%) hue-rotate(200deg)" : undefined;
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src={eventIconSrc(name)} alt={label ?? ""} aria-hidden={label ? undefined : true} width={size} height={size} decoding="async" draggable={false} className={`inline-block shrink-0 select-none ${className}`} style={filter ? { filter } : undefined} />;
 }
 
-/** Pictogram for a planner need key or a category label. */
+/** Mark for a planner need key or a category label. */
 export function eventIconFor(keyOrLabel: string): EventIconName {
   const k = keyOrLabel.toLowerCase();
   if (/bar|cocktail|mixolog|drink/.test(k)) return "bar";

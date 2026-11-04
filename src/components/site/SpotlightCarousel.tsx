@@ -42,7 +42,7 @@ function Card({ item, active, visible, soundOn, onSound }: { item: SpotlightItem
           )}
           {item.category && (
             <span className="absolute right-3 top-3 z-[2] inline-flex max-w-[55%] items-center gap-1.5 truncate rounded-full bg-be-deep/75 px-3 py-1.5 text-[11px] font-semibold text-white shadow-sm ring-1 ring-white/25 backdrop-blur">
-              <EventIcon name={item.icon} size={16} />
+              <EventIcon name={item.icon} size={16} tone="white" />
               {item.category}
             </span>
           )}
