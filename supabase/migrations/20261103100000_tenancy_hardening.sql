@@ -31,28 +31,14 @@ begin
   return false;
 end $$;
 
--- ---------------------------------------------------------------- access by exact email, no mail sent
-create table public.pending_access (
-  id uuid primary key default gen_random_uuid(),
-  email text not null check (email = lower(email) and email ~ '^[^\s@]+@[^\s@]+\.[^\s@]+$'),
-  business_id uuid references public.businesses (id) on delete cascade,
-  role public.member_role not null default 'owner',
-  make_staff boolean not null default false,
-  note text,
-  created_by uuid,
-  created_at timestamptz not null default now(),
-  claimed_at timestamptz,
-  claimed_user uuid,
-  check (business_id is not null or make_staff)
-);
-create unique index pending_access_unique on public.pending_access (email, coalesce(business_id, '00000000-0000-0000-0000-000000000000'::uuid)) where claimed_at is null;
+-- ---------------------------------------------------------------- access by exact email: table, apply function and trigger live in 20261103090000_owner_claims.sql
 
-/** Grants pending access to one auth user, only when that user's email is verified. Idempotent. */
-create function public.apply_pending_access(p_user uuid) returns int
+/** Audited version of the owner-claims grant (audit_log exists from here on). Same rules: verified email only. */
+create or replace function public.apply_pending_access(p_user uuid) returns int
 language plpgsql security definer set search_path = public, pg_temp as $$
 declare u record; r record; n int := 0;
 begin
-  select id, lower(trim(email)) as email, email_confirmed_at into u from auth.users where id = p_user;
+  select id, lower(btrim(email)) as email, email_confirmed_at into u from auth.users where id = p_user;
   if u.id is null or u.email is null or u.email_confirmed_at is null then return 0; end if;
   for r in select * from public.pending_access where email = u.email and claimed_at is null order by created_at loop
     if r.make_staff then insert into public.staff_members (user_id, note) values (u.id, coalesce(r.note, 'AnyVendor team')) on conflict do nothing; end if;
@@ -63,15 +49,6 @@ begin
   end loop;
   return n;
 end $$;
-
-create function public.handle_auth_user_verified() returns trigger
-language plpgsql security definer set search_path = public, pg_temp as $$
-begin
-  if new.email_confirmed_at is not null then perform public.apply_pending_access(new.id); end if;
-  return new;
-end $$;
-create trigger av_grant_pending_access after insert or update of email, email_confirmed_at on auth.users
-  for each row execute function public.handle_auth_user_verified();
 
 /** True for AnyVendor staff, the service role, or a direct database session. Never for anon or an ordinary signed-in user. */
 create function public.is_privileged() returns boolean
@@ -340,18 +317,18 @@ $$;
 
 -- ---------------------------------------------------------------- RLS and grants
 alter table public.audit_log enable row level security;
-alter table public.pending_access enable row level security;
 alter table public.internal_entitlements enable row level security;
 create policy audit_staff_read on public.audit_log for select to authenticated using (public.is_staff());
 create policy pending_staff_read on public.pending_access for select to authenticated using (public.is_staff());
+create policy claim_requests_staff_update on public.claim_requests for update to authenticated using (public.is_staff()) with check (public.is_staff());
 create policy entitlements_read on public.internal_entitlements for select to authenticated using (public.is_member(business_id) or public.is_staff());
 
-revoke all on public.audit_log, public.pending_access, public.internal_entitlements from anon, authenticated;
+revoke all on public.audit_log, public.internal_entitlements from anon, authenticated;
 grant select on public.audit_log, public.pending_access, public.internal_entitlements to authenticated;
-grant all on public.audit_log, public.pending_access, public.internal_entitlements to service_role;
+grant all on public.audit_log, public.internal_entitlements to service_role;
 grant usage, select on sequence public.audit_log_id_seq to authenticated, service_role;
 
-revoke execute on function public.audit(uuid, text, jsonb), public.can_manage(uuid, text), public.apply_pending_access(uuid), public.handle_auth_user_verified(), public.is_privileged() from public, anon, authenticated;
+revoke execute on function public.audit(uuid, text, jsonb), public.can_manage(uuid, text), public.is_privileged() from public, anon, authenticated;
 revoke execute on function public.add_pending_access(text, uuid, public.member_role, boolean, text), public.revoke_pending_access(uuid), public.link_listing(uuid, text),
   public.provision_business(text, text, text, text, text), public.staff_switch(uuid), public.grant_internal_plan(uuid, public.plan_code, text, timestamptz),
   public.set_site_manifest(uuid, jsonb), public.set_site_kind(uuid, text, text, text), public.rotate_preview_token(uuid), public.public_site_v1(text), public.site_draft_v1(text, uuid) from public, anon;
@@ -359,4 +336,4 @@ grant execute on function public.add_pending_access(text, uuid, public.member_ro
   public.provision_business(text, text, text, text, text), public.staff_switch(uuid), public.grant_internal_plan(uuid, public.plan_code, text, timestamptz),
   public.set_site_manifest(uuid, jsonb), public.set_site_kind(uuid, text, text, text), public.rotate_preview_token(uuid) to authenticated, service_role;
 grant execute on function public.public_site_v1(text), public.site_draft_v1(text, uuid) to anon, authenticated, service_role;
-grant execute on function public.audit(uuid, text, jsonb), public.can_manage(uuid, text), public.apply_pending_access(uuid), public.is_privileged() to service_role;
+grant execute on function public.audit(uuid, text, jsonb), public.can_manage(uuid, text), public.is_privileged() to service_role;

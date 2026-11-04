@@ -3,7 +3,9 @@ import { redirect } from "next/navigation";
 import { BrandLockup } from "@/components/site/BrandMark";
 import { ActionFeedback, inputCls, submitCls } from "@/components/business/ui";
 import { businessContext } from "@/lib/business/data";
-import { createBusiness } from "../actions";
+import { createBusiness, requestListingAccess } from "../actions";
+import { BUSINESSES } from "@/lib/directory";
+import { Notice } from "@/components/business/ui";
 
 export const metadata: Metadata = { title: "Set up your business — AnyVendor", robots: { index: false, follow: false } };
 type SP = Promise<Record<string, string | string[] | undefined>>;
@@ -13,12 +15,40 @@ export default async function NewBusinessPage({ searchParams }: { searchParams: 
   const ctx = await businessContext();
   if (ctx.mode === "demo") redirect("/business");
   const v = (k: string) => (typeof sp[k] === "string" ? (sp[k] as string) : "");
+  const { data: openRequest } = ctx.mode === "live" ? await ctx.sb.from("claim_requests").select("business_name, status, created_at").eq("status", "open").maybeSingle() : { data: null };
   return (
     <main className="min-h-screen bg-be-mist px-4 py-10">
       <div className="mx-auto max-w-md">
         <div className="flex justify-center"><BrandLockup layout="row" /></div>
         <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
-          <h1 className="text-xl font-bold text-be-navy">Set up your business</h1>
+          <h1 className="text-xl font-bold text-be-navy">Already listed on AnyVendor?</h1>
+          <p className="mt-1 text-sm text-be-grey">We open your listing automatically when the email you signed in with{ctx.mode === "live" && ctx.email ? ` (${ctx.email})` : ""} is the owner email we hold for it. It isn’t matched yet, so tell us which listing is yours and we’ll check and connect it. Nothing public changes until then.</p>
+          {sp.requested && <Notice tone="success">Thanks. We’ll check and connect your listing; you’ll see it here when it’s done.</Notice>}
+          {openRequest && !sp.requested && <Notice tone="info">Your request for “{openRequest.business_name}” is with the AnyVendor team.</Notice>}
+          {!openRequest && (
+            <form action={requestListingAccess} className="mt-4 space-y-3">
+              <label className="block">
+                <span className="text-sm font-semibold text-be-navy">Your business name</span>
+                <input name="business_name" required minLength={2} maxLength={120} className={`${inputCls} mt-1`} />
+              </label>
+              <label className="block">
+                <span className="text-sm font-semibold text-be-navy">Your listing (optional)</span>
+                <select name="directory_slug" defaultValue="" className={`${inputCls} mt-1`}>
+                  <option value="">Not sure</option>
+                  {BUSINESSES.map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
+                </select>
+              </label>
+              <label className="block">
+                <span className="text-sm font-semibold text-be-navy">Anything that helps us check (optional)</span>
+                <input name="note" maxLength={500} placeholder="e.g. the email on your website is hello@…" className={`${inputCls} mt-1`} />
+              </label>
+              <button className={`${submitCls} w-full`}>Request access to my listing</button>
+            </form>
+          )}
+        </div>
+
+        <div className="mt-6 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+          <h1 className="text-xl font-bold text-be-navy">Or set up a new business</h1>
           <p className="mt-1 text-sm text-be-grey">You’ll be the owner. You can add teammates later.</p>
           <div className="mt-3"><ActionFeedback sp={sp} /></div>
           <form action={createBusiness} className="mt-4 space-y-4">

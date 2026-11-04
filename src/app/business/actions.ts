@@ -30,7 +30,34 @@ export async function signIn(form: FormData) {
   const next = wanted.startsWith("/") && !wanted.startsWith("//") ? wanted : "/business";
   const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: `${origin}/auth/callback?next=${encodeURIComponent(next)}` } });
   if (error) redirect("/business/login?error=send");
-  redirect("/business/login?sent=1");
+  redirect(`/business/login?sent=1&email=${encodeURIComponent(email)}${next !== "/business" ? `&next=${encodeURIComponent(next)}` : ""}`);
+}
+
+/** Second way in: the code from the same email, typed on this device. Works when the link opens in another browser. */
+export async function verifyCode(form: FormData) {
+  if (!backendReady()) redirect("/business/login?error=offline");
+  const email = str(form, "email", 200).toLowerCase();
+  const token = str(form, "token", 12).replace(/\s+/g, "");
+  const wanted = str(form, "next", 300);
+  const next = wanted.startsWith("/") && !wanted.startsWith("//") ? wanted : "/business";
+  const back = `/business/login?sent=1&email=${encodeURIComponent(email)}${next !== "/business" ? `&next=${encodeURIComponent(next)}` : ""}`;
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !/^\d{6,8}$/.test(token)) redirect(`${back}&error=code`);
+  const sb = (await supabaseServer())!;
+  const { error } = await sb.auth.verifyOtp({ email, token, type: "email" });
+  if (error) redirect(`${back}&error=code`);
+  redirect(next);
+}
+
+/** A signed-in user with no workspace asks to be matched to an existing listing. Grants nothing; staff review it. */
+export async function requestListingAccess(form: FormData) {
+  const ctx = await live();
+  const { error } = await ctx.sb.rpc("request_listing_access", {
+    p_business_name: str(form, "business_name", 120),
+    p_directory_slug: str(form, "directory_slug", 80) || null,
+    p_note: str(form, "note", 500) || null,
+  });
+  if (error) redirect(back("/business/new", { error: error.message }));
+  redirect(back("/business/new", { requested: "1" }));
 }
 
 export async function signOut() {

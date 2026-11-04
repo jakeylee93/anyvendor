@@ -36,6 +36,7 @@ const MESSAGES: Record<string, string> = {
   seo_reconnect: "Search Console needs reconnecting.",
   seo_error: "Google didn’t return data just now. Try again later.",
   manifest_missing: "This site’s sections aren’t set up yet. Ask the AnyVendor team.",
+  request_open: "You already have a request with us. We’ll be in touch.",
 };
 
 export function friendlyError(raw: string | null | undefined): string | null {
