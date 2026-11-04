@@ -365,3 +365,7 @@ Commits `cab2a9a` (flat monoline icon sheet, replacement direction after Jake re
 ### Milestone 12, icons resolved to designed vectors (3 Nov, 21:50 UTC)
 
 Jake rejected every generated sheet as AI-looking and asked for proper icons. The site now uses the Phosphor icon library (MIT, studio-designed) set in the AV navy tile with the cyan duotone layer: `src/components/site/EventIcons.tsx` (`WEIGHT` switches fill/duotone/bold), CSS rule `.av-tile` in `globals.css`, packages `@phosphor-icons/react` and `@phosphor-icons/core`. Comparison sheet `docs/brand-20261103/icons-sheet-09-phosphor-tiles.png`. Verified on deployment `q026pmrrb` (commit `d34e42d`) at desktop and phone. Generated sheets stay in `docs/brand-20261103/` as history only; the raster tiles were removed from `public/`.
+
+### 4 Nov: icon style approved (solid silhouettes)
+
+Jake chose the solid black silhouette language from `docs/brand-20261103/marks-sheet-01-car-note.png` (his crops in `docs/brand-20261103/refs/`). The full set was generated with those two as references (`icons-sheet-15-solid-set.png`, receipt 17) and sliced to transparent black marks in `public/icons/events/*.webp` (512px masters in `docs/brand-20261103/solid-set-512/`). `EventIcon` renders them black, white (CSS invert, for navy surfaces) or navy-tinted; no tiles. Phosphor packages removed. Commit `f1cd88b`. Next: Jake's per-mark feedback, then vector tracing of the signed-off marks (Recraft image2image vector or manual) so they are true SVGs.
