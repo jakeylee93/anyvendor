@@ -369,3 +369,7 @@ Jake rejected every generated sheet as AI-looking and asked for proper icons. Th
 ### 4 Nov: icon style approved (solid silhouettes)
 
 Jake chose the solid black silhouette language from `docs/brand-20261103/marks-sheet-01-car-note.png` (his crops in `docs/brand-20261103/refs/`). The full set was generated with those two as references (`icons-sheet-15-solid-set.png`, receipt 17) and sliced to transparent black marks in `public/icons/events/*.webp` (512px masters in `docs/brand-20261103/solid-set-512/`). `EventIcon` renders them black, white (CSS invert, for navy surfaces) or navy-tinted; no tiles. Phosphor packages removed. Commit `f1cd88b`. Next: Jake's per-mark feedback, then vector tracing of the signed-off marks (Recraft image2image vector or manual) so they are true SVGs.
+
+## Milestone 13 — real sign-in for The Bar People (4 Nov 2026)
+
+Commit `5abea4a`. Narrow `owner_claims` migration (trusted owner email, verified-exact-email grant trigger, access-request path) split out of the held tenancy migration; code-entry sign-in fallback; safe no-match page; `docs/backend/provision-bar-people-20261104.sql`. 92 tests pass incl. the Bar People dry run. **Not applied to the live DB**: the MCP `apply_migration` call was denied by the session permission classifier. Exact activation steps and dashboard settings in `docs/backend/SIGNIN-ACTIVATION.md`. No successful authenticated login has happened yet. Phone link = Vercel share link for the branch alias (23 h).
